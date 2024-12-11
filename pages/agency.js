@@ -63,7 +63,7 @@ const Agency = () => {
 
       {/* Management Section */}
       <div className="lg:max-w-[1280px] mx-auto px-2 py-2 lg:mb-[300px] mt-6">
-        <h2 className="text-center text-black font-bold text-4xl mb-12">
+        <h2 className="text-center text-black font-[900] text-4xl lg:text-[28px] lg:leading-[37px] mb-12">
           UNSER MANAGEMENT AUF EINEN BLICK
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:gap-10 gap-2 lg:max-w-[1280px]">
@@ -111,7 +111,7 @@ const Agency = () => {
 
             <section className="font-matt lg:max-w-[1280px] mx-auto px-6 lg:px-2 py-2 flex flex-col items-center text-center lg:mt-[300px] mt-6">
                 {/* Title */}
-                <h2 className="text-center text-2xl lg:text-6xl font-[900] mb-20 uppercase">
+                <h2 className="text-center text-2xl lg:text-[28px] lg:leading-[37px] font-[900] mb-20 uppercase">
                 Unsere Werte
                 </h2>
 
@@ -216,7 +216,7 @@ const Agency = () => {
                     </div>
                     {/* Text */}
                     <div className="text-left">
-                      <h3 className="text-2xl leading-10 font-bold text-[#0009FF] uppercase md:leading-[37px] md:text-[28px] mb-2">
+                      <h3 className="text-2xl leading-10 font-[900] text-[#0009FF] uppercase md:leading-[37px] md:text-[28px] mb-2">
                         ● Flexibilität
 
                         :
@@ -229,9 +229,11 @@ const Agency = () => {
                 </div>
               </section>
 
-
-              
-              <section className="font-matt flex flex-col md:flex-row items-center justify-between px-4 md:px-2 py-2 lg:min-w-[1280px] mx-auto lg:pt-[300px]">
+ 
+              <h2 className="lg:pt-[300px] font-matt flex items-center justify-center text-xl lg:text-[80px] lg:leading-[80px] font-[700] text-black mb-2">
+              Unsere 4 Säulen
+                          </h2>
+              <section className="font-matt flex flex-col md:flex-row items-center justify-between px-4 md:px-2 py-2 lg:min-w-[1280px] mx-auto">
                     <div className="font-matt flex-1 max-w-lg lg:text-left text-center ">
                         <h2 className="font-matt text-2xl md:text-[28px] md:leading-[37px] font-extrabold text-black mb-4 uppercase">
                         Unsere 4 Säulen – Ein ganzheitlicher Ansatz
@@ -324,7 +326,7 @@ const Agency = () => {
                     <section className="px-6 lg:px-4 py-2">
                     <div className="lg:min-w-[1280px] mx-auto md:text-center">
                       {/* Section Header */}
-                      <h2 className="font-matt text-xl lg:text-[80px] lg:leading-[80px] font-bold text-black mb-12">
+                      <h2 className="font-matt text-xl lg:text-[80px] lg:leading-[80px] font-[700] text-black mb-12">
                       Unser Engagement für Gutes!
                           </h2>
                     </div>
@@ -520,7 +522,7 @@ const Agency = () => {
                           Bist du ein Verein, eine NGO oder eine gemeinnützige Organisation?
                           Möchtest du von unserem Pro-Bono-Implementierungsprojekt profitieren? <br></br> <br></br>
                           Dann melde dich – wir spenden gerne in Form eines grossartigen Projekts!
-                          Kontaktieren Sie uns via <a className="font-bold" href="mailto:info@the-eksperts.com">info@the-eksperts.com</a>
+                          Kontaktieren Sie uns via <a className="font-[900]" href="mailto:info@the-eksperts.com">info@the-eksperts.com</a>
           
                           </p>     
                     </div>
