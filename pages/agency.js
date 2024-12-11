@@ -312,7 +312,7 @@ const Agency = () => {
                     </section>
 
                     <section className="font-matt flex flex-col md:flex-row items-center justify-between px-4 md:px-2 py-2 lg:min-w-[1280px] mx-auto">
-                    <div className="font-matt flex-1 max-w-lg text-left">
+                    <div className="font-matt flex-1 lg:min-w-[600px] max-w-lg text-left">
                         <h2 className="font-matt text-2xl md:text-[25px] md:leading-[37px] font-[900] text-black mb-4 uppercase">
                         Optimierung, Schulung und Support<br></br> – Nachhaltige Partnerschaft
                         </h2>
