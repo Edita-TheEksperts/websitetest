@@ -333,7 +333,7 @@ const Agency = () => {
                     <section className="px-6 lg:px-4 py-2">
                     <div className="lg:min-w-[1280px] mx-auto md:text-center">
                       {/* Section Header */}
-                      <h2 className="font-matt text-xl lg:text-[80px] lg:leading-[80px] font-[700] text-black mb-12">
+                      <h2 className="font-matt text-xl lg:text-[75px] lg:leading-[80px] font-[700] text-black mb-12 uppercase">
                       Unser Engagement für Gutes!
                           </h2>
                     </div>
@@ -476,26 +476,26 @@ const Agency = () => {
 
                         {/* Headings in one line */}
                         <div className="flex justify-between w-full gap-12 mb-6 lg:max-w-[1280px] lg:px-2">
-                          <h2 className="text-[28px] leading-[37px] font-extrabold text-black mb-4 font-matt text-center uppercase">
+                          <h2 className="text-[28px] leading-[37px] font-[900] text-black mb-4 font-matt text-center uppercase">
                             Förderung von Talenten
                           </h2>
-                          <h2 className="text-[28px] leading-[37px] font-extrabold text-black mb-4 font-matt text-center uppercase">
+                          <h2 className="text-[28px] leading-[37px] font-[900] text-black mb-4 font-matt text-center uppercase">
                             Unterstützung lokaler Unternehmen
                           </h2>
-                          <h2 className="text-[28px] leading-[37px] font-extrabold text-black mb-4 font-matt text-center uppercase">
+                          <h2 className="text-[28px] leading-[37px] font-[900] text-black mb-4 font-matt text-center uppercase">
                             Nachhaltige Zukunft
                           </h2>
                         </div>
 
                         {/* Paragraphs in one line */}
                         <div className="flex flex-col lg:flex-row justify-between items-start w-full lg:min-w-[1280px] lg:px-2 gap-12">
-                        <p className="text-[20px] leading-[33px] text-black mb-4 font-matt text-center lg:w-1/3">
+                        <p className="text-[20px] leading-[33px] text-black mb-4 font-matt font-[300] text-center lg:w-1/3">
                           Mit der Gründung der eksperts Academy unterstützen wir die nächste Generation von Fachkräften durch Zugang zu Wissen und Ressourcen.
                         </p>
-                        <p className="text-[20px] leading-[33px] text-black mb-4 font-matt text-center lg:w-1/3">
+                        <p className="text-[20px] leading-[33px] text-black mb-4 font-matt font-[300] text-center lg:w-1/3">
                           Wir helfen kleineren Unternehmen nicht nur mit finanziellen Mitteln, sondern auch durch unsere personellen Ressourcen und die Infrastruktur unserer Firma, um ihre Ideen und Projekte zu realisieren.
                         </p>
-                        <p className="text-[20px] leading-[33px] text-black mb-4 font-matt text-center lg:w-1/3">
+                        <p className="text-[20px] leading-[33px] text-black mb-4 font-matt font-[300] text-center lg:w-1/3">
                           Erfolg bedeutet für uns, etwas zurückzugeben und gemeinsam Innovation und Wachstum in unserer Region zu fördern.
                         </p>
                       </div>
@@ -525,11 +525,11 @@ const Agency = () => {
                     <h3 className="text-lg md:text-[28px] md:leading-[37px] font-extrabold text-black mb-4 font-matt">
                       PRO-BONO-PROJEKT:
                     </h3>
-                    <p className="text-sm md:text-[20px] md:leading-[33px] text-black mb-4 font-matt">
+                    <p className="text-sm md:text-[20px] font-[300] md:leading-[33px] text-black mb-4 font-matt">
                           Bist du ein Verein, eine NGO oder eine gemeinnützige Organisation?
                           Möchtest du von unserem Pro-Bono-Implementierungsprojekt profitieren? <br></br> <br></br>
                           Dann melde dich – wir spenden gerne in Form eines grossartigen Projekts!
-                          Kontaktieren Sie uns via <a className="font-[900]" href="mailto:info@the-eksperts.com">info@the-eksperts.com</a>
+                          Kontaktieren Sie uns via <a className="font-[300] underline" href="mailto:info@the-eksperts.com">info@the-eksperts.com</a>
           
                           </p>     
                     </div>
