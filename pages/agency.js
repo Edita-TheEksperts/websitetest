@@ -216,8 +216,15 @@ const Agency = () => {
                     </div>
                     {/* Text */}
                     <div className="text-left">
-                      <h3 className="text-2xl leading-10 font-[900] text-[#0009FF] uppercase md:leading-[37px] md:text-[28px] mb-2">
-                        ● Flexibilität
+                    <h3
+                      className="text-2xl leading-10 font-[900] uppercase md:leading-[37px] md:text-[28px] mb-2"
+                      style={{
+                        background: "linear-gradient(270deg, #0009FF 76.84%, #E24125 83.49%, #03C319 91.34%, #CFFF49 97.99%)",
+                        WebkitBackgroundClip: "text",
+                        WebkitTextFillColor: "transparent",
+                      }}
+                    >                        
+                    ● Flexibilität
 
                         :
                       </h3>
