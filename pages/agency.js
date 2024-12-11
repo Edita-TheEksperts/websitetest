@@ -129,10 +129,10 @@ const Agency = () => {
                     </div>
                     {/* Text */}
                     <div className="text-left">
-                      <h3 className="text-2xl leading-10 font-[900] text-[#E24125] uppercase md:leading-[60px] md:text-[32px]">
+                      <h3 className="text-2xl leading-10 font-[900] text-[#E24125] uppercase md:leading-[37px] md:text-[28px] mb-2">
                         ● LIEBE :
                       </h3>
-                      <p className="text-gray-600 text-2xl max-w-[589px] md:leading-[37px] md:text-[28px] uppercase">
+                      <p className="text-[#5A585A] text-2xl max-w-[599px] lg:mr-8 font-[400] md:leading-[37px] md:text-[24px] uppercase">
                       Leidenschaft treibt alles an, was wir tun
                       </p>
                     </div>
@@ -150,11 +150,11 @@ const Agency = () => {
                     </div>
                     {/* Text */}
                     <div className="text-left">
-                      <h3 className="text-2xl leading-10 font-[900] text-[#0009FF] uppercase md:leading-[60px] md:text-[32px]">
+                      <h3 className="text-2xl leading-10 font-[900] text-[#0009FF] uppercase md:leading-[37px] md:text-[28px] mb-2">
                         ● Integrität
                         :
                       </h3>
-                      <p className="text-gray-600 text-2xl max-w-[589px] md:leading-[37px] md:text-[28px] uppercase">
+                      <p className="text-[#5A585A] text-2xl max-w-[589px] font-[400] md:leading-[37px] md:text-[24px] uppercase">
                       Transparenz und Vertrauen schaffen langfristige Partnerschaften
                       </p>
                     </div>
@@ -172,11 +172,11 @@ const Agency = () => {
                     </div>
                     {/* Text */}
                     <div className="text-left">
-                      <h3 className="text-2xl leading-10 font-[900] text-[#CFFF49] uppercase md:leading-[60px] md:text-[32px]">
+                      <h3 className="text-2xl leading-10 font-[900] text-[#CFFF49] uppercase md:leading-[37px] md:text-[28px] mb-2">
                         ● Exzellenz
                         :
                       </h3>
-                      <p className="text-gray-600 text-2xl max-w-[589px] md:leading-[37px] md:text-[28px] uppercase">
+                      <p className="text-[#5A585A] text-2xl max-w-[589px] font-[400] md:leading-[37px] md:text-[24px] uppercase">
                       Qualität liefern, die Erwartungen übertrifft</p>
                     </div>
                   </div>
@@ -193,11 +193,11 @@ const Agency = () => {
                     </div>
                     {/* Text */}
                     <div className="text-left">
-                    <h3 className="text-2xl leading-10 font-[900] text-[#03C319] uppercase md:leading-[60px] md:text-[32px]">
+                    <h3 className="text-2xl leading-10 font-[900] text-[#03C319] uppercase md:leading-[37px] md:text-[28px] mb-2">
                         ● Kommunikation
                         :
                       </h3>
-                      <p className="text-gray-600 text-2xl max-w-[589px] md:leading-[37px] md:text-[28px] uppercase">
+                      <p className="text-[#5A585A] text-2xl max-w-[589px] font-[400] md:leading-[37px] md:text-[24px] uppercase">
                       Klare Dialoge für den
                       gemeinsamen Erfolg</p>
                     
@@ -216,12 +216,12 @@ const Agency = () => {
                     </div>
                     {/* Text */}
                     <div className="text-left">
-                      <h3 className="text-2xl leading-10 font-bold text-[#0009FF] uppercase md:leading-[60px] md:text-[32px]">
+                      <h3 className="text-2xl leading-10 font-bold text-[#0009FF] uppercase md:leading-[37px] md:text-[28px] mb-2">
                         ● Flexibilität
 
                         :
                       </h3>
-                      <p className="text-gray-600 text-2xl max-w-[589px] md:leading-[37px] md:text-[28px] uppercase">
+                      <p className="text-[#5A585A] text-2xl max-w-[589px] font-[400] md:leading-[30px] md:text-[24px] uppercase">
                       Agil und bereit für jede
                       Herausforderung</p>
                     </div>
