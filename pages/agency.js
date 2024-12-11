@@ -241,9 +241,9 @@ const Agency = () => {
               Unsere 4 Säulen
                           </h2>
               <section className="font-matt flex flex-col md:flex-row items-center justify-between px-4 md:px-2 py-2 lg:min-w-[1280px] mx-auto">
-                    <div className="font-matt flex-1 max-w-lg lg:text-left text-center ">
+                    <div className="font-matt flex-1 lg:min-w-[620px] max-w-lg lg:text-left text-center ">
                         <h2 className="font-matt text-2xl md:text-[25px] md:leading-[37px] font-[900] text-black mb-4 uppercase">
-                        Unsere 4 Säulen – Ein ganzheitlicher Ansatz
+                        Unsere 4 Säulen – Ein <br></br> ganzheitlicher Ansatz
                         </h2>
                         <p className="font-matt lg:text-[20px] lg:leading-[33px] text-lg text-black ">
                         Unser Ansatz baut auf vier zentralen Säulen auf, die nahtlose Zusammenarbeit und nachhaltige Ergebnisse sichern. Von der Analyse eurer Anforderungen über die visuelle und technische Umsetzung bis zur langfristigen Partnerschaft entwickeln wir Lösungen, die eure aktuellen und zukünftigen Bedürfnisse erfüllen. Jede Phase ist auf Zusammenarbeit und Qualität ausgerichtet, um echten Mehrwert zu schaffen.        </p>
@@ -253,7 +253,7 @@ const Agency = () => {
                         <img
                         src="/images/all 1.png" 
                         alt="Info Section Image"
-                        className="w-full lg:w-[750px] lg:h-[700px] "
+                        className="w-full lg:w-[650px] lg:h-[600px] "
                         />
                     </div>
                     </section>
@@ -263,13 +263,13 @@ const Agency = () => {
                         <img
                         src="/images/blue 1.png" 
                         alt="Info Section Image"
-                        className="w-full lg:w-[750px] lg:h-[700px] "
+                        className="w-full lg:w-[650px] lg:h-[600px] "
                         />
                     </div>
 
-                    <div className="font-matt flex-1 max-w-lg lg:text-left text-center">
-                        <h2 className="font-matt text-2xl md:text-[25px] md:leading-[37px] font-[900] text-black mb-4 uppercase">
-                        Verstehen und Kommunikation – Die Basis für euren Erfolg
+                    <div className="font-matt flex-1 lg:min-w-[580px] max-w-lg lg:text-left text-center">
+                        <h2 className="font-matt text-2xl  md:text-[25px] md:leading-[37px] font-[900] text-black mb-4 uppercase">
+                        Verstehen und Kommunikation <br></br>– Die Basis für euren Erfolg
                         </h2>
                         <p className="font-matt lg:text-[20px] lg:leading-[33px] text-lg text-black">
                         Alles beginnt mit einer klaren und offenen Kommunikation. Wir analysieren eure Anforderungen, verstehen eure individuellen Herausforderungen und definieren gemeinsam die Ziele. Durch Consulting, Business-Analyse und strategische Planung legen wir den Grundstein für massgeschneiderte Lösungen, die eure spezifischen Bedürfnisse widerspiegeln.                        </p>
