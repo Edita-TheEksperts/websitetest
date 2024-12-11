@@ -52,10 +52,10 @@ const Agency = () => {
 
       {/* Description Section */}
       <div className="lg:max-w-[1280px] mx-auto text-center mt-6 text-black lg:mb-[300px]">
-        <p className="font-matt lg:text-[20px] font-[300] lg:leading-[33px] sm:text-xl leading-relaxed max-w-[900px] mx-auto">
+        <p className="font-matt lg:text-[20px] font-[300] lg:leading-[33px] sm:text-xl leading-relaxed max-w-[1000px] mx-auto">
         Hi, wir sind the eksperts – nicht, weil wir alles wissen oder perfekt sind, sondern weil wir jeden Tag daran arbeiten, die besten Lösungen zu finden und uns weiterzuentwickeln. Unser Name steht für den Anspruch, ständig besser zu werden.
         </p>
-        <p className="font-matt lg:text-[20px] font-[300] lg:leading-[33px] sm:text-xl leading-relaxed max-w-[900px] mx-auto mt-6">
+        <p className="font-matt lg:text-[20px] font-[300] lg:leading-[33px] sm:text-xl leading-relaxed max-w-[1000px] mx-auto mt-6">
         Wir stellen Menschen und Prozesse in den Mittelpunkt. Nachdem wir unsere Kunden und ihre Herausforderungen verstanden haben, entwickeln wir innovative Lösungen, die Wachstum und Effizienz fördern. So helfen wir Unternehmen, in einer schnelllebigen digitalen Welt erfolgreich zu sein.
         </p>
       </div>
@@ -63,7 +63,7 @@ const Agency = () => {
 
       {/* Management Section */}
       <div className="lg:max-w-[1280px] mx-auto px-2 py-2 lg:mb-[300px] mt-6">
-        <h2 className="text-center text-black font-[900] text-4xl lg:text-[28px] lg:leading-[37px] mb-12">
+        <h2 className="font-matt text-center text-black font-[900] text-4xl lg:text-[28px] lg:leading-[37px] mb-12">
           UNSER MANAGEMENT AUF EINEN BLICK
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:gap-10 gap-2 lg:max-w-[1280px]">
@@ -85,7 +85,7 @@ const Agency = () => {
                     style={{ clipPath: 'polygon(100% 0%, 94% 98%, 0% 100%, 0% 0%)' }}
                   >
 
-                  <h3 className="font-matt text-xl md:text-[28px] md:leading-[20px] font-extrabold uppercase mb-2">{person.name}</h3>
+                  <h3 className="font-matt text-xl md:text-[28px] md:leading-[20px] font-[900] uppercase mb-2">{person.name}</h3>
                     <p className="font-matt text-sm md:text-[19px] md:leading-[20px] font-normal mb-2">{person.title}</p>
                     <p className="font-matt text-sm md:text-[16px] md:leading-[18px] font-light mb-2">{person.description}</p>
                     <p className="font-matt text-xs md:text-[12px] md:leading-[14px] font-light italic">{person.shortDescription}</p>
