@@ -235,14 +235,14 @@ const Agency = () => {
                           </h2>
               <section className="font-matt flex flex-col md:flex-row items-center justify-between px-4 md:px-2 py-2 lg:min-w-[1280px] mx-auto">
                     <div className="font-matt flex-1 max-w-lg lg:text-left text-center ">
-                        <h2 className="font-matt text-2xl md:text-[28px] md:leading-[37px] font-[900] text-black mb-4 uppercase">
+                        <h2 className="font-matt text-2xl md:text-[25px] md:leading-[37px] font-[900] text-black mb-4 uppercase">
                         Unsere 4 Säulen – Ein ganzheitlicher Ansatz
                         </h2>
                         <p className="font-matt lg:text-[20px] lg:leading-[33px] text-lg text-black ">
                         Unser Ansatz baut auf vier zentralen Säulen auf, die nahtlose Zusammenarbeit und nachhaltige Ergebnisse sichern. Von der Analyse eurer Anforderungen über die visuelle und technische Umsetzung bis zur langfristigen Partnerschaft entwickeln wir Lösungen, die eure aktuellen und zukünftigen Bedürfnisse erfüllen. Jede Phase ist auf Zusammenarbeit und Qualität ausgerichtet, um echten Mehrwert zu schaffen.        </p>
                     </div>
 
-                    <div className="font-matt flex-1 mt-8 md:mt-0 flex justify-center">
+                    <div className="font-matt flex-1 mt-8 md:mt-0 flex justify-center lg:ml-[30px]">
                         <img
                         src="/images/all 1.png" 
                         alt="Info Section Image"
@@ -261,7 +261,7 @@ const Agency = () => {
                     </div>
 
                     <div className="font-matt flex-1 max-w-lg lg:text-left text-center">
-                        <h2 className="font-matt text-2xl md:text-[28px] md:leading-[37px] font-[900] text-black mb-4 uppercase">
+                        <h2 className="font-matt text-2xl md:text-[25px] md:leading-[37px] font-[900] text-black mb-4 uppercase">
                         Verstehen und Kommunikation – Die Basis für euren Erfolg
                         </h2>
                         <p className="font-matt lg:text-[20px] lg:leading-[33px] text-lg text-black">
@@ -271,14 +271,14 @@ const Agency = () => {
 
                     <section className="font-matt flex flex-col md:flex-row items-center justify-between px-4 md:px-2 py-2 lg:min-w-[1280px] mx-auto">
                     <div className="font-matt flex-1 max-w-lg lg:text-left text-center">
-                        <h2 className="font-matt text-2xl md:text-[28px] md:leading-[37px] font-[900] text-black mb-4 uppercase">
+                        <h2 className="font-matt text-2xl md:text-[25px] md:leading-[37px] font-[900] text-black mb-4 uppercase">
                         UI/UX – Benutzerzentrierte Gestaltung für eure Lösung
                         </h2>
                         <p className="font-matt lg:text-[20px] lg:leading-[33px] text-lg text-black">
                         Im nächsten Schritt gestalten wir das Look-and-Feel eurer Lösung. Wir entwickeln Prototypen, optimieren Prozesse und entwerfen ein ansprechendes, intuitives Design. Unser Ziel ist es, dass eure Website, Software oder andere Plattformen nicht nur ästhetisch überzeugen, sondern auch funktional und benutzerfreundlich sind, um den höchsten Ansprüchen gerecht zu werden.                        </p>
                     </div>
 
-                    <div className="font-matt flex-1 mt-8 md:mt-0 flex justify-center">
+                    <div className="font-matt flex-1 mt-8 md:mt-0 flex justify-center lg:ml-[40px]">
                         <img
                         src="/images/yellow 1.png" 
                         alt="Info Section Image"
@@ -297,8 +297,8 @@ const Agency = () => {
                     </div>
                     
                     <div className="font-matt flex-1 max-w-lg lg:text-left text-center">
-                        <h2 className="font-matt text-2xl md:text-[28px] md:leading-[37px] font-[900] text-black mb-4 uppercase">
-                        Technische Implementierung – Von der Idee zur Realität                        </h2>
+                        <h2 className="font-matt text-2xl md:text-[25px] md:leading-[37px] font-[900] text-black mb-4 uppercase">
+                        Technische Implementierung – <br></br> Von der Idee zur Realität                        </h2>
                         <p className="font-matt lg:text-[20px] lg:leading-[33px] text-lg text-black">
                         Hier setzen wir eure Vision in die Tat um. Wir entwickeln leistungsfähige und skalierbare Systeme, die eure Anforderungen perfekt erfüllen. Egal ob Online-Shop, Salesforce-Instanz, Cloud-Infrastruktur oder ERP/CRM-System – wir stellen sicher, dass die technische Umsetzung stabil, effizient, sicher und zukunftssicher ist.                        </p>
                     </div>
@@ -306,18 +306,18 @@ const Agency = () => {
 
                     <section className="font-matt flex flex-col md:flex-row items-center justify-between px-4 md:px-2 py-2 lg:min-w-[1280px] mx-auto">
                     <div className="font-matt flex-1 max-w-lg text-left">
-                        <h2 className="font-matt text-2xl md:text-[28px] md:leading-[37px] font-[900] text-black mb-4 uppercase">
-                        Optimierung, Schulung und Support – Nachhaltige Partnerschaft
+                        <h2 className="font-matt text-2xl md:text-[25px] md:leading-[37px] font-[900] text-black mb-4 uppercase">
+                        Optimierung, Schulung und Support<br></br> – Nachhaltige Partnerschaft
                         </h2>
                         <p className="font-matt text-lg lg:text-[20px] lg:leading-[33px] text-black">
                         Unsere Arbeit endet nicht mit der Implementierung. Wir stehen euch langfristig zur Seite, indem wir die Lösungen kontinuierlich optimieren, Schulungen anbieten und zuverlässigen Support gewährleisten. Unsere Systeme sind darauf ausgelegt, euch auch in Zukunft zu unterstützen – und wenn es Fragen gibt, sind wir immer für euch da. Unser Ziel ist es, euch eine nachhaltige und zukunftsfähige Lösung zu bieten, die langfristig Mehrwert schafft.                        </p>
                     </div>
 
-                    <div className="font-matt flex-1 mt-8 md:mt-0 flex justify-center">
+                    <div className="font-matt flex-1 mt-8 md:mt-0 flex justify-center lg:ml-[40px]">
                         <img
                         src="/images/red 1.png" 
                         alt="Info Section Image"
-                        className="w-full lg:w-[750px] lg:h-[700px]"
+                        className="w-full lg:w-[750px] lg:h-[700px] "
                         />
                     </div>
                     </section>
