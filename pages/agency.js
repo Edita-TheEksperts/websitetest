@@ -37,7 +37,7 @@ const Agency = () => {
 {/* Header Section */}
       <div className="lg:max-w-[1280px] flex justify-center mx-auto text-center ">
         <h1
-          className="font-matt  lg:text-[80px] text-[30px] flex justify-center text-center font-[900] lg:leading-[100px] leding-[30px] tracking-[-2.99px] uppercase text-black lg:mb-[300px] lg:mt-[200px]"
+          className="font-matt  lg:text-[64px] text-[30px] flex justify-center text-center font-[900] lg:leading-[80px] leading-[30px] tracking-[-2.99px] uppercase text-black lg:mb-[300px] lg:mt-[200px]"
           style={{
             textAlign: "center",
             textTransform: "uppercase",
@@ -52,10 +52,10 @@ const Agency = () => {
 
       {/* Description Section */}
       <div className="lg:max-w-[1280px] mx-auto text-center mt-6 text-black lg:mb-[300px]">
-        <p className="font-matt text-lg sm:text-xl leading-relaxed max-w-[900px] mx-auto">
+        <p className="font-matt lg:text-[20px] font-[300] lg:leading-[33px] sm:text-xl leading-relaxed max-w-[900px] mx-auto">
         Hi, wir sind the eksperts – nicht, weil wir alles wissen oder perfekt sind, sondern weil wir jeden Tag daran arbeiten, die besten Lösungen zu finden und uns weiterzuentwickeln. Unser Name steht für den Anspruch, ständig besser zu werden.
         </p>
-        <p className="font-matt text-lg sm:text-xl leading-relaxed max-w-[900px] mx-auto mt-6">
+        <p className="font-matt lg:text-[20px] font-[300] lg:leading-[33px] sm:text-xl leading-relaxed max-w-[900px] mx-auto mt-6">
         Wir stellen Menschen und Prozesse in den Mittelpunkt. Nachdem wir unsere Kunden und ihre Herausforderungen verstanden haben, entwickeln wir innovative Lösungen, die Wachstum und Effizienz fördern. So helfen wir Unternehmen, in einer schnelllebigen digitalen Welt erfolgreich zu sein.
         </p>
       </div>
