@@ -51,7 +51,7 @@ const Agency = () => {
       </div>
 
       {/* Description Section */}
-      <div className="lg:max-w-[1280px] mx-auto text-center mt-6 text-gray-700 lg:mb-[300px]">
+      <div className="lg:max-w-[1280px] mx-auto text-center mt-6 text-black lg:mb-[300px]">
         <p className="font-matt text-lg sm:text-xl leading-relaxed max-w-[900px] mx-auto">
         Hi, wir sind the eksperts – nicht, weil wir alles wissen oder perfekt sind, sondern weil wir jeden Tag daran arbeiten, die besten Lösungen zu finden und uns weiterzuentwickeln. Unser Name steht für den Anspruch, ständig besser zu werden.
         </p>
@@ -86,8 +86,8 @@ const Agency = () => {
                   >
 
                   <h3 className="font-matt text-xl md:text-[28px] md:leading-[20px] font-extrabold uppercase mb-2">{person.name}</h3>
-                    <p className="font-matt text-sm md:text-[18px] md:leading-[20px] font-normal mb-2">{person.title}</p>
-                    <p className="font-matt text-sm md:text-[14px] md:leading-[18px] font-light mb-2">{person.description}</p>
+                    <p className="font-matt text-sm md:text-[19px] md:leading-[20px] font-normal mb-2">{person.title}</p>
+                    <p className="font-matt text-sm md:text-[16px] md:leading-[18px] font-light mb-2">{person.description}</p>
                     <p className="font-matt text-xs md:text-[12px] md:leading-[14px] font-light italic">{person.shortDescription}</p>
                     <div className="lg:mt-6 flex space-x-4">
                     <a href={person.linkedin} className="text-blue-500">
@@ -235,10 +235,10 @@ const Agency = () => {
                           </h2>
               <section className="font-matt flex flex-col md:flex-row items-center justify-between px-4 md:px-2 py-2 lg:min-w-[1280px] mx-auto">
                     <div className="font-matt flex-1 max-w-lg lg:text-left text-center ">
-                        <h2 className="font-matt text-2xl md:text-[28px] md:leading-[37px] font-extrabold text-black mb-4 uppercase">
+                        <h2 className="font-matt text-2xl md:text-[28px] md:leading-[37px] font-[900] text-black mb-4 uppercase">
                         Unsere 4 Säulen – Ein ganzheitlicher Ansatz
                         </h2>
-                        <p className="font-matt lg:text-[20px] lg:leading-[33px] text-lg text-gray-700 ">
+                        <p className="font-matt lg:text-[20px] lg:leading-[33px] text-lg text-black ">
                         Unser Ansatz baut auf vier zentralen Säulen auf, die nahtlose Zusammenarbeit und nachhaltige Ergebnisse sichern. Von der Analyse eurer Anforderungen über die visuelle und technische Umsetzung bis zur langfristigen Partnerschaft entwickeln wir Lösungen, die eure aktuellen und zukünftigen Bedürfnisse erfüllen. Jede Phase ist auf Zusammenarbeit und Qualität ausgerichtet, um echten Mehrwert zu schaffen.        </p>
                     </div>
 
@@ -261,20 +261,20 @@ const Agency = () => {
                     </div>
 
                     <div className="font-matt flex-1 max-w-lg lg:text-left text-center">
-                        <h2 className="font-matt text-2xl md:text-[28px] md:leading-[37px] font-extrabold text-black mb-4 uppercase">
+                        <h2 className="font-matt text-2xl md:text-[28px] md:leading-[37px] font-[900] text-black mb-4 uppercase">
                         Verstehen und Kommunikation – Die Basis für euren Erfolg
                         </h2>
-                        <p className="font-matt lg:text-[20px] lg:leading-[33px] text-lg text-gray-700">
+                        <p className="font-matt lg:text-[20px] lg:leading-[33px] text-lg text-black">
                         Alles beginnt mit einer klaren und offenen Kommunikation. Wir analysieren eure Anforderungen, verstehen eure individuellen Herausforderungen und definieren gemeinsam die Ziele. Durch Consulting, Business-Analyse und strategische Planung legen wir den Grundstein für massgeschneiderte Lösungen, die eure spezifischen Bedürfnisse widerspiegeln.                        </p>
                     </div>
                     </section>
 
                     <section className="font-matt flex flex-col md:flex-row items-center justify-between px-4 md:px-2 py-2 lg:min-w-[1280px] mx-auto">
                     <div className="font-matt flex-1 max-w-lg lg:text-left text-center">
-                        <h2 className="font-matt text-2xl md:text-[28px] md:leading-[37px] font-extrabold text-black mb-4 uppercase">
+                        <h2 className="font-matt text-2xl md:text-[28px] md:leading-[37px] font-[900] text-black mb-4 uppercase">
                         UI/UX – Benutzerzentrierte Gestaltung für eure Lösung
                         </h2>
-                        <p className="font-matt lg:text-[20px] lg:leading-[33px] text-lg text-gray-700">
+                        <p className="font-matt lg:text-[20px] lg:leading-[33px] text-lg text-black">
                         Im nächsten Schritt gestalten wir das Look-and-Feel eurer Lösung. Wir entwickeln Prototypen, optimieren Prozesse und entwerfen ein ansprechendes, intuitives Design. Unser Ziel ist es, dass eure Website, Software oder andere Plattformen nicht nur ästhetisch überzeugen, sondern auch funktional und benutzerfreundlich sind, um den höchsten Ansprüchen gerecht zu werden.                        </p>
                     </div>
 
@@ -297,19 +297,19 @@ const Agency = () => {
                     </div>
                     
                     <div className="font-matt flex-1 max-w-lg lg:text-left text-center">
-                        <h2 className="font-matt text-2xl md:text-[28px] md:leading-[37px] font-extrabold text-black mb-4 uppercase">
+                        <h2 className="font-matt text-2xl md:text-[28px] md:leading-[37px] font-[900] text-black mb-4 uppercase">
                         Technische Implementierung – Von der Idee zur Realität                        </h2>
-                        <p className="font-matt lg:text-[20px] lg:leading-[33px] text-lg text-gray-700">
+                        <p className="font-matt lg:text-[20px] lg:leading-[33px] text-lg text-black">
                         Hier setzen wir eure Vision in die Tat um. Wir entwickeln leistungsfähige und skalierbare Systeme, die eure Anforderungen perfekt erfüllen. Egal ob Online-Shop, Salesforce-Instanz, Cloud-Infrastruktur oder ERP/CRM-System – wir stellen sicher, dass die technische Umsetzung stabil, effizient, sicher und zukunftssicher ist.                        </p>
                     </div>
                     </section>
 
                     <section className="font-matt flex flex-col md:flex-row items-center justify-between px-4 md:px-2 py-2 lg:min-w-[1280px] mx-auto">
                     <div className="font-matt flex-1 max-w-lg text-left">
-                        <h2 className="font-matt text-2xl md:text-[28px] md:leading-[37px] font-extrabold text-black mb-4 uppercase">
+                        <h2 className="font-matt text-2xl md:text-[28px] md:leading-[37px] font-[900] text-black mb-4 uppercase">
                         Optimierung, Schulung und Support – Nachhaltige Partnerschaft
                         </h2>
-                        <p className="font-matt text-lg lg:text-[20px] lg:leading-[33px] text-gray-700">
+                        <p className="font-matt text-lg lg:text-[20px] lg:leading-[33px] text-black">
                         Unsere Arbeit endet nicht mit der Implementierung. Wir stehen euch langfristig zur Seite, indem wir die Lösungen kontinuierlich optimieren, Schulungen anbieten und zuverlässigen Support gewährleisten. Unsere Systeme sind darauf ausgelegt, euch auch in Zukunft zu unterstützen – und wenn es Fragen gibt, sind wir immer für euch da. Unser Ziel ist es, euch eine nachhaltige und zukunftsfähige Lösung zu bieten, die langfristig Mehrwert schafft.                        </p>
                     </div>
 
