@@ -33,7 +33,7 @@ const Agency = () => {
   ];
 
   return (
-<div className="container mx-auto px-2 lg:px-2 lg:py-2 py-10 w-full lg:max-w-[1280px]">
+<div className="container mx-auto px-2 lg:px-0 lg:py-0 py-10 w-full lg:max-w-[1280px]">
 {/* Header Section */}
       <div className="lg:max-w-[1280px] flex justify-center mx-auto text-center ">
         <h1
