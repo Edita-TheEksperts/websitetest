@@ -277,9 +277,9 @@ const Agency = () => {
                     </section>
 
                     <section className="font-matt flex flex-col md:flex-row items-center justify-between px-4 md:px-2 py-2 lg:min-w-[1280px] mx-auto">
-                    <div className="font-matt flex-1 max-w-lg lg:text-left text-center">
+                    <div className="font-matt flex-1 lg:min-w-[570px] max-w-lg lg:text-left text-center">
                         <h2 className="font-matt text-2xl md:text-[25px] md:leading-[37px] font-[900] text-black mb-4 uppercase">
-                        UI/UX – Benutzerzentrierte Gestaltung für eure Lösung
+                        UI/UX – Benutzerzentrierte <br></br> Gestaltung für eure Lösung
                         </h2>
                         <p className="font-matt lg:text-[20px] lg:leading-[33px] text-lg text-black">
                         Im nächsten Schritt gestalten wir das Look-and-Feel eurer Lösung. Wir entwickeln Prototypen, optimieren Prozesse und entwerfen ein ansprechendes, intuitives Design. Unser Ziel ist es, dass eure Website, Software oder andere Plattformen nicht nur ästhetisch überzeugen, sondern auch funktional und benutzerfreundlich sind, um den höchsten Ansprüchen gerecht zu werden.                        </p>
@@ -289,7 +289,7 @@ const Agency = () => {
                         <img
                         src="/images/yellow 1.png" 
                         alt="Info Section Image"
-                        className="w-full lg:w-[750px] lg:h-[700px] "
+                        className="w-full lg:w-[650px] lg:h-[600px] "
                         />
                     </div>
                     </section>
@@ -299,7 +299,7 @@ const Agency = () => {
                         <img
                         src="/images/green 1.png" 
                         alt="Info Section Image"
-                        className="w-full lg:w-[750px] lg:h-[700px] "
+                        className="w-full lg:w-[650px] lg:h-[600px] "
                         />
                     </div>
                     
@@ -324,7 +324,7 @@ const Agency = () => {
                         <img
                         src="/images/red 1.png" 
                         alt="Info Section Image"
-                        className="w-full lg:w-[750px] lg:h-[700px] "
+                        className="w-full lg:w-[650px] lg:h-[600px] "
                         />
                     </div>
                     </section>
