@@ -3,6 +3,7 @@ import Head from 'next/head';
 import Image from "next/image";
 import Link from 'next/link';
 import { useState } from "react";
+import SalesforceTab from "../../components/TabSalesforce"
 
 
 const Salesforce = () => {
@@ -21,35 +22,36 @@ const Salesforce = () => {
       <main className="max-w-[1280px] mx-auto p-4 lg:p-2 text-center">
         
         {/* Main Heading */}
-        <div className="w-full max-w-[1280px] mx-auto text-center my-16 lg:mt-[200px] lg:mb-[200px]">
-          <h1 className="text-6xl lg:text-[174px] lg:leading-[158px] font-matt font-extrabold tracking-tight mb-8">
+        <div className="w-full max-w-[1280px] mx-auto text-center my-16 lg:mt-[300px] lg:mb-[300px]">
+          <h1 className="text-6xl lg:text-[174px] lg:leading-[158px] font-matt font-[900] tracking-tight mb-8">
           SALESFORCE
           </h1>
-          <p className="text-base sm:text-lg lg:text-[22px] lg:leading-[33px] mt-4 text-gray-900">
+          <p className="font-matt font-[300] sm:text-lg lg:text-[22px] lg:leading-[33px] mt-4 text-gray-900">
           Massgeschneiderte Lösungen für Ihren Erfolg 
           </p>
         </div>
-
-          {/* Description */}
-          <div className='lg:mt-[280px] lg:mb-[280px]'>
-            <h2 className='uppercase text-lg font-extrabold lg:text-[28px] lg:leading-[37px] font-matt'>Effizienter arbeiten. Kundenbeziehungen stärken. Wachstum sichern. </h2>
-          <p className="text-lg text-gray-700 mt-10 font-matt">
-          Salesforce ist weit mehr als nur eine CRM-Software – es ist die digitale Grundlage für nachhaltigen Erfolg. Als offizieller Salesforce-Partner mit über 20 Fachzertifizierungen und Erfahrung aus mehr als 30 Projekten unterstützen wir Sie dabei, das volle Potenzial dieser Plattform zu nutzen. Ob Sales Cloud, Service Cloud, Marketing Cloud, Non-Profit Cloud oder maßgeschneiderte Integrationen – wir entwickeln passgenaue Lösungen, die genau auf Ihre Anforderungen abgestimmt sind.           </p>
-          </div>
-
-
-          <section className="max-w-[1280px] container mx-auto p-4 flex flex-col lg:flex-row items-center lg:space-x-4 lg:mb-[200px]">
+          
+          <h2 className='text-xl lg:text-[80px] lg:leading-[80px] font-matt font-[700] lg:mb-[60px]'>
+          Unsere Leistungen
+          </h2>
+          <section className="max-w-[1280px] container mx-auto p-4 flex flex-col lg:flex-row items-center lg:space-x-4 lg:mb-[120px]">
                 {/* Left Section (Text and Image) */}
                 <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-start mb-2 lg:mb-0">
-                  <h2 className="text-4xl lg:-[48px] lg:leading-[50px] font-matt font-bold">Salesforce Beratung</h2>
-                  <p className="text-lg mb-2 text-center lg:text-left lg:text-[17px] lg:leading-[28px] font-normal font-matt">
-                    Erreichen Sie Ihre Geschäftsziel mit unserer professionellen Beratung.
+                  <h2 className="text-4xl lg:-[48px] lg:leading-[50px] font-matt font-[700] mb-2">Salesforce Beratung</h2>
+                  {/* Paragraph for desktop */}
+                  <p className="hidden lg:block text-lg  text-center lg:text-left lg:text-[17px] lg:leading-[30px] font-[300] font-matt mb-2">
+                    Erreichen Sie Ihre Geschäftsziele mit unserer professionellen Beratung. 
+                  </p>
+
+                  {/* Paragraph for mobile */}
+                  <p className="block lg:hidden text-lg  text-center font-[300] font-matt mb-2">
+                  Erreichen Sie Ihre Geschäftsziele mit <br></br> unserer professionellen Beratung. 
                   </p>
                   <Image
-                    src="/images/Rectangle 35.png" // Replace with your actual image
+                    src="/images/theekspertssaleforce1.png" 
                     alt="Salesforce Beratung"
-                    width={800} // Customize according to your needs
-                    height={800} // Customize according to your needs
+                    width={800} 
+                    height={800} 
                     className="w-full mx-auto"
                   />
                 </div>
@@ -57,45 +59,71 @@ const Salesforce = () => {
                 {/* Right Section (Service Boxes) */}
                 <div className="w-full lg:w-1/2">
                   <div className="grid grid-cols-1 lg:grid-cols-1 gap-6">
-                    <div className="bg-white p-6 rounded-[20px] ">
-                      <h3 className="text-2xl lg:text-left mb-4 lg:font-[28px] lg:leading-[37px] font-extrabold ">PROZESSANALYSE:</h3>
-                      <p className="text-lg lg:text-left lg:text-[20px] lg:leading-[22px] font-matt font-light ">Wir analysieren Ihre Geschäftsprozesse und optimieren sie gezielt für den Einsatz von Salesforce. </p>
+                    <div className="bg-white px-4 ">
+                      <h3 className="text-2xl lg:text-left mb-2 lg:font-[28px] lg:leading-[37px] font-[900] ">PROZESSANALYSE:</h3>
+                      <p className="text-lg lg:text-left mb-4 lg:text-[20px] lg:leading-[22px] font-matt font-light ">Wir analysieren Ihre Geschäftsprozesse<br></br> und optimieren sie gezielt für den Einsatz von Salesforce. </p>
                     </div>
-                    <div className="bg-white p-6 rounded-[20px] ">
-                      <h3 className="text-2xl lg:text-left mb-4 lg:font-[28px] lg:leading-[37px] font-extrabold">STRATEGIEENTWICKLUNG:</h3>
-                      <p className="text-lg lg:text-left lg:text-[20px] lg:leading-[22px] font-matt font-light">Wir erstellen eine klare Roadmap für die erfolgreiche Implementierung und nachhaltiges Wachstum. </p>
+                    <div className="bg-white px-4 ">
+                      <h3 className="text-2xl lg:text-left mb-2 lg:font-[28px] lg:leading-[37px] font-[900]">STRATEGIEENTWICKLUNG:</h3>
+                      <p className="text-lg lg:text-left mb-4 lg:text-[20px] lg:leading-[22px] font-matt font-light">Wir erstellen eine klare Roadmap f<br></br>ür die erfolgreiche Implementierung und nachhaltiges Wachstum. </p>
                     </div>
-                    <div className="bg-white p-6 rounded-[20px] ">
-                      <h3 className="text-2xl lg:text-left mb-4 lg:font-[28px] lg:leading-[37px] font-extrabold">CLOUD-EXPERTISE:</h3>
-                      <p className="text-lg lg:text-left lg:text-[20px] lg:leading-[22px] font-matt font-light"> Umfassende Beratung für die Sales Cloud, Service Cloud, Marketing Cloud, Pardot und die Non-Profit Cloud. </p>
+                    <div className="bg-white px-4 ">
+                      <h3 className="text-2xl lg:text-left mb-2 lg:font-[28px] lg:leading-[37px] font-[900]">CLOUD-EXPERTISE:</h3>
+                      <p className="text-lg lg:text-left mb-4 lg:text-[20px] lg:leading-[22px] font-matt font-light"> Umfassende Beratung für die Sales Cloud,<br></br> Service Cloud, Marketing Cloud, Pardot und die Non-Profit Cloud. </p>
                     </div>
                   </div>
 
                   {/* Button Section */}
-                  <div className="mt-6 text-center lg:text-center">
-                    <a
-                      href="/contact"
-                      className="inline-block border-2 border-[#0009FF] bg-white text-[#0009FF] lg:text-[28px] lg:font-extrabold px-12 py-4 rounded-[50px] hover:bg-[#0009FF] hover:text-white"
-                      >
-                      JETZT GESPRÄCH BUCHEN
-                    </a>
+                  <div className="mt-6 ml-4 text-center lg:text-center">
+                  <button className="relative group w-full max-w-[512px] h-[76px] flex items-center justify-center overflow-hidden">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="512"
+                          height="76"
+                          viewBox="0 0 512 76"
+                          fill="none"
+                          className="absolute inset-0"
+                        >
+                          {/* Hover Background confined to the SVG shape */}
+                          <defs>
+                            <clipPath id="clip-path">
+                              <path d="M3 73V30.4204L34.3483 3H509V73H3Z" />
+                            </clipPath>
+                          </defs>
+                          <rect
+                            width="512"
+                            height="76"
+                            className="group-hover:fill-[#0009FF] transition-all duration-300"
+                            clipPath="url(#clip-path)"
+                            fill="transparent"
+                          />
+                          <path
+                            d="M3 73V30.4204L34.3483 3H509V73H3Z"
+                            stroke="#0009FF"
+                            strokeWidth="6"
+                          />
+                        </svg>
+                        <span className="relative text-[#0009FF] group-hover:text-white text-center font-matt text-[28px] font-[900] leading-[37px] uppercase">
+                          Jetzt Gespräch Buchen
+                        </span>
+                      </button>
                   </div>
                 </div>
         </section>
            
 
-              <section className="max-w-[1280px] container mx-auto p-4 flex flex-col lg:flex-row items-center lg:space-x-4 lg:mb-[200px]">
+        <section className="max-w-[1280px] container mx-auto p-4 flex flex-col lg:flex-row items-center lg:space-x-4 lg:mb-[120px]">
                 {/* Left Section (Text and Image) */}
                 <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-start mb-2 lg:mb-0">
-                  <h2 className="text-4xl lg:text-[48px] lg:leading-[50px] lg:text-left font-matt font-bold">Salesforce-Administration</h2>
-                  <p className="text-lg mb-2 text-center lg:text-left lg:text-[17px] lg:leading-[28px] font-normal font-matt">
-                  Wir gewährleisten den reibungslosen Betrieb Ihrer Salesforce-Umgebung:
+                  <h2 className="text-4xl lg:-[48px] lg:leading-[50px] font-matt font-[700]">Salesforce-Administration </h2>
+                  <p className="text-lg mb-2 text-center lg:text-left lg:text-[17px] lg:leading-[30px] font-[300] font-matt">
+                  Wir sorgen dafür, dass Ihre Salesforce-Umgebung reibungslos funktioniert 
                   </p>
                   <Image
-                    src="/images/admin.png" // Replace with your actual image
-                    alt="Salesforce Administration"
-                    width={800} // Customize according to your needs
-                    height={800} // Customize according to your needs
+                    src="/images/Rectangle 35.png" 
+                    alt="Salesforce Beratung"
+                    width={800} 
+                    height={800} 
                     className="w-full mx-auto"
                   />
                 </div>
@@ -103,233 +131,144 @@ const Salesforce = () => {
                 {/* Right Section (Service Boxes) */}
                 <div className="w-full lg:w-1/2">
                   <div className="grid grid-cols-1 lg:grid-cols-1 gap-6">
-                    <div className="bg-white p-6 rounded-[20px] ">
-                      <h3 className="text-2xl lg:text-left mb-4 lg:text-[28px] lg:leading-[37px] font-extrabold">SYSTEMPFLEGE:</h3>
-                      <p className="text-lg lg:text-left lg:text-[20px] lg:leading-[22px] font-matt font-light">
-                      Regelmäßige Updates und umfassende Health Checks für Ihre Salesforce-Instanz. 
-                      </p>
+                    <div className="bg-white px-4 ">
+                      <h3 className="text-2xl lg:text-left mb-2 lg:font-[28px] lg:leading-[37px] font-[900] uppercase ">Systempflege</h3>
+                      <p className="text-lg lg:text-left mb-4 lg:text-[20px] lg:leading-[22px] font-matt font-light ">Regelmässige Updates und Healthchecks<br></br> Ihrer Salesforce-Umgebung.</p>
                     </div>
-                    <div className="bg-white p-6 rounded-[20px] ">
-                      <h3 className="text-2xl lg:text-left mb-4 lg:text-[28px] lg:leading-[37px] font-extrabold">DATENMANAGEMENT:</h3>
-                      <p className="text-lg lg:text-left lg:text-[20px] lg:leading-[22px] font-matt font-light">
-                      Effiziente, sichere und optimierte Verwaltung Ihrer Daten. 
-                      </p>
+                    <div className="bg-white px-4 ">
+                      <h3 className="text-2xl lg:text-left mb-2 lg:font-[28px] lg:leading-[37px] font-[900] uppercase">Datenmanagement</h3>
+                      <p className="text-lg lg:text-left mb-4 lg:text-[20px] lg:leading-[22px] font-matt font-light">Saubere, sichere und optimierte<br></br> Datenverwaltung.</p>
                     </div>
-                    <div className="bg-white p-6 rounded-[20px] ">
-                      <h3 className="text-2xl lg:text-left mb-4 lg:text-[28px] lg:leading-[37px] font-extrabold">BENUTZERAUFSTELLUNG:</h3>
-                      <p className="text-lg lg:text-left lg:text-[20px] lg:leading-[22px] font-matt font-light">
-                      Schulungen und Support, damit Ihr Team Salesforce optimal nutzen kann. 
-                      </p>
+                    <div className="bg-white px-4 ">
+                      <h3 className="text-2xl lg:text-left mb-2 lg:font-[28px] lg:leading-[37px] font-[900] uppercase">Benutzerunterstützung</h3>
+                      <p className="text-lg lg:text-left mb-4 lg:text-[20px] lg:leading-[22px] font-matt font-light">Schulungen und Support, um Ihr Team zu<br></br> befähigen, Salesforce optimal zu nutzen.</p>
                     </div>
                   </div>
 
                   {/* Button Section */}
-                  <div className="mt-10 text-center lg:text-center">
-                    <a
-                      href="/contact"
-                      className="inline-block border-2 border-[#0009FF] bg-white text-[#0009FF] lg:text-[28px] lg:font-extrabold px-12 py-4 rounded-[50px] hover:bg-[#0009FF] hover:text-white"
-                    >
-                      JETZT GESPRÄCH BUCHEN
-                    </a>
+                  <div className="mt-6 ml-4 text-center lg:text-center">
+                  <button className="relative group w-full max-w-[512px] h-[76px] flex items-center justify-center overflow-hidden">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="512"
+                          height="76"
+                          viewBox="0 0 512 76"
+                          fill="none"
+                          className="absolute inset-0"
+                        >
+                          {/* Hover Background confined to the SVG shape */}
+                          <defs>
+                            <clipPath id="clip-path">
+                              <path d="M3 73V30.4204L34.3483 3H509V73H3Z" />
+                            </clipPath>
+                          </defs>
+                          <rect
+                            width="512"
+                            height="76"
+                            className="group-hover:fill-[#0009FF] transition-all duration-300"
+                            clipPath="url(#clip-path)"
+                            fill="transparent"
+                          />
+                          <path
+                            d="M3 73V30.4204L34.3483 3H509V73H3Z"
+                            stroke="#0009FF"
+                            strokeWidth="6"
+                          />
+                        </svg>
+                        <span className="relative text-[#0009FF] group-hover:text-white text-center font-matt text-[28px] font-[900] leading-[37px] uppercase">
+                          Jetzt Gespräch Buchen
+                        </span>
+                      </button>
                   </div>
                 </div>
-              </section>
+        </section>
 
 
-            <section className="max-w-[1280px] container mx-auto p-4 flex flex-col lg:flex-row items-center lg:space-x-4 lg:mb-[200px]">
-              {/* Left Section (Text and Image) */}
-              <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-start mb-2 lg:mb-0">
-                <h2 className="text-4xl lg:text-[48px] lg:leading-[50px] lg:text-left font-matt font-bold">Rundum-Salesforce-Services</h2>
-                <p className="text-lg mb-2 text-center lg:text-left lg:text-[17px] lg:leading-[28px] font-normal font-matt">
-                Für ein nahtloses Erlebnis bieten wir Ihnen umfassende Dienstleistungen: 
-                </p>
-                <Image
-                  src="/images/salesforce-marketing-cloud.png" // Replace with your actual image path
-                  alt="Salesforce Marketing Cloud"
-                  width={800} // Customize according to your needs
-                  height={800} // Customize according to your needs
-                  className="w-full mx-auto"
-                />
-              </div>
-
-              {/* Right Section (Service Boxes) */}
-              <div className="w-full lg:w-1/2">
-                <div className="grid grid-cols-1 lg:grid-cols-1 gap-6">
-                  <div className="bg-white p-6 rounded-[20px]">
-                    <h3 className="text-2xl lg:text-left mb-4 lg:text-[28px] lg:leading-[37px] font-extrabold">IMPLEMENTIERUNG:</h3>
-                    <p className="text-lg lg:text-left lg:text-[20px] lg:leading-[22px] font-matt font-light">
-                    Maßgeschneiderte Lösungen, die exakt auf Ihre Anforderungen abgestimmt sind. 
-                    </p>
-                  </div>
-                  <div className="bg-white p-6 rounded-[20px] ">
-                    <h3 className="text-2xl lg:text-left mb-4 lg:text-[28px] lg:leading-[37px] font-extrabold">ANPASSUNG:</h3>
-                    <p className="text-lg lg:text-left lg:text-[20px] lg:leading-[22px] font-matt font-light">
-                    Standard- und benutzerdefinierte Konfigurationen zur Maximierung Ihrer Effizienz
-                    </p>
-                  </div>
-                  <div className="bg-white p-6 rounded-[20px] ">
-                    <h3 className="text-2xl lg:text-left mb-4 lg:text-[28px] lg:leading-[37px] font-extrabold">INTEGRATION:</h3>
-                    <p className="text-lg lg:text-left lg:text-[20px] lg:leading-[22px] font-matt font-light">
-                    Nahtlose Einbindung von Salesforce in Ihre bestehenden Systeme. 
-                    </p>
-                  </div>
+        <section className="max-w-[1280px] container mx-auto p-4 flex flex-col lg:flex-row items-center lg:space-x-4 lg:mb-[300px]">
+                {/* Left Section (Text and Image) */}
+                <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-start mb-2 lg:mb-0">
+                  <h2 className="text-4xl lg:-[48px] lg:leading-[50px] font-matt font-[700]">Rundum-Salesforce-Services</h2>
+                  <p className="text-lg mb-2 text-center lg:text-left lg:text-[17px] lg:leading-[30px] font-[300] font-matt">
+                  Für ein nahtloses Erlebnis bieten wir umfassende Services
+                  </p>
+                  <Image
+                    src="/images/Rectangle 35 (1).png" 
+                    alt="Salesforce Beratung"
+                    width={800} 
+                    height={800} 
+                    className="w-full mx-auto"
+                  />
                 </div>
 
-                {/* Button Section */}
-                <div className="mt-6 text-center lg:text-center">
-                  <a
-                    href="/contact"
-                    className="inline-block border-2 border-[#0009FF] bg-white text-[#0009FF] lg:text-[28px] lg:font-extrabold px-12 py-4 rounded-[50px] hover:bg-[#0009FF] hover:text-white"
-                  >
-                    JETZT GESPRÄCH BUCHEN
-                  </a>
+                {/* Right Section (Service Boxes) */}
+                <div className="w-full lg:w-1/2">
+                  <div className="grid grid-cols-1 lg:grid-cols-1 gap-6">
+                    <div className="bg-white px-4 ">
+                      <h3 className="text-2xl lg:text-left mb-2 lg:font-[28px] lg:leading-[37px] font-[900] uppercase ">Implementierung</h3>
+                      <p className="text-lg lg:text-left mb-4 lg:text-[20px] lg:leading-[22px] font-matt font-light ">Individuelle Lösungen, perfekt<br></br> abgestimmt auf Ihre Anforderungen.</p>
+                    </div>
+                    <div className="bg-white px-4 ">
+                      <h3 className="text-2xl lg:text-left mb-2 lg:font-[28px] lg:leading-[37px] font-[900] uppercase">Anpassung</h3>
+                      <p className="text-lg lg:text-left mb-4 lg:text-[20px] lg:leading-[22px] font-matt font-light">Standard und Custom Konfigurationen<br></br> zur Steigerung der Effizienz.</p>
+                    </div>
+                    <div className="bg-white px-4 ">
+                      <h3 className="text-2xl lg:text-left mb-2 lg:font-[28px] lg:leading-[37px] font-[900] uppercase">Integration</h3>
+                      <p className="text-lg lg:text-left mb-4 lg:text-[20px] lg:leading-[22px] font-matt font-light">Nahtlose Integration von Salesforce in<br></br> Ihre bestehenden Systeme.</p>
+                    </div>
+                  </div>
+
+                  {/* Button Section */}
+                  <div className="mt-6 ml-4 text-center lg:text-center">
+                  <button className="relative group w-full max-w-[512px] h-[76px] flex items-center justify-center overflow-hidden">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="512"
+                          height="76"
+                          viewBox="0 0 512 76"
+                          fill="none"
+                          className="absolute inset-0"
+                        >
+                          {/* Hover Background confined to the SVG shape */}
+                          <defs>
+                            <clipPath id="clip-path">
+                              <path d="M3 73V30.4204L34.3483 3H509V73H3Z" />
+                            </clipPath>
+                          </defs>
+                          <rect
+                            width="512"
+                            height="76"
+                            className="group-hover:fill-[#0009FF] transition-all duration-300"
+                            clipPath="url(#clip-path)"
+                            fill="transparent"
+                          />
+                          <path
+                            d="M3 73V30.4204L34.3483 3H509V73H3Z"
+                            stroke="#0009FF"
+                            strokeWidth="6"
+                          />
+                        </svg>
+                        <span className="relative text-[#0009FF] group-hover:text-white text-center font-matt text-[28px] font-[900] leading-[37px] uppercase">
+                          Jetzt Gespräch Buchen
+                        </span>
+                      </button>
+                  </div>
                 </div>
-              </div>
+        </section>
+
+            <section className='lg:mb-[300px]'>
+              <h2 className='text-xl lg:text-[80px] lg:leading-[80px] font-matt font-[700]'>
+              Warum the eksperts für Salesforce?
+              </h2>
+              <SalesforceTab/>
             </section>
-
-            <section className="bg-[#0009FF] text-white py-4 px-4 lg:px-2 lg:mb-[200px] mx-auto max-w-full lg:max-w-[1280px] rounded-[20px]">
-            <div className="container mx-auto text-center">
-        <h2 className="font-matt text-xl lg:text-[80px] lg:leading-[80px] font-bold mb-16 mt-6">
-          Warum the eksperts für Salesforce?
-        </h2>
-        <div className="flex flex-col lg:flex-row justify-center space-y-6 lg:space-y-0 lg:space-x-10 mb-10">
-          {/* Left Section */}
-          <div className="w-full lg:w-1/3 mb-8 lg:mb-0">
-            <img
-              src="/images/Frame 175.png" 
-              alt="Salesforce Partner"
-              className="mx-auto w-2/3 lg:w-[360px] lg:h-[510px] lg:mx-[40px]"
-            />
-          </div>
-
-          {/* Right Section - FAQ */}
-          <div className="w-full lg:w-2/3 lg:mx-[30px]">
-            <div className="space-y-6">
-              {/* FAQ Item 1 */}
-              <div>
-                <button
-                  onClick={() => handleToggle(0)}
-                  className="w-full lg:w-[780px] flex justify-between items-center lg:text-[28px] lg:leading-[37px] font-extrabold bg-white text-black p-8 lg:mr-[30px] rounded-[20px]  text-xl"
-                >
-                  OFFIZIELLER SALESFORCE-PARTNER:
-                  <span className="text-2xl">
-                  {activeIndex === 0 ? (
-                    <svg width="63" height="64" viewBox="0 0 63 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      {/* Active SVG */}
-                      <rect y="0.5" width="63" height="63" rx="25.5" fill="blue"/>
-                      <path d="M31.4493 42.8027L28.0762 39.4297L31.4493 36.0566L34.8224 39.4297L31.4493 42.8027Z" fill="white" stroke="white"/>
-                      <path d="M24.1309 28.8066L30.1223 34.798L28.7768 36.1435C27.6581 37.2621 25.8427 37.2645 24.7217 36.1435L20.7579 32.1797L24.1309 28.8066Z" fill="white" stroke="white"/>
-                      <path d="M38.8606 28.6493L42.2336 32.0223L38.1334 36.1225C37.0892 37.1668 35.3953 37.1668 34.3511 36.1226L32.8692 34.6406L38.8606 28.6493Z" fill="white" stroke="white"/>
-                      {/* Add other paths for the active state here */}
-                    </svg>
-                  ) : (
-                    <svg width="63" height="64" viewBox="0 0 63 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      {/* Inactive SVG */}
-                      <rect y="0.5" width="63" height="63" rx="25.5" fill="#BBBFBB"/>
-                      <path d="M31.4493 42.8027L28.0762 39.4297L31.4493 36.0566L34.8224 39.4297L31.4493 42.8027Z" fill="white" stroke="white"/>
-                      <path d="M24.1309 28.8066L30.1223 34.798L28.7768 36.1435C27.6581 37.2621 25.8427 37.2645 24.7217 36.1435L20.7579 32.1797L24.1309 28.8066Z" fill="white" stroke="white"/>
-                      <path d="M38.8606 28.6493L42.2336 32.0223L38.1334 36.1225C37.0892 37.1668 35.3953 37.1668 34.3511 36.1226L32.8692 34.6406L38.8606 28.6493Z" fill="white" stroke="white"/>
-                      {/* Add other paths for the inactive state here */}
-                    </svg>
-                  )}
-                </span>
-                </button>
-                {activeIndex === 0 && (
-                  <div className="p-4 bg-white text-gray-600 font-matt items-start text-start flex mt-[-15px] rounded-b-[20px] w-full lg:w-[780px]">
-                    <p className='ml-[15px] lg:text-[22px] lg:leading-[30px]'>
-                    Durch unsere enge Zusammenarbeit mit Salesforce liefern wir maßgeschneiderte Lösungen, die Ihren Erfolg fördern. 
-                    </p>
-                  </div>
-                )}
-              </div>
-
-              {/* FAQ Item 2 */}
-              <div>
-                <button
-                  onClick={() => handleToggle(1)}
-                  className="w-full lg:w-[780px] flex justify-between items-center lg:text-[28px] lg:leading-[37px] font-extrabold bg-white text-black p-8 lg:mr-[30px] rounded-[20px]  text-xl"
-                >
-                  ERFAHRUNG UND EXPERTISE
-                  <span className="text-2xl">
-                  {activeIndex === 1 ? (
-                    <svg width="63" height="64" viewBox="0 0 63 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      {/* Active SVG */}
-                      <rect y="0.5" width="63" height="63" rx="25.5" fill="blue"/>
-                      <path d="M31.4493 42.8027L28.0762 39.4297L31.4493 36.0566L34.8224 39.4297L31.4493 42.8027Z" fill="white" stroke="white"/>
-                      <path d="M24.1309 28.8066L30.1223 34.798L28.7768 36.1435C27.6581 37.2621 25.8427 37.2645 24.7217 36.1435L20.7579 32.1797L24.1309 28.8066Z" fill="white" stroke="white"/>
-                      <path d="M38.8606 28.6493L42.2336 32.0223L38.1334 36.1225C37.0892 37.1668 35.3953 37.1668 34.3511 36.1226L32.8692 34.6406L38.8606 28.6493Z" fill="white" stroke="white"/>
-                      {/* Add other paths for the active state here */}
-                    </svg>
-                  ) : (
-                    <svg width="63" height="64" viewBox="0 0 63 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      {/* Inactive SVG */}
-                      <rect y="0.5" width="63" height="63" rx="25.5" fill="#BBBFBB"/>
-                      <path d="M31.4493 42.8027L28.0762 39.4297L31.4493 36.0566L34.8224 39.4297L31.4493 42.8027Z" fill="white" stroke="white"/>
-                      <path d="M24.1309 28.8066L30.1223 34.798L28.7768 36.1435C27.6581 37.2621 25.8427 37.2645 24.7217 36.1435L20.7579 32.1797L24.1309 28.8066Z" fill="white" stroke="white"/>
-                      <path d="M38.8606 28.6493L42.2336 32.0223L38.1334 36.1225C37.0892 37.1668 35.3953 37.1668 34.3511 36.1226L32.8692 34.6406L38.8606 28.6493Z" fill="white" stroke="white"/>
-                      {/* Add other paths for the inactive state here */}
-                    </svg>
-                  )}
-                </span>
-                </button>
-                {activeIndex === 1 && (
-               <div className="p-4 bg-white text-gray-600 font-matt items-start text-start flex mt-[-15px] rounded-b-[20px] w-full lg:w-[780px]">
-                    <p className='ml-[15px] lg:text-[22px] lg:leading-[30px]'>
-                    Mit über 20 Fachzertifizierungen und mehr als 30 erfolgreich abgeschlossenen Projekten sind wir Ihr verlässlicher Partner. 
-                    </p>
-                  </div>
-                )}
-              </div>
-
-              {/* FAQ Item 3 */}
-              <div>
-                <button
-                  onClick={() => handleToggle(2)}
-                  className="w-full lg:w-[780px] flex justify-between items-center lg:text-[28px] lg:leading-[37px] font-extrabold bg-white text-black p-8 lg:mr-[30px] rounded-[20px]  text-xl"
-                >
-                  UMFASSENDES KNOW-HOW
-                  <span className="text-2xl">
-                  {activeIndex === 2 ? (
-                    <svg width="63" height="64" viewBox="0 0 63 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      {/* Active SVG */}
-                      <rect y="0.5" width="63" height="63" rx="25.5" fill="blue"/>
-                      <path d="M31.4493 42.8027L28.0762 39.4297L31.4493 36.0566L34.8224 39.4297L31.4493 42.8027Z" fill="white" stroke="white"/>
-                      <path d="M24.1309 28.8066L30.1223 34.798L28.7768 36.1435C27.6581 37.2621 25.8427 37.2645 24.7217 36.1435L20.7579 32.1797L24.1309 28.8066Z" fill="white" stroke="white"/>
-                      <path d="M38.8606 28.6493L42.2336 32.0223L38.1334 36.1225C37.0892 37.1668 35.3953 37.1668 34.3511 36.1226L32.8692 34.6406L38.8606 28.6493Z" fill="white" stroke="white"/>
-                      {/* Add other paths for the active state here */}
-                    </svg>
-                  ) : (
-                    <svg width="63" height="64" viewBox="0 0 63 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      {/* Inactive SVG */}
-                      <rect y="0.5" width="63" height="63" rx="25.5" fill="#BBBFBB"/>
-                      <path d="M31.4493 42.8027L28.0762 39.4297L31.4493 36.0566L34.8224 39.4297L31.4493 42.8027Z" fill="white" stroke="white"/>
-                      <path d="M24.1309 28.8066L30.1223 34.798L28.7768 36.1435C27.6581 37.2621 25.8427 37.2645 24.7217 36.1435L20.7579 32.1797L24.1309 28.8066Z" fill="white" stroke="white"/>
-                      <path d="M38.8606 28.6493L42.2336 32.0223L38.1334 36.1225C37.0892 37.1668 35.3953 37.1668 34.3511 36.1226L32.8692 34.6406L38.8606 28.6493Z" fill="white" stroke="white"/>
-                      {/* Add other paths for the inactive state here */}
-                    </svg>
-                  )}
-                </span>
-                </button>
-                {activeIndex === 2 && (
-                  <div className="p-4 bg-white text-gray-600 font-matt items-start text-start flex mt-[-15px] rounded-b-[20px] w-full lg:w-[780px]">
-                    <p className='ml-[15px] lg:text-[22px] lg:leading-[30px]'>
-                    Expertenwissen in der Sales Cloud, Service Cloud, Marketing Cloud, Pardot, Non-Profit Cloud sowie in verschiedenen Integrationen. 
-                    </p>
-                  </div>
-                )}
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
            
             <section className="container mx-auto py-12 px-6 text-center lg:mb-[200px]">
-              <h2 className="text-xl font-bold lg:text-[80px] lg:leading-[80px] font-matt text-black mb-6">
-                Bereit, Salesforce zu Ihrem Erfolgfaktor zu machen?
+              <h2 className="text-xl font-[700] lg:text-[80px] lg:leading-[80px] font-matt text-black mb-6">
+              Bereit, Salesforce zu Ihrem Erfolgsfaktor zu machen?
               </h2>
-              <p className="text-lg lg:text-[20px] lg:leading-10 font-matt font-normal mb-8 lg:px-24">
-              Wir begleiten Sie von der Planung bis zur Umsetzung – und darüber hinaus. Kontaktieren Sie uns noch heute und starten Sie Ihre Salesforce-Reise mit einem starken Partner an Ihrer Seite. 
+              <p className="text-lg lg:text-[20px] lg:leading-[33px] font-matt font-[300] mb-8 lg:px-24">
+              Wir begleiten Sie von der Planung bis zur Umsetzung – und darüber hinaus.<br>
+              </br> Kontaktieren Sie uns noch heute und starten Sie Ihre Salesforce-Reise mit <br></br> einem starken Partner an Ihrer Seite. 
               </p>
               <div className="mt-8 items-center justify-center flex lg:mt-[50px]">
               <button className="font-matt flex items-center justify-center px-1 py-1 bg-transparent border-2 border-[#0009FF] text-[#0009FF] rounded-[10px] font-medium text-[20px] transition duration-300 hover:bg-[#0009FF] hover:text-white">
@@ -384,8 +323,8 @@ const Salesforce = () => {
 
 
             <section className="container mx-auto py-6 text-center lg:mb-[200px]">
-                <h2 className="text-4xl font-extrabold lg:text-[28px] lg:leading-[37px] font-matt text-black mb-16 uppercase ">
-                  Interested in Other Services?
+                <h2 className="text-4xl font-[900] lg:text-[28px] lg:leading-[37px] font-matt text-black mb-16 uppercase ">
+                Weitere Services?
                 </h2>
                 
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -397,7 +336,7 @@ const Salesforce = () => {
                       className="w-full h-auto mb-6"
                     />
                     <div>
-                    <h3 className="text-xl font-extrabold text-black mb-2 lg:text-[28px] lg:leading-[37px] ">GRAPHIC DESIGN</h3>
+                    <h3 className="text-xl font-matt font-[900] text-black mb-2 lg:text-[28px] lg:leading-[37px] ">GRAPHIC DESIGN</h3>
 
                     </div>
                   </div>
@@ -410,7 +349,7 @@ const Salesforce = () => {
                       className="w-full h-auto mb-6"
                     />
                     <div>
-                    <h3 className="text-xl font-extrabold text-black mb-2 lg:text-[28px] lg:leading-[37px]">WEBSITE</h3>
+                    <h3 className="text-xl font-matt font-[900] text-black mb-2 lg:text-[28px] lg:leading-[37px]">WEBSITE</h3>
 
                     </div>
                   </div>
@@ -423,7 +362,7 @@ const Salesforce = () => {
                       className="w-full h-auto mb-6"
                     />
                     <div>
-                    <h3 className="text-xl font-extrabold text-black mb-2 lg:text-[28px] lg:leading-[37px]">CUSTOM DEVELOPMENT</h3>
+                    <h3 className="text-xl font-matt font-[900] text-black mb-2 lg:text-[28px] lg:leading-[37px]">CUSTOM DEVELOPMENT</h3>
 
                       </div>
                   </div>
