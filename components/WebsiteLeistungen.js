@@ -34,7 +34,7 @@ export default function FeatureSection() {
         {features.map((feature) => (
           <div
             key={feature.id}
-            className="flex items-center p-6 rounded-lg"
+            className="flex flex-col lg:flex-row items-center p-2 rounded-lg"
           >
             {/* Image Section */}
             <div className="flex-shrink-0 ">
