@@ -16,14 +16,14 @@ export default function SalesforceSection() {
       title: "Erfahrung und Expertise",
       description:
         "Unsere Expertise garantiert Ihnen die besten Ergebnisse durch präzise und individuelle Anpassungen.",
-      image: "/experience-expertise.png", // Replace with your image path
+      image: "/experience-expertise.png", 
     },
     {
       id: 3,
       title: "Umfassendes Know-How",
       description:
         "Als offizieller Partner bieten wir die modernsten Technologien für Ihre Anforderungen.",
-      image: "/comprehensive-knowhow.png", // Replace with your image path
+      image: "/comprehensive-knowhow.png", 
     },
   ];
 
@@ -37,7 +37,7 @@ export default function SalesforceSection() {
             onClick={() => setActive(tab.id)}
             className={`flex items-center px-4 py-3 lg:px-6 lg:py-4 transition-all duration-300 font-matt uppercase text-sm md:text-lg lg:text-[28px] font-[900] lg:leading-[37px] rounded-t-[20px] ${
               active === tab.id
-                ? "bg-white text-black"
+                ? "bg-[#F1F1F1] text-black"
                 : active === tab.id + 1 || active === tab.id - 1
                 ? "bg-[#D9D9D9] text-[#5A585A]"
                 : "bg-[#989898] text-[#5A585A]"
