@@ -74,7 +74,7 @@ const Header = () => {
                 </li>
                 <li className="group">
                   <Link
-                    href="/services/costomdevelopment"
+                    href="/services/customdevelopment"
                     className="block px-4 py-3 text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-colors duration-200"
                   >
                     Custom Development
