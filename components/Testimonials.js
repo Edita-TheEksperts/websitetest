@@ -100,7 +100,7 @@ export default function Testimonials() {
           {testimonials.map((testimonial, index) => (
             <SwiperSlide key={index}>
               <div className="bg-white p-4 lg:p-2  text-center lg:text-left">
-              <div className="flex items-center lg:justify-start">
+              <div className="flex items-center justify-center lg:justify-start">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="72"
