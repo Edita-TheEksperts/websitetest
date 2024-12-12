@@ -93,7 +93,7 @@ const SVGAnimation = () => {
         <div className="relative z-20 mt-4 lg:absolute lg:top-1/2 lg:right-[0.5%] md:transform md:-translate-y-1/2">
           <button
             onClick={() => setIsModalOpen(true)}
-            className="font-matt gradient-hover lg:w-[269px] lg:h-[80px] sm:px-10 sm:py-5 text-2xl lg:text-[60px] font-[400] text-white bg-black rounded-full"
+            className="font-matt gradient-hover lg:w-[269px] lg:h-[80px] px-8 py-4 text-3xl lg:text-[60px] font-[400] text-white bg-black rounded-full"
           >
            Button
           </button>
