@@ -116,7 +116,7 @@ const Agency = () => {
                 </h2>
 
                 {/* Values List */}
-                <div className="flex flex-col items-center space-y-10 ">
+                <div className="flex flex-col items-center space-y-10 px-2 mb-10 lg:mb-0">
                   {/* Love */}
                   <div className="flex items-start space-x-6 max-w-[800px] mb-2 lg:ml-[65px]">
                     {/* Icon */}
@@ -129,7 +129,7 @@ const Agency = () => {
                     </div>
                     {/* Text */}
                     <div className="text-left">
-                      <h3 className="text-2xl leading-10 font-[900] text-[#E24125] uppercase md:leading-[37px] md:text-[28px] mb-2">
+                      <h3 className="text-2xl leading-10 font-[900] text-[#E24125] uppercase md:leading-[37px] md:text-[28px] mb-2 ">
                         ● LIEBE :
                       </h3>
                       <p className="text-[#5A585A] text-2xl max-w-[599px] lg:mr-8 font-[400] md:leading-[37px] md:text-[24px] uppercase">
@@ -237,7 +237,7 @@ const Agency = () => {
               </section>
 
  
-              <h2 className="lg:pt-[300px] font-matt flex items-center justify-center text-xl lg:text-[80px] lg:leading-[80px] font-[700] text-black mb-2">
+              <h2 className="lg:pt-[300px] font-matt flex items-center justify-center text-3xl lg:text-[80px] lg:leading-[80px] font-[700] text-black mb-2">
               Unsere 4 Säulen
                           </h2>
               <section className="font-matt flex flex-col md:flex-row items-center justify-between px-4 md:px-2 py-2 lg:min-w-[1280px] mx-auto">
