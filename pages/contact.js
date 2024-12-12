@@ -42,9 +42,7 @@ export default function Contact() {
         
           const newErrors = {
             topic: formData.topics.length === 0 ? "Bitte wählen Sie mindestens ein Thema aus." : "",
-            datenschutz: !formData.datenschutz
-              ? "Bitte stimmen Sie der Verarbeitung Ihrer Daten zu."
-              : "",
+            datenschutz: !formData.datenschutz ? "Bitte stimmen Sie der Verarbeitung Ihrer Daten zu." : "",
           };
         
           setErrors(newErrors);
@@ -52,33 +50,39 @@ export default function Contact() {
           if (newErrors.topic || newErrors.datenschutz) return;
         
           try {
-            await emailjs.send(
-              "service_rnxvz7es", // Replace with your EmailJS Service ID
-              "template_q8wvlxn", // Replace with your EmailJS Template ID
-              {
+            const response = await fetch("/api/contact", {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify({
                 firstName: formData.firstName,
                 lastName: formData.lastName,
                 email: formData.email,
                 message: formData.message,
-                topics: formData.topics.join(", "),
-              },
-              "RnxvZ7esPh9kJPP7C" // Replace with your Public Key
-            );
-        
-            alert("Vielen Dank! Ihre Nachricht wurde gesendet.");
-            setFormData({
-              firstName: "",
-              lastName: "",
-              email: "",
-              message: "",
-              topics: [],
-              datenschutz: false,
+                topics: formData.topics,
+              }),
             });
+        
+            if (response.ok) {
+              alert("Vielen Dank! Ihre Nachricht wurde gesendet.");
+              setFormData({
+                firstName: "",
+                lastName: "",
+                email: "",
+                message: "",
+                topics: [],
+                datenschutz: false,
+              });
+            } else {
+              throw new Error("Es gab ein Problem beim Senden Ihrer Nachricht.");
+            }
           } catch (error) {
-            console.error("Error sending email:", error);
+            console.error("Error:", error);
             alert("Es gab ein Problem beim Senden Ihrer Nachricht. Bitte versuchen Sie es erneut.");
           }
         };
+        
         const faqs = [
           {
             question: 'Warum sollte ich mich für the eksperts entscheiden und nicht für andere Anbieter?',
