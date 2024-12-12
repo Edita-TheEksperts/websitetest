@@ -45,36 +45,41 @@ const features = [
 export default function FeaturesSection() {
   return (
     <div
-    className="bg-gray-100 p-4 rounded-lg mx-auto flex justify-center items-start gap-[36px]"
-    style={{ width: "1276px" }}
+    className="bg-gray-100 p-4 rounded-lg mx-auto flex flex-col lg:flex-row justify-center items-start gap-6 lg:gap-[36px]"
+    style={{ maxWidth: "1276px" }} // Use max-width for better responsiveness
   >
     {/* Left Image Section */}
-    <div className="w-1/2">
+    <div className="w-full lg:w-1/2">
       <img
         src="/images/Frame 175 (1).png"
         alt="Idealen Partner"
-        className="w-full lg:h-[530px] object-cover rounded-[20px]"
+        className="w-full h-auto lg:h-[560px] object-cover rounded-[20px]"
       />
     </div>
   
     {/* Right Features Section */}
-    <div className="w-1/2 flex flex-col gap-6">
+    <div className="w-full lg:w-1/2 flex flex-col gap-6">
       {features.map((feature) => (
         <div
           key={feature.id}
-          className="flex items-center gap-4 bg-[#0009FF] text-white p-6 rounded-[20px]"
+          className="flex items-center gap-4 bg-[#0009FF] text-white p-6 rounded-[20px] flex-col sm:flex-row"
         >
-          <div className="text-left">
-            <h3 className="text-lg font-[900] lg:text-[28px] lg:leading-[37px] font-matt uppercase mb-2">{feature.title}</h3>
-            <p className="text-sm font-[300] lg:text-[20px] lg:leading-[33px] font-matt leading-relaxed">{feature.description}</p>
+          <div className="text-left w-full sm:w-auto">
+            <h3 className="text-lg font-[900] lg:text-[28px] lg:leading-[37px] font-matt uppercase mb-2">
+              {feature.title}
+            </h3>
+            <p className="text-sm font-[300] lg:text-[20px] lg:leading-[33px] font-matt leading-relaxed">
+              {feature.description}
+            </p>
           </div>
-          <div className="flex-shrink-0 w-12 h-12 flex items-center justify-center rounded-full bg-[#0A0E80]">
+          <div className="flex-shrink-0 w-12 h-12 flex items-center justify-center rounded-full bg-[#0A0E80] mt-4 sm:mt-0">
             {feature.icon}
           </div>
         </div>
       ))}
     </div>
   </div>
+  
   
   );
 }
