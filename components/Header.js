@@ -66,7 +66,7 @@ const Header = () => {
                 </li>
                 <li className="group">
                   <Link
-                    href="/services/website-development"
+                    href="/services/website"
                     className="block px-4 py-3 text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-colors duration-200"
                   >
                     Website Development
@@ -74,7 +74,7 @@ const Header = () => {
                 </li>
                 <li className="group">
                   <Link
-                    href="/services/custom-development"
+                    href="/services/costomdevelopment"
                     className="block px-4 py-3 text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-colors duration-200"
                   >
                     Custom Development
@@ -82,7 +82,7 @@ const Header = () => {
                 </li>
                 <li className="group">
                   <Link
-                    href="/services/book-your-expert"
+                    href="/services/bookyourexpert"
                     className="block px-4 py-3 text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-colors duration-200"
                   >
                     Book Your Expert
@@ -90,7 +90,7 @@ const Header = () => {
                 </li>
                 <li className="group">
                   <Link
-                    href="/services/graphic-design"
+                    href="/services/graphicdesign"
                     className="block px-4 py-3 text-gray-700 hover:text-blue-600 hover:bg-gray-50 rounded-b-lg transition-colors duration-200"
                   >
                     Graphic Design
@@ -103,7 +103,7 @@ const Header = () => {
           <span className="text-gray-300">|</span>
           <Link href="/agency" className="text-gray-700">Agentur</Link>
           <span className="text-gray-300">|</span>
-          <Link href="/work" className="text-gray-700">Projekte</Link>
+          <Link href="/animation" className="text-gray-700">Projekte</Link>
           <span className="text-gray-300">|</span>
           <Link href="/contact" className="text-gray-700">Kontakt</Link>
         </nav>
