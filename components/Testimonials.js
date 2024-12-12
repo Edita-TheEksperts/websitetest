@@ -1,4 +1,3 @@
-// pages/testimonials.js
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -74,8 +73,7 @@ export default function Testimonials() {
   return (
 <div className="py-12 px-4 lg:px-0 lg:mb-[50px] lg:mt-[300px] max-w-[1280px] w-full mx-auto">
 <div className="max-w-7xl mx-auto text-center">
-      <h2 className="font-matt text-center text-3xl lg:text-[80px] lg:leading-[80px] font-bold mb-12">Kein Eigenlob – sondern ehrliches Feedback</h2>
-
+      <h2 className="font-matt text-center text-3xl lg:text-[80px] lg:leading-[80px] font-[700] mb-14">Kein Eigenlob – sondern ehrliches Feedback</h2>
       </div>
 
       <div className="relative lg:max-w-6xl mx-auto">
@@ -99,30 +97,33 @@ export default function Testimonials() {
         >
           {testimonials.map((testimonial, index) => (
             <SwiperSlide key={index}>
-              <div className="bg-white p-4 lg:p-2 text-center lg:text-left">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="72"
-                  height="72"
-                  viewBox="0 0 72 72"
-                  fill="none"
-                  className="mx-auto mt-10"
-                >
-                  <path
-                    d="M37.876 0L28.532 42.24H0.5L16.372 0H37.876ZM70.388 0L61.044 42.24H33.012L48.884 0H70.388Z"
-                    fill="#0009FF"
-                  />
-                </svg>
+              <div className="bg-white p-4 lg:p-2  text-center lg:text-left">
+              <div className="flex items-center lg:justify-start">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="72"
+                        height="72"
+                        viewBox="0 0 72 72"
+                        fill="none"
+                        className="mt-14"
+                      >
+                        <path
+                          d="M37.876 0L28.532 42.24H0.5L16.372 0H37.876ZM70.388 0L61.044 42.24H33.012L48.884 0H70.388Z"
+                          fill="#0009FF"
+                        />
+                      </svg>
+                    </div>
+
                 <div className="w-full max-w-screen-md mx-auto">
-  <p className="text-gray-700 text-base md:text-lg lg:text-xl font-matt mt-10 leading-relaxed break-words">
-    {testimonial.quote}
-  </p>
-</div>
+                <p className="text-black font-[300] md:text-lg lg:text-[16px] font-matt mt-2 leading-[22px] break-words">
+                  {testimonial.quote}
+                </p>
+              </div>
 
                 <div className="mt-6">
-                <h3 className="font-extrabold text-xl lg:text-[25px] lg:leading-[32px] font-matt text-black uppercase">{testimonial.name}</h3>
-                <p className="text-sm text-black lg:text-[18px] lg:leading-[24px] font-matt">{testimonial.title}</p>
-                <p className="text-sm text-black lg:text-[18px] lg:leading-[24px] font-matt">{testimonial.company}</p>
+                <h3 className="font-[900] text-xl lg:text-[28px] lg:leading-[37px] font-matt text-black uppercase">{testimonial.name}</h3>
+                <p className="font-[400] text-sm text-black lg:text-[20px] lg:leading-[23px] font-matt">{testimonial.title}</p>
+                <p className="font-[400] text-sm text-black lg:text-[20px] lg:leading-[23px] font-matt">{testimonial.company}</p>
                 </div>
               </div>
             </SwiperSlide>

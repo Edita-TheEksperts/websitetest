@@ -160,19 +160,21 @@ body {
   z-index: 10; 
 }
 
-.swiper-pagination-bullet {
-  background-color: #0009ff; 
-  opacity: 0.5; 
-  width: 20px;
-  height: 20px;
-  margin: 0 5px; 
-  transition: background-color 0.3s, transform 0.3s; 
+.swiper-pagination .swiper-pagination-bullet {
+  width: 22px;
+  height: 23px;
+  display: inline-block;
+  border-radius: 50%;
+  background: #D9D9D9;
+  opacity: 0.5;
+  margin: 0 5px;
+  transition: background-color 0.3s, transform 0.3s;
 }
 
-.swiper-pagination-bullet-active {
+
+.swiper-pagination .swiper-pagination-bullet-active {
   background-color: #0009ff; 
   opacity: 1; 
-  transform: scale(1.2); 
 }
 
 .gradient-container {

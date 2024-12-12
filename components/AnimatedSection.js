@@ -45,7 +45,7 @@ const SVGAnimation = () => {
   return (
     <section
       ref={svgRef} // Reference for IntersectionObserver
-      className="relative font-matt flex flex-col items-center lg:items-start justify-center py-12 px-6 bg-white lg:min-w-[1280px] mx-auto max-h-[990px] md:py-2 md:px-8 lg:mb-[100px]"
+      className="relative font-matt flex flex-col items-center lg:items-start justify-center py-12 px-6 bg-white lg:min-w-[1280px] mx-auto max-h-[990px] md:py-2 md:px-8 lg:mt-[300px]"
     >
       {/* SVG Animation - Conditionally Rendered */}
       {!showThankYou && (
@@ -82,7 +82,7 @@ const SVGAnimation = () => {
       {!showThankYou ? (
       <>
         {/* Title Section */}
-        <div className="relative z-20 flex flex-col items-center lg:items-start text-black text-6xl lg:text-[190px] leading-snug md:leading-[80px] lg:leading-[150px] font-bold space-y-2 lg:space-y-4 mb-8 lg:mb-12">
+        <div className="font-matt relative z-20 flex flex-col items-center lg:items-start text-black text-6xl lg:text-[160px] leading-snug md:leading-[80px] lg:leading-[145px] font-[700] space-y-2 lg:space-y-0 mb-8 lg:mb-12">
           <span className="font-matt">Nicht auf</span>
           <span className="font-matt">diesen</span>
           <span className="font-matt">Button</span>
@@ -93,7 +93,7 @@ const SVGAnimation = () => {
         <div className="relative z-20 mt-4 lg:absolute lg:top-1/2 lg:right-[0.5%] md:transform md:-translate-y-1/2">
           <button
             onClick={() => setIsModalOpen(true)}
-            className="gradient-hover font-matt lg:w-[300px] lg:h-[100px] px-8 sm:px-10 py-8 sm:py-5 text-2xl lg:text-[70px] font-bold text-white bg-black rounded-full shadow-lg hover:bg-gray-800 transition duration-300"
+            className="font-matt gradient-hover lg:w-[269px] lg:h-[80px] sm:px-10 sm:py-5 text-2xl lg:text-[60px] font-[400] text-white bg-black rounded-full"
           >
            Button
           </button>
