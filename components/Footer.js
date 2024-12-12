@@ -2,8 +2,22 @@ import Link from 'next/link';
 import '../styles/global.css'; 
 import ScrollToTop from './ScrollToTop';
 
+import React, { useState } from 'react';
 
 const Footer = () => {
+  const [email, setEmail] = useState('');
+  const [submitted, setSubmitted] = useState(false);
+
+  const handleEmailSubmit = (e) => {
+    e.preventDefault();
+    if (email.trim() !== '') {
+      setSubmitted(true);
+      setTimeout(() => {
+        setSubmitted(false);
+        setEmail('');
+      }, 3000); // Reset message after 3 seconds
+    }
+  };
   return (
     <footer id="footer" className="bg-white border-gray-200 p-8 font-matt">
           <ScrollToTop />
@@ -99,14 +113,30 @@ const Footer = () => {
         <div>
           <h2 className="font-matt font-extrabold text-[28px] leading-[37px] mb-4 uppercase">Wir haben einen Newsletter</h2>
           <p className="font-matt mb-4 text-[20px] leading-[33px]">Unsere Recherchen zeigen, dass Sie einfach nicht genug E-Mails erhalten.</p>
-          <form className="font-matt flex items-center border-b border-gray-400">
-            <input
-              type="email"
-              placeholder="E-Mail"
-              className="font-matt bg-transparent w-full py-4 px-4 focus:outline-none"
-            />
-            <button type="submit" className="font-matt text-xl font-bold">→</button>
-          </form>
+          {submitted ? (
+            <div className="text-[#0009FF] font-[700] lg:text-[28px] mt-8">Vielen Dank!</div>
+          ) : (
+            <form onSubmit={handleEmailSubmit} className="font-matt flex items-center border-b border-gray-400">
+              <input
+                type="email"
+                placeholder="E-Mail"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                className="font-matt bg-transparent w-full py-4 px-4 focus:outline-none"
+              />
+              <button
+                type="submit"
+                className="font-matt text-xl font-bold transition-transform duration-300 hover:scale-125 hover:rotate-180"
+              >
+                <svg width="21" height="25" viewBox="0 0 21 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13.0375 11.0394L16.6562 14.6582L20.275 11.0394L16.6563 7.42066L13.0375 11.0394Z" fill="black"/>
+                <path d="M2.5803 8.36873L9.33919 8.36872L11.8876 10.9171L10.1939 12.6108C9.63374 13.171 8.87369 13.4839 8.08208 13.4865L2.58029 13.4865L2.5803 8.36873Z" fill="black"/>
+                <path d="M6.60389 17.5326L12.5449 11.5916L14.0518 13.0986C15.2169 14.2636 15.2195 16.1545 14.0518 17.3222L10.2227 21.1514L6.60389 17.5326Z" fill="black"/>
+                <path d="M6.46527 4.46722L10.084 0.848448L14.0342 4.79858C15.1335 5.89789 15.1335 7.68098 14.0342 8.78028L12.4062 10.4082L6.46527 4.46722Z" fill="black"/>
+                </svg>
+              </button>
+            </form>
+          )}
           <div className="font-matt font-bold mb-4 text-[20px] leading-[33px] mt-[40px]">
             <h2>Schauen Sie vorbei.<br></br>
             Follow & Like nicht vergessen!</h2>
