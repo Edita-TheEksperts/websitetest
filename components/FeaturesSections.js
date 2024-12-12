@@ -41,7 +41,7 @@ export default function FeaturesSection() {
           {features.map((feature) => (
             <div
               key={feature.id}
-              className="bg-white rounded-lg p-6 text-left flex flex-col items-center lg:items-start"
+              className="bg-[#F1F1F1] rounded-lg p-6 text-left flex flex-col items-center lg:items-start"
             >
               <h3 className="text-[#000] font-matt text-[22px] font-[900] leading-[37px] uppercase mb-4">
                 {feature.title}
