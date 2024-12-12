@@ -94,6 +94,8 @@ export default function Testimonials() {
             1024: { slidesPerView: 3 },
           }}
           modules={[Pagination, Navigation]}
+          // Enable mousewheel and touch interactions
+          mousewheel={true}
         >
           {testimonials.map((testimonial, index) => (
             <SwiperSlide key={index}>
