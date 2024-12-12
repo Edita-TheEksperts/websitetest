@@ -45,7 +45,7 @@ const features = [
 export default function FeaturesSection() {
   return (
     <div
-    className="bg-gray-100 p-4 rounded-lg mx-auto flex flex-col lg:flex-row justify-center items-start gap-6 lg:gap-[36px]"
+    className="p-4 rounded-lg mx-auto flex flex-col lg:flex-row justify-center items-start gap-6 lg:gap-[36px]"
     style={{ maxWidth: "1276px" }} // Use max-width for better responsiveness
   >
     {/* Left Image Section */}
