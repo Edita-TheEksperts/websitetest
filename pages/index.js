@@ -188,7 +188,7 @@ const Home = () => {
             <section className="bg-white py-16 lg:py-2 flex flex-col lg:flex-row justify-between items-center lg:min-w-[1280px] mx-auto font-matt space-y-8 lg:space-y-0 lg:mt-[300px] lg:mb-[300px]">
             {/* Left Section: Heading */}
             <div className="flex-1 text-center lg:text-left lg:min-w-[490px]">
-                <h1 className="text-4xl lg:text-7xl font-bold leading-tight">
+                <h1 className="text-4xl lg:text-[64px] lg:leading-[80px] font-[700] leading-tight">
                 Haben Sie <br />
                 Fragen oder <br />
                 eine <br />
@@ -197,31 +197,30 @@ const Home = () => {
                 </h1>
             </div>
 
-            <div className="flex flex-col lg:flex-row lg:min-w-[800px] gap-8 lg:gap-14 items-center lg:items-start">
+            <div className="flex flex-col lg:flex-row lg:min-w-[800px] gap-8 lg:gap-16 items-center lg:items-center">
                 {/* Center Section: Image */}
                 <div className="flex justify-center lg:justify-start">
                 <img
-                    src="/images/fisniksalihu-theeksperts.png"
+                    src="/images/fisniksalihutheeksperts.png"
                     alt="Fisnik Salihu"
-                    className="w-[156px] h-[339px] rounded-[20px] object-cover"
+                    className="w-[200px] h-[400px] object-cover"
                 />
                 </div>
 
                 {/* Right Section: Contact Details */}
-                <div className="flex-1 text-center lg:text-left space-y-6">
+                <div className="font-matt flex-1 text-center lg:text-left space-y-6">
                 {/* Name and Title */}
-                <h2 className="text-4xl lg:text-7xl font-medium mb-2">FISNIK SALIHU</h2>
-                <p className="text-gray-800 text-xl lg:text-3xl mb-8">Co
-                -Founder & strategy ekspert</p>
+                <h2 className="text-4xl lg:text-[80px] lg:leading-[80px] font-matt font-[300]">FISNIK SALIHU</h2>
+                <p className="text-black text-xl lg:text-[28px] lg:leading-[37px] font-matt font-[300] uppercase">Co-Founder & strategy ekspert</p>
 
                 {/* Email Section */}
                 <div className="flex flex-col lg:flex-row items-center lg:space-x-10 lg:space-y-0 space-y-4 ">
-                    <p className="text-black text-lg lg:text-[20px] font-normal lg:mt-[12px] lg:mr-[20px]">
+                    <p className="text-black text-lg lg:text-[20px] font-[300] lg:mt-[12px] lg:mr-[20px]">
                         Schreiben Sie mir
                     </p>
                     <a
                         href="mailto:fisnik.salihu@the-eksperts.com"
-                        className="text-gray-500  border-[2px] border-black text-[16px] lg:text-[20px] py-2 px-4 rounded-full hover:bg-[#0009FF] hover:text-white hover:border-[#0009FF]"
+                        className="text-[#BBBFBB] underline border-[2px] border-black text-[16px] lg:text-[20px] py-2 px-4 rounded-full hover:bg-[#0009FF] hover:text-white hover:border-[#0009FF]"
                     >
                         fisnik.salihu@the-eksperts.com
                     </a>
@@ -229,12 +228,12 @@ const Home = () => {
 
                     {/* Phone Section */}
                     <div className="flex flex-col lg:flex-row items-center lg:space-x-10 lg:space-y-0 space-y-4">
-                    <p className="text-black text-lg lg:text-[20px] font-normal lg:mt-[12px] lg:mr-[-28px]">
+                    <p className="text-black text-lg lg:text-[20px] font-[300] lg:mt-[12px] lg:mr-[-28px]">
                         oder rufen Sie mich an
                     </p>
                     <a
                         href="tel:+41799213000"
-                        className="text-gray-500 border-[2px] border-black text-[16px] lg:text-[20px] py-2 px-4 rounded-full hover:bg-[#0009FF] hover:text-white hover:border-[#0009FF]"
+                        className="text-[#BBBFBB] border-[2px] border-black text-[16px] lg:text-[20px] py-2 px-4 rounded-full hover:bg-[#0009FF] hover:text-white hover:border-[#0009FF]"
                     >
                         +41 79 921 30 00
                     </a>
