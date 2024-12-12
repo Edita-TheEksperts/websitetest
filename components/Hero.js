@@ -56,7 +56,7 @@ const Hero = ({ setHeroVisible }) => {
   return (
     <section
       id="hero"
-      className="font-matt relative w-full bg-white flex items-center justify-center px-2 md:mt-8"
+      className="font-matt relative w-full bg-white flex items-center justify-center px-2"
     >
       <div className="font-matt relative z-10 w-full h-full max-w-[1280px] mx-auto flex flex-col md:flex-row items-center justify-between text-black lg:gap-x-10">
         
