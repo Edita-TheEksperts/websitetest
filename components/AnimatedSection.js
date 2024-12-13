@@ -127,7 +127,7 @@ const SVGAnimation = () => {
             >          
             <div
               onClick={(e) => e.stopPropagation()}
-              className="bg-white rounded-[20px] p-8 w-full lg:max-w-[1280px] lg:max-h-[690px] relative"
+              className="bg-white rounded-[20px] p-8 w-full lg:max-w-[1280px] lg:max-h-[680px] relative"
             >
                <button
                     onClick={() => setIsModalOpen(false)}
@@ -170,11 +170,10 @@ const SVGAnimation = () => {
                       {/* Left Section */}
                       <div className="lg:w-[1200px]">
                         <h2 className="text-xl font-extrabold mb-2 text-center uppercase md:text-[28px] md:leading-[37px] font-matt">
-                          Wir nehmen uns die Zeit, Ihr Projekt und Ihre Anforderungen zu verstehen.
+                        Wir nehmen uns die Zeit, Ihr Projekt und Ihre Anforderungen zu verstehen.
                         </h2>
                         <p className="text-gray-700 mb-4 text-center md:text-[20px] md:leading-[33px] font-matt">
-                          Nach nur drei kurzen Fragen erhalten Sie eine persönliche Beratung sowie
-                          ein massgeschneidertes Angebot – völlig kostenlos und unverbindlich.
+                        Nach nur drei kurzen Fragen erhalten Sie eine persönliche Beratung sowie ein massgeschneidertes Angebot – völlig kostenlos und unverbindlich.
                         </p>
                       </div>
                     </div>
@@ -183,7 +182,7 @@ const SVGAnimation = () => {
                     {currentScreen === 2 && (
                       <div className="flex flex-col items-center space-y-6">
                          {/* Progress Bar */}
-                      <div className="w-full flex flex-col items-center lg:items-center  md:mb-[10px]">
+                      <div className="w-full flex flex-col items-center lg:items-center">
                         <div className="flex items-center space-x-2 mb-4">
                           <span className="text-lg md:text-[28px] font-semibold text-[#0009FF]">02</span>
                           <span className="md:text-[28px]">/</span>
@@ -215,41 +214,44 @@ const SVGAnimation = () => {
 
                                 {/* Form Section */}
                                 <div className="w-full lg:w-1/2 text-center lg:text-left">
-                                  <form className="grid grid-cols-1 gap-6 mb-8 md:mb-[10px]">
+                                <h2 className="mb-4 text-[20px]">
+                                Was möchten Sie mit unserer Unterstützung erreichen?
+                                </h2>
+                                  <form className="grid grid-cols-1 gap-6 mb-4 md:mb-[10px]">
                                       <label className="flex items-center space-x-3">
                                         <input
                                           type="checkbox"
-                                          className="w-6 h-6 text-[#0009FF] border-gray-300 rounded focus:ring-[#0009FF]"
+                                          className="w-5 h-5 text-[#0009FF] border-gray-300 rounded focus:ring-[#0009FF]"
                                         />
-                                        <span className="lg:text-[20px] ">Website erstellen oder optimieren</span>
+                                        <span className="lg:text-[18px] ">Website erstellen oder optimieren</span>
                                       </label>
                                       <label className="flex items-center space-x-3">
                                         <input
                                           type="checkbox"
-                                          className="w-6 h-6 text-[#0009FF] border-gray-300 rounded focus:ring-[#0009FF]"
+                                          className="w-5 h-5 text-[#0009FF] border-gray-300 rounded focus:ring-[#0009FF]"
                                         />
-                                        <span className="lg:text-[20px] " >Salesforce-Lösungen implementieren</span>
+                                        <span className="lg:text-[18px] " >Salesforce-Lösungen implementieren</span>
                                       </label>
                                       <label className="flex items-center space-x-3">
                                         <input
                                           type="checkbox"
-                                          className="w-6 h-6 text-[#0009FF] border-gray-300 rounded-lg focus:ring-[#0009FF]"
+                                          className="w-5 h-5 text-[#0009FF] border-gray-300 rounded-lg focus:ring-[#0009FF]"
                                         />
-                                        <span className="lg:text-[20px] ">Individuelle Softwareentwicklung</span>
+                                        <span className="lg:text-[18px] ">Individuelle Softwareentwicklung</span>
                                       </label>
                                       <label className="flex items-center space-x-3">
                                         <input
                                           type="checkbox"
-                                          className="w-6 h-6 text-[#0009FF] border-gray-300 rounded-lg focus:ring-[#0009FF]"
+                                          className="w-5 h-5 text-[#0009FF] border-gray-300 rounded-lg focus:ring-[#0009FF]"
                                         />
-                                        <span className="lg:text-[20px] ">Online-Shop aufbauen</span>
+                                        <span className="lg:text-[18px] ">Online-Shop aufbauen</span>
                                       </label>
                                       <label className="flex items-center space-x-3">
                                         <input
                                           type="checkbox"
-                                          className="w-6 h-6 text-[#0009FF] border-gray-300 rounded-lg focus:ring-[#0009FF]"
+                                          className="w-5 h-5 text-[#0009FF] border-gray-300 rounded-lg focus:ring-[#0009FF]"
                                         />
-                                        <span className="lg:text-[20px]">IT-Architektur oder Netzwerk optimieren</span>
+                                        <span className="lg:text-[18px]">IT-Architektur oder Netzwerk optimieren</span>
                                       </label>
                                       <label className="flex items-center space-x-3">
                                         <input
