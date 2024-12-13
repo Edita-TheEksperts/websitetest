@@ -130,9 +130,9 @@ const Agency = () => {
                     {/* Text */}
                     <div className="text-left">
                       <h3 className="text-2xl leading-10 font-[900] text-[#E24125] uppercase md:leading-[37px] md:text-[28px] mb-2 ">
-                        ● LIEBE :
+                        ● LIEBE:
                       </h3>
-                      <p className="text-[#5A585A] text-2xl max-w-[599px] lg:mr-8 font-[400] md:leading-[37px] md:text-[24px] uppercase">
+                      <p className="text-[#5A585A] text-xl max-w-[599px] lg:mr-8 font-[400] md:leading-[37px] md:text-[24px] uppercase">
                       Leidenschaft treibt alles an, was wir tun
                       </p>
                     </div>
@@ -151,10 +151,9 @@ const Agency = () => {
                     {/* Text */}
                     <div className="text-left">
                       <h3 className="text-2xl leading-10 font-[900] text-[#0009FF] uppercase md:leading-[37px] md:text-[28px] mb-2">
-                        ● Integrität
-                        :
+                        ● Integrität:
                       </h3>
-                      <p className="text-[#5A585A] text-2xl max-w-[589px] font-[400] md:leading-[37px] md:text-[24px] uppercase">
+                      <p className="text-[#5A585A] text-xl max-w-[589px] font-[400] md:leading-[37px] md:text-[24px] uppercase">
                       Transparenz und Vertrauen schaffen langfristige Partnerschaften
                       </p>
                     </div>
@@ -173,10 +172,9 @@ const Agency = () => {
                     {/* Text */}
                     <div className="text-left">
                       <h3 className="text-2xl leading-10 font-[900] text-[#CFFF49] uppercase md:leading-[37px] md:text-[28px] mb-2">
-                        ● Exzellenz
-                        :
+                        ● Exzellenz:
                       </h3>
-                      <p className="text-[#5A585A] text-2xl max-w-[589px] font-[400] md:leading-[37px] md:text-[24px] uppercase">
+                      <p className="text-[#5A585A] text-xl max-w-[589px] font-[400] md:leading-[37px] md:text-[24px] uppercase">
                       Qualität liefern, die Erwartungen übertrifft</p>
                     </div>
                   </div>
@@ -194,10 +192,9 @@ const Agency = () => {
                     {/* Text */}
                     <div className="text-left">
                     <h3 className="text-2xl leading-10 font-[900] text-[#03C319] uppercase md:leading-[37px] md:text-[28px] mb-2">
-                        ● Kommunikation
-                        :
+                        ● Kommunikation:
                       </h3>
-                      <p className="text-[#5A585A] text-2xl max-w-[589px] font-[400] md:leading-[37px] md:text-[24px] uppercase">
+                      <p className="text-[#5A585A] text-xl max-w-[589px] font-[400] md:leading-[37px] md:text-[24px] uppercase">
                       Klare Dialoge für den
                       gemeinsamen Erfolg</p>
                     
@@ -228,7 +225,7 @@ const Agency = () => {
 
                         :
                       </h3>
-                      <p className="text-[#5A585A] text-2xl max-w-[589px] font-[400] md:leading-[30px] md:text-[24px] uppercase">
+                      <p className="text-[#5A585A] text-xl max-w-[589px] font-[400] md:leading-[30px] md:text-[24px] uppercase">
                       Agil und bereit für jede
                       Herausforderung</p>
                     </div>
@@ -312,7 +309,7 @@ const Agency = () => {
                     </section>
 
                     <section className="font-matt flex flex-col md:flex-row items-center justify-between px-4 md:px-2 py-2 lg:min-w-[1280px] mx-auto">
-                    <div className="font-matt flex-1 lg:min-w-[600px] max-w-lg text-left">
+                    <div className="font-matt flex-1 lg:min-w-[600px] max-w-lg text-center lg:text-left">
                         <h2 className="font-matt text-2xl md:text-[25px] md:leading-[37px] font-[900] text-black mb-4 uppercase">
                         Optimierung, Schulung und Support<br></br> – Nachhaltige Partnerschaft
                         </h2>
