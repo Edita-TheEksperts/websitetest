@@ -3,17 +3,17 @@ export default function VisionSection() {
       {
         title: "Top-Qualifikation",
         description: "Unsere Eksperten verfügen über langjährige Erfahrung in verschiedenen Bereichen wie IT, Entwicklung, Design oder Beratung.",
-        image: "/images/Rectangle 226 (6).png", // Replace with your image path
+        image: "/images/Theeksperts123.png", // Replace with your image path
       },
       {
         title: "Flexibilität",
         description: "Buchen Sie unsere Eksperten stunden-, tage- oder projektweise – so, wie es Ihre Bedürfnisse erfordern.",
-        image: "/images/Rectangle 226 (7).png", // Replace with your image path
+        image: "/images/Theeksperts1234.png", // Replace with your image path
       },
       {
         title: "Nahtlose Zusammenarbeit",
         description: "Unsere Spezialisten integrieren sich schnell und effektiv in Ihre bestehenden Teams und Strukturen.",
-        image: "/images/Rectangle 226 (8).png", // Replace with your image path
+        image: "/images/Theeksperts12345.png", // Replace with your image path
       },
     ];
   
