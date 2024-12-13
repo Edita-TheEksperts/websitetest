@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
@@ -10,8 +10,7 @@ const fadeVariants = {
 
 const HeaderSection = () => {
   const [ref, inView] = useInView({
-    triggerOnce: true,
-    threshold: 0.1,
+    threshold: 0.2, // Adjust the threshold as needed
   });
 
   return (
@@ -46,7 +45,7 @@ const HeaderSection = () => {
         }}
         initial={{ rotate: 0 }}
         animate={{
-          rotate: inView ? 270 : 0,
+          rotate: inView ? 270 : 0, // Animate rotation based on `inView`
         }}
         transition={{
           duration: 2,
