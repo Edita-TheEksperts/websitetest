@@ -13,14 +13,14 @@ const Header = () => {
   };
 
   const handleMouseEnter = () => {
-    clearTimeout(menuTimeout); // Clear timeout to prevent menu from hiding
+    clearTimeout(menuTimeout); 
     setIsServicesMenuOpen(true);
   };
 
   const handleMouseLeave = () => {
     menuTimeout = setTimeout(() => {
       setIsServicesMenuOpen(false);
-    }, 200); // Adjust the delay as needed
+    }, 200);
   };
 
   return (
@@ -82,7 +82,7 @@ const Header = () => {
                 </li>
                 <li className="group">
                   <Link
-                    href="/services/bookyourexpert"
+                    href="/services/bookyourekspert"
                     className="block px-4 py-3 text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-colors duration-200"
                   >
                     Book Your Expert
