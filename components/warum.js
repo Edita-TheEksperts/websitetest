@@ -104,14 +104,14 @@ const WarumWirBegeistern = () => {
       </div>
       {/* Additional Two Sections */}
       <motion.div
-  className="grid grid-cols-1 md:grid-cols-2 gap-2 px-6 md:px-28 mt-20"
+  className="grid grid-cols-1 md:grid-cols-2 gap-2 px-6 md:px-32 mt-20"
   initial="hidden"
   whileInView="visible"
   viewport={{ once: true, amount: 0.3 }}
   variants={fadeVariants}
 >
   <motion.div
-    className="flex flex-col items-center text-center space-y-7"
+    className="flex flex-col items-center text-center space-y-7 mt-6"
     variants={fadeVariants}
   >
     <motion.svg
@@ -137,7 +137,7 @@ const WarumWirBegeistern = () => {
     </h3>
   </motion.div>
   <motion.div
-    className="flex flex-col items-center text-center space-y-7"
+    className="flex flex-col items-center text-center space-y-7 mt-6"
     variants={fadeVariants}
   >
     <motion.svg
