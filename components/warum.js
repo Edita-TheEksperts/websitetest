@@ -1,20 +1,30 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
+// Animation Variants
 const fadeVariants = {
   hidden: { opacity: 0, y: 50 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.9, ease: "easeInOut" } },
 };
 
 const HeaderSection = () => {
+  const [ref, inView] = useInView({ threshold: 0.2 });
+
   return (
-    <div className="flex flex-col items-center justify-center h-screen bg-white">
+    <motion.div
+      ref={ref}
+      className="h-screen flex flex-col items-center justify-center bg-white z-50"
+      initial="hidden"
+      animate={inView ? "visible" : "hidden"}
+      variants={{
+        hidden: { opacity: 0, y: 50 },
+        visible: { opacity: 1, y: 0 },
+      }}
+      transition={{ duration: 0.9, ease: "easeInOut" }}
+    >
       <motion.h2
         className="text-black text-6xl uppercase font-matt lg:leading-[158px] font-[222] lg:text-[174px] tracking-[-2.88px] text-center"
-        initial="hidden"
-        animate="visible"
-        variants={fadeVariants}
-        transition={{ duration: 0.9, ease: "easeInOut" }}
       >
         WARUM WIR <br /> BEGEISTERN
       </motion.h2>
@@ -25,9 +35,17 @@ const HeaderSection = () => {
         viewBox="0 0 109 110"
         fill="none"
         className="w-[100px] h-[100px] mt-6"
+        style={{
+          transformOrigin: "center",
+        }}
         initial={{ rotate: 0 }}
-        animate={{ rotate: 270 }}
-        transition={{ duration: 2, ease: "easeInOut" }}
+        animate={{
+          rotate: inView ? 270 : 0,
+        }}
+        transition={{
+          duration: 2,
+          ease: "easeInOut",
+        }}
       >
         <path d="M39.6 54.8L20.4 35.5L1.1 54.8L20.4 74.1L39.6 54.8Z" fill="black" />
         <path
@@ -43,78 +61,111 @@ const HeaderSection = () => {
           fill="black"
         />
       </motion.svg>
-    </div>
+    </motion.div>
   );
 };
 
-const WarumWirBegeistern = () => {
+const SectionGrid = ({ sections }) => {
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+    threshold: 0.3,
+  });
+
   return (
-    <section id="Warum wir begeistern" className="font-matt py-12 bg-white lg:min-w-[1280px] mx-auto">
-      <HeaderSection />
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 px-4 md:px-2">
-        {/* Section 1 */}
-        <motion.div
-          className="flex flex-col items-center text-center space-y-7 lg:mt-[250px]"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.3 }}
-          variants={fadeVariants}
+    <motion.div
+      ref={ref}
+      className="grid grid-cols-1 md:grid-cols-3 gap-4 px-4 md:px-4 lg:min-w-[1280px] mx-auto"
+      initial="hidden"
+      animate={inView ? "visible" : "hidden"}
+      variants={fadeVariants}
+    >
+      {/* First Row: Three sections */}
+      {sections.slice(0, 3).map((section, index) => (
+        <div key={index} className="flex flex-col items-center text-center space-y-8 lg:mb-[30px]">
+          {section.icon}
+          <h3 className="font-matt text-xl lg:text-[28px] leading-[37px] font-[900] text-black uppercase">
+            {section.title}
+          </h3>
+        </div>
+      ))}
+
+      {/* Second Row: Two sections */}
+      <div className="col-span-3 grid grid-cols-2">
+        {sections.slice(3).map((section, index) => (
+          <div key={index} className="flex flex-col items-center text-center space-y-8 mt-4">
+            {section.icon}
+            <h3 className="font-matt text-xl lg:text-[28px] leading-[37px] font-[900] text-black uppercase">
+              {section.title}
+            </h3>
+          </div>
+        ))}
+      </div>
+    </motion.div>
+  );
+};
+
+const App = () => {
+  const sections = [
+    {
+      title: "Liebe",
+      icon: (
+        <motion.svg
+          width="205"
+          height="180"
+          viewBox="0 0 205 180"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          className="lg:mt-[250px]" 
+
         >
-          <svg width="205" height="180" viewBox="0 0 205 180" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M193.735 88.8999L166.459 116.176L141.467 141.168L102.635 180L63.8032 141.168L26.5838 103.949L11.1989 88.564C-2.50641 74.8586 -2.50641 52.7554 11.1989 39.0501L45.4622 4.78679C51.8446 -1.5956 62.1908 -1.5956 68.6404 4.78679L102.635 38.7814L136.361 5.05552C142.743 -1.32687 153.089 -1.32687 159.539 5.05552L193.802 39.3188C207.508 53.0242 207.508 75.1273 193.802 88.8327L193.735 88.8999Z"
-              fill="#E24125"
-            />
-          </svg>
-          <h3 className="text-xl lg:text-[28px] leading-[37px] font-extrabold text-black uppercase">Liebe</h3>
-        </motion.div>
-        {/* Section 2 */}
-        <motion.div
-          className="flex flex-col items-center text-center space-y-7"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.3 }}
-          variants={fadeVariants}
+          <path
+            d="M193.735 88.8999L166.459 116.176L141.467 141.168L102.635 180L63.8032 141.168L26.5838 103.949L11.1989 88.564C-2.50641 74.8586 -2.50641 52.7554 11.1989 39.0501L45.4622 4.78679C51.8446 -1.5956 62.1908 -1.5956 68.6404 4.78679L102.635 38.7814L136.361 5.05552C142.743 -1.32687 153.089 -1.32687 159.539 5.05552L193.802 39.3188C207.508 53.0242 207.508 75.1273 193.802 88.8327L193.735 88.8999Z"
+            fill="#E24125"
+          />
+        </motion.svg>
+      ),
+    },
+    {
+      title: "Integrität",
+      icon: (
+        <motion.svg
+          width="205"
+          height="180"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 392.89 291.2"
+
         >
-          <svg width="205" height="180" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 392.89 291.2">
-            <rect fill="#0009ff" x="21.21" y="112.65" width="102.4" height="102.4" transform="translate(-94.65 99.19) rotate(-45)" />
-            <path
-              fill="#0009ff"
-              d="M320.49,0l72.4,72.4-202.3,202.3c-22,22-57.6,22-79.6,0l-32.6-32.6L320.49,0h0Z"
-            />
-          </svg>
-          <h3 className="text-xl lg:text-[28px] leading-[37px] font-extrabold text-black uppercase">Integrität</h3>
-        </motion.div>
-        {/* Section 3 */}
-        <motion.div
-          className="flex flex-col items-center text-center space-y-7 lg:mt-[250px]"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.3 }}
-          variants={fadeVariants}
-        >
-          <svg width="205" height="180" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 375.5 375.6">
+          <rect
+            fill="#0009ff"
+            x="21.21"
+            y="112.65"
+            width="102.4"
+            height="102.4"
+            transform="translate(-94.65 99.19) rotate(-45)"
+          />
+          <path
+            fill="#0009ff"
+            d="M320.49,0l72.4,72.4-202.3,202.3c-22,22-57.6,22-79.6,0l-32.6-32.6L320.49,0h0Z"
+          />
+        </motion.svg>
+      ),
+    },
+    {
+      title: "Exzellenz",
+      icon: (
+        <motion.svg width="205" height="180" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 375.5 375.6"  className="lg:mt-[250px]" 
+>
             <path
               fill="#cfff49"
               d="M343.5,219.8l32-31.9-31.8-31.8h-79.2l39.6-39.6h0l-45.1-45.1-46.9,46.9-3.2,3.2c6.9-6.9,10.7-16.1,10.7-25.8v-63.7L187.7,0l-31.7,31.8v79.2l-39.6-39.6-45.1,45.1,39.6,39.6H31.7L0,187.9l31.9,31.9h63.7c9.7,0,18.9-3.8,25.8-10.7l-3.2,3.2-46.9,46.8h0l45.1,45.1,39.6-39.6v79.2l31.7,31.8,32-32v-63.7c0-9.7-3.8-18.9-10.7-25.8l50.1,50.1,45.1-45.1h0l-45.6-45.6-3.2-3.3c6.7,6.1,15.4,9.4,24.5,9.4h63.7l-.1.2Z"
             />
-          </svg>
-          <h3 className="text-xl lg:text-[28px] leading-[37px] font-extrabold text-black uppercase">Exzellenz</h3>
-        </motion.div>
-      </div>
-      {/* Additional Two Sections */}
-      <motion.div
-  className="grid grid-cols-1 md:grid-cols-2 gap-2 px-6 md:px-32 mt-20"
-  initial="hidden"
-  whileInView="visible"
-  viewport={{ once: true, amount: 0.3 }}
-  variants={fadeVariants}
->
-  <motion.div
-    className="flex flex-col items-center text-center space-y-7 mt-6"
-    variants={fadeVariants}
-  >
-    <motion.svg
+          </motion.svg>
+      ),
+    },
+    {
+      title: "Kommunikation",
+      icon: (
+        <motion.svg
       width="205"
       height="180"
       xmlns="http://www.w3.org/2000/svg"
@@ -132,49 +183,49 @@ const WarumWirBegeistern = () => {
         d="M56.4,117.8h260.3c46,0,83.2-37.3,83.2-83.2V0h-225.7C109.1,0,56.3,52.8,56.3,117.9l.1-.1Z"
       />
     </motion.svg>
-    <h3 className="text-xl lg:text-[28px] leading-[37px] font-extrabold text-black uppercase">
-      Kommunikation
-    </h3>
-  </motion.div>
-  <motion.div
-    className="flex flex-col items-center text-center space-y-7 mt-6"
-    variants={fadeVariants}
-  >
-    <motion.svg
-      width="205"
-      height="180"
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 408.2 445.61"
-      variants={fadeVariants}
-    >
-      <path
-        fill="#cfff49"
-        d="M408.1,238.11l-40.2,40.2h-119.4v167.3h-48.4v-200.8c0-5.7,1-11.2,2.9-16.2.5-1.6,1.2-3.1,2-4.6,1-2,2.1-3.9,3.3-5.6,3.7-5.4,8.5-10,14-13.3,7.1-4.5,15.7-7.1,24.6-7.1h121.1l40.2,40.2-.1-.1Z"
-      />
-      <path
-        fill="#03c319"
-        d="M208.2,190.91v24c-2,2.8-3.5,5.8-4.8,9-.6,1.5-1.2,3.1-1.6,4.6-1.2,4.1-1.8,8.4-1.8,12.9v204.1h-31.9v-173.9c0-1-.1-2-.1-3.1v-40.1H40.2L0,188.21l40.2-40.2h123.9c1.3,0,2.6,0,3.9.2,22.1,1.9,39.5,20.1,40.2,42.5h0v.2Z"
-      />
-      <path
-        fill="#0009ff"
-        d="M248.3,194.51h-1.4c-9.9,0-19.1,3.1-26.6,8.4-4.7,3.2-8.8,7.3-12,12v-27.2c0-23.1-17.7-42-40.3-44V40.11h80.3v154.4Z"
-      />
-      <rect
-        fill="#0009ff"
-        x="179.71"
-        y="11.74"
-        width="56.7"
-        height="56.7"
-        transform="translate(32.59 158.86) rotate(-45)"
-      />
-    </motion.svg>
-    <h3 className="text-xl lg:text-[28px] leading-[37px] font-extrabold text-black uppercase">
-      Flexibilität
-    </h3>
-  </motion.div>
-</motion.div>
-    </section>
+      ),
+    },
+    {
+      title: "Flexibilität",
+      icon: (
+        <motion.svg
+        width="205"
+        height="180"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 408.2 445.61"
+        variants={fadeVariants}
+      >
+        <path
+          fill="#cfff49"
+          d="M408.1,238.11l-40.2,40.2h-119.4v167.3h-48.4v-200.8c0-5.7,1-11.2,2.9-16.2.5-1.6,1.2-3.1,2-4.6,1-2,2.1-3.9,3.3-5.6,3.7-5.4,8.5-10,14-13.3,7.1-4.5,15.7-7.1,24.6-7.1h121.1l40.2,40.2-.1-.1Z"
+        />
+        <path
+          fill="#03c319"
+          d="M208.2,190.91v24c-2,2.8-3.5,5.8-4.8,9-.6,1.5-1.2,3.1-1.6,4.6-1.2,4.1-1.8,8.4-1.8,12.9v204.1h-31.9v-173.9c0-1-.1-2-.1-3.1v-40.1H40.2L0,188.21l40.2-40.2h123.9c1.3,0,2.6,0,3.9.2,22.1,1.9,39.5,20.1,40.2,42.5h0v.2Z"
+        />
+        <path
+          fill="#0009ff"
+          d="M248.3,194.51h-1.4c-9.9,0-19.1,3.1-26.6,8.4-4.7,3.2-8.8,7.3-12,12v-27.2c0-23.1-17.7-42-40.3-44V40.11h80.3v154.4Z"
+        />
+        <rect
+          fill="#0009ff"
+          x="179.71"
+          y="11.74"
+          width="56.7"
+          height="56.7"
+          transform="translate(32.59 158.86) rotate(-45)"
+        />
+      </motion.svg>
+      ),
+    },
+  ];
+
+  return (
+    <div>
+      <HeaderSection />
+      <SectionGrid sections={sections} />
+    </div>
   );
 };
 
-export default WarumWirBegeistern;
+export default App;
