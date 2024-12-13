@@ -250,7 +250,7 @@ const Agency = () => {
                         <img
                         src="/images/the-eksperts-pillar.png" 
                         alt="Info Section Image"
-                        className="w-full lg:w-[556px] lg:h-[380px] "
+                        className="w-full lg:w-[656px] lg:h-[380px] "
                         />
                     </div>
                     </section>
@@ -260,7 +260,7 @@ const Agency = () => {
                         <img
                         src="/images/the-eksperts-pillar-blue.png" 
                         alt="Info Section Image"
-                        className="w-full lg:w-[556px] lg:h-[380px] "
+                        className="w-full lg:w-[656px] lg:h-[380px] "
                         />
                     </div>
 
@@ -269,7 +269,7 @@ const Agency = () => {
                         Verstehen und Kommunikation <br></br>– Die Basis für euren Erfolg
                         </h2>
                         <p className="font-matt lg:text-[20px] lg:leading-[33px] text-lg text-black">
-                        Alles beginnt mit einer klaren und offenen Kommunikation. Wir analysieren eure Anforderungen, verstehen eure individuellen Herausforderungen und definieren gemeinsam die Ziele. Durch Consulting, Business-Analyse und strategische Planung legen wir den Grundstein für massgeschneiderte Lösungen, die eure spezifischen Bedürfnisse widerspiegeln.                        </p>
+                        Alles beginnt mit einer klaren und offenen Kommunikation. Wir analysieren eure Anforderungen, verstehen eure individuellen Herausforderungen und definieren gemeinsam die Ziele. Durch Consulting, Business-Analyse und strategische Planung legen wir den Grundstein für massgeschneiderte Lösungen, die eure spezifischen Bedürfnisse widerspiegeln.</p>
                     </div>
                     </section>
 
@@ -279,7 +279,7 @@ const Agency = () => {
                         UI/UX – Benutzerzentrierte <br></br> Gestaltung für eure Lösung
                         </h2>
                         <p className="font-matt lg:text-[20px] lg:leading-[33px] text-lg text-black">
-                        Im nächsten Schritt gestalten wir das Look-and-Feel eurer Lösung. Wir entwickeln Prototypen, optimieren Prozesse und entwerfen ein ansprechendes, intuitives Design. Unser Ziel ist es, dass eure Website, Software oder andere Plattformen nicht nur ästhetisch überzeugen, sondern auch funktional und benutzerfreundlich sind, um den höchsten Ansprüchen gerecht zu werden.                        </p>
+                        Im nächsten Schritt gestalten wir das Look-and-Feel eurer Lösung. Wir entwickeln Prototypen, optimieren Prozesse und entwerfen ein ansprechendes, intuitives Design. Unser Ziel ist es, dass eure Website, Software oder andere Plattformen nicht nur ästhetisch überzeugen, sondern auch funktional und benutzerfreundlich sind, um den höchsten Ansprüchen gerecht zu werden.</p>
                     </div>
 
                     <div className="font-matt flex-1 mt-8 md:mt-8 mb-8 flex justify-center lg:ml-[40px]">
@@ -304,7 +304,7 @@ const Agency = () => {
                         <h2 className="font-matt text-2xl md:text-[25px] md:leading-[37px] font-[900] text-black mb-4 uppercase">
                         Technische Implementierung – <br></br> Von der Idee zur Realität                        </h2>
                         <p className="font-matt lg:text-[20px] lg:leading-[33px] text-lg text-black">
-                        Hier setzen wir eure Vision in die Tat um. Wir entwickeln leistungsfähige und skalierbare Systeme, die eure Anforderungen perfekt erfüllen. Egal ob Online-Shop, Salesforce-Instanz, Cloud-Infrastruktur oder ERP/CRM-System – wir stellen sicher, dass die technische Umsetzung stabil, effizient, sicher und zukunftssicher ist.                        </p>
+                        Hier setzen wir eure Vision in die Tat um. Wir entwickeln leistungsfähige und skalierbare Systeme, die eure Anforderungen perfekt erfüllen. Egal ob Online-Shop, Salesforce-Instanz, Cloud-Infrastruktur oder ERP/CRM-System – wir stellen sicher, dass die technische Umsetzung stabil, effizient, sicher und zukunftssicher ist.</p>
                     </div>
                     </section>
 
@@ -314,7 +314,7 @@ const Agency = () => {
                         Optimierung, Schulung und Support<br></br> – Nachhaltige Partnerschaft
                         </h2>
                         <p className="font-matt text-lg lg:text-[20px] lg:leading-[33px] text-black">
-                        Unsere Arbeit endet nicht mit der Implementierung. Wir stehen euch langfristig zur Seite, indem wir die Lösungen kontinuierlich optimieren, Schulungen anbieten und zuverlässigen Support gewährleisten. Unsere Systeme sind darauf ausgelegt, euch auch in Zukunft zu unterstützen – und wenn es Fragen gibt, sind wir immer für euch da. Unser Ziel ist es, euch eine nachhaltige und zukunftsfähige Lösung zu bieten, die langfristig Mehrwert schafft.                        </p>
+                        Unsere Arbeit endet nicht mit der Implementierung. Wir stehen euch langfristig zur Seite, indem wir die Lösungen kontinuierlich optimieren, Schulungen anbieten und zuverlässigen Support gewährleisten. Unsere Systeme sind darauf ausgelegt, euch auch in Zukunft zu unterstützen – und wenn es Fragen gibt, sind wir immer für euch da. Unser Ziel ist es, euch eine nachhaltige und zukunftsfähige Lösung zu bieten, die langfristig Mehrwert schafft.</p>
                     </div>
 
                     <div className="font-matt flex-1 mt-8 md:mt-8 mb-8 flex justify-center lg:ml-[40px]">
