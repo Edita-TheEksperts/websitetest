@@ -92,7 +92,7 @@ const SectionGrid = ({ sections }) => {
       {/* Second Row: Two sections */}
       <div className="col-span-3 grid grid-cols-2">
         {sections.slice(3).map((section, index) => (
-          <div key={index} className="flex flex-col items-center text-center space-y-8 mt-4">
+          <div key={index} className="flex flex-col items-center text-center space-y-8 mt-10">
             {section.icon}
             <h3 className="font-matt text-xl lg:text-[28px] leading-[37px] font-[900] text-black uppercase">
               {section.title}
