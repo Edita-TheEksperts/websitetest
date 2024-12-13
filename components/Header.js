@@ -92,7 +92,7 @@ const Header = () => {
                     href="/services/website"
                     className="block px-4 py-3 text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-colors duration-200"
                   >
-                    Website Development
+                    Website
                   </Link>
                 </li>
                 <li className="group">
@@ -103,20 +103,21 @@ const Header = () => {
                     Custom Development
                   </Link>
                 </li>
-                <li className="group">
-                  <Link
-                    href="/services/bookyourekspert"
-                    className="block px-4 py-3 text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-colors duration-200"
-                  >
-                    Book Your Expert
-                  </Link>
-                </li>
+               
                 <li className="group">
                   <Link
                     href="/services/graphicdesign"
                     className="block px-4 py-3 text-gray-700 hover:text-blue-600 hover:bg-gray-50 rounded-b-lg transition-colors duration-200"
                   >
                     Graphic Design
+                  </Link>
+                </li>
+                <li className="group">
+                  <Link
+                    href="/services/bookyourekspert"
+                    className="block px-4 py-3 text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-colors duration-200"
+                  >
+                    Book Your Ekspert
                   </Link>
                 </li>
               </ul>
@@ -126,20 +127,20 @@ const Header = () => {
           <span className="text-gray-300">|</span>
           <Link href="/agency" className="text-gray-700">Agentur</Link>
           <span className="text-gray-300">|</span>
-          <Link href="/animation" className="text-gray-700">Projekte</Link>
+          <Link href="/projekte" className="text-gray-700">Projekte</Link>
           <span className="text-gray-300">|</span>
           <Link href="/contact" className="text-gray-700">Kontakt</Link>
         </nav>
 
         {/* Call to Action */}
         <a href="https://calendly.com/fisnik-salihu-the-eksperts/30min" class="inline-block hidden sm:inline-block hover-link">
-  <svg xmlns="http://www.w3.org/2000/svg" width="220" height="40" viewBox="0 0 220 40" fill="none" class="cursor-pointer">
-    <path d="M1.5 34V14.2353L15.4504 2H216.5V34H1.5Z" stroke="#0009FF" stroke-width="3" class="svg-path"/>
-    <text x="50%" y="50%" text-anchor="middle" dy=".3em" fill="#0009FF" font-size="16" font-weight="bold" class="svg-text">
-      Jetzt Gespräch buchen
-    </text>
-  </svg>
-</a>
+          <svg xmlns="http://www.w3.org/2000/svg" width="220" height="40" viewBox="0 0 220 40" fill="none" class="cursor-pointer">
+            <path d="M1.5 34V14.2353L15.4504 2H216.5V34H1.5Z" stroke="#0009FF" stroke-width="3" class="svg-path"/>
+            <text x="50%" y="50%" text-anchor="middle" dy=".3em" fill="#0009FF" font-size="16" font-weight="bold" class="svg-text">
+              Jetzt Gespräch buchen
+            </text>
+          </svg>
+        </a>
 
 
         {/* Mobile Menu Toggle */}
@@ -178,16 +179,16 @@ const Header = () => {
                     <Link href="/services/salesforce">Salesforce</Link>
                   </li>
                   <li>
-                    <Link href="/services/website-development">Website</Link>
+                    <Link href="/services/website">Website</Link>
                   </li>
                   <li>
-                  <Link href="/services/custom-development">Custom Development</Link>
+                  <Link href="/services/customdevelopment">Custom Development</Link>
                   </li>
                   <li>
-                    <Link href="/services/book-your-expert">Book Your Expert</Link>
+                    <Link href="/services/graphicdesign">Graphic Design</Link>
                   </li>
                   <li>
-                    <Link href="/services/graphic-design">Graphic Design</Link>
+                    <Link href="/services/bookyourekspert">Book Your Ekspert</Link>
                   </li>
                 </ul>
               </details>
