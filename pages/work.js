@@ -32,6 +32,8 @@ const fadeVariants = {
 const ServicesSection = () => {
   const [hovered, setHovered] = useState(false);
   const [scrollY, setScrollY] = useState(0);
+  const [hoveredButton, setHoveredButton] = useState(null);
+
 
   const handleScroll = () => {
     setScrollY(window.scrollY);
@@ -135,26 +137,40 @@ const ServicesSection = () => {
           </p>
           <p className="text-black mb-6 font-matt text-[18px] font-[300] leading-[33px]">
            
-                    Als offizieller Salesforce-Partner helfen wir Ihnen, das volle Potenzial von Salesforce zu nutzen. <br></br>
-                    Ob Neuimplementierung, Optimierung oder
+                    Als offizieller Salesforce-Partner helfen wir Ihnen, das volle <br></br> Potenzial von Salesforce zu nutzen. <br></br>
+                    Ob Neuimplementierung, Optimierung oder <br></br>
                     massgeschneiderte Integrationen – wir stehen Ihnen zur Seite.
           </p>
           <p className="text-black mb-6 font-matt font-[700] text-[20px] leading-[33px]">
           Kontaktieren Sie uns und starten Sie Ihre Salesforce-Reise!
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
-            <Link href="/services/salesforce">
-                        <motion.button className="font-matt border-2 border-[#0009FF] text-white bg-[#0009FF] px-4 py-1 rounded-[20px] font-[800] text-[14px] transition-colors duration-200 group-hover:text-white group-hover:bg-black group-hover:border-black">
-                        MEHR <br>
-                            </br>ERFAHREN
-                        </motion.button>
-                        </Link>
-                        <Link href="/contact">
-                        <motion.button className="font-matt border-2 border-[#0009FF] text-[#0009FF] bg-white px-4 py-1 rounded-[20px] font-[800] text-[14px] transition-colors duration-200 group-hover:text-white group-hover:bg-[#0009FF]">
-                            JETZT PROJEKT <br>
-                            </br>STARTEN
-                        </motion.button>
-                        </Link>
+          <Link href="/services/salesforce">
+                                    <motion.button
+                                    className={`border-2 border-[#0009FF] text-white bg-[#0009FF] group-hover:bg-black group-hover:text-white group-hover:border-black px-4 py-1 rounded-[20px] font-[800] text-[14px] transition-colors duration-300 ${
+                                      hoveredButton === "button2" ? "blur-sm" : "blur-none"
+                                    }`}
+                                    whileHover={{ scale: 1.1 }}
+                                    onMouseEnter={() => setHoveredButton("button1")}
+                                    onMouseLeave={() => setHoveredButton(null)}
+                                  >
+                                    MEHR <br /> ERFAHREN
+                                  </motion.button>
+                                  </Link>
+                                  <Link href="/contact">
+
+                                  {/* Button 2 */}
+                                  <motion.button
+                                    className={`font-matt border-2 border-[#0009FF] text-[#0009FF] bg-white px-4 py-1 rounded-[20px] font-[800] text-[14px] transition-all duration-300 ${
+                                      hoveredButton === "button1" ? "blur-sm" : "blur-none"
+                                    }`}
+                                    whileHover={{ scale: 1.1 }}
+                                    onMouseEnter={() => setHoveredButton("button2")}
+                                    onMouseLeave={() => setHoveredButton(null)}
+                                  >
+                                    JETZT PROJEKT <br /> STARTEN
+                                  </motion.button>
+        </Link>
           </div>
         </div>
         <div className="font-matt md:w-1/2 mt-8 md:mt-0 flex justify-center z-10 group-hover:scale-115 transition-transform duration-300 ease-out">
@@ -228,10 +244,10 @@ const ServicesSection = () => {
         <h2 className="font-matt text-3xl sm:text-4xl md:text-5xl lg:text-[62px] font-[700] lg:leading-[80px] lg:mb-6 ">
             Website
           </h2>
-          <p className="text-black mb-4 font-matt text-[20px] font-[700] leading-[33px]">
+          <p className="text-black mb-4 font-matt text-[20px] font-[700] leading-[27px]">
             Ihre digitale Visitenkarte – modern, effizient und einzigartig.
           </p>
-          <p className="text-black mb-6 font-matt font-[300] text-[20px] leading-[33px]">
+          <p className="text-black mb-6 font-matt font-[300] text-[20px] leading-[27px]">
             Wir gestalten Websites, die gut aussehen und performen – 
             ob Unternehmensseite, E-Commerce oder Portfolio. <br></br>
             <span className="font-[700]">Individuelles Design:</span> Massgeschneidert für Ihre Marke. <br></br>
@@ -239,22 +255,36 @@ const ServicesSection = () => {
             <span className="font-[700]">SEO & Performance:</span> Optimiert für Suchmaschinen, mit schnellen Ladezeiten und sicherer Technologie.
             </p>
 
-          <p className="text-black mb-4 text-[20px] font-[700] font-matt leading-[33px]">
+          <p className="text-black mb-4 text-[20px] font-[700] font-matt leading-[27px]">
             Starten Sie jetzt Ihre digitale Transformation!
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
-            <Link href="/services/website">
-                        <motion.button className="font-matt border-2 border-[#0009FF] text-white bg-[#0009FF] px-4 py-1 rounded-[20px] font-[800] text-[14px] transition-colors duration-200 group-hover:text-white group-hover:bg-black group-hover:border-black">
-                            MEHR <br>
-                            </br>ERFAHREN
-                        </motion.button>
-                        </Link>
-                        <Link href="/contact">
-                        <motion.button className="font-matt border-2 border-[#0009FF] text-[#0009FF] bg-white px-4 py-1 rounded-[20px] font-[800] text-[14px] transition-colors duration-200 group-hover:bg-white group-hover:text-[#0009FF] group-hover:border-white">
-                            JETZT PROJEKT <br>
-                            </br>STARTEN
-                        </motion.button>
-                        </Link>
+          <Link href="/services/website">
+                                    <motion.button
+                                    className={`border-2 border-[#0009FF] text-white bg-[#0009FF] group-hover:bg-black group-hover:text-white group-hover:border-black px-4 py-1 rounded-[20px] font-[800] text-[14px] transition-colors duration-300 ${
+                                      hoveredButton === "button2" ? "blur-sm" : "blur-none"
+                                    }`}
+                                    whileHover={{ scale: 1.1 }}
+                                    onMouseEnter={() => setHoveredButton("button1")}
+                                    onMouseLeave={() => setHoveredButton(null)}
+                                  >
+                                    MEHR <br /> ERFAHREN
+                                  </motion.button>
+                                  </Link>
+                                  <Link href="/contact">
+
+                                  {/* Button 2 */}
+                                  <motion.button
+                                    className={`font-matt border-2 border-[#0009FF] text-[#0009FF] bg-white px-4 py-1 rounded-[20px] font-[800] text-[14px] transition-all duration-300 ${
+                                      hoveredButton === "button1" ? "blur-sm" : "blur-none"
+                                    }`}
+                                    whileHover={{ scale: 1.1 }}
+                                    onMouseEnter={() => setHoveredButton("button2")}
+                                    onMouseLeave={() => setHoveredButton(null)}
+                                  >
+                                    JETZT PROJEKT <br /> STARTEN
+                                  </motion.button>
+        </Link>
           </div>
         </div>
       </motion.section>
@@ -280,36 +310,44 @@ const ServicesSection = () => {
         <h2 className="font-matt text-3xl sm:text-4xl md:text-5xl lg:text-[62px] font-[700] lg:leading-[80px] lg:mb-6 ">
         Custom Development
         </h2>
-        <p className="font-matt text-black mb-4  text-[20px] leading-[33px] font-[700] lg:mb-4 transition-colors duration-300 group-hover:text-white">
+        <p className="font-matt text-black mb-4  text-[20px] leading-[27px] font-[700] lg:mb-4 transition-colors duration-300 group-hover:text-white">
           Individuelle Softwarelösungen für einzigartige Anforderungen.
         </p>
-        <p className="text-black mb-4 font-matt text-[20px] font-[300] leading-[28px] group-hover:text-white">
-        Keine Herausforderung ist zu gross. Wir entwickeln skalierbare und zukunftssichere Anwendungen, die perfekt auf Ihre Bedürfnisse zugeschnitten sind– von speziellen Modulen bis hin zu komplexen Systemen. Unsere Lösungen integrieren sich nahtlos in bestehende Systeme und nutzen modernste Technologien, um Ihrem Unternehmen einen Wettbewerbsvorteil zu verschaffen.
+        <p className="text-black mb-4 font-matt text-[20px] font-[300] leading-[27px] group-hover:text-white">
+        Keine Herausforderung ist zu gross. Wir entwickeln skalierbare und zukunftssichere Anwendungen, die perfekt auf Ihre Bedürfnisse
+        zugeschnitten sind– von speziellen Modulen bis hin zu komplexen Systemen. Unsere Lösungen integrieren sich nahtlos in bestehende 
+        Systeme und nutzen modernste Technologien, um Ihrem Unternehmen  einen Wettbewerbsvorteil zu verschaffen.
         </p>
-        <p className="text-black mb-4 font-matt font-[700] text-[20px] leading-[33px] group-hover:text-white">
+        <p className="text-black mb-4 font-matt font-[700] text-[20px] leading-[27px] group-hover:text-white">
         Entwickeln Sie Ihre massgeschneiderte Lösung– starten Sie jetzt!
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
-          <Link href="/services/costumdevelopment">
-            <motion.button
-              className="font-matt border-2 border-[#0009FF] text-white bg-[#0009FF] px-4 py-1 rounded-[20px] font-[800] text-[14px] transition-colors duration-200 group-hover:bg-black group-hover:text-white group-hover:border-black"
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
-            >
-              MEHR <br />
-              ERFAHREN
-            </motion.button>
-          </Link>
-          <Link href="/contact">
-            <motion.button
-              className="font-matt border-2 border-[#0009FF] text-[#0009FF] bg-white px-4 py-1 rounded-[20px] font-[800] text-[14px] transition-colors duration-200 group-hover:bg-white group-hover:text-[#0009FF] group-hover:border-white"
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
-            >
-              JETZT PROJEKT <br />
-              STARTEN
-            </motion.button>
-          </Link>
+        <Link href="/services/customdevelopment">
+                                    <motion.button
+                                    className={`border-2 border-[#0009FF] text-white bg-[#0009FF] group-hover:bg-black group-hover:text-white group-hover:border-black px-4 py-1 rounded-[20px] font-[800] text-[14px] transition-colors duration-300 ${
+                                      hoveredButton === "button2" ? "blur-sm" : "blur-none"
+                                    }`}
+                                    whileHover={{ scale: 1.1 }}
+                                    onMouseEnter={() => setHoveredButton("button1")}
+                                    onMouseLeave={() => setHoveredButton(null)}
+                                  >
+                                    MEHR <br /> ERFAHREN
+                                  </motion.button>
+                                  </Link>
+                                  <Link href="/contact">
+
+                                  {/* Button 2 */}
+                                  <motion.button
+                                    className={`font-matt border-2 border-[#0009FF] text-[#0009FF] bg-white px-4 py-1 rounded-[20px] font-[800] text-[14px] transition-all duration-300 ${
+                                      hoveredButton === "button1" ? "blur-sm" : "blur-none"
+                                    }`}
+                                    whileHover={{ scale: 1.1 }}
+                                    onMouseEnter={() => setHoveredButton("button2")}
+                                    onMouseLeave={() => setHoveredButton(null)}
+                                  >
+                                    JETZT PROJEKT <br /> STARTEN
+          </motion.button>
+        </Link>
         </div>
       </motion.div>
 
@@ -372,27 +410,37 @@ const ServicesSection = () => {
           Warum warten, wenn Sie Unterstützung brauchen?
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
-          
+                                    <Link href="/services/bookyourekspert">
+                                    <motion.button
+                                    className={`border-2 border-[#0009FF] text-white bg-[#0009FF] group-hover:bg-black group-hover:text-white group-hover:border-black px-4 py-1 rounded-[20px] font-[800] text-[14px] transition-colors duration-300 ${
+                                      hoveredButton === "button2" ? "blur-sm" : "blur-none"
+                                    }`}
+                                    whileHover={{ scale: 1.1 }}
+                                    onMouseEnter={() => setHoveredButton("button1")}
+                                    onMouseLeave={() => setHoveredButton(null)}
+                                  >
+                                    MEHR <br /> ERFAHREN
+                                  </motion.button>
+                                  </Link>
+                                  <Link href="/contact">
 
-          <Link href="/services/bookyourekspert">
-            <motion.button
-            className="border-2 border-[#0009FF] text-white bg-[#0009FF] group-hover:bg-black group-hover:text-white group-hover:border-black px-4 py-1 rounded-[20px] font-[800] text-[14px] transition-colors duration-300">
-                                        MEHR <br />
-                                        ERFAHREN
-                                        </motion.button>
-                                    </Link>
-                                    <Link href="/services/contact">
-                                        <motion.button className="border-2 border-[#0009FF] text-[#0009FF] bg-white group-hover:bg-white group-hover:text-[#0009FF] group-hover:border-white px-4 py-1 rounded-[20px] font-[800] text-[14px] transition-colors duration-300">
-                                        JETZT PROJEKT <br />
-                                        STARTEN
-                                        </motion.button>
-                                    </Link>
-          
-        </div>
-      </motion.div>
+                                  {/* Button 2 */}
+                                  <motion.button
+                                    className={`font-matt border-2 border-[#0009FF] text-[#0009FF] bg-white px-4 py-1 rounded-[20px] font-[800] text-[14px] transition-all duration-300 ${
+                                      hoveredButton === "button1" ? "blur-sm" : "blur-none"
+                                    }`}
+                                    whileHover={{ scale: 1.1 }}
+                                    onMouseEnter={() => setHoveredButton("button2")}
+                                    onMouseLeave={() => setHoveredButton(null)}
+                                  >
+                                    JETZT PROJEKT <br /> STARTEN
+                                  </motion.button>
+                                  </Link>
+                            </div>
+          </motion.div>
 
       {/* Right Section: Image */}
-      <motion.div
+      <motion.div 
         className="md:w-1/2 mt-6 md:mt-0 flex justify-center relative overflow-hidden"
         initial={{ x: 50, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}

@@ -21,6 +21,8 @@ const GraphicDesignSection = () => {
   ];
   const [currentImage, setCurrentImage] = useState(logo3);
   const [hovering, setHovering] = useState(false);
+  const [hoveredButton, setHoveredButton] = useState(null);
+
 
   const handleMouseEnter = () => {
     setHovering(true);
@@ -97,26 +99,32 @@ Unser kreatives Team gestaltet Designs, die Ihre Botschaft klar transportieren u
           Zeigen Sie Ihre Marke von ihrer besten Seite.
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
-          <Link href="/services/graphicdesign">
-            <motion.button
-              className="font-matt border-2 border-[#0009FF] text-white bg-[#0009FF] px-4 py-1 rounded-[20px] text-sm sm:text-base font-[800] text-[14px]  group-hover:border-black group-hover:text-white group-hover:bg-black"
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
-            >
-              MEHR <br />
-              ERFAHREN
-            </motion.button>
-          </Link>
-          <Link href="/contact">
-            <motion.button
-              className="font-matt border-2 border-[#0009FF] text-[#0009FF] bg-white px-4 py-1 rounded-[20px] text-sm sm:text-base font-[800] text-[14px]  group-hover:bg-white group-hover:text-[#0009FF] group-hover:border-white"
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
-            >
-              JETZT PROJEKT <br />
-              STARTEN
-            </motion.button>
-          </Link>
+        <Link href="/services/graphicdesign">
+                                    <motion.button
+                                    className={`border-2 border-[#0009FF] text-white bg-[#0009FF] group-hover:bg-black group-hover:text-white group-hover:border-black px-4 py-1 rounded-[20px] font-[800] text-[14px] transition-colors duration-300 ${
+                                      hoveredButton === "button2" ? "blur-sm" : "blur-none"
+                                    }`}
+                                    whileHover={{ scale: 1.1 }}
+                                    onMouseEnter={() => setHoveredButton("button1")}
+                                    onMouseLeave={() => setHoveredButton(null)}
+                                  >
+                                    MEHR <br /> ERFAHREN
+                                  </motion.button>
+                                  </Link>
+                                  <Link href="/contact">
+
+                                  {/* Button 2 */}
+                                  <motion.button
+                                    className={`font-matt border-2 border-[#0009FF] text-[#0009FF] bg-white px-4 py-1 rounded-[20px] font-[800] text-[14px] transition-all duration-300 ${
+                                      hoveredButton === "button1" ? "blur-sm" : "blur-none"
+                                    }`}
+                                    whileHover={{ scale: 1.1 }}
+                                    onMouseEnter={() => setHoveredButton("button2")}
+                                    onMouseLeave={() => setHoveredButton(null)}
+                                  >
+                                    JETZT PROJEKT <br /> STARTEN
+                                  </motion.button>
+        </Link>
         </div>
       </motion.div>
     </motion.section>
