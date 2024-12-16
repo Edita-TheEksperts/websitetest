@@ -184,7 +184,7 @@ const SVGAnimation = () => {
                         <p className="text-gray-700 mb-4 text-center md:text-[18px] md:leading-[33px] font-matt">
                         Nach nur drei kurzen Fragen erhalten Sie eine persönliche Beratung sowie ein massgeschneidertes Angebot – völlig kostenlos und unverbindlich.
                         </p>
-                        <div className="flex lg:justify-start justify-center mt-2">
+                        <div className="flex justify-center mt-2">
                         <button
                                         onClick={handleNext}
                                         className="px-6 py-4 bg-[#0009FF] text-white rounded-[30px] md:text-[28px] md:leading-[37px] font-extrabold hover:bg-blue-800"
@@ -207,7 +207,7 @@ const SVGAnimation = () => {
                           <span className="md:text-[28px]">/</span>
                           <span className="text-lg md:text-[28px] font-semibold">04</span>
                         </div>
-                        <div className="lg:w-[550px] w-[350px] mb-[10px] sm:mb-[20px] lg:mb-[30px]">
+                        <div className="lg:w-[550px] w-[350px] mb-[10px] sm:mb-[20px] lg:mb-0">
                               <svg
                                 width="100%" // Makes the SVG scale dynamically with its container
                                 height="17"
@@ -317,13 +317,13 @@ const SVGAnimation = () => {
                         {currentScreen === 3 && (
                           <div className="flex flex-col items-center mt-8">
                           {/* Progress Bar Section */}
-                          <div className="w-full flex flex-col items-center md:items-center md:mb-[80px]">
+                          <div className="w-full flex flex-col items-center md:items-center md:mb-[60px]">
                             <div className="flex items-center space-x-2 mb-4">
                               <span className="text-lg md:text-[28px] font-semibold text-[#0009FF]">03</span>
                               <span className="md:text-[28px]">/</span>
                               <span className="text-lg md:text-[28px] font-semibold">04</span>
                             </div>
-                            <div className="lg:w-[550px] w-[350px] mb-[10px] sm:mb-[20px] lg:mb-[30px]">
+                            <div className="lg:w-[550px] w-[350px] mb-[10px] sm:mb-[20px] lg:mb-0">
                               <svg
                                 width="100%" // Makes the SVG scale dynamically with its container
                                 height="17"
