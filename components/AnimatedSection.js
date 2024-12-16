@@ -123,11 +123,11 @@ const SVGAnimation = () => {
       {isModalOpen && (
             <div
             onClick={() => setIsModalOpen(false)}
-            className="p-4 fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50"
+            className="lg:p-4 p-2 fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50"
             >          
             <div
               onClick={(e) => e.stopPropagation()}
-              className="bg-white rounded-[20px] p-8 w-full lg:max-w-[1280px] lg:max-h-[580px] relative"
+              className="bg-white rounded-[20px] p-8 w-full max-w-[90%] lg:max-w-[1280px] lg:max-h-[580px] relative"
             >
                <button
                     onClick={() => setIsModalOpen(false)}
@@ -143,15 +143,21 @@ const SVGAnimation = () => {
                           <span className="md:text-[28px]">/</span>
                           <span className="text-lg md:text-[28px] font-semibold">04</span>
                         </div>
-                        <div className="lg:w-[550px] w-full mb-[30px]">
-                        <svg width="539" height="17" viewBox="0 0 539 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0 17V6.5L8.5 0H131V17H0Z" fill="#0009FF"/>
-                        <path d="M136 17V6.5L144.5 0H267V17H136Z" fill="#F1F1F1"/>
-                        <path d="M272 17V6.5L280.5 0H403V17H272Z" fill="#F1F1F1"/>
-                        <path d="M408 17V6.5L416.5 0H539V17H408Z" fill="#F1F1F1"/>
-                        </svg>
+                        <div className="lg:w-[550px] w-[350px] mb-[10px] sm:mb-[20px] lg:mb-[30px]">
+                              <svg
+                                width="100%" // Makes the SVG scale dynamically with its container
+                                height="17"
+                                viewBox="0 0 539 17"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path d="M0 17V6.5L8.5 0H131V17H0Z" fill="#0009FF" />
+                                <path d="M136 17V6.5L144.5 0H267V17H136Z" fill="#F1F1F1" />
+                                <path d="M272 17V6.5L280.5 0H403V17H272Z" fill="#F1F1F1" />
+                                <path d="M408 17V6.5L416.5 0H539V17H408Z" fill="#F1F1F1" />
+                              </svg>
+                            </div>
 
-                        </div>
                       
 
                       {/* Video Section */}
@@ -178,8 +184,8 @@ const SVGAnimation = () => {
                         <p className="text-gray-700 mb-4 text-center md:text-[18px] md:leading-[33px] font-matt">
                         Nach nur drei kurzen Fragen erhalten Sie eine persönliche Beratung sowie ein massgeschneidertes Angebot – völlig kostenlos und unverbindlich.
                         </p>
-                        <div className="flex justify-center mt-4">
-                                      <button
+                        <div className="flex lg:justify-start justify-center mt-2">
+                        <button
                                         onClick={handleNext}
                                         className="px-6 py-4 bg-[#0009FF] text-white rounded-[30px] md:text-[28px] md:leading-[37px] font-extrabold hover:bg-blue-800"
                                       >
@@ -201,8 +207,14 @@ const SVGAnimation = () => {
                           <span className="md:text-[28px]">/</span>
                           <span className="text-lg md:text-[28px] font-semibold">04</span>
                         </div>
-                        <div className="lg:w-[500px] w-full mb-[10px] md:mb-[5px]">
-                        <svg width="539" height="17" viewBox="0 0 539 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <div className="lg:w-[550px] w-[350px] mb-[10px] sm:mb-[20px] lg:mb-[30px]">
+                              <svg
+                                width="100%" // Makes the SVG scale dynamically with its container
+                                height="17"
+                                viewBox="0 0 539 17"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
                         <path d="M0 17V6.5L8.5 0H131V17H0Z" fill="#0009FF"/>
                         <path d="M136 17V6.5L144.5 0H267V17H136Z" fill="#0009FF"/>
                         <path d="M272 17V6.5L280.5 0H403V17H272Z" fill="#F1F1F1"/>
@@ -217,7 +229,7 @@ const SVGAnimation = () => {
                                 {/* Video Section */}
                                 <div className="w-full lg:w-1/2 flex justify-center">
                                   <video
-                                    className="w-full lg:w-[400px] "
+                                    className="w-[150px] lg:w-[400px]"
                                     autoPlay
                                     muted
                                     loop
@@ -230,7 +242,7 @@ const SVGAnimation = () => {
 
                                 {/* Form Section */}
                                 <div className="w-full lg:w-1/2 text-center lg:text-left">
-                                <h2 className="text-xl font-extrabold text-center lg:text-left uppercase md:text-[22px] md:leading-[27px] font-matt mb-4">
+                                <h2 className="text-[16px] font-[900] text-center lg:text-left uppercase md:text-[22px] md:leading-[27px] font-matt mb-4">
                                 Was möchten Sie mit unserer Unterstützung erreichen?
                                 </h2>
                                   <form className="grid grid-cols-1 gap-4 mb-4 md:mb-[10px]">
@@ -239,35 +251,35 @@ const SVGAnimation = () => {
                                           type="checkbox"
                                           className="w-5 h-5 text-[#0009FF] border-gray-300 rounded focus:ring-[#0009FF]"
                                         />
-                                        <span className="lg:text-[18px] ">Website erstellen oder optimieren</span>
+                                        <span className="lg:text-[18px] text-[14px] ">Website erstellen oder optimieren</span>
                                       </label>
                                       <label className="flex items-center space-x-3">
                                         <input
                                           type="checkbox"
                                           className="w-5 h-5 text-[#0009FF] border-gray-300 rounded focus:ring-[#0009FF]"
                                         />
-                                        <span className="lg:text-[18px] " >Salesforce-Lösungen implementieren</span>
+                                        <span className="lg:text-[18px] text-[14px] " >Salesforce-Lösungen implementieren</span>
                                       </label>
                                       <label className="flex items-center space-x-3">
                                         <input
                                           type="checkbox"
                                           className="w-5 h-5 text-[#0009FF] border-gray-300 rounded-lg focus:ring-[#0009FF]"
                                         />
-                                        <span className="lg:text-[18px] ">Individuelle Softwareentwicklung</span>
+                                        <span className="lg:text-[18px] text-[14px]  ">Individuelle Softwareentwicklung</span>
                                       </label>
                                       <label className="flex items-center space-x-3">
                                         <input
                                           type="checkbox"
                                           className="w-5 h-5 text-[#0009FF] border-gray-300 rounded-lg focus:ring-[#0009FF]"
                                         />
-                                        <span className="lg:text-[18px] ">Online-Shop aufbauen</span>
+                                        <span className="lg:text-[18px] text-[14px] ">Online-Shop aufbauen</span>
                                       </label>
                                       <label className="flex items-center space-x-3">
                                         <input
                                           type="checkbox"
                                           className="w-5 h-5 text-[#0009FF] border-gray-300 rounded-lg focus:ring-[#0009FF]"
                                         />
-                                        <span className="lg:text-[18px]">IT-Architektur oder Netzwerk optimieren</span>
+                                        <span className="lg:text-[18px] text-[14px] ">IT-Architektur oder Netzwerk optimieren</span>
                                       </label>
                                       <label className="flex items-center space-x-3">
                                         <input
@@ -278,7 +290,7 @@ const SVGAnimation = () => {
                                       </label>  
                                       
                                   </form>
-                                  <div className="flex justify-start mt-2">
+                                  <div className="flex lg:justify-start justify-center mt-2">
                                       <button
                                         onClick={handleNext}
                                         className="px-4 py-3 bg-[#0009FF] text-white rounded-[30px] md:text-[25px] md:leading-[37px] font-[900] hover:bg-blue-800"
@@ -311,8 +323,14 @@ const SVGAnimation = () => {
                               <span className="md:text-[28px]">/</span>
                               <span className="text-lg md:text-[28px] font-semibold">04</span>
                             </div>
-                            <div className="md:w-[550px] w-full mb-[10px] md:mb-[5px]">
-                            <svg width="539" height="17" viewBox="0 0 539 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <div className="lg:w-[550px] w-[350px] mb-[10px] sm:mb-[20px] lg:mb-[30px]">
+                              <svg
+                                width="100%" // Makes the SVG scale dynamically with its container
+                                height="17"
+                                viewBox="0 0 539 17"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
                             <path d="M0 17V6.5L8.5 0H131V17H0Z" fill="#0009FF"/>
                             <path d="M136 17V6.5L144.5 0H267V17H136Z" fill="#0009FF"/>
                             <path d="M272 17V6.5L280.5 0H403V17H272Z" fill="#0009FF"/>
@@ -336,28 +354,28 @@ const SVGAnimation = () => {
                                       type="checkbox"
                                       className="w-5 h-5 text-[#0009FF] border-gray-300 rounded focus:ring-[#0009FF]"
                                     />
-                                    <span className="lg:text-[18px]">Sofort</span>
+                                    <span className="lg:text-[18px] text-[14px]">Sofort</span>
                                   </label>
                                   <label className="flex items-center space-x-3">
                                     <input
                                       type="checkbox"
                                       className="w-5 h-5 text-[#0009FF] border-gray-300 rounded focus:ring-[#0009FF]"
                                     />
-                                    <span className="lg:text-[18px]">Innerhalb der nächsten 3 Monate</span>
+                                    <span className="lg:text-[18px] text-[14px]">Innerhalb der nächsten 3 Monate</span>
                                   </label>
                                   <label className="flex items-center space-x-3">
                                     <input
                                       type="checkbox"
                                       className="w-5 h-5 text-[#0009FF] border-gray-300 rounded focus:ring-[#0009FF]"
                                     />
-                                    <span className="lg:text-[18px]">In 3–6 Monaten</span>
+                                    <span className="lg:text-[18px] text-[14px]">In 3–6 Monaten</span>
                                   </label>
                                   <label className="flex items-center space-x-3">
                                     <input
                                       type="checkbox"
                                       className="w-5 h-5 text-[#0009FF] border-gray-300 rounded focus:ring-[#0009FF]"
                                     />
-                                    <span className="lg:text-[18px]">Noch unklar</span>
+                                    <span className="lg:text-[18px] text-[14px]">Noch unklar</span>
                                   </label>
                                 </div>
                                   {/* Button */}
@@ -402,7 +420,7 @@ const SVGAnimation = () => {
                         )}
              
                         {currentScreen === 4 && (
-                          <div className="flex flex-col items-center mt-8 font-matt">
+                          <div className="flex flex-col items-center lg:mt-8 font-matt">
                             {/* Progress Bar */}
                             <div className="w-full flex flex-col items-center md:mb-[10px]">
                               <div className="flex items-center space-x-2 mb-4">
@@ -410,8 +428,14 @@ const SVGAnimation = () => {
                                 <span className="md:text-[28px]">/</span>
                                 <span className="text-lg md:text-[28px] font-semibold text-[#0009FF]">04</span>
                               </div>
-                              <div className="md:w-[550px] w-full mb-[20px] md:mb-[5px]">
-                              <svg width="539" height="17" viewBox="0 0 539 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <div className="lg:w-[550px] w-[350px] mb-[10px] sm:mb-[20px] lg:mb-[30px]">
+                              <svg
+                                width="100%" // Makes the SVG scale dynamically with its container
+                                height="17"
+                                viewBox="0 0 539 17"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
                                 <path d="M0 17V6.5L8.5 0H131V17H0Z" fill="#0009FF"/>
                                 <path d="M136 17V6.5L144.5 0H267V17H136Z" fill="#0009FF"/>
                                 <path d="M272 17V6.5L280.5 0H403V17H272Z" fill="#0009FF"/>
@@ -424,7 +448,7 @@ const SVGAnimation = () => {
                             <div className="flex flex-col lg:flex-row items-center justify-between gap-4 lg:gap-4 mt-4 mx-auto">
                                 {/* Form Section */}
                                 <div className="lg:w-1/2 lg:px-4">
-                                  <h2 className="text-xl font-extrabold text-center lg:text-left uppercase md:text-[22px] md:leading-[32px] font-matt mb-4">
+                                  <h2 className="text-[14px] font-[900] text-center lg:text-left uppercase md:text-[22px] md:leading-[32px] font-matt mb-4">
                                     Wie können wir Sie erreichen?
                                   </h2>
                                   <form className="lg:space-y-4 space-y-2 w-full max-w-4xl">
@@ -434,7 +458,7 @@ const SVGAnimation = () => {
                                         <input
                                           type="text"
                                           placeholder="NAME"
-                                          className="w-full border p-2 text-center text-[18px] placeholder-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:text-blue-500"
+                                          className="w-full border p-2 text-center text-[14px] lg:text-[18px] placeholder-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:text-blue-500"
                                         />
                                       </div>
                                       <div className="flex flex-col border border-blue-400 w-full">
@@ -442,7 +466,7 @@ const SVGAnimation = () => {
                                         <input
                                           type="text"
                                           placeholder="UNTERNEHMEN"
-                                          className="w-full border p-2 text-center text-[18px] placeholder-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:text-blue-500"
+                                          className="w-full border p-2 text-center text-[14px] lg:text-[18px] placeholder-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:text-blue-500"
                                         />
                                       </div>
                                     </div>
@@ -452,7 +476,7 @@ const SVGAnimation = () => {
                                         <input
                                           type="email"
                                           placeholder="E-MAIL"
-                                          className="w-full border p-2 text-center text-[19px] placeholder-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:text-blue-500"
+                                          className="w-full border p-2 text-center text-[14px] lg:text-[18px] placeholder-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:text-blue-500"
                                         />
                                       </div>
                                       <div className="flex flex-col border border-blue-400 w-full">
@@ -460,7 +484,7 @@ const SVGAnimation = () => {
                                         <input
                                           type="tel"
                                           placeholder="TELEFONNUMMER (optional)"
-                                          className="w-full border p-2 text-center text-[19px] placeholder-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:text-blue-500"
+                                          className="w-full border p-2 text-center text-[14px] lg:text-[18px] placeholder-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:text-blue-500"
                                         />
                                       </div>
                                     </div>
@@ -468,7 +492,7 @@ const SVGAnimation = () => {
                                       <label className="hidden">Nachricht</label>
                                       <textarea
                                         placeholder="NACHRICHT („Gibt es noch etwas, das wir wissen sollten?“)"
-                                        className="w-full border p-2 text-center text-[19px] placeholder-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:text-blue-500"
+                                        className="w-full border p-2 text-center text-[14px] lg:text-[18px] placeholder-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:text-blue-500"
                                       />
                                     </div>
                                     {/* Button */}
@@ -497,7 +521,7 @@ const SVGAnimation = () => {
                                 {/* Video Section */}
                                 <div className="lg:w-1/2 flex justify-center">
                                   <video
-                                    className="w-full lg:w-[500px] lg:h-[380px]"
+                                    className="w-full h-[100px] lg:w-[500px] lg:h-[380px]"
                                     autoPlay
                                     muted
                                     loop
