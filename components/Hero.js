@@ -130,7 +130,7 @@ const Hero = ({ setHeroVisible }) => {
         </div>
         
         {/* Image Section */}
-        <div className="md:w-1/2 flex justify-center md:justify-start mt-8 md:mt-0">
+        <div className="md:w-1/2 md:block hidden flex md:justify-center lg:justify-start mt-8 md:mt-0">
           <Image
             src="/images/Homepage.png" 
             alt="Hero Image"

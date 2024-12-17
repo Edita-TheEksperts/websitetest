@@ -164,8 +164,8 @@ export default function Contact() {
                 </h2>
               </div>
               <p className=" text-gray-600">
-                Ich stehe dafür, dass unsere Lösungen nicht nur heute funktionieren,
-                sondern auch Ihre Zukunft sichern.
+                "Ich stehe dafür, dass unsere Lösungen nicht nur heute funktionieren,
+                sondern auch Ihre Zukunft sichern."
               </p>
               <div className="flex flex-row items-start text-center space-x-2">
                 {/* Email Link */}
@@ -377,8 +377,15 @@ export default function Contact() {
             <h2 className="font-matt text-2xl md:text-4xl font-bold text-center text-gray-800 mb-10">
               Kaffee? Hier finden Sie uns!
             </h2>
+           
             <div className="font-matt max-w-[1280px] mx-auto grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8">
               {/* Switzerland Section */}
+              <a
+                      href="https://www.google.com/maps?q=Sonnengartenstrasse+6,+9000+St.+Gallen"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:underline"
+                    >
               <div className="font-matt flex flex-col items-center  space-y-4 transition-all duration-300 p-4 rounded-[20px] group">
                 {/* Image */}
                 <div
@@ -391,20 +398,21 @@ export default function Contact() {
                 ></div>
                 <div className="font-matt text-center group-hover:text-blue-600 transition-all duration-300">
                   <h3 className="font-matt font-semibold text-lg sm:text-xl">
-                    <a
-                      href="https://www.google.com/maps?q=Sonnengartenstrasse+6,+9000+St.+Gallen"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="hover:underline"
-                    >
+                   
                       Schweiz
-                    </a>
+                    
                   </h3>
                   <p className="text-sm md:text-base">Sonnengartenstrasse 6</p>
                   <p className="text-sm md:text-base">9000 St. Gallen</p>
                 </div>
               </div>
-
+              </a>
+                <a
+                        href="https://www.google.com/maps?q=23+Ganimete+T%C3%ABrbeshi,+10000+Prishtin%C3%AB"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="hover:underline"
+                      >
               <div className="font-matt flex flex-col items-center space-y-4 transition-all duration-300 p-6 rounded-[20px] group">
                   <div
                     className="font-matt w-[290px] h-[250px]"
@@ -417,22 +425,19 @@ export default function Contact() {
 
                   <div className="font-matt text-center group-hover:text-blue-600 transition-all duration-300">
                     <h3 className="font-matt font-semibold text-lg sm:text-xl">
-                      <a
-                        href="https://www.google.com/maps?q=23+Ganimete+T%C3%ABrbeshi,+10000+Prishtin%C3%AB"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="hover:underline"
-                      >
                         Kosovë
-                      </a>
                     </h3>
                     <p className="text-sm md:text-base">23 Ganimete Tërbeshi</p>
                     <p className="text-sm md:text-base">10000 Prishtinë</p>
                   </div>
                   </div>
-
+                  </a>
 
               {/* Kosovo Section */}
+              <a
+                      href="mailto:info@the-eksperts.com"
+                      className="hover:underline"
+                    >
               <div className="font-matt flex flex-col items-center  space-y-4 transition-all duration-300 p-6 rounded-[20px]  group">
                 {/* Image */}
                 <div
@@ -446,17 +451,15 @@ export default function Contact() {
                 {/* Text */}
                 <div className="font-matt text-center group-hover:text-blue-600 transition-all duration-300">
                   <h3 className="font-matt font-semibold text-lg sm:text-xl">
-                    <a
-                      href="mailto:info@the-eksperts.com"
-                      className="hover:underline"
-                    >
+                  
                       Weltweit
-                    </a>
+                    
                   </h3>
                   <p className="text-sm md:text-base">info@the-eksperts.com</p>
                   <p className="text-sm md:text-base">Digital</p>
                 </div>
               </div>
+              </a>
             </div>
           </div>
     </div>
