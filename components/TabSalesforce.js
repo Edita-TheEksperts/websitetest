@@ -14,16 +14,14 @@ export default function SalesforceSection() {
     {
       id: 2,
       title: "Erfahrung und Expertise",
-      description:
-        "Unsere Expertise garantiert Ihnen die besten Ergebnisse durch präzise und individuelle Anpassungen.",
-      image: "/experience-expertise.png", 
+      image: "/images/SALESFORCE.svg", 
     },
     {
       id: 3,
       title: "Umfassendes Know-How",
       description:
         "Als offizieller Partner bieten wir die modernsten Technologien für Ihre Anforderungen.",
-      image: "/comprehensive-knowhow.png", 
+      image: "/images/salesforce 3.svg", 
     },
   ];
 
