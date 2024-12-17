@@ -64,7 +64,7 @@ const Hero = ({ setHeroVisible }) => {
         <div className="font-matt md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left mb-8 md:mb-0 px-2">
           <h1 className="font-matt text-4xl sm:text-5xl md:text-6xl lg:text-[80px] font-[400] tracking-tight leading-tight lg:leading-[87px] mt-16 mb-4 text-center md:text-left">
             Führen Sie Ihre <br />
-            <span className="font-matt text-5xl sm:text-5xl md:text-6xl lg:text-[80px] lg:leading-[87px] font-[400] text-[#0009FF]">{displayedWord}
+            <span className="font-matt text-5xl sm:text-5xl md:text-6xl lg:text-[80px] lg:leading-[97px] font-[900] text-[#0009FF]">{displayedWord}
             </span> <br></br>
             <span 
               className="font-matt text-4xl sm:text-5xl md:text-6xl lg:text-[80px] font-[400] lg:leading-[87px] whitespace-nowrap"
