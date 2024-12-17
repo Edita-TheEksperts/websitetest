@@ -74,25 +74,48 @@ const SectionGrid = ({ sections }) => {
   return (
     <motion.div
       ref={ref}
-      className="grid grid-cols-1 md:grid-cols-3 gap-4 px-4 md:px-4 lg:min-w-[1280px] mx-auto"
+      className="grid grid-cols-1 lg:grid-cols-3 gap-4 px-4 mx-auto mb-10"
       initial="hidden"
       animate={inView ? "visible" : "hidden"}
-      variants={fadeVariants}
+      variants={{
+        hidden: { opacity: 0, y: 50 },
+        visible: { opacity: 1, y: 0, transition: { duration: 0.9, ease: "easeInOut" } },
+      }}
     >
+    {/* First Row: Three sections */}
+    {sections.slice(0, 3).map((section, index) => (
+    <div
+      key={index}
+      className="flex flex-col items-center text-center space-y-4 lg:space-y-8 lg:mb-[30px] w-full md:block hidden"
+    >
+      {section.icon}
+      <h3 className="font-matt text-xl lg:text-[28px] leading-[37px] font-[900] text-black uppercase">
+        {section.title}
+      </h3>
+    </div>
+  ))}
+
       {/* First Row: Three sections */}
+      <div className="md:hidden block grid grid-cols-1 lg:grid-cols-2 gap-4 w-full col-span-3">
       {sections.slice(0, 3).map((section, index) => (
-        <div key={index} className="flex flex-col items-center text-center space-y-8 lg:mb-[30px]">
+        <div
+          key={index}
+          className="flex flex-col items-center text-center space-y-4 lg:space-y-8 lg:mb-[30px] w-full"
+        >
           {section.icon}
           <h3 className="font-matt text-xl lg:text-[28px] leading-[37px] font-[900] text-black uppercase">
             {section.title}
           </h3>
         </div>
       ))}
-
+  </div>
       {/* Second Row: Two sections */}
-      <div className="col-span-3 grid grid-cols-2">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 w-full col-span-3">
         {sections.slice(3).map((section, index) => (
-          <div key={index} className="flex flex-col items-center text-center space-y-8 mt-10">
+          <div
+            key={index}
+            className="flex flex-col items-center text-center space-y-4 lg:space-y-8 mt-10 w-full"
+          >
             {section.icon}
             <h3 className="font-matt text-xl lg:text-[28px] leading-[37px] font-[900] text-black uppercase">
               {section.title}
@@ -103,6 +126,8 @@ const SectionGrid = ({ sections }) => {
     </motion.div>
   );
 };
+
+
 
 const App = () => {
   const sections = [
@@ -115,7 +140,7 @@ const App = () => {
           viewBox="0 0 205 180"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          className="lg:mt-[250px]" 
+          className="lg:mt-[250px] lg:ml-[60px]" 
 
         >
           <path
@@ -133,6 +158,7 @@ const App = () => {
           height="180"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 392.89 291.2"
+          className ="lg:ml-[60px]"
 
         >
           <rect
@@ -153,7 +179,7 @@ const App = () => {
     {
       title: "Exzellenz",
       icon: (
-        <motion.svg width="205" height="180" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 375.5 375.6"  className="lg:mt-[250px]" 
+        <motion.svg width="205" height="180" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 375.5 375.6"  className="lg:mt-[250px] lg:ml-[60px]" 
 >
             <path
               fill="#cfff49"
