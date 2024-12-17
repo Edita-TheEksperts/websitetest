@@ -211,16 +211,16 @@ const Home = () => {
                 <div className="font-matt flex-1 text-center lg:text-left space-y-6">
                 {/* Name and Title */}
                 <h2 className="text-4xl lg:text-[80px] lg:leading-[80px] font-matt font-[300]">FISNIK SALIHU</h2>
-                <p className="text-black text-xl lg:text-[28px] lg:leading-[37px] font-matt font-[300] uppercase">Co-Founder & strategy ekspert</p>
+                <p className="text-black text-xl lg:text-[28px] lg:leading-[37px] font-matt font-[300] uppercase ml-1">Co-Founder & strategy ekspert</p>
 
                 {/* Email Section */}
                 <div className="flex flex-col lg:flex-row items-center lg:space-x-10 lg:space-y-0 space-y-4 ">
-                    <p className="text-black text-lg lg:text-[20px] font-[300] lg:mt-[12px] lg:mr-[20px]">
+                    <p className="text-black text-lg lg:text-[20px] font-[300] lg:mt-[2px] lg:mr-[20px] ml-1">
                         Schreiben Sie mir
                     </p>
                     <a
                         href="mailto:fisnik.salihu@the-eksperts.com"
-                        className="text-[#BBBFBB] underline border-[2px] border-black text-[16px] lg:text-[20px] py-2 px-4 rounded-full hover:bg-[#0009FF] hover:text-white hover:border-[#0009FF]"
+                        className="text-black border-[2px] border-black text-[16px] lg:text-[20px] py-2 px-4 rounded-full hover:bg-[#0009FF] hover:text-white hover:border-[#0009FF]"
                     >
                         fisnik.salihu@the-eksperts.com
                     </a>
@@ -228,12 +228,12 @@ const Home = () => {
 
                     {/* Phone Section */}
                     <div className="flex flex-col lg:flex-row items-center lg:space-x-10 lg:space-y-0 space-y-4">
-                    <p className="text-black text-lg lg:text-[20px] font-[300] lg:mt-[12px] lg:mr-[-28px]">
+                    <p className="text-black text-lg lg:text-[20px] font-[300] lg:mt-[2px] lg:mr-[-28px] ml-1">
                         oder rufen Sie mich an
                     </p>
                     <a
                         href="tel:+41799213000"
-                        className="text-[#BBBFBB] border-[2px] border-black text-[16px] lg:text-[20px] py-2 px-4 rounded-full hover:bg-[#0009FF] hover:text-white hover:border-[#0009FF]"
+                        className="text-black border-[2px] border-black text-[16px] lg:text-[20px] py-2 px-4 rounded-full hover:bg-[#0009FF] hover:text-white hover:border-[#0009FF]"
                     >
                         +41 79 921 30 00
                     </a>
