@@ -8,8 +8,8 @@ import Hero from '../components/Hero';
 import '../styles/global.css'; 
 import AnimatedSection from '../components/AnimatedSection';
 import '../styles/swiper.css';
-import Work from '../components/work'
-import Wie from '../components/wie'
+import { HeaderSection, ServicesSection } from "../components/work";
+import Wie from '../components/wie';
 import Warum from '../components/warum'
 
 
@@ -48,8 +48,10 @@ const Home = () => {
         <Hero setHeroVisible={setHeroVisible} />
         </div>
 
-            <Work/>
-
+        <div>
+      <HeaderSection />
+      <ServicesSection />
+    </div>
             <Wie/>
 
             <Warum/>

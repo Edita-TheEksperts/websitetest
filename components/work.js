@@ -1,85 +1,48 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { motion, useAnimation } from "framer-motion";
+import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import secondImage from '/images/costum-normal-2.png';
-import secondImage2 from '/images/costum-hover.png';
-import firstImage from '/images/website-normal.png';
-import firstImage2 from '/images/website-hover.png';
-import GraphicDesignSection from '../components/GraphisDesignSection';
-import figure from '/images/the-eksperts-book.png';
-import figure2 from '/images/the-eksperts-book-hover.png';
-
+import secondImage from "/images/costum-normal-2.png";
+import secondImage2 from "/images/costum-hover.png";
+import firstImage from "/images/website-normal.png";
+import firstImage2 from "/images/website-hover.png";
+import GraphicDesignSection from "./GraphisDesignSection";
+import figure from "/images/the-eksperts-book.png";
+import figure2 from "/images/the-eksperts-book-hover.png";
 
 // Animation Variants
 const fadeVariants = {
-    hidden: { opacity: 0, y: 50 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: { duration: 0.9, ease: "easeInOut" },
-    },
-    exiting: {
-      opacity: 0,
-      y: -50,
-      transition: { duration: 1.6, ease: "easeOut" },
-    },
-  };
-  
+  hidden: { opacity: 0, y: 50 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.9, ease: "easeInOut" } },
+};
 
 
-const ServicesSection = () => {
-  const [hovered, setHovered] = useState(false);
-  const [scrollY, setScrollY] = useState(0);
-  const [hoveredButton, setHoveredButton] = useState(null);
-
-
-  const handleScroll = () => {
-    setScrollY(window.scrollY);
-  };
-
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-   
-
-  const controls = useAnimation();
-  const { ref, inView } = useInView({
-    triggerOnce: false,
-    threshold: 0.3,
+const HeaderSection = () => {
+  const [ref, inView] = useInView({
+    threshold: 0.2, // Adjust the threshold as needed
   });
 
-  useEffect(() => {
-    if (inView) {
-      controls.start("visible");
-    } else {
-      controls.start("exiting");
-    }
-  }, [inView, controls]);
-
-
   return (
-    <section className="relative py-2">
-      {/* Original Header */}
-      <div
-      className={`sticky top-0 flex flex-col items-center justify-center h-screen ${
-        scrollY > 500 ? "opacity-0 pointer-events-none" : "opacity-100"
-      } transition-opacity duration-700`}
+    <div
+      ref={ref}
+      className=" top-0 flex flex-col items-center justify-center h-screen bg-white transition-opacity duration-700 z-50"
     >
       <motion.h2
         className="text-black text-6xl uppercase font-matt lg:leading-[158px] font-[222] lg:text-[174px] tracking-[-2.88px] text-center"
-        initial={{ opacity: 1 }}
-        animate={{ opacity: scrollY > 500 ? 0 : 1 }}
+        initial="hidden"
+        animate={inView ? "visible" : "hidden"}
+        variants={{
+          hidden: { opacity: 0, y: 50 },
+          visible: { opacity: 1, y: 0 },
+        }}
         transition={{
-          duration: 3.5, // Smooth fade-in/out
+          duration: 0.9,
           ease: "easeInOut",
         }}
       >
-        Was wir <br /> leisten
+        WAS WIR <br /> LEISTEN
       </motion.h2>
-      
       <motion.svg
         xmlns="http://www.w3.org/2000/svg"
         width="109"
@@ -88,38 +51,45 @@ const ServicesSection = () => {
         fill="none"
         className="w-[100px] h-[100px] mt-6"
         style={{
-          rotate: `${Math.min(scrollY / 20, 270)}deg`, // Slowed rotation
           transformOrigin: "center",
         }}
         initial={{ rotate: 0 }}
         animate={{
-          rotate: scrollY > 500 ? 270 : 0,
+          rotate: inView ? 270 : 0, // Animate rotation based on `inView`
         }}
         transition={{
-          duration: 2, // Adjusted for smoother rotation
+          duration: 2,
           ease: "easeInOut",
         }}
       >
+        <path d="M39.6 54.8L20.4 35.5L1.1 54.8L20.4 74.1L39.6 54.8Z" fill="black" />
         <path
-          d="M39.6286 54.7907L20.3691 35.5312L1.10965 54.7907L20.3691 74.0502L39.6286 54.7907Z"
+          d="M95.3 69L59.3 69L45.7 55.4L54.8 46.4C57.7 43.4 61.8 41.8 66 41.8H95.3V69Z"
           fill="black"
         />
         <path
-          d="M95.2794 69.0033L59.3078 69.0033L45.745 55.4405L54.7589 46.4266C57.7402 43.4453 61.7853 41.7797 65.9983 41.7657L95.2794 41.7657L95.2794 69.0033Z"
+          d="M73.9 20.2L42.2 51.9L34.2 43.8C28 37.6 28 27.6 34.2 21.4L54.6 1L73.9 20.2Z"
           fill="black"
         />
         <path
-          d="M73.865 20.2361L42.2464 51.8546L34.2262 43.8345C28.0257 37.634 28.0117 27.5703 34.2262 21.3558L54.6055 0.976562L73.865 20.2361Z"
-          fill="black"
-        />
-        <path
-          d="M74.6049 89.767L55.3454 109.027L34.3224 88.0034C28.4717 82.1528 28.4717 72.663 34.3224 66.8124L42.9863 58.1484L74.6049 89.767Z"
+          d="M74.6 89.8L55.3 109L34.3 88C28.5 82.2 28.5 72.7 34.3 66.8L43 58.1L74.6 89.8Z"
           fill="black"
         />
       </motion.svg>
     </div>
+  );
+};
 
-      {/* Section 1: Salesforce */}
+// Services Section
+const ServicesSection = () => {
+  const [hoveredButton, setHoveredButton] = useState(null);
+  const [hovered, setHovered] = useState(false); 
+
+
+  const [ref, InView] = useInView({ threshold: 0.3, triggerOnce: true });
+
+  return (
+    <>
       <motion.section
         ref={ref}
         className="group font-matt cloudy-section flex flex-col md:flex-row items-center justify-between p-2 rounded-[20px] bg-[#FAFAFA] max-w-[1280px] mx-auto my-8 lg:h-[600px]"
@@ -173,7 +143,7 @@ const ServicesSection = () => {
         </Link>
           </div>
         </div>
-        <div className="font-matt md:w-1/2 mt-8 md:mt-0 flex justify-center z-10 group-hover:scale-115 transition-transform duration-300 ease-out">
+        <div className="md:block hidden font-matt lg:mr-[110px] mt-8 md:mt-0 flex justify-center z-10 group-hover:scale-115 transition-transform duration-300 ease-out">
         <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1110 1177"  class="svg-hover">
                     <defs>
                         <style>
@@ -210,6 +180,7 @@ const ServicesSection = () => {
         </div>
       </motion.section>
 
+
       {/* Section 2: Website */}
       <motion.section
         ref={ref}
@@ -222,24 +193,30 @@ const ServicesSection = () => {
         viewport={{ once: true }}
         variants={fadeVariants}
       >
-        <div className="md:w-1/2 mb-8 md:mb-0 flex justify-center relative transition-transform duration-500 ease-in-out hover:scale-105">
-        <Image
-                        src={firstImage}
-                        alt="Default Image"
-                        width={550}
-                        height={520}
-                        className={`rounded-lg object-contain transition-opacity duration-500 ease-in-out ${hovered ? 'opacity-0' : 'opacity-100'}`}
-                        />
+        <div className="md:block hidden md:w-1/2 mb-8 md:mb-0 flex justify-center relative transition-transform duration-500 ease-in-out hover:scale-105">
+            {/* Default Image */}
+            <Image
+              src={firstImage}
+              alt="Default Image"
+              width={550}
+              height={520}
+              className={`rounded-lg object-contain transition-opacity duration-500 ease-in-out ${
+                hovered ? "opacity-0" : "opacity-100"
+              }`}
+            />
 
-                        <Image
-                        src={firstImage2}
-                        alt="Hover Image"
-                        width={550}  
-                        height={530}
-                        className={`rounded-lg object-contain absolute transition-opacity duration-500 ease-in-out transform ${hovered ? 'opacity-100 scale-105' : 'opacity-0 scale-100'}`}
-                        />
-        
-        </div>
+            {/* Hover Image */}
+            <Image
+              src={firstImage2}
+              alt="Hover Image"
+              width={550}
+              height={520} 
+              className={`rounded-lg object-contain absolute top-0 left-0 transition-opacity duration-500 ease-in-out transform ${
+                hovered ? "opacity-100 scale-100" : "opacity-0 scale-100"
+              }`}
+            />
+          </div>
+
         <div className="group md:w-1/2 transition-all duration-500 ease-out lg:hover:mr-16 lg:mr-14">
         <h2 className="font-matt text-3xl sm:text-4xl md:text-5xl lg:text-[62px] font-[700] lg:leading-[80px] lg:mb-6 ">
             Website
@@ -353,7 +330,7 @@ const ServicesSection = () => {
 
       {/* Right Section: Image */}
       <motion.div
-        className="font-matt md:w-1/2 mt-8 md:mt-0 flex justify-center relative overflow-hidden"
+        className="md:block hidden font-matt md:w-1/2 mt-8 md:mt-0 flex justify-center relative overflow-hidden"
         initial={{ x: 50, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 1, ease: "easeOut" }}
@@ -441,7 +418,7 @@ const ServicesSection = () => {
 
       {/* Right Section: Image */}
       <motion.div 
-        className="md:w-1/2 mt-6 md:mt-0 flex justify-center relative overflow-hidden"
+        className="md:block hidden md:w-1/2 mt-6 md:mt-0 flex justify-center relative overflow-hidden"
         initial={{ x: 50, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 1, ease: "easeOut" }}
@@ -471,10 +448,8 @@ const ServicesSection = () => {
         </div>
       </motion.div>
     </motion.section>
-
-
-    </section>
+    </>
   );
 };
 
-export default ServicesSection;
+export { HeaderSection, ServicesSection };
