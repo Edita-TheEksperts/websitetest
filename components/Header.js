@@ -65,7 +65,7 @@ const Header = () => {
         </div>
 
         {/* Main Navigation */}
-        <nav className="hidden md:flex space-x-6 px-8 py-4 rounded-[10px] relative">
+        <nav className="hidden lg:flex space-x-6 px-8 py-4 rounded-[10px] relative">
           <Link href="/" className="text-gray-700">Home</Link>
           <span className="text-gray-300">|</span>
           
@@ -133,7 +133,7 @@ const Header = () => {
         </nav>
 
         {/* Call to Action */}
-        <a href="https://calendly.com/fisnik-salihu-the-eksperts/30min" class="inline-block hidden sm:inline-block hover-link">
+        <a href="https://calendly.com/fisnik-salihu-the-eksperts/30min" class="inline-block hidden lg:inline-block hover-link">
           <svg xmlns="http://www.w3.org/2000/svg" width="220" height="40" viewBox="0 0 220 40" fill="none" class="cursor-pointer">
             <path d="M1.5 34V14.2353L15.4504 2H216.5V34H1.5Z" stroke="#0009FF" stroke-width="3" class="svg-path"/>
             <text x="50%" y="50%" text-anchor="middle" dy=".3em" fill="#0009FF" font-size="16" font-weight="bold" class="svg-text">
@@ -145,7 +145,7 @@ const Header = () => {
 
         {/* Mobile Menu Toggle */}
         <button
-          className="md:hidden focus:outline-none"
+          className="lg:hidden focus:outline-none"
           onClick={toggleMenu}
           aria-label="Toggle menu"
         >
@@ -168,7 +168,7 @@ const Header = () => {
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <nav className="md:hidden bg-gray-100 p-4 mt-2 rounded-lg shadow-lg">
+        <nav className="lg:hidden bg-gray-100 p-4 mt-2 rounded-lg shadow-lg">
           <ul className="space-y-4 text-center">
             <li><Link href="/">Home</Link></li>
             <li>
