@@ -67,6 +67,13 @@ const testimonials = [
     title: "Salesforce Product Owner DE & AT,",
     company: "Pluxee Deutschland GmbH",
   },
+  {
+    quote:
+      "Ich unterstütze the eksperts und das Team dahinter, weil ich von ihrer Arbeit und ihrem Engagement überzeugt bin. Ihre Expertise und Souveränität bei jeder Projektumsetzung schaffen Planbarkeit und Vertrauen. Ihr Fokus auf Qualität, Innovation und Kundenzufriedenheit macht sie zu einem verlässlichen und wertvollen Partner für jedes Projekt.",
+    name: "Dr. Burim P.",
+    title: " Inhaber & Partner,",
+    company: "Novalex Rechtsanwälte",
+  },
 ];
 
 export default function Testimonials() {
