@@ -94,7 +94,7 @@ const Section = ({ title, text, image, reverse }) => {
           {title}
         </motion.h2>
         <motion.p
-          className="font-matt text-lg lg:text-[20px] lg:leading-[33px] text-black"
+          className="md:block hidden font-matt text-lg lg:text-[20px] lg:leading-[33px] text-black"
           variants={fadeVariants}
         >
           {text}

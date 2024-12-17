@@ -8,7 +8,7 @@ import Hero from '../components/Hero';
 import '../styles/global.css'; 
 import AnimatedSection from '../components/AnimatedSection';
 import '../styles/swiper.css';
-import Work from '../pages/work'
+import Work from '../components/work'
 import Wie from '../components/wie'
 import Warum from '../components/warum'
 
@@ -82,7 +82,7 @@ const Home = () => {
                         </svg>
 
                     </div>
-                    <p className="font-matt text-lg lg:text-[28px] lg:leading-[37px] font-[900] uppercase mb-12 mt-10">
+                    <p className="font-matt text-lg lg:text-[28px] lg:leading-[37px] font-[900] uppercase lg:mb-12 lg:mt-10">
                     Unserer Kunden empfehlen uns weiter
                     </p>
                 </div>

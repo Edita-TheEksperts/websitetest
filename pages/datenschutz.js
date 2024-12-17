@@ -3,7 +3,7 @@ import React from "react";
 const DatenschutzHeroSection = () => {
     return (
       <div className="relative bg-[#FAFAFA] text-black py-16">
-        <div className="max-w-4xl mx-auto text-center px-6 relative z-10">
+        <div className="max-w-4xl mx-auto text-center px-2 relative z-10">
           <h1 className="text-5xl font-bold tracking-tight mb-4 uppercase">
             Datenschutz
           </h1>
