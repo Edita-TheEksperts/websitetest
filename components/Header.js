@@ -196,7 +196,7 @@ const Header = () => {
               </details>
             </li>
             <li><Link href="/agency">Agentur</Link></li>
-            <li><Link href="/work">Projekte</Link></li>
+            <li><Link href="/projekte">Projekte</Link></li>
             <li><Link href="/contact">Kontakt</Link></li>
           </ul>
         </nav>
