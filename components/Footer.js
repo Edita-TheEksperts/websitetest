@@ -175,9 +175,9 @@ const Footer = () => {
                 <ul className="mt-2 ml-4 space-y-4 hidden group-hover:block transition-all duration-300 opacity-0 group-hover:opacity-100">
                   <li><Link href="/services/salesforce" className="hover:underline hover:text-blue-700">Salesforce</Link></li>
                   <li><Link href="/services/website" className="hover:underline hover:text-blue-700">Website</Link></li>
-                  <li><Link href="/services/custom-development" className="hover:underline hover:text-blue-700">Custom Development</Link></li>
-                  <li><Link href="/services/graphic-design" className="hover:underline hover:text-blue-700">Graphic Design</Link></li>
-                  <li><Link href="/services/book-your-expert" className="hover:underline hover:text-blue-700">Book your Ekspert</Link></li>
+                  <li><Link href="/services/customdevelopment" className="hover:underline hover:text-blue-700">Custom Development</Link></li>
+                  <li><Link href="/services/graphicdesign" className="hover:underline hover:text-blue-700">Graphic Design</Link></li>
+                  <li><Link href="/services/bookyourexpert" className="hover:underline hover:text-blue-700">Book your Ekspert</Link></li>
                 </ul>
               </li>
               <li><Link href="/agency" className="hover:underline hover:text-blue-700">Agentur</Link></li>
