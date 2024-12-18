@@ -67,7 +67,7 @@ const CustomDevelopment = () => {
               Bereit für die nächste Stufe Ihrer<br></br> digitalen Transformation?
               </h2>
               <p className="text-lg lg:text-[20px] lg:leading-[33px] font-matt font-[300] mb-8 lg:px-24">
-              Egal, wie komplex Ihre Anforderungen sind, wir haben die Lösung. Kontaktieren Sie uns noch <br></br> heute und lassen Sie uns gemeinsam Ihre massgeschneiderte Software entwickeln.  
+              Egal wie komplex Ihre Anforderungen sind, wir haben die Lösung. Kontaktieren Sie uns noch <br></br> heute und lassen Sie uns gemeinsam Ihre massgeschneiderte Software entwickeln.  
               </p>
               <div className="mt-8 items-center justify-center flex lg:mt-[50px]">
               <button className="group relative font-matt flex items-center justify-center px-1 py-1 bg-transparent border-2 border-[#0009FF] text-[#0009FF] rounded-[10px] font-medium text-[20px] transition duration-100 ease-in-out overflow-hidden">

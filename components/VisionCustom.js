@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function VisionSection() {
     const features = [
       {
@@ -46,6 +48,8 @@ export default function VisionSection() {
   
           {/* Call-to-Action */}
           <div className="text-center">
+          <Link href="/contact" className="block">
+
             <h2 className="text-black font-matt text-[24px] lg:text-[28px] lg:leading-[37px] font-[700] mb-4 uppercase">
             Erzählen Sie uns von Ihrer Herausforderung – wir entwickeln die passende
             </h2>
@@ -55,6 +59,7 @@ export default function VisionSection() {
             >
               Lösung für Sie!
             </a>
+            </Link>
           </div>
         </div>
       </div>

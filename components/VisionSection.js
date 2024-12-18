@@ -1,3 +1,4 @@
+import Link from "next/link";
 export default function VisionSection() {
     const features = [
       {
@@ -46,6 +47,7 @@ export default function VisionSection() {
   
           {/* Call-to-Action */}
           <div className="text-center">
+          <Link href="/contact" className="block">
             <h2 className="text-black font-matt text-[24px] lg:text-[28px] lg:leading-[37px] font-[700] mb-4 uppercase">
               Lassen Sie uns Ihre Vision Wirklichkeit werden lassen
             </h2>
@@ -55,6 +57,7 @@ export default function VisionSection() {
             >
               Jetzt Kontakt aufnehmen!
             </a>
+            </Link>
           </div>
         </div>
       </div>
