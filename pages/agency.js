@@ -523,9 +523,9 @@ const Agency = () => {
                       PRO-BONO-PROJEKT:
                     </h3>
                     <p className="text-sm md:text-[20px] font-[300] md:leading-[33px] text-black mb-4 font-matt">
-                          Bist du ein Verein, eine NGO oder eine gemeinnützige Organisation?
-                          Möchtest du von unserem Pro-Bono-Implementierungsprojekt profitieren? <br></br> <br></br>
-                          Dann melde dich – wir spenden gerne in Form eines grossartigen Projekts!
+                          Sind Sie ein Verein, eine NGO oder eine gemeinnützige Organisation?
+                          Möchten Sie von unserem Pro-Bono-Implementierungsprojekt profitieren? <br></br> <br></br>
+                          Dann melden Sie sich – wir spenden gerne in Form eines grossartigen Projekts!
                           Kontaktieren Sie uns via <a className="font-[300] underline" href="mailto:info@the-eksperts.com">info@the-eksperts.com</a>
           
                           </p>     
