@@ -7,7 +7,7 @@ import secondImage from "/images/costum-normal-2.png";
 import secondImage2 from "/images/costum-hover.png";
 import firstImage from "/images/website-normal.png";
 import firstImage2 from "/images/website-hover.png";
-import GraphicDesignSection from "./GraphisDesignSection";
+import GraphicDesignSection from "../components/GraphisDesignSection";
 import figure from "/images/the-eksperts-book.png";
 import figure2 from "/images/the-eksperts-book-hover.png";
 
@@ -102,16 +102,16 @@ const ServicesSection = () => {
         <h2 className="font-matt text-3xl sm:text-4xl md:text-5xl lg:text-[62px] font-[700] lg:leading-[80px] lg:mb-6 ">
             Salesforce
           </h2>
-          <p className="text-black mb-6 font-matt font-[700] text-[20px] leading-[33px]">
+          <p className="text-black mb-6 font-matt font-[700] text-[18px] mt-6 lg:mt-0 lg:text-[20px] leading-[28px] lg:leading-[33px]">
             Ihr Partner für individuelle und nachhaltige Salesforce Lösungen.
           </p>
-          <p className="text-black mb-6 font-matt text-[18px] font-[300] leading-[33px]">
+          <p className="text-black mb-6 font-matt text-[14px] leading-[25px] lg:text-[18px] font-[300] lg:leading-[33px]">
            
                     Als offizieller Salesforce-Partner helfen wir Ihnen, das volle <br></br> Potenzial von Salesforce zu nutzen. <br></br>
                     Ob Neuimplementierung, Optimierung oder <br></br>
                     massgeschneiderte Integrationen – wir stehen Ihnen zur Seite.
           </p>
-          <p className="text-black mb-6 font-matt font-[700] text-[20px] leading-[33px]">
+          <p className="text-black mb-6 font-matt font-[700] text-[18px] lg:mt-0 lg:text-[20px] leading-[28px] lg:leading-[33px]">
           Kontaktieren Sie uns und starten Sie Ihre Salesforce-Reise!
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
