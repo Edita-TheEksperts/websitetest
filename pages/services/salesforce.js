@@ -76,14 +76,13 @@ const Salesforce = () => {
                   {/* Button Section */}
                   <div className="mt-6 ml-4 text-center lg:text-center">
                   <button className="relative group w-full max-w-[512px] h-[76px] flex items-center justify-center overflow-hidden">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="512"
-                          height="76"
-                          viewBox="0 0 512 76"
-                          fill="none"
-                          className="absolute inset-0"
-                        >
+                  <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 512 76"
+                      fill="none"
+                      className="w-full h-auto absolute inset-0"
+                    >
+
                           {/* Hover Background confined to the SVG shape */}
                           <defs>
                             <clipPath id="clip-path">
@@ -103,7 +102,7 @@ const Salesforce = () => {
                             strokeWidth="6"
                           />
                         </svg>
-                        <span className="relative text-[#0009FF] group-hover:text-white text-center font-matt text-[28px] font-[900] leading-[37px] uppercase">
+                        <span className="relative text-[#0009FF] group-hover:text-white text-center font-matt mb-6 lg:mb-0 text-[22px] leading:[25px] lg:text-[28px] font-[900] lg:leading-[37px] uppercase">
                           Jetzt Gespräch Buchen
                         </span>
                       </button>
@@ -148,14 +147,12 @@ const Salesforce = () => {
                   {/* Button Section */}
                   <div className="mt-6 ml-4 text-center lg:text-center">
                   <button className="relative group w-full max-w-[512px] h-[76px] flex items-center justify-center overflow-hidden">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="512"
-                          height="76"
-                          viewBox="0 0 512 76"
-                          fill="none"
-                          className="absolute inset-0"
-                        >
+                  <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 512 76"
+                      fill="none"
+                      className="w-full h-auto absolute inset-0"
+                    >
                           {/* Hover Background confined to the SVG shape */}
                           <defs>
                             <clipPath id="clip-path">
@@ -175,7 +172,7 @@ const Salesforce = () => {
                             strokeWidth="6"
                           />
                         </svg>
-                        <span className="relative text-[#0009FF] group-hover:text-white text-center font-matt text-[28px] font-[900] leading-[37px] uppercase">
+                        <span className="relative text-[#0009FF] group-hover:text-white text-center font-matt mb-6 lg:mb-0 text-[22px] leading:[25px] lg:text-[28px] font-[900] lg:leading-[37px] uppercase">
                           Jetzt Gespräch Buchen
                         </span>
                       </button>
@@ -220,14 +217,12 @@ const Salesforce = () => {
                   {/* Button Section */}
                   <div className="mt-6 ml-4 text-center lg:text-center">
                   <button className="relative group w-full max-w-[512px] h-[76px] flex items-center justify-center overflow-hidden">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="512"
-                          height="76"
-                          viewBox="0 0 512 76"
-                          fill="none"
-                          className="absolute inset-0"
-                        >
+                  <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 512 76"
+                      fill="none"
+                      className="w-full h-auto absolute inset-0"
+                    >
                           {/* Hover Background confined to the SVG shape */}
                           <defs>
                             <clipPath id="clip-path">
@@ -247,7 +242,7 @@ const Salesforce = () => {
                             strokeWidth="6"
                           />
                         </svg>
-                        <span className="relative text-[#0009FF] group-hover:text-white text-center font-matt text-[28px] font-[900] leading-[37px] uppercase">
+                        <span className="relative text-[#0009FF] group-hover:text-white text-center font-matt mb-6 lg:mb-0 text-[22px] leading:[25px] lg:text-[28px] font-[900] lg:leading-[37px] uppercase">
                           Jetzt Gespräch Buchen
                         </span>
                       </button>
@@ -332,6 +327,7 @@ const Salesforce = () => {
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                   {/* Graphic Design */}
                   <div className="p-2">
+                  <Link href="/services/grahpicdesign" className="block">
                     <img
                       src="/images/graphicdesign.png" // Replace with the actual image URL
                       alt="Graphic Design"
@@ -339,12 +335,13 @@ const Salesforce = () => {
                     />
                     <div>
                     <h3 className="text-xl font-matt font-[900] text-black mb-2 lg:text-[28px] lg:leading-[37px] ">GRAPHIC DESIGN</h3>
-
                     </div>
+                    </Link>
                   </div>
 
                   {/* Website */}
                   <div className="p-2">
+                   <Link href="/services/website" className="block">
                     <img
                       src="/images/websitee.png" // Replace with the actual image URL
                       alt="Website"
@@ -352,22 +349,24 @@ const Salesforce = () => {
                     />
                     <div>
                     <h3 className="text-xl font-matt font-[900] text-black mb-2 lg:text-[28px] lg:leading-[37px]">WEBSITE</h3>
-
                     </div>
+                    </Link>
+
                   </div>
 
                   {/* Custom Development */}
                   <div className="p-2">
+                  <Link href="/services/customdevelopment" className="block">
                     <img
                       src="/images/costdevelopment.png" // Replace with the actual image URL
                       alt="Custom Development"
                       className="w-full h-auto mb-6"
                     />
                     <div>
-                    <h3 className="text-xl font-matt font-[900] text-black mb-2 lg:text-[28px] lg:leading-[37px]">CUSTOM DEVELOPMENT</h3>
-
-                      </div>
-                  </div>
+                      <h3 className="text-xl font-matt font-[900] text-black mb-2 lg:text-[28px] lg:leading-[37px]">CUSTOM DEVELOPMENT</h3>
+                    </div>
+                  </Link>
+                </div>
                 </div>
               </section>
       </main>
