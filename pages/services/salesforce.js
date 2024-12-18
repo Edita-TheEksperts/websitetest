@@ -65,7 +65,7 @@ const Salesforce = () => {
                     </div>
                     <div className="bg-white px-4 ">
                       <h3 className="text-2xl lg:text-left mb-2 lg:font-[28px] lg:leading-[37px] font-[900]">STRATEGIEENTWICKLUNG:</h3>
-                      <p className="text-lg lg:text-left mb-4 lg:text-[20px] lg:leading-[22px] font-matt font-light">Wir erstellen eine klare Roadmap f<br></br>ür die erfolgreiche Implementierung und nachhaltiges Wachstum. </p>
+                      <p className="text-lg lg:text-left mb-4 lg:text-[20px] lg:leading-[22px] font-matt font-light">Wir erstellen eine klare Roadmap für<br></br>die erfolgreiche Implementierung und nachhaltiges Wachstum. </p>
                     </div>
                     <div className="bg-white px-4 ">
                       <h3 className="text-2xl lg:text-left mb-2 lg:font-[28px] lg:leading-[37px] font-[900]">CLOUD-EXPERTISE:</h3>
@@ -75,6 +75,7 @@ const Salesforce = () => {
 
                   {/* Button Section */}
                   <div className="mt-6 ml-4 text-center lg:text-center">
+                    <Link href="/contact" className="block">
                   <button className="relative group w-full max-w-[512px] h-[76px] flex items-center justify-center overflow-hidden">
                   <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -106,6 +107,7 @@ const Salesforce = () => {
                           Jetzt Gespräch Buchen
                         </span>
                       </button>
+                      </Link>
                   </div>
                 </div>
         </section>
@@ -146,6 +148,8 @@ const Salesforce = () => {
 
                   {/* Button Section */}
                   <div className="mt-6 ml-4 text-center lg:text-center">
+                  <Link href="/contact" className="block">
+
                   <button className="relative group w-full max-w-[512px] h-[76px] flex items-center justify-center overflow-hidden">
                   <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -176,6 +180,7 @@ const Salesforce = () => {
                           Jetzt Gespräch Buchen
                         </span>
                       </button>
+                      </Link>
                   </div>
                 </div>
         </section>
@@ -216,6 +221,8 @@ const Salesforce = () => {
 
                   {/* Button Section */}
                   <div className="mt-6 ml-4 text-center lg:text-center">
+                  <Link href="/contact" className="block">
+
                   <button className="relative group w-full max-w-[512px] h-[76px] flex items-center justify-center overflow-hidden">
                   <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -246,6 +253,7 @@ const Salesforce = () => {
                           Jetzt Gespräch Buchen
                         </span>
                       </button>
+                      </Link>
                   </div>
                 </div>
         </section>
@@ -266,6 +274,8 @@ const Salesforce = () => {
               </br> Kontaktieren Sie uns noch heute und starten Sie Ihre Salesforce-Reise mit <br></br> einem starken Partner an Ihrer Seite. 
               </p>
               <div className="mt-8 items-center justify-center flex lg:mt-[50px]">
+              <Link href="/contact" className="block">
+
               <button className="group relative font-matt flex items-center justify-center px-1 py-1 bg-transparent border-2 border-[#0009FF] text-[#0009FF] rounded-[10px] font-medium text-[20px] transition duration-100 ease-in-out overflow-hidden">
             {/* SVG Background */}
             <div className="w-14 h-14 bg-[#0009FF] rounded-[10px] flex items-center justify-center text-white transform scale-x-100 origin-left transition-all duration-500 ease-in-out group-hover:scale-x-100 relative z-20">
@@ -315,6 +325,7 @@ const Salesforce = () => {
             {/* Hover Background Effect */}
             <span className="absolute inset-1 bg-[#0009FF] transition-transform duration-500 ease-in-out scale-x-0 origin-left group-hover:scale-x-100 z-10 rounded-[10px]"></span>
           </button>
+          </Link>
               </div>
             </section>
 
@@ -327,7 +338,7 @@ const Salesforce = () => {
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                   {/* Graphic Design */}
                   <div className="p-2">
-                  <Link href="/services/grahpicdesign" className="block">
+                  <Link href="/services/graphicdesign" className="block">
                     <img
                       src="/images/graphicdesign.png" // Replace with the actual image URL
                       alt="Graphic Design"
