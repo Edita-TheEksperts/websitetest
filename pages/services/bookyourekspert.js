@@ -244,6 +244,7 @@ const Bookyourekspert = () => {
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                   {/* Graphic Design */}
                   <div className="p-2">
+                  <Link href="/services/grahpicdesign" className="block">
                     <img
                       src="/images/graphicdesign.png" // Replace with the actual image URL
                       alt="Graphic Design"
@@ -251,35 +252,38 @@ const Bookyourekspert = () => {
                     />
                     <div>
                     <h3 className="text-xl font-matt font-[900] text-black mb-2 lg:text-[28px] lg:leading-[37px] ">GRAPHIC DESIGN</h3>
-
                     </div>
+                    </Link>
                   </div>
 
                     {/* Website */}
                     <div className="p-2">
+                   <Link href="/services/website" className="block">
                     <img
-                      src="/images/Rectangle 21.png" // Replace with the actual image URL
-                      alt="Website the eksperts"
+                      src="/images/websitee.png" // Replace with the actual image URL
+                      alt="Website"
                       className="w-full h-auto mb-6"
                     />
                     <div>
                     <h3 className="text-xl font-matt font-[900] text-black mb-2 lg:text-[28px] lg:leading-[37px]">WEBSITE</h3>
+                    </div>
+                    </Link>
 
-                      </div>
                   </div>
 
                  {/* Custom Development */}
                  <div className="p-2">
+                  <Link href="/services/customdevelopment" className="block">
                     <img
                       src="/images/costdevelopment.png" // Replace with the actual image URL
                       alt="Custom Development"
                       className="w-full h-auto mb-6"
                     />
                     <div>
-                    <h3 className="text-xl font-matt font-[900] text-black mb-2 lg:text-[28px] lg:leading-[37px]">CUSTOM DEVELOPMENT</h3>
-
-                      </div>
-                  </div> 
+                      <h3 className="text-xl font-matt font-[900] text-black mb-2 lg:text-[28px] lg:leading-[37px]">CUSTOM DEVELOPMENT</h3>
+                    </div>
+                  </Link>
+                </div>
                 </div>
               </section>
       </main>
