@@ -313,7 +313,7 @@ export default function Contact() {
           <div>
             <label className="block text-sm font-semibold mb-1">Telefonnummer</label>
             <input
-              type="tel"
+              type="number"
               id="phone"
               name="phone"
               placeholder="Ihre Telefonnummer"
@@ -377,7 +377,7 @@ export default function Contact() {
             <h2 className="font-matt text-2xl md:text-4xl font-bold text-center text-gray-800 mb-10">
               Kaffee? Hier finden Sie uns!
             </h2>
-           
+            
             <div className="font-matt max-w-[1280px] mx-auto grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8">
               {/* Switzerland Section */}
               <a
@@ -398,9 +398,7 @@ export default function Contact() {
                 ></div>
                 <div className="font-matt text-center group-hover:text-blue-600 transition-all duration-300">
                   <h3 className="font-matt font-semibold text-lg sm:text-xl">
-                   
                       Schweiz
-                    
                   </h3>
                   <p className="text-sm md:text-base">Sonnengartenstrasse 6</p>
                   <p className="text-sm md:text-base">9000 St. Gallen</p>
@@ -451,7 +449,7 @@ export default function Contact() {
                 {/* Text */}
                 <div className="font-matt text-center group-hover:text-blue-600 transition-all duration-300">
                   <h3 className="font-matt font-semibold text-lg sm:text-xl">
-                  
+                   
                       Weltweit
                     
                   </h3>
