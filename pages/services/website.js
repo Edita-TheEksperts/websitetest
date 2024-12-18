@@ -162,7 +162,7 @@ const Website = () => {
                   <div className="p-2">
                   <Link href="/services/bookyourekspert" className="block">
                     <img
-                      src="/images/costdevelopment.png" // Replace with the actual image URL
+                      src="/images/Book your ekspert.png" // Replace with the actual image URL
                       alt="Book your ekspert"
                       className="w-full h-auto mb-6"
                     />
