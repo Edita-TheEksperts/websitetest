@@ -30,6 +30,7 @@ const Header = () => {
     >
       <div className="max-w-[1280px] mx-auto flex items-center justify-between">
         <div className="flex items-center space-x-2">
+          <Link  href="/">
         <svg  xmlns="http://www.w3.org/2000/svg"
             version="1.1"
             viewBox="0 0 488.1 68.2"
@@ -61,6 +62,7 @@ const Header = () => {
             </g>
           </g>
         </svg>
+        </Link>
 
         </div>
 
