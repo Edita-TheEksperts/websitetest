@@ -96,7 +96,7 @@ const GraphicDesignSection = () => {
 Unser kreatives Team gestaltet Designs, die Ihre Botschaft klar transportieren und Ihre Marke im Gedächtnis bleiben lassen. Ob Logo, komplette Markenidentität, Print oder Digital - wir liefern durchdachte und frische Ideen, die Ihre Zielgruppe begeistern.
         </p>
         <p className="text-black text-sm sm:text-base md:text-[20px] md:font-[700] leading-relaxed transition-colors duration-300 group-hover:text-white">
-          Zeigen Sie Ihre Marke von ihrer besten Seite.
+          Zeigen Sie Ihre Marke von ihrer besten Seite!
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
         <Link href="/services/graphicdesign">
