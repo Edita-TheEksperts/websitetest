@@ -160,14 +160,14 @@ const Website = () => {
 
                   {/* Custom Development */}
                   <div className="p-2">
-                  <Link href="/services/customdevelopment" className="block">
+                  <Link href="/services/bookyourekspert" className="block">
                     <img
                       src="/images/costdevelopment.png" // Replace with the actual image URL
-                      alt="Custom Development"
+                      alt="Book your ekspert"
                       className="w-full h-auto mb-6"
                     />
                     <div>
-                      <h3 className="text-xl font-matt font-[900] text-black mb-2 lg:text-[28px] lg:leading-[37px]">CUSTOM DEVELOPMENT</h3>
+                      <h3 className="text-xl font-matt font-[900] text-black mb-2 lg:text-[28px] lg:leading-[37px]">BOOK YOUR EKSPERT</h3>
                     </div>
                   </Link>
                 </div>
