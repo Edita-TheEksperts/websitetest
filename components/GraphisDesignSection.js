@@ -63,7 +63,7 @@ const GraphicDesignSection = () => {
     >
       {/* Image Section */}
       <motion.div
-        className="w-full lg:w-1/2 flex justify-center mb-6 lg:mb-0 transition-transform duration-500 lg:group-hover:translate-x-4"
+        className="md:block hidden w-full lg:w-1/2 flex justify-center mb-6 lg:mb-0 transition-transform duration-500 lg:group-hover:translate-x-4"
         initial={{ x: -50, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 1, ease: "easeOut" }}
