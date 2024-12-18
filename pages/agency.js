@@ -37,7 +37,7 @@ const Agency = () => {
 {/* Header Section */}
       <div className="lg:max-w-[1280px] flex justify-center mx-auto text-center ">
         <h1
-          className="font-matt  lg:text-[64px] text-[30px] flex justify-center text-center font-[900] lg:leading-[80px] leading-[30px] tracking-[-2.99px] uppercase text-black lg:mb-[300px] lg:mt-[200px]"
+          className="font-matt  lg:text-[64px] text-[30px] flex justify-center text-center font-[900] lg:leading-[80px] leading-[40px] tracking-[-2.99px] uppercase text-black lg:mb-[300px] lg:mt-[200px]"
           style={{
             textAlign: "center",
             textTransform: "uppercase",
@@ -243,7 +243,7 @@ const Agency = () => {
                         Unsere 4 Säulen – Ein <br></br> ganzheitlicher Ansatz
                         </h2>
                         <p className="font-matt lg:text-[20px] lg:leading-[33px] text-lg text-black ">
-                        Unser Ansatz baut auf vier zentralen Säulen auf, die nahtlose Zusammenarbeit und nachhaltige Ergebnisse sichern. Von der Analyse eurer Anforderungen über die visuelle und technische Umsetzung bis zur langfristigen Partnerschaft entwickeln wir Lösungen, die eure aktuellen und zukünftigen Bedürfnisse erfüllen. Jede Phase ist auf Zusammenarbeit und Qualität ausgerichtet, um echten Mehrwert zu schaffen.        </p>
+                        Unser Ansatz baut auf vier zentralen Säulen auf, die nahtlose Zusammenarbeit und nachhaltige Ergebnisse sichern. Von der Analyse Ihrer Anforderungen über die visuelle und technische Umsetzung bis zur langfristigen Partnerschaft entwickeln wir Lösungen, die Ihre aktuellen und zukünftigen Bedürfnisse erfüllen. Jede Phase ist auf Zusammenarbeit und Qualität ausgerichtet, um echten Mehrwert zu schaffen.        </p>
                     </div>
 
                     <div className="font-matt flex-1 mt-8 mb-8 flex justify-center">
@@ -266,20 +266,20 @@ const Agency = () => {
 
                     <div className="font-matt flex-1 lg:min-w-[580px] max-w-lg lg:text-left text-center">
                         <h2 className="font-matt text-2xl  md:text-[25px] md:leading-[37px] font-[900] text-black mb-4 uppercase">
-                        Verstehen und Kommunikation <br></br>– Die Basis für euren Erfolg
+                        Verstehen und Kommunikation <br></br>– Die Basis für Ihren Erfolg
                         </h2>
                         <p className="font-matt lg:text-[20px] lg:leading-[33px] text-lg text-black">
-                        Alles beginnt mit einer klaren und offenen Kommunikation. Wir analysieren eure Anforderungen, verstehen eure individuellen Herausforderungen und definieren gemeinsam die Ziele. Durch Consulting, Business-Analyse und strategische Planung legen wir den Grundstein für massgeschneiderte Lösungen, die eure spezifischen Bedürfnisse widerspiegeln.</p>
+                        Alles beginnt mit einer klaren und offenen Kommunikation. Wir analysieren Ihre Anforderungen, verstehen Ihre individuellen Herausforderungen und definieren gemeinsam die Ziele. Durch Consulting, Business-Analyse und strategische Planung legen wir den Grundstein für massgeschneiderte Lösungen, die Ihre spezifischen Bedürfnisse widerspiegeln.</p>
                     </div>
                     </section>
 
                     <section className="font-matt flex flex-col md:flex-row items-center justify-between px-4 md:px-2 py-2 lg:min-w-[1280px] mx-auto">
                     <div className="font-matt flex-1 lg:min-w-[570px] max-w-lg lg:text-left text-center">
                         <h2 className="font-matt text-2xl md:text-[25px] md:leading-[37px] font-[900] text-black mb-4 uppercase">
-                        UI/UX – Benutzerzentrierte <br></br> Gestaltung für eure Lösung
+                        UI/UX – Benutzerzentrierte <br></br> Gestaltung für Ihre Lösung
                         </h2>
                         <p className="font-matt lg:text-[20px] lg:leading-[33px] text-lg text-black">
-                        Im nächsten Schritt gestalten wir das Look-and-Feel eurer Lösung. Wir entwickeln Prototypen, optimieren Prozesse und entwerfen ein ansprechendes, intuitives Design. Unser Ziel ist es, dass eure Website, Software oder andere Plattformen nicht nur ästhetisch überzeugen, sondern auch funktional und benutzerfreundlich sind, um den höchsten Ansprüchen gerecht zu werden.</p>
+                        Im nächsten Schritt gestalten wir das Look-and-Feel Ihrer Lösung. Wir entwickeln Prototypen, optimieren Prozesse und entwerfen ein ansprechendes, intuitives Design. Unser Ziel ist es, dass Ihre Website, Software oder andere Plattformen nicht nur ästhetisch überzeugen, sondern auch funktional und benutzerfreundlich sind, um den höchsten Ansprüchen gerecht zu werden.</p>
                     </div>
 
                     <div className="font-matt flex-1 mt-8 md:mt-8 mb-8 flex justify-center lg:ml-[40px]">
@@ -304,7 +304,7 @@ const Agency = () => {
                         <h2 className="font-matt text-2xl md:text-[25px] md:leading-[37px] font-[900] text-black mb-4 uppercase">
                         Technische Implementierung – <br></br> Von der Idee zur Realität                        </h2>
                         <p className="font-matt lg:text-[20px] lg:leading-[33px] text-lg text-black">
-                        Hier setzen wir eure Vision in die Tat um. Wir entwickeln leistungsfähige und skalierbare Systeme, die eure Anforderungen perfekt erfüllen. Egal ob Online-Shop, Salesforce-Instanz, Cloud-Infrastruktur oder ERP/CRM-System – wir stellen sicher, dass die technische Umsetzung stabil, effizient, sicher und zukunftssicher ist.</p>
+                        Hier setzen wir Ihre Vision in die Tat um. Wir entwickeln leistungsfähige und skalierbare Systeme, die Ihre Anforderungen perfekt erfüllen. Egal ob Online-Shop, Salesforce-Instanz, Cloud-Infrastruktur oder ERP/CRM-System – wir stellen sicher, dass die technische Umsetzung stabil, effizient, sicher und zukunftssicher ist.</p>
                     </div>
                     </section>
 
