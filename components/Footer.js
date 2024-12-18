@@ -166,7 +166,7 @@ const Footer = () => {
               <Link href="/index" className="hover:underline hover:text-blue-700">Home</Link>
               <li className="group">
                 <div className="flex justify-center md:justify-normal items-center space-x-2">
-                  <Link href="" className="hover:underline hover:text-blue-700">
+                  <Link href="" className="hover:underline hover:text-blue-700 ">
                     Services
                   </Link>
                   <span className="text-black text-[20px]">›</span>
