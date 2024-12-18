@@ -124,26 +124,26 @@ const WieWirArbeiten = () => {
           Unsere 4 Säulen – Ein<br />ganzheitlicher Ansatz
         </>
       }        
-        text="Unser Ansatz baut auf vier zentralen Säulen auf, die nahtlose Zusammenarbeit und nachhaltige Ergebnisse sichern. Von der Analyse eurer Anforderungen über die visuelle und technische Umsetzung bis zur langfristigen Partnerschaft entwickeln wir Lösungen, die eure aktuellen und zukünftigen Bedürfnisse erfüllen. Jede Phase ist auf Zusammenarbeit und Qualität ausgerichtet, um echten Mehrwert zu schaffen."
+        text="Unser Ansatz baut auf vier zentralen Säulen auf, die nahtlose Zusammenarbeit und nachhaltige Ergebnisse sichern. Von der Analyse Ihrer Anforderungen über die visuelle und technische Umsetzung bis zur langfristigen Partnerschaft entwickeln wir Lösungen, die Ihre aktuellen und zukünftigen Bedürfnisse erfüllen. Jede Phase ist auf Zusammenarbeit und Qualität ausgerichtet, um echten Mehrwert zu schaffen."
         image="/images/the-eksperts-pillar.png"
       />
       <Section
        title={
         <>
-          Verstehen und Kommunikation<br />– Die Basis für euren Erfolg
+          Verstehen und Kommunikation<br />– Die Basis für Ihren Erfolg
         </>
        }
-        text="Alles beginnt mit einer klaren und offenen Kommunikation. Wir analysieren eure Anforderungen, verstehen eure individuellen Herausforderungen und definieren gemeinsam die Ziele. Durch Consulting, Business-Analyse und strategische Planung legen wir den Grundstein für massgeschneiderte Lösungen, die eure spezifischen Bedürfnisse widerspiegeln."
+        text="Alles beginnt mit einer klaren und offenen Kommunikation. Wir analysieren Ihre Anforderungen, verstehen Ihre individuellen Herausforderungen und definieren gemeinsam die Ziele. Durch Consulting, Business-Analyse und strategische Planung legen wir den Grundstein für massgeschneiderte Lösungen, die Ihre spezifischen Bedürfnisse widerspiegeln."
         image="/images/the-eksperts-pillar-blue.png"
         reverse
       />
       <Section
        title={
         <>
-          UI/UX – Benutzerzentrierte<br />– Gestaltung für eure Lösung
+          UI/UX – Benutzerzentrierte<br />– Gestaltung für Ihre Lösung
         </>
        }
-        text="Im nächsten Schritt gestalten wir das Look-and-Feel eurer Lösung. Wir entwickeln Prototypen, optimieren Prozesse und entwerfen ein ansprechendes, intuitives Design. Unser Ziel ist es, dass eure Website, Software oder andere Plattformen nicht nur ästhetisch überzeugen, sondern auch funktional und benutzerfreundlich sind, um den höchsten Ansprüchen gerecht zu werden."
+        text="Im nächsten Schritt gestalten wir das Look-and-Feel Ihrer Lösung. Wir entwickeln Prototypen, optimieren Prozesse und entwerfen ein ansprechendes, intuitives Design. Unser Ziel ist es, dass Ihre Website, Software oder andere Plattformen nicht nur ästhetisch überzeugen, sondern auch funktional und benutzerfreundlich sind, um den höchsten Ansprüchen gerecht zu werden."
         image="/images/the-eksperts-pillar-yellow.png"
       />
       <Section
@@ -152,7 +152,7 @@ const WieWirArbeiten = () => {
             Technische Implementierung –<br />Von der Idee zur Realität
           </>
         }        
-        text="Hier setzen wir eure Vision in die Tat um. Wir entwickeln leistungsfähige und skalierbare Systeme, die eure Anforderungen perfekt erfüllen. Egal ob Online-Shop, Salesforce-Instanz, Cloud-Infrastruktur oder ERP/CRM-System – wir stellen sicher, dass die technische Umsetzung stabil, effizient, sicher und zukunftssicher ist."
+        text="Hier setzen wir Ihre Vision in die Tat um. Wir entwickeln leistungsfähige und skalierbare Systeme, die Ihre Anforderungen perfekt erfüllen. Egal ob Online-Shop, Salesforce-Instanz, Cloud-Infrastruktur oder ERP/CRM-System – wir stellen sicher, dass die technische Umsetzung stabil, effizient, sicher und zukunftssicher ist."
         image="/images/the-eksperts-pillar-green.png"
         reverse
       />
