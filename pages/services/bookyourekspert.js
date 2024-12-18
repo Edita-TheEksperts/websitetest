@@ -123,7 +123,7 @@ const Bookyourekspert = () => {
                       PASSENDER EKSPERTE
                     </h3>
                     <p className="text-[18px] md:text-[20px] font-[300] leading-[30px] md:leading-[33px] font-matt text-white">
-                      Wir finden den perfekten Experten für Ihr Projekt.
+                      Wir finden den perfekten Eksperten für Ihr Projekt.
                     </p>
                   </div>
                 </div>
