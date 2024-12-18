@@ -314,7 +314,7 @@ const Agency = () => {
                         Optimierung, Schulung und Support<br></br> – Nachhaltige Partnerschaft
                         </h2>
                         <p className="font-matt text-lg lg:text-[20px] lg:leading-[33px] text-black">
-                        Unsere Arbeit endet nicht mit der Implementierung. Wir stehen euch langfristig zur Seite, indem wir die Lösungen kontinuierlich optimieren, Schulungen anbieten und zuverlässigen Support gewährleisten. Unsere Systeme sind darauf ausgelegt, euch auch in Zukunft zu unterstützen – und wenn es Fragen gibt, sind wir immer für euch da. Unser Ziel ist es, euch eine nachhaltige und zukunftsfähige Lösung zu bieten, die langfristig Mehrwert schafft.</p>
+                        Unsere Arbeit endet nicht mit der Implementierung. Wir stehen Ihnen langfristig zur Seite, indem wir die Lösungen kontinuierlich optimieren, Schulungen anbieten und zuverlässigen Support gewährleisten. Unsere Systeme sind darauf ausgelegt, Sie auch in Zukunft zu unterstützen – und wenn es Fragen gibt, sind wir immer für Sie da. Unser Ziel ist es, Ihnen eine nachhaltige und zukunftsfähige Lösung zu bieten, die langfristig Mehrwert schafft.</p>
                     </div>
 
                     <div className="font-matt flex-1 mt-8 md:mt-8 mb-8 flex justify-center lg:ml-[40px]">

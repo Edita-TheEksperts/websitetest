@@ -162,7 +162,7 @@ const WieWirArbeiten = () => {
           Optimierung, Schulung und Support<br />– Nachhaltige Partnerschaft
         </>
       }  
-        text=" Unsere Arbeit endet nicht mit der Implementierung. Wir stehen euch langfristig zur Seite, indem wir die Lösungen kontinuierlich optimieren, Schulungen anbieten und zuverlässigen Support gewährleisten. Unsere Systeme sind darauf ausgelegt, euch auch in Zukunft zu unterstützen – und wenn es Fragen gibt, sind wir immer für euch da. Unser Ziel ist es, euch eine nachhaltige und zukunftsfähige Lösung zu bieten, die langfristig Mehrwert schafft."
+        text=" Unsere Arbeit endet nicht mit der Implementierung. Wir stehen Ihnen langfristig zur Seite, indem wir die Lösungen kontinuierlich optimieren, Schulungen anbieten und zuverlässigen Support gewährleisten. Unsere Systeme sind darauf ausgelegt, Sie auch in Zukunft zu unterstützen – und wenn es Fragen gibt, sind wir immer für Sie da. Unser Ziel ist es, Ihnen eine nachhaltige und zukunftsfähige Lösung zu bieten, die langfristig Mehrwert schafft."
         image="/images/the-eksperts-pillar-red.png"
       />
     </div>
