@@ -78,7 +78,7 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-<div className="px-4 lg:px-0 lg:mt-[300px] max-w-[1280px] w-full mx-auto">
+<div className="px-2 lg:px-0 lg:mt-[300px] max-w-[1280px] w-full mx-auto">
 <div className="max-w-7xl mx-auto text-center">
       <h2 className="font-matt text-center text-3xl lg:text-[80px] lg:leading-[80px] font-[700] mb-14">Kein Eigenlob – sondern ehrliches Feedback</h2>
       </div>
@@ -107,7 +107,7 @@ export default function Testimonials() {
         >
           {testimonials.map((testimonial, index) => (
             <SwiperSlide key={index}>
-              <div className="bg-white p-4 lg:p-2 text-center lg:text-left">
+              <div className="bg-white p-2 lg:p-2 text-center lg:text-left">
                 <div className="flex items-center justify-center lg:justify-start">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
