@@ -546,7 +546,7 @@ const Agency = () => {
 
               </section>
 
-                    <section className=" lg:mt-[300px] mt-[100px] lg:mb-[300px] px-6 mb-[100px]">
+                    <section className=" lg:mt-[300px] mt-[100px] lg:mb-[300px] px-6 mb-[99px]">
                         <div className="lg:max-w-[1280px] mx-auto text-center">
                           {/* Buttons */}
                           <h2 className="font-matt text-[42px] leading-[45px] font-extrabold uppercase mb-2"> Folgen Sie uns für mehr Einblicke! </h2>
@@ -557,7 +557,7 @@ const Agency = () => {
                               href="https://www.instagram.com/theeksperts/"
                               target="_blank"
                               rel="noopener noreferrer"
-                              className="flex items-center justify-center lg:w-[480px] lg:h-[100px] md:w-auto bg-[#0009FF] text-white lg:text-[64px] text-[45px] pr-2 rounded-lg text-lg font-normal transition-transform transform hover:scale-105"
+                              className="flex items-center justify-center lg:w-[480px] lg:h-[100px] md:w-auto bg-[#0009FF] text-white lg:text-[64px] text-[44px] pr-2 rounded-lg text-lg font-normal transition-transform transform hover:scale-105"
                             >
                               <svg xmlns="http://www.w3.org/2000/svg" width="89" height="90" viewBox="0 0 89 90" fill="none" className="mr-2 lg:p-2 p-4">
                                 <g clip-path="url(#clip0_1068_9931)">
@@ -579,7 +579,7 @@ const Agency = () => {
                               href="https://www.linkedin.com/company/the-eksperts/"
                               target="_blank"
                               rel="noopener noreferrer"
-                              className="flex items-center justify-center lg:w-[480px] lg:h-[100px] w-auto bg-[#0009FF] text-white lg:text-[64px] text-[45px] pr-2 rounded-lg shadow-lg text-lg font-normal transition-transform transform hover:scale-105"
+                              className="flex items-center justify-center lg:w-[480px] lg:h-[100px] w-auto bg-[#0009FF] text-white lg:text-[64px] text-[44px] pr-2 rounded-lg shadow-lg text-lg font-normal transition-transform transform hover:scale-105"
                             >
                               <svg xmlns="http://www.w3.org/2000/svg" width="87" height="88" viewBox="0 0 87 88" fill="none" className="mr-2 lg:p-2 p-4">
                                 <g clip-path="url(#clip0_1068_9947)">
