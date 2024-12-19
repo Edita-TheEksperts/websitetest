@@ -2,7 +2,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { Navigation, Pagination } from "swiper";
+import { Navigation, Pagination, Mousewheel, Scrollbar } from "swiper";
 
 const testimonials = [
   {
@@ -42,7 +42,7 @@ const testimonials = [
   {
     quote:
       "Vertrauensvolle Experten, die jedes Projekt mit viel Erfahrung, Know-how und Herzblut durchführen.",
-    name: "Steffanie K.",
+    name: "Stefanie K.",
     title: "Co-Founder - Owner,",
     company: "mint&more gmbh",
   },
@@ -84,7 +84,7 @@ export default function Testimonials() {
       </div>
 
       <div className="relative lg:max-w-6xl mx-auto">
-        <Swiper
+      <Swiper
           spaceBetween={20}
           pagination={{
             clickable: true,
@@ -100,39 +100,46 @@ export default function Testimonials() {
             768: { slidesPerView: 2 },
             1024: { slidesPerView: 3 },
           }}
-          modules={[Pagination, Navigation]}
-          // Enable mousewheel and touch interactions
-          mousewheel={true}
+          modules={[Pagination, Navigation, Mousewheel, Scrollbar]}  // Add Mousewheel and Scrollbar module
+          touchStartPreventDefault={false}  // Disable the default touch start behavior
+          touchMoveStopPropagation={false}  // Allow touch move without propagation interruption
+          mousewheel={true} // Enable mousewheel scrolling
         >
           {testimonials.map((testimonial, index) => (
             <SwiperSlide key={index}>
-              <div className="bg-white p-4 lg:p-2  text-center lg:text-left">
-              <div className="flex items-center justify-center lg:justify-start">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="72"
-                        height="72"
-                        viewBox="0 0 72 72"
-                        fill="none"
-                        className="mt-14"
-                      >
-                        <path
-                          d="M37.876 0L28.532 42.24H0.5L16.372 0H37.876ZM70.388 0L61.044 42.24H33.012L48.884 0H70.388Z"
-                          fill="#0009FF"
-                        />
-                      </svg>
-                    </div>
+              <div className="bg-white p-4 lg:p-2 text-center lg:text-left">
+                <div className="flex items-center justify-center lg:justify-start">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="72"
+                    height="72"
+                    viewBox="0 0 72 72"
+                    fill="none"
+                    className="mt-16"
+                  >
+                    <path
+                      d="M37.876 0L28.532 42.24H0.5L16.372 0H37.876ZM70.388 0L61.044 42.24H33.012L48.884 0H70.388Z"
+                      fill="#0009FF"
+                    />
+                  </svg>
+                </div>
 
                 <div className="w-full max-w-screen-md mx-auto">
-                <p className="text-black font-[300] md:text-lg lg:text-[16px] font-matt mt-2 leading-[22px] break-words">
-                  {testimonial.quote}
-                </p>
-              </div>
+                  <p className="text-black font-[300] md:text-lg lg:text-[16px] font-matt mt-2 leading-[22px] break-words">
+                    {testimonial.quote}
+                  </p>
+                </div>
 
                 <div className="mt-6">
-                <h3 className="font-[900] text-xl lg:text-[28px] lg:leading-[37px] font-matt text-black uppercase">{testimonial.name}</h3>
-                <p className="font-[400] text-sm text-black lg:text-[20px] lg:leading-[23px] font-matt">{testimonial.title}</p>
-                <p className="font-[400] text-sm text-black lg:text-[20px] lg:leading-[23px] font-matt">{testimonial.company}</p>
+                  <h3 className="font-[900] text-xl lg:text-[28px] lg:leading-[37px] font-matt text-black uppercase">
+                    {testimonial.name}
+                  </h3>
+                  <p className="font-[400] text-sm text-black lg:text-[20px] lg:leading-[23px] font-matt">
+                    {testimonial.title}
+                  </p>
+                  <p className="font-[400] text-sm text-black lg:text-[20px] lg:leading-[23px] font-matt">
+                    {testimonial.company}
+                  </p>
                 </div>
               </div>
             </SwiperSlide>
