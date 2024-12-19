@@ -114,7 +114,7 @@ const ServicesSection = () => {
         }}
       >
         <div className="font-matt md:w-1/2 flex flex-col items-start text-left z-10 lg:ml-8 lg:mr-12 ml-[10px] lg:transition-all lg:duration-500 lg:ease-out lg:group-hover:ml-12">
-        <h2 className="font-matt text-3xl sm:text-4xl md:text-5xl lg:text-[62px] font-[700] lg:leading-[80px] lg:mb-6 ">
+        <h2 className="font-matt text-3xl sm:text-4xl md:text-5xl lg:text-[62px] font-[700] lg:leading-[80px] lg:mb-6 mt-4 lg:mt-0">
             Salesforce
           </h2>
           <p className="text-black mb-6 font-matt font-[700] text-[18px] mt-6 lg:mt-0 lg:text-[20px] leading-[28px] lg:leading-[33px]">
@@ -266,7 +266,7 @@ const ServicesSection = () => {
           </div>
 
         <div className="group md:w-1/2 transition-all duration-500 ease-out lg:hover:mr-16 lg:mr-14 ml-[10px] md:ml-0">
-        <h2 className="font-matt text-3xl sm:text-4xl md:text-5xl lg:text-[62px] font-[700] lg:leading-[80px] lg:mb-6 ">
+        <h2 className="font-matt text-3xl sm:text-4xl md:text-5xl lg:text-[62px] font-[700] lg:leading-[80px] lg:mb-6 mt-4 lg:mt-0">
             Website
           </h2>
           <p className="text-black mb-6 font-matt font-[700] text-[18px] mt-6 lg:mt-0 lg:text-[20px] leading-[28px] lg:leading-[33px]">
@@ -337,7 +337,7 @@ const ServicesSection = () => {
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 1, ease: "easeOut" }}
       >
-        <h2 className="font-matt text-3xl sm:text-4xl md:text-5xl lg:text-[62px] font-[700] lg:leading-[80px] lg:mb-6 ">
+        <h2 className="font-matt text-3xl sm:text-4xl md:text-5xl lg:text-[62px] font-[700] lg:leading-[80px] lg:mb-6 mt-4 lg:mt-0">
         Custom Development
         </h2>
         <p className="text-white md:text-black mb-6 md:mb-4 font-matt font-[700] text-[18px] mt-6 lg:mt-0 lg:text-[20px] leading-[28px] lg:leading-[33px] transition-colors duration-300 group-hover:text-white">
@@ -432,7 +432,7 @@ const ServicesSection = () => {
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 1, ease: "easeOut" }}
       >
-        <h2 className="text-white md:text-black group-hover:text-white font-matt text-3xl sm:text-4xl md:text-5xl lg:text-[62px] font-[700] lg:leading-[80px] lg:mb-6">
+        <h2 className="text-white md:text-black group-hover:text-white font-matt text-3xl sm:text-4xl md:text-5xl lg:text-[62px] font-[700] lg:leading-[80px] lg:mb-6 mt-4 lg:mt-0">
           Book your Ekspert
         </h2>
         <p className="text-white md:text-black mb-6 md:mb-4 font-matt font-[700] text-[18px] mt-6 lg:mt-0 lg:text-[20px] leading-[28px] lg:leading-[33px] transition-colors duration-500 group-hover:text-white">
