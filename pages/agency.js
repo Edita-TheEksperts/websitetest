@@ -51,7 +51,7 @@ const Agency = () => {
       </div>
 
       {/* Description Section */}
-      <div className="lg:max-w-[1280px] mx-auto text-center mt-6 text-black lg:mb-[300px]">
+      <div className="lg:max-w-[1280px] mx-auto text-center mt-6 text-black lg:mb-[300px] mb-[100px]">
         <p className="font-matt lg:text-[20px] font-[300] lg:leading-[33px] sm:text-xl leading-relaxed max-w-[1000px] mx-auto">
         Hi, wir sind the eksperts – nicht, weil wir alles wissen oder perfekt sind, sondern weil wir jeden Tag daran arbeiten, die besten Lösungen zu finden und uns weiterzuentwickeln. Unser Name steht für den Anspruch, ständig besser zu werden.
         </p>
@@ -62,11 +62,11 @@ const Agency = () => {
 
 
       {/* Management Section */}
-      <div className="lg:max-w-[1280px] mx-auto px-2 py-2 lg:mb-[300px] mt-6">
-        <h2 className="font-matt text-center text-black font-[900] text-4xl lg:text-[28px] lg:leading-[37px] mb-12">
+      <div className="lg:max-w-[1280px] mx-auto px-2 py-2 lg:mb-[300px] mt-6 ">
+        <h2 className="font-matt text-center text-black font-[900] text-4xl lg:text-[28px] lg:leading-[37px] lg:mb-20 mb-8">
           UNSER MANAGEMENT AUF EINEN BLICK
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:gap-10 gap-2 lg:max-w-[1280px]">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:gap-10 gap-2 lg:max-w-[1280px] mb-[100px] lg:mb-0">
               {management.map((person, index) => (
                 <div
                   key={index}
@@ -109,9 +109,9 @@ const Agency = () => {
             </div>
 
 
-            <section className="font-matt lg:max-w-[1280px] mx-auto px-6 lg:px-2 py-2 flex flex-col items-center text-center lg:mt-[300px] mt-6">
+            <section className="font-matt lg:max-w-[1280px] mx-auto px-6 lg:px-2 py-2 flex flex-col items-center text-center lg:mt-[300px] mt-6 mb-[100px] lg:mb-0">
                 {/* Title */}
-                <h2 className="text-center text-2xl lg:text-[28px] lg:leading-[37px] font-[900] mb-20 uppercase">
+                <h2 className="font-matt text-center text-black font-[900] text-4xl lg:text-[28px] lg:leading-[37px] lg:mb-20 mb-8 uppercase">
                 Unsere Werte
                 </h2>
 
@@ -234,28 +234,32 @@ const Agency = () => {
               </section>
 
  
-              <h2 className="lg:pt-[300px] font-matt flex items-center justify-center text-3xl lg:text-[80px] lg:leading-[80px] font-[700] text-black mb-2">
+              <h2 className="lg:pt-[300px] font-matt flex items-center justify-center text-4xl lg:text-[80px] lg:leading-[80px] font-[900] lg:font-[700] text-black mb-2">
               Unsere 4 Säulen
                           </h2>
-              <section className="font-matt flex flex-col md:flex-row items-center justify-between px-4 md:px-2 py-2 lg:min-w-[1280px] mx-auto">
-                    <div className="font-matt flex-1 lg:min-w-[620px] max-w-lg lg:text-left text-center ">
-                        <h2 className="font-matt text-2xl md:text-[25px] md:leading-[37px] font-[900] text-black mb-4 uppercase">
-                        Unsere 4 Säulen – Ein <br></br> ganzheitlicher Ansatz
-                        </h2>
-                        <p className="font-matt lg:text-[20px] lg:leading-[33px] text-lg text-black ">
-                        Unser Ansatz baut auf vier zentralen Säulen auf, die nahtlose Zusammenarbeit und nachhaltige Ergebnisse sichern. Von der Analyse Ihrer Anforderungen über die visuelle und technische Umsetzung bis zur langfristigen Partnerschaft entwickeln wir Lösungen, die Ihre aktuellen und zukünftigen Bedürfnisse erfüllen. Jede Phase ist auf Zusammenarbeit und Qualität ausgerichtet, um echten Mehrwert zu schaffen.        </p>
-                    </div>
+              <section className="font-matt flex flex-col md:flex-row items-center justify-between px-4 md:px-2 py-2 lg:min-w-[1280px] mx-auto mb-10 lg:mb-0">
+                {/* Image on top for mobile, on the right for larger screens */}
+                <div className="font-matt flex-1 mt-8 mb-8 flex justify-center md:order-2">
+                  <img
+                    src="/images/the-eksperts-pillar.png"
+                    alt="Info Section Image"
+                    className="w-full lg:w-[656px] lg:h-[380px]"
+                  />
+                </div>
 
-                    <div className="font-matt flex-1 mt-8 mb-8 flex justify-center">
-                        <img
-                        src="/images/the-eksperts-pillar.png" 
-                        alt="Info Section Image"
-                        className="w-full lg:w-[656px] lg:h-[380px] "
-                        />
-                    </div>
-                    </section>
+                {/* Text block on mobile (below image), on the left for larger screens */}
+                <div className="font-matt flex-1 lg:min-w-[620px] max-w-lg lg:text-left text-center md:order-1">
+                  <h2 className="font-matt text-2xl md:text-[25px] md:leading-[37px] font-[900] text-black mb-4 uppercase">
+                    Unsere 4 Säulen – Ein <br /> ganzheitlicher Ansatz
+                  </h2>
+                  <p className="font-matt lg:text-[20px] lg:leading-[33px] text-lg text-black">
+                    Unser Ansatz baut auf vier zentralen Säulen auf, die nahtlose Zusammenarbeit und nachhaltige Ergebnisse sichern. Von der Analyse Ihrer Anforderungen über die visuelle und technische Umsetzung bis zur langfristigen Partnerschaft entwickeln wir Lösungen, die Ihre aktuellen und zukünftigen Bedürfnisse erfüllen. Jede Phase ist auf Zusammenarbeit und Qualität ausgerichtet, um echten Mehrwert zu schaffen.
+                  </p>
+                </div>
+              </section>
 
-                    <section className="font-matt flex flex-col md:flex-row items-center justify-between px-4 md:px-2 py-2  lg:min-w-[1280px] mx-auto">
+
+                    <section className="font-matt flex flex-col md:flex-row items-center justify-between px-4 md:px-2 py-2  lg:min-w-[1280px] mx-auto mb-10 lg:mb-0">
                     <div className="flex-1 mt-8 md:mt-8 mb-8 flex justify-center">
                         <img
                         src="/images/the-eksperts-pillar-blue.png" 
@@ -273,23 +277,27 @@ const Agency = () => {
                     </div>
                     </section>
 
-                    <section className="font-matt flex flex-col md:flex-row items-center justify-between px-4 md:px-2 py-2 lg:min-w-[1280px] mx-auto">
-                    <div className="font-matt flex-1 lg:min-w-[570px] max-w-lg lg:text-left text-center">
+                    <section className="font-matt flex flex-col md:flex-row items-center justify-between px-4 md:px-2 py-2 lg:min-w-[1280px] mx-auto mb-10 lg:mb-0">
+                      {/* Image on top for mobile, on the right for larger screens */}
+                      <div className="font-matt flex-1 mt-8 mb-8 flex justify-center md:order-2">
+                        <img
+                          src="/images/the-eksperts-pillar-yellow.png"
+                          alt="Info Section Image"
+                          className="w-full lg:w-[656px] lg:h-[380px]"
+                        />
+                      </div>
+
+                      {/* Text block on mobile (below image), on the left for larger screens */}
+                      <div className="font-matt flex-1 lg:min-w-[570px] max-w-lg lg:text-left text-center md:order-1">
                         <h2 className="font-matt text-2xl md:text-[25px] md:leading-[37px] font-[900] text-black mb-4 uppercase">
-                        UI/UX – Benutzerzentrierte <br></br> Gestaltung für Ihre Lösung
+                          UI/UX – Benutzerzentrierte <br /> Gestaltung für Ihre Lösung
                         </h2>
                         <p className="font-matt lg:text-[20px] lg:leading-[33px] text-lg text-black">
-                        Im nächsten Schritt gestalten wir das Look-and-Feel Ihrer Lösung. Wir entwickeln Prototypen, optimieren Prozesse und entwerfen ein ansprechendes, intuitives Design. Unser Ziel ist es, dass Ihre Website, Software oder andere Plattformen nicht nur ästhetisch überzeugen, sondern auch funktional und benutzerfreundlich sind, um den höchsten Ansprüchen gerecht zu werden.</p>
-                    </div>
-
-                    <div className="font-matt flex-1 mt-8 md:mt-8 mb-8 flex justify-center lg:ml-[40px]">
-                        <img
-                        src="/images/the-eksperts-pillar-yellow.png" 
-                        alt="Info Section Image"
-                        className="w-full lg:w-[656px] lg:h-[380px] "
-                        />
-                    </div>
+                          Im nächsten Schritt gestalten wir das Look-and-Feel Ihrer Lösung. Wir entwickeln Prototypen, optimieren Prozesse und entwerfen ein ansprechendes, intuitives Design. Unser Ziel ist es, dass Ihre Website, Software oder andere Plattformen nicht nur ästhetisch überzeugen, sondern auch funktional und benutzerfreundlich sind, um den höchsten Ansprüchen gerecht zu werden.
+                        </p>
+                      </div>
                     </section>
+
 
                     <section className="font-matt flex flex-col md:flex-row items-center justify-between px-4 md:px-2 py-2 lg:min-w-[1280px] mx-auto">
                     <div className="font-matt flex-1 mt-8 md:mt-8 mb-8 flex justify-center">
@@ -308,35 +316,39 @@ const Agency = () => {
                     </div>
                     </section>
 
-                    <section className="font-matt flex flex-col md:flex-row items-center justify-between px-4 md:px-2 py-2 lg:min-w-[1280px] mx-auto">
-                    <div className="font-matt flex-1 lg:min-w-[600px] max-w-lg text-center lg:text-left">
+                    <section className="font-matt flex flex-col md:flex-row items-center justify-between px-4 md:px-2 py-2 lg:min-w-[1280px] mx-auto mb-[100px] lg:mb-0">
+                      {/* Image on top for mobile, on the right for larger screens */}
+                      <div className="font-matt flex-1 mt-8 mb-8 flex justify-center md:order-2">
+                        <img
+                          src="/images/the-eksperts-pillar-red.png"
+                          alt="Info Section Image"
+                          className="w-full lg:w-[656px] lg:h-[380px]"
+                        />
+                      </div>
+
+                      {/* Text block on mobile (below image), on the left for larger screens */}
+                      <div className="font-matt flex-1 lg:min-w-[600px] max-w-lg text-center lg:text-left md:order-1">
                         <h2 className="font-matt text-2xl md:text-[25px] md:leading-[37px] font-[900] text-black mb-4 uppercase">
-                        Optimierung, Schulung und Support<br></br> – Nachhaltige Partnerschaft
+                          Optimierung, Schulung und Support<br /> – Nachhaltige Partnerschaft
                         </h2>
                         <p className="font-matt text-lg lg:text-[20px] lg:leading-[33px] text-black">
-                        Unsere Arbeit endet nicht mit der Implementierung. Wir stehen Ihnen langfristig zur Seite, indem wir die Lösungen kontinuierlich optimieren, Schulungen anbieten und zuverlässigen Support gewährleisten. Unsere Systeme sind darauf ausgelegt, Sie auch in Zukunft zu unterstützen – und wenn es Fragen gibt, sind wir immer für Sie da. Unser Ziel ist es, Ihnen eine nachhaltige und zukunftsfähige Lösung zu bieten, die langfristig Mehrwert schafft.</p>
-                    </div>
-
-                    <div className="font-matt flex-1 mt-8 md:mt-8 mb-8 flex justify-center lg:ml-[40px]">
-                        <img
-                        src="/images/the-eksperts-pillar-red.png" 
-                        alt="Info Section Image"
-                        className="w-full lg:w-[656px] lg:h-[380px] "
-                        />
-                    </div>
+                          Unsere Arbeit endet nicht mit der Implementierung. Wir stehen Ihnen langfristig zur Seite, indem wir die Lösungen kontinuierlich optimieren, Schulungen anbieten und zuverlässigen Support gewährleisten. Unsere Systeme sind darauf ausgelegt, Sie auch in Zukunft zu unterstützen – und wenn es Fragen gibt, sind wir immer für Sie da. Unser Ziel ist es, Ihnen eine nachhaltige und zukunftsfähige Lösung zu bieten, die langfristig Mehrwert schafft.
+                        </p>
+                      </div>
                     </section>
+
                     </div>
 
                     <section className="px-6 lg:px-4 py-2">
                     <div className="lg:min-w-[1280px] mx-auto md:text-center">
                       {/* Section Header */}
-                      <h2 className="font-matt text-xl lg:text-[75px] lg:leading-[80px] font-[700] text-black mb-12 uppercase">
+                      <h2 className="font-matt text-4xl text-center lg:text-[75px] lg:leading-[80px] lg:font-[700] font-[900] text-black lg:mb-20 mb-8 uppercase">
                       Unser Engagement für Gutes!
                           </h2>
                     </div>
                     
                     {/* Content Section (Visible only on mobile) */}
-                    <div className="block lg:hidden lg:max-w-[1280px] mx-auto mt-12 flex flex-col items-center">
+                    <div className="block lg:hidden lg:max-w-[1280px] mx-auto lg:mt-12 flex flex-col items-center">
                       {/* Images with title and text together */}
                       <div className="flex flex-wrap justify-between w-full gap-12 mb-6">
                         <div className="flex-shrink-0 flex flex-col justify-center items-center w-full sm:w-1/3 mb-4">
@@ -534,7 +546,7 @@ const Agency = () => {
 
               </section>
 
-                    <section className=" lg:mt-[300px] lg:mb-[300px] px-6 mt-6">
+                    <section className=" lg:mt-[300px] mt-[100px] lg:mb-[300px] px-6 mb-[100px]">
                         <div className="lg:max-w-[1280px] mx-auto text-center">
                           {/* Buttons */}
                           <h2 className="font-matt text-[42px] leading-[45px] font-extrabold uppercase mb-2"> Folgen Sie uns für mehr Einblicke! </h2>
@@ -546,7 +558,7 @@ const Agency = () => {
                               href="https://www.instagram.com/theeksperts/"
                               target="_blank"
                               rel="noopener noreferrer"
-                              className="flex items-center justify-center lg:w-[480px] lg:h-[100px] md:w-auto bg-[#0009FF] text-white lg:text-[64px] text-[24px] pr-2 rounded-lg text-lg font-normal transition-transform transform hover:scale-105"
+                              className="flex items-center justify-center lg:w-[480px] lg:h-[100px] md:w-auto bg-[#0009FF] text-white lg:text-[64px] text-[34px] pr-2 rounded-lg text-lg font-normal transition-transform transform hover:scale-105"
                             >
                               <svg xmlns="http://www.w3.org/2000/svg" width="89" height="90" viewBox="0 0 89 90" fill="none" className="mr-2 lg:p-2 p-4">
                                 <g clip-path="url(#clip0_1068_9931)">
@@ -568,7 +580,7 @@ const Agency = () => {
                               href="https://www.linkedin.com/company/the-eksperts/"
                               target="_blank"
                               rel="noopener noreferrer"
-                              className="flex items-center justify-center lg:w-[480px] lg:h-[100px] w-auto bg-[#0009FF] text-white lg:text-[64px] text-[24px] pr-2 rounded-lg shadow-lg text-lg font-normal transition-transform transform hover:scale-105"
+                              className="flex items-center justify-center lg:w-[480px] lg:h-[100px] w-auto bg-[#0009FF] text-white lg:text-[64px] text-[34px] pr-2 rounded-lg shadow-lg text-lg font-normal transition-transform transform hover:scale-105"
                             >
                               <svg xmlns="http://www.w3.org/2000/svg" width="87" height="88" viewBox="0 0 87 88" fill="none" className="mr-2 lg:p-2 p-4">
                                 <g clip-path="url(#clip0_1068_9947)">

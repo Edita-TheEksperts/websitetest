@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState, useEffect } from 'react';
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
@@ -84,6 +84,16 @@ const HeaderSection = () => {
 const ServicesSection = () => {
   const [hoveredButton, setHoveredButton] = useState(null);
   const [hovered, setHovered] = useState(false); 
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
+  useEffect(() => {
+    const handleResize = () => {
+      setIsSmallScreen(window.innerWidth <= 640); // Tailwind's 'sm' breakpoint is 640px
+    };
+    handleResize(); // Check on mount
+    window.addEventListener('resize', handleResize); // Listen for screen size changes
+
+    return () => window.removeEventListener('resize', handleResize); // Cleanup on unmount
+  }, []);
 
 
   const [ref, InView] = useInView({ threshold: 0.3, triggerOnce: true });
@@ -92,13 +102,18 @@ const ServicesSection = () => {
     <>
       <motion.section
         ref={ref}
-        className="group font-matt cloudy-section flex flex-col md:flex-row items-center justify-between p-2 rounded-[20px] bg-[#FAFAFA] max-w-[1280px] mx-auto my-8 lg:h-[600px]"
+        className="group font-matt cloudy-section flex flex-col md:flex-row items-center justify-between p-2 rounded-[20px] md:bg-[#FAFAFA] max-w-[1280px] mx-auto my-8 lg:h-[600px]"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
         variants={fadeVariants}
+        style={{
+          background: isSmallScreen
+            ? 'radial-gradient(circle, #ffffff, #b3e5fc, #29b6f6)' // Apply gradient for small screens
+            : '', // No background on larger screens
+        }}
       >
-        <div className="font-matt md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left z-10 lg:ml-8 lg:mr-12 lg:transition-all lg:duration-500 lg:ease-out lg:group-hover:ml-12">
+        <div className="font-matt md:w-1/2 flex flex-col items-start text-left z-10 lg:ml-8 lg:mr-12 ml-[10px] lg:transition-all lg:duration-500 lg:ease-out lg:group-hover:ml-12">
         <h2 className="font-matt text-3xl sm:text-4xl md:text-5xl lg:text-[62px] font-[700] lg:leading-[80px] lg:mb-6 ">
             Salesforce
           </h2>
@@ -114,7 +129,7 @@ const ServicesSection = () => {
           <p className="text-black mb-6 font-matt font-[700] text-[18px] lg:mt-0 lg:text-[20px] leading-[28px] lg:leading-[33px]">
           Kontaktieren Sie uns und starten Sie Ihre Salesforce-Reise!
           </p>
-          <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
+          <div className="md:block hidden flex lg:flex-col flex-row items-center justify-center lg:justify-start lg:space-y-4 space-y-0 space-x-4 lg:spacex-0">
           <Link href="/services/salesforce">
                                     <motion.button
                                     className={`border-2 border-[#0009FF] text-white bg-[#0009FF] group-hover:bg-black group-hover:text-white group-hover:border-black px-4 py-1 rounded-[20px] font-[800] text-[14px] transition-colors duration-300 ${
@@ -143,6 +158,34 @@ const ServicesSection = () => {
         </Link>
           </div>
         </div>
+        <div className="md:hidden flex lg:flex-col flex-row items-center justify-center lg:justify-start lg:space-y-4 space-y-0 space-x-4 lg:spacex-0 z-10">
+          <Link href="/services/salesforce">
+                                    <motion.button
+                                    className={`border-2 border-[#0009FF] text-white bg-[#0009FF] group-hover:bg-black group-hover:text-white group-hover:border-black px-4 py-1 rounded-[20px] font-[800] text-[14px] transition-colors duration-300 ${
+                                      hoveredButton === "button2" ? "blur-sm" : "blur-none"
+                                    }`}
+                                    whileHover={{ scale: 1.1 }}
+                                    onMouseEnter={() => setHoveredButton("button1")}
+                                    onMouseLeave={() => setHoveredButton(null)}
+                                  >
+                                    MEHR <br /> ERFAHREN
+                                  </motion.button>
+                                  </Link>
+                                  <Link href="/contact">
+
+                                  {/* Button 2 */}
+                                  <motion.button
+                                    className={`font-matt border-2 border-[#0009FF] text-[#0009FF] bg-white px-4 py-1 rounded-[20px] font-[800] text-[14px] transition-all duration-300 ${
+                                      hoveredButton === "button1" ? "blur-sm" : "blur-none"
+                                    }`}
+                                    whileHover={{ scale: 1.1 }}
+                                    onMouseEnter={() => setHoveredButton("button2")}
+                                    onMouseLeave={() => setHoveredButton(null)}
+                                  >
+                                    JETZT PROJEKT <br /> STARTEN
+                                  </motion.button>
+        </Link>
+          </div>
         <div className="md:block hidden font-matt lg:mr-[110px] mt-8 md:mt-0 flex justify-center z-10 group-hover:scale-115 transition-transform duration-300 ease-out">
         <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1110 1177"  class="svg-hover">
                     <defs>
@@ -186,12 +229,17 @@ const ServicesSection = () => {
         ref={ref}
         onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}
-        className="group font-matt relative flex flex-col md:flex-row text-center lg:text-left items-center justify-between p-2 rounded-[20px] max-w-[1280px] mx-auto my-8 lg:h-[620px] bg-[#FAFAFA] transition-all duration-300 ease-in-out gradient-container"
+        className="group font-matt relative flex flex-col md:flex-row text-left items-center justify-between p-2 rounded-[20px] max-w-[1280px] mx-auto my-8 lg:h-[620px] bg-[#FAFAFA] transition-all duration-300 ease-in-out gradient-container"
         initial="hidden"
 
         whileInView="visible"
         viewport={{ once: true }}
         variants={fadeVariants}
+        style={{
+          background: isSmallScreen
+            ? 'radial-gradient(105.57% 105.57% at 50% 50%, #FFF 0%, #969AFF 100%)' // Apply gradient on small screens
+            : '', // No background on larger screens
+        }}
       >
         <div className="md:block hidden md:w-1/2 mb-8 md:mb-0 flex justify-center relative transition-transform duration-500 ease-in-out hover:scale-105">
             {/* Default Image */}
@@ -217,14 +265,14 @@ const ServicesSection = () => {
             />
           </div>
 
-        <div className="group md:w-1/2 transition-all duration-500 ease-out lg:hover:mr-16 lg:mr-14">
+        <div className="group md:w-1/2 transition-all duration-500 ease-out lg:hover:mr-16 lg:mr-14 ml-[10px] md:ml-0">
         <h2 className="font-matt text-3xl sm:text-4xl md:text-5xl lg:text-[62px] font-[700] lg:leading-[80px] lg:mb-6 ">
             Website
           </h2>
-          <p className="text-black mb-4 font-matt text-[20px] font-[700] leading-[27px]">
+          <p className="text-black mb-6 font-matt font-[700] text-[18px] mt-6 lg:mt-0 lg:text-[20px] leading-[28px] lg:leading-[33px]">
             Ihre digitale Visitenkarte – modern, effizient und einzigartig.
           </p>
-          <p className="text-black mb-6 font-matt font-[300] text-[20px] leading-[27px]">
+          <p className="text-black mb-6 font-matt text-[14px] leading-[25px] lg:text-[18px] font-[300] lg:leading-[33px]">
             Wir gestalten Websites, die gut aussehen und performen – 
             ob Unternehmensseite, E-Commerce oder Portfolio. <br></br>
             <span className="font-[700]">Individuelles Design:</span> Massgeschneidert für Ihre Marke. <br></br>
@@ -232,13 +280,13 @@ const ServicesSection = () => {
             <span className="font-[700]">SEO & Performance:</span> Optimiert für Suchmaschinen, mit schnellen Ladezeiten und sicherer Technologie.
             </p>
 
-          <p className="text-black mb-4 text-[20px] font-[700] font-matt leading-[27px]">
+            <p className="text-black mb-6 font-matt font-[700] text-[18px] lg:mt-0 lg:text-[20px] leading-[28px] lg:leading-[33px]">
             Starten Sie jetzt Ihre digitale Transformation!
           </p>
-          <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
+          <div className="flex flex-row items-center justify-center lg:justify-start space-y-0 space-x-4 ">
           <Link href="/services/website">
                                     <motion.button
-                                    className={`border-2 border-[#0009FF] text-white bg-[#0009FF] group-hover:bg-black group-hover:text-white group-hover:border-black px-4 py-1 rounded-[20px] font-[800] text-[14px] transition-colors duration-300 ${
+                                    className={`mt-[2px] lg:mt-0 border-2 border-[#0009FF] text-white bg-[#0009FF] group-hover:bg-black group-hover:text-white group-hover:border-black px-4 py-1 rounded-[20px] font-[800] text-[14px] transition-colors duration-300 ${
                                       hoveredButton === "button2" ? "blur-sm" : "blur-none"
                                     }`}
                                     whileHover={{ scale: 1.1 }}
@@ -271,15 +319,20 @@ const ServicesSection = () => {
     <motion.section
             ref={ref}
 
-      className="font-matt relative flex flex-col md:flex-row items-center justify-between p-2 rounded-[20px] max-w-[1280px] mx-auto my-8 lg:h-[620px] bg-[#FAFAFA] text-black overflow-hidden transition-all duration-500 group conic-gradient-container hover-gradient-container  hover:text-white"
+      className="group font-matt relative flex flex-col md:flex-row items-start justify-between p-2 rounded-[20px] max-w-[1280px] mx-auto my-8 lg:h-[620px] bg-[#FAFAFA] text-white md:text-black overflow-hidden transition-all duration-500 group conic-gradient-container hover-gradient-container  hover:text-white"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.3 }}
       variants={fadeVariants}
+      style={{
+        background: isSmallScreen
+          ? 'conic-gradient(from 187deg at 16.05% 158.56%, #CFFF49 0deg, #E24125 180deg, #0009FF 360deg)' // Apply conic gradient on small screens
+          : '', // No background on larger screens
+      }}
     >
       {/* Left Section: Text */}
       <motion.div
-        className="font-matt md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left lg:ml-8 lg:group-hover:ml-12 transition-transform duration-300 ease-in-out lg:group-hover:translate-x-4"
+        className="font-matt md:w-1/2 flex flex-col items-start text-left ml-[10px] lg:ml-8 lg:group-hover:ml-12 transition-transform duration-300 ease-in-out lg:group-hover:translate-x-4"
         initial={{ x: -50, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 1, ease: "easeOut" }}
@@ -287,21 +340,21 @@ const ServicesSection = () => {
         <h2 className="font-matt text-3xl sm:text-4xl md:text-5xl lg:text-[62px] font-[700] lg:leading-[80px] lg:mb-6 ">
         Custom Development
         </h2>
-        <p className="font-matt text-black mb-4  text-[20px] leading-[27px] font-[700] lg:mb-4 transition-colors duration-300 group-hover:text-white">
+        <p className="text-white md:text-black mb-6 md:mb-4 font-matt font-[700] text-[18px] mt-6 lg:mt-0 lg:text-[20px] leading-[28px] lg:leading-[33px] transition-colors duration-300 group-hover:text-white">
           Individuelle Softwarelösungen für einzigartige Anforderungen.
         </p>
-        <p className="text-black mb-4 font-matt text-[20px] font-[300] leading-[27px] group-hover:text-white">
+        <p className="text-white md:text-black  mb-6 md:mb-4 font-matt text-[14px] leading-[25px] lg:text-[18px] font-[300] lg:leading-[33px] group-hover:text-white">
         Keine Herausforderung ist zu gross. Wir entwickeln skalierbare und zukunftssichere Anwendungen, die perfekt auf Ihre Bedürfnisse
         zugeschnitten sind– von speziellen Modulen bis hin zu komplexen Systemen. Unsere Lösungen integrieren sich nahtlos in bestehende 
         Systeme und nutzen modernste Technologien, um Ihrem Unternehmen  einen Wettbewerbsvorteil zu verschaffen.
         </p>
-        <p className="text-black mb-4 font-matt font-[700] text-[20px] leading-[27px] group-hover:text-white">
+        <p className="text-white md:text-black  mb-6 md:mb-4 font-matt font-[700] text-[17px] lg:mt-0 lg:text-[20px] leading-[28px] lg:leading-[33px] group-hover:text-white">
         Entwickeln Sie Ihre massgeschneiderte Lösung– starten Sie jetzt!
         </p>
-        <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
+        <div className="flex flex-row items-center justify-center lg:justify-start space-y-0 space-x-4 ml-[30px] lg:ml-0">
         <Link href="/services/customdevelopment">
                                     <motion.button
-                                    className={`border-2 border-[#0009FF] text-white bg-[#0009FF] group-hover:bg-black group-hover:text-white group-hover:border-black px-4 py-1 rounded-[20px] font-[800] text-[14px] transition-colors duration-300 ${
+                                    className={`lg:mt-[2px] border-2 border-[#0009FF] text-white bg-[#0009FF] group-hover:bg-black group-hover:text-white group-hover:border-black px-4 py-1 rounded-[20px] font-[800] text-[14px] transition-colors duration-300 ${
                                       hoveredButton === "button2" ? "blur-sm" : "blur-none"
                                     }`}
                                     whileHover={{ scale: 1.1 }}
@@ -361,35 +414,40 @@ const ServicesSection = () => {
 
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
-      className="font-matt relative flex flex-col md:flex-row text-center lg:text-left items-center justify-between p-2 rounded-[20px] max-w-[1280px] mx-auto my-8 lg:h-[620px] bg-[#FAFAFA] transition-all duration-300 ease-in-out hover:bg-[#0009FF] group"
+      className="font-matt relative flex flex-col md:flex-row text-left items-center justify-between p-2 rounded-[20px] max-w-[1280px] mx-auto my-8 lg:h-[620px] bg-[#FAFAFA] transition-all duration-300 ease-in-out hover:bg-[#0009FF] group"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.3 }}
       variants={fadeVariants}
+      style={{
+        background: isSmallScreen
+          ? '#0009FF' // Apply gradient on small screens
+          : '', // No background on larger screens
+      }}
     >
       {/* Left Section: Text */}
       <motion.div
-        className="group md:w-1/2 flex flex-col items-center md:space-y-6 md:items-start text-center md:text-left transition-colors duration-500 group-hover:text-white lg:ml-4 lg:group-hover:ml-8 space-y-4"
+        className="group md:w-1/2 flex flex-col  md:space-y-6 items-start text-left transition-colors duration-500 group-hover:text-white lg:ml-4 lg:group-hover:ml-8 space-y-4 ml-[10px] lg:ml-0"
         initial={{ x: -50, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 1, ease: "easeOut" }}
       >
-        <h2 className="font-matt text-3xl sm:text-4xl md:text-5xl lg:text-[62px] font-[700] lg:leading-[80px] ">
+        <h2 className="text-white md:text-black group-hover:text-white font-matt text-3xl sm:text-4xl md:text-5xl lg:text-[62px] font-[700] lg:leading-[80px] lg:mb-6">
           Book your Ekspert
         </h2>
-        <p className="text-black text-base font-[700] sm:text-lg font-matt leading-relaxed sm:leading-[30px] md:leading-[33px] transition-colors duration-500 group-hover:text-white">
+        <p className="text-white md:text-black mb-6 md:mb-4 font-matt font-[700] text-[18px] mt-6 lg:mt-0 lg:text-[20px] leading-[28px] lg:leading-[33px] transition-colors duration-500 group-hover:text-white">
           Ihre Expertise – flexibel und auf Abruf.
         </p>
-        <p className="text-black text-base sm:text-lg font-[300] font-matt leading-relaxed sm:leading-[30px] md:leading-tight transition-colors duration-500 group-hover:text-white">
+        <p className="text-white md:text-black mb-6 md:mb-4 font-matt text-[14px] leading-[25px] lg:text-[18px] font-[300] lg:leading-[33px] transition-colors duration-500 group-hover:text-white">
         Mit unserem „Book Your Ekspert"-Service bringen erfahrene Fachkräfte Ihre Projekte individuell und flexibel voran. Ob IT, Design, Entwicklung oder Beratung - buchen Sie unsere Eksperten genau dann, wenn Sie sie brauchen. Unsere Spezialistenintegrieren sich nahtlos in Ihr Team und Ihre Prozesse.
         </p>
-        <p className="text-black text-base font-[700] sm:text-lg font-matt leading-relaxed sm:leading-[30px] md:leading-[33px] transition-colors duration-500 group-hover:text-white">
+        <p className="text-white md:text-black mb-6 md:mb-4 font-matt font-[700] text-[17px] lg:mt-0 lg:text-[20px] leading-[28px] lg:leading-[33px] transition-colors duration-500 group-hover:text-white">
           Warum warten, wenn Sie Unterstützung brauchen?
         </p>
-        <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
+        <div className="flex flex-row items-center justify-center lg:justify-start space-y-0 space-x-4 ml-[30px] lg:ml-0">
                                     <Link href="/services/bookyourekspert">
                                     <motion.button
-                                    className={`border-2 border-[#0009FF] text-white bg-[#0009FF] group-hover:bg-black group-hover:text-white group-hover:border-black px-4 py-1 rounded-[20px] font-[800] text-[14px] transition-colors duration-300 ${
+                                    className={`border-2 md:border-[#0009FF] text-white bg-[#0009FF] group-hover:bg-black group-hover:text-white group-hover:border-black px-4 py-1 rounded-[20px] font-[800] text-[14px] transition-colors duration-300 ${
                                       hoveredButton === "button2" ? "blur-sm" : "blur-none"
                                     }`}
                                     whileHover={{ scale: 1.1 }}

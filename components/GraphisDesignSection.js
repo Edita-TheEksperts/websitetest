@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from 'react';
 import Image from "next/image";
 import logo3 from "/images/graph.png";
 import hoverImage1 from "/images/hover-image1.png";
@@ -22,6 +22,17 @@ const GraphicDesignSection = () => {
   const [currentImage, setCurrentImage] = useState(logo3);
   const [hovering, setHovering] = useState(false);
   const [hoveredButton, setHoveredButton] = useState(null);
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
+  useEffect(() => {
+    const handleResize = () => {
+      setIsSmallScreen(window.innerWidth <= 640); // Tailwind's 'sm' breakpoint is 640px
+    };
+    handleResize(); // Check on mount
+    window.addEventListener('resize', handleResize); // Listen for screen size changes
+
+    return () => window.removeEventListener('resize', handleResize); // Cleanup on unmount
+  }, []);
+
 
 
   const handleMouseEnter = () => {
@@ -60,6 +71,11 @@ const GraphicDesignSection = () => {
       whileInView="visible"
       viewport={{ once: true, amount: 0.3 }}
       variants={fadeVariants}
+      style={{
+        background: isSmallScreen
+          ? 'radial-gradient(105.57% 105.57% at 50% 50%, #D83200 0%, #0009FF 50%)' // Apply gradient on small screens
+          : '', // No background on larger screens
+      }}
     >
       {/* Image Section */}
       <motion.div
@@ -80,25 +96,25 @@ const GraphicDesignSection = () => {
 
       {/* Text Section */}
       <motion.div
-        className="w-full lg:w-1/2 text-center lg:text-left space-y-8 transition-transform duration-500 lg:group-hover:-translate-x-4"
+        className="w-full lg:w-1/2 text-left lg:space-y-8 transition-transform duration-500 lg:group-hover:-translate-x-4"
         initial={{ x: 50, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 1, ease: "easeOut" }}
       >
-        <h2 className="font-matt text-3xl sm:text-4xl md:text-5xl lg:text-[62px] font-[700] lg:leading-[80px] transition-colors duration-300 group-hover:text-white lg:mb-6">
+        <h2 className="text-white md:text-black font-matt text-3xl sm:text-4xl md:text-5xl lg:text-[62px] font-[700] lg:leading-[80px] lg:mb-6 transition-colors duration-300 group-hover:text-white ">
           Graphic Design
         </h2>
-        <p className="text-black text-sm sm:text-base mt-6 md:text-[20px] md:font-[700] leading-relaxed transition-colors duration-300 group-hover:text-white">
+        <p className="text-white md:text-black  mb-6 md:mb-4 font-matt font-[700] text-[18px] mt-6 lg:mt-0 lg:text-[20px] leading-[28px] lg:leading-[33px] transition-colors duration-300 group-hover:text-white">
           Visuelle Kommunikation, die Eindruck macht.
         </p>
-        <p className="text-black mb-6 font-matt text-[20px] font-[300] leading-[33px] transition-colors duration-300 group-hover:text-white">
+        <p className="text-white md:text-black  mb-6 md:mb-4 font-matt text-[14px] leading-[25px] lg:text-[18px] font-[300] lg:leading-[33px] transition-colors duration-300 group-hover:text-white">
          
 Unser kreatives Team gestaltet Designs, die Ihre Botschaft klar transportieren und Ihre Marke im Gedächtnis bleiben lassen. Ob Logo, komplette Markenidentität, Print oder Digital - wir liefern durchdachte und frische Ideen, die Ihre Zielgruppe begeistern.
         </p>
-        <p className="text-black text-sm sm:text-base md:text-[20px] md:font-[700] leading-relaxed transition-colors duration-300 group-hover:text-white">
+        <p className="text-white md:text-black  mb-6 md:mb-4 font-matt font-[700] text-[17px] lg:mt-0 lg:text-[20px] leading-[28px] lg:leading-[33px] transition-colors duration-300 group-hover:text-white">
           Zeigen Sie Ihre Marke von ihrer besten Seite!
         </p>
-        <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
+        <div className="flex flex-row items-center justify-center lg:justify-start space-y-0 space-x-4">
         <Link href="/services/graphicdesign">
                                     <motion.button
                                     className={`border-2 border-[#0009FF] text-white bg-[#0009FF] group-hover:bg-black group-hover:text-white group-hover:border-black px-4 py-1 rounded-[20px] font-[800] text-[14px] transition-colors duration-300 ${

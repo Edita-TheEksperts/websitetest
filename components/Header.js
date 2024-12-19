@@ -23,6 +23,10 @@ const Header = () => {
     }, 200);
   };
 
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
   return (
     <header
       className="bg-white sticky top-0 z-[60] px-4 py-4 text-[17px] font-normal font-matt"
@@ -168,36 +172,36 @@ const Header = () => {
         </button>
       </div>
 
-      {/* Mobile Menu */}
-      {isMenuOpen && (
-        <nav className="lg:hidden bg-gray-100 p-4 mt-2 rounded-lg shadow-lg">
+       {/* Mobile Menu */}
+       {isMenuOpen && (
+        <nav className="lg:hidden bg-[#F1F1F1] p-4 mt-2 rounded-lg">
           <ul className="space-y-4 text-center">
-            <li><Link href="/">Home</Link></li>
+            <li><Link href="/" onClick={closeMenu}>Home</Link></li>
             <li>
               <details>
-                <summary className="cursor-pointer text-gray-700">Services</summary>
-                <ul className="mt-2 space-y-2 pl-4">
+                <summary className="cursor-pointer ">Services</summary>
+                <ul className="mt-2 space-y-2 pl-4 font-[300]">
                   <li>
-                    <Link href="/services/salesforce">Salesforce</Link>
+                    <Link href="/services/salesforce" onClick={closeMenu}>Salesforce</Link>
                   </li>
                   <li>
-                    <Link href="/services/website">Website</Link>
+                    <Link href="/services/website" onClick={closeMenu}>Website</Link>
                   </li>
                   <li>
-                  <Link href="/services/customdevelopment">Custom Development</Link>
+                    <Link href="/services/customdevelopment" onClick={closeMenu}>Custom Development</Link>
                   </li>
                   <li>
-                    <Link href="/services/graphicdesign">Graphic Design</Link>
+                    <Link href="/services/graphicdesign" onClick={closeMenu}>Graphic Design</Link>
                   </li>
                   <li>
-                    <Link href="/services/bookyourekspert">Book Your Ekspert</Link>
+                    <Link href="/services/bookyourekspert" onClick={closeMenu}>Book Your Ekspert</Link>
                   </li>
                 </ul>
               </details>
             </li>
-            <li><Link href="/agency">Agentur</Link></li>
-            <li><Link href="/projekte">Projekte</Link></li>
-            <li><Link href="/contact">Kontakt</Link></li>
+            <li><Link href="/agency" onClick={closeMenu}>Agentur</Link></li>
+            <li><Link href="/projekte" onClick={closeMenu}>Projekte</Link></li>
+            <li><Link href="/contact" onClick={closeMenu}>Kontakt</Link></li>
           </ul>
         </nav>
       )}

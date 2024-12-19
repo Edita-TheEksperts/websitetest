@@ -163,26 +163,26 @@ const Footer = () => {
           <div className="lg:ml-[150px]">
             <ul className="space-y-6 text-[17px] leading-[24px] text-black">
               {/* Main Menu Items */}
-              <Link href="/index" className="hover:underline hover:text-blue-700">Home</Link>
+              <Link href="/index" className="hover:underline hover:text-blue-700 font-[700]">Home</Link>
               <li className="group">
                 <div className="flex justify-center md:justify-normal items-center space-x-2">
-                  <Link href="" className="hover:underline hover:text-blue-700 ">
+                  <Link href="" className="hover:underline hover:text-blue-700 font-[700] ">
                     Services
                   </Link>
-                  <span className="text-black text-[20px]">›</span>
+                  <span className="text-black text-[20px] font-[700]">›</span>
                 </div>
                 {/* Submenu */}
                 <ul className="mt-2 ml-4 space-y-4 hidden group-hover:block transition-all duration-300 opacity-0 group-hover:opacity-100">
-                  <li><Link href="/services/salesforce" className="hover:underline hover:text-blue-700">Salesforce</Link></li>
-                  <li><Link href="/services/website" className="hover:underline hover:text-blue-700">Website</Link></li>
-                  <li><Link href="/services/customdevelopment" className="hover:underline hover:text-blue-700">Custom Development</Link></li>
-                  <li><Link href="/services/graphicdesign" className="hover:underline hover:text-blue-700">Graphic Design</Link></li>
-                  <li><Link href="/services/bookyourexpert" className="hover:underline hover:text-blue-700">Book your Ekspert</Link></li>
+                  <li><Link href="/services/salesforce" className="hover:underline hover:text-blue-700  font-[300]">Salesforce</Link></li>
+                  <li><Link href="/services/website" className="hover:underline hover:text-blue-700 font-[300]">Website</Link></li>
+                  <li><Link href="/services/customdevelopment" className="hover:underline hover:text-blue-700 font-[300]">Custom Development</Link></li>
+                  <li><Link href="/services/graphicdesign" className="hover:underline hover:text-blue-700 font-[300]">Graphic Design</Link></li>
+                  <li><Link href="/services/bookyourexpert" className="hover:underline hover:text-blue-700 font-[300]" >Book your Ekspert</Link></li>
                 </ul>
               </li>
-              <li><Link href="/agency" className="hover:underline hover:text-blue-700">Agentur</Link></li>
-              <li><Link href="/projekte" className="hover:underline hover:text-blue-700">Projekte</Link></li>
-              <li><Link href="/contact" className="hover:underline hover:text-blue-700">Kontakt</Link></li>
+              <li><Link href="/agency" className="hover:underline hover:text-blue-700 font-[700]">Agentur</Link></li>
+              <li><Link href="/projekte" className="hover:underline hover:text-blue-700 font-[700]">Projekte</Link></li>
+              <li><Link href="/contact" className="hover:underline hover:text-blue-700 font-[700]">Kontakt</Link></li>
             </ul>
           </div>
 

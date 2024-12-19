@@ -68,11 +68,11 @@ const Home = () => {
             <div className="font-matt flex flex-col items-center px-2 lg:px-0">
             <div className="w-full max-w-[370px] lg:max-w-[1000px]">
             <Image
-                    src="/images/Frame 24.png" // Replace with the actual image path
+                    src="/images/Frame 24.png" 
                     alt="Description of image"
                     layout="responsive"
-                    width={1200} // Set the width for the image's aspect ratio
-                    height={675} // Set the height for the image's aspect ratio
+                    width={1200} 
+                    height={675} 
                     className="w-full h-auto mb-4 "
                 />
 

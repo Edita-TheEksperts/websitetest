@@ -7,26 +7,22 @@ export default function SalesforceSection() {
     {
       id: 1,
       title: "Offizieller Salesforce-Partner",
-      description:
-        "Durch unsere enge Zusammenarbeit mit Salesforce liefern wir maßgeschneiderte Lösungen, die Ihren Erfolg fördern. ",
-      image: "/images/vector.png", // Replace with your image path
+      image: "/images/Article.png", // Image for tab 1
     },
     {
       id: 2,
       title: "Erfahrung und Expertise",
-      image: "/images/SALESFORCE.svg", 
+      image: "/images/Article (1).png", // Image for tab 2
     },
     {
       id: 3,
       title: "Umfassendes Know-How",
-      description:
-        "Als offizieller Partner bieten wir die modernsten Technologien für Ihre Anforderungen.",
-      image: "/images/salesforce 3.svg", 
+      image: "/images/Article (2).png", // Image for tab 3
     },
   ];
 
   return (
-    <div className="bg-white p-4 md:p-2 lg:p-2 mt-14 rounded-lg max-w-[1280px] mx-auto">
+    <div className="p-4 md:p-2 lg:p-2 mt-14 rounded-lg max-w-[1280px] mx-auto">
       {/* Tab Buttons */}
       <div className="flex flex-col lg:flex-row gap-4 lg:gap-0 justify-center lg:justify-start">
         {tabs.map((tab) => (
@@ -56,20 +52,13 @@ export default function SalesforceSection() {
       </div>
 
       {/* Content Section */}
-      <div className="flex flex-col lg:flex-row items-center gap-6 lg:gap-10 mt-8 lg:px-24 lg:py-8">
-        {/* Text Content */}
-        <div className="flex-1 text-center lg:text-left">
-          <p className="text-black text-sm md:text-base lg:text-[28px] lg:leading-[37px] font-[400] leading-relaxed uppercase font-matt">
-            {tabs.find((tab) => tab.id === active)?.description}
-          </p>
-        </div>
-
+      <div className="flex flex-col lg:flex-row items-center">
         {/* Image Content */}
-        <div className="flex-shrink-0 w-full lg:w-auto">
+        <div className="flex-shrink-0 w-full">
           <img
             src={tabs.find((tab) => tab.id === active)?.image}
             alt={tabs.find((tab) => tab.id === active)?.title}
-            className="max-w-[150px] md:max-w-[200px] lg:max-w-[300px] mx-auto lg:mx-0"
+            className="w-full max-w-none mx-auto lg:mx-0" // Full width image for all tabs
           />
         </div>
       </div>
