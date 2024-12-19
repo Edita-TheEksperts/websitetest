@@ -74,7 +74,7 @@ const SectionGrid = ({ sections }) => {
   return (
     <motion.div
       ref={ref}
-      className="grid grid-cols-1 lg:grid-cols-3 gap-4 px-4 mx-auto mb-[100px] lg:mb-0"
+      className="grid grid-cols-1 lg:grid-cols-3 gap-4 px-2 mx-auto mb-[100px] lg:mb-0"
       initial="hidden"
       animate={inView ? "visible" : "hidden"}
       variants={{
@@ -100,7 +100,7 @@ const SectionGrid = ({ sections }) => {
       {sections.slice(0, 3).map((section, index) => (
         <div
           key={index}
-          className="flex flex-col items-center text-center space-y-4 lg:space-y-8 lg:mb-[30px] w-full"
+          className="flex flex-col items-center text-center space-y-2 lg:space-y-8 lg:mb-[30px] mb-8 w-full"
         >
           {section.icon}
           <h3 className="font-matt text-xl lg:text-[28px] leading-[37px] font-[900] text-black uppercase">
@@ -114,7 +114,7 @@ const SectionGrid = ({ sections }) => {
         {sections.slice(3).map((section, index) => (
           <div
             key={index}
-            className="flex flex-col items-center text-center space-y-4 lg:space-y-8 mt-10 w-full"
+            className="flex flex-col items-center text-center space-y-2 lg:space-y-8 lg:mt-10 mb-8 w-full"
           >
             {section.icon}
             <h3 className="font-matt text-xl lg:text-[28px] leading-[37px] font-[900] text-black uppercase">
@@ -193,7 +193,7 @@ const App = () => {
       icon: (
         <motion.svg
       width="205"
-      height="180"
+      height="170"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 582.6 290.4"
       variants={fadeVariants}
