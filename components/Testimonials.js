@@ -100,10 +100,11 @@ export default function Testimonials() {
             768: { slidesPerView: 2 },
             1024: { slidesPerView: 3 },
           }}
-          modules={[Pagination, Navigation, Mousewheel, Scrollbar]}  // Add Mousewheel and Scrollbar module
-          touchStartPreventDefault={false}  // Disable the default touch start behavior
-          touchMoveStopPropagation={false}  // Allow touch move without propagation interruption
-          mousewheel={true} // Enable mousewheel scrolling
+          modules={[Pagination, Navigation, Mousewheel, Scrollbar]}  // Ensure necessary modules are imported
+          touchStartPreventDefault={false}  // Allow touch gestures
+          touchMoveStopPropagation={false}  // Allow swipe move propagation
+          mousewheel={false} // Disable mousewheel interaction if not needed
+          grabCursor={true}  // Makes the swiper show a grab cursor
         >
           {testimonials.map((testimonial, index) => (
             <SwiperSlide key={index}>
