@@ -66,7 +66,7 @@ const Home = () => {
             <div className="font-matt flex flex-col items-center text-center space-y-12">
             {/* 100% Section */}
             <div className="font-matt flex flex-col items-center px-2 lg:px-0">
-            <div className="w-full max-w-[390px] md:min-w-[800px] lg:max-w-[1200px]">
+            <div className="w-full max-w-[390px] md:min-w-[800px] lg:max-w-[900px]">
             <Image
                     src="/images/Frame 24.png" 
                     alt="Description of image"
