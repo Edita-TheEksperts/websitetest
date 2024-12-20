@@ -117,7 +117,7 @@ Unser kreatives Team gestaltet Designs, die Ihre Botschaft klar transportieren u
         <div className="flex flex-row items-center justify-center lg:justify-start space-y-0 space-x-4">
         <Link href="/services/graphicdesign">
                                     <motion.button
-                                    className={`border-2 border-[#0009FF] text-white bg-[#0009FF] group-hover:bg-black group-hover:text-white group-hover:border-black px-4 py-1 rounded-[20px] font-[800] text-[14px] transition-colors duration-300 ${
+                                    className={`border-2 border-[#0009FF] text-white bg-[#0009FF] group-hover:bg-black group-hover:text-white group-hover:border-black px-4 py-1 rounded-[20px] font-[800] md:text-[14px] text-[12px] transition-colors duration-300 ${
                                       hoveredButton === "button2" ? "blur-sm" : "blur-none"
                                     }`}
                                     whileHover={{ scale: 1.1 }}
@@ -131,7 +131,7 @@ Unser kreatives Team gestaltet Designs, die Ihre Botschaft klar transportieren u
 
                                   {/* Button 2 */}
                                   <motion.button
-                                    className={`font-matt border-2 border-[#0009FF] text-[#0009FF] bg-white px-4 py-1 rounded-[20px] font-[800] text-[14px] transition-all duration-300 ${
+                                    className={`font-matt border-2 border-[#0009FF] text-[#0009FF] bg-white px-4 py-1 rounded-[20px] font-[800] md:text-[14px] text-[12px] transition-all duration-300 ${
                                       hoveredButton === "button1" ? "blur-sm" : "blur-none"
                                     }`}
                                     whileHover={{ scale: 1.1 }}
