@@ -46,11 +46,11 @@ export default function FeatureSection() {
             </div>
 
             {/* Text Section */}
-            <div className="ml-6 w-2/3 text-left flex flex-col justify-start items-start h-full">
-                <h3 className="text-black font-matt font-[900] text-[22px] lg:text-[28px] lg:leading-[37px] uppercase mb-2">
+            <div className="ml-6 w-2/3 text-left flex flex-col justify-center items-center md:justify-start md:items-start h-full mb-8 md:mb-0">
+                <h3 className="text-black font-matt font-[900] text-[22px] lg:text-[28px] lg:leading-[37px] uppercase mb-2 mt-6 md:mt-0">
                     {feature.title}
                 </h3>
-                <p className="text-black font-matt text-[20px] font-[300] lg:leading-[33px] lg:w-[230px]">
+                <p className="text-black font-matt text-[20px] font-[300] lg:leading-[33px] lg:w-[230px] w-[290px]">
                     {feature.description}
                 </p>
                 </div>
