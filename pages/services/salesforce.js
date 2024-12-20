@@ -103,7 +103,7 @@ const Salesforce = () => {
                             strokeWidth="6"
                           />
                         </svg>
-                        <span className="relative text-[#0009FF] group-hover:text-white text-center font-matt mb-6 lg:mb-0 text-[22px] leading:[25px] lg:text-[28px] font-[900] lg:leading-[37px] uppercase">
+                        <span className="relative text-[#0009FF] group-hover:text-white text-center font-matt mb-8 md:mb-6 lg:mb-0 text-[19px] leading:[22px] lg:text-[28px] font-[900] lg:leading-[37px] uppercase">
                           Jetzt Gespräch Buchen
                         </span>
                       </button>
@@ -176,7 +176,7 @@ const Salesforce = () => {
                             strokeWidth="6"
                           />
                         </svg>
-                        <span className="relative text-[#0009FF] group-hover:text-white text-center font-matt mb-6 lg:mb-0 text-[22px] leading:[25px] lg:text-[28px] font-[900] lg:leading-[37px] uppercase">
+                        <span className="relative text-[#0009FF] group-hover:text-white text-center font-matt mb-8 md:mb-6 lg:mb-0 text-[19px] leading:[22px] lg:text-[28px] font-[900] lg:leading-[37px] uppercase">
                           Jetzt Gespräch Buchen
                         </span>
                       </button>
@@ -249,7 +249,7 @@ const Salesforce = () => {
                             strokeWidth="6"
                           />
                         </svg>
-                        <span className="relative text-[#0009FF] group-hover:text-white text-center font-matt mb-6 lg:mb-0 text-[22px] leading:[25px] lg:text-[28px] font-[900] lg:leading-[37px] uppercase">
+                        <span className="relative text-[#0009FF] group-hover:text-white text-center font-matt mb-8 md:mb-6 lg:mb-0 text-[19px] leading:[22px] lg:text-[28px] font-[900] lg:leading-[37px] uppercase">
                           Jetzt Gespräch Buchen
                         </span>
                       </button>
