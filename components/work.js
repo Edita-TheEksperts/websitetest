@@ -132,7 +132,7 @@ const ServicesSection = () => {
           <div className="md:block hidden flex lg:flex-col flex-row items-center justify-center lg:justify-start lg:space-y-4 space-y-0 space-x-4 lg:spacex-0">
           <Link href="/services/salesforce">
                                     <motion.button
-                                    className={`border-2 border-[#0009FF] text-white bg-[#0009FF] group-hover:bg-black group-hover:text-white group-hover:border-black px-4 py-1 rounded-[20px] font-[800] text-[14px] transition-colors duration-300 ${
+                                    className={`border-2 border-[#0009FF] text-white bg-[#0009FF] group-hover:bg-black group-hover:text-white group-hover:border-black px-4 py-1 rounded-[20px] font-[800] md:text-[14px] text-[12px] transition-colors duration-300 ${
                                       hoveredButton === "button2" ? "blur-sm" : "blur-none"
                                     }`}
                                     whileHover={{ scale: 1.1 }}
@@ -146,7 +146,7 @@ const ServicesSection = () => {
 
                                   {/* Button 2 */}
                                   <motion.button
-                                    className={`font-matt border-2 border-[#0009FF] text-[#0009FF] bg-white px-4 py-1 rounded-[20px] font-[800] text-[14px] transition-all duration-300 ${
+                                    className={`font-matt border-2 border-[#0009FF] text-[#0009FF] bg-white px-4 py-1 rounded-[20px] font-[800] md:text-[14px] text-[12px] transition-all duration-300 ${
                                       hoveredButton === "button1" ? "blur-sm" : "blur-none"
                                     }`}
                                     whileHover={{ scale: 1.1 }}
@@ -161,7 +161,7 @@ const ServicesSection = () => {
         <div className="md:hidden flex lg:flex-col flex-row items-center justify-center lg:justify-start lg:space-y-4 space-y-0 space-x-4 lg:spacex-0 z-10">
           <Link href="/services/salesforce">
                                     <motion.button
-                                    className={`border-2 border-[#0009FF] text-white bg-[#0009FF] group-hover:bg-black group-hover:text-white group-hover:border-black px-4 py-1 rounded-[20px] font-[800] text-[14px] transition-colors duration-300 ${
+                                    className={`border-2 border-[#0009FF] text-white bg-[#0009FF] group-hover:bg-black group-hover:text-white group-hover:border-black px-4 py-1 rounded-[20px] font-[800] md:text-[14px] text-[12px] transition-colors duration-300 ${
                                       hoveredButton === "button2" ? "blur-sm" : "blur-none"
                                     }`}
                                     whileHover={{ scale: 1.1 }}
@@ -175,7 +175,7 @@ const ServicesSection = () => {
 
                                   {/* Button 2 */}
                                   <motion.button
-                                    className={`font-matt border-2 border-[#0009FF] text-[#0009FF] bg-white px-4 py-1 rounded-[20px] font-[800] text-[14px] transition-all duration-300 ${
+                                    className={`font-matt border-2 border-[#0009FF] text-[#0009FF] bg-white px-4 py-1 rounded-[20px] font-[800] md:text-[14px] text-[12px] transition-all duration-300 ${
                                       hoveredButton === "button1" ? "blur-sm" : "blur-none"
                                     }`}
                                     whileHover={{ scale: 1.1 }}
@@ -283,10 +283,10 @@ const ServicesSection = () => {
             <p className="text-black mb-6 font-matt font-[700] text-[18px] lg:mt-0 lg:text-[20px] leading-[28px] lg:leading-[33px]">
             Starten Sie jetzt Ihre digitale Transformation!
           </p>
-          <div className="flex flex-row items-center justify-center lg:justify-start space-y-0 space-x-4 mr-[10px] lg:mr-0">
+          <div className="flex flex-row items-center justify-center lg:justify-start space-y-0 space-x-4 sm:mr-[10px] md:mr-0">
           <Link href="/services/website">
                                     <motion.button
-                                    className={`mt-[2px] lg:mt-0 border-2 border-[#0009FF] text-white bg-[#0009FF] group-hover:bg-black group-hover:text-white group-hover:border-black px-4 py-1 rounded-[20px] font-[800] text-[14px] transition-colors duration-300 ${
+                                    className={`mt-[2px] lg:mt-0 border-2 border-[#0009FF] text-white bg-[#0009FF] group-hover:bg-black group-hover:text-white group-hover:border-black px-4 py-1 rounded-[20px] font-[800] md:text-[14px] text-[12px] transition-colors duration-300 ${
                                       hoveredButton === "button2" ? "blur-sm" : "blur-none"
                                     }`}
                                     whileHover={{ scale: 1.1 }}
@@ -300,7 +300,7 @@ const ServicesSection = () => {
 
                                   {/* Button 2 */}
                                   <motion.button
-                                    className={`font-matt border-2 border-[#0009FF] text-[#0009FF] bg-white px-4 py-1 rounded-[20px] font-[800] text-[14px] transition-all duration-300 ${
+                                    className={`font-matt border-2 border-[#0009FF] text-[#0009FF] bg-white px-4 py-1 rounded-[20px] font-[800] md:text-[14px] text-[12px] transition-all duration-300 ${
                                       hoveredButton === "button1" ? "blur-sm" : "blur-none"
                                     }`}
                                     whileHover={{ scale: 1.1 }}
@@ -351,10 +351,10 @@ const ServicesSection = () => {
         <p className="text-white md:text-black  mb-6 md:mb-4 font-matt font-[700] text-[17px] lg:mt-0 lg:text-[20px] leading-[28px] lg:leading-[33px] group-hover:text-white">
         Entwickeln Sie Ihre massgeschneiderte Lösung– starten Sie jetzt!
         </p>
-        <div className="flex flex-row items-center justify-center lg:justify-start space-y-0 space-x-4 ml-[28px] lg:ml-0">
+        <div className="flex flex-row items-center justify-center lg:justify-start space-y-0 space-x-4 custom-margin">
         <Link href="/services/customdevelopment">
                                     <motion.button
-                                    className={`lg:mt-[2px] border-2 border-[#0009FF] text-white bg-[#0009FF] group-hover:bg-black group-hover:text-white group-hover:border-black px-4 py-1 rounded-[20px] font-[800] text-[14px] transition-colors duration-300 ${
+                                    className={`lg:mt-[2px] border-2 border-[#0009FF] text-white bg-[#0009FF] group-hover:bg-black group-hover:text-white group-hover:border-black px-4 py-1 rounded-[20px] font-[800] md:text-[14px] text-[12px] transition-colors duration-300 ${
                                       hoveredButton === "button2" ? "blur-sm" : "blur-none"
                                     }`}
                                     whileHover={{ scale: 1.1 }}
@@ -368,7 +368,7 @@ const ServicesSection = () => {
 
                                   {/* Button 2 */}
                                   <motion.button
-                                    className={`font-matt border-2 border-[#0009FF] text-[#0009FF] bg-white px-4 py-1 rounded-[20px] font-[800] text-[14px] transition-all duration-300 ${
+                                    className={`font-matt border-2 border-[#0009FF] text-[#0009FF] bg-white px-4 py-1 rounded-[20px] font-[800] md:text-[14px] text-[12px] transition-all duration-300 ${
                                       hoveredButton === "button1" ? "blur-sm" : "blur-none"
                                     }`}
                                     whileHover={{ scale: 1.1 }}
@@ -444,10 +444,10 @@ const ServicesSection = () => {
         <p className="text-white md:text-black mb-6 md:mb-4 font-matt font-[700] text-[17px] lg:mt-0 lg:text-[20px] leading-[28px] lg:leading-[33px] transition-colors duration-500 group-hover:text-white">
           Warum warten, wenn Sie Unterstützung brauchen?
         </p>
-        <div className="flex flex-row items-center justify-center lg:justify-start space-y-0 space-x-4 ml-[28px] lg:ml-0">
+        <div className="flex flex-row items-center justify-center lg:justify-start space-y-0 space-x-4 custom-margin">
                                     <Link href="/services/bookyourekspert">
                                     <motion.button
-                                    className={`border-2 md:border-[#0009FF] text-white bg-[#0009FF] group-hover:bg-black group-hover:text-white group-hover:border-black px-4 py-1 rounded-[20px] font-[800] text-[14px] transition-colors duration-300 ${
+                                    className={`border-2 md:border-[#0009FF] text-white bg-[#0009FF] group-hover:bg-black group-hover:text-white group-hover:border-black px-4 py-1 rounded-[20px] font-[800] md:text-[14px] text-[12px] transition-colors duration-300 ${
                                       hoveredButton === "button2" ? "blur-sm" : "blur-none"
                                     }`}
                                     whileHover={{ scale: 1.1 }}
@@ -461,7 +461,7 @@ const ServicesSection = () => {
 
                                   {/* Button 2 */}
                                   <motion.button
-                                    className={`font-matt border-2 border-[#0009FF] text-[#0009FF] bg-white px-4 py-1 rounded-[20px] font-[800] text-[14px] transition-all duration-300 ${
+                                    className={`font-matt border-2 border-[#0009FF] text-[#0009FF] bg-white px-4 py-1 rounded-[20px] font-[800] md:text-[14px] text-[12px] transition-all duration-300 ${
                                       hoveredButton === "button1" ? "blur-sm" : "blur-none"
                                     }`}
                                     whileHover={{ scale: 1.1 }}

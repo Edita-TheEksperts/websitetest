@@ -242,3 +242,20 @@ h2.responsive-heading {
     letter-spacing: -1.2px;
   }
 }
+
+/* Custom margin-left for different screen sizes */
+.custom-margin {
+  margin-left: 20px; /* Default for small screens */
+}
+
+@media (min-width: 377px) and (max-width: 427px) {
+  .custom-margin {
+    margin-left: 38px; /* For 375px to 425px screens */
+  }
+}
+
+@media (min-width: 768px) {
+  .custom-margin {
+    margin-left: 0px; /* For md and larger (tablets and up) */
+  }
+}
