@@ -66,7 +66,7 @@ const Home = () => {
             <div className="font-matt flex flex-col items-center text-center space-y-12">
             {/* 100% Section */}
             <div className="font-matt flex flex-col items-center px-2 lg:px-0">
-            <div className="w-full max-w-[370px] lg:max-w-[1000px]">
+            <div className="w-full max-w-[390px] md:min-w-[800px] lg:max-w-[1200px]">
             <Image
                     src="/images/Frame 24.png" 
                     alt="Description of image"
@@ -111,7 +111,7 @@ const Home = () => {
                 <div className="font-matt grid grid-cols-1 lg:grid-cols-2 gap-8 items-center justify-center px-4 lg:px-0 lg:mr-[100px]">
                 {/* Hat Section */}
                 <div className="font-matt flex flex-col items-center text-center space-y-4 mb-10">
-                <div className="w-full max-w-[150px] md:max-w-[300px] lg:mt-10">
+                <div className="w-full max-w-[180px] lg:max-w-[300px] lg:mt-10">
                 <Image
                     src="/images/fi_785418.png" // Replace with the actual image path
                     alt="Description of image"
