@@ -4,7 +4,7 @@ import qs from 'querystring';
 // Replace with your Azure AD credentials
 const tenantId = '5e12d93e-3010-46f9-a55f-17db43b3fcc9';
 const clientId = '6b3c8303-3397-46d6-bee8-49192f0ad4f0';
-const clientSecret = 'kq58Q~2_COSQYEL8ytpD83woX80WmYeLd-JGfcdI';
+const clientSecret = '';
 
 // Function to fetch access token from Microsoft Identity platform
 const getAccessToken = async () => {
