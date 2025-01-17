@@ -16,12 +16,10 @@ export default function Contact() {
         });
         const [faqOpen, setFaqOpen] = useState(null);
 
-        // Handle input changes
         const handleChange = (e) => {
           setFormData({ ...formData, [e.target.name]: e.target.value });
         };
-
-        // Handle topic checkbox changes
+        
         const handleTopicChange = (e) => {
           const { value, checked } = e.target;
           setFormData((prev) => ({
@@ -50,7 +48,7 @@ export default function Contact() {
           if (newErrors.topic || newErrors.datenschutz) return;
         
           try {
-            const response = await fetch("/api/contact", {
+            const response = await fetch("/api/sendEmail", {
               method: "POST",
               headers: {
                 "Content-Type": "application/json",
@@ -61,6 +59,8 @@ export default function Contact() {
                 email: formData.email,
                 message: formData.message,
                 topics: formData.topics,
+                phone: formData.phone, // Make sure phone is included as well
+                datenschutz: formData.datenschutz,
               }),
             });
         
@@ -72,6 +72,7 @@ export default function Contact() {
                 email: "",
                 message: "",
                 topics: [],
+                phone: "",
                 datenschutz: false,
               });
             } else {
