@@ -10,6 +10,15 @@ import firstImage2 from "/images/website-hover.png";
 import GraphicDesignSection from "../components/GraphisDesignSection";
 import figure from "/images/the-eksperts-book.png";
 import figure2 from "/images/the-eksperts-book-hover.png";
+import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css"; // Core Swiper styles
+import "swiper/css/effect-cards"; // Effect styles
+import "swiper/css/mousewheel"; // Mousewheel styles
+import SwiperCore, { EffectCards, Mousewheel } from "swiper";
+
+// Install Swiper modules
+SwiperCore.use([EffectCards, Mousewheel]);
 
 // Animation Variants
 const fadeVariants = {
@@ -100,7 +109,32 @@ const ServicesSection = () => {
 
   return (
     <>
-      <motion.section
+
+    <div
+      className="swiper-container"
+      style={{
+        height: "100vh", // Full viewport height for visibility
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+      }}
+    >
+      <Swiper
+        effect="cards"
+        grabCursor={true}
+        direction="vertical" // Enable vertical scrolling
+        mousewheel={{ forceToAxis: true }} // Enable mousewheel interaction
+        speed={700} // Smooth transition speed
+        easing="ease-in-out" // Smooth easing for transitions
+        className="swiper-cards"
+        style={{
+          width: "1290px", // Full width
+          height: "100%", // Adjust height to fit within the viewport
+        }}
+      >
+        {/* Card 1 */}
+        <SwiperSlide>
+          <motion.section
         ref={ref}
         className="group font-matt cloudy-section flex flex-col md:flex-row items-center justify-between p-2 rounded-[20px] md:bg-[#FAFAFA] max-w-[1280px] mx-auto my-8 lg:h-[600px]"
         initial="hidden"
@@ -222,10 +256,11 @@ const ServicesSection = () => {
                     </svg>
         </div>
       </motion.section>
+        </SwiperSlide>
 
-
-      {/* Section 2: Website */}
-      <motion.section
+        {/* Card 2 */}
+        <SwiperSlide>
+          <motion.section
         ref={ref}
         onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}
@@ -314,9 +349,11 @@ const ServicesSection = () => {
         </div>
       </motion.section>
     
- 
+        </SwiperSlide>
 
-    <motion.section
+        {/* Card 3 */}
+        <SwiperSlide>
+         <motion.section
             ref={ref}
 
       className="group font-matt relative flex flex-col md:flex-row items-start justify-between p-2 rounded-[20px] max-w-[1280px] mx-auto my-8 lg:h-[620px] bg-[#FAFAFA] text-white md:text-black overflow-hidden transition-all duration-500 group conic-gradient-container hover-gradient-container  hover:text-white"
@@ -404,10 +441,11 @@ const ServicesSection = () => {
         </div>
       </motion.div>
     </motion.section>
-
-    < GraphicDesignSection/>
-
-
+    </SwiperSlide>
+    <SwiperSlide>
+ < GraphicDesignSection/>
+ </SwiperSlide>
+ <SwiperSlide>
       {/* Section: Book Your Experts */}
       <motion.section
               ref={ref}
@@ -506,6 +544,10 @@ const ServicesSection = () => {
         </div>
       </motion.div>
     </motion.section>
+        </SwiperSlide>
+      </Swiper>
+    </div>
+
     </>
   );
 };
