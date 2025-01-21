@@ -11,6 +11,7 @@ import '../styles/swiper.css';
 import { HeaderSection, ServicesSection } from "../components/work";
 import Wie from '../components/wie'
 import Warum from '../components/warum'
+import { HeaderSection2, ServicesSection2 } from '../components/work2';
 
 
 
@@ -51,6 +52,10 @@ const Home = () => {
         <div>
       <HeaderSection />
       <ServicesSection />
+    </div>
+    <div>
+    <HeaderSection2 />
+    <ServicesSection2 />
     </div>
             <Wie/>
 
