@@ -128,7 +128,7 @@ const ServicesSection = () => {
         easing="ease-in-out" // Smooth easing for transitions
         className="swiper-cards"
         style={{
-          width: "1290px", // Full width
+          width: "100%", // Full width
           height: "100%", // Adjust height to fit within the viewport
         }}
       >
