@@ -12,6 +12,9 @@ import { HeaderSection, ServicesSection } from "../components/work";
 import Wie from '../components/wie'
 import Warum from '../components/warum'
 import { HeaderSection2, ServicesSection2 } from '../components/work2';
+import {HeaderSection3, ServicesSection3 } from '../components/work3';
+import TopSectorPage from '../components/TopSectorPage';
+import Cards from '../pages/page'
 
 
 
@@ -48,7 +51,11 @@ const Home = () => {
         <div className="font-matt w-full max-w-[1280px] mx-auto text-center my-2">
         <Hero setHeroVisible={setHeroVisible} />
         </div>
-
+      <Cards/>
+        <div>
+      <HeaderSection3 />
+      <ServicesSection3 />
+    </div>
         <div>
       <HeaderSection />
       <ServicesSection />
