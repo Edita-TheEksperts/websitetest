@@ -13,7 +13,6 @@ import Wie from '../components/wie'
 import Warum from '../components/warum'
 import { HeaderSection2, ServicesSection2 } from '../components/work2';
 import {HeaderSection3, ServicesSection3 } from '../components/work3';
-import TopSectorPage from '../components/TopSectorPage';
 import Cards from '../pages/page'
 
 
