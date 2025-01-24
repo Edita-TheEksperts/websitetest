@@ -3,7 +3,7 @@
 import React from 'react';
 
 // The data you're exporting
-xport const projects = [
+export const projects = [
     {
         title: "Salesforce",
         title1:"Ihr Partner für individuelle und nachhaltige Salesforce Lösungen.",
