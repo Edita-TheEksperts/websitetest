@@ -72,25 +72,9 @@ const Projekte = () => {
                 onMouseOver={(e) => e.target.controls = false} // Hide controls when hovered
                 onMouseOut={(e) => e.target.controls = false} // Show controls when mouse leaves
             >
-                <source src="/images/Projekte2-theeksperts.mp4" type="video/mp4" />
+                <source src="/images/video-theeksperts.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
             </video>
-            </section>
-
-            
-            <section className='lg:mb-[300px] mb-8'>
-                <h2 className='text-2xl lg:text-[28px] lg:leading-[37px] font-matt font-[900] mb-8 uppercase'>
-                Modernes Webdesign und Entwicklung mit laufendem <br></br> Support
-                </h2>
-                <p className='text-lg lg:text-[20px] lg:leading-[33px] font-[300] font-matt lg:mb-[20px] mb-4'>
-                Für unseren Kunden [Musterfirma AG] haben wir innerhalb von nur zwei Monaten eine neue,<br></br> moderne Website realisiert. Das Projekt umfasste ein ansprechendes Webdesign, das perfekt auf <br></br>die Markenidentität des Unternehmens abgestimmt wurde. Die technische Umsetzung erfolgte <br></br> durch ein massgeschneidertes Webdevelopment, das eine benutzerfreundliche Navigation und <br></br> optimale Ladezeiten sicherstellt.
-                </p>
-                <p className='text-lg lg:text-[20px] lg:leading-[33px] font-[300] font-matt lg:mb-[20px] mb-4'>
-
-                Zusätzlich haben wir ein Support-Paket integriert, das sicherstellt, dass die Website jederzeit auf<br></br> dem neuesten Stand bleibt und bei Bedarf schnell Anpassungen vorgenommen werden können.<br></br> Das Ergebnis ist eine leistungsstarke und optisch ansprechende Website, die die Online-Präsenz<br></br> unseres Kunden nachhaltig stärkt.</p>
-                <p className='text-lg lg:text-[20px] lg:leading-[33px] font-[300] font-matt '>
-                Dieses Projekt zeigt, wie Design, Technologie und kontinuierliche Betreuung zu einem<br></br> erfolgreichen Ergebnis führen.         
-                </p>
             </section>
 
             <section className='lg:mb-[300px] mb-8'>
@@ -126,6 +110,18 @@ const Projekte = () => {
                 </p>
                 </div>
             </div>
+            </section>
+
+            <section className='lg:mb-[300px] mb-8'>
+                <div className='flex justify-center items-center'>
+
+            <img
+                    src="/images/overlay-theeksperts1.png"
+                    alt="Example Company"
+                    className="w-full h-auto lg:ml-[30px] lg:w-[621px] lg:h-[557px] object-cover rounded-[20px] lg:mt-2"
+                />
+                </div>
+                
             </section>
 
             <section className='lg:mb-[300px] mb-8'>

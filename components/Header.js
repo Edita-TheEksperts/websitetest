@@ -1,11 +1,12 @@
 import Link from 'next/link';
-import Image from 'next/image';
 import { useState } from 'react';
-import logo from '/images/Logo 1.png';
+import { useRouter } from 'next/router';
+import logo from '/images/Logo 1.png'; // Assuming you have the logo image in the images folder
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isServicesMenuOpen, setIsServicesMenuOpen] = useState(false);
+  const router = useRouter(); // Initialize the router
   let menuTimeout;
 
   const toggleMenu = () => {
@@ -27,6 +28,11 @@ const Header = () => {
     setIsMenuOpen(false);
   };
 
+  // Function to determine if the link is active
+  const isActive = (path) => {
+    return router.pathname === path ? 'font-[700] font-matt text-[#0009FF]' : '';
+  };
+
   return (
     <header
       className="bg-white sticky top-0 z-[60] px-4 py-4 text-[17px] font-normal font-matt"
@@ -34,8 +40,8 @@ const Header = () => {
     >
       <div className="max-w-[1280px] mx-auto flex items-center justify-between">
         <div className="flex items-center space-x-2">
-          <Link  href="/">
-        <svg  xmlns="http://www.w3.org/2000/svg"
+          <Link href="/">
+          <svg  xmlns="http://www.w3.org/2000/svg"
             version="1.1"
             viewBox="0 0 488.1 68.2"
             width="130"
@@ -66,13 +72,12 @@ const Header = () => {
             </g>
           </g>
         </svg>
-        </Link>
-
+          </Link>
         </div>
 
         {/* Main Navigation */}
         <nav className="hidden lg:flex space-x-6 px-8 py-4 rounded-[10px] relative">
-          <Link href="/" className="text-gray-700">Home</Link>
+          <Link href="/" className={`text-gray-700 ${isActive('/')}`}>Home</Link>
           <span className="text-gray-300">|</span>
           
           {/* Services Dropdown */}
@@ -81,73 +86,71 @@ const Header = () => {
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
           >
-            <span className="text-gray-700">Services</span>
+            <span className={`text-gray-700 ${isActive('/services')}`}>Services</span>
             {isServicesMenuOpen && (
-            <div className="absolute left-0 mt-2 w-[220px] bg-white rounded-lg shadow-lg border border-gray-200 z-50 transition-transform duration-300">
-              <ul className="flex flex-col divide-y divide-gray-100">
-                <li className="group">
-                  <Link
-                    href="/services/salesforce"
-                    className="block px-4 py-3 text-gray-700 hover:text-blue-600 hover:bg-gray-50 rounded-t-lg transition-colors duration-200"
-                  >
-                    Salesforce
-                  </Link>
-                </li>
-                <li className="group">
-                  <Link
-                    href="/services/website"
-                    className="block px-4 py-3 text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-colors duration-200"
-                  >
-                    Website
-                  </Link>
-                </li>
-                <li className="group">
-                  <Link
-                    href="/services/customdevelopment"
-                    className="block px-4 py-3 text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-colors duration-200"
-                  >
-                    Custom Development
-                  </Link>
-                </li>
-               
-                <li className="group">
-                  <Link
-                    href="/services/graphicdesign"
-                    className="block px-4 py-3 text-gray-700 hover:text-blue-600 hover:bg-gray-50 rounded-b-lg transition-colors duration-200"
-                  >
-                    Graphic Design
-                  </Link>
-                </li>
-                <li className="group">
-                  <Link
-                    href="/services/bookyourekspert"
-                    className="block px-4 py-3 text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-colors duration-200"
-                  >
-                    Book Your Ekspert
-                  </Link>
-                </li>
-              </ul>
-            </div>
+              <div className="absolute left-0 mt-2 w-[220px] bg-white rounded-lg shadow-lg border border-gray-200 z-50 transition-transform duration-300">
+                <ul className="flex flex-col divide-y divide-gray-100">
+                  <li className="group">
+                    <Link
+                      href="/services/salesforce"
+                      className={`block px-4 py-3 text-gray-700 hover:text-blue-600 hover:bg-gray-50 rounded-t-lg transition-colors duration-200 ${isActive('/services/salesforce')}`}
+                    >
+                      Salesforce
+                    </Link>
+                  </li>
+                  <li className="group">
+                    <Link
+                      href="/services/website"
+                      className={`block px-4 py-3 text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-colors duration-200 ${isActive('/services/website')}`}
+                    >
+                      Website
+                    </Link>
+                  </li>
+                  <li className="group">
+                    <Link
+                      href="/services/customdevelopment"
+                      className={`block px-4 py-3 text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-colors duration-200 ${isActive('/services/customdevelopment')}`}
+                    >
+                      Custom Development
+                    </Link>
+                  </li>
+                  <li className="group">
+                    <Link
+                      href="/services/graphicdesign"
+                      className={`block px-4 py-3 text-gray-700 hover:text-blue-600 hover:bg-gray-50 rounded-b-lg transition-colors duration-200 ${isActive('/services/graphicdesign')}`}
+                    >
+                      Graphic Design
+                    </Link>
+                  </li>
+                  <li className="group">
+                    <Link
+                      href="/services/bookyourekspert"
+                      className={`block px-4 py-3 text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-colors duration-200 ${isActive('/services/bookyourekspert')}`}
+                    >
+                      Book Your Ekspert
+                    </Link>
+                  </li>
+                </ul>
+              </div>
             )}
           </div>
           <span className="text-gray-300">|</span>
-          <Link href="/agency" className="text-gray-700">Agentur</Link>
+          <Link href="/agency" className={`text-gray-700 ${isActive('/agency')}`}>Agentur</Link>
           <span className="text-gray-300">|</span>
-          <Link href="/projekte" className="text-gray-700">Projekte</Link>
+          <Link href="/projekte" className={`text-gray-700 ${isActive('/projekte')}`}>Projekte</Link>
           <span className="text-gray-300">|</span>
-          <Link href="/contact" className="text-gray-700">Kontakt</Link>
+          <Link href="/contact" className={`text-gray-700 ${isActive('/contact')}`}>Kontakt</Link>
         </nav>
 
         {/* Call to Action */}
-        <a href="https://calendly.com/fisnik-salihu-the-eksperts/30min" class="inline-block hidden lg:inline-block hover-link">
-          <svg xmlns="http://www.w3.org/2000/svg" width="220" height="40" viewBox="0 0 220 40" fill="none" class="cursor-pointer">
-            <path d="M1.5 34V14.2353L15.4504 2H216.5V34H1.5Z" stroke="#0009FF" stroke-width="3" class="svg-path"/>
-            <text x="50%" y="50%" text-anchor="middle" dy=".3em" fill="#0009FF" font-size="16" font-weight="bold" class="svg-text">
+        <a href="https://calendly.com/fisnik-salihu-the-eksperts/30min" className="inline-block hidden lg:inline-block hover-link">
+          <svg xmlns="http://www.w3.org/2000/svg" width="220" height="40" viewBox="0 0 220 40" fill="none" className="cursor-pointer">
+            <path d="M1.5 34V14.2353L15.4504 2H216.5V34H1.5Z" stroke="#0009FF" strokeWidth="3" className="svg-path"/>
+            <text x="50%" y="50%" textAnchor="middle" dy=".3em" fill="#0009FF" fontSize="16" fontWeight="bold" className="svg-text">
               Jetzt Gespräch buchen
             </text>
           </svg>
         </a>
-
 
         {/* Mobile Menu Toggle */}
         <button
@@ -172,36 +175,36 @@ const Header = () => {
         </button>
       </div>
 
-       {/* Mobile Menu */}
-       {isMenuOpen && (
+      {/* Mobile Menu */}
+      {isMenuOpen && (
         <nav className="lg:hidden bg-[#F1F1F1] p-4 mt-2 rounded-lg">
           <ul className="space-y-4 text-center">
-            <li><Link href="/" onClick={closeMenu}>Home</Link></li>
+            <li><Link href="/" onClick={closeMenu} className={`${isActive('/')}`}>Home</Link></li>
             <li>
               <details>
-                <summary className="cursor-pointer ">Services</summary>
+                <summary className="cursor-pointer">Services</summary>
                 <ul className="mt-2 space-y-2 pl-4 font-[300]">
                   <li>
-                    <Link href="/services/salesforce" onClick={closeMenu}>Salesforce</Link>
+                    <Link href="/services/salesforce" onClick={closeMenu} className={`${isActive('/services/salesforce')}`}>Salesforce</Link>
                   </li>
                   <li>
-                    <Link href="/services/website" onClick={closeMenu}>Website</Link>
+                    <Link href="/services/website" onClick={closeMenu} className={`${isActive('/services/website')}`}>Website</Link>
                   </li>
                   <li>
-                    <Link href="/services/customdevelopment" onClick={closeMenu}>Custom Development</Link>
+                    <Link href="/services/customdevelopment" onClick={closeMenu} className={`${isActive('/services/customdevelopment')}`}>Custom Development</Link>
                   </li>
                   <li>
-                    <Link href="/services/graphicdesign" onClick={closeMenu}>Graphic Design</Link>
+                    <Link href="/services/graphicdesign" onClick={closeMenu} className={`${isActive('/services/graphicdesign')}`}>Graphic Design</Link>
                   </li>
                   <li>
-                    <Link href="/services/bookyourekspert" onClick={closeMenu}>Book Your Ekspert</Link>
+                    <Link href="/services/bookyourekspert" onClick={closeMenu} className={`${isActive('/services/bookyourekspert')}`}>Book Your Ekspert</Link>
                   </li>
                 </ul>
               </details>
             </li>
-            <li><Link href="/agency" onClick={closeMenu}>Agentur</Link></li>
-            <li><Link href="/projekte" onClick={closeMenu}>Projekte</Link></li>
-            <li><Link href="/contact" onClick={closeMenu}>Kontakt</Link></li>
+            <li><Link href="/agency" onClick={closeMenu} className={`${isActive('/agency')}`}>Agentur</Link></li>
+            <li><Link href="/projekte" onClick={closeMenu} className={`${isActive('/projekte')}`}>Projekte</Link></li>
+            <li><Link href="/contact" onClick={closeMenu} className={`${isActive('/contact')}`}>Kontakt</Link></li>
           </ul>
         </nav>
       )}
