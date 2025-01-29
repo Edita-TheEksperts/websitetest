@@ -29,7 +29,7 @@ const HeaderSection2 = () => {
       className=" top-0 flex flex-col items-center justify-center h-screen bg-white transition-opacity duration-700 z-50"
     >
       <motion.h2
-        className="text-black text-6xl uppercase font-matt lg:leading-[158px] font-[222] lg:text-[174px] tracking-[-2.88px] text-center"
+        className="text-black text-6xl lg:mr-[500px] uppercase font-matt lg:leading-[158px] font-[300] lg:text-[174px] tracking-[-2.88px] text-left"
         initial="hidden"
         animate={inView ? "visible" : "hidden"}
         variants={{
@@ -41,15 +41,31 @@ const HeaderSection2 = () => {
           ease: "easeInOut",
         }}
       >
-        WAS WIR <br /> LEISTEN
+        WAS WIR 
       </motion.h2>
-      <motion.svg
+      <motion.h2
+        className="text-black text-6xl uppercase lg:ml-[280px] font-matt lg:leading-[158px] font-[300] lg:text-[174px] tracking-[-2.88px] text-center"
+        initial="hidden"
+        animate={inView ? "visible" : "hidden"}
+        variants={{
+          hidden: { opacity: 0, y: 50 },
+          visible: { opacity: 1, y: 0 },
+        }}
+        transition={{
+          duration: 0.9,
+          ease: "easeInOut",
+        }}
+      >
+        LEISTEN
+      </motion.h2>
+      
+      <motion.svg 
         xmlns="http://www.w3.org/2000/svg"
         width="109"
         height="110"
         viewBox="0 0 109 110"
         fill="none"
-        className="w-[100px] h-[100px] mt-6"
+        className="w-[100px] h-[100px] mt-6 lg:ml-[1170px] lg:mt-[-210px]"
         style={{
           transformOrigin: "center",
         }}

@@ -19,7 +19,7 @@ const HeaderSection = () => {
       className="sticky top-0 flex flex-col items-center justify-center h-screen bg-white transition-opacity duration-700 z-50"
     >
       <motion.h2
-        className="text-black text-6xl uppercase font-matt lg:leading-[158px] font-[222] lg:text-[174px] tracking-[-2.88px] text-center"
+        className="text-black text-6xl uppercase lg:mr-[580px] font-matt lg:leading-[158px] font-[300] lg:text-[174px] tracking-[-2.88px] text-center"
         initial="hidden"
         animate={inView ? "visible" : "hidden"}
         variants={{
@@ -31,7 +31,22 @@ const HeaderSection = () => {
           ease: "easeInOut",
         }}
       >
-        WIE WIR <br /> ARBEITEN
+        WIE WIR
+      </motion.h2>
+      <motion.h2
+        className="text-black text-6xl uppercase lg:ml-[120px] font-matt lg:leading-[158px] font-[300] lg:text-[174px] tracking-[-2.88px] text-center"
+        initial="hidden"
+        animate={inView ? "visible" : "hidden"}
+        variants={{
+          hidden: { opacity: 0, y: 50 },
+          visible: { opacity: 1, y: 0 },
+        }}
+        transition={{
+          duration: 0.9,
+          ease: "easeInOut",
+        }}
+      >
+        ARBEITEN
       </motion.h2>
       <motion.svg
         xmlns="http://www.w3.org/2000/svg"
@@ -39,7 +54,7 @@ const HeaderSection = () => {
         height="110"
         viewBox="0 0 109 110"
         fill="none"
-        className="w-[100px] h-[100px] mt-6"
+        className="w-[100px] h-[100px] mt-6 lg:ml-[1170px] lg:mt-[-210px]"
         style={{
           transformOrigin: "center",
         }}
