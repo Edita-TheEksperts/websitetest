@@ -5,6 +5,7 @@ import Image from 'next/image';
 import Testimonials from '../components/Testimonials/Testimonials';
 import LogoSection from '../components/LogoSection/LogoSection'; 
 import Hero from '../components/HeroComponent/Hero';
+import Hero2 from '../components/HeroComponent/Hero2';
 import '../styles/global.css'; 
 import AnimatedSection from '../components/AnimatedSection';
 import '../styles/swiper.css';
@@ -47,8 +48,9 @@ const Home = () => {
       
       <main className="font-matt flex flex-col items-center bg-white px-4">
         <div className="font-matt w-full max-w-[1280px] mx-auto text-center my-2">
-        <Hero setHeroVisible={setHeroVisible} />
+        <Hero2 setHeroVisible={setHeroVisible} />
         </div>
+        <Hero/>
         <HeaderSection2 />
          <Cards/>
    
