@@ -9,7 +9,7 @@ export const projects = [
         title1:"Ihr Partner für individuelle und nachhaltige Salesforce Lösungen.",
         description: "Als offizieller Salesforce-Partner helfen wir Ihnen, das volle Potenzial von Salesforce zu nutzen. Ob Neuimplementierung, Optimierung oder massgeschneiderte Integrationen – wir stehen Ihnen zur Seite.",
         title2: "Kontaktieren Sie uns und starten Sie Ihre Salesforce-Reise!",
-        src: "./images/Salesforce.png",
+        src: "../images/Salesforce.png",
         link: "https://www.ignant.com/2023/04/12/mark-rammers-all-over-again-is-a-study-of-regret-and-the-willingness-to-move-forward/",
         color: 'radial-gradient(circle, #ffffff, #b3e5fc, #29b6f6)'
     },
