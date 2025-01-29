@@ -134,7 +134,7 @@ const Hero = ({ setHeroVisible }) => {
                 />
             </div>
             </div>
-            <div className="lg:hidden block flex flex-col items-center mt-8 md:mt-0">
+            <div className="lg:hidden block flex flex-col items-center mt-2 md:mt-0">
                 <div className="flex gap-0 mb-4">
                     <video
                     src="/images/Alterswohnhilfe.mp4"
