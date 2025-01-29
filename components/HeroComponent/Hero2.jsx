@@ -56,18 +56,18 @@ const Hero = ({ setHeroVisible }) => {
   return (
     <section
       id="hero"
-      className="mb-[160px] font-matt relative w-full bg-white flex items-center justify-center px-2"
+      className="mb-[160px] font-matt relative w-full bg-white flex items-center justify-center"
     >
       <div className="font-matt relative z-10 w-full h-full max-w-[1280px] mx-auto flex flex-col items-center justify-between text-black lg:gap-x-10">
         
         {/* Text Section */}
-        <div className="font-matt flex flex-col items-center text-center mb-8 md:mb-0 px-2">
-          <h1 className="text-black font-matt text-4xl sm:text-5xl md:text-6xl lg:text-[60px] font-[400] tracking-tight leading-tight lg:leading-[60px] mt-16 mb-4 text-center">
+        <div className="font-matt flex flex-col items-center text-center mb-8 md:mb-0">
+          <h1 className="text-black font-matt text-[30px] leading-[40px] md:text-6xl lg:text-[60px] font-[400] tracking-tight leading-tight lg:leading-[60px] mt-16 mb-4 text-center">
             Führen Sie Ihre <br />
-            <span className="font-matt text-5xl sm:text-5xl mt-2 md:text-6xl lg:text-[60px] lg:leading-[60px] font-[900] text-[#0009FF]">{displayedWord}
+            <span className="font-matt text-[35px] leading-[40px] mt-2 md:text-6xl lg:text-[60px] lg:leading-[60px] font-[900] text-[#0009FF]">{displayedWord}
             </span> <br></br>
             <span 
-              className="font-matt text-4xl sm:text-5xl mt-2 md:text-6xl lg:text-[60px] font-[400] lg:leading-[60px] whitespace-nowrap text-black"
+              className="font-matt text-[30px] leading-[40px] mt-2 md:text-6xl lg:text-[60px] font-[400] lg:leading-[60px] whitespace-nowrap text-black"
             >
               mit uns zu neuen Erfolgen            
               </span>
@@ -134,8 +134,71 @@ const Hero = ({ setHeroVisible }) => {
                 />
             </div>
             </div>
+            <div className="lg:hidden block flex flex-col items-center mt-8 md:mt-0">
+                <div className="flex gap-0 mb-4">
+                    <video
+                    src="/images/Alterswohnhilfe.mp4"
+                    alt="Video 1"
+                    width={184}
+                    height={184}
+                    className="object-contain rounded-[20px] mr-[-20px] transform rotate-[-8.271deg] flex-shrink-0 shadow-[0px_4px_27.6px_0px_rgba(0,_0,_0,_0.25)]"
+                    autoPlay
+                    loop
+                    muted
+                    />
+                    <video
+                    src="/images/Nettoo 2.mp4"
+                    alt="Video 2"
+                    width={184}
+                    height={184}
+                    className="object-contain rounded-[20px]"
+                    style={{
+                        transform: 'rotate(5.263deg)',
+                        flexShrink: 0,
+                        boxShadow: '0px 4px 27.6px 0px rgba(0, 0, 0, 0.25)',
+                    }}
+                    autoPlay
+                    loop
+                    muted
+                    />
+                </div>
+                <div className="flex gap-0 mt-[-30px]">
+                    <video
+                    src="/images/Eco Bautec.mp4"
+                    alt="Video 3"
+                    width={184}
+                    height={184}
+                    className="object-contain rounded-[20px] mr-[-20px] "
+                    style={{
+                        transform: 'rotate(-5.374deg)',
+                        flexShrink: 0,
+                        boxShadow: '0px 4px 27.6px 0px rgba(0, 0, 0, 0.25)',
+                        zIndex: 1,
+                    }}
+                    autoPlay
+                    loop
+                    muted
+                    />
+                    <video
+                    src="/images/Hiper high res.mp4"
+                    alt="Video 4"
+                    width={184}
+                    height={184}
+                    className="object-contain rounded-[20px]"
+                    style={{
+                        transform: 'rotate(3.951deg)',
+                        flexShrink: 0,
+                        boxShadow: '0px 4px 27.6px 0px rgba(0, 0, 0, 0.25)',
+                    }}
+                    autoPlay
+                    loop
+                    muted
+                    />
+                </div>
+                </div>
 
-          <p className="font-matt mt-4 text-lg sm:text-xl lg:text-[20px] lg:leading-[24px] font-[100]  max-w-2xl mx-auto md:mx-0 uppercase text-black">
+
+          <p className="font-matt mt-4 text-[16px] leading-[24px] lg:text-[20px] lg:leading-[24px] font-[300] lg:font-[100]  max-w-2xl mx-auto md:mx-0 uppercase text-black">
            Gemeinsam digitale Lösungen schaffen <br></br>
            - Jetzt unverbindlich beraten lassen!
           </p>
