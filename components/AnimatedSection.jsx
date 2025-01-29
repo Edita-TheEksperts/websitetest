@@ -481,10 +481,10 @@ const SVGAnimation = () => {
                                         />
                                       </div>
                                       <div className="flex flex-col border border-blue-400 w-full">
-                                        <label className="hidden">Telefonnummer (optional)</label>
+                                        <label className="hidden">Telefon</label>
                                         <input
                                           type="tel"
-                                          placeholder="TELEFONNUMMER (optional)"
+                                          placeholder="TELEFON"
                                           className="w-full border p-2 text-center text-[14px] lg:text-[18px] placeholder-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:text-blue-500"
                                         />
                                       </div>
