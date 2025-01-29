@@ -41,7 +41,7 @@ const LogoSection = () => {
   return (
     <div className="font-matt container mx-auto p-4 lg:max-w-[1280px] lg:mb-[300px] mt-[100px] lg:mt-[300px] mb-[100px]">
       <div className="font-matt text-center flex mb-8">
-      <h2 className='font-matt responsive-heading'>
+      <h2 className='font-matt font-[700] lg:text-[80px] lg:leading-[80px] responsive-heading justify-center text-center'>
           Vertrauen durch Zusammenarbeit
         </h2>
       </div>
