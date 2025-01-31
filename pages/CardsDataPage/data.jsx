@@ -9,7 +9,7 @@ export const projects = [
         title1:"Ihr Partner für individuelle und nachhaltige Salesforce Lösungen.",
         description: "Als offizieller Salesforce-Partner helfen wir Ihnen, das volle Potenzial von Salesforce zu nutzen. Ob Neuimplementierung, Optimierung oder massgeschneiderte Integrationen – wir stehen Ihnen zur Seite.",
         title2: "Kontaktieren Sie uns und starten Sie Ihre Salesforce-Reise!",
-        src: "../images/Salesforce.png",
+        src: "../images/Salesforce (1).png",
         link: "https://www.ignant.com/2023/04/12/mark-rammers-all-over-again-is-a-study-of-regret-and-the-willingness-to-move-forward/",
         color: 'radial-gradient(circle, #ffffff, #b3e5fc, #29b6f6)'
     },
@@ -18,7 +18,7 @@ export const projects = [
         title1:"Ihre digitale Visitenkarte– modern, effizient und einzigartig.",
         description: "Wir gestalten Websites, die gut aussehen und performen– ob Unternehmensseite, E-Commerce oder Portfolio. Individuelles Design: Massgeschneidert für Ihre Marke. Benutzerfreundlich: Intuitive Navigation und responsives Design. SEO & Performance: Optimiert für Suchmaschinen, mit schnellen Ladezeiten und sicherer Technologie.",
         title2: "Starten Sie jetzt Ihre digitale Transformation!",
-        src: "../images/web.png",
+        src: "../images/Website (1).png",
         link: "https://www.ignant.com/2023/04/12/mark-rammers-all-over-again-is-a-study-of-regret-and-the-willingness-to-move-forward/",
         color: 'radial-gradient(105.57% 105.57% at 50% 50%, #FFF 0%, #969AFF 100%)'
     },
@@ -27,7 +27,7 @@ export const projects = [
         title1:"Individuelle Softwarelösungen für einzigartige Anforderungen.",
         description: "Keine Herausforderung ist zu gross. Wir entwickeln skalierbare und zukunftssichere Anwendungen, die perfekt auf Ihre Bedürfnisse zugeschnitten sind– von speziellen Modulen bis hin zu komplexen Systemen. Unsere Lösungen integrieren sich nahtlos in bestehende Systeme und nutzen modernste Technologien, um Ihrem Unternehmen einen Wettbewerbsvorteil zu verschaffen.",
         title2: "Entwickeln Sie Ihre massgeschneiderte Lösung – starten Sie jetzt!",
-        src: "../images/custom.png",
+        src: "../images/Custom Development.png",
         link: "https://www.ignant.com/2023/04/12/mark-rammers-all-over-again-is-a-study-of-regret-and-the-willingness-to-move-forward/",
         color: 'conic-gradient(from 187deg at 16.05% 158.56%, #CFFF49 0deg, #E24125 180deg, #0009FF 360deg)'
     },
@@ -36,7 +36,7 @@ export const projects = [
         title1:"Visuelle Kommunikation, die Eindruck macht.",
         description: "Unser kreatives Team gestaltet Designs, die Ihre Botschaft klar transportieren und Ihre Marke im Gedächtnis bleiben lassen. Ob Logo, komplette Markenidentität, Print oder Digital - wir liefern durchdachte und frische Ideen, die Ihre Zielgruppe begeistern.",
         title2: "Zeigen Sie Ihre Marke von ihrer besten Seite.",
-        src: "../images/design.png",
+        src: "../images/Graphic Design.png",
         link: "https://www.ignant.com/2023/04/12/mark-rammers-all-over-again-is-a-study-of-regret-and-the-willingness-to-move-forward/",
         color: 'radial-gradient(105.57% 105.57% at 50% 50%, #D83200 0%, #0009FF 50%)'
     },
@@ -45,7 +45,7 @@ export const projects = [
       title1:"Ihre Expertise - flexibel und auf Abruf.",
       description: "Mit unserem Book Your Ekspert-Service bringen erfahrene Fachkräfte Ihre Projekte individuell und flexibel voran. Ob IT, Design, Entwicklung oder Beratung - buchen Sie unsere Eksperten genau dann, wenn Sie sie brauchen. Unsere Spezialistenintegrieren sich nahtlos in Ihr Team und Ihre Prozesse.",
       title2: "Warum warten, wenn Sie Unterstützung brauchen?",
-      src: "../images/book.png",
+      src: "../images/Book your ekspert 1.png",
       link: "https://www.ignant.com/2023/04/12/mark-rammers-all-over-again-is-a-study-of-regret-and-the-willingness-to-move-forward/",
       color: "#0009FF"
     }
