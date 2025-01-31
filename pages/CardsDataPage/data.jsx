@@ -18,7 +18,7 @@ export const projects = [
         title1:"Ihre digitale Visitenkarte– modern, effizient und einzigartig.",
         description: "Wir gestalten Websites, die gut aussehen und performen– ob Unternehmensseite, E-Commerce oder Portfolio. Individuelles Design: Massgeschneidert für Ihre Marke. Benutzerfreundlich: Intuitive Navigation und responsives Design. SEO & Performance: Optimiert für Suchmaschinen, mit schnellen Ladezeiten und sicherer Technologie.",
         title2: "Starten Sie jetzt Ihre digitale Transformation!",
-        src: "../images/Website (1).png",
+        src: "./images/Website (1).png",
         link: "https://www.ignant.com/2023/04/12/mark-rammers-all-over-again-is-a-study-of-regret-and-the-willingness-to-move-forward/",
         color: 'radial-gradient(105.57% 105.57% at 50% 50%, #FFF 0%, #969AFF 100%)'
     },
@@ -27,7 +27,7 @@ export const projects = [
         title1:"Individuelle Softwarelösungen für einzigartige Anforderungen.",
         description: "Keine Herausforderung ist zu gross. Wir entwickeln skalierbare und zukunftssichere Anwendungen, die perfekt auf Ihre Bedürfnisse zugeschnitten sind– von speziellen Modulen bis hin zu komplexen Systemen. Unsere Lösungen integrieren sich nahtlos in bestehende Systeme und nutzen modernste Technologien, um Ihrem Unternehmen einen Wettbewerbsvorteil zu verschaffen.",
         title2: "Entwickeln Sie Ihre massgeschneiderte Lösung – starten Sie jetzt!",
-        src: "../images/Custom Development.png",
+        src: "/images/Custom Development.png",
         link: "https://www.ignant.com/2023/04/12/mark-rammers-all-over-again-is-a-study-of-regret-and-the-willingness-to-move-forward/",
         color: 'conic-gradient(from 187deg at 16.05% 158.56%, #CFFF49 0deg, #E24125 180deg, #0009FF 360deg)'
     },
