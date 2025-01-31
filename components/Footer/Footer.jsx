@@ -252,7 +252,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="lg:hidden block font-matt mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
+      <div className="lg:hidden block font-matt mx-auto grid grid-cols-1 md:grid-cols-3 gap-[34px] text-left">
         
         {/* Contact Section */}
         <div>
@@ -315,35 +315,9 @@ const Footer = () => {
         </div>
        
         
-        {/* Navigation Links */}
-          <div className="lg:ml-[150px] mt-[24px]">
-            <ul className="space-y-6 text-[16px] leading-[24px] text-black">
-              {/* Main Menu Items */}
-              <Link href="/index" className="hover:underline hover:text-blue-700 font-[300]">Home</Link>
-              <li className="group">
-                <div className="flex justify-start md:justify-normal items-left space-x-2">
-                  <Link href="" className="hover:underline hover:text-blue-700 font-[300] ">
-                    Services
-                  </Link>
-                  <span className="text-black text-[20px] font-[300]">›</span>
-                </div>
-                {/* Submenu */}
-                <ul className="mt-2 ml-4 space-y-4 hidden group-hover:block transition-all duration-300 opacity-0 group-hover:opacity-100">
-                  <li><Link href="/services/salesforce" className="hover:underline hover:text-blue-700  font-[300]">Salesforce</Link></li>
-                  <li><Link href="/services/website" className="hover:underline hover:text-blue-700 font-[300]">Website</Link></li>
-                  <li><Link href="/services/customdevelopment" className="hover:underline hover:text-blue-700 font-[300]">Custom Development</Link></li>
-                  <li><Link href="/services/graphicdesign" className="hover:underline hover:text-blue-700 font-[300]">Graphic Design</Link></li>
-                  <li><Link href="/services/bookyourexpert" className="hover:underline hover:text-blue-700 font-[300]" >Book your Ekspert</Link></li>
-                </ul>
-              </li>
-              <li><Link href="/agency" className="hover:underline hover:text-blue-700 font-[300]">Agentur</Link></li>
-              <li><Link href="/projekte" className="hover:underline hover:text-blue-700 font-[300]">Projekte</Link></li>
-              <li><Link href="/contact" className="hover:underline hover:text-blue-700 font-[300]">Kontakt</Link></li>
-            </ul>
-            
-          </div>
+        
           
-          <div className='justify-end flex flex-col items-end'>
+          <div className='justify-start flex flex-col items-start'>
           <div className="font-matt font-bold mb-4 text-[15px] leading-[29px]">
             <h2>Schauen Sie vorbei.<br></br>
             Follow & Like nicht<br></br> vergessen!</h2>
@@ -361,7 +335,7 @@ const Footer = () => {
         
         {/* Newsletter Section */}
         <div>
-          <h2 className="font-matt font-[700] text-[20px] leading-[37px] mb-2 uppercase">Wir haben einen Newsletter</h2>
+          <h2 className="font-matt font-[700] text-[20px] leading-[37px] uppercase">Wir haben einen Newsletter</h2>
           <p className="font-matt mb-4 text-[16px] leading-[33px] font-[300]">Unsere Recherchen zeigen, dass Sie einfach nicht genug E-Mails erhalten.</p>
           <div className='w-[329px]'>
               {submitted ? (
