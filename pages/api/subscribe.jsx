@@ -1,39 +1,40 @@
+// api/subscribe.js
+const axios = require('axios');
+
 export default async function handler(req, res) {
-    if (req.method === 'POST') {
-      const { email } = req.body;
-  
-      const API_KEY = 'your-mailchimp-api-key';
-      const AUDIENCE_ID = 'your-audience-id';
-      const DATACENTER = API_KEY.split('-')[1];
-  
-      const url = `https://${DATACENTER}.api.mailchimp.com/3.0/lists/${AUDIENCE_ID}/members`;
-  
+  if (req.method === 'POST') {
+    const { email } = req.body;
+
+    const apiKey = '3b6da7fba1aad123efaf396513574848-us15';  // Replace with your Mailchimp API key
+    const listId = '7a8896d200';  // Replace with your Mailchimp List ID
+    const serverPrefix = 'us15';     // Replace with your server prefix (e.g., 'us15')
+
+    try {
+      // API URL
+      const url = `https://${serverPrefix}.api.mailchimp.com/3.0/lists/${listId}/members/`;
+
+      // Subscriber data
       const data = {
         email_address: email,
-        status: 'subscribed',
+        status: 'subscribed',  // 'subscribed' or 'pending' for double opt-in
+        tags: ['theekspertswebsite'],  // Tag for the subscriber
       };
-  
-      const options = {
-        method: 'POST',
+
+      // Make API call to Mailchimp
+      const response = await axios.post(url, data, {
         headers: {
-          Authorization: `Bearer ${API_KEY}`,
+          'Authorization': `Bearer ${apiKey}`,
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify(data),
-      };
-  
-      try {
-        const response = await fetch(url, options);
-        if (response.status >= 400) {
-          throw new Error('There was an issue subscribing. Please check your email address.');
-        }
-        res.status(200).json({ message: 'Success! You are now subscribed.' });
-      } catch (error) {
-        res.status(500).json({ error: error.message });
-      }
-    } else {
-      res.setHeader('Allow', ['POST']);
-      res.status(405).end('Method Not Allowed');
+      });
+
+      // Send success response back to frontend
+      res.status(200).json({ message: 'Vielen Dank.' });
+    } catch (err) {
+      console.error('Mailchimp API error:', err);
+      res.status(500).json({ message: 'Es ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut.' });
     }
+  } else {
+    res.status(405).json({ message: 'Method Not Allowed' });
   }
-  
+}
