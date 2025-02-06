@@ -76,7 +76,7 @@ const Hero = ({ setHeroVisible }) => {
             <div className="lg:block hidden flex justify-center mt-8 md:mt-0">
             <div className="flex gap-0">
                 <video
-                src="/images/Alterswohnhilfe.mp4"
+                src="/images/SMM.mp4"
                 alt="Video 1"
                 width={223}
                 height={223}
@@ -86,7 +86,7 @@ const Hero = ({ setHeroVisible }) => {
                 muted
                 />
                 <video
-                src="/images/Nettoo 2.mp4"
+                src="/images/Your Creative Partner and more.mov"
                 alt="Video 2"
                 width={223}
                 height={223}
@@ -101,7 +101,7 @@ const Hero = ({ setHeroVisible }) => {
                 muted
                 />
                 <video
-                src="/images/Eco Bautec.mp4"
+                src="/images/Scene 02.mp4"
                 alt="Video 3"
                 width={223}
                 height={223}
@@ -117,8 +117,8 @@ const Hero = ({ setHeroVisible }) => {
                 loop
                 muted
                 />
-                <video
-                src="/images/Hiper high res.mp4"
+                <img
+                src="/images/The-eksperts-short-.png"
                 alt="Video 4"
                 width={223}
                 height={223}

@@ -65,7 +65,7 @@ const Home = () => {
             <section className="bg-white py-2 lg:py-2 lg:max-w-[1280px] mx-auto flex flex-col font-matt space-y-2 lg:space-y-0 ">
             <div className="font-matt flex flex-col items-center text-center space-y-12">
             {/* 100% Section */}
-            <div className="font-matt flex flex-col items-center px-2 lg:px-0">
+            <div className="font-matt flex flex-col items-center px-0">
             <div className="w-full max-w-[390px] md:min-w-[800px] lg:max-w-[900px]">
             <Image
                     src="/images/Frame 24.png" 
@@ -77,7 +77,7 @@ const Home = () => {
                 />
 
                     </div>
-                    <p className="font-matt text-lg lg:text-[28px] lg:leading-[37px] font-[900] uppercase lg:mb-12 lg:mt-10">
+                    <p className="font-matt text-[24px] lg:text-[28px] lg:leading-[37px] font-[400] lg:font-[900] uppercase lg:mb-12 lg:mt-10">
                     Unserer Kunden empfehlen uns weiter
                     </p>
                 </div>
@@ -85,7 +85,7 @@ const Home = () => {
                 {/* 3 Länder Section */}
                 <div className="font-matt flex flex-col lg:flex-row items-center justify-center text-center lg:text-left space-y-2  lg:space-x-26 px-2 lg:px-0">
                 {/* Left Text */}
-                <div className="font-matt text-lg lg:text-[28px] lg:leading-[37px] font-[900] uppercase lg:mr-[50px]">
+                <div className="font-matt text-[24px] lg:text-[28px] lg:leading-[37px] font-[400] lg:font-[900] uppercase lg:mr-[50px]">
                 <p>Bereits in</p>
                 </div>
 
@@ -102,7 +102,7 @@ const Home = () => {
                 </div>
 
                 {/* Right Text */}
-                <div className="font-matt text-lg lg:text-[28px] lg:leading-[37px] font-[900] uppercase lg:px-[30px] lg:mr-[10px]">
+                <div className="font-matt text-[24px] lg:text-[28px] lg:leading-[37px] font-[400] lg:font-[900] uppercase lg:px-[30px] lg:mr-[10px]">
                 <p>Ländern vertreten und weiter wachsend</p>
                 </div>
             </div>
@@ -121,7 +121,7 @@ const Home = () => {
                     className="w-full h-auto mb-4 "
                 />
                     </div>
-                    <p className="font-matt text-lg lg:text-[28px] lg:leading-[37px] font-[900] mt-4 uppercase">
+                    <p className="font-matt text-[24px] lg:text-[28px] lg:leading-[37px] font-[400] lg:font-[900] mt-4 uppercase">
                     Gründung der <br></br>The Eksperts Academy
                     </p>
                 </div>
@@ -129,7 +129,7 @@ const Home = () => {
                 {/* 14 Section */}
                 <div className="font-matt flex flex-col items-center text-center md:text-left space-y-4 md:space-x-32">
                     <div className="w-full flex lg:justify-center items-center">
-                        <div className="w-full max-w-[220px] lg:max-w-[380px] lg:ml-[120px]">
+                        <div className="w-full max-w-[220px] lg:max-w-[380px] ml-[45px] lg:ml-[120px]">
                         <Image
                             src="/images/Frame 24 (2).png" // Replace with the actual image path
                             alt="Description of image"
@@ -140,7 +140,7 @@ const Home = () => {
                         />
                         </div>
                     </div>
-                    <p className="font-matt text-base sm:text-lg lg:text-[28px] lg:leading-[37px] font-[900] mt-4 uppercase text-center">
+                    <p className="font-matt text-[24px] lg:text-[28px] lg:leading-[37px] font-[400] lg:font-[900] mt-4 uppercase text-center">
                         Erfolgreiche Projekte in <br></br>den letzten 12 Monaten
                     </p>
                     </div>
