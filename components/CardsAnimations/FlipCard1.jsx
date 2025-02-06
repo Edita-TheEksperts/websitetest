@@ -68,20 +68,22 @@ export default function FlipCard() {
               ))}
             </div>
 
-            {/* Bottom Left Status */}
-            <div className="absolute bottom-6 left-6 z-10 flex flex-col lg:flex-row space-x-2 text-sm">
-              <span className="text-[14px] lg:text-[16px] font-[300] leading-[33px] font-matt">
-                Project{" "}
-                <span className="bg-[#0009FF] text-white font-[500] lg:font-[900] px-2 py-1 rounded-tl-[20px]">
-                  Completed
-                </span>
-              </span>
-              <span className="text-[14px] lg:text-[16px] font-[300] leading-[33px] font-matt">
-                Currently{" "}
-                <span className="bg-red-600 text-white font-[500] lg:font-[900] px-2 py-1 rounded-tl-[20px]">
-                  Optimizing
-                </span>
-              </span>
+            <div className="absolute  flex-col bottom-6 left-6 z-10 flex space-x-2 text-sm">
+            <h2 className="text-start text-[14px] lg:text-[20px] font-[300] font-matt leading-[33px] ml-[8px]">100% Project Completed, Currently: Optimizing</h2>
+            <div className="flex flex-col lg:flex-row space-y-2 md:space-y-0 md:space-x-2 items-start">
+            <svg xmlns="http://www.w3.org/2000/svg" width="131" height="17" viewBox="0 0 131 17" fill="none">
+                <path d="M0 17V6.5L8.5 0H131V17H0Z" fill="#0009FF"/>
+                </svg> 
+                <svg xmlns="http://www.w3.org/2000/svg" width="131" height="17" viewBox="0 0 131 17" fill="none">
+                <path d="M0 17V6.5L8.5 0H131V17H0Z" fill="#0009FF"/>
+                </svg> 
+                <svg xmlns="http://www.w3.org/2000/svg" width="131" height="17" viewBox="0 0 131 17" fill="none">
+                <path d="M0 17V6.5L8.5 0H131V17H0Z" fill="#0009FF"/>
+                </svg> 
+                <svg xmlns="http://www.w3.org/2000/svg" width="131" height="17" viewBox="0 0 131 17" fill="none">
+                <path d="M0 17V6.5L8.5 0H131V17H0Z" fill="#0009FF"/>
+                </svg> 
+            </div>
             </div>
           </div>
 
