@@ -4,6 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import Testimonials from '../components/Testimonials/Testimonials';
 import LogoSection from '../components/LogoSection/LogoSection'; 
+import Hero from '../components/HeroComponent/Hero';
 import Hero2 from '../components/HeroComponent/Hero2';
 import '../styles/global.css'; 
 import AnimatedSection from '../components/AnimatedSection';
@@ -62,7 +63,7 @@ const Home = () => {
 
             <LogoSection />
 
-            <section className="bg-white py-2 lg:py-2 lg:max-w-[1280px] mx-auto flex flex-col font-matt space-y-2 lg:space-y-0 ">
+            <section className="bg-white py-2 lg:py-2 lg:max-w-[1280px] mx-auto flex flex-col font-matt space-y-2 lg:space-y-0 mb-[20] lg:mb-0">
             <div className="font-matt flex flex-col items-center text-center space-y-12">
             {/* 100% Section */}
             <div className="font-matt flex flex-col items-center px-0">
@@ -148,9 +149,9 @@ const Home = () => {
             </div>
             </section>
 
-            <section className="bg-white mt-[100px] lg:py-2 flex flex-col lg:flex-row justify-between items-center lg:min-w-[1280px] mx-auto font-matt space-y-8 lg:space-y-0 lg:mt-[300px] lg:mb-[300px]">
+            <section className="bg-white mt-[100px] lg:py-2 flex flex-col lg:flex-row justify-between items-center lg:min-w-[1280px] mx-auto font-matt space-y-8 lg:space-y-0 lg:mt-[300px] lg:mb-[300px] mb-[160px]">
             {/* Left Section: Heading */}
-            <div className="flex-1 text-center lg:text-left lg:min-w-[490px]">
+            <div className="lg:block hidden flex-1 text-center lg:text-left lg:min-w-[490px]">
                 <h1 className="text-4xl lg:text-[64px] lg:leading-[80px] font-[700] leading-tight">
                 Haben Sie <br />
                 Fragen oder <br />
@@ -159,44 +160,60 @@ const Home = () => {
                 Idee?
                 </h1>
             </div>
+            <div className="lg:hidden block flex-1 text-center">
+                <h1 className="text-[28px] leading-[37px] font-[900] uppercase font-matt text-black">
+                Haben Sie
+                Fragen oder <br />
+                eine 
+                spannende
+                Idee?
+                </h1>
+            </div>
 
             <div className="flex flex-col lg:flex-row lg:min-w-[800px] gap-8 lg:gap-16 items-center lg:items-center">
                 {/* Center Section: Image */}
-                <div className="flex justify-center lg:justify-start">
+                <div className="lg:block hidden flex justify-center lg:justify-start">
                 <img
                     src="/images/fisniksalihutheeksperts.png"
                     alt="Fisnik Salihu"
                     className="w-[200px] h-[400px] object-cover"
                 />
                 </div>
+                <div className="lg:hidden block flex justify-center lg:justify-start">
+                <img
+                    src="/images/Rectangle 229.png"
+                    alt="Fisnik Salihu"
+                    className="object-cover"
+                />
+                </div>
 
                 {/* Right Section: Contact Details */}
-                <div className="font-matt flex-1 text-center lg:text-left space-y-6">
+                <div className="font-matt flex-1 text-center lg:text-left lg:space-y-6">
                 {/* Name and Title */}
-                <h2 className="text-4xl lg:text-[80px] lg:leading-[80px] font-matt font-[300]">FISNIK SALIHU</h2>
-                <p className="text-black text-xl lg:text-[28px] lg:leading-[37px] font-matt font-[300] uppercase ml-1">Co-Founder & strategy ekspert</p>
+                <h2 className="text-4xl lg:text-[80px] lg:leading-[80px] font-matt font-[300] mb-2 lg:mb-0">FISNIK SALIHU</h2>
+                <p className="text-black text-xl lg:text-[28px] lg:leading-[37px] font-matt font-[300] uppercase ml-1 mb-[24px] lg:mb-0">Co-Founder & strategy ekspert</p>
 
                 {/* Email Section */}
-                <div className="flex flex-col lg:flex-row items-center lg:space-x-10 lg:space-y-0 space-y-4 ">
+                <div className="flex flex-col lg:flex-row items-center lg:space-x-10 lg:space-y-0 mb-[24px] lg:mb-0 ">
                     <p className="text-black text-lg lg:text-[20px] font-[300] lg:mt-[2px] lg:mr-[20px] ml-1">
                         Schreiben Sie mir
                     </p>
                     <a
                         href="mailto:fisnik.salihu@the-eksperts.com"
-                        className="text-black border-[2px] border-black text-[16px] lg:text-[20px] py-2 px-4 rounded-full hover:bg-[#0009FF] hover:text-white hover:border-[#0009FF]"
+                        className="lg:text-black text-white lg:bg-transparent bg-[#0009FF] border-[2px] lg:border-black  text-[16px] lg:text-[20px] py-2 px-4 rounded-full hover:bg-[#0009FF] hover:text-white hover:border-[#0009FF]"
                     >
                         fisnik.salihu@the-eksperts.com
                     </a>
                     </div>
 
                     {/* Phone Section */}
-                    <div className="flex flex-col lg:flex-row items-center lg:space-x-10 lg:space-y-0 space-y-4">
+                    <div className="flex flex-col lg:flex-row items-center lg:space-x-10 lg:space-y-0 space-y-0">
                     <p className="text-black text-lg lg:text-[20px] font-[300] lg:mt-[2px] lg:mr-[-28px] ml-1">
                         oder rufen Sie mich an
                     </p>
                     <a
                         href="tel:+41799213000"
-                        className="text-black border-[2px] border-black text-[16px] lg:text-[20px] py-2 px-4 rounded-full hover:bg-[#0009FF] hover:text-white hover:border-[#0009FF]"
+                        className="lg:text-black text-white lg:bg-transparent bg-[#0009FF] border-[2px] lg:border-black text-[16px] lg:text-[20px] py-2 px-4 rounded-full hover:bg-[#0009FF] hover:text-white hover:border-[#0009FF]"
                     >
                         +41 79 921 30 00
                     </a>
