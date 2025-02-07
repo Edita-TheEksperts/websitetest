@@ -29,12 +29,12 @@ const features = [
 
 export default function FeatureSection() {
   return (
-    <div className="bg-white py-2 px-4 lg:px-4 max-w-[1280px] mx-auto">
+    <div className="bg-white py-2 lg:px-4 max-w-[1280px] mx-auto">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-12">
         {features.map((feature) => (
           <div
             key={feature.id}
-            className="flex flex-col lg:flex-row items-center p-2 rounded-lg"
+            className="flex flex-col lg:flex-row items-center lg:p-2 rounded-lg"
           >
             {/* Image Section */}
             <div className="flex-shrink-0 ">
@@ -46,11 +46,11 @@ export default function FeatureSection() {
             </div>
 
             {/* Text Section */}
-            <div className="ml-6 w-2/3 text-left flex flex-col justify-center items-center md:justify-start md:items-start h-full mb-8 md:mb-0">
-                <h3 className="text-black font-matt font-[900] text-[22px] lg:text-[28px] lg:leading-[37px] uppercase mb-2 mt-6 md:mt-0">
+            <div className="lg:ml-6 lg:w-2/3 text-left flex flex-col justify-start items-start h-full mb-8 md:mb-0">
+                <h3 className="text-black font-matt font-[900] text-[18px] lg:text-[28px] lg:leading-[37px] uppercase mb-2 mt-6 md:mt-0">
                     {feature.title}
                 </h3>
-                <p className="text-black font-matt text-[20px] font-[300] lg:leading-[33px] lg:w-[230px] w-[290px]">
+                <p className="text-black font-matt text-[14px] lg:text-[20px] font-[300] lg:leading-[33px] lg:w-[230px] w-[290px]">
                     {feature.description}
                 </p>
                 </div>
