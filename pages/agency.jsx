@@ -37,7 +37,7 @@ const Agency = () => {
 {/* Header Section */}
       <div className="lg:max-w-[1280px] flex justify-center mx-auto text-center ">
         <h1
-          className="font-matt  lg:text-[64px] text-[30px] flex justify-center text-center font-[900] lg:leading-[80px] leading-[40px] tracking-[-2.99px] uppercase text-black lg:mb-[300px] lg:mt-[200px]"
+          className="font-matt  lg:text-[64px] text-[48px] flex justify-center text-center font-[900] lg:leading-[80px] leading-[56px] tracking-[-2.99px] uppercase text-black lg:mb-[300px] lg:mt-[200px] mb-[160px] mt-[100px]"
           style={{
             textAlign: "center",
             textTransform: "uppercase",
@@ -51,11 +51,11 @@ const Agency = () => {
       </div>
 
       {/* Description Section */}
-      <div className="lg:max-w-[1280px] mx-auto text-center mt-6 text-black lg:mb-[300px] mb-[100px]">
-        <p className="font-matt lg:text-[20px] font-[300] lg:leading-[33px] sm:text-xl leading-relaxed max-w-[1000px] mx-auto">
+      <div className="lg:max-w-[1280px] mx-auto text-center mt-6 text-black lg:mb-[300px] mb-[160px]">
+        <p className="font-matt lg:text-[20px] font-[300] lg:leading-[33px] text-[16px] leading-relaxed max-w-[1000px] mx-auto">
         Hi, wir sind the eksperts – nicht, weil wir alles wissen oder perfekt sind, sondern weil wir jeden Tag daran arbeiten, die besten Lösungen zu finden und uns weiterzuentwickeln. Unser Name steht für den Anspruch, ständig besser zu werden.
         </p>
-        <p className="font-matt lg:text-[20px] font-[300] lg:leading-[33px] sm:text-xl leading-relaxed max-w-[1000px] mx-auto mt-6">
+        <p className="font-matt lg:text-[20px] font-[300] lg:leading-[33px] text-[16px] leading-relaxed max-w-[1000px] mx-auto mt-6">
         Wir stellen Menschen und Prozesse in den Mittelpunkt. Nachdem wir unsere Kunden und ihre Herausforderungen verstanden haben, entwickeln wir innovative Lösungen, die Wachstum und Effizienz fördern. So helfen wir Unternehmen, in einer schnelllebigen digitalen Welt erfolgreich zu sein.
         </p>
       </div>
@@ -63,10 +63,10 @@ const Agency = () => {
 
       {/* Management Section */}
       <div className="lg:max-w-[1280px] mx-auto px-2 py-2 lg:mb-[300px] mt-6 ">
-        <h2 className="font-matt text-center text-black font-[900] text-4xl lg:text-[28px] lg:leading-[37px] lg:mb-20 mb-8">
+        <h2 className="font-matt text-center text-black font-[900] text-[24px] lg:text-[28px] leading-[37px] lg:mb-20 mb-8">
           UNSER MANAGEMENT AUF EINEN BLICK
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:gap-10 gap-2 lg:max-w-[1280px] mb-[100px] lg:mb-0">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:gap-10 gap-2 lg:max-w-[1280px] mb-[160px] lg:mb-0">
               {management.map((person, index) => (
                 <div
                   key={index}
@@ -85,11 +85,11 @@ const Agency = () => {
                     style={{ clipPath: 'polygon(100% 0%, 94% 98%, 0% 100%, 0% 0%)' }}
                   >
 
-                  <h3 className="font-matt text-xl md:text-[28px] md:leading-[20px] font-[900] uppercase mb-2">{person.name}</h3>
-                    <p className="font-matt text-sm md:text-[19px] md:leading-[20px] font-normal mb-2">{person.title}</p>
-                    <p className="font-matt text-sm md:text-[16px] md:leading-[18px] font-light mb-2">{person.description}</p>
-                    <p className="font-matt text-xs md:text-[12px] md:leading-[14px] font-light italic">{person.shortDescription}</p>
-                    <div className="lg:mt-6 flex space-x-4">
+                  <h3 className="font-matt text-[24px] md:text-[28px] md:leading-[20px] font-[900] uppercase lg:mb-2">{person.name}</h3>
+                    <p className="font-matt text-[16px] md:text-[19px] md:leading-[20px] font-normal lg:mb-2">{person.title}</p>
+                    <p className="font-matt text-[16px] md:text-[16px] md:leading-[18px] font-light lg:mb-2">{person.description}</p>
+                    <p className="lg:block hidden font-matt text-xs md:text-[12px] md:leading-[14px] font-light italic">{person.shortDescription}</p>
+                    <div className=" lg:block hidden lg:mt-6 lg:flex space-x-4">
                     <a href={person.linkedin} className="text-blue-500">
                       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 14 14" fill="none">
                         <path d="M13.399 13.4004V8.71244C13.399 6.40844 12.903 4.64844 10.215 4.64844C8.91895 4.64844 8.05495 5.35244 7.70295 6.02444H7.67095V4.85644H5.12695V13.4004H7.78295V9.16044C7.78295 8.04044 7.99095 6.96844 9.36695 6.96844C10.727 6.96844 10.743 8.23244 10.743 9.22444V13.3844H13.399V13.4004Z" fill="black"/>
@@ -109,18 +109,18 @@ const Agency = () => {
             </div>
 
 
-            <section className="font-matt lg:max-w-[1280px] mx-auto px-6 lg:px-2 py-2 flex flex-col items-center text-center lg:mt-[300px] mt-6 mb-[100px] lg:mb-0">
+            <section className="font-matt lg:max-w-[1280px] mx-auto px-2 lg:px-2 py-2 flex flex-col items-center text-center lg:mt-[300px] mt-6 mb-[160px] lg:mb-0">
                 {/* Title */}
-                <h2 className="font-matt text-center text-black font-[900] text-4xl lg:text-[28px] lg:leading-[37px] lg:mb-20 mb-8 uppercase">
+                <h2 className="font-matt ml-[40px] lg:ml-0 text-center text-black font-[900] text-[24px] lg:text-[28px] leading-[37px] lg:mb-20 mb-8 uppercase">
                 Unsere Werte
                 </h2>
 
                 {/* Values List */}
-                <div className="flex flex-col items-center space-y-10 px-2 mb-10 lg:mb-0">
+                <div className="flex flex-col items-center space-y-10 lg:px-2 mb-10 lg:mb-0">
                   {/* Love */}
                   <div className="flex items-start space-x-6 max-w-[800px] mb-2 lg:ml-[65px]">
                     {/* Icon */}
-                    <div className="flex-shrink-0 w-[110px] h-[110px]">
+                    <div className="lg:block hidden flex-shrink-0 w-[110px] h-[110px]">
                       <img
                         src="/images/love-icon.png"
                         alt="Love Icon"
@@ -128,8 +128,8 @@ const Agency = () => {
                       />
                     </div>
                     {/* Text */}
-                    <div className="text-left">
-                      <h3 className="text-2xl leading-10 font-[900] text-[#E24125] uppercase md:leading-[37px] md:text-[28px] mb-2 ">
+                    <div className="lg:text-left text-center">
+                      <h3 className="text-[24px] leading-10 font-[900] text-[#E24125] uppercase md:leading-[37px] md:text-[28px] mb-2 ">
                         ● LIEBE:
                       </h3>
                       <p className="text-[#5A585A] text-xl max-w-[599px] lg:mr-8 font-[400] md:leading-[37px] md:text-[24px] uppercase">
@@ -141,7 +141,7 @@ const Agency = () => {
                   {/* Integrity */}
                   <div className="flex items-start space-x-6 max-w-[800px] mb-2 lg:ml-[65px]">
                     {/* Icon */}
-                    <div className="flex-shrink-0 w-[110px] h-[110px]">
+                    <div className="lg:block hidden flex-shrink-0 w-[110px] h-[110px]">
                       <img
                         src="/images/integrity-icon.png"
                         alt="Integrity Icon"
@@ -149,8 +149,8 @@ const Agency = () => {
                       />
                     </div>
                     {/* Text */}
-                    <div className="text-left">
-                      <h3 className="text-2xl leading-10 font-[900] text-[#0009FF] uppercase md:leading-[37px] md:text-[28px] mb-2">
+                    <div className="lg:text-left text-center">
+                      <h3 className="text-[24px] leading-10 font-[900] text-[#0009FF] uppercase md:leading-[37px] md:text-[28px] mb-2">
                         ● Integrität:
                       </h3>
                       <p className="text-[#5A585A] text-xl max-w-[589px] font-[400] md:leading-[37px] md:text-[24px] uppercase">
@@ -162,7 +162,7 @@ const Agency = () => {
                   {/* Excellence */}
                   <div className="flex items-start space-x-6 max-w-[800px] mb-2 lg:ml-[65px]">
                     {/* Icon */}
-                    <div className="flex-shrink-0 w-[110px] h-[110px]">
+                    <div className="lg:block hidden flex-shrink-0 w-[110px] h-[110px]">
                       <img
                         src="/images/excellence-icon.png"
                         alt="Excellence Icon"
@@ -170,8 +170,8 @@ const Agency = () => {
                       />
                     </div>
                     {/* Text */}
-                    <div className="text-left">
-                      <h3 className="text-2xl leading-10 font-[900] text-[#CFFF49] uppercase md:leading-[37px] md:text-[28px] mb-2">
+                    <div className="lg:text-left text-center">
+                      <h3 className="text-[24px] leading-10 font-[900] text-[#CFFF49] uppercase md:leading-[37px] md:text-[28px] mb-2">
                         ● Exzellenz:
                       </h3>
                       <p className="text-[#5A585A] text-xl max-w-[589px] font-[400] md:leading-[37px] md:text-[24px] uppercase">
@@ -182,7 +182,7 @@ const Agency = () => {
                   {/* Communication */}
                   <div className="flex items-start space-x-6 max-w-[800px] mb-2 lg:ml-[65px]">
                     {/* Icon */}
-                    <div className="flex-shrink-0 w-[110px] h-[110px]">
+                    <div className="lg:block hidden flex-shrink-0 w-[110px] h-[110px]">
                       <img
                         src="/images/communication-icon.png"
                         alt="Communication Icon"
@@ -190,8 +190,8 @@ const Agency = () => {
                       />
                     </div>
                     {/* Text */}
-                    <div className="text-left">
-                    <h3 className="text-2xl leading-10 font-[900] text-[#03C319] uppercase md:leading-[37px] md:text-[28px] mb-2">
+                    <div className="lg:text-left text-center">
+                    <h3 className="text-[24px] leading-10 font-[900] text-[#03C319] uppercase md:leading-[37px] md:text-[28px] mb-2">
                         ● Kommunikation:
                       </h3>
                       <p className="text-[#5A585A] text-xl max-w-[589px] font-[400] md:leading-[37px] md:text-[24px] uppercase">
@@ -204,7 +204,7 @@ const Agency = () => {
                   {/* Flexibility */}
                   <div className="flex items-start space-x-6 max-w-[800px] mb-2 lg:ml-[65px]">
                     {/* Icon */}
-                    <div className="flex-shrink-0 w-[110px] h-[110px]">
+                    <div className="lg:block hidden flex-shrink-0 w-[110px] h-[110px]">
                       <img
                         src="/images/flexibility-icon.png"
                         alt="Flexibility Icon"
@@ -212,9 +212,9 @@ const Agency = () => {
                       />
                     </div>
                     {/* Text */}
-                    <div className="text-left">
+                    <div className="lg:text-left text-center">
                     <h3
-                      className="text-2xl leading-10 font-[900] uppercase md:leading-[37px] md:text-[28px] mb-2"
+                      className="text-[24px] leading-10 font-[900] uppercase md:leading-[37px] md:text-[28px] mb-2"
                       style={{
                         background: "linear-gradient(270deg, #0009FF 76.84%, #E24125 83.49%, #03C319 91.34%, #CFFF49 97.99%)",
                         WebkitBackgroundClip: "text",
@@ -237,9 +237,9 @@ const Agency = () => {
               <h2 className="lg:pt-[300px] font-matt flex items-center justify-center text-4xl lg:text-[80px] lg:leading-[80px] font-[900] lg:font-[700] text-black mb-2">
               Unsere 4 Säulen
                           </h2>
-              <section className="font-matt flex flex-col md:flex-row items-center justify-between px-4 md:px-2 py-2 lg:min-w-[1280px] mx-auto mb-10 lg:mb-0">
+              <section className="font-matt flex flex-col md:flex-row items-center justify-between px-2 md:px-2 py-2 lg:min-w-[1280px] mx-auto mb-10 lg:mb-0">
                 {/* Image on top for mobile, on the right for larger screens */}
-                <div className="font-matt flex-1 mt-8 mb-8 flex justify-center md:order-2">
+                <div className="lg:block hidden font-matt flex-1 mt-8 mb-8 lg:flex justify-center md:order-2">
                   <img
                     src="/images/the-eksperts-pillar.png"
                     alt="Info Section Image"
@@ -248,19 +248,19 @@ const Agency = () => {
                 </div>
 
                 {/* Text block on mobile (below image), on the left for larger screens */}
-                <div className="font-matt flex-1 lg:min-w-[620px] max-w-lg lg:text-left text-center md:order-1">
-                  <h2 className="font-matt text-2xl md:text-[25px] md:leading-[37px] font-[900] text-black mb-4 uppercase">
+                <div className="font-matt flex-1 lg:min-w-[620px] max-w-lg lg:text-left text-center md:order-1 mt-8 lg:mt-0">
+                  <h2 className="font-matt text-[16px] md:text-[25px] md:leading-[37px] font-[900] text-black mb-4 uppercase">
                     Unsere 4 Säulen – Ein <br /> ganzheitlicher Ansatz
                   </h2>
-                  <p className="font-matt lg:text-[20px] lg:leading-[33px] text-lg text-black">
+                  <p className="font-matt lg:text-[20px] lg:leading-[33px] text-[16px] text-black">
                     Unser Ansatz baut auf vier zentralen Säulen auf, die nahtlose Zusammenarbeit und nachhaltige Ergebnisse sichern. Von der Analyse Ihrer Anforderungen über die visuelle und technische Umsetzung bis zur langfristigen Partnerschaft entwickeln wir Lösungen, die Ihre aktuellen und zukünftigen Bedürfnisse erfüllen. Jede Phase ist auf Zusammenarbeit und Qualität ausgerichtet, um echten Mehrwert zu schaffen.
                   </p>
                 </div>
               </section>
 
 
-                    <section className="font-matt flex flex-col md:flex-row items-center justify-between px-4 md:px-2 py-2  lg:min-w-[1280px] mx-auto mb-10 lg:mb-0">
-                    <div className="flex-1 mt-8 md:mt-8 mb-8 flex justify-center">
+                    <section className="font-matt flex flex-col md:flex-row items-center justify-between px-2 md:px-2 py-2  lg:min-w-[1280px] mx-auto mb-10 lg:mb-0">
+                    <div className="lg:block hidden flex-1 mt-8 md:mt-8 mb-8 flex justify-center">
                         <img
                         src="/images/the-eksperts-pillar-blue.png" 
                         alt="Info Section Image"
@@ -268,18 +268,18 @@ const Agency = () => {
                         />
                     </div>
 
-                    <div className="font-matt flex-1 lg:min-w-[580px] max-w-lg lg:text-left text-center">
-                        <h2 className="font-matt text-2xl  md:text-[25px] md:leading-[37px] font-[900] text-black mb-4 uppercase">
+                    <div className="font-matt flex-1 lg:min-w-[580px] max-w-lg lg:text-left text-center ">
+                        <h2 className="font-matt text-[16px]  md:text-[25px] md:leading-[37px] font-[900] text-black mb-4 uppercase">
                         Verstehen und Kommunikation <br></br>– Die Basis für Ihren Erfolg
                         </h2>
-                        <p className="font-matt lg:text-[20px] lg:leading-[33px] text-lg text-black">
+                        <p className="font-matt lg:text-[20px] lg:leading-[33px] text-[16px] text-black">
                         Alles beginnt mit einer klaren und offenen Kommunikation. Wir analysieren Ihre Anforderungen, verstehen Ihre individuellen Herausforderungen und definieren gemeinsam die Ziele. Durch Consulting, Business-Analyse und strategische Planung legen wir den Grundstein für massgeschneiderte Lösungen, die Ihre spezifischen Bedürfnisse widerspiegeln.</p>
                     </div>
                     </section>
 
-                    <section className="font-matt flex flex-col md:flex-row items-center justify-between px-4 md:px-2 py-2 lg:min-w-[1280px] mx-auto mb-10 lg:mb-0">
+                    <section className="font-matt flex flex-col md:flex-row items-center justify-between px-2 md:px-2 py-2 lg:min-w-[1280px] mx-auto mb-10 lg:mb-0">
                       {/* Image on top for mobile, on the right for larger screens */}
-                      <div className="font-matt flex-1 mt-8 mb-8 flex justify-center md:order-2">
+                      <div className="lg:block hidden font-matt flex-1 mt-8 mb-8 flex justify-center md:order-2">
                         <img
                           src="/images/the-eksperts-pillar-yellow.png"
                           alt="Info Section Image"
@@ -289,18 +289,18 @@ const Agency = () => {
 
                       {/* Text block on mobile (below image), on the left for larger screens */}
                       <div className="font-matt flex-1 lg:min-w-[570px] max-w-lg lg:text-left text-center md:order-1">
-                        <h2 className="font-matt text-2xl md:text-[25px] md:leading-[37px] font-[900] text-black mb-4 uppercase">
+                        <h2 className="font-matt  text-[16px] md:text-[25px] md:leading-[37px] font-[900] text-black mb-4 uppercase">
                           UI/UX – Benutzerzentrierte <br /> Gestaltung für Ihre Lösung
                         </h2>
-                        <p className="font-matt lg:text-[20px] lg:leading-[33px] text-lg text-black">
+                        <p className="font-matt lg:text-[20px] lg:leading-[33px]  text-[16px] text-black">
                           Im nächsten Schritt gestalten wir das Look-and-Feel Ihrer Lösung. Wir entwickeln Prototypen, optimieren Prozesse und entwerfen ein ansprechendes, intuitives Design. Unser Ziel ist es, dass Ihre Website, Software oder andere Plattformen nicht nur ästhetisch überzeugen, sondern auch funktional und benutzerfreundlich sind, um den höchsten Ansprüchen gerecht zu werden.
                         </p>
                       </div>
                     </section>
 
 
-                    <section className="font-matt flex flex-col md:flex-row items-center justify-between px-4 md:px-2 py-2 lg:min-w-[1280px] mx-auto">
-                    <div className="font-matt flex-1 mt-8 md:mt-8 mb-8 flex justify-center">
+                    <section className="font-matt flex flex-col md:flex-row items-center justify-between px-2 md:px-2 py-2 lg:min-w-[1280px] mx-auto">
+                    <div className="lg:block hidden font-matt flex-1 mt-8 md:mt-8 mb-8 flex justify-center">
                         <img
                         src="/images/the-eksperts-pillar-green.png" 
                         alt="Info Section Image"
@@ -309,16 +309,16 @@ const Agency = () => {
                     </div>
                     
                     <div className="font-matt flex-1 max-w-lg lg:text-left text-center">
-                        <h2 className="font-matt text-2xl md:text-[25px] md:leading-[37px] font-[900] text-black mb-4 uppercase">
+                        <h2 className="font-matt  text-[16px] md:text-[25px] md:leading-[37px] font-[900] text-black mb-4 uppercase">
                         Technische Implementierung – <br></br> Von der Idee zur Realität                        </h2>
-                        <p className="font-matt lg:text-[20px] lg:leading-[33px] text-lg text-black">
+                        <p className="font-matt lg:text-[20px] lg:leading-[33px]  text-[16px] text-black">
                         Hier setzen wir Ihre Vision in die Tat um. Wir entwickeln leistungsfähige und skalierbare Systeme, die Ihre Anforderungen perfekt erfüllen. Egal ob Online-Shop, Salesforce-Instanz, Cloud-Infrastruktur oder ERP/CRM-System – wir stellen sicher, dass die technische Umsetzung stabil, effizient, sicher und zukunftssicher ist.</p>
                     </div>
                     </section>
 
-                    <section className="font-matt flex flex-col md:flex-row items-center justify-between px-4 md:px-2 py-2 lg:min-w-[1280px] mx-auto mb-[100px] lg:mb-0">
+                    <section className="font-matt flex flex-col md:flex-row items-center justify-between px-2 md:px-2 py-2 lg:min-w-[1280px] mx-auto mb-[160px] mt-8 lg:mt-0 lg:mb-0">
                       {/* Image on top for mobile, on the right for larger screens */}
-                      <div className="font-matt flex-1 mt-8 mb-8 flex justify-center md:order-2">
+                      <div className="lg:block hidden font-matt flex-1 mt-8 mb-8 flex justify-center md:order-2">
                         <img
                           src="/images/the-eksperts-pillar-red.png"
                           alt="Info Section Image"
@@ -328,10 +328,10 @@ const Agency = () => {
 
                       {/* Text block on mobile (below image), on the left for larger screens */}
                       <div className="font-matt flex-1 lg:min-w-[600px] max-w-lg text-center lg:text-left md:order-1">
-                        <h2 className="font-matt text-2xl md:text-[25px] md:leading-[37px] font-[900] text-black mb-4 uppercase">
+                        <h2 className="font-matt  text-[16px] md:text-[25px] md:leading-[37px] font-[900] text-black mb-4 uppercase">
                           Optimierung, Schulung und Support<br /> – Nachhaltige Partnerschaft
                         </h2>
-                        <p className="font-matt text-lg lg:text-[20px] lg:leading-[33px] text-black">
+                        <p className="font-matt  text-[16px] lg:text-[20px] lg:leading-[33px] text-black">
                           Unsere Arbeit endet nicht mit der Implementierung. Wir stehen Ihnen langfristig zur Seite, indem wir die Lösungen kontinuierlich optimieren, Schulungen anbieten und zuverlässigen Support gewährleisten. Unsere Systeme sind darauf ausgelegt, Sie auch in Zukunft zu unterstützen – und wenn es Fragen gibt, sind wir immer für Sie da. Unser Ziel ist es, Ihnen eine nachhaltige und zukunftsfähige Lösung zu bieten, die langfristig Mehrwert schafft.
                         </p>
                       </div>
@@ -339,10 +339,10 @@ const Agency = () => {
 
                     </div>
 
-                    <section className="px-6 lg:px-4 py-2">
+                    <section className="lg:px-4 py-2">
                     <div className="lg:min-w-[1280px] mx-auto md:text-center">
                       {/* Section Header */}
-                      <h2 className="font-matt text-4xl text-center lg:text-[75px] lg:leading-[80px] lg:font-[700] font-[900] text-black lg:mb-20 mb-8 uppercase">
+                      <h2 className="font-matt text-[24px] text-center lg:text-[75px] lg:leading-[80px] lg:font-[700] font-[900] text-black lg:mb-20 mb-8 uppercase">
                       Unser Engagement für Gutes!
                           </h2>
                     </div>
@@ -375,7 +375,7 @@ const Agency = () => {
                             <path d="M13.8542 135.131C13.6887 135.131 13.5234 135.117 13.3602 135.089C12.9981 135.025 12.6523 134.89 12.3425 134.692C12.0326 134.494 11.7648 134.236 11.5544 133.935C11.344 133.633 11.195 133.293 11.1161 132.934C11.0371 132.575 11.0297 132.203 11.0942 131.841C13.5876 118.016 20.8488 105.502 31.6146 96.4759C42.3804 87.4502 55.9696 82.4841 70.0182 82.4414H96.2902C106.796 82.4465 117.114 85.2284 126.198 90.5054C126.84 90.8786 127.308 91.4915 127.498 92.2094C127.688 92.9273 127.585 93.6913 127.212 94.3334C126.839 94.9755 126.226 95.4431 125.508 95.6332C124.79 95.8234 124.026 95.7206 123.384 95.3474C115.155 90.5674 105.809 88.0483 96.2922 88.0454H70.0182C57.2734 88.0394 44.9341 92.5248 35.1681 100.714C25.4021 108.902 18.8342 120.271 16.6182 132.821C16.5029 133.47 16.1626 134.057 15.657 134.48C15.1514 134.902 14.5131 135.133 13.8542 135.131Z" fill="#0009FF"/>
                             <path d="M85.4328 135.131H13.8508C13.1082 135.131 12.396 134.836 11.8709 134.311C11.3458 133.786 11.0508 133.074 11.0508 132.331C11.0508 131.589 11.3458 130.876 11.8709 130.351C12.396 129.826 13.1082 129.531 13.8508 129.531H85.4328C86.1754 129.531 86.8876 129.826 87.4127 130.351C87.9378 130.876 88.2328 131.589 88.2328 132.331C88.2328 133.074 87.9378 133.786 87.4127 134.311C86.8876 134.836 86.1754 135.131 85.4328 135.131Z" fill="#0009FF"/>
                              </svg>
-                            <h2 className="text-[22px] leading-[30px] font-extrabold text-black mb-4 font-matt text-center uppercase">
+                            <h2 className="text-[20px] lg:text-[22px] leading-[30px] font-extrabold text-black mb-4 font-matt text-center uppercase">
                             Förderung von Talenten
                            </h2>
                           <p className="text-[17px] text-black mb-4 font-matt text-center">
@@ -402,7 +402,7 @@ const Agency = () => {
                                                 </clipPath>
                                               </defs>
                                             </svg>
-                                            <h2 className="text-[22px] leading-[30px] font-extrabold text-black mb-4 font-matt text-center uppercase mt-2">
+                                            <h2 className="text-[20px] lg:text-[22px] leading-[30px] font-extrabold text-black mb-4 font-matt text-center uppercase mt-2">
                             Unterstützung lokaler Unternehmen
                           </h2>
                           <p className="text-[17px] text-black mb-4 font-matt text-center">
@@ -416,7 +416,7 @@ const Agency = () => {
                         <svg xmlns="http://www.w3.org/2000/svg" width="172" height="172" viewBox="0 0 172 172" fill="none">
                                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M37.0754 88.5652C41.1752 88.5652 44.5058 91.9013 44.5058 95.9973C44.5058 100.093 41.1752 103.429 37.0754 103.429C32.9756 103.429 29.6433 100.093 29.6433 95.9973C29.6433 91.9013 32.9756 88.5652 37.0754 88.5652ZM29.7045 55.2227C29.7045 51.1267 33.0406 47.7905 37.1367 47.7905C41.2364 47.7905 44.5671 51.1267 44.5671 55.2227C44.5671 59.3187 41.2364 62.6548 37.1367 62.6548C33.0406 62.6548 29.7045 59.3187 29.7045 55.2227ZM65.9071 19.0996C70.0031 19.0996 73.3375 22.4357 73.3375 26.5317C73.3375 30.6277 70.0031 33.9638 65.9071 33.9638C61.8073 33.9638 58.4733 30.6277 58.4733 26.5317C58.4729 22.4357 61.8073 19.0996 65.9071 19.0996ZM106.53 19.0996C110.626 19.0996 113.962 22.4357 113.962 26.5317C113.962 30.6277 110.626 33.9638 106.53 33.9638C102.43 33.9638 99.0959 30.6277 99.0959 26.5317C99.0959 22.4357 102.43 19.0996 106.53 19.0996ZM142.641 55.2227C142.641 59.3187 139.309 62.6548 135.209 62.6548C131.113 62.6548 127.779 59.3187 127.779 55.2227C127.779 51.1267 131.113 47.7905 135.209 47.7905C139.309 47.7902 142.641 51.1267 142.641 55.2227ZM142.579 95.9973C142.579 100.093 139.248 103.429 135.148 103.429C131.048 103.429 127.718 100.093 127.718 95.9973C127.718 91.9013 131.048 88.5652 135.148 88.5652C139.248 88.5652 142.579 91.9013 142.579 95.9973ZM25.2525 95.9973C25.2525 102.503 30.5552 107.822 37.0754 107.822C43.5956 107.822 48.8984 102.503 48.8984 95.9973C48.8984 89.4734 43.5956 84.1727 37.0754 84.1727C36.8288 84.1727 36.5863 84.1727 36.3434 84.1912C35.3761 78.5383 35.3761 72.6631 36.3434 67.0102C36.6066 67.0287 36.8697 67.0473 37.1367 67.0473C43.6568 67.0473 48.9596 61.7466 48.9596 55.2227C48.9596 51.6826 47.4044 48.5133 44.9434 46.3447C48.2461 41.7114 52.3645 37.5968 57.0126 34.3161C59.1812 36.7994 62.3632 38.3563 65.9071 38.3563C72.4256 38.3563 77.73 33.0556 77.73 26.5317C77.73 26.2909 77.719 26.0312 77.7042 25.7718C83.3145 24.8451 89.123 24.8451 94.7315 25.8089C94.7168 26.0497 94.7037 26.2909 94.7037 26.5317C94.7037 33.0556 100.01 38.3563 106.53 38.3563C110.04 38.3563 113.201 36.818 115.367 34.39C119.984 37.6704 124.082 41.7664 127.366 46.3815C124.927 48.5501 123.387 51.7008 123.387 55.2223C123.387 61.7463 128.69 67.047 135.21 67.047C135.456 67.047 135.703 67.0284 135.946 67.0098C136.909 72.6813 136.909 78.5379 135.942 84.1909C135.679 84.1723 135.415 84.1723 135.148 84.1723C128.628 84.1723 123.326 89.473 123.326 95.997C123.326 102.502 128.628 107.822 135.148 107.822C141.669 107.822 146.971 102.502 146.971 95.997C146.971 91.2893 144.203 87.2119 140.206 85.3031C141.343 78.9274 141.344 72.3109 140.212 65.9348C144.237 64.0442 147.034 59.9485 147.034 55.2223C147.034 48.6984 141.731 43.3977 135.209 43.3977C133.78 43.3977 132.411 43.657 131.143 44.1204C127.473 38.8937 122.856 34.2789 117.634 30.6091C118.099 29.3301 118.353 27.9589 118.353 26.5317C118.353 20.0263 113.048 14.707 106.53 14.707C101.796 14.707 97.7058 17.5055 95.8189 21.5461C89.499 20.4154 82.9303 20.4154 76.6065 21.5089C74.7125 17.5055 70.6292 14.707 65.9068 14.707C59.3866 14.707 54.0804 20.0263 54.0804 26.5317C54.0804 27.9404 54.327 29.2747 54.7753 30.5166C49.5041 34.205 44.8484 38.8383 41.1546 44.1018C39.8997 43.6385 38.5467 43.3977 37.1363 43.3977C30.6179 43.3977 25.3134 48.6984 25.3134 55.2223C25.3134 59.93 28.0822 64.0074 32.0764 65.898C30.944 72.2737 30.944 78.9088 32.0726 85.2845C28.0475 87.1751 25.2525 91.2525 25.2525 95.9973ZM88.3387 104.449V90.6413V81.5779L95.2242 74.6834C96.0824 73.831 96.0824 72.4409 95.2242 71.5881C94.3679 70.7171 92.9761 70.7171 92.1178 71.5881L88.3387 75.369V68.5671V56.0379C88.3387 54.8333 87.3545 53.8508 86.1422 53.8508C84.93 53.8508 83.9458 54.8329 83.9458 56.0379V63.2661L80.1666 59.4852C79.3083 58.6327 77.9203 58.6327 77.062 59.4852C76.2037 60.3376 76.2037 61.7277 77.062 62.5987L83.9454 69.4749V80.6694V85.3399L80.1662 81.559C79.308 80.7065 77.9199 80.7065 77.0616 81.559C76.2034 82.4114 76.2034 83.8015 77.0616 84.6728L83.9451 91.5491V104.449C76.1163 97.3689 71.5477 86.7303 71.5477 75.165C71.5477 62.5433 76.9763 51.0338 86.1412 44.0464C95.3098 51.0338 100.735 62.5433 100.735 75.165C100.736 86.7303 96.1674 97.3689 88.3387 104.449ZM87.3933 39.5242C98.499 47.2157 105.127 60.5419 105.127 75.1654C105.127 89.7888 98.4987 103.115 87.3933 110.806C87.3933 110.806 87.3896 110.806 87.3878 110.806C87.3008 110.862 87.2138 110.917 87.123 110.954C87.1061 110.973 87.0913 110.973 87.0731 110.992C86.8952 111.066 86.7043 111.121 86.502 111.158C86.4817 111.158 86.4594 111.177 86.437 111.177C86.3424 111.196 86.2423 111.196 86.1422 111.196C86.0421 111.196 85.9458 111.196 85.8495 111.177C85.8254 111.177 85.803 111.158 85.7827 111.158C85.5808 111.121 85.3899 111.066 85.2138 110.992C85.1969 110.973 85.1787 110.973 85.158 110.954C85.071 110.917 84.9819 110.862 84.9004 110.806C84.8986 110.806 84.8949 110.806 84.8911 110.806C73.7854 103.115 67.1579 89.7885 67.1579 75.1654C67.1579 60.5419 73.7857 47.2161 84.8911 39.5242C85.6438 39.0051 86.6389 39.0051 87.3933 39.5242ZM147.739 123.038C139.374 129.896 126.819 139.237 116.674 144.834C109.154 148.967 101.213 152.822 94.09 152.897C90.1832 152.915 86.3448 151.803 82.2746 150.598C80.2154 149.987 78.0878 149.375 75.9323 148.893C65.2253 146.576 55.0628 145.78 45.1102 145.78C37.7132 145.78 30.4293 146.224 23.1269 146.762V122.612C36.8198 124.187 43.6923 124.984 59.3333 121.889C62.1413 121.333 64.6192 120.295 67.0175 119.313C71.3506 117.515 75.0964 115.958 79.7132 117.719L98.3288 124.799C100.199 125.522 101.142 127.616 100.431 129.488C99.6559 131.527 97.3986 132.064 95.5654 131.527C94.6369 131.268 93.573 130.953 92.446 130.6C89.3583 129.655 85.8536 128.599 83.2272 128.154C79.6946 127.561 75.6447 127.95 70.8445 129.377C69.6808 129.711 69.0172 130.934 69.3598 132.101C69.7007 133.269 70.9223 133.936 72.0843 133.584C76.234 132.361 79.6423 132.009 82.5003 132.491C84.845 132.88 88.2031 133.899 91.1667 134.807C92.3122 135.16 93.3927 135.475 94.3583 135.753C95.2107 135.994 96.0615 136.124 96.8974 136.124C99.746 136.124 102.352 134.752 103.822 132.454C106.222 132.398 108.564 132.083 110.793 131.508C118.972 129.396 131.744 123.354 143.01 118.034L144.193 117.478C145.586 116.811 147.186 117.238 148.079 118.479L148.303 118.794C149.253 120.129 149.004 122.001 147.739 123.038ZM151.884 116.255L151.66 115.94C149.546 112.975 145.612 111.937 142.313 113.494L141.133 114.049C130.042 119.313 117.472 125.262 109.701 127.246C108.209 127.635 106.652 127.894 105.058 128.005C104.978 124.836 103.023 121.889 99.8926 120.703L81.2753 113.605C75.0255 111.232 70.0974 113.271 65.3323 115.254C63.1341 116.162 60.8599 117.108 58.4822 117.59C43.5141 120.536 37.2791 119.813 23.6233 118.238L21.1788 117.96C20.5579 117.886 19.9353 118.09 19.4702 118.516C19.0013 118.924 18.7344 119.517 18.7344 120.147V149.134C18.7344 149.746 18.9882 150.339 19.4406 150.747C19.8875 151.173 20.4915 151.377 21.0994 151.321C38.6936 149.95 56.0546 149.06 74.9983 153.193C76.9983 153.619 79.0479 154.231 81.0331 154.806C85.1625 156.029 89.4253 157.29 93.8939 157.29H94.133C102.232 157.197 110.771 153.101 118.793 148.671C131.891 141.443 146.393 129.822 150.525 126.43C153.566 123.928 154.162 119.462 151.884 116.255Z" fill="#0009FF"/>
                                               </svg>
-                                              <h2 className="text-[22px] leading-[30px] font-extrabold text-black mb-4 font-matt text-center uppercase">
+                                              <h2 className="text-[20px] lg:text-[22px] leading-[30px] font-extrabold text-black mb-4 font-matt text-center uppercase">
                             Nachhaltige Zukunft
                           </h2>
                           <p className="text-[17px] text-black mb-4 font-matt text-center">
@@ -531,7 +531,7 @@ const Agency = () => {
                   </svg>
                   </div>
                   <div className="flex-1 text-left md:ml-[40px]">
-                    <h3 className="text-lg md:text-[28px] md:leading-[37px] font-extrabold text-black mb-4 font-matt">
+                    <h3 className="text-[20px] md:text-[28px] md:leading-[37px] font-extrabold text-black mb-4 font-matt">
                       PRO-BONO-PROJEKT:
                     </h3>
                     <p className="text-sm md:text-[20px] font-[300] md:leading-[33px] text-black mb-4 font-matt">
@@ -546,18 +546,18 @@ const Agency = () => {
 
               </section>
 
-                    <section className=" lg:mt-[300px] mt-[100px] lg:mb-[300px] px-6 mb-[99px]">
+                    <section className=" lg:mt-[300px] mt-[160px] lg:mb-[300px] lg:px-6 mb-[99px]">
                         <div className="lg:max-w-[1280px] mx-auto text-center">
                           {/* Buttons */}
-                          <h2 className="font-matt text-[42px] leading-[45px] font-extrabold uppercase mb-2"> Folgen Sie uns für mehr Einblicke! </h2>
-                          <p className="font-matt text-[20px] leading-[28px] mb-10"> Unsere Reise – digital und direkt zu Ihnen.</p>
+                          <h2 className="font-matt text-[24px] lg:text-[42px] leading-[37px] lg:leading-[45px] font-extrabold uppercase mb-2"> Folgen Sie uns für mehr Einblicke! </h2>
+                          <p className="font-matt text-[18px] lg:text-[20px] leading-[28px] mb-10"> Unsere Reise – digital und direkt zu Ihnen.</p>
                           <div className="flex flex-col md:flex-row justify-center items-center gap-4">
                             {/* Instagram Button */}
                             <a
                               href="https://www.instagram.com/theeksperts/"
                               target="_blank"
                               rel="noopener noreferrer"
-                              className="flex items-center justify-center lg:w-[480px] lg:h-[100px] md:w-auto bg-[#0009FF] text-white lg:text-[64px] text-[50px] pr-2 rounded-lg text-lg font-normal transition-transform transform hover:scale-105"
+                              className="flex items-center justify-center w-[317px] lg:w-[480px] lg:h-[100px] md:w-auto bg-[#0009FF] text-white text-[40px] lg:text-[64px]  pr-2 rounded-lg text-lg font-normal transition-transform transform hover:scale-105"
                             >
                               <svg xmlns="http://www.w3.org/2000/svg" width="89" height="90" viewBox="0 0 89 90" fill="none" className="mr-2 lg:p-2 p-4">
                                 <g clip-path="url(#clip0_1068_9931)">
@@ -579,7 +579,7 @@ const Agency = () => {
                               href="https://www.linkedin.com/company/the-eksperts/"
                               target="_blank"
                               rel="noopener noreferrer"
-                              className="flex items-center justify-center lg:w-[480px] lg:h-[100px] w-auto bg-[#0009FF] text-white lg:text-[64px] text-[50px] pr-2 rounded-lg shadow-lg text-lg font-normal transition-transform transform hover:scale-105"
+                              className="flex items-center justify-center w-[317px] lg:w-[480px] lg:h-[100px] w-auto bg-[#0009FF] text-white lg:text-[64px] text-[40px] pr-2 rounded-lg shadow-lg text-lg font-normal transition-transform transform hover:scale-105"
                             >
                               <svg xmlns="http://www.w3.org/2000/svg" width="87" height="88" viewBox="0 0 87 88" fill="none" className="mr-2 lg:p-2 p-4">
                                 <g clip-path="url(#clip0_1068_9947)">
