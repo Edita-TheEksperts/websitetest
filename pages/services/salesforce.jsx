@@ -22,24 +22,27 @@ const Salesforce = () => {
       <main className="max-w-[1280px] mx-auto p-4 lg:p-2 text-center">
         
         {/* Main Heading */}
-        <div className="w-full max-w-[1280px] mx-auto text-center my-16 lg:mt-[250px] lg:mb-[300px]">
-          <h1 className="text-5xl lg:text-[174px] lg:leading-[158px] font-matt font-[900] tracking-tight mb-8">
+        <div className="w-full max-w-[1280px] mx-auto text-center my-16 lg:mt-[250px] lg:mb-[300px] mb-[160px]">
+          <h1 className="lg:block hidden text-5xl lg:text-[174px] lg:leading-[158px] font-matt font-[900] tracking-tight mb-8">
           SALESFORCE
           </h1>
-          <p className="font-matt font-[300] sm:text-lg lg:text-[22px] lg:leading-[33px] mt-4 text-gray-900">
+          <h1 className="lg:hidden block text-5xl text-[114px] leading-[100px] font-matt font-[900] tracking-tight lg:mb-8 mb-2">
+          SALES<br></br>FORCE
+          </h1>
+          <p className="font-matt font-[300] text-[16px] leading-[24px] lg:text-[22px] lg:leading-[33px] lg:mt-4 text-gray-900">
           Massgeschneiderte Lösungen für Ihren Erfolg 
           </p>
         </div>
           
-          <h2 className='text-xl lg:text-[80px] lg:leading-[80px] font-matt font-[700] lg:mb-[60px]'>
+          <h2 className='text-[40px] lg:text-[80px] leading-[80px] font-matt font-[900] lg:font-[700] lg:mb-[60px]'>
           Unsere Leistungen
           </h2>
-          <section className="max-w-[1280px] container mx-auto p-4 flex flex-col lg:flex-row items-center lg:space-x-4 lg:mb-[120px]">
+          <section className="max-w-[1280px] container mx-auto p-4 flex flex-col lg:flex-row items-center lg:space-x-4 lg:mb-[120px] mb-[80px]">
                 {/* Left Section (Text and Image) */}
                 <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-start mb-2 lg:mb-0">
-                  <h2 className="text-4xl lg:-[48px] lg:leading-[50px] font-matt font-[700] mb-2">Salesforce Beratung</h2>
+                  <h2 className="text-[24px] lg:text-[48px] lg:leading-[50px] font-matt font-[700] mb-2">Salesforce Beratung</h2>
                   {/* Paragraph for desktop */}
-                  <p className="hidden lg:block text-lg  text-center lg:text-left lg:text-[17px] lg:leading-[30px] font-[300] font-matt mb-2">
+                  <p className="hidden lg:block text-[16px]  text-center lg:text-left lg:text-[17px] lg:leading-[30px] font-[300] font-matt mb-2">
                     Erreichen Sie Ihre Geschäftsziele mit unserer professionellen Beratung. 
                   </p>
 
@@ -59,27 +62,27 @@ const Salesforce = () => {
                 {/* Right Section (Service Boxes) */}
                 <div className="w-full lg:w-1/2">
                   <div className="grid grid-cols-1 lg:grid-cols-1 gap-6">
-                    <div className="bg-white px-4 ">
-                      <h3 className="text-2xl lg:text-left mb-2 lg:font-[28px] lg:leading-[37px] font-[900] ">PROZESSANALYSE:</h3>
-                      <p className="text-lg lg:text-left mb-4 lg:text-[20px] lg:leading-[22px] font-matt font-light ">Wir analysieren Ihre Geschäftsprozesse<br></br> und optimieren sie gezielt für den Einsatz von Salesforce. </p>
+                    <div className="bg-white px-4 mt-[35px] lg:mt-0 ">
+                      <h3 className="text-[24px] text-left mb-2 lg:font-[28px] lg:leading-[37px] font-[900] ">PROZESSANALYSE:</h3>
+                      <p className="text-[16px] text-left mb-4 lg:text-[20px] lg:leading-[22px] font-matt font-light ">Wir analysieren Ihre Geschäftsprozesse<br></br> und stimmen sie auf Salesforce ab. </p>
+                    </div>
+                    <div className="bg-white px-4">
+                      <h3 className="text-[24px] text-left mb-2 lg:font-[28px] lg:leading-[37px] font-[900]">STRATEGIEENTWICKLUNG:</h3>
+                      <p className="text-[16px] text-left mb-4 lg:text-[20px] lg:leading-[22px] font-matt font-light">Erstellung einer klaren Roadmap<br></br>für Implementierung und Wachstum. </p>
                     </div>
                     <div className="bg-white px-4 ">
-                      <h3 className="text-2xl lg:text-left mb-2 lg:font-[28px] lg:leading-[37px] font-[900]">STRATEGIEENTWICKLUNG:</h3>
-                      <p className="text-lg lg:text-left mb-4 lg:text-[20px] lg:leading-[22px] font-matt font-light">Wir erstellen eine klare Roadmap für<br></br>die erfolgreiche Implementierung und nachhaltiges Wachstum. </p>
-                    </div>
-                    <div className="bg-white px-4 ">
-                      <h3 className="text-2xl lg:text-left mb-2 lg:font-[28px] lg:leading-[37px] font-[900]">CLOUD-EXPERTISE:</h3>
-                      <p className="text-lg lg:text-left mb-4 lg:text-[20px] lg:leading-[22px] font-matt font-light"> Umfassende Beratung für die Sales Cloud,<br></br> Service Cloud, Marketing Cloud, Pardot und die Non-Profit Cloud. </p>
+                      <h3 className="text-[24px] text-left mb-2 lg:font-[28px] lg:leading-[37px] font-[900]">CLOUD-EXPERTISE:</h3>
+                      <p className="text-[16px] text-left mb-4 lg:text-[20px] lg:leading-[22px] font-matt font-light">Beratung für Sales Cloud, Service Cloud,<br></br>Marketing Cloud und mehr. </p>
                     </div>
                   </div>
 
                   {/* Button Section */}
-                  <div className="mt-6 ml-4 text-center lg:text-center">
+                  <div className="mt-6 lg:ml-4 text-center lg:text-center">
                     <Link href="/contact" className="block">
-                  <button className="relative group w-full max-w-[512px] h-[76px] flex items-center justify-center overflow-hidden">
+                  <button className="relative group w-full max-w-[515px] h-[76px] flex items-center justify-center overflow-hidden">
                   <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 512 76"
+                      viewBox="0 0 515 76"
                       fill="none"
                       className="w-full h-auto absolute inset-0"
                     >
@@ -91,7 +94,7 @@ const Salesforce = () => {
                             </clipPath>
                           </defs>
                           <rect
-                            width="512"
+                            width="515"
                             height="76"
                             className="group-hover:fill-[#0009FF] transition-all duration-300"
                             clipPath="url(#clip-path)"
@@ -103,7 +106,7 @@ const Salesforce = () => {
                             strokeWidth="6"
                           />
                         </svg>
-                        <span className="relative text-[#0009FF] group-hover:text-white text-center font-matt mb-8 md:mb-6 lg:mb-0 text-[19px] leading:[22px] lg:text-[28px] font-[900] lg:leading-[37px] uppercase">
+                        <span className="relative text-[#0009FF] group-hover:text-white text-center font-matt mb-8 md:mb-6 lg:mb-0 text-[22px] leading:[37px] lg:text-[28px] font-[900] lg:leading-[37px] uppercase">
                           Jetzt Gespräch Buchen
                         </span>
                       </button>
@@ -113,11 +116,11 @@ const Salesforce = () => {
         </section>
            
 
-        <section className="max-w-[1280px] container mx-auto p-4 flex flex-col lg:flex-row items-center lg:space-x-4 lg:mb-[120px]">
+        <section className="max-w-[1280px] container mx-auto p-4 flex flex-col lg:flex-row items-center lg:space-x-4 lg:mb-[120px] mb-[80px]">
                 {/* Left Section (Text and Image) */}
                 <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-start mb-2 lg:mb-0">
-                  <h2 className="text-4xl lg:-[48px] lg:leading-[50px] font-matt font-[700]">Salesforce-Administration </h2>
-                  <p className="text-lg mb-2 text-center lg:text-left lg:text-[17px] lg:leading-[30px] font-[300] font-matt">
+                  <h2 className="text-[24px] lg:text-[48px] lg:leading-[50px] font-matt font-[700] mb-2">Salesforce-Administration </h2>
+                  <p className="text-[16px] mb-2 text-center lg:text-left lg:text-[17px] lg:leading-[30px] font-[300] font-matt">
                   Wir sorgen dafür, dass Ihre Salesforce-Umgebung reibungslos funktioniert 
                   </p>
                   <Image
@@ -125,29 +128,29 @@ const Salesforce = () => {
                     alt="Salesforce Beratung"
                     width={800} 
                     height={800} 
-                    className="w-full mx-auto"
+                    className="w-full mx-auto mt-2 lg:mt-0"
                   />
                 </div>
 
                 {/* Right Section (Service Boxes) */}
                 <div className="w-full lg:w-1/2">
                   <div className="grid grid-cols-1 lg:grid-cols-1 gap-6">
-                    <div className="bg-white px-4 ">
-                      <h3 className="text-2xl lg:text-left mb-2 lg:font-[28px] lg:leading-[37px] font-[900] uppercase ">Systempflege</h3>
-                      <p className="text-lg lg:text-left mb-4 lg:text-[20px] lg:leading-[22px] font-matt font-light ">Regelmässige Updates und Healthchecks<br></br> Ihrer Salesforce-Umgebung.</p>
+                    <div className="bg-white px-4 mt-[40px] lg:mt-0">
+                      <h3 className="text-[24px] text-left mb-2 lg:font-[28px] lg:leading-[37px] font-[900] uppercase ">Systempflege</h3>
+                      <p className="text-[16px] text-left mb-4 lg:text-[20px] lg:leading-[22px] font-matt font-light ">Regelmässige Updates und Healthchecks<br></br> Ihrer Salesforce-Umgebung.</p>
                     </div>
                     <div className="bg-white px-4 ">
-                      <h3 className="text-2xl lg:text-left mb-2 lg:font-[28px] lg:leading-[37px] font-[900] uppercase">Datenmanagement</h3>
-                      <p className="text-lg lg:text-left mb-4 lg:text-[20px] lg:leading-[22px] font-matt font-light">Saubere, sichere und optimierte<br></br> Datenverwaltung.</p>
+                      <h3 className="text-[24px] text-left mb-2 lg:font-[28px] lg:leading-[37px] font-[900] uppercase">Datenmanagement</h3>
+                      <p className="text-[16px] text-left mb-4 lg:text-[20px] lg:leading-[22px] font-matt font-light">Saubere, sichere und optimierte<br></br> Datenverwaltung.</p>
                     </div>
                     <div className="bg-white px-4 ">
-                      <h3 className="text-2xl lg:text-left mb-2 lg:font-[28px] lg:leading-[37px] font-[900] uppercase">Benutzerunterstützung</h3>
-                      <p className="text-lg lg:text-left mb-4 lg:text-[20px] lg:leading-[22px] font-matt font-light">Schulungen und Support, um Ihr Team zu<br></br> befähigen, Salesforce optimal zu nutzen.</p>
+                      <h3 className="text-[24px] text-left mb-2 lg:font-[28px] lg:leading-[37px] font-[900] uppercase">Benutzerunterstützung</h3>
+                      <p className="text-[16px] text-left mb-4 lg:text-[20px] lg:leading-[22px] font-matt font-light">Schulungen und Support, um Ihr Team zu<br></br> befähigen, Salesforce optimal zu nutzen.</p>
                     </div>
                   </div>
 
                   {/* Button Section */}
-                  <div className="mt-6 ml-4 text-center lg:text-center">
+                  <div className="mt-6 lg:ml-4 text-center lg:text-center">
                   <Link href="/contact" className="block">
 
                   <button className="relative group w-full max-w-[512px] h-[76px] flex items-center justify-center overflow-hidden">
@@ -186,11 +189,11 @@ const Salesforce = () => {
         </section>
 
 
-        <section className="max-w-[1280px] container mx-auto p-4 flex flex-col lg:flex-row items-center lg:space-x-4 lg:mb-[300px]">
+        <section className="max-w-[1280px] container mx-auto p-4 flex flex-col lg:flex-row items-center lg:space-x-4 lg:mb-[300px] mb-[160px]">
                 {/* Left Section (Text and Image) */}
                 <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-start mb-2 lg:mb-0">
-                  <h2 className="text-4xl lg:-[48px] lg:leading-[50px] font-matt font-[700]">Rundum-Salesforce-Services</h2>
-                  <p className="text-lg mb-2 text-center lg:text-left lg:text-[17px] lg:leading-[30px] font-[300] font-matt">
+                  <h2 className="text-[23px] lg:text-[48px] lg:leading-[50px] font-matt font-[700] mb-2">Rundum-Salesforce-Services</h2>
+                  <p className="text-[16px] mb-2 text-center lg:text-left lg:text-[17px] lg:leading-[30px] font-[300] font-matt">
                   Für ein nahtloses Erlebnis bieten wir umfassende Services
                   </p>
                   <Image
@@ -198,29 +201,29 @@ const Salesforce = () => {
                     alt="Salesforce Beratung"
                     width={800} 
                     height={800} 
-                    className="w-full mx-auto"
+                    className="w-full mx-auto mt-2 lg:mt-0"
                   />
                 </div>
 
                 {/* Right Section (Service Boxes) */}
                 <div className="w-full lg:w-1/2">
                   <div className="grid grid-cols-1 lg:grid-cols-1 gap-6">
-                    <div className="bg-white px-4 ">
-                      <h3 className="text-2xl lg:text-left mb-2 lg:font-[28px] lg:leading-[37px] font-[900] uppercase ">Implementierung</h3>
-                      <p className="text-lg lg:text-left mb-4 lg:text-[20px] lg:leading-[22px] font-matt font-light ">Individuelle Lösungen, perfekt<br></br> abgestimmt auf Ihre Anforderungen.</p>
+                    <div className="bg-white px-4 mt-[40px] lg:mt-0">
+                      <h3 className="text-[24px] text-left mb-2 lg:font-[28px] lg:leading-[37px] font-[900] uppercase ">Implementierung</h3>
+                      <p className="text-[16px] text-left mb-4 lg:text-[20px] lg:leading-[22px] font-matt font-light ">Individuelle Lösungen, perfekt<br></br> abgestimmt auf Ihre Anforderungen.</p>
                     </div>
                     <div className="bg-white px-4 ">
-                      <h3 className="text-2xl lg:text-left mb-2 lg:font-[28px] lg:leading-[37px] font-[900] uppercase">Anpassung</h3>
-                      <p className="text-lg lg:text-left mb-4 lg:text-[20px] lg:leading-[22px] font-matt font-light">Standard und Custom Konfigurationen<br></br> zur Steigerung der Effizienz.</p>
+                      <h3 className="text-[24px] text-left mb-2 lg:font-[28px] lg:leading-[37px] font-[900] uppercase">Anpassung</h3>
+                      <p className="text-[16px] text-left mb-4 lg:text-[20px] lg:leading-[22px] font-matt font-light">Standard und Custom Konfigurationen<br></br> zur Steigerung der Effizienz.</p>
                     </div>
-                    <div className="bg-white px-4 ">
-                      <h3 className="text-2xl lg:text-left mb-2 lg:font-[28px] lg:leading-[37px] font-[900] uppercase">Integration</h3>
-                      <p className="text-lg lg:text-left mb-4 lg:text-[20px] lg:leading-[22px] font-matt font-light">Nahtlose Integration von Salesforce in<br></br> Ihre bestehenden Systeme.</p>
+                    <div className="bg-white px-4">
+                      <h3 className="text-[24px] text-left mb-2 lg:font-[28px] lg:leading-[37px] font-[900] uppercase">Integration</h3>
+                      <p className="text-[16px] text-left mb-4 lg:text-[20px] lg:leading-[22px] font-matt font-light">Nahtlose Integration von Salesforce in<br></br> Ihre bestehenden Systeme.</p>
                     </div>
                   </div>
 
                   {/* Button Section */}
-                  <div className="mt-6 ml-4 text-center lg:text-center">
+                  <div className="mt-6 lg:ml-4 text-center lg:text-center">
                   <Link href="/contact" className="block">
 
                   <button className="relative group w-full max-w-[512px] h-[76px] flex items-center justify-center overflow-hidden">
@@ -258,18 +261,18 @@ const Salesforce = () => {
                 </div>
         </section>
 
-            <section className='lg:mb-[300px]'>
-              <h2 className='text-xl lg:text-[80px] lg:leading-[80px] font-matt font-[700]'>
+            <section className='lg:mb-[300px] mb-[160px]'>
+              <h2 className='text-[35px] leading-[40px] lg:text-[80px] lg:leading-[80px] font-matt font-[700]'>
               Warum the eksperts für Salesforce?
               </h2>
               <SalesforceTab/>
             </section>
            
-            <section className="container mx-auto py-12 px-6 text-center lg:mb-[200px]">
-              <h2 className="text-xl font-[700] lg:text-[80px] lg:leading-[80px] font-matt text-black mb-6">
+            <section className="container mx-auto lg:py-12 lg:px-6 text-center lg:mb-[300px] mb-[160px]">
+              <h2 className="text-[35px] font-[700] lg:text-[80px] lg:leading-[80px] font-matt text-black mb-6">
               Bereit, Salesforce zu Ihrem Erfolgsfaktor zu machen?
               </h2>
-              <p className="text-lg lg:text-[20px] lg:leading-[33px] font-matt font-[300] mb-8 lg:px-24">
+              <p className="text-[16px] lg:text-[20px] lg:leading-[33px] font-matt font-[300] mb-8 lg:px-24">
               Wir begleiten Sie von der Planung bis zur Umsetzung – und darüber hinaus.<br>
               </br> Kontaktieren Sie uns noch heute und starten Sie Ihre Salesforce-Reise mit <br></br> einem starken Partner an Ihrer Seite. 
               </p>
@@ -330,8 +333,8 @@ const Salesforce = () => {
             </section>
 
 
-            <section className="container mx-auto py-6 text-center lg:mb-[200px]">
-                <h2 className="text-4xl font-[900] lg:text-[28px] lg:leading-[37px] font-matt text-black mb-16 uppercase ">
+            <section className="container mx-auto lg:py-6 text-center lg:mb-[300px] mb-[160px]">
+                <h2 className="text-[28px] font-[900] lg:text-[28px] leading-[37px] font-matt text-black lg:mb-16 mb-8 uppercase ">
                 Weitere Services?
                 </h2>
                 
