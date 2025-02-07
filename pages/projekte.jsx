@@ -25,10 +25,10 @@ const Projekte = () => {
         
         {/* Main Heading */}
         <div className="w-full max-w-[1280px] mx-auto text-center my-16 lg:mt-[170px] lg:mb-[145px]">
-          <h1 className="text-6xl lg:text-[174px] lg:leading-[158px] font-matt font-[900] tracking-tight uppercase">
+          <h1 className="text-[100px] leading-[90px] lg:text-[174px] lg:leading-[158px] font-matt font-[900] tracking-tight uppercase">
           Unsere Arbeit
           </h1>
-          <p className="font-matt font-[300] sm:text-lg lg:text-[22px] lg:leading-[33px] mt-1 text-[#00000]">
+          <p className="font-matt font-[300] text-[22px] leading-[33px] mt-1 text-[#00000]">
           spricht für sich!
           </p>
         </div>
