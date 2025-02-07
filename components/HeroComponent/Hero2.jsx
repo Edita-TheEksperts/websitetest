@@ -137,7 +137,7 @@ const Hero = ({ setHeroVisible }) => {
             <div className="lg:hidden block flex flex-col items-center mt-2 md:mt-0">
                 <div className="flex gap-0 mb-4">
                     <video
-                    src="/images/Alterswohnhilfe.mp4"
+                    src="/images/SMM.mp4"
                     alt="Video 1"
                     width={184}
                     height={184}
@@ -147,7 +147,7 @@ const Hero = ({ setHeroVisible }) => {
                     muted
                     />
                     <video
-                    src="/images/Nettoo 2.mp4"
+                    src="/images/Your Creative Partner and more.mov"
                     alt="Video 2"
                     width={184}
                     height={184}
@@ -164,7 +164,7 @@ const Hero = ({ setHeroVisible }) => {
                 </div>
                 <div className="flex gap-0 mt-[-30px]">
                     <video
-                    src="/images/Eco Bautec.mp4"
+                    src="/images/Scene 02.mp4"
                     alt="Video 3"
                     width={184}
                     height={184}
@@ -179,8 +179,8 @@ const Hero = ({ setHeroVisible }) => {
                     loop
                     muted
                     />
-                    <video
-                    src="/images/Hiper high res.mp4"
+                    <img
+                    src="/images/The-eksperts-short-.png"
                     alt="Video 4"
                     width={184}
                     height={184}
@@ -198,11 +198,11 @@ const Hero = ({ setHeroVisible }) => {
                 </div>
 
 
-          <p className="font-matt mt-4 text-[16px] leading-[24px] lg:text-[20px] lg:leading-[24px] font-[300] lg:font-[100]  max-w-2xl mx-auto md:mx-0 uppercase text-black">
+          <p className="font-matt mt-6 lg:mt-8 text-[16px] leading-[24px] lg:text-[20px] lg:leading-[24px] font-[300] lg:font-[100]  max-w-2xl mx-auto md:mx-0 uppercase text-black">
            Gemeinsam digitale Lösungen schaffen <br></br>
            - Jetzt unverbindlich beraten lassen!
           </p>
-          <div className="mt-2">
+          <div className="mt-4">
           <button className="group relative font-matt flex items-center justify-center px-1 py-1 bg-transparent border-2 border-[#0009FF] text-[#0009FF] rounded-[10px] font-medium text-[20px] transition duration-100 ease-in-out overflow-hidden">
             {/* SVG Background */}
             <div className="w-14 h-14 bg-[#0009FF] rounded-[10px] flex items-center justify-center text-white transform scale-x-100 origin-left transition-all duration-500 ease-in-out group-hover:scale-x-100 relative z-20">
