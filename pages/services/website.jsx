@@ -75,7 +75,7 @@ const Website = () => {
           </section>
           
            
-            <section className="container mx-auto py-12 lg:px-6 text-center lg:mb-[300px] mb-[160px]">
+            <section className="container mx-auto lg:py-12 lg:px-6 text-center lg:mb-[300px] mb-[160px]">
               <h2 className="lg:block hidden text-xl font-[700] lg:text-[80px] lg:leading-[80px] font-matt text-black mb-6">
               Sind Sie bereit, Ihre neue Website zu starten?
               </h2>
@@ -195,4 +195,3 @@ const Website = () => {
 
 
 export default Website;
-
