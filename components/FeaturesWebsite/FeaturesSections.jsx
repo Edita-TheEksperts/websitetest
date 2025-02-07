@@ -36,7 +36,7 @@ export default function FeaturesSection() {
     ];
   
     return (
-      <div className="py-6 px-4 lg:px-2 max-w-[1280px] mx-auto">
+      <div className="lg:py-6 lg:px-2 max-w-[1280px] mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
           {features.map((feature) => (
             <div
@@ -46,10 +46,12 @@ export default function FeaturesSection() {
               <h3 className="text-[#000] font-matt text-[22px] font-[900] leading-[37px] uppercase mb-4">
                 {feature.title}
               </h3>
-              <p className="text-[#000] font-matt text-[20px] font-[300] leading-[33px] mb-6">
+              <div className="flex flex-row lg:flex-col space-x-6 lg:space-x-0">
+              <p className="text-[#000] font-matt text-[16px] lg:text-[20px] leading-[24px] font-[300] lg:leading-[33px] mb-6">
                 {feature.description}
               </p>
-              <div className="mt-auto flex justify-center items-center w-full">{feature.icon}</div>
+              <div className="mt-auto flex lg:justify-center lg:items-center w-full">{feature.icon}</div>
+              </div>
               </div>
           ))}
         </div>
