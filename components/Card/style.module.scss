@@ -11,7 +11,7 @@
     margin-top: 110px;
     position: relative;
     top: 25%;
-    height: 650px;
+    height: 700px;
     width: 1280px;
     border-radius: 20px;
     padding: 40px;
@@ -23,12 +23,12 @@
       gap: 50px;
       .description {
         width: 55%;
-        height: 400px;
+        height: 450px;
         margin-top: 10px;
         display: flex;
         flex-direction: column;
         position: relative;
-        top: 10%;
+        top: 5%;
         span {
           display: flex;
           align-items: center;
@@ -38,6 +38,7 @@
         }
       }
       .imageContainer {
+        display: none; /* Hidden by default */
         margin-top: 0px;
         margin-left: 40px;
         position: relative;
@@ -46,9 +47,15 @@
         border-radius: 25px;
         justify-content: center;
         align-items: center;
-        display: flex; 
         overflow: hidden;
       }
+      
+      @media (min-width: 1024px) { /* Tailwind's lg breakpoint */
+        .imageContainer {
+          display: flex; /* Show only on lg and larger */
+        }
+      }
+      
       
       .inner {
         width: 100%;
@@ -115,5 +122,15 @@
   .description {
     width: 100%; /* Full width for description */
     margin-top: 20px; /* Space between image and description */
+  }
+}
+
+.imageContainer {
+  display: none; /* Hidden by default */
+}
+
+@media (min-width: 1024px) { /* 1024px is Tailwind's `lg` breakpoint */
+  .imageContainer {
+    display: block;
   }
 }
