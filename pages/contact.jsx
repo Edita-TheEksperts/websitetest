@@ -142,17 +142,20 @@ export default function Contact() {
         };
 
     return (
-      <div className="bg-white min-h-screen p-4 text-gray-900 font-matt">
+      <div className="bg-white min-h-screen p-4 lg:mt-[100px] text-gray-900 font-matt">
         {/* Contact Form Section */}
               <div className="font-matt flex flex-col lg:flex-row items-top justify-between max-w-[1280px] mx-auto space-y-10 lg:space-y-0 lg:space-x-16">
           {/* Left Side: Text */}
           <div className="lg:w-1/2 space-y-10">
-            <h1 className="text-5xl lg:text-[80px] font-normal lg:leading-[85px] leading-tight text-gray-800">
+            <h1 className=" text-[45px] lg:text-[80px] lg:block hidden font-[900] text-center lg:text-left lg:font-normal lg:leading-[85px] leading-tight text-black">
+              Wir freuen uns auf Ihre Nachricht
+            </h1>
+            <h1 className="lg:hidden block text-[45px] lg:text-[80px] uppercase font-[900] text-center leading-tight text-black !mt-[100px] !mb-[160px]">
               Wir freuen uns auf Ihre Nachricht
             </h1>
            
-            <div className="bg-[#FAFAFA] p-4 rounded-[20px] space-y-4">
-              <div className="flex items-center space-x-4">
+            <div className="lg:bg-[#FAFAFA] p-4 rounded-[20px] space-y-4 lg:block hidden">
+              <div className="flex items-center space-x-4 ">
                 <img
                   src="/images/FisnikSalihu-theeksperts.png"
                   alt="Fisnik Salihu"
@@ -190,12 +193,11 @@ export default function Contact() {
                   Gespräch vereinbaren.
                 </a>
               </div>
-
-            </div>
+              </div>
           </div>
 
           {/* Right Side: Form */}
-          <div className="lg:w-1/2 bg-[#FAFAFA] px-2 py-4 rounded-[20px]  space-y-6">
+          <div className="lg:w-1/2 lg:bg-[#FAFAFA] px-2 lg:py-4 rounded-[20px] space-y-6">
         <form onSubmit={handleSubmit} className="space-y-6">
           {/* Name and Unternehmen */}
           <div className="flex flex-col lg:flex-row lg:space-x-4 space-y-6 lg:space-y-0">
@@ -348,17 +350,58 @@ export default function Contact() {
             </button>
           </form>
         </div>
+        <div className="lg:bg-[#FAFAFA] p-2 rounded-[20px] space-y-4 lg:hidden block !mt-[160px]">
+              <div className="flex items-center space-x-4 ">
+                <img
+                  src="/images/FisnikSalihu-theeksperts.png"
+                  alt="Fisnik Salihu"
+                  className="rounded-full w-20 h-20 object-cover border-2 border-[#0009FF] "
+                />
+                <h2 className="font-semibold text-xl">
+                   Hi, Ich bin Fisnik!
+                  Lassen Sie uns gemeinsam
+                  über Ihr Projekt sprechen.
+                </h2>
+              </div>
+              <p className=" text-gray-600">
+                "Ich stehe dafür, dass unsere Lösungen nicht nur heute funktionieren,
+                sondern auch Ihre Zukunft sichern."
+              </p>
+              <div className="flex flex-col items-center text-center space-y-4">
+                {/* Email Link */}
+                <a
+                  href="mailto:fisnik.salihu@the-eksperts.com"
+                  className="text-white text-[20px] leading-[33px] px-[99px] py-3 rounded-full bg-[#0009FF] hover:underline"
+                >
+                  Email an Fisnik
+                </a>
+                
+                {/* Separator Text */}
+                <p className=" text-black text-[20px] leading-[33px] font-300">oder ein</p>
+                
+                {/* Calendly Link */}
+                <a
+                  href="https://calendly.com/fisnik-salihu-the-eksperts/30min" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white text-[20px] leading-[33px] px-16 py-3 rounded-full bg-[#0009FF] hover:underline"
+                >
+                  Gespräch vereinbaren.
+                </a>
+              </div>
+              </div>
       </div>
+      
 
 
-          <div className="max-w-[1280px] mx-auto mt-20">
-            <h2 className="font-matt text-3xl font-bold mb-10">FAQs</h2>
+          <div className="max-w-[1280px] mx-auto mt-[160px] lg:mt-[300px]">
+            <h2 className="font-matt text-center lg:text-left text-[24px] lg:text-3xl font-[900] lg:font-bold mb-10">FAQs</h2>
             <div className="space-y-4">
               {faqs.map((faq, index) => (
-                <div key={index} className="border-b border-gray-300 pb-4">
+                <div key={index} className="lg:border-b lg:border-gray-300 p-4 lg:pb-4 bg-[#F1F1F1] lg:bg-transparent rounded-lg">
                   <button
                     onClick={() => toggleFaq(index)}
-                    className="font-matt w-full text-left text-lg font-semibold focus:outline-none flex justify-between items-center"
+                    className="font-matt w-full text-left text-[24px] lg:text-lg font-[400] lg:font-semibold focus:outline-none flex justify-between items-center"
                   >
                     {faq.question}
                     <span>{faqOpen === index ? '-' : '+'}</span>
@@ -374,9 +417,12 @@ export default function Contact() {
             </div>
           </div>
 
-          <div className="py-12 mt-20 font-matt">
-            <h2 className="font-matt text-2xl md:text-4xl font-bold text-center text-gray-800 mb-10">
+          <div className=" lg:mt-[300px] font-matt mt-[160px] mb-[160px] lg:mb-[300px]">
+            <h2 className="font-matt text-[40px] md:text-4xl font-bold text-center text-gray-800 mb-10 lg:block hidden">
               Kaffee? Hier finden Sie uns!
+            </h2>
+            <h2 className="font-matt text-[35px] md:text-4xl font-bold text-center text-black mb-4 lg:hidden block">
+              Kaffee? <br></br>Hier finden Sie uns!
             </h2>
             
             <div className="font-matt max-w-[1280px] mx-auto grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8">
@@ -397,7 +443,7 @@ export default function Contact() {
                     backgroundPosition: "center",
                   }}
                 ></div>
-                <div className="font-matt text-center group-hover:text-blue-600 transition-all duration-300">
+                <div className="font-matt  lg:text-center group-hover:text-blue-600 transition-all duration-300">
                   <h3 className="font-matt font-semibold text-lg sm:text-xl">
                       Schweiz
                   </h3>
@@ -422,7 +468,7 @@ export default function Contact() {
                     }}
                   ></div>
 
-                  <div className="font-matt text-center group-hover:text-blue-600 transition-all duration-300">
+                  <div className="font-matt lg:text-center group-hover:text-blue-600 transition-all duration-300">
                     <h3 className="font-matt font-semibold text-lg sm:text-xl">
                         Kosovë
                     </h3>
@@ -448,7 +494,7 @@ export default function Contact() {
                   }}
                 ></div>
                 {/* Text */}
-                <div className="font-matt text-center group-hover:text-blue-600 transition-all duration-300">
+                <div className="font-matt lg:text-center group-hover:text-blue-600 transition-all duration-300">
                   <h3 className="font-matt font-semibold text-lg sm:text-xl">
                    
                       Weltweit
