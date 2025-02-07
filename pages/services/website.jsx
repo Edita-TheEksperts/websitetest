@@ -22,55 +22,70 @@ const Website = () => {
       <main className="max-w-[1280px] mx-auto p-4 lg:p-2 text-center">
         
         {/* Main Heading */}
-        <div className="w-full max-w-[1280px] mx-auto text-center my-16 lg:mt-[250px] lg:mb-[300px]">
-          <h1 className="text-6xl lg:text-[174px] lg:leading-[158px] font-matt font-[900] tracking-tight mb-8">
+        <div className="w-full max-w-[1280px] mx-auto text-center mt-[100px] mb-[160px] lg:mt-[250px] lg:mb-[300px]">
+          <h1 className="lg:block hidden text-6xl lg:text-[174px] lg:leading-[158px] font-matt font-[900] tracking-tight mb-8">
           WEBSITE
           </h1>
-          <p className="font-matt font-[300] sm:text-lg lg:text-[22px] lg:leading-[33px] mt-4 text-gray-900">
+          <h1 className="lg:hidden block text-[164px] leading-[129px] font-matt font-[900] tracking-tight mb-2 lg:mb-8">
+          WEB<br></br>SITE
+          </h1>
+          <p className="font-matt font-[300] text-[16px] leading-[33px] lg:mt-4 text-gray-900">
           Ihre digitale Visitenkarte
           </p>
         </div>
           
 
-          <section className='lg:mb-[300px]'>
-          <h2 className='text-xl lg:text-[80px] lg:leading-[80px] font-matt font-[700] lg:mb-6'>
+          <section className='lg:mb-[300px] mb-[160px]'>
+          <h2 className='text-[24px] lg:text-[80px] lg:leading-[80px] font-matt font-[700] mb-2 lg:mb-6'>
           Unser Ansatz
           </h2>
-          <p className='text-lg lg:text-[20px] lg:leading-[26px] font-[300] font-matt lg:mb-[10px]'>
+          <p className='lg:block hidden text-[16px] lg:text-[20px] lg:leading-[26px] font-[300] font-matt lg:mb-[10px]'>
           Wir wissen, dass jedes Unternehmen einzigartig ist. Deshalb entwickeln wir<br></br> Websites, die individuell auf Ihre Anforderungen zugeschnitten sind. 
+          </p>
+          <p className='lg:hidden block text-[15px] lg:text-[20px] lg:leading-[26px] font-[300] font-matt lg:mb-[10px] mb-[32px]'>
+          Wir wissen, dass jedes Unternehmen einzigartig <br></br> ist. Deshalb entwickeln wir Websites, die individuell <br></br> auf Ihre Anforderungen zugeschnitten sind. 
           </p>
           
            <Visionsection/>
           </section>
         
            
-            <section className='lg:mb-[300px]'>
-              <h2 className='text-xl lg:text-[80px] lg:leading-[80px] font-matt font-[700] mb-6'>
+            <section className='lg:mb-[300px] mb-[160px]'>
+              <h2 className='lg:block hidden text-[40px] lg:text-[80px] lg:leading-[80px] font-matt font-[700] mb-6'>
               Warum eine Website mit the eksperts?
               </h2>
-              <p className='text-lg lg:text-[20px] lg:leading-[26px] font-[300] font-matt lg:mb-[60px] '>
+              <h2 className='lg:hidden block text-[40px] leading-[48px] font-matt font-[700] mb-6'>
+              Warum eine Website mit<br></br> the eksperts?
+              </h2>
+              <p className='text-[16px] lg:text-[20px] lg:leading-[26px] font-[300] font-matt mb-[60px] '>
                 Eine gute Website ist eine Investition in Ihre Zukunft. Hier sind einige Gründe,<br></br> warum Sie sich für uns entscheiden sollten: 
               </p>
               <FeaturesSection/>
             </section>
 
             
-            <section className='lg:mb-[300px]'>
-          <h2 className='text-xl lg:text-[80px] lg:leading-[80px] font-matt font-[700] lg:mb-6'>
+            <section className='lg:mb-[300px] mb-[160px]'>
+          <h2 className='text-[40px] lg:block hidden lg:text-[80px] lg:leading-[80px] font-matt font-[700] lg:mb-6'>
           Unsere Leistungen im Überblick 
+          </h2>
+          <h2 className='text-[36px] lg:hidden block leading-[48px] font-matt font-[700] lg:mb-6 mb-8'>
+          Unsere Leistungen <br></br> im Überblick 
           </h2>
           <WebsiteLeistungen/>
           </section>
           
            
-            <section className="container mx-auto py-12 px-6 text-center lg:mb-[300px]">
-              <h2 className="text-xl font-[700] lg:text-[80px] lg:leading-[80px] font-matt text-black mb-6">
+            <section className="container mx-auto py-12 lg:px-6 text-center lg:mb-[300px] mb-[160px]">
+              <h2 className="lg:block hidden text-xl font-[700] lg:text-[80px] lg:leading-[80px] font-matt text-black mb-6">
               Sind Sie bereit, Ihre neue Website zu starten?
               </h2>
-              <p className="text-lg lg:text-[20px] lg:leading-[33px] font-matt font-[300] mb-8 lg:px-24">
+              <h2 className="lg:hidden block text-[37px] leading-[48px] font-[700] font-matt text-black mb-6">
+              Sind Sie bereit, Ihre <br></br> neue Website zu starten?
+              </h2>
+              <p className="text-[16px] lg:text-[20px] lg:leading-[33px] font-matt font-[300] mb-8 lg:px-24">
               Lassen Sie uns gemeinsam etwas Grossartiges schaffen. Kontaktieren Sie uns <br></br> und erzählen Sie uns von Ihrem Projekt – wir freuen uns darauf, mit Ihnen <br></br> zusammenzuarbeiten! 
               </p>
-              <div className="mt-8 items-center justify-center flex lg:mt-[50px]">
+              <div className="items-center justify-center flex mt-[50px]">
               <button className="group relative font-matt flex items-center justify-center px-1 py-1 bg-transparent border-2 border-[#0009FF] text-[#0009FF] rounded-[10px] font-medium text-[20px] transition duration-100 ease-in-out overflow-hidden">
             {/* SVG Background */}
             <div className="w-14 h-14 bg-[#0009FF] rounded-[10px] flex items-center justify-center text-white transform scale-x-100 origin-left transition-all duration-500 ease-in-out group-hover:scale-x-100 relative z-20">
@@ -124,8 +139,8 @@ const Website = () => {
             </section>
 
 
-            <section className="container mx-auto py-4 px-4 text-center lg:mb-[300px]">
-                <h2 className="text-4xl font-[900] lg:text-[28px] lg:leading-[37px] font-matt text-black mb-6 uppercase ">
+            <section className="container mx-auto py-4 px-4 text-center lg:mb-[300px] mb-[160px]">
+                <h2 className="text-[28px] font-[900] lg:text-[28px] lg:leading-[37px] font-matt text-black mb-6 uppercase ">
                 Weitere Services?
                 </h2>
                 
@@ -139,7 +154,7 @@ const Website = () => {
                       className="w-full h-auto mb-6"
                     />
                     <div>
-                    <h3 className="text-xl font-matt font-[900] text-black mb-2 lg:text-[28px] lg:leading-[37px] ">GRAPHIC DESIGN</h3>
+                    <h3 className="text-[24px] font-matt font-[900] text-black mb-2 lg:text-[28px] lg:leading-[37px] ">GRAPHIC DESIGN</h3>
                     </div>
                     </Link>
                   </div>
@@ -153,7 +168,7 @@ const Website = () => {
                       className="w-full h-auto mb-6"
                     />
                     <div>
-                    <h3 className="text-xl font-matt font-[900] text-black mb-2 lg:text-[28px] lg:leading-[37px]">SALESFORCE</h3>
+                    <h3 className="text-[24px] font-matt font-[900] text-black mb-2 lg:text-[28px] lg:leading-[37px]">SALESFORCE</h3>
                     </div>
                     </Link>
                   </div>
@@ -167,7 +182,7 @@ const Website = () => {
                       className="w-full h-auto mb-6"
                     />
                     <div>
-                      <h3 className="text-xl font-matt font-[900] text-black mb-2 lg:text-[28px] lg:leading-[37px]">BOOK YOUR EKSPERT</h3>
+                      <h3 className="text-[24px] font-matt font-[900] text-black mb-2 lg:text-[28px] lg:leading-[37px]">BOOK YOUR EKSPERT</h3>
                     </div>
                   </Link>
                 </div>
@@ -180,3 +195,4 @@ const Website = () => {
 
 
 export default Website;
+
