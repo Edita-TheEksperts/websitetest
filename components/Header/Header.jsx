@@ -40,7 +40,7 @@ const Header = () => {
     >
       <div className="max-w-[1280px] mx-auto flex items-center justify-between">
         <div className="flex items-center space-x-2">
-          <Link href="/">
+          <Link href="/" className='hidden lg:block'>
           <svg  xmlns="http://www.w3.org/2000/svg"
             version="1.1"
             viewBox="0 0 488.1 68.2"
@@ -73,6 +73,27 @@ const Header = () => {
           </g>
         </svg>
           </Link>
+          <Link href="/" className='lg:hidden block '>
+          <svg 
+    xmlns="http://www.w3.org/2000/svg"
+    version="1.1"
+    viewBox="0 0 185.9 185.9"
+    width="26"
+    height="25"
+    fill="currentColor"
+  >
+    <g>
+      <g id="Layer_1">
+        <g>
+          <rect y="119.2" width="66.7" height="66.7"/>
+          <path d="M66.7,0v109.5h-27.8C17.4,109.5,0,92.1,0,70.6V0h66.7Z"/>
+          <path d="M185.9,119.2v66.7h-72.8c-20.3,0-36.7-16.4-36.7-36.7v-30h109.5Z"/>
+          <path d="M185.7,47.2l-62.3,62.3h-47v-31.2c0-10.3,4.1-20.2,11.4-27.5L138.5,0l47.2,47.2Z"/>
+        </g>
+      </g>
+    </g>
+  </svg>
+                    </Link>
         </div>
 
         {/* Main Navigation */}
@@ -159,7 +180,7 @@ const Header = () => {
           aria-label="Toggle menu"
         >
           <svg
-            className="h-6 w-6"
+            className="h-8 w-8"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
