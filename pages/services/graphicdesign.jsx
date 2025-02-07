@@ -21,47 +21,53 @@ const GraphicDesign = () => {
       <main className="max-w-[1280px] mx-auto p-4 lg:p-2 text-center">
         
         {/* Main Heading */}
-        <div className="w-full max-w-[1280px] mx-auto text-center my-16 lg:mt-[170px] lg:mb-[300px]">
-          <h1 className="text-6xl lg:text-[174px] lg:leading-[158px] font-matt font-[900] tracking-tight mb-8 uppercase">
+        <div className="w-full max-w-[1280px] mx-auto text-center lg:my-16 mt-[100px] lg:mt-[170px] lg:mb-[300px] mb-[160px]">
+          <h1 className="text-[82px] leading-[70px] lg:text-[174px] lg:leading-[158px] font-matt font-[900] tracking-tight lg:mb-8 uppercase">
           Graphic DESIGN
           </h1>
-          <p className="font-matt font-[300] sm:text-lg lg:text-[22px] lg:leading-[33px] mt-4 text-gray-900">
+          <p className="font-matt font-[300] text-[16px] lg:text-[22px] leading-[33px] mt-4 text-gray-900">
           Visuelle Kommunikation, die Eindruck macht 
           </p>
         </div>
           
 
-          <section className='lg:mb-[300px]'>
-          <h2 className='text-xl lg:text-[80px] lg:leading-[80px] font-matt font-[700] lg:mb-6'>
+          <section className='lg:mb-[300px] mb-[160px]'>
+          <h2 className='text-[24px] lg:text-[80px] lg:leading-[80px] font-matt font-[700] lg:mb-6'>
           Unser Ansatz
           </h2>
-          <p className='text-lg lg:text-[20px] lg:leading-[26px] font-[300] font-matt lg:mb-[10px]'>
+          <p className='lg:block hidden text-[16px] lg:text-[20px] lg:leading-[26px] font-[300] font-matt lg:mb-[10px]'>
           Wir vereinen kreatives Denken mit strategischem Design, um visuelle Inhalte zu schaffen, die Ihre <br></br> Zielgruppe erreichen und inspirieren. 
+          </p>
+          <p className='lg:hidden block text-[15px] lg:text-[20px] text-center leading-[26px] font-[300] font-matt lg:mb-[10px]'>
+          Wir vereinen kreatives Denken mit strategischem Design, um visuelle Inhalte zu schaffen, die Ihre Zielgruppe erreichen und inspirieren. 
           </p>
           
           <VisionDesign/>
           </section>
         
            
-            <section className='lg:mb-[300px] bg-[#F1F1F1] rounded-lg'>
+            <section className='lg:mb-[300px] bg-[#F1F1F1] rounded-lg mb-[160px]'>
              <GraphicDesignSection/>
               
             </section>
 
             
-            <section className='lg:mb-[300px]'>
-          <h2 className='text-xl lg:text-[80px] lg:leading-[80px] font-matt font-[700] lg:mb-8'>
+            <section className='lg:mb-[300px] mb-[160px]'>
+          <h2 className='text-[38px] lg:text-[80px] lg:leading-[80px] font-matt font-[700] lg:mb-8'>
           Unsere Leistungen im Überblick 
           </h2>
           <DesignLeistungen/>
           </section>
           
            
-            <section className="container mx-auto py-12 px-6 text-center lg:mb-[300px]">
-              <h2 className="text-xl font-[700] lg:text-[76px] lg:leading-[80px] font-matt text-black mb-6">
+            <section className="container mx-auto py-12 lg:px-6 text-center lg:mb-[300px] mb-[160px]">
+              <h2 className="lg:block hidden text-xl font-[700] lg:text-[76px] lg:leading-[80px] font-matt text-black mb-6">
               Bereit für ein Design, <br></br>das begeistert? 
               </h2>
-              <p className="text-lg lg:text-[20px] lg:leading-[33px] font-matt font-[300] mb-8 lg:px-24">
+              <h2 className="lg:hidden block font-[700] text-[40px] leading-[48px] font-matt text-black mb-6">
+              Bereit für ein Design, das begeistert? 
+              </h2>
+              <p className="text-[16px] leading-[22px] lg:text-[20px] lg:leading-[33px] font-matt font-[300] mb-8 lg:px-24">
               Lassen Sie uns gemeinsam an Ihrem visuellen Auftritt arbeiten. Kontaktieren Sie uns noch heute – wir freuen uns auf Ihre Vision!   
               </p>
               <div className="mt-8 items-center justify-center flex lg:mt-[50px]">
@@ -118,8 +124,8 @@ const GraphicDesign = () => {
             </section>
 
 
-            <section className="container mx-auto py-4 px-4 text-center lg:mb-[300px]">
-                <h2 className="text-4xl font-[900] lg:text-[28px] lg:leading-[37px] font-matt text-black mb-6 uppercase ">
+            <section className="container mx-auto py-4 px-4 text-center lg:mb-[300px] mb-[160px]">
+                <h2 className="text-[28px] font-[900] lg:text-[28px] lg:leading-[37px] font-matt text-black mb-6 uppercase ">
                 Weitere Services?
                 </h2>
 
@@ -135,7 +141,7 @@ const GraphicDesign = () => {
                       className="w-full h-auto mb-6"
                     />
                     <div>
-                    <h3 className="text-xl font-matt font-[900] text-black mb-2 lg:text-[28px] lg:leading-[37px]">SALESFORCE</h3>
+                    <h3 className="text-[24px] font-matt font-[900] text-black mb-2 lg:text-[28px] lg:leading-[37px]">SALESFORCE</h3>
                     </div>
                     </Link>
                   </div>
@@ -148,7 +154,7 @@ const GraphicDesign = () => {
                       className="w-full h-auto mb-6"
                     />
                     <div>
-                      <h3 className="text-xl font-matt font-[900] text-black mb-2 lg:text-[28px] lg:leading-[37px]">CUSTOM DEVELOPMENT</h3>
+                      <h3 className="text-[24px] font-matt font-[900] text-black mb-2 lg:text-[28px] lg:leading-[37px]">CUSTOM DEVELOPMENT</h3>
                     </div>
                   </Link>
                 </div>
@@ -164,7 +170,7 @@ const GraphicDesign = () => {
                       className="w-full h-auto mb-6"
                     />
                     <div>
-                    <h3 className="text-xl font-matt font-[900] text-black mb-2 lg:text-[28px] lg:leading-[37px]">WEBSITE</h3>
+                    <h3 className="text-[24px] font-matt font-[900] text-black mb-2 lg:text-[28px] lg:leading-[37px]">WEBSITE</h3>
 
                       </div>
                     </Link>
