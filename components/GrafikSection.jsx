@@ -1,23 +1,26 @@
 export default function DesignSection() {
   
     return (
-        <section className="container mx-auto px-4 lg:px-2 flex flex-wrap lg:flex-nowrap gap-6 lg:gap-2 my-16">
+        <section className="container mx-auto px-4 lg:px-2 flex flex-wrap lg:flex-nowrap gap-6 lg:gap-2 lg:my-16">
         {/* Left Section */}
-        <div className="flex flex-col justify-start items-start text-left gap-4 flex-1">
-          <h2 className="text-4xl font-[700] lg:text-[58px] lg:leading-[67px] font-matt text-black mb-8">
+        <div className="flex flex-col lg:justify-start lg:items-start lg:text-left gap-4 flex-1">
+          <h2 className="text-[40px] leading-[46px] font-[700] lg:text-[58px] lg:leading-[67px] font-matt text-black lg:mb-8">
             Warum Grafikdesign mit the eksperts
           </h2>
-          <p className="text-lg lg:text-[20px] lg:leading-[28px] font-[300] font-matt text-gray-700">
+          <p className="lg:block hidden text-[16px] lg:text-[20px] lg:leading-[28px] font-[300] font-matt text-black">
           Unsere Designs sind nicht nur ästhetisch, sondern auch funktional. Hier sind einige Gründe, warum Sie <br></br> uns wählen sollten: 
+          </p>
+          <p className="lg:hidden block text-[16px] lg:text-[20px] lg:leading-[28px] font-[300] font-matt text-black">
+          Unsere Designs sind nicht nur ästhetisch, sondern auch funktional. Hier sind einige Gründe, warum Sie uns wählen sollten: 
           </p>
         </div>
       
         {/* Right Sections */}
-        <div className="flex gap-6 lg:gap-2 flex-wrap">
+        <div className="flex gap-2 lg:gap-2 flex-wrap mt-[30px] lg:mt-0">
           {/* Card 1 */}
           <div
-            className="flex flex-col justify-start items-start text-left gap-16 p-6 bg-[#F1F1F1] rounded-lg"
-            style={{ width: "285px", height: "500px", flexShrink: 0 }}
+            className="flex lg:flex-col justify-center lg:justify-start items-start text-left gap-[16px] lg:gap-16 lg:p-6 bg-[#F1F1F1] rounded-lg"
+            style={{ width: "285px",  maxHeight:"500px", minHeight:"200px", flexShrink: 0 }}
           >
             <div>
             <svg xmlns="http://www.w3.org/2000/svg" width="140" height="132" viewBox="0 0 140 132" fill="none">
@@ -36,8 +39,8 @@ export default function DesignSection() {
       
           {/* Card 2 */}
           <div
-            className="flex flex-col justify-start items-start text-left gap-16 p-6 bg-[#F1F1F1]  rounded-lg"
-            style={{ width: "285px", height: "500px", flexShrink: 0 }}
+            className="flex lg:flex-col justify-center lg:justify-start items-start text-left gap-[16px] lg:gap-16 lg:p-6 bg-[#F1F1F1] rounded-lg"
+            style={{ width: "285px", maxHeight:"500px", minHeight:"200px", flexShrink: 0 }}
           >
             <div>
             <svg xmlns="http://www.w3.org/2000/svg" width="132" height="132" viewBox="0 0 132 132" fill="none">
@@ -60,8 +63,8 @@ export default function DesignSection() {
       
           {/* Card 3 */}
           <div
-            className="flex flex-col justify-start items-start text-left gap-16 p-6 bg-[#F1F1F1] rounded-lg"
-            style={{ width: "285px", height: "500px", flexShrink: 0 }}
+            className="flex lg:flex-col justify-center lg:justify-start items-start text-left gap-[16px] lg:gap-16 lg:p-6 bg-[#F1F1F1] rounded-lg"
+            style={{ width: "285px", maxHeight:"500px", minHeight:"200px", flexShrink: 0 }}
           >
             <div>
             <svg xmlns="http://www.w3.org/2000/svg" width="132" height="132" viewBox="0 0 132 132" fill="none">
