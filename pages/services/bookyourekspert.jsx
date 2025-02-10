@@ -15,47 +15,50 @@ const Bookyourekspert = () => {
     return (
     <>
       <Head>
-        <title>Book your Ekspert - The Eksperts</title>
+        <title>Book your Ekspert - the eksperts</title>
       </Head>
       <main className="max-w-[1280px] mx-auto p-4 lg:p-2 text-center">
         
         {/* Main Heading */}
-        <div className="w-full max-w-[1280px] mx-auto text-center my-16 lg:mt-[170px] lg:mb-[300px]">
-          <h1 className="text-6xl lg:text-[174px] lg:leading-[158px] font-matt font-[900] tracking-tight mb-8 uppercase">
+        <div className="w-full max-w-[1280px] mx-auto text-center mt-[100px] mb-[160px] lg:my-16 lg:mt-[170px] lg:mb-[300px]">
+          <h1 className="lg:block hidden text-6xl lg:text-[174px] lg:leading-[158px] font-matt font-[900] tracking-tight mb-8 uppercase">
           Book your Ekspert
           </h1>
-          <p className="font-matt font-[300] sm:text-lg lg:text-[22px] lg:leading-[33px] mt-4 text-gray-900">
+          <h1 className="lg:hidden block text-[81px] leading-[70px] lg:text-[174px] lg:leading-[158px] font-matt font-[900] tracking-tight mb-2 uppercase">
+          Book your Ekspert
+          </h1>
+          <p className="font-matt font-[300] text-[16px] lg:text-[22px] lg:leading-[33px] lg:mt-4 text-gray-900">
           Expertise auf Abruf 
           </p>
         </div>
           
 
-          <section className='lg:mb-[300px] mb-8'>
-          <h2 className='text-2xl lg:text-[80px] lg:leading-[80px] font-matt font-[700] mb-8'>
+          <section className='lg:mb-[300px] mb-[160px]'>
+          <h2 className='text-[24px] lg:text-[80px] lg:leading-[80px] font-matt font-[700] lg:mb-8 mb-1'>
           Warum Book Your Ekspert?
           </h2>
-          <p className='text-lg lg:text-[20px] lg:leading-[26px] font-[300] font-matt lg:mb-[10px]'>
+          <p className='text-[16px] leading-[24px] lg:text-[20px] lg:leading-[26px] font-[300] font-matt lg:mb-[10px]'>
           Unsere Eksperten sind nicht nur Fachkräfte, sondern echte Partner, die Ihre Projekte voranbringen. 
           </p>
           
           <VisionBook/>
           </section>
             
-            <section className='lg:mb-[300px] mb-8'>
-          <h2 className='text-2xl lg:text-[80px] lg:leading-[80px] font-matt font-[700] mb-8'>
+            <section className='lg:mb-[300px] mb-[160px]'>
+          <h2 className='text-[40px] leading-[48px] lg:text-[80px] lg:leading-[80px] font-matt font-[700] mb-4 lg:mb-8'>
           Unsere Spezialgebiete
           </h2>
-          <p className='text-lg lg:text-[20px] lg:leading-[26px] font-[300] font-matt lg:mb-[10px]'>
+          <p className='text-[16px] lg:text-[20px] lg:leading-[26px] font-[300] font-matt lg:mb-[10px]'>
           Egal, ob Sie kurzfristige Unterstützung oder eine langfristige Lösung suchen – wir haben die richtige Ekspertise für Sie:
           </p>
           <BookLeistungen/>
           </section>
 
-          <section className='lg:mb-[300px] mb-8'>
-          <h2 className='text-2xl lg:text-[80px] lg:leading-[80px] font-matt font-[700] mb-8'>
+          <section className='lg:mb-[300px] mb-[160px]'>
+          <h2 className='text-[40px] leading-[40px] lg:text-[80px] lg:leading-[80px] font-matt font-[700] mb-4 lg:mb-8'>
           So funktioniert es 
           </h2>
-            <section className="container mx-auto py-2 px-2 text-center">
+            <section className="container mx-auto py-2 lg:px-2 text-center">
               {/* Steps Container */}
               <div className="flex flex-wrap justify-center gap-4 lg:flex-nowrap">
                 {/* Step 1 */}
@@ -173,14 +176,17 @@ const Bookyourekspert = () => {
           </section>
           
            
-            <section className="container mx-auto py-12 px-6 text-center lg:mb-[300px] mb-8">
-              <h2 className="text-2xl font-[700] lg:text-[76px] lg:leading-[80px] font-matt text-black mb-8">
+            <section className="container mx-auto lg:py-12 lg:px-6 text-center lg:mb-[300px] mb-[160px]">
+              <h2 className="text-[38px] leading-[48px] font-[700] lg:text-[76px] lg:leading-[80px] font-matt text-black mb-6 lg:mb-8">
               Warum warten? <br></br>Starten Sie noch heute!  
               </h2>
-              <p className="text-lg lg:text-[20px] lg:leading-[33px] font-matt font-[300] mb-8 lg:px-24">
+              <p className="lg:block hidden text-lg lg:text-[20px] lg:leading-[33px] font-matt font-[300] mb-8 lg:px-24">
               Unsere Eksperten stehen bereit, Ihre Projekte zu unterstützen. Kontaktieren Sie uns und erfahren Sie,<br></br> wie wir Ihnen helfen können, Ihre Ziele zu erreichen.   
               </p>
-              <div className="mt-8 items-center justify-center flex lg:mt-[50px]">
+              <p className="lg:hidden block text-[16px] leading-[24px] lg:text-[20px] lg:leading-[33px] font-matt font-[300] mb-8 lg:px-24">
+              Unsere Eksperten stehen bereit, Ihre Projekte zu unterstützen. Kontaktieren Sie uns und erfahren Sie, wie wir Ihnen helfen können, Ihre Ziele zu erreichen.   
+              </p>
+              <div className="mt-[40px] items-center justify-center flex lg:mt-[50px]">
               <button className="group relative font-matt flex items-center justify-center px-1 py-1 bg-transparent border-2 border-[#0009FF] text-[#0009FF] rounded-[10px] font-medium text-[20px] transition duration-100 ease-in-out overflow-hidden">
             {/* SVG Background */}
             <div className="w-14 h-14 bg-[#0009FF] rounded-[10px] flex items-center justify-center text-white transform scale-x-100 origin-left transition-all duration-500 ease-in-out group-hover:scale-x-100 relative z-20">
@@ -234,8 +240,8 @@ const Bookyourekspert = () => {
             </section>
 
 
-            <section className="container mx-auto py-4 px-4 text-center lg:mb-[300px] mb-8">
-                <h2 className="text-2xl font-[900] lg:text-[28px] lg:leading-[37px] font-matt text-black mb-8 uppercase ">
+            <section className="container mx-auto lg:py-4 lg:px-4 text-center lg:mb-[300px] mb-[160px]">
+                <h2 className="text-[28px] font-[900] lg:text-[28px] lg:leading-[37px] font-matt text-black mb-8 uppercase ">
                 Weitere Services?
                 </h2>
 
@@ -251,7 +257,7 @@ const Bookyourekspert = () => {
                       className="w-full h-auto mb-6"
                     />
                     <div>
-                    <h3 className="text-xl font-matt font-[900] text-black mb-2 lg:text-[28px] lg:leading-[37px] ">GRAPHIC DESIGN</h3>
+                    <h3 className="text-[24px] font-matt font-[900] text-black mb-2 lg:text-[28px] lg:leading-[37px] ">GRAPHIC DESIGN</h3>
                     </div>
                     </Link>
                   </div>
@@ -265,7 +271,7 @@ const Bookyourekspert = () => {
                       className="w-full h-auto mb-6"
                     />
                     <div>
-                    <h3 className="text-xl font-matt font-[900] text-black mb-2 lg:text-[28px] lg:leading-[37px]">WEBSITE</h3>
+                    <h3 className="text-[24px] font-matt font-[900] text-black mb-2 lg:text-[28px] lg:leading-[37px]">WEBSITE</h3>
                     </div>
                     </Link>
 
@@ -280,7 +286,7 @@ const Bookyourekspert = () => {
                       className="w-full h-auto mb-6"
                     />
                     <div>
-                      <h3 className="text-xl font-matt font-[900] text-black mb-2 lg:text-[28px] lg:leading-[37px]">CUSTOM DEVELOPMENT</h3>
+                      <h3 className="text-[24px] font-matt font-[900] text-black mb-2 lg:text-[28px] lg:leading-[37px]">CUSTOM DEVELOPMENT</h3>
                     </div>
                   </Link>
                 </div>
