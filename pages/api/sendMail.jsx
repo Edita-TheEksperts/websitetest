@@ -45,7 +45,7 @@ export default async function handler(req, res) {
                 'https://graph.microsoft.com/v1.0/users/info@the-eksperts.com/sendMail',
                 {
                     message: {
-                        subject: `New Form Submission:`,
+                        subject: `New Form Submission from Projekte Page:`,
                         body: {
                             contentType: 'Text',
                             content: `You have received a new form submission:\n\nCompany: ${unternehmen} \nEmail: ${email}\nDienstleistung: ${dienstleistung}\nStartdatum: ${startdatum}`,
