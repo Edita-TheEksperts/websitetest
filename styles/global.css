@@ -2,6 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Matt Trial';
+  src: url('/public/fonts/MattTrial.woff2') format('woff2'),
+       url('/public/fonts/MattTrial.woff') format('woff'),
+       url('/public/fonts/MattTrial.woff') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Apply globally */
+* {
+  font-family: 'Matt Trial', sans-serif;
+}
+
+
 
 body {
   overflow-y: scroll; /* Enable scrolling but hide scrollbar */
