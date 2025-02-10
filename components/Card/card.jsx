@@ -4,7 +4,7 @@ import styles from '../Card/style.module.scss'
 import { useTransform, motion, useScroll } from 'framer-motion';
 import { useRef, useState, useEffect } from 'react';
 
-const Card = ({i, title, title1, title2, description, src, url, color, progress, range, targetScale}) => {
+const Card = ({i, title, title1, title2, description, src, link, color, progress, range, targetScale}) => {
   const container = useRef(null);
   const { scrollYProgress } = useScroll({
     target: container,
@@ -46,8 +46,10 @@ const Card = ({i, title, title1, title2, description, src, url, color, progress,
             <p className={`text-black mb-8 font-matt text-[14px] w-[340px] lg:w-auto leading-[25px] lg:text-[18px] font-[300] lg:leading-[33px] ${textColorClass}`}>{description}</p>
             <p className={`text-black mb-8 font-matt font-[700] w-[340px] lg:w-auto text-[16px] lg:mt-0 lg:text-[20px] leading-[28px] lg:leading-[33px] ${textColorClass}`}>{title2}</p>
             <span className='w-[350px] lg:w-auto'>
-              <a className='font-matt border-2 border-[#00000000] text-white bg-[#000000] px-4 py-1 rounded-[20px] font-[800] md:text-[14px] text-[12px] transition-colors duration-300 text-center uppercase' href={url} target="_blank">Mehr <br></br>erfahren</a>
-              <a className='ml-[16px] font-matt border-2 border-white text-[#0009FF] bg-white px-4 py-1 rounded-[20px] font-[800] md:text-[14px] text-[12px] transition-all duration-300 text-center uppercase' href={url} target="_blank">Jetzt Projekt<br></br> Starten</a>
+              <a className='font-matt border-2 border-[#00000000] text-white bg-[#000000] px-4 py-1 rounded-[20px] font-[800] md:text-[14px] text-[12px] transition-colors duration-300 text-center uppercase' href={link} target="_blank">Mehr <br></br>erfahren</a>
+              <a className='ml-[16px] font-matt border-2 border-white text-[#0009FF] bg-white px-4 py-1 rounded-[20px] font-[800] md:text-[14px] text-[12px] transition-all duration-300 text-center uppercase'  href="https://websitetest-vert.vercel.app/contact"
+  target="_blank" 
+  rel="noopener noreferrer">Jetzt Projekt<br></br> Starten</a>
             </span>
           </div>
 
