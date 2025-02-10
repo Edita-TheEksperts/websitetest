@@ -1,6 +1,6 @@
 'use client';
 import styles from '../../components/Card/style.module.scss'
-import { projects } from './data';
+import { projects } from '../data';
 import Card from '../../components/Card/card';
 import { useScroll } from 'framer-motion';
 import { useEffect, useRef } from 'react';
