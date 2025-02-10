@@ -15,7 +15,52 @@ const Projekte = () => {
   const handleToggle = (index) => {
     setActiveIndex(activeIndex === index ? null : index);
   };
+  const [formData, setFormData] = useState({
+    unternehmen: "",
+    email: "",
+    dienstleistung: "",
+    startdatum: "",
+});
 
+const [loading, setLoading] = useState(false);
+const [message, setMessage] = useState("");
+
+const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+};
+
+const handleSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+    setMessage("");
+
+    try {
+        const response = await fetch("/api/sendMail", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(formData),
+        });
+
+        const result = await response.json();
+        if (response.ok) {
+            setMessage("Email sent successfully!");
+            setFormData({
+                unternehmen: "",
+                email: "",
+                dienstleistung: "",
+                startdatum: "",
+            });
+        } else {
+            setMessage(`Error: ${result.message}`);
+        }
+    } catch (error) {
+        setMessage("Something went wrong!");
+    }
+
+    setLoading(false);
+};
     return (
     <>
       <Head>
@@ -130,74 +175,101 @@ const Projekte = () => {
 
             <section className='flex lg:flex-row flex-col lg:gap-[32px] mb-[160px] lg:mb-[300px]'>
             <FlipCard7 />
-            <div className="flex flex-col w-[361] h-[557] md:w-[617px] md:h-[557px] justify-center items-center bg-[#0009FF] text-white p-6 rounded-[8px]">
+            <div className="flex flex-col w-[361] h-[557] md:w-[617px] md:h-[557px] justify-center items-center bg-[#0009FF] text-white p-8 lg:p-6 rounded-[8px]">
       {/* Header */}
-      <h2 className="text-white text-[16px] lg:text-[28px] font-[500] lg:font-[900] uppercase leading-[37px] text-center font-matt">
+      <h2 className="text-white text-[16px] lg:mb-[32px] lg:text-[28px] font-[500] lg:font-[900] uppercase leading-[37px] text-center font-matt mb-6">
         SIE MÖCHTEN EIN PROJEKT STARTEN?
       </h2>
       
-      {/* Form Fields */}
-      <div className="flex flex-col space-y-4 lg:w-[512px] h-[350px] justify-center">
-  {/* Unternehmen */}
-  <div className="flex flex-col md:flex-row md:items-center md:gap-[20px] w-full">
-    <label className="text-[#FFFF] text-[14px] lg:text-[20px] font-[300] leading-[33px] font-matt md:w-[200px] text-left">
-      Unternehmen
-    </label>
-    <input 
-      type="text" 
-      placeholder="Lorem Ipsum" 
-      className="bg-white w-full md:w-[320px] md:h-[58px] text-gray-500 text-[16px] lg:text-[24px] px-4 py-2 rounded-[8px] font-[500] leading-[20px] text-left" 
-    />
-  </div>
-
-  {/* Email */}
-  <div className="flex flex-col md:flex-row md:items-center md:gap-[20px] w-full">
-    <label className="text-[#FFFF] text-[14px] lg:text-[20px] font-[300] leading-[33px] font-matt md:w-[200px] text-left">
-      Email
-    </label>
-    <input 
-      type="text" 
-      placeholder="Lorem Ipsum" 
-      className="bg-white w-full md:w-[405px] md:h-[58px] text-gray-500 text-[16px] lg:text-[24px] px-4 py-2 rounded-[8px] font-[500] leading-[20px] text-left" 
-    />
-  </div>
-
-  {/* Welche Dienstleistung */}
-  <div className="flex flex-col md:flex-row md:items-center md:gap-[20px] w-full">
-    <label className="text-[#FFFF] text-[14px] lg:text-[20px] font-[300] leading-[33px] font-matt md:w-[200px] text-left">
-      Welche Dienstleistung
-    </label>
-    <input 
-      type="text" 
-      placeholder="Lorem Ipsum" 
-      className="bg-white w-full md:w-[297px] md:h-[58px] text-gray-500 text-[16px] lg:text-[24px] px-4 py-2 rounded-[8px] font-[500] leading-[20px] text-left" 
-    />
-  </div>
-
-  {/* Startdatum */}
-  <div className="flex flex-col md:flex-row md:items-center md:gap-[20px] w-full">
-    <label className="text-[#FFFF] text-[14px] lg:text-[20px] font-[300] leading-[33px] font-matt md:w-[200px] text-left">
-      Startdatum
-    </label>
-    <input 
-      type="text" 
-      placeholder="Lorem Ipsum" 
-      className="bg-white w-full md:w-[350px] md:h-[58px] text-gray-500 text-[16px] lg:text-[24px] px-4 py-2 rounded-[8px] font-[500] leading-[20px] text-left" 
-    />
-  </div>
-</div>
-
-      
-      {/* Button */}
-      <div className="flex justify-center mt-6">
-      <button className="bg-transparent text-white text-[18px] font-bold flex items-center justify-center w-[369px] h-[44px]">
-          <svg xmlns="http://www.w3.org/2000/svg" width="369" height="44" viewBox="0 0 369 44" fill="none">
-            <path d="M1.5 42V17.7007L22.8814 2H366.876V42H1.5Z" stroke="white" strokeWidth="3"/>
-          </svg>
-          <span className="absolute font-[900] leading-[37px] text-[28px] font-matt">START PROJECT!</span>
-        </button>
-       
+      <form onSubmit={handleSubmit} className="flex flex-col space-y-4 lg:space-y-6 lg:w-[512px] h-[350px] justify-center">
+      {/* Unternehmen */}
+      <div className="flex flex-col md:flex-row md:items-center md:gap-[20px] w-full">
+        <label className="text-[#FFFF] text-[14px] lg:text-[20px] font-[300] leading-[33px] font-matt md:w-[200px] text-left">
+          Unternehmen
+        </label>
+        <input 
+          type="text" 
+          name="unternehmen"
+          value={formData.unternehmen}
+          onChange={handleChange}
+          placeholder="Lorem Ipsum" 
+          className="bg-white w-full md:w-[320px] md:h-[58px] text-gray-500 text-[16px] lg:text-[24px] px-4 py-2 rounded-[8px] font-[500] leading-[20px] text-left" 
+        />
       </div>
+
+      {/* Email */}
+      <div className="flex flex-col md:flex-row md:items-center md:gap-[20px] w-full">
+        <label className="text-[#FFFF] text-[14px] lg:text-[20px] font-[300] leading-[33px] font-matt md:w-[200px] text-left">
+          Email
+        </label>
+        <input 
+          type="email" 
+          name="email"
+          value={formData.email}
+          onChange={handleChange}
+          placeholder="your@email.com" 
+          className="bg-white w-full md:w-[405px] md:h-[58px] text-gray-500 text-[16px] lg:text-[24px] px-4 py-2 rounded-[8px] font-[500] leading-[20px] text-left" 
+          required
+        />
+      </div>
+
+      {/* Welche Dienstleistung */}
+      <div className="flex flex-col md:flex-row md:items-center md:gap-[20px] w-full">
+        <label className="text-[#FFFF] text-[14px] lg:text-[20px] font-[300] leading-[33px] font-matt md:w-[200px] text-left">
+          Welche Dienstleistung
+        </label>
+        <input 
+          type="text" 
+          name="dienstleistung"
+          value={formData.dienstleistung}
+          onChange={handleChange}
+          placeholder="Dienstleistung" 
+          className="bg-white w-full md:w-[297px] md:h-[58px] text-gray-500 text-[16px] lg:text-[24px] px-4 py-2 rounded-[8px] font-[500] leading-[20px] text-left" 
+        />
+      </div>
+
+      {/* Startdatum */}
+      <div className="flex flex-col md:flex-row md:items-center md:gap-[20px] w-full">
+        <label className="text-[#FFFF] text-[14px] lg:text-[20px] font-[300] leading-[33px] font-matt md:w-[200px] text-left">
+          Startdatum
+        </label>
+        <input 
+          type="date" 
+          name="startdatum"
+          value={formData.startdatum}
+          onChange={handleChange}
+          className="bg-white w-full md:w-[350px] md:h-[58px] text-gray-500 text-[16px] lg:text-[24px] px-4 py-2 rounded-[8px] font-[500] leading-[20px] text-left" 
+          required
+        />
+      </div>
+
+      {/* Button */}
+      <div className="flex justify-center">
+    {/* Show Button Only If Not Submitting */}
+    {!loading && !message && (
+        <button 
+            type="submit" 
+            className="mt-2 bg-transparent text-white text-[18px] font-bold flex items-center justify-center w-[369px] h-[44px]"
+            disabled={loading}
+        >
+            <svg xmlns="http://www.w3.org/2000/svg" width="369" height="44" viewBox="0 0 369 44" fill="none">
+                <path d="M1.5 42V17.7007L22.8814 2H366.876V42H1.5Z" stroke="white" strokeWidth="3"/>
+            </svg>
+            <span className="absolute font-[900] leading-[37px] text-[28px] font-matt">
+                START PROJECT!
+            </span>
+        </button>
+    )}
+
+    {/* Show Message After Submission */}
+    {message && (
+        <p className="text-white text-center text-[18px] font-bold mt-4">
+            {message}
+        </p>
+    )}
+</div>
+    </form>
+
     </div>
             </section>
          
