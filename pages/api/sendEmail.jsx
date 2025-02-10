@@ -45,7 +45,7 @@ export default async function handler(req, res) {
                 'https://graph.microsoft.com/v1.0/users/info@the-eksperts.com/sendMail',
                 {
                     message: {
-                        subject: `New Form Submission from Contact Page: ${topics.join(", ") || 'No Subject'}`,
+                        subject: `New Form Submission from Kontakt Page: ${topics.join(", ") || 'No Subject'}`,
                         body: {
                             contentType: 'Text',
                             content: `You have received a new form submission:\n\nName: ${firstName} ${lastName}\nEmail: ${email}\nPhone: ${phone}\nMessage: ${message}\nTopics: ${topics.join(", ")}\nDatenschutz consent: ${datenschutz ? 'Yes' : 'No'}`,

@@ -15,6 +15,8 @@ export default function Contact() {
           datenschutz: "",
         });
         const [faqOpen, setFaqOpen] = useState(null);
+        const [isSubmitted, setIsSubmitted] = useState(false); // ✅ Track submission
+
 
         const handleChange = (e) => {
           setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -62,10 +64,11 @@ export default function Contact() {
                 phone: formData.phone, // Make sure phone is included as well
                 datenschutz: formData.datenschutz,
               }),
+              
             });
         
             if (response.ok) {
-              alert("Vielen Dank! Ihre Nachricht wurde gesendet.");
+              setIsSubmitted(true);
               setFormData({
                 firstName: "",
                 lastName: "",
@@ -142,7 +145,7 @@ export default function Contact() {
         };
 
     return (
-      <div className="bg-white min-h-screen p-4 lg:mt-[100px] text-gray-900 font-matt">
+      <div className="bg-white min-h-screen p-4 lg:mt-[50px] text-gray-900 font-matt">
         {/* Contact Form Section */}
               <div className="font-matt flex flex-col lg:flex-row items-top justify-between max-w-[1280px] mx-auto space-y-10 lg:space-y-0 lg:space-x-16">
           {/* Left Side: Text */}
@@ -198,7 +201,15 @@ export default function Contact() {
 
           {/* Right Side: Form */}
           <div className="lg:w-1/2 lg:bg-[#FAFAFA] px-2 lg:py-4 rounded-[20px] space-y-6">
+          {isSubmitted ? (
+            <p className="text-black text-center lg:text-right text-[45px] lg:text-[60px] lg:px-4 font-[500] lg:leading-[85px] leading-tight mt-6 flex justify-center items-center w-full">
+            Vielen Dank! <br />
+            Wir werden Sie bald kontaktieren. <br />
+            Mit Liebe, The Eksperts
+        </p>
+      ) : (
         <form onSubmit={handleSubmit} className="space-y-6">
+          
           {/* Name and Unternehmen */}
           <div className="flex flex-col lg:flex-row lg:space-x-4 space-y-6 lg:space-y-0">
             <div className="w-full">
@@ -349,6 +360,8 @@ export default function Contact() {
               Senden
             </button>
           </form>
+                )}
+
         </div>
         <div className="lg:bg-[#FAFAFA] p-2 rounded-[20px] space-y-4 lg:hidden block !mt-[160px]">
               <div className="flex items-center space-x-4 ">
