@@ -1,6 +1,8 @@
 // pages/data.js
 
 import React from 'react';
+import Image from "next/image";
+
 
 // The data you're exporting
 export const projects = [
