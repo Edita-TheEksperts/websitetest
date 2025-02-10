@@ -390,7 +390,7 @@ const Footer = () => {
       {/* Social Links and Copyright */}
       <div className="lg:block hidden font-matt max-w-[1280px] mx-auto mt-[40px] md:mt-[100px] px-4 lg:flex flex-col md:flex-row md:space-x-6 items-center md:items-start text-sm text-black">
       <div className="font-matt mb-4 md:mb-0">
-          © 2024 the eksperts
+          © 2025 the eksperts
         </div>
         <div className="font-matt flex space-x-6 mb-4 md:mb-0">
           <Link href="/impressum">Impressum</Link>
