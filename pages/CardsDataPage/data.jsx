@@ -9,7 +9,7 @@ export const projects = [
         title1:"Ihr Partner für individuelle und nachhaltige Salesforce Lösungen.",
         description: "Als offizieller Salesforce-Partner helfen wir Ihnen, das volle Potenzial von Salesforce zu nutzen. Ob Neuimplementierung, Optimierung oder massgeschneiderte Integrationen – wir stehen Ihnen zur Seite.",
         title2: "Kontaktieren Sie uns und starten Sie Ihre Salesforce-Reise!",
-        src: "/images/Salesforce-1.png",
+        src: "../images/Salesforce-1.png",
         link: "https://www.ignant.com/2023/04/12/mark-rammers-all-over-again-is-a-study-of-regret-and-the-willingness-to-move-forward/",
         color: 'radial-gradient(circle, #ffffff, #b3e5fc, #29b6f6)'
     },
@@ -63,7 +63,14 @@ const DataPage = () => {
                     <p>{project.description}</p>
                     <h4>{project.title2}</h4>
                     <a href={project.link} target="_blank" rel="noopener noreferrer">See More</a>
-                    <img src={project.src} alt={project.title} style={{ width: '100%', height: 'auto' }} />
+                    <Image 
+                src={project.src} 
+                alt={project.title} 
+                width={750} 
+                height={500} 
+                layout="responsive" // Adjusts dynamically
+                unoptimized // Optional if images are from /public/
+            />
                 </div>
             ))}
         </div>
