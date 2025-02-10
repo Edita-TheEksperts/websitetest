@@ -29,19 +29,16 @@ export default function FlipCard3() {
             <div className="absolute top-6 left-6 z-10">
               <h2
                 className="text-white text-left text-[16px] lg:text-[28px] font-extrabold uppercase lg:leading-[37px]"
-                style={{ fontFamily: "Matt_Trial" }}
               >
                 DIE MOBILIAR
               </h2>
               <p
                 className="text-white text-left text-[16px] lg:text-[28px] font-normal uppercase lg:leading-[37px]"
-                style={{ fontFamily: "Matt_Trial" }}
               >
                 WEITERENTWICKLUNG <br /> CRM
               </p>
               <p
                 className="text-white text-left text-[20px] font-[300] leading-[33px] lg:block hidden"
-                style={{ fontFamily: "Matt_Trial" }}
               >
                Click to read more...
               </p>
@@ -100,17 +97,14 @@ export default function FlipCard3() {
             <div className="flex flex-col absolute inset-0 bg-[#E4D77E] justify-center items-center px-10 space-y-6">
               <h2
                 className="text-black text-center text-[16px] font-[300] leading-[23px]"
-                style={{ fontFamily: "Matt_Trial" }}
               >
 Für unseren Kunden [Musterfirma AG] haben wir innerhalb von nur zwei Monaten eine neue, moderne Website realisiert. Das Projekt umfasste ein ansprechendes Webdesign, das perfekt auf die Markenidentität des Unternehmens abgestimmt wurde. Die technische Umsetzung erfolgte durch ein massgeschneidertes Webdevelopment, das eine benutzerfreundliche Navigation und optimale Ladezeiten sicherstellt.              </h2>
               <h2
                 className="text-black text-center text-[16px] font-[300] leading-[23px]"
-                style={{ fontFamily: "Matt_Trial" }}
               >
 Zusätzlich haben wir ein Support-Paket integriert, das sicherstellt, dass die Website jederzeit auf dem neuesten Stand bleibt und bei Bedarf schnell Anpassungen vorgenommen werden können. Das Ergebnis ist eine leistungsstarke und optisch ansprechende Website, die die Online-Präsenz unseres Kunden nachhaltig stärkt.              </h2>
               <h2
                 className="text-black text-center text-[16px] font-[300] leading-[23px]"
-                style={{ fontFamily: "Matt_Trial" }}
               >
 Dieses Projekt zeigt, wie Design, Technologie und kontinuierliche Betreuung zu einem erfolgreichen Ergebnis führen.              </h2>
             </div>
