@@ -21,7 +21,7 @@ export default function FlipCard4() {
           <div
             className="absolute w-full h-full bg-cover bg-center text-white p-6 rounded-lg overflow-hidden"
             style={{
-              background: "radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.40) 100%), url('/images/SignBoard2.png') lightgray center center / cover no-repeat",
+              background: "radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.40) 100%), url('/images/SignBoard2.png')  lightgray center center / cover no-repeat",
               backfaceVisibility: "hidden",
             }}
           >
