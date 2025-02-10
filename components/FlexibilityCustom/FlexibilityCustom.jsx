@@ -45,11 +45,11 @@ const features = [
 export default function FeaturesSection() {
   return (
     <div
-    className="p-4 rounded-lg mx-auto flex flex-col lg:flex-row justify-center items-start gap-6 lg:gap-[36px]"
+    className="lg:p-4 py-6 lg:py-0 rounded-lg mx-auto flex flex-col lg:flex-row justify-center items-start gap-6 lg:gap-[36px]"
     style={{ maxWidth: "1276px" }} // Use max-width for better responsiveness
   >
     {/* Left Image Section */}
-    <div className="w-full lg:w-1/2">
+    <div className="lg:block hidden w-full lg:w-1/2">
       <img
         src="/images/Frame 175 (1).png"
         alt="Idealen Partner"
@@ -62,13 +62,13 @@ export default function FeaturesSection() {
       {features.map((feature) => (
         <div
           key={feature.id}
-          className="flex items-center gap-4 bg-[#0009FF] text-white p-6 rounded-[20px] flex-col sm:flex-row"
+          className="flex items-center gap-8 lg:gap-4 bg-[#0009FF] text-white lg:p-6 p-6 rounded-[20px] lg:flex-col flex-row"
         >
           <div className="text-left w-full sm:w-auto">
-            <h3 className="text-lg font-[900] lg:text-[28px] lg:leading-[37px] font-matt uppercase mb-2">
+            <h3 className="text-[24px] font-[900] lg:text-[28px] lg:leading-[37px] font-matt uppercase mb-2">
               {feature.title}
             </h3>
-            <p className="text-sm font-[300] lg:text-[20px] lg:leading-[33px] font-matt leading-relaxed">
+            <p className="text-[16px] font-[300] lg:text-[20px] lg:leading-[33px] font-matt leading-relaxed">
               {feature.description}
             </p>
           </div>

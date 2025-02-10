@@ -16,14 +16,17 @@ const CustomDevelopment = () => {
     return (
     <>
       <Head>
-        <title>Custom Development - The Eksperts</title>
+        <title>Custom Development - the eksperts</title>
       </Head>
       <main className="max-w-[1280px] mx-auto p-4 lg:p-2 text-center">
         
         {/* Main Heading */}
-        <div className="w-full max-w-[1280px] mx-auto text-center my-16 lg:mt-[170px] lg:mb-[300px]">
-          <h1 className="text-5xl lg:text-[174px] lg:leading-[158px] font-matt font-[900] tracking-tight mb-8 uppercase">
+        <div className="w-full max-w-[1280px] mx-auto text-center my-16 mt-[100px] lg:mt-[170px] lg:mb-[300px] mb-[160px]">
+          <h1 className="lg:block hidden text-5xl lg:text-[174px] lg:leading-[158px] font-matt font-[900] tracking-tight mb-8 uppercase">
           Custom development
+          </h1>
+          <h1 className="lg:hidden block text-[81px] leading-[70px] lg:text-[174px] lg:leading-[158px] font-matt font-[900] tracking-tight lg:mb-8 uppercase">
+          Custom<br></br> develop<br></br>ment
           </h1>
           <p className="font-matt font-[300] sm:text-lg lg:text-[22px] lg:leading-[33px] mt-4 text-gray-900">
           Individuelle Lösungen für Ihre Anforderungen
@@ -31,42 +34,48 @@ const CustomDevelopment = () => {
         </div>
           
 
-          <section className='lg:mb-[300px]'>
-          <h2 className='text-xl lg:text-[80px] lg:leading-[80px] font-matt font-[700] lg:mb-6'>
+          <section className='lg:mb-[300px] mb-[160px]'>
+          <h2 className='text-[24px] lg:text-[80px] lg:leading-[80px] font-matt font-[700] mb-2 lg:mb-6'>
           Unser Ansatz
           </h2>
-          <p className='text-lg lg:text-[20px] lg:leading-[26px] font-[300] font-matt lg:mb-[10px]'>
+          <p className='lg:block hidden text-[16px] leading-[24px] lg:text-[20px] lg:leading-[26px] font-[300] font-matt lg:mb-[10px]'>
           Wir arbeiten eng mit Ihnen zusammen, um Ihre Anforderungen genau zu <br></br>verstehen und massgeschneiderte Lösungen zu entwickeln. 
+          </p>
+          <p className='lg:hidden block text-[16px] leading-[24px] lg:text-[20px] lg:leading-[26px] font-[300] font-matt lg:mb-[10px]'>
+          Wir arbeiten eng mit Ihnen zusammen, um Ihre Anforderungen genau zu verstehen und massgeschneiderte Lösungen zu entwickeln. 
           </p>
           <VisionCustom/>
           
           </section>
         
            
-            <section className='lg:mb-[300px] bg-[#F1F1F1] rounded-lg'>
-              <h2 className='text-xl lg:text-[80px] lg:leading-[80px] font-matt font-[700] mb-6'>
+            <section className='lg:mb-[300px] mb-[160px] lg:bg-[#F1F1F1] rounded-lg'>
+              <h2 className='text-[38px] leading-[42px] lg:text-[80px] lg:leading-[80px] font-matt font-[700] mb-4 lg:mb-6'>
               Warum Custom Development mit the eksperts? 
               </h2>
-              <p className='text-lg lg:text-[20px] lg:leading-[26px] font-[300] font-matt lg:mb-[60px] '>
+              <p className='text-[16px] lg:text-[20px] lg:leading-[26px] font-[300] font-matt lg:mb-[60px] '>
               Unsere Erfahrung und unser Fokus auf Qualität machen uns zu Ihrem idealen Partner für individuelle Softwareprojekte.
               </p>
               <Flexibility/>
             </section>
 
             
-            <section className='lg:mb-[300px]'>
-          <h2 className='text-xl lg:text-[80px] lg:leading-[80px] font-matt font-[700] lg:mb-8'>
+            <section className='lg:mb-[300px] mb-[160px]'>
+          <h2 className='text-[38px] leading-[48px] lg:text-[80px] lg:leading-[80px] font-matt font-[700] lg:mb-8'>
           Unsere Leistungen im Überblick 
           </h2>
           <CostumLeistungen/>
           </section>
           
            
-            <section className="container mx-auto py-12 px-6 text-center lg:mb-[300px]">
-              <h2 className="text-xl font-[700] lg:text-[76px] lg:leading-[80px] font-matt text-black mb-6">
+            <section className="container mx-auto lg:py-12 lg:px-6 text-center lg:mb-[300px] mb-[160px]">
+              <h2 className="lg:block hidden text-xl font-[700] lg:text-[76px] lg:leading-[80px] font-matt text-black mb-6">
               Bereit für die nächste Stufe Ihrer<br></br> digitalen Transformation?
               </h2>
-              <p className="text-lg lg:text-[20px] lg:leading-[33px] font-matt font-[300] mb-8 lg:px-24">
+              <h2 className="lg:hidden block text-[38px] leading-[48px] font-[700] lg:text-[76px] lg:leading-[80px] font-matt text-black mb-6">
+              Bereit für die<br></br>  nächste Stufe Ihrer<br></br>  digitalen<br></br>  Transformation?
+              </h2>
+              <p className="text-[16px] lg:text-[20px] lg:leading-[33px] font-matt font-[300] mb-8 lg:px-24">
               Egal wie komplex Ihre Anforderungen sind, wir haben die Lösung. Kontaktieren Sie uns noch <br></br> heute und lassen Sie uns gemeinsam Ihre massgeschneiderte Software entwickeln.  
               </p>
               <div className="mt-8 items-center justify-center flex lg:mt-[50px]">
@@ -123,8 +132,8 @@ const CustomDevelopment = () => {
             </section>
 
 
-            <section className="container mx-auto py-4 px-4 text-center lg:mb-[300px]">
-                <h2 className="text-4xl font-[900] lg:text-[28px] lg:leading-[37px] font-matt text-black mb-6 uppercase ">
+            <section className="container mx-auto py-4 px-4 text-center lg:mb-[300px] mb-[160px]">
+                <h2 className="text-[28px]  font-[900] lg:text-[28px] lg:leading-[37px] font-matt text-black mb-6 uppercase ">
                 Weitere Services?
                 </h2>
                 
@@ -138,7 +147,7 @@ const CustomDevelopment = () => {
                       className="w-full h-auto mb-6"
                     />
                     <div>
-                    <h3 className="text-xl font-matt font-[900] text-black mb-2 lg:text-[28px] lg:leading-[37px] ">GRAPHIC DESIGN</h3>
+                    <h3 className="text-[24px] font-matt font-[900] text-black mb-2 lg:text-[28px] lg:leading-[37px] ">GRAPHIC DESIGN</h3>
                     </div>
                     </Link>
                   </div>
@@ -154,7 +163,7 @@ const CustomDevelopment = () => {
                       className="w-full h-auto mb-6"
                     />
                     <div>
-                    <h3 className="text-xl font-matt font-[900] text-black mb-2 lg:text-[28px] lg:leading-[37px]">SALESFORCE</h3>
+                    <h3 className="text-[24px] font-matt font-[900] text-black mb-2 lg:text-[28px] lg:leading-[37px]">SALESFORCE</h3>
 
                     </div>
                     </Link>
@@ -169,7 +178,7 @@ const CustomDevelopment = () => {
                       className="w-full h-auto mb-6"
                     />
                     <div>
-                    <h3 className="text-xl font-matt font-[900] text-black mb-2 lg:text-[28px] lg:leading-[37px]">WEBSITE</h3>
+                    <h3 className="text-[24px] font-matt font-[900] text-black mb-2 lg:text-[28px] lg:leading-[37px]">WEBSITE</h3>
                     </div>
                     </Link>
 
