@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        matt: ['Matt_Trial', 'sans-serif'],
+        matt: ['Matt Trial', 'sans-serif'],
       },
     },
   },

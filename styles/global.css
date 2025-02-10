@@ -4,17 +4,86 @@
 
 @font-face {
   font-family: 'Matt Trial';
-  src: url('/public/fonts/MattTrial.woff2') format('woff2'),
-       url('/public/fonts/MattTrial.woff') format('woff'),
-       url('/public/fonts/MattTrial.woff') format('truetype');
-  font-weight: normal;
+  src: url('/public/fonts/Matt Regular.ttf') format('truetype');
+  font-weight: 400;
   font-style: normal;
+}
+
+@font-face {
+  font-family: 'Matt Trial';
+  src: url('/public/fonts/Matt RegularItalic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Matt Trial';
+  src: url('/public/fonts/Matt Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Matt Trial';
+  src: url('/public/fonts/Matt BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Matt Trial';
+  src: url('/public/fonts/Matt Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Matt Trial';
+  src: url('/public/fonts/Matt LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Matt Trial';
+  src: url('/public/fonts/Matt ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Matt Trial';
+  src: url('/public/fonts/Matt ExtraBoldItalic.ttf') format('truetype');
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Matt Trial';
+  src: url('/public/fonts/Matt Black.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Matt Trial';
+  src: url('/public/fonts/Matt Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Matt Trial';
+  src: url('/public/fonts/Matt ThinItalic.ttf') format('truetype');
+  font-weight: 100;
+  font-style: italic;
 }
 
 /* Apply globally */
 * {
   font-family: 'Matt Trial', sans-serif;
 }
+
 
 
 
