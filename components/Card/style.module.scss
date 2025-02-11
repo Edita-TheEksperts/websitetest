@@ -38,7 +38,7 @@
         }
       }
       .imageContainer {
-        display: none; /* Hidden by default */
+        display: none; 
         margin-top: 0px;
         margin-left: 40px;
         position: relative;
@@ -50,9 +50,9 @@
         overflow: hidden;
       }
       
-      @media (min-width: 1024px) { /* Tailwind's lg breakpoint */
+      @media (min-width: 1024px) { 
         .imageContainer {
-          display: flex; /* Show only on lg and larger */
+          display: flex;
         }
       }
       
@@ -63,73 +63,72 @@
       }
       
       img {
-        object-fit: cover; /* Ensures the image covers the container */
+        object-fit: cover; 
         transition: transform 0.5s ease;
-        width: 100%; /* Make sure the image takes up the full width of the container */
-        height: 100%; /* Make sure the image takes up the full height of the container */
+        width: 100%;
+        height: 100%;
       }
       
     }
   }
 }
 
-/* For tablets and smaller screens */
 @media (max-width: 768px) {
   .card {
-    height: auto; /* Remove fixed height for smaller screens */
-    width: 760px; /* Full width for tablets and smaller screens */
+    height: auto; 
+    max-width: 720px; 
   }
 
   .body {
-    flex-direction: column; /* Stack the image and description vertically on mobile/tablet */
+    flex-direction: column; 
     gap: 20px;
   }
 
   .imageContainer {
-    width: 100%; /* Make the image container full width on mobile/tablet */
-    height: 300px; /* Adjust image height */
+    width: 100%; 
+    height: 300px; 
     margin-left: 0;
   }
 
   .description {
-    width: 100%; /* Make description take full width on mobile */
-    height: auto; /* Adjust height */
-    top: 0; /* Remove top margin to avoid offset */
+    width: 100%; 
+    height: auto;
+    top: 0; 
   }
 }
 
 /* For mobile phones */
 @media (max-width: 480px) {
   .card {
-    max-width: 400px; /* Full width for mobile */
+    max-width: 400px; 
     padding: 10px;
 
   }
 
   .body {
-    flex-direction: column; /* Stack image and description */
+    flex-direction: column; 
     gap: 15px;
     width: 380px;
     height: 200px;
   }
 
   .imageContainer {
-    width: 20px; /* Make image container full width */
+    width: 20px; 
     height: 13px; 
-    margin-right: 50px;/* Adjust for smaller devices */
+    margin-right: 50px;
   }
 
   .description {
-    width: 100%; /* Full width for description */
-    margin-top: 20px; /* Space between image and description */
+    width: 100%; 
+    margin-top: 20px; 
   }
 }
 
 .imageContainer {
-  display: none; /* Hidden by default */
+  display: none; 
 }
 
-@media (min-width: 1024px) { /* 1024px is Tailwind's `lg` breakpoint */
+@media (min-width: 1024px) { 
   .imageContainer {
     display: block;
   }

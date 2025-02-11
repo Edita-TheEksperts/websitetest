@@ -77,14 +77,9 @@
   font-family: 'Matt Trial', sans-serif;
 }
 
-
-
-
 body {
   overflow-y: scroll; /* Enable scrolling but hide scrollbar */
 }
-
-
 
 .hover-link:hover .svg-path {
   fill: #0009FF; /* Blue background on hover */

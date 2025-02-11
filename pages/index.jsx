@@ -4,12 +4,10 @@ import Link from 'next/link';
 import Image from 'next/image';
 import Testimonials from '../components/Testimonials/Testimonials';
 import LogoSection from '../components/LogoSection/LogoSection'; 
-import Hero from '../components/HeroComponent/Hero';
 import Hero2 from '../components/HeroComponent/Hero2';
 import '../styles/global.css'; 
 import AnimatedSection from '../components/AnimatedSection';
 import '../styles/swiper.css';
-import { HeaderSection, ServicesSection } from "../components/4PillarsComponents/work";
 import Wie from '../components/4PillarsComponents/wie'
 import Warum from '../components/4PillarsComponents/warum'
 import { HeaderSection2 } from '../components/4PillarsComponents/work2';
@@ -24,20 +22,22 @@ const Home = () => {
 
 
     useEffect(() => {
-        const handleScroll = () => {
-          const heroElement = document.getElementById('hero');
-          if (!heroElement) return;
-    
-          const heroHeight = heroElement.offsetHeight;
-          const scrollY = window.scrollY;
-    
-          setHeroVisible(scrollY < heroHeight - 80); 
-        };
-    
-        window.addEventListener('scroll', handleScroll);
-        return () => window.removeEventListener('scroll', handleScroll);
+        if (typeof window !== "undefined") { // Ensure it's running on the client
+          const handleScroll = () => {
+            const heroElement = document.getElementById('hero');
+            if (!heroElement) return;
+      
+            const heroHeight = heroElement.offsetHeight;
+            const scrollY = window.scrollY;
+      
+            setHeroVisible(scrollY < heroHeight - 80);
+          };
+      
+          window.addEventListener('scroll', handleScroll);
+          return () => window.removeEventListener('scroll', handleScroll);
+        }
       }, []);
-
+      
 
   return (
     <>
@@ -70,7 +70,6 @@ const Home = () => {
             <Image
                     src="/images/Frame 24.png" 
                     alt="Description of image"
-                    layout="responsive"
                     width={1200} 
                     height={675} 
                     className="w-full h-auto mb-4 "
@@ -94,7 +93,6 @@ const Home = () => {
                 <Image
                     src="/images/Frame 24 (1).png" // Replace with the actual image path
                     alt="Description of image"
-                    layout="responsive"
                     width={1600} // Set the width for the image's aspect ratio
                     height={675} // Set the height for the image's aspect ratio
                     className="w-full h-auto mb-4 "
@@ -115,7 +113,6 @@ const Home = () => {
                 <Image
                     src="/images/fi_785418.png" // Replace with the actual image path
                     alt="Description of image"
-                    layout="responsive"
                     width={1600} // Set the width for the image's aspect ratio
                     height={675} // Set the height for the image's aspect ratio
                     className="w-full h-auto mb-4 "
@@ -133,7 +130,6 @@ const Home = () => {
                         <Image
                             src="/images/Frame 24 (2).png" // Replace with the actual image path
                             alt="Description of image"
-                            layout="responsive"
                             width={1600} // Set the width for the image's aspect ratio
                             height={675} // Set the height for the image's aspect ratio
                             className="w-full h-auto mb-4 lg:mb-10 "
