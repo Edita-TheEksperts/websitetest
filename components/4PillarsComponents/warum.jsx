@@ -91,9 +91,11 @@ const SectionGrid = ({ sections }) => {
     {sections.slice(0, 3).map((section, index) => (
     <div
       key={index}
-      className="flex flex-col items-center text-center space-y-4 lg:space-y-8 lg:mb-[30px] w-full md:block hidden"
+      className="flex flex-col items-center text-center space-y-4 lg:space-y-8 lg:mb-[30px] w-full lg:block hidden"
     >
+      <div className="lg:ml-[40px]">
       {section.icon}
+      </div>
       <h3 className="font-matt text-xl lg:text-[28px] leading-[37px] font-[900] text-black uppercase">
         {section.title}
       </h3>
