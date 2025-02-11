@@ -16,7 +16,6 @@ import { HeaderSection2 } from '../components/4PillarsComponents/work2';
 import Cards from './CardsDataPage/page'
 
 
-
 const Home = () => {
     const [hovered, setHovered] = useState(false);
     const [isHeroVisible, setHeroVisible] = useState(true);

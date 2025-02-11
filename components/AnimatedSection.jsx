@@ -6,20 +6,143 @@ const SVGAnimation = () => {
   const [showThankYou, setShowThankYou] = useState(false);
   const svgRef = useRef(null); // Reference to SVG
 
-  const handleNext = () => {
-    if (currentScreen === 4) {
-      setIsModalOpen(false);
-      setShowThankYou(true);
-    } else {
-      setCurrentScreen((prev) => prev + 1);
-    }
+
+  
+  // Function to handle checkbox changes
+  const handleCheckboxChange = (e) => {
+    const { value, checked } = e.target;
+    setFormData((prev) => ({
+      ...prev,
+      dienstleistung: checked
+        ? [...prev.dienstleistung, value]
+        : prev.dienstleistung.filter((item) => item !== value),
+    }));
   };
 
+    
+  // Function to handle checkbox changes
+  const handleCheckboxChange1 = (e) => {
+    const { value, checked } = e.target;
+    setFormData((prev) => ({
+      ...prev,
+      starten: checked
+        ? [...prev.starten, value]
+        : prev.starten.filter((item) => item !== value),
+    }));
+  };
+  
+  // Function to handle "Sonstiges" input change
+  const handleCustomServiceChange = (e) => {
+    setFormData((prev) => ({
+      ...prev,
+      customService: e.target.value,
+    }));
+  };
+  
+ // Function to go to the next step
+ const handleNext = () => {
+  if (currentScreen === 1) {
+    setCurrentScreen(2);
+    return;
+  }
+
+  if (currentScreen === 2) {
+    setCurrentScreen(3);
+    return;
+  }
+
+  if (currentScreen === 3 && formData.starten.length === 0) {
+    alert("Bitte wählen Sie mindestens eine Option aus.");
+    return;
+  }
+
+  if (currentScreen === 4) {
+    handleSubmit();
+    return;
+  }
+
+  setCurrentScreen((prev) => prev + 1);
+};
+  
   const handleBack = () => {
     if (currentScreen > 1) {
       setCurrentScreen((prev) => prev - 1);
     }
   };
+
+
+const [formData, setFormData] = useState({
+  unternehmen: "",
+  email: "",
+  message: "",
+  name: "",
+  telefon: "",
+  nachricht:"",
+  dienstleistung: [], // Stores selected checkboxes
+  customService: "",
+  starten: [], // Stores custom input text
+});
+
+const [loading, setLoading] = useState(false);
+const [messageSent, setMessageSent] = useState(false);
+
+const handleChange = (e) => {
+  const { name, value, type, checked } = e.target;
+
+  if (type === "checkbox") {
+    setFormData((prev) => ({
+      ...prev,
+      [name]: checked
+        ? [...prev[name], value] // Add checked value
+        : prev[name].filter((item) => item !== value), // Remove unchecked value
+    }));
+  } else {
+    setFormData({ ...formData, [name]: value });
+  }
+};
+
+
+const handleSubmit = async (e) => {
+  e.preventDefault();
+  setLoading(true);
+
+  try {
+    const response = await fetch("/api/sendMailFunnel", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    });
+
+    if (response.ok) {
+      setFormData({
+        unternehmen: "",
+        email: "",
+        dienstleistung: [],
+        message: "",
+        name: "",
+        telefon: "",
+        nachricht: "",
+        starten: [],
+        customService: "",
+      });
+
+      // Ensure state updates and triggers re-render
+      setShowThankYou(true);
+      setIsModalOpen(false); // Close modal if needed
+    } else {
+      throw new Error("Error sending email.");
+    }
+  } catch (error) {
+    console.error("Error:", error);
+  } finally {
+    setLoading(false);
+  }
+};
+
+
+
 
   // Intersection Observer to trigger animation when section comes into view
   useEffect(() => {
@@ -247,6 +370,9 @@ const SVGAnimation = () => {
                                       <label className="flex items-center space-x-3">
                                         <input
                                           type="checkbox"
+                                          value="Website erstellen oder optimieren"
+                                          checked={formData.dienstleistung.includes("Website erstellen oder optimieren")}
+                                          onChange={handleCheckboxChange}
                                           className="w-5 h-5 text-[#0009FF] border-gray-300 rounded focus:ring-[#0009FF]"
                                         />
                                         <span className="lg:text-[18px] text-[14px] ">Website erstellen oder optimieren</span>
@@ -254,6 +380,9 @@ const SVGAnimation = () => {
                                       <label className="flex items-center space-x-3">
                                         <input
                                           type="checkbox"
+                                          value="Salesforce-Lösungen implementieren"
+                                          checked={formData.dienstleistung.includes("Salesforce-Lösungen implementieren")}
+                                          onChange={handleCheckboxChange}
                                           className="w-5 h-5 text-[#0009FF] border-gray-300 rounded focus:ring-[#0009FF]"
                                         />
                                         <span className="lg:text-[18px] text-[14px] " >Salesforce-Lösungen implementieren</span>
@@ -261,6 +390,9 @@ const SVGAnimation = () => {
                                       <label className="flex items-center space-x-3">
                                         <input
                                           type="checkbox"
+                                          value="Individuelle Softwareentwicklung"
+        checked={formData.dienstleistung.includes("Individuelle Softwareentwicklung")}
+        onChange={handleCheckboxChange}
                                           className="w-5 h-5 text-[#0009FF] border-gray-300 rounded-lg focus:ring-[#0009FF]"
                                         />
                                         <span className="lg:text-[18px] text-[14px]  ">Individuelle Softwareentwicklung</span>
@@ -268,6 +400,9 @@ const SVGAnimation = () => {
                                       <label className="flex items-center space-x-3">
                                         <input
                                           type="checkbox"
+                                          value="Online-Shop aufbauen"
+                                          checked={formData.dienstleistung.includes("Online-Shop aufbauen")}
+                                          onChange={handleCheckboxChange}
                                           className="w-5 h-5 text-[#0009FF] border-gray-300 rounded-lg focus:ring-[#0009FF]"
                                         />
                                         <span className="lg:text-[18px] text-[14px] ">Online-Shop aufbauen</span>
@@ -275,6 +410,9 @@ const SVGAnimation = () => {
                                       <label className="flex items-center space-x-3">
                                         <input
                                           type="checkbox"
+                                          value="IT-Architektur oder Netzwerk optimieren"
+                                          checked={formData.dienstleistung.includes("IT-Architektur oder Netzwerk optimieren")}
+                                          onChange={handleCheckboxChange}
                                           className="w-5 h-5 text-[#0009FF] border-gray-300 rounded-lg focus:ring-[#0009FF]"
                                         />
                                         <span className="lg:text-[18px] text-[14px] ">IT-Architektur oder Netzwerk optimieren</span>
@@ -282,6 +420,8 @@ const SVGAnimation = () => {
                                       <label className="flex items-center space-x-3">
                                         <input
                                           type="text"
+                                          value={formData.customService}
+                                          onChange={handleCustomServiceChange}
                                           className="w-full lg:w-[450px] h-8 text-black border-2 border-gray-300 focus:ring-[#0009FF] rounded-lg px-3"
                                           placeholder="Sonstiges (Freitextfeld)"
                                         />
@@ -350,6 +490,9 @@ const SVGAnimation = () => {
                                   <label className="flex items-center space-x-3">
                                     <input
                                       type="checkbox"
+                                      value="Sofort"
+                                      checked={formData.starten.includes("Sofort")}
+                                      onChange={handleCheckboxChange1}
                                       className="w-5 h-5 text-[#0009FF] border-gray-300 rounded focus:ring-[#0009FF]"
                                     />
                                     <span className="lg:text-[18px] text-[14px]">Sofort</span>
@@ -357,6 +500,9 @@ const SVGAnimation = () => {
                                   <label className="flex items-center space-x-3">
                                     <input
                                       type="checkbox"
+                                      value="Innerhalb der nächsten 3 Monate"
+                                      checked={formData.starten.includes("Innerhalb der nächsten 3 Monate")}
+                                      onChange={handleCheckboxChange1}
                                       className="w-5 h-5 text-[#0009FF] border-gray-300 rounded focus:ring-[#0009FF]"
                                     />
                                     <span className="lg:text-[18px] text-[14px]">Innerhalb der nächsten 3 Monate</span>
@@ -364,6 +510,9 @@ const SVGAnimation = () => {
                                   <label className="flex items-center space-x-3">
                                     <input
                                       type="checkbox"
+                                      value="In 3–6 Monaten"
+                                      checked={formData.starten.includes("In 3–6 Monaten")}
+                                      onChange={handleCheckboxChange1}
                                       className="w-5 h-5 text-[#0009FF] border-gray-300 rounded focus:ring-[#0009FF]"
                                     />
                                     <span className="lg:text-[18px] text-[14px]">In 3–6 Monaten</span>
@@ -371,6 +520,9 @@ const SVGAnimation = () => {
                                   <label className="flex items-center space-x-3">
                                     <input
                                       type="checkbox"
+                                      value="Noch unklar"
+                                      checked={formData.starten.includes("Noch unklar")}
+                                      onChange={handleCheckboxChange1}
                                       className="w-5 h-5 text-[#0009FF] border-gray-300 rounded focus:ring-[#0009FF]"
                                     />
                                     <span className="lg:text-[18px] text-[14px]">Noch unklar</span>
@@ -452,13 +604,16 @@ const SVGAnimation = () => {
                                 <h2 className="text-[16px] font-[900] text-center lg:text-left uppercase md:text-[22px] md:leading-[27px] font-matt mb-4">
                                     Wie können wir Sie erreichen?
                                   </h2>
-                                  <form className="lg:space-y-4 space-y-2 w-full max-w-4xl">
+                                  <form onSubmit={handleSubmit} className="lg:space-y-4 space-y-2 w-full max-w-4xl">
                                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:gap-4 gap-2 mb-4">
                                       <div className="flex flex-col border border-blue-400 w-full">
                                         <label className="hidden">Name</label>
                                         <input
                                           type="text"
                                           placeholder="NAME"
+                                          name="name"
+                                          value={formData.name}
+                                          onChange={handleChange}
                                           className="w-full border p-2 text-center text-[14px] lg:text-[18px] placeholder-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:text-blue-500"
                                         />
                                       </div>
@@ -467,6 +622,9 @@ const SVGAnimation = () => {
                                         <input
                                           type="text"
                                           placeholder="UNTERNEHMEN"
+                                          name="unternehmen"
+                                          value={formData.unternehmen}
+                                          onChange={handleChange}
                                           className="w-full border p-2 text-center text-[14px] lg:text-[18px] placeholder-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:text-blue-500"
                                         />
                                       </div>
@@ -477,6 +635,9 @@ const SVGAnimation = () => {
                                         <input
                                           type="email"
                                           placeholder="E-MAIL"
+                                          name="email"
+                                          value={formData.email}
+                                          onChange={handleChange}
                                           className="w-full border p-2 text-center text-[14px] lg:text-[18px] placeholder-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:text-blue-500"
                                         />
                                       </div>
@@ -485,6 +646,9 @@ const SVGAnimation = () => {
                                         <input
                                           type="tel"
                                           placeholder="TELEFON"
+                                          name="telefon"
+                                          value={formData.telefon}
+                                          onChange={handleChange}
                                           className="w-full border p-2 text-center text-[14px] lg:text-[18px] placeholder-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:text-blue-500"
                                         />
                                       </div>
@@ -493,13 +657,17 @@ const SVGAnimation = () => {
                                       <label className="hidden">Nachricht</label>
                                       <textarea
                                         placeholder="NACHRICHT („Gibt es noch etwas, das wir wissen sollten?“)"
+                                        name="nachricht"
+                                        type="text"
+                                        value={formData.nachricht}
+                                        onChange={handleChange}
                                         className="w-full border p-2 text-center text-[14px] lg:text-[18px] placeholder-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:text-blue-500"
                                       />
                                     </div>
                                     {/* Button */}
                                     <div className="flex lg:justify-start justify-center mt-2">
                                       <button
-                                        onClick={handleNext}
+                                        type="submit"
                                         className="px-4 py-3 bg-[#0009FF] text-white rounded-[30px] md:text-[25px] md:leading-[37px] font-extrabold hover:bg-blue-800"
                                       >
                                         SENDEN
