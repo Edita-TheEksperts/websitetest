@@ -209,8 +209,8 @@ export default function Contact() {
           {isSubmitted ? (
             <p className="text-black text-center lg:text-right text-[45px] lg:text-[60px] lg:px-4 font-[500] lg:leading-[85px] leading-tight mt-6 flex justify-center items-center w-full">
             Vielen Dank! <br />
-            Wir werden Sie bald kontaktieren. <br />
-            Mit Liebe, The Eksperts
+            Wir melden uns so schnell <br />
+            wie möglich.
         </p>
       ) : (
         <form onSubmit={handleSubmit} className="space-y-6">
