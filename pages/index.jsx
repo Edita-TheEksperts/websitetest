@@ -144,7 +144,7 @@ const Home = () => {
             </div>
             </section>
 
-            <section className="bg-white mt-[100px] lg:py-2 flex flex-col lg:flex-row justify-between items-center lg:min-w-[1280px] mx-auto font-matt space-y-8 lg:space-y-0 lg:mt-[300px] lg:mb-[300px] mb-[160px]">
+            <section className="bg-white mt-[140px] lg:py-2 flex flex-col lg:flex-row justify-between items-center lg:min-w-[1280px] mx-auto font-matt space-y-8 lg:space-y-0 lg:mt-[300px] lg:mb-[300px] mb-[160px]">
             {/* Left Section: Heading */}
             <div className="lg:block hidden flex-1 text-center lg:text-left lg:min-w-[490px]">
                 <h1 className="text-4xl lg:text-[64px] lg:leading-[80px] font-[700] leading-tight">

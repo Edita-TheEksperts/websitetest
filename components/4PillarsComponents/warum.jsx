@@ -79,7 +79,7 @@ const SectionGrid = ({ sections }) => {
   return (
     <motion.div
       ref={ref}
-      className="grid grid-cols-1 lg:grid-cols-3 gap-4 px-2 mx-auto mb-[100px] lg:mb-0"
+      className="grid grid-cols-1 lg:grid-cols-3 gap-4 px-2 mx-auto mb-[160px] lg:mb-0"
       initial="hidden"
       animate={inView ? "visible" : "hidden"}
       variants={{
