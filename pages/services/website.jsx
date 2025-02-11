@@ -17,7 +17,7 @@ const Website = () => {
     return (
     <>
       <Head>
-        <title>Website Services - The Eksperts</title>
+        <title>Website - the eksperts</title>
       </Head>
       <main className="max-w-[1280px] mx-auto p-4 lg:p-2 text-center">
         

@@ -64,7 +64,7 @@ const handleSubmit = async (e) => {
     return (
     <>
       <Head>
-        <title>Projekte - The Eksperts</title>
+        <title>Projekte - the eksperts</title>
       </Head>
       <main className="max-w-[1280px] mx-auto lg:p-2 text-center">
         

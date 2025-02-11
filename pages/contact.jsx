@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import '../styles/global.css'; 
+import Head from 'next/head';
 
 export default function Contact() {
         const [formData, setFormData] = useState({
@@ -145,6 +146,10 @@ export default function Contact() {
         };
 
     return (
+      <>
+      <Head>
+        <title>Kontakt - the eksperts</title>
+      </Head>
       <div className="bg-white min-h-screen p-4 lg:mt-[50px] text-gray-900 font-matt">
         {/* Contact Form Section */}
               <div className="font-matt flex flex-col lg:flex-row items-top justify-between max-w-[1280px] mx-auto space-y-10 lg:space-y-0 lg:space-x-16">
@@ -521,5 +526,6 @@ export default function Contact() {
             </div>
           </div>
     </div>
+    </>
   );
 }

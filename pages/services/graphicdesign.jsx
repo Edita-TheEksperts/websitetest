@@ -16,7 +16,7 @@ const GraphicDesign = () => {
     return (
     <>
       <Head>
-        <title>Graphic Design - The Eksperts</title>
+        <title>Graphic Design - the eksperts</title>
       </Head>
       <main className="max-w-[1280px] mx-auto p-4 lg:p-2 text-center">
         

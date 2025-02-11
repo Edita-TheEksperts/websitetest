@@ -17,7 +17,7 @@ const Salesforce = () => {
   return (
     <>
       <Head>
-        <title>Salesforce Services - The Eksperts</title>
+        <title>Salesforce - the eksperts</title>
       </Head>
       <main className="max-w-[1280px] mx-auto p-4 lg:p-2 text-center">
         
