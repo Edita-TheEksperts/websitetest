@@ -140,7 +140,7 @@ const CustomDevelopment = () => {
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                   {/* Graphic Design */}
                   <div className="p-2">
-                  <Link href="/services/grahpicdesign" className="block">
+                  <Link href="/services/graphicdesign" className="block">
                     <img
                       src="/images/graphicdesign.png" // Replace with the actual image URL
                       alt="Graphic Design"
