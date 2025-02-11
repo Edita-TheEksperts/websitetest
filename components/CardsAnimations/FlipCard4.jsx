@@ -30,12 +30,12 @@ export default function FlipCard4() {
               <h2
                 className="text-white text-left text-[16px] lg:text-[28px] font-extrabold uppercase lg:leading-[37px]"
               >
-                DIE MOBILIAR
+                Prime Home Care
               </h2>
               <p
                 className="text-white text-left text-[16px] lg:text-[28px] font-normal uppercase lg:leading-[37px]"
               >
-                WEITERENTWICKLUNG <br /> CRM
+                App-Entwicklung & <br /> Salesforce
               </p>
               <p
                 className="text-white text-left text-[20px] font-[300] leading-[33px] lg:block hidden"
@@ -47,14 +47,15 @@ export default function FlipCard4() {
             {/* Top Right Tags */}
             <div className="font-matt absolute top-6 right-6 z-10 flex flex-col gap-[8px] items-end">
               {[
+                "Custom Development",
                 "Salesforce",
-                "Product Owner",
-                "Administrator",
-                "Sales Cloud",
-                "Experience Cloud",
-                "Marketing Cloud",
                 "Training",
+                "Project Management",
+                "Sales Cloud",
                 "Support",
+                "Web Entwicklung",
+                "Graphic Design",
+                "Administration",
               ].map((tag) => (
                 <span
                   key={tag}
@@ -67,7 +68,7 @@ export default function FlipCard4() {
 
             {/* Bottom Left Status */}
             <div className="absolute  flex-col bottom-6 left-6 z-10 flex space-x-2 text-sm">
-            <h2 className="text-start text-[14px] lg:text-[20px] font-[300] font-matt leading-[33px] ml-[8px]">Progress</h2>
+            <h2 className="text-start text-[14px] lg:text-[20px] font-[300] font-matt leading-[33px] ml-[8px]">In Progress</h2>
             <div className="flex flex-col lg:flex-row space-y-2 md:space-y-0 md:space-x-2 items-start">
             <svg xmlns="http://www.w3.org/2000/svg" width="131" height="17" viewBox="0 0 131 17" fill="none">
   <path d="M0 17V6.5L8.5 0H131V17H0Z" fill="#0009FF"/>
@@ -98,15 +99,8 @@ export default function FlipCard4() {
               <h2
                 className="text-white text-center text-[16px] font-[300] leading-[23px]"
               >
-Für unseren Kunden [Musterfirma AG] haben wir innerhalb von nur zwei Monaten eine neue, moderne Website realisiert. Das Projekt umfasste ein ansprechendes Webdesign, das perfekt auf die Markenidentität des Unternehmens abgestimmt wurde. Die technische Umsetzung erfolgte durch ein massgeschneidertes Webdevelopment, das eine benutzerfreundliche Navigation und optimale Ladezeiten sicherstellt.              </h2>
-              <h2
-                className="text-white text-center text-[16px] font-[300] leading-[23px]"
-              >
-Zusätzlich haben wir ein Support-Paket integriert, das sicherstellt, dass die Website jederzeit auf dem neuesten Stand bleibt und bei Bedarf schnell Anpassungen vorgenommen werden können. Das Ergebnis ist eine leistungsstarke und optisch ansprechende Website, die die Online-Präsenz unseres Kunden nachhaltig stärkt.              </h2>
-              <h2
-                className="text-white text-center text-[16px] font-[300] leading-[23px]"
-              >
-Dieses Projekt zeigt, wie Design, Technologie und kontinuierliche Betreuung zu einem erfolgreichen Ergebnis führen.              </h2>
+Das Projekt befindet sich in der intensiven Umsetzungsphase. Wir begleiten es von der Konzeption bis zur Realisierung. Die gesamte IT-Architektur wird aufgebaut, Geschäftsprozesse werden definiert und optimiert. Die Landing Pages samt Lead-Generierungs-Funnel stehen bereits. Der nächste Schritt umfasst die Entwicklung der Web-App, der Website sowie die Implementierung eines CRM-Systems auf Basis von Salesforce.       </h2>
+           
             </div>
           </div>
         </motion.div>

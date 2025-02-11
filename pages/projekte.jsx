@@ -168,13 +168,13 @@ const handleSubmit = async (e) => {
             <FlipCard4 />
             </section>
 
-            <section className='flex lg:flex-row flex-col lg:gap-[32px]'>
+            <section className='hidden flex lg:flex-row flex-col lg:gap-[32px]'>
             <FlipCard5 />
             <FlipCard6 />
             </section>
 
             <section className='flex lg:flex-row flex-col lg:gap-[32px] mb-[160px] lg:mb-[300px]'>
-            <FlipCard7 />
+            <FlipCard5 />
             <div className="flex flex-col w-[361] h-[557] md:w-[617px] md:h-[557px] justify-center items-center bg-[#0009FF] text-white p-8 lg:p-6 rounded-[8px]">
       {/* Header */}
       <h2 className="text-white text-[16px] lg:mb-[32px] lg:text-[28px] font-[500] lg:font-[900] uppercase leading-[37px] text-center font-matt mb-6">

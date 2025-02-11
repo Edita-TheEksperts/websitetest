@@ -30,12 +30,12 @@ export default function FlipCard3() {
               <h2
                 className="text-white text-left text-[16px] lg:text-[28px] font-extrabold uppercase lg:leading-[37px]"
               >
-                DIE MOBILIAR
+                Nettoo
               </h2>
               <p
                 className="text-white text-left text-[16px] lg:text-[28px] font-normal uppercase lg:leading-[37px]"
               >
-                WEITERENTWICKLUNG <br /> CRM
+                B2B Online Shop
               </p>
               <p
                 className="text-white text-left text-[20px] font-[300] leading-[33px] lg:block hidden"
@@ -47,13 +47,11 @@ export default function FlipCard3() {
             {/* Top Right Tags */}
             <div className="font-matt absolute top-6 right-6 z-10 flex flex-col gap-[8px] items-end">
               {[
-                "Salesforce",
-                "Product Owner",
-                "Administrator",
-                "Sales Cloud",
-                "Experience Cloud",
-                "Marketing Cloud",
-                "Training",
+                "Custom Development",
+                "Project Management",
+                "Development",
+                "AWS",
+                "Design",
                 "Support",
               ].map((tag) => (
                 <span
@@ -67,7 +65,7 @@ export default function FlipCard3() {
 
             {/* Bottom Left Status */}
             <div className="absolute  flex-col bottom-6 left-6 z-10 flex space-x-2 text-sm">
-            <h2 className="text-start text-[14px] lg:text-[20px] font-[300] font-matt leading-[33px] ml-[8px]">100% Project Completed, Currently: Support</h2>
+            <h2 className="text-start text-[14px] lg:text-[20px] font-[300] font-matt leading-[33px] ml-[8px]">Project Completed, Currently: Support</h2>
             <div className="flex flex-col lg:flex-row space-y-2 md:space-y-0 md:space-x-2 items-start">
             <svg xmlns="http://www.w3.org/2000/svg" width="131" height="17" viewBox="0 0 131 17" fill="none">
   <path d="M0 17V6.5L8.5 0H131V17H0Z" fill="#0009FF"/>
@@ -98,15 +96,8 @@ export default function FlipCard3() {
               <h2
                 className="text-black text-center text-[16px] font-[300] leading-[23px]"
               >
-Für unseren Kunden [Musterfirma AG] haben wir innerhalb von nur zwei Monaten eine neue, moderne Website realisiert. Das Projekt umfasste ein ansprechendes Webdesign, das perfekt auf die Markenidentität des Unternehmens abgestimmt wurde. Die technische Umsetzung erfolgte durch ein massgeschneidertes Webdevelopment, das eine benutzerfreundliche Navigation und optimale Ladezeiten sicherstellt.              </h2>
-              <h2
-                className="text-black text-center text-[16px] font-[300] leading-[23px]"
-              >
-Zusätzlich haben wir ein Support-Paket integriert, das sicherstellt, dass die Website jederzeit auf dem neuesten Stand bleibt und bei Bedarf schnell Anpassungen vorgenommen werden können. Das Ergebnis ist eine leistungsstarke und optisch ansprechende Website, die die Online-Präsenz unseres Kunden nachhaltig stärkt.              </h2>
-              <h2
-                className="text-black text-center text-[16px] font-[300] leading-[23px]"
-              >
-Dieses Projekt zeigt, wie Design, Technologie und kontinuierliche Betreuung zu einem erfolgreichen Ergebnis führen.              </h2>
+Nettoo, der B2B-Online-Shop von Eco Bautec & Design AG, ist unser jüngstes abgeschlossenes Projekt. Der erste Go-Live ist erfolgreich erfolgt. Insgesamt gibt es drei Phasen des Go-Live: Die erste ist abgeschlossen, die zweite bringt eine optimierte Version, und die dritte wird eine vollautomatisierte Lösung sein. Ziel ist es, das Backoffice zu entlasten, sodass sich das Team verstärkt auf Kunden und Organisationsentwicklung konzentrieren kann, anstatt auf Bestellabwicklungen. Der Nettoo-Shop ist eine massgeschneiderte Entwicklung, die auf Schweizer AWS-Servern läuft. Dafür haben wir das alte ERP-System vollständig abgelöst und alle Prozesse in das Backend von Nettoo integriert – ein nahtloses Zusammenspiel von Shop und ERP. Derzeit laufen noch letzte Optimierungsarbeiten.      </h2>
+
             </div>
           </div>
         </motion.div>

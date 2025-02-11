@@ -66,7 +66,7 @@ export default function FlipCard() {
 
             {/* Bottom Left Status */}
             <div className="absolute  flex-col bottom-6 left-6 z-10 flex space-x-2 text-sm">
-            <h2 className="text-start text-[14px] lg:text-[20px] font-[300] font-matt leading-[33px] ml-[8px]">100% Project Completed, Currently: Optimizing</h2>
+            <h2 className="text-start text-[14px] lg:text-[20px] font-[300] font-matt leading-[33px] ml-[8px]">Project Completed, Currently: Optimizing</h2>
             <div className="flex flex-col lg:flex-row space-y-2 md:space-y-0 md:space-x-2 items-start">
             <svg xmlns="http://www.w3.org/2000/svg" width="131" height="17" viewBox="0 0 131 17" fill="none">
                 <path d="M0 17V6.5L8.5 0H131V17H0Z" fill="#0009FF"/>
@@ -100,15 +100,8 @@ export default function FlipCard() {
               <h2
                 className="text-white text-center text-[16px] font-[300] leading-[23px]"
               >
-Für unseren Kunden [Musterfirma AG] haben wir innerhalb von nur zwei Monaten eine neue, moderne Website realisiert. Das Projekt umfasste ein ansprechendes Webdesign, das perfekt auf die Markenidentität des Unternehmens abgestimmt wurde. Die technische Umsetzung erfolgte durch ein massgeschneidertes Webdevelopment, das eine benutzerfreundliche Navigation und optimale Ladezeiten sicherstellt.              </h2>
-              <h2
-                className="text-white text-center text-[16px] font-[300] leading-[23px]"
-              >
-Zusätzlich haben wir ein Support-Paket integriert, das sicherstellt, dass die Website jederzeit auf dem neuesten Stand bleibt und bei Bedarf schnell Anpassungen vorgenommen werden können. Das Ergebnis ist eine leistungsstarke und optisch ansprechende Website, die die Online-Präsenz unseres Kunden nachhaltig stärkt.              </h2>
-              <h2
-                className="text-white text-center text-[16px] font-[300] leading-[23px]"
-              >
-Dieses Projekt zeigt, wie Design, Technologie und kontinuierliche Betreuung zu einem erfolgreichen Ergebnis führen.              </h2>
+Im Bereich System- und Cloud-Engineering sorgen wir dafür, dass die schweizweiten Shops sowie die Online-Funktionen von Mobilezone sicher und performant arbeiten. Unsere Engineers gewährleisten dies durch kontinuierliche Wartung, Aktualisierung und Optimierung der Systeme. Die Microsoft-Technologiepalette wird hierbei überwiegend genutzt, administriert und weiterentwickelt. Zudem führen wir Schulungen durch, um eine reibungslose Nutzung sicherzustellen.          </h2>
+
             </div>
           </div>
         </motion.div>
