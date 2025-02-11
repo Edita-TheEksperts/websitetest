@@ -42,7 +42,7 @@ const Home = () => {
   return (
     <>
       <Head>
-        <title>The Eksperts</title>
+        <title>the eksperts</title>
       </Head>
       
       <main className="font-matt flex flex-col items-center bg-white px-4">
