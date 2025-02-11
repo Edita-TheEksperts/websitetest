@@ -76,7 +76,7 @@ const Home = () => {
                 />
 
                     </div>
-                    <p className="font-matt text-[24px] lg:text-[28px] lg:leading-[37px] font-[400] lg:font-[900] uppercase lg:mb-12 lg:mt-10">
+                    <p className="font-matt text-[22px] lg:text-[28px] lg:leading-[37px] font-[400] lg:font-[900] uppercase lg:mb-12 lg:mt-10">
                     Unserer Kunden empfehlen uns weiter
                     </p>
                 </div>
@@ -84,7 +84,7 @@ const Home = () => {
                 {/* 3 Länder Section */}
                 <div className="font-matt flex flex-col lg:flex-row items-center justify-center text-center lg:text-left space-y-2  lg:space-x-26 px-2 lg:px-0">
                 {/* Left Text */}
-                <div className="font-matt text-[24px] lg:text-[28px] lg:leading-[37px] font-[400] lg:font-[900] uppercase lg:mr-[50px]">
+                <div className="font-matt text-[22px] lg:text-[28px] lg:leading-[37px] font-[400] lg:font-[900] uppercase lg:mr-[50px]">
                 <p>Bereits in</p>
                 </div>
 
@@ -100,7 +100,7 @@ const Home = () => {
                 </div>
 
                 {/* Right Text */}
-                <div className="font-matt text-[24px] lg:text-[28px] lg:leading-[37px] font-[400] lg:font-[900] uppercase lg:px-[30px] lg:mr-[10px]">
+                <div className="font-matt text-[22px] lg:text-[28px] lg:leading-[37px] font-[400] lg:font-[900] uppercase lg:px-[30px] lg:mr-[10px]">
                 <p>Ländern vertreten und weiter wachsend</p>
                 </div>
             </div>
@@ -118,7 +118,7 @@ const Home = () => {
                     className="w-full h-auto mb-4 "
                 />
                     </div>
-                    <p className="font-matt text-[24px] lg:text-[28px] lg:leading-[37px] font-[400] lg:font-[900] mt-4 uppercase">
+                    <p className="font-matt text-[22px] lg:text-[28px] lg:leading-[37px] font-[400] lg:font-[900] mt-4 uppercase">
                     Gründung der <br></br>The Eksperts Academy
                     </p>
                 </div>
@@ -136,7 +136,7 @@ const Home = () => {
                         />
                         </div>
                     </div>
-                    <p className="font-matt text-[24px] lg:text-[28px] lg:leading-[37px] font-[400] lg:font-[900] mt-4 uppercase text-center">
+                    <p className="font-matt text-[22px] lg:text-[28px] lg:leading-[37px] font-[400] lg:font-[900] mt-4 uppercase text-center">
                         Erfolgreiche Projekte in <br></br>den letzten 12 Monaten
                     </p>
                     </div>
