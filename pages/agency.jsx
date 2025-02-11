@@ -72,7 +72,7 @@ const Agency = () => {
         <h2 className="font-matt text-center text-black font-[900] text-[24px] lg:text-[28px] leading-[37px] lg:mb-20 mb-8">
           UNSER MANAGEMENT AUF EINEN BLICK
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:gap-10 gap-2 lg:max-w-[1280px] mb-[160px] lg:mb-0">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 lg:gap-10 gap-2 lg:max-w-[1280px] mb-[160px] lg:mb-0">
               {management.map((person, index) => (
                 <div
                   key={index}
@@ -243,7 +243,7 @@ const Agency = () => {
               <h2 className="lg:pt-[300px] font-matt flex items-center justify-center text-4xl lg:text-[80px] lg:leading-[80px] font-[900] lg:font-[700] text-black mb-2">
               Unsere 4 Säulen
                           </h2>
-              <section className="font-matt flex flex-col md:flex-row items-center justify-between px-2 md:px-2 py-2 lg:min-w-[1280px] mx-auto mb-10 lg:mb-0">
+              <section className="font-matt flex flex-col lg:flex-row items-center justify-between px-2 md:px-2 py-2 lg:min-w-[1280px] mx-auto mb-10 lg:mb-0">
                 {/* Image on top for mobile, on the right for larger screens */}
                 <div className="lg:block hidden font-matt flex-1 mt-8 mb-8 lg:flex justify-center md:order-2">
                   <img
@@ -265,7 +265,7 @@ const Agency = () => {
               </section>
 
 
-                    <section className="font-matt flex flex-col md:flex-row items-center justify-between px-2 md:px-2 py-2  lg:min-w-[1280px] mx-auto mb-10 lg:mb-0">
+                    <section className="font-matt flex flex-col lg:flex-row items-center justify-between px-2 md:px-2 py-2  lg:min-w-[1280px] mx-auto mb-10 lg:mb-0">
                     <div className="lg:block hidden flex-1 mt-8 md:mt-8 mb-8 flex justify-center">
                         <img
                         src="/images/the-eksperts-pillar-blue.png" 
@@ -283,7 +283,7 @@ const Agency = () => {
                     </div>
                     </section>
 
-                    <section className="font-matt flex flex-col md:flex-row items-center justify-between px-2 md:px-2 py-2 lg:min-w-[1280px] mx-auto mb-10 lg:mb-0">
+                    <section className="font-matt flex flex-col lg:flex-row items-center justify-between px-2 md:px-2 py-2 lg:min-w-[1280px] mx-auto mb-10 lg:mb-0">
                       {/* Image on top for mobile, on the right for larger screens */}
                       <div className="lg:block hidden font-matt flex-1 mt-8 mb-8 flex justify-center md:order-2">
                         <img
@@ -305,7 +305,7 @@ const Agency = () => {
                     </section>
 
 
-                    <section className="font-matt flex flex-col md:flex-row items-center justify-between px-2 md:px-2 py-2 lg:min-w-[1280px] mx-auto">
+                    <section className="font-matt flex flex-col lg:flex-row items-center justify-between px-2 md:px-2 py-2 lg:min-w-[1280px] mx-auto">
                     <div className="lg:block hidden font-matt flex-1 mt-8 md:mt-8 mb-8 flex justify-center">
                         <img
                         src="/images/the-eksperts-pillar-green.png" 
@@ -322,7 +322,7 @@ const Agency = () => {
                     </div>
                     </section>
 
-                    <section className="font-matt flex flex-col md:flex-row items-center justify-between px-2 md:px-2 py-2 lg:min-w-[1280px] mx-auto mb-[160px] mt-8 lg:mt-0 lg:mb-0">
+                    <section className="font-matt flex flex-col lg:flex-row items-center justify-between px-2 md:px-2 py-2 lg:min-w-[1280px] mx-auto mb-[160px] mt-8 lg:mt-0 lg:mb-0">
                       {/* Image on top for mobile, on the right for larger screens */}
                       <div className="lg:block hidden font-matt flex-1 mt-8 mb-8 flex justify-center md:order-2">
                         <img
@@ -356,7 +356,7 @@ const Agency = () => {
                     {/* Content Section (Visible only on mobile) */}
                     <div className="block lg:hidden lg:max-w-[1280px] mx-auto lg:mt-12 flex flex-col items-center">
                       {/* Images with title and text together */}
-                      <div className="flex flex-wrap justify-between w-full gap-12 mb-6">
+                      <div className="flex flex-wrap justify-between w-full gap-12 md:gap-0 mb-6">
                         <div className="flex-shrink-0 flex flex-col justify-center items-center w-full sm:w-1/3 mb-4">
                         <svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M162.875 132.476C162.23 132.475 161.606 132.252 161.106 131.844C160.607 131.436 160.264 130.869 160.135 130.238C159.345 126.392 157.804 122.74 155.599 119.492C155.182 118.877 155.027 118.121 155.168 117.392C155.308 116.663 155.733 116.019 156.348 115.603C156.963 115.186 157.718 115.031 158.447 115.172C159.177 115.312 159.82 115.737 160.237 116.352C162.861 120.206 164.697 124.542 165.637 129.11C165.711 129.47 165.714 129.841 165.644 130.202C165.575 130.564 165.435 130.908 165.233 131.215C165.031 131.522 164.77 131.786 164.465 131.993C164.161 132.199 163.819 132.343 163.459 132.418C163.266 132.457 163.071 132.476 162.875 132.476Z" fill="#0009FF"/>
@@ -384,7 +384,7 @@ const Agency = () => {
                             <h2 className="text-[20px] lg:text-[22px] leading-[30px] font-extrabold text-black mb-4 font-matt text-center uppercase">
                             Förderung von Talenten
                            </h2>
-                          <p className="text-[17px] text-black mb-4 font-matt text-center">
+                          <p className="text-[16px] text-black mb-4 md:mr-4 font-matt text-center">
                           Mit der Gründung der eksperts
                           Academy unterstützen wir die
                           nächste Generation von
@@ -411,7 +411,7 @@ const Agency = () => {
                                             <h2 className="text-[20px] lg:text-[22px] leading-[30px] font-extrabold text-black mb-4 font-matt text-center uppercase mt-2">
                             Unterstützung lokaler Unternehmen
                           </h2>
-                          <p className="text-[17px] text-black mb-4 font-matt text-center">
+                          <p className="text-[16px] text-black mb-4 font-matt text-center">
                           Wir helfen kleineren Unternehmen nicht
                           nur mit finanziellen Mitteln, sondern auch
                           durch unsere personellen Ressourcen, um
@@ -425,7 +425,7 @@ const Agency = () => {
                                               <h2 className="text-[20px] lg:text-[22px] leading-[30px] font-extrabold text-black mb-4 font-matt text-center uppercase">
                             Nachhaltige Zukunft
                           </h2>
-                          <p className="text-[17px] text-black mb-4 font-matt text-center">
+                          <p className="text-[16px] text-black mb-4 md:ml-4 font-matt text-center">
                           Erfolg bedeutet für uns, etwas
                           zurückzugeben und gemeinsam
                           Innovation und Wachstum in unserer

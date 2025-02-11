@@ -252,7 +252,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="lg:hidden block font-matt mx-auto grid grid-cols-1 md:grid-cols-3 gap-[34px] text-left">
+      <div className="lg:hidden block font-matt mx-auto grid grid-cols-1 gap-[34px] text-left">
         
         {/* Contact Section */}
         <div>

@@ -38,10 +38,10 @@ const Card = ({i, title, title1, title2, description, src, link, color, progress
         
         className={styles.card}
       >
-        <h2 className={`font-matt  flex items-start text-left text-[34px] leading-[34px] lg:text-[62px] font-[700] lg:leading-[80px] md:mt-[10px] ${textColorClass}`}>{title}</h2>
+        <h2 className={`font-matt  flex items-start text-left text-[34px] leading-[34px] lg:text-[62px] font-[700] lg:leading-[80px] lg:mt-[10px] ${textColorClass}`}>{title}</h2>
         <div className={styles.body}>
           <div className={styles.description} >
-          <p className={`text-black mb-8 font-matt font-[700] text-[16px] w-[340px] lg:w-auto md:mt-6 lg:mt-0 lg:text-[20px] leading-[28px] lg:leading-[33px] ${textColorClass}`}>{title1}</p>
+          <p className={`text-black mb-8 font-matt font-[700] text-[16px] w-[340px] lg:w-auto lg:mt-0 lg:text-[20px] leading-[28px] lg:leading-[33px] ${textColorClass}`}>{title1}</p>
           
             <p className={`text-black mb-8 font-matt text-[14px] w-[340px] lg:w-auto leading-[25px] lg:text-[18px] font-[300] lg:leading-[33px] ${textColorClass}`}>{description}</p>
             <p className={`text-black mb-8 font-matt font-[700] w-[340px] lg:w-auto text-[16px] lg:mt-0 lg:text-[20px] leading-[28px] lg:leading-[33px] ${textColorClass}`}>{title2}</p>

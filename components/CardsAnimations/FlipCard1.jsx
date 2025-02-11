@@ -68,7 +68,7 @@ export default function FlipCard() {
 
             <div className="absolute  flex-col bottom-6 left-6 z-10 flex space-x-2 text-sm">
             <h2 className="text-start text-[14px] lg:text-[20px] font-[300] font-matt leading-[33px] ml-[8px]">Project Completed, Currently: Optimizing</h2>
-            <div className="flex flex-col lg:flex-row space-y-2 md:space-y-0 md:space-x-2 items-start">
+            <div className="flex flex-col lg:flex-row space-y-2 md:space-y-2 lg:space-x-2 items-start">
             <svg xmlns="http://www.w3.org/2000/svg" width="131" height="17" viewBox="0 0 131 17" fill="none">
                 <path d="M0 17V6.5L8.5 0H131V17H0Z" fill="#0009FF"/>
                 </svg> 

@@ -79,7 +79,7 @@ const handleSubmit = async (e) => {
         </div>
           
 
-        <section className="md:block hidden lg:mb-[240px] mb-[160px]">
+        <section className="lg:block hidden lg:mb-[240px] mb-[160px]">
             <video
                 className="w-full h-auto"
                 loop
@@ -95,7 +95,7 @@ const handleSubmit = async (e) => {
                 Your browser does not support the video tag.
             </video>
             </section>
-            <section className="md:hidden block lg:mb-[240px] mb-[160px]">
+            <section className="lg:hidden block lg:mb-[240px] mb-[160px]">
             <video
                 className="w-full h-auto"
                 loop
@@ -126,7 +126,7 @@ const handleSubmit = async (e) => {
                 </p>
             </section>
             
-            <section className='md:block hidden lg:mb-[300px] mb-8'>
+            <section className='lg:block hidden lg:mb-[300px] mb-8'>
             <video
                 className="w-full h-auto rounded-[20px]"
                 loop
@@ -142,7 +142,7 @@ const handleSubmit = async (e) => {
                 Your browser does not support the video tag.
             </video>
             </section> 
-            <section className='md:hidden block mb-[160px] lg:mb-[300px]'>
+            <section className='lg:hidden block mb-[160px] lg:mb-[300px]'>
             <video
                 className="w-full h-auto rounded-[20px]"
                 loop
@@ -199,7 +199,7 @@ const handleSubmit = async (e) => {
 
       {/* Email */}
       <div className="flex flex-col md:flex-row md:items-center md:gap-[20px] w-full">
-        <label className="text-[#FFFF] text-[14px] lg:text-[20px] font-[300] leading-[33px] font-matt md:w-[200px] text-left">
+        <label className="text-[#FFFF] text-[14px] lg:text-[20px] font-[300] leading-[33px] font-matt md:w-[115px] lg:w-[200px] text-left">
           Email
         </label>
         <input 
@@ -215,7 +215,7 @@ const handleSubmit = async (e) => {
 
       {/* Welche Dienstleistung */}
       <div className="flex flex-col md:flex-row md:items-center md:gap-[20px] w-full">
-        <label className="text-[#FFFF] text-[14px] lg:text-[20px] font-[300] leading-[33px] font-matt md:w-[200px] text-left">
+        <label className="text-[#FFFF] text-[14px] lg:text-[20px] font-[300] leading-[33px] font-matt md:w-[220px] lg:w-[200px] text-left">
           Welche Dienstleistung
         </label>
         <input 
@@ -230,7 +230,7 @@ const handleSubmit = async (e) => {
 
       {/* Startdatum */}
       <div className="flex flex-col md:flex-row md:items-center md:gap-[20px] w-full">
-        <label className="text-[#FFFF] text-[14px] lg:text-[20px] font-[300] leading-[33px] font-matt md:w-[200px] text-left">
+        <label className="text-[#FFFF] text-[14px] lg:text-[20px] font-[300] leading-[33px] font-matt md:w-[170px] lg:w-[200px] text-left">
           Startdatum
         </label>
         <input 
