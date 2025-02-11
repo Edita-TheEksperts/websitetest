@@ -126,7 +126,7 @@ const Home = () => {
                 {/* 14 Section */}
                 <div className="font-matt flex flex-col items-center text-center lg:text-left space-y-4 md:space-x-32">
                     <div className="w-full flex lg:justify-center items-center">
-                        <div className="w-full max-w-[220px] lg:max-w-[380px] ml-[45px] lg:ml-[120px]">
+                        <div className="w-full max-w-[220px] lg:max-w-[380px] ml-[45px] md:ml-[100px] lg:ml-[190px]">
                         <Image
                             src="/images/Frame 24 (2).png" // Replace with the actual image path
                             alt="Description of image"
