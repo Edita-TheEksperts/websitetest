@@ -103,7 +103,7 @@ const SectionGrid = ({ sections }) => {
   ))}
 
       {/* First Row: Three sections */}
-      <div className="md:hidden block grid grid-cols-1 lg:grid-cols-2 gap-4 w-full col-span-3">
+      <div className="lg:hidden block grid grid-cols-1 lg:grid-cols-2 gap-4 w-full col-span-3">
       {sections.slice(0, 3).map((section, index) => (
         <div
           key={index}
