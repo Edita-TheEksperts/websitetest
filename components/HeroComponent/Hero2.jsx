@@ -139,7 +139,6 @@ const Hero = ({ setHeroVisible }) => {
                     <video
                     src="/images/Video Smm.mp4"
                     alt="Video 1"
-                    preload="metadata"
                     width={184}
                     height={184}
                     className="object-contain rounded-[20px] mr-[-20px] transform rotate-[-8.271deg] flex-shrink-0 shadow-[0px_4px_27.6px_0px_rgba(0,_0,_0,_0.25)]"
@@ -151,7 +150,6 @@ const Hero = ({ setHeroVisible }) => {
                     <video
                     src="/images/Your Partner and more.mp4"
                     alt="Video 2"
-                    preload="metadata"
                     width={184}
                     height={184}
                     className="object-contain rounded-[20px]"
@@ -169,7 +167,6 @@ const Hero = ({ setHeroVisible }) => {
                 <div className="flex gap-0 mt-[-30px]">
                     <video
                     src="/images/Video Websites.mp4"
-                    preload="metadata"
                     alt="Video 3"
                     width={184}
                     height={184}
