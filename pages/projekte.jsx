@@ -70,8 +70,8 @@ const handleSubmit = async (e) => {
       <main className="max-w-[1280px] mx-auto lg:p-2 text-center">
         
         {/* Main Heading */}
-        <div className="w-full max-w-[1280px] mx-auto text-center my-16 lg:mt-[170px] lg:mb-[145px]">
-          <h1 className="text-[100px] leading-[90px] lg:text-[174px] lg:leading-[158px] font-matt font-[900] tracking-tight uppercase">
+        <div className="w-full max-w-[1280px] mx-auto text-center mt-[100px] lg:mt-[170px] lg:mb-[145px]">
+          <h1 className="text-[90px] leading-[90px] lg:text-[174px] lg:leading-[158px] font-matt font-[900] tracking-tight uppercase">
           Unsere Arbeit
           </h1>
           <p className="font-matt font-[300] text-[22px] leading-[33px] mt-1 text-[#00000]">
@@ -185,7 +185,7 @@ const handleSubmit = async (e) => {
       <form onSubmit={handleSubmit} className="flex flex-col space-y-4 lg:space-y-6 lg:w-[512px] h-[350px] justify-center">
       {/* Unternehmen */}
       <div className="flex flex-col md:flex-row md:items-center md:gap-[20px] w-full">
-        <label className="text-[#FFFF] text-[14px] lg:text-[20px] font-[300] leading-[33px] font-matt md:w-[200px] text-left">
+        <label className="text-[#FFFF] w-[300px] ml-[20px] md:ml-0 lg:ml-0 text-[14px] lg:text-[20px] font-[300] leading-[33px] font-matt md:w-[200px] text-left">
           Unternehmen
         </label>
         <input 
@@ -194,13 +194,13 @@ const handleSubmit = async (e) => {
           value={formData.unternehmen}
           onChange={handleChange}
           placeholder="Lorem Ipsum" 
-          className="bg-white w-full md:w-[320px] md:h-[58px] text-gray-500 text-[16px] lg:text-[24px] px-4 py-2 rounded-[8px] font-[500] leading-[20px] text-left" 
+          className="bg-white w-[300px] ml-[20px] md:ml-0 lg:ml-0 md:w-[320px] md:h-[58px] text-gray-500 text-[16px] lg:text-[24px] px-4 py-2 rounded-[8px] font-[500] leading-[20px] text-left" 
         />
       </div>
 
       {/* Email */}
       <div className="flex flex-col md:flex-row md:items-center md:gap-[20px] w-full">
-        <label className="text-[#FFFF] text-[14px] lg:text-[20px] font-[300] leading-[33px] font-matt md:w-[115px] lg:w-[200px] text-left">
+        <label className="text-[#FFFF] w-[300px] ml-[20px] md:ml-0 lg:ml-0 text-[14px] lg:text-[20px] font-[300] leading-[33px] font-matt md:w-[115px] lg:w-[200px] text-left">
           Email
         </label>
         <input 
@@ -209,14 +209,14 @@ const handleSubmit = async (e) => {
           value={formData.email}
           onChange={handleChange}
           placeholder="your@email.com" 
-          className="bg-white w-full md:w-[405px] md:h-[58px] text-gray-500 text-[16px] lg:text-[24px] px-4 py-2 rounded-[8px] font-[500] leading-[20px] text-left" 
+          className="bg-white w-[300px] ml-[20px] md:ml-0 lg:ml-0 md:w-[405px] md:h-[58px] text-gray-500 text-[16px] lg:text-[24px] px-4 py-2 rounded-[8px] font-[500] leading-[20px] text-left" 
           required
         />
       </div>
 
       {/* Welche Dienstleistung */}
       <div className="flex flex-col md:flex-row md:items-center md:gap-[20px] w-full">
-        <label className="text-[#FFFF] text-[14px] lg:text-[20px] font-[300] leading-[33px] font-matt md:w-[220px] lg:w-[200px] text-left">
+        <label className="text-[#FFFF] w-[300px] ml-[20px] md:ml-0 lg:ml-0 text-[14px] lg:text-[20px] font-[300] leading-[33px] font-matt md:w-[220px] lg:w-[200px] text-left">
           Welche Dienstleistung
         </label>
         <input 
@@ -225,13 +225,13 @@ const handleSubmit = async (e) => {
           value={formData.dienstleistung}
           onChange={handleChange}
           placeholder="Dienstleistung" 
-          className="bg-white w-full md:w-[297px] md:h-[58px] text-gray-500 text-[16px] lg:text-[24px] px-4 py-2 rounded-[8px] font-[500] leading-[20px] text-left" 
+          className="bg-white w-[300px] ml-[20px] md:ml-0 lg:ml-0  md:w-[297px] md:h-[58px] text-gray-500 text-[16px] lg:text-[24px] px-4 py-2 rounded-[8px] font-[500] leading-[20px] text-left" 
         />
       </div>
 
       {/* Startdatum */}
       <div className="flex flex-col md:flex-row md:items-center md:gap-[20px] w-full">
-        <label className="text-[#FFFF] text-[14px] lg:text-[20px] font-[300] leading-[33px] font-matt md:w-[170px] lg:w-[200px] text-left">
+        <label className="text-[#FFFF] w-[300px] ml-[20px] md:ml-0 lg:ml-0 text-[14px] lg:text-[20px] font-[300] leading-[33px] font-matt md:w-[170px] lg:w-[200px] text-left">
           Startdatum
         </label>
         <input 
@@ -239,7 +239,7 @@ const handleSubmit = async (e) => {
           name="startdatum"
           value={formData.startdatum}
           onChange={handleChange}
-          className="bg-white w-full md:w-[350px] md:h-[58px] text-gray-500 text-[16px] lg:text-[24px] px-4 py-2 rounded-[8px] font-[500] leading-[20px] text-left" 
+          className="bg-white w-[300px] ml-[20px] md:ml-0 lg:ml-0 md:w-[350px] md:h-[58px] text-gray-500 text-[16px] lg:text-[24px] px-4 py-2 rounded-[8px] font-[500] leading-[20px] text-left" 
           required
         />
       </div>
@@ -250,7 +250,7 @@ const handleSubmit = async (e) => {
     {!loading && !message && (
         <button 
             type="submit" 
-            className="mt-2 bg-transparent text-white text-[18px] font-bold flex items-center justify-center w-[369px] h-[44px]"
+            className="mt-2 bg-transparent text-white text-[18px] font-bold flex items-center justify-center w-[330px] md:w-[369px] h-[44px]"
             disabled={loading}
         >
             <svg xmlns="http://www.w3.org/2000/svg" width="369" height="44" viewBox="0 0 369 44" fill="none">
