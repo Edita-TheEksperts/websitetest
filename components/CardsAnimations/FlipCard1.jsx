@@ -8,7 +8,7 @@ export default function FlipCard() {
   return (
     <div className="font-matt flex mb-[32px]">
       <div
-        className="relative w-[617px] h-[557px] perspective-1000 cursor-pointer"
+        className="flipcard relative w-[390px] h-[557px] md:w-[750px] md:h-[557px]  lg:h-[557px]  perspective-1000 cursor-pointer"
         onClick={() => setFlipped(!flipped)}
       >
         {/* Card Container */}
@@ -26,7 +26,7 @@ export default function FlipCard() {
             }}
           >
             {/* Top Left Text */}
-            <div className="absolute top-6 left-6 z-10">
+            <div className=" absolute top-6 left-6 z-10">
               <h2
                 className="text-white text-left text-[16px] lg:text-[28px] font-extrabold uppercase lg:leading-[37px]"
               >
@@ -68,7 +68,7 @@ export default function FlipCard() {
 
             <div className="absolute  flex-col bottom-6 left-6 z-10 flex space-x-2 text-sm">
             <h2 className="text-start text-[14px] lg:text-[20px] font-[300] font-matt leading-[33px] ml-[8px]">Project Completed, Currently: Optimizing</h2>
-            <div className="flex flex-col lg:flex-row space-y-2 md:space-y-2 lg:space-x-2 items-start">
+            <div className="flex flex-col lg:flex-row space-y-2 md:space-y-2 lg:space-y-0 lg:space-x-2 items-start">
             <svg xmlns="http://www.w3.org/2000/svg" width="131" height="17" viewBox="0 0 131 17" fill="none">
                 <path d="M0 17V6.5L8.5 0H131V17H0Z" fill="#0009FF"/>
                 </svg> 

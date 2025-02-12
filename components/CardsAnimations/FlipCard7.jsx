@@ -8,7 +8,7 @@ export default function FlipCard7() {
   return (
     <div className="flex mb-[32px]">
       <div
-        className="relative w-[617px] h-[557px] perspective-1000 cursor-pointer"
+        className="flipcard relative w-[390px] h-[557px] md:w-[750px] md:h-[557px] lg:w-[617px] lg:h-[557px] perspective-1000 cursor-pointer"
         onClick={() => setFlipped(!flipped)}
       >
         {/* Card Container */}
@@ -28,12 +28,12 @@ export default function FlipCard7() {
             {/* Top Left Text */}
             <div className="absolute top-6 left-6 z-10">
               <h2
-                className="text-white text-left text-[16px] lg:text-[28px] font-extrabold uppercase lg:leading-[37px]"
+                className="flipcard text-white text-left text-[16px] lg:text-[28px] font-extrabold uppercase lg:leading-[37px]"
               >
                 DIE MOBILIAR
               </h2>
               <p
-                className="text-white text-left text-[16px] lg:text-[28px] font-normal uppercase lg:leading-[37px]"
+                className="flipcard text-white text-left text-[16px] lg:text-[28px] font-normal uppercase lg:leading-[37px]"
               >
                 WEITERENTWICKLUNG <br /> CRM
               </p>

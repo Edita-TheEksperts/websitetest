@@ -205,6 +205,45 @@ body {
   }
 }
 
+/* Exactly 1024px */
+@media (width: 1024px) {
+  .flipcard {
+    width: 480px !important;
+  }
+  .flipcard h2 {
+    font-size: 18px;
+  }
+  .flipcard p {
+    font-size: 16px;
+  }
+  .flipcard span {
+    font-size: 16px;
+  }
+  .flipcard svg {
+    width: 100px !important; /* Adjust width */
+    height: 14px !important; /* Adjust height */
+  }
+  .flipcard input {
+    font-size: 16px;
+    width: 190px !important; /* Adjust width */
+    height: 50px !important; /* Adjust height */
+  }
+  .flipcard label {
+    margin-left: 40px;
+    width: 200px !important; /* Adjust width */
+    height: 50px !important; /* Adjust height */
+  }
+
+}
+
+/* 1025px and up */
+@media (min-width: 1025px) {
+  .flipcard {
+    width: 617px !important;
+  }
+ 
+}
+
 .svg-hover {
   width: 350px;
   height: 350px;
