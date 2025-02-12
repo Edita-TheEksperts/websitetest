@@ -23,7 +23,7 @@ const Salesforce = () => {
         
         {/* Main Heading */}
         <div className="w-full max-w-[1280px] mx-auto text-center my-16 lg:mt-[250px] lg:mb-[300px] mb-[160px]">
-          <h1 className="lg:block hidden text-5xl lg:text-[174px] lg:leading-[158px] font-matt font-[900] tracking-tight mb-8">
+          <h1 className="lg:block hidden text-5xl lg:text-[154px] lg:leading-[158px] font-matt font-[900] tracking-tight mb-8">
           SALESFORCE
           </h1>
           <h1 className="lg:hidden block text-5xl text-[114px] leading-[100px] font-matt font-[900] tracking-tight lg:mb-8 mb-2">

@@ -22,7 +22,7 @@ const CustomDevelopment = () => {
         
         {/* Main Heading */}
         <div className="w-full max-w-[1280px] mx-auto text-center my-16 mt-[100px] lg:mt-[170px] lg:mb-[300px] mb-[160px]">
-          <h1 className="lg:block hidden text-5xl lg:text-[174px] lg:leading-[158px] font-matt font-[900] tracking-tight mb-8 uppercase">
+          <h1 className="lg:block hidden lg:text-[134px] lg:leading-[138px] font-matt font-[900] tracking-tight mb-8 uppercase">
           Custom development
           </h1>
           <h1 className="lg:hidden block text-[81px] leading-[70px] lg:text-[174px] lg:leading-[158px] font-matt font-[900] tracking-tight lg:mb-8 uppercase">

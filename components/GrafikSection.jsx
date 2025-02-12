@@ -16,7 +16,7 @@ export default function DesignSection() {
         </div>
       
         {/* Right Sections */}
-        <div className="flex gap-2 lg:gap-2 flex-wrap mt-[30px] lg:mt-0">
+        <div className="flex gap-2 md:gap-8 lg:gap-2 flex-wrap mt-[30px] lg:mt-0">
           {/* Card 1 */}
           <div
             className="flex lg:flex-col justify-center lg:justify-start items-start text-left gap-[16px] lg:gap-16 lg:p-6 bg-[#F1F1F1] rounded-lg"

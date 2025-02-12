@@ -95,7 +95,7 @@ const Agency = () => {
                     <p className="font-matt text-[16px] md:text-[19px] md:leading-[20px] font-normal lg:mb-2">{person.title}</p>
                     <p className="font-matt text-[16px] md:text-[16px] md:leading-[18px] font-light lg:mb-2">{person.description}</p>
                     <p className="lg:block hidden font-matt text-xs md:text-[12px] md:leading-[14px] font-light italic">{person.shortDescription}</p>
-                    <div className=" lg:block hidden lg:mt-6 lg:flex space-x-4">
+                    <div className=" lg:mt-6 flex space-x-4">
                     <a href={person.linkedin} className="text-blue-500">
                       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 14 14" fill="none">
                         <path d="M13.399 13.4004V8.71244C13.399 6.40844 12.903 4.64844 10.215 4.64844C8.91895 4.64844 8.05495 5.35244 7.70295 6.02444H7.67095V4.85644H5.12695V13.4004H7.78295V9.16044C7.78295 8.04044 7.99095 6.96844 9.36695 6.96844C10.727 6.96844 10.743 8.23244 10.743 9.22444V13.3844H13.399V13.4004Z" fill="black"/>
