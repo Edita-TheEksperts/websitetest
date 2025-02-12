@@ -72,7 +72,7 @@ const Agency = () => {
         <h2 className="font-matt text-center text-black font-[900] text-[24px] lg:text-[28px] leading-[37px] lg:mb-20 mb-8">
           UNSER MANAGEMENT AUF EINEN BLICK
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 lg:gap-10 gap-2 lg:max-w-[1280px] mb-[160px] lg:mb-0">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 lg:gap-4 gap-2 lg:max-w-[1280px] mb-[160px] lg:mb-0">
               {management.map((person, index) => (
                 <div
                   key={index}
@@ -87,7 +87,7 @@ const Agency = () => {
                   
                   {/* Overlay content */}
                   <div 
-                    className="absolute bottom-[15px] left-[15px] right-[15px] transform bg-[#F1F1F1] text-black p-4 lg:w-[327px] lg:h-[250px] overflow-hidden "
+                    className="absolute bottom-[15px] left-[15px] right-[15px] transform bg-[#F1F1F1] text-black p-4 lg:max-w-[327px] lg:min-h-[250px] overflow-hidden "
                     style={{ clipPath: 'polygon(100% 0%, 94% 98%, 0% 100%, 0% 0%)' }}
                   >
 
