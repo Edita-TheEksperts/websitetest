@@ -243,7 +243,7 @@ const Agency = () => {
               <h2 className="lg:pt-[300px] font-matt flex items-center justify-center text-4xl lg:text-[80px] lg:leading-[80px] font-[900] lg:font-[700] text-black mb-2">
               Unsere 4 Säulen
                           </h2>
-              <section className="font-matt flex flex-col lg:flex-row items-center justify-between px-2 md:px-2 py-2 lg:min-w-[1280px] mx-auto mb-10 lg:mb-0">
+              <section className="font-matt flex flex-col lg:flex-row items-center justify-between px-2 md:px-2 py-2 lg:min-w-[1024px] mx-auto mb-10 lg:mb-0">
                 {/* Image on top for mobile, on the right for larger screens */}
                 <div className="lg:block hidden font-matt flex-1 mt-8 mb-8 lg:flex justify-center md:order-2">
                   <img
@@ -254,7 +254,7 @@ const Agency = () => {
                 </div>
 
                 {/* Text block on mobile (below image), on the left for larger screens */}
-                <div className="font-matt flex-1 lg:min-w-[620px] max-w-lg lg:text-left text-center md:order-1 mt-8 lg:mt-0">
+                <div className="font-matt flex-1 lg:min-w-[500px] max-w-lg lg:text-left text-center md:order-1 mt-8 lg:mt-0">
                   <h2 className="font-matt text-[16px] md:text-[25px] md:leading-[37px] font-[900] text-black mb-4 uppercase">
                     Unsere 4 Säulen – Ein <br /> ganzheitlicher Ansatz
                   </h2>
@@ -265,16 +265,16 @@ const Agency = () => {
               </section>
 
 
-                    <section className="font-matt flex flex-col lg:flex-row items-center justify-between px-2 md:px-2 py-2  lg:min-w-[1280px] mx-auto mb-10 lg:mb-0">
+                    <section className="font-matt flex flex-col lg:flex-row items-center justify-between px-2 lg:max-px-20 py-2  lg:min-w-[1024px] mx-auto mb-10 lg:mb-0">
                     <div className="lg:block hidden flex-1 mt-8 md:mt-8 mb-8 flex justify-center">
                         <img
                         src="/images/the-eksperts-pillar-blue.png" 
                         alt="Info Section Image"
-                        className="w-full lg:w-[656px] lg:h-[380px] "
+                        className="w-full min-w-[] lg:w-[656px] lg:h-[380px] "
                         />
                     </div>
 
-                    <div className="font-matt flex-1 lg:min-w-[580px] max-w-lg lg:text-left text-center ">
+                    <div className="font-matt flex-1 lg:min-w-[400px] max-w-lg lg:text-left text-center ">
                         <h2 className="font-matt text-[16px]  md:text-[25px] md:leading-[37px] font-[900] text-black mb-4 uppercase">
                         Verstehen und Kommunikation <br></br>– Die Basis für Ihren Erfolg
                         </h2>
@@ -283,7 +283,7 @@ const Agency = () => {
                     </div>
                     </section>
 
-                    <section className="font-matt flex flex-col lg:flex-row items-center justify-between px-2 md:px-2 py-2 lg:min-w-[1280px] mx-auto mb-10 lg:mb-0">
+                    <section className="font-matt flex flex-col lg:flex-row items-center justify-between px-2 md:px-2 py-2 lg:min-w-[1024px] mx-auto mb-10 lg:mb-0">
                       {/* Image on top for mobile, on the right for larger screens */}
                       <div className="lg:block hidden font-matt flex-1 mt-8 mb-8 flex justify-center md:order-2">
                         <img
@@ -294,7 +294,7 @@ const Agency = () => {
                       </div>
 
                       {/* Text block on mobile (below image), on the left for larger screens */}
-                      <div className="font-matt flex-1 lg:min-w-[570px] max-w-lg lg:text-left text-center md:order-1">
+                      <div className="font-matt flex-1 lg:min-w-[550px] max-w-lg lg:text-left text-center md:order-1">
                         <h2 className="font-matt  text-[16px] md:text-[25px] md:leading-[37px] font-[900] text-black mb-4 uppercase">
                           UI/UX – Benutzerzentrierte <br /> Gestaltung für Ihre Lösung
                         </h2>
@@ -305,7 +305,7 @@ const Agency = () => {
                     </section>
 
 
-                    <section className="font-matt flex flex-col lg:flex-row items-center justify-between px-2 md:px-2 py-2 lg:min-w-[1280px] mx-auto">
+                    <section className="font-matt flex flex-col lg:flex-row items-center justify-between px-2 md:px-2 py-2 lg:min-w-[1022px] mx-auto">
                     <div className="lg:block hidden font-matt flex-1 mt-8 md:mt-8 mb-8 flex justify-center">
                         <img
                         src="/images/the-eksperts-pillar-green.png" 
@@ -322,7 +322,7 @@ const Agency = () => {
                     </div>
                     </section>
 
-                    <section className="font-matt flex flex-col lg:flex-row items-center justify-between px-2 md:px-2 py-2 lg:min-w-[1280px] mx-auto mb-[160px] mt-8 lg:mt-0 lg:mb-0">
+                    <section className="font-matt flex flex-col lg:flex-row items-center justify-between px-2 md:px-2 py-2 lg:min-w-[1024px] mx-auto mb-[160px] mt-8 lg:mt-0 lg:mb-0">
                       {/* Image on top for mobile, on the right for larger screens */}
                       <div className="lg:block hidden font-matt flex-1 mt-8 mb-8 flex justify-center md:order-2">
                         <img
@@ -333,7 +333,7 @@ const Agency = () => {
                       </div>
 
                       {/* Text block on mobile (below image), on the left for larger screens */}
-                      <div className="font-matt flex-1 lg:min-w-[600px] max-w-lg text-center lg:text-left md:order-1">
+                      <div className="font-matt flex-1 lg:min-w-[520px] max-w-lg text-center lg:text-left md:order-1">
                         <h2 className="font-matt  text-[16px] md:text-[25px] md:leading-[37px] font-[900] text-black mb-4 uppercase">
                           Optimierung, Schulung und Support<br /> – Nachhaltige Partnerschaft
                         </h2>
@@ -346,7 +346,7 @@ const Agency = () => {
                     </div>
 
                     <section className="lg:px-4 py-2">
-                    <div className="lg:min-w-[1280px] mx-auto md:text-center">
+                    <div className="lg:min-w-[1020px] mx-auto md:text-center">
                       {/* Section Header */}
                       <h2 className="font-matt text-[24px] text-center lg:text-[75px] lg:leading-[80px] lg:font-[700] font-[900] text-black lg:mb-20 mb-8 uppercase">
                       Unser Engagement für Gutes!
@@ -437,7 +437,7 @@ const Agency = () => {
 
 
                     {/* Content Section */}
-                      <div className=" hidden lg:block lg:max-w-[1280px] mx-auto mt-12 flex flex-col items-center">
+                      <div className=" hidden lg:block lg:max-w-[1020px] mx-auto mt-12 lg:flex flex-col items-center">
                         {/* Images in one line */}
                         <div className="flex justify-between w-full gap-12 mb-6 lg:max-w-[1280px] lg:px-2">
                           <div className="flex-shrink-0 flex justify-center items-center w-1/3 lg: lg:ml-[-20px] lg:mr-[-20px]">
@@ -503,14 +503,14 @@ const Agency = () => {
                         </div>
 
                         {/* Paragraphs in one line */}
-                        <div className="flex flex-col lg:flex-row justify-between items-start w-full lg:min-w-[1280px] lg:px-2 gap-12">
-                        <p className="text-[20px] leading-[33px] text-black mb-4 font-matt font-[300] text-center lg:w-1/3">
+                        <div className="flex flex-col lg:flex-row justify-center items-center w-full lg:min-w-[1020px] lg:px-2 gap-[120px]">
+                        <p className="text-[20px] leading-[33px] text-black mb-4 font-matt font-[300] text-center lg:w-[250px]">
                           Mit der Gründung der eksperts Academy unterstützen wir die nächste Generation von Fachkräften durch Zugang zu Wissen und Ressourcen.
                         </p>
-                        <p className="text-[20px] leading-[33px] text-black mb-4 font-matt font-[300] text-center lg:w-1/3">
+                        <p className="text-[20px] leading-[33px] text-black mb-4 font-matt font-[300] text-center lg:w-[290px]">
                           Wir helfen kleineren Unternehmen nicht nur mit finanziellen Mitteln, sondern auch durch unsere personellen Ressourcen und die Infrastruktur unserer Firma, um ihre Ideen und Projekte zu realisieren.
                         </p>
-                        <p className="text-[20px] leading-[33px] text-black mb-4 font-matt font-[300] text-center lg:w-1/3">
+                        <p className="text-[20px] leading-[33px] text-black mb-4 font-matt font-[300] text-center lg:w-[250px]">
                           Erfolg bedeutet für uns, etwas zurückzugeben und gemeinsam Innovation und Wachstum in unserer Region zu fördern.
                         </p>
                       </div>
