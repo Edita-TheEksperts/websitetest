@@ -145,6 +145,7 @@ const Hero = ({ setHeroVisible }) => {
                     autoPlay
                     loop
                     muted
+                    playsInline 
                     />
                     <video
                     src="/images/Your Creative Partner and more.mov"
@@ -160,6 +161,7 @@ const Hero = ({ setHeroVisible }) => {
                     autoPlay
                     loop
                     muted
+                    playsInline 
                     />
                 </div>
                 <div className="flex gap-0 mt-[-30px]">
@@ -178,6 +180,7 @@ const Hero = ({ setHeroVisible }) => {
                     autoPlay
                     loop
                     muted
+                    playsInline
                     />
                     <img
                     src="/images/The-eksperts-short-.png"
@@ -190,9 +193,6 @@ const Hero = ({ setHeroVisible }) => {
                         flexShrink: 0,
                         boxShadow: '0px 4px 27.6px 0px rgba(0, 0, 0, 0.25)',
                     }}
-                    autoPlay
-                    loop
-                    muted
                     />
                 </div>
                 </div>
