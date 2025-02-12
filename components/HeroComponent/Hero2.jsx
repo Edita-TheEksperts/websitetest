@@ -137,7 +137,7 @@ const Hero = ({ setHeroVisible }) => {
             <div className="lg:hidden block flex flex-col items-center mt-2 md:mt-0">
                 <div className="flex gap-0 mb-4">
                     <video
-                    src="/images/SMM.mp4"
+                    src="/images/Video Smm.mp4"
                     alt="Video 1"
                     width={184}
                     height={184}
@@ -148,7 +148,7 @@ const Hero = ({ setHeroVisible }) => {
                     playsInline 
                     />
                     <video
-                    src="/images/Your Creative Partner and more.mov"
+                    src="/images/Your Partner and more.mp4"
                     alt="Video 2"
                     width={184}
                     height={184}
@@ -166,7 +166,7 @@ const Hero = ({ setHeroVisible }) => {
                 </div>
                 <div className="flex gap-0 mt-[-30px]">
                     <video
-                    src="/images/Scene 02.mp4"
+                    src="/images/Video Websites.mp4"
                     alt="Video 3"
                     width={184}
                     height={184}
