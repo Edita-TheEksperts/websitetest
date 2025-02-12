@@ -19,7 +19,7 @@ const HeaderSection = () => {
       className="sticky top-0 flex flex-col items-center justify-center h-screen bg-white transition-opacity duration-700 z-50"
     >
       <motion.h2
-        className=" wie-heading text-black text-6xl uppercase lg:mr-[580px] font-matt lg:leading-[158px] font-[300] lg:text-[174px] tracking-[-2.88px] text-center"
+        className=" wie-heading text-black text-6xl uppercase lg:mr-[380px] font-matt lg:leading-[158px] font-[300] lg:text-[134px] tracking-[-2.88px] text-center"
         initial="hidden"
         animate={inView ? "visible" : "hidden"}
         variants={{
@@ -34,7 +34,7 @@ const HeaderSection = () => {
         WIE WIR
       </motion.h2>
       <motion.h2
-        className="wie-heading text-black text-6xl uppercase lg:ml-[120px] font-matt lg:leading-[158px] font-[300] lg:text-[174px] tracking-[-2.88px] text-center"
+        className="wie-heading text-black text-6xl uppercase lg:ml-[120px] font-matt lg:leading-[158px] font-[300] lg:text-[134px] tracking-[-2.88px] text-center"
         initial="hidden"
         animate={inView ? "visible" : "hidden"}
         variants={{
@@ -54,7 +54,7 @@ const HeaderSection = () => {
         height="110"
         viewBox="0 0 109 110"
         fill="none"
-        className="w-[100px] h-[100px] mt-6 lg:ml-[1170px] lg:mt-[-210px]"
+        className="w-[100px] h-[100px] mt-6 lg:ml-[880px] lg:mt-[-210px]"
         style={{
           transformOrigin: "center",
         }}
@@ -122,7 +122,7 @@ const Section = ({ title, text, image, reverse }) => {
         <img
           src={image}
           alt={title}
-          className="w-full lg:w-[656px] lg:h-[380px] "
+          className="w-full lg:w-[600px] lg:h-[380px] "
         />
       </motion.div>
     </motion.section>

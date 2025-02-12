@@ -49,8 +49,10 @@
         align-items: center;
         overflow: hidden;
       }
-      
-      @media (min-width: 1024px) { 
+    
+
+
+      @media (min-width: 1025px) { 
         .imageContainer {
           display: flex;
         }
@@ -128,8 +130,19 @@
   display: none; 
 }
 
-@media (min-width: 1024px) { 
+@media (min-width: 1023px) { 
   .imageContainer {
-    display: block;
+      display: block;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1024px) {
+  .imageContainer {
+    display: flex !important;  /* Ensure images are shown */
+  }
+
+  .card {
+      width: 100%;
+      max-width: 1000px !important;
   }
 }

@@ -198,26 +198,6 @@ body {
   height: auto; 
 }
 
-@media (width: 1024px) {
-  .wie-heading {
-    font-size: 100px;
-  }
-
-  .left-heading {
-    margin-right: 50px;
-  }
-
-  .right-heading {
-    margin-left: 50px;
-  }
-
-  .wie-svg {
-    width: 80px;
-    height: 80px;
-    margin-left: 100px;
-  }
-}
-
 @media (min-width: 768px) {
   .custom-svg-472 {
     width: 472px;

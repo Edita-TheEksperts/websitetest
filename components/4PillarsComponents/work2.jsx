@@ -29,7 +29,7 @@ const HeaderSection2 = () => {
       className=" top-0 flex flex-col items-center justify-center h-screen bg-white transition-opacity duration-700 z-50"
     >
       <motion.h2
-        className="text-black text-6xl lg:mr-[500px] uppercase font-matt lg:leading-[158px] font-[300] lg:text-[174px] tracking-[-2.88px] text-left"
+        className="text-black text-6xl lg:mr-[380px] uppercase font-matt lg:leading-[158px] font-[300] lg:text-[134px] tracking-[-2.88px] text-left"
         initial="hidden"
         animate={inView ? "visible" : "hidden"}
         variants={{
@@ -44,7 +44,7 @@ const HeaderSection2 = () => {
         WAS WIR 
       </motion.h2>
       <motion.h2
-        className="text-black text-6xl uppercase lg:ml-[280px] font-matt lg:leading-[158px] font-[300] lg:text-[174px] tracking-[-2.88px] text-center"
+        className="text-black text-6xl uppercase lg:ml-[210px] font-matt lg:leading-[158px] font-[300] lg:text-[134px] tracking-[-2.88px] text-center"
         initial="hidden"
         animate={inView ? "visible" : "hidden"}
         variants={{
@@ -65,7 +65,7 @@ const HeaderSection2 = () => {
         height="110"
         viewBox="0 0 109 110"
         fill="none"
-        className="w-[100px] h-[100px] mt-6 lg:ml-[1170px] lg:mt-[-210px]"
+        className="w-[100px] h-[100px] mt-6 lg:ml-[880px] lg:mt-[-210px]"
         style={{
           transformOrigin: "center",
         }}

@@ -38,7 +38,7 @@ const HeaderSection = () => {
       className=" top-0 flex flex-col items-center justify-center h-screen bg-white transition-opacity duration-700 z-50"
     >
       <motion.h2
-        className="text-black text-6xl uppercase font-matt lg:leading-[158px] font-[222] lg:text-[174px] tracking-[-2.88px] text-center"
+        className="wie-heading text-black text-6xl uppercase font-matt lg:leading-[158px] font-[222] lg:text-[174px] tracking-[-2.88px] text-center"
         initial="hidden"
         animate={inView ? "visible" : "hidden"}
         variants={{

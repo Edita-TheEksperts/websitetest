@@ -24,12 +24,12 @@ const HeaderSection = () => {
       transition={{ duration: 0.9, ease: "easeInOut" }}
     >
       <motion.h2
-        className="text-black text-6xl uppercase font-matt lg:mr-[210px] lg:leading-[158px] font-[300] lg:text-[174px] tracking-[-2.88px] text-center"
+        className="text-black text-6xl uppercase font-matt lg:mr-[210px] lg:leading-[158px] font-[300] lg:text-[124px] tracking-[-2.88px] text-center"
       >
         WARUM WIR
       </motion.h2>
       <motion.h2
-        className="text-black text-6xl uppercase font-matt lg:ml-[5px] lg:leading-[158px] font-[300] lg:text-[174px] tracking-[-2.88px] text-center"
+        className="text-black text-6xl uppercase font-matt lg:ml-[1px] lg:leading-[158px] font-[300] lg:text-[124px] tracking-[-2.88px] text-center"
       >
         BEGEISTERN
       </motion.h2>
@@ -39,7 +39,7 @@ const HeaderSection = () => {
         height="110"
         viewBox="0 0 109 110"
         fill="none"
-        className="w-[100px] h-[100px] mt-6 lg:ml-[1170px] lg:mt-[-210px]"
+        className="w-[100px] h-[100px] mt-6 lg:ml-[880px] lg:mt-[-210px]"
         style={{
           transformOrigin: "center",
         }}
