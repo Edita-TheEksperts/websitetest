@@ -16,7 +16,7 @@ const HeaderSection = () => {
   return (
     <div
       ref={ref}
-      className="wie sticky top-0 flex flex-col items-center justify-center h-screen bg-white transition-opacity duration-700 z-50"
+      className="sticky top-0 flex flex-col items-center justify-center h-screen bg-white transition-opacity duration-700 z-50"
     >
       <motion.h2
         className=" wie-heading text-black text-6xl uppercase lg:mr-[580px] font-matt lg:leading-[158px] font-[300] lg:text-[174px] tracking-[-2.88px] text-center"
