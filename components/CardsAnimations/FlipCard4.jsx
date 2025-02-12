@@ -90,7 +90,6 @@ export default function FlipCard4() {
           <div
             className="absolute w-full h-full bg-cover bg-center text-white flex justify-center items-center rounded-lg overflow-hidden"
             style={{
-              backgroundImage: "url('/images/Mobiliar_Back.png')",
               backfaceVisibility: "hidden",
               transform: "rotateY(180deg)",
             }}
