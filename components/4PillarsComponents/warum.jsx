@@ -93,7 +93,7 @@ const SectionGrid = ({ sections }) => {
       key={index}
       className="flex flex-col items-center text-center space-y-4 lg:space-y-8 lg:mb-[30px] w-full lg:block hidden"
     >
-      <div className="lg:ml-[40px]">
+      <div className="lg:ml-[2px]">
       {section.icon}
       </div>
       <h3 className="font-matt text-xl lg:text-[28px] leading-[37px] font-[900] text-black uppercase">
