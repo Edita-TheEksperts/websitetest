@@ -1,15 +1,32 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
 export default function FlipCard4() {
   const [flipped, setFlipped] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  // Detect screen size and update isMobile state
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    handleResize(); // Check on mount
+    window.addEventListener("resize", handleResize);
+    
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   return (
     <div className="flex mb-[32px]">
       <div
         className="flipcard relative w-[390px] h-[557px] md:w-[750px] md:h-[557px] lg:w-[617px] lg:h-[557px] perspective-1000 cursor-pointer"
-        onClick={() => setFlipped(!flipped)}
+        onClick={() => {
+          if (!isMobile) {
+            setFlipped(!flipped);
+          }
+        }}
       >
         {/* Card Container */}
         <motion.div
