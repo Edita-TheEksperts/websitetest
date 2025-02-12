@@ -96,12 +96,12 @@ const Section = ({ title, text, image, reverse }) => {
       ref={ref}
       className={`font-matt flex flex-col ${
         reverse ? "md:flex-row-reverse" : "md:flex-row"
-      } items-center justify-between px-4 md:px-2 py-4 lg:min-w-[1280px] mx-auto mt-4`}
+      } items-center justify-between px-4 md:px-2 py-4 lg:min-w-[1020px] lg:max-w-[1280px] mx-auto mt-4`}
       initial="hidden"
       animate={inView ? "visible" : "hidden"}
       variants={fadeVariants}
     >
-      <motion.div className="font-matt flex-1 lg:min-w-[590px] max-w-lg text-center lg:text-left mb-4 mt-8">
+      <motion.div className="font-matt flex-1 lg:min-w-[470px] max-w-lg text-center lg:text-left mb-4 mt-8">
         <motion.h2
           className="font-matt text-2xl md:text-[25px] md:leading-[37px] font-[900]  text-black lg:mb-4 uppercase"
           variants={fadeVariants}
