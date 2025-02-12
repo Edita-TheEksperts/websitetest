@@ -117,7 +117,7 @@ const SectionGrid = ({ sections }) => {
       ))}
   </div>
       {/* Second Row: Two sections */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 w-full col-span-3">
+      <div className="lg:ml-[30px] grid grid-cols-1 lg:grid-cols-2 gap-4 w-full col-span-3">
         {sections.slice(3).map((section, index) => (
           <div
             key={index}
