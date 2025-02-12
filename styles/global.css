@@ -204,14 +204,37 @@ body {
     height: 227px;
   }
 }
-
 @media (width: 1024px) {
-  .extra{
-    width: 1020px !important;
+  .section14{
+    margin-left: 80px !important;
   }
   
 }
 
+@media (width: 1024px) {
+  .extra{
+    width: 1000px !important;
+  }
+  
+}
+
+@media (width: 1024px) {
+  .heading h1{
+    font-size: 50px;
+    line-height: 66px;
+    margin-right: 10px; 
+  }
+  
+}
+
+@media (width: 1024px) {
+  .heading1 p{
+    font-size: 30px;
+    line-height: 37px;
+    margin-right: 10px; 
+  }
+  
+}
 @media (width: 1024px) {
   .extraclass2 p{
     font-size: 16px;

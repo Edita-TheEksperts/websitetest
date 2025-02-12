@@ -126,7 +126,7 @@ const Home = () => {
                 {/* 14 Section */}
                 <div className="font-matt flex flex-col items-center text-center lg:text-left space-y-4 md:space-x-32">
                     <div className="w-full flex lg:justify-center items-center">
-                        <div className="w-full max-w-[220px] lg:max-w-[380px] ml-[45px] md:ml-[100px] lg:ml-[190px]">
+                        <div className="section14 w-full max-w-[220px] lg:max-w-[380px] ml-[45px] md:ml-[100px] lg:ml-[190px]">
                         <Image
                             src="/images/Frame 24 (2).png" // Replace with the actual image path
                             alt="Description of image"
@@ -146,7 +146,7 @@ const Home = () => {
 
             <section className="extraclass bg-white mt-[140px] lg:py-2 flex flex-col lg:flex-row justify-between items-center lg:w-[1320px] mx-auto font-matt space-y-8 lg:space-y-0 lg:mt-[300px] lg:mb-[300px] mb-[160px]">
             {/* Left Section: Heading */}
-            <div className="lg:block hidden flex-1 text-center lg:text-left lg:w-[490px]">
+            <div className="heading lg:block hidden flex-1 text-center lg:text-left lg:w-[490px]">
                 <h1 className="text-4xl lg:text-[62px] lg:leading-[80px] font-[700] leading-tight">
                 Haben Sie <br />
                 Fragen oder <br />
@@ -183,10 +183,10 @@ const Home = () => {
                 </div>
 
                 {/* Right Section: Contact Details */}
-                <div className="font-matt flex-1 text-center lg:text-left lg:space-y-6">
+                <div className="heading1 font-matt flex-1 text-center lg:text-left lg:space-y-6">
                 {/* Name and Title */}
                 <h2 className="text-4xl lg:text-[78px] lg:leading-[80px] font-matt font-[300] mb-2 lg:mb-0">FISNIK SALIHU</h2>
-                <p className="text-black text-xl lg:text-[28px] lg:leading-[37px] font-matt font-[300] uppercase ml-1 mb-[24px] lg:mb-0">Co-Founder & strategy ekspert</p>
+                <p className=" text-black text-xl lg:text-[28px] lg:leading-[37px] font-matt font-[300] uppercase ml-1 mb-[24px] lg:mb-0">Co-Founder & strategy ekspert</p>
 
                 {/* Email Section */}
                 <div className="flex extraclass2 flex-col lg:flex-row items-center lg:space-x-10 lg:space-y-0 mb-[24px] lg:mb-0 ">
