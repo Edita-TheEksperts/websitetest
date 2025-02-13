@@ -1,4 +1,5 @@
 import React from "react";
+import Head from 'next/head';
 
 const Hero = ({ title, subtitle }) => {
     return (
@@ -14,8 +15,11 @@ const Hero = ({ title, subtitle }) => {
 };
 
 const Impressum = () => {
-    
     return (
+        <>
+        <Head>
+        <title>Impressum - the eksperts</title>
+      </Head>
         <div className="max-w-[1280px] mx-auto px-6 py-12">
             <Hero
                 title="Impressum"
@@ -73,6 +77,7 @@ const Impressum = () => {
                 </p>
             </section>
         </div>
+        </>
     );
 };
 

@@ -1,4 +1,5 @@
 import React from "react";
+import Head from 'next/head';
 
 const DatenschutzHeroSection = () => {
     return (
@@ -14,6 +15,10 @@ const DatenschutzHeroSection = () => {
 
 const Datenschutz = () => {
   return (
+    <>
+     <Head>
+        <title>Datenschutz - the eksperts</title>
+      </Head>
     <div className="max-w-[1280px] mx-auto px-6 py-12">
       <DatenschutzHeroSection />
 
@@ -108,6 +113,7 @@ const Datenschutz = () => {
       </section>
       
     </div>
+    </>
   );
 };
 
