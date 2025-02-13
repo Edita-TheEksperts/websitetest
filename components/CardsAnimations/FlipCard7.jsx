@@ -74,7 +74,7 @@ const ProjectForm = ({ handleSubmit }) => {
         SIE MÖCHTEN EIN PROJEKT STARTEN?
       </h2>
 
-      <form onSubmit={handleFormSubmit} className="flex flex-col space-y-4 lg:space-y-6 lg:w-[512px] h-[440px] justify-center">
+      <form onSubmit={handleFormSubmit} className="flex flex-col space-y-4 lg:space-y-6 lg:w-[512px] h-[430px] justify-center">
         
         {/* Unternehmen */}
         <div className="flex flex-col md:flex-row md:items-center md:gap-[20px] w-full">
@@ -90,7 +90,7 @@ const ProjectForm = ({ handleSubmit }) => {
             placeholder="Firmenname" 
             className={`bg-white w-[300px] ml-[20px] md:ml-0 lg:ml-0 md:w-[300px] md:h-[58px] text-gray-900 placeholder-gray-500 text-[16px] lg:text-[24px] px-4 py-2 rounded-[8px] font-[500] leading-[20px] border ${errors.unternehmen ? 'border-red-500' : 'border-gray-300'}`}
           />
-          {errors.unternehmen && <p className="text-red-500 text-sm mt-1 ml-[20px]">{errors.unternehmen}</p>}
+          {errors.unternehmen && <p className="text-red-500 text-sm mt-0 ml-[20px]">{errors.unternehmen}</p>}
           </div>
         </div>
 
@@ -108,7 +108,7 @@ const ProjectForm = ({ handleSubmit }) => {
             placeholder="Ihre Email" 
             className={`bg-white w-[300px] ml-[20px] md:ml-0 lg:ml-0 md:w-[300px] md:h-[58px] text-gray-500 placeholder-gray-500 text-[16px] lg:text-[24px] px-4 py-2 rounded-[8px] font-[500] leading-[20px] border ${errors.email ? 'border-red-500' : 'border-gray-300'}`}
           />
-          {errors.email && <p className="text-red-500 text-sm mt-1 ml-[20px]">{errors.email}</p>}
+          {errors.email && <p className="text-red-500 text-sm mt-0 ml-[20px]">{errors.email}</p>}
           </div>
         </div>
 
@@ -131,7 +131,7 @@ const ProjectForm = ({ handleSubmit }) => {
             <option value="Graphic Design">Graphic Design</option>
             <option value="Book your Ekspert">Book your Ekspert</option>
           </select>
-          {errors.dienstleistung && <p className="text-red-500 text-sm lg:mt-1 ml-[20px]">{errors.dienstleistung}</p>}
+          {errors.dienstleistung && <p className="text-red-500 text-sm lg:mt-0 ml-[20px]">{errors.dienstleistung}</p>}
           </div>
         </div>
 
@@ -150,7 +150,7 @@ const ProjectForm = ({ handleSubmit }) => {
             onKeyDown={(e) => e.preventDefault()}
             className={`bg-white w-[300px] ml-[20px] md:ml-0 lg:ml-0 md:w-[300px] md:h-[58px] text-gray-500 text-[16px] lg:text-[24px] px-4 py-2 rounded-[8px] font-[500] leading-[20px] border ${errors.startdatum ? 'border-red-500' : 'border-gray-300'}`}
           />
-                  {errors.startdatum && <p className="text-red-500 text-sm md:mt-1">{errors.startdatum}</p>}
+                  {errors.startdatum && <p className="text-red-500 text-sm md:mt-0">{errors.startdatum}</p>}
                   </div>
         </div>
 
