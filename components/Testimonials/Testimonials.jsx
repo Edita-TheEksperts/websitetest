@@ -62,7 +62,7 @@ const testimonials = [
   },
   {
     quote:
-      "Als Salesforce Product Owner für Deutschland und Österreich bei Pluxee möchte ich die herausragende Arbeit von Petrit, unserem Consultant seitens the eksperts hervorheben. Er ist maßgeblich an der Zusammenführung zweier Salesforce Orgs beteiligt – eine anspruchsvolle Aufgabe, die er mit Expertise und Präzision umsetzt.Sein Wissen in der CPQ-Integration und seine Fähigkeiten mit Flows sind essenziell für unser Projekt. Mit seiner Professionalität und seinem Engagement ist er ein unverzichtbarer Partner. Wir freuen uns auf die langfristige Zusammenarbeit mit ihm",
+      "Als Salesforce Product Owner für Deutschland und Österreich bei Pluxee möchte ich die herausragende Arbeit von Petrit, unserem Consultant seitens the eksperts hervorheben. Er ist maßgeblich an der Zusammenführung zweier Salesforce Orgs beteiligt – eine anspruchsvolle Aufgabe, die er mit Expertise und Präzision umsetzt. Sein Wissen in der CPQ-Integration und seine Fähigkeiten mit Flows sind essenziell für unser Projekt. Mit seiner Professionalität und seinem Engagement ist er ein unverzichtbarer Partner. Wir freuen uns auf die langfristige Zusammenarbeit mit ihm",
     name: "Fabio G.",
     title: "Salesforce Product Owner DE & AT,",
     company: "Pluxee Deutschland GmbH",

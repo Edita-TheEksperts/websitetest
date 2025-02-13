@@ -40,7 +40,7 @@ const Salesforce = () => {
           <section className="max-w-[1280px] container mx-auto p-4 flex flex-col lg:flex-row items-center lg:space-x-4 lg:mb-[120px] mb-[80px]">
                 {/* Left Section (Text and Image) */}
                 <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-start mb-2 lg:mb-0">
-                  <h2 className="text-[24px] lg:text-[48px] lg:leading-[50px] font-matt font-[700] mb-2">Salesforce Beratung</h2>
+                  <h2 className="text-[24px] lg:text-[40px] lg:leading-[50px] font-matt font-[700] mb-2">Salesforce Beratung</h2>
                   {/* Paragraph for desktop */}
                   <p className="hidden lg:block text-[16px]  text-center lg:text-left lg:text-[17px] lg:leading-[30px] font-[300] font-matt mb-2">
                     Erreichen Sie Ihre Geschäftsziele mit unserer professionellen Beratung. 
@@ -119,7 +119,7 @@ const Salesforce = () => {
         <section className="max-w-[1280px] container mx-auto p-4 flex flex-col lg:flex-row items-center lg:space-x-4 lg:mb-[120px] mb-[80px]">
                 {/* Left Section (Text and Image) */}
                 <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-start mb-2 lg:mb-0">
-                  <h2 className="text-[24px] lg:text-[48px] lg:leading-[50px] font-matt font-[700] mb-2">Salesforce-Administration </h2>
+                  <h2 className="text-[24px] text-left lg:text-[40px] lg:leading-[50px] font-matt font-[700] mb-2">Salesforce-Administration </h2>
                   <p className="text-[16px] mb-2 text-center lg:text-left lg:text-[17px] lg:leading-[30px] font-[300] font-matt">
                   Wir sorgen dafür, dass Ihre Salesforce-Umgebung reibungslos funktioniert 
                   </p>
@@ -192,7 +192,7 @@ const Salesforce = () => {
         <section className="max-w-[1280px] container mx-auto p-4 flex flex-col lg:flex-row items-center lg:space-x-4 lg:mb-[300px] mb-[160px]">
                 {/* Left Section (Text and Image) */}
                 <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-start mb-2 lg:mb-0">
-                  <h2 className="text-[23px] lg:text-[48px] lg:leading-[50px] font-matt font-[700] mb-2">Rundum-Salesforce-Services</h2>
+                  <h2 className="text-[23px] text-left lg:text-[40px] lg:leading-[50px] font-matt font-[700] mb-2">Rundum-Salesforce-Services</h2>
                   <p className="text-[16px] mb-2 text-center lg:text-left lg:text-[17px] lg:leading-[30px] font-[300] font-matt">
                   Für ein nahtloses Erlebnis bieten wir umfassende Services
                   </p>

@@ -19,7 +19,7 @@ const Projekte = () => {
     unternehmen: "",
     email: "",
     dienstleistung: "",
-    startdatum: "",
+    startdatum: new Date().toISOString().split("T")[0],
 });
 
 const [loading, setLoading] = useState(false);
@@ -185,15 +185,15 @@ const handleSubmit = async (e) => {
       {/* Unternehmen */}
       <div className="flex flex-col md:flex-row md:items-center md:gap-[20px] w-full">
         <label className="text-[#FFFF] w-[300px] ml-[20px] md:ml-0 lg:ml-0 text-[14px] lg:text-[20px] font-[300] leading-[33px] font-matt md:w-[200px] text-left">
-          Unternehmen
+        Firmenname
         </label>
         <input 
           type="text" 
           name="unternehmen"
           value={formData.unternehmen}
           onChange={handleChange}
-          placeholder="Lorem Ipsum" 
-          className="bg-white w-[300px] ml-[20px] md:ml-0 lg:ml-0 md:w-[320px] md:h-[58px] text-gray-500 text-[16px] lg:text-[24px] px-4 py-2 rounded-[8px] font-[500] leading-[20px] text-left" 
+          placeholder="Firmenname" 
+          className="bg-white w-[300px] ml-[20px] md:ml-0 lg:ml-0 md:w-[300px] md:h-[58px] text-gray-500 text-[16px] lg:text-[24px] px-4 py-2 rounded-[8px] font-[500] leading-[20px] text-left" 
         />
       </div>
 
@@ -207,26 +207,34 @@ const handleSubmit = async (e) => {
           name="email"
           value={formData.email}
           onChange={handleChange}
-          placeholder="your@email.com" 
-          className="bg-white w-[300px] ml-[20px] md:ml-0 lg:ml-0 md:w-[405px] md:h-[58px] text-gray-500 text-[16px] lg:text-[24px] px-4 py-2 rounded-[8px] font-[500] leading-[20px] text-left" 
+          placeholder="Ihre Email" 
+          className="bg-white w-[300px] ml-[20px] md:ml-0 lg:ml-0 md:w-[300px] md:h-[58px] text-gray-500 text-[16px] lg:text-[24px] px-4 py-2 rounded-[8px] font-[500] leading-[20px] text-left" 
           required
         />
       </div>
 
       {/* Welche Dienstleistung */}
       <div className="flex flex-col md:flex-row md:items-center md:gap-[20px] w-full">
-        <label className="text-[#FFFF] w-[300px] ml-[20px] md:ml-0 lg:ml-0 text-[14px] lg:text-[20px] font-[300] leading-[33px] font-matt md:w-[220px] lg:w-[200px] text-left">
-          Welche Dienstleistung
-        </label>
-        <input 
-          type="text" 
-          name="dienstleistung"
-          value={formData.dienstleistung}
-          onChange={handleChange}
-          placeholder="Dienstleistung" 
-          className="bg-white w-[300px] ml-[20px] md:ml-0 lg:ml-0  md:w-[297px] md:h-[58px] text-gray-500 text-[16px] lg:text-[24px] px-4 py-2 rounded-[8px] font-[500] leading-[20px] text-left" 
-        />
-      </div>
+  <label className="text-[#FFFF] w-[300px] ml-[20px] md:ml-0 lg:ml-0 text-[14px] lg:text-[20px] font-[300] leading-[33px] font-matt md:w-[220px] lg:w-[200px] text-left">
+    Welche Dienstleistung
+  </label>
+  <select
+    name="dienstleistung"
+    value={formData.dienstleistung}
+    onChange={handleChange}
+    className="bg-white w-[300px] ml-[20px] md:ml-0 lg:ml-0 md:w-[300px] md:h-[58px] text-gray-500 text-[16px] lg:text-[24px] px-4 py-2 rounded-[8px] font-[500] leading-[20px] text-left"
+  >
+    <option value="" disabled>
+      Dienstleistung auswählen
+    </option>
+    <option value="SalesForce">SalesForce</option>
+    <option value="Website">Website</option>
+    <option value="Custom Development">Custom Development</option>
+    <option value="Graphic Design">Graphic Design</option>
+    <option value="Book your Ekspert">Book your Ekspert</option>
+  </select>
+</div>
+
 
       {/* Startdatum */}
       <div className="flex flex-col md:flex-row md:items-center md:gap-[20px] w-full">
@@ -237,8 +245,9 @@ const handleSubmit = async (e) => {
           type="date" 
           name="startdatum"
           value={formData.startdatum}
+          min={new Date().toISOString().split("T")[0]} 
           onChange={handleChange}
-          className="bg-white w-[300px] ml-[20px] md:ml-0 lg:ml-0 md:w-[350px] md:h-[58px] text-gray-500 text-[16px] lg:text-[24px] px-4 py-2 rounded-[8px] font-[500] leading-[20px] text-left" 
+          className="bg-white w-[300px] ml-[20px] md:ml-0 lg:ml-0 md:w-[315px] md:h-[58px] text-gray-500 text-[16px] lg:text-[24px] px-4 py-2 rounded-[8px] font-[500] leading-[20px] text-left" 
           required
         />
       </div>

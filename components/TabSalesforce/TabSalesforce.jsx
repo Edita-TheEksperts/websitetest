@@ -17,7 +17,7 @@ export default function SalesforceSection() {
     {
       id: 3,
       title: "Umfassendes Know-How",
-      image: "/images/Article (2).png", // Image for tab 3
+      image: "/images/Article21.png", // Image for tab 3
     },
   ];
 
@@ -29,7 +29,7 @@ export default function SalesforceSection() {
           <button
             key={tab.id}
             onClick={() => setActive(tab.id)}
-            className={`flex items-center px-4 py-3 lg:px-6 lg:py-4 transition-all duration-300 font-matt uppercase text-sm md:text-lg lg:text-[28px] font-[900] lg:leading-[37px] rounded-t-[20px] ${
+            className={`flex items-center px-4 py-3 lg:px-6 lg:py-4 transition-all duration-300 font-matt uppercase text-sm md:text-[40px] lg:text-[28px] font-[900] lg:leading-[37px] rounded-t-[20px] ${
               active === tab.id
                 ? "bg-[#F1F1F1] text-black"
                 : active === tab.id + 1 || active === tab.id - 1
@@ -58,7 +58,7 @@ export default function SalesforceSection() {
           <img
             src={tabs.find((tab) => tab.id === active)?.image}
             alt={tabs.find((tab) => tab.id === active)?.title}
-            className="w-full max-w-none mx-auto lg:mx-0" // Full width image for all tabs
+            className="rounded-b-[20px] w-full max-h-[340px] max-w-none mx-auto lg:mx-0" // Full width image for all tabs
           />
         </div>
       </div>
