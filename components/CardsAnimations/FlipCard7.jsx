@@ -78,7 +78,7 @@ const ProjectForm = ({ handleSubmit }) => {
         
         {/* Unternehmen */}
         <div className="flex flex-col md:flex-row md:items-center md:gap-[20px] w-full">
-          <label className="text-[#FFFF] w-[300px] ml-[20px] md:ml-0 lg:ml-0 text-[14px] lg:text-[20px] font-[300] leading-[33px] font-matt md:w-[200px] text-left">
+          <label className="text-[#FFFF] w-[300px] ml-[20px] md:ml-0 lg:ml-0 text-[14px] lg:text-[20px] font-[300] leading-[33px] font-matt md:w-[300px] text-left">
             Firmenname
           </label>
           <div>
@@ -96,7 +96,7 @@ const ProjectForm = ({ handleSubmit }) => {
 
         {/* Email */}
         <div className="flex flex-col md:flex-row md:items-center md:gap-[20px] w-full">
-          <label className="text-[#FFFF] w-[300px] ml-[20px] md:ml-0 lg:ml-0 text-[14px] lg:text-[20px] font-[300] leading-[33px] font-matt md:w-[115px] lg:w-[200px] text-left">
+          <label className="text-[#FFFF] w-[300px] ml-[20px] md:ml-0 lg:ml-0 text-[14px] lg:text-[20px] font-[300] leading-[33px] font-matt md:w-[300px] lg:w-[200px] text-left">
             Email
           </label>
           <div>
@@ -114,7 +114,7 @@ const ProjectForm = ({ handleSubmit }) => {
 
         {/* Welche Dienstleistung */}
         <div className="flex flex-col md:flex-row md:items-center md:gap-[20px] w-full">
-          <label className="text-[#FFFF] w-[300px] ml-[20px] md:ml-0 lg:ml-0 text-[14px] lg:text-[20px] font-[300] leading-[33px] font-matt md:w-[220px] lg:w-[200px] text-left">
+          <label className="text-[#FFFF] w-[300px] ml-[20px] md:ml-0 lg:ml-0 text-[14px] lg:text-[20px] font-[300] leading-[33px] font-matt md:w-[260px] lg:w-[200px] text-left">
             Welche Dienstleistung
           </label>
           <div>
@@ -137,7 +137,7 @@ const ProjectForm = ({ handleSubmit }) => {
 
         {/* Startdatum */}
         <div className="flex flex-col md:flex-row md:items-center md:gap-[20px] w-full">
-          <label className="text-[#FFFF] w-[300px] ml-[20px] md:ml-0 lg:ml-0 text-[14px] lg:text-[20px] font-[300] leading-[33px] font-matt md:w-[170px] lg:w-[200px] text-left">
+          <label className="text-[#FFFF] w-[300px] ml-[20px] md:ml-0 lg:ml-0 text-[14px] lg:text-[20px] font-[300] leading-[33px] font-matt md:w-[300px] lg:w-[200px] text-left">
             Startdatum
           </label>
           <div>
