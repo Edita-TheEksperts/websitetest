@@ -22,7 +22,7 @@ const Footer = () => {
       });
 
       if (!response.ok) {
-        throw new Error('Beim Abonnieren ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut.');
+        throw new Error('Sie sind bereits angemeldet.');
       }
 
       const data = await response.json();
