@@ -37,11 +37,11 @@ export default async function handler(req, res) {
         if (!email) console.error("Missing: email");
         if (!telefon) console.error("Missing: telefon");
         if (!nachricht) console.error("Missing: nachricht");
-        if (!dienstleistung || dienstleistung.length === 0) console.error("Missing: dienstleistung");
+        if (!dienstleistung) console.error("Missing: dienstleistung");
         if (!starten) console.error("Missing: starten");
 
         // Validate required fields (customService is OPTIONAL)
-        if (!name || !unternehmen || !email || !telefon || !nachricht || dienstleistung.length === 0 || !starten) {
+        if (!name || !unternehmen || !email || !telefon || !nachricht || !dienstleistung || !starten) {
             return res.status(400).json({ message: 'Missing required fields', received: req.body });
         }
 

@@ -38,34 +38,35 @@ const SVGAnimation = () => {
       customService: e.target.value,
     }));
   };
-  
+  const [errorMessage, setErrorMessage] = useState(""); // Store validation message
+
  // Function to go to the next step
  const handleNext = (e) => {
   if (e) e.preventDefault();
+
+  setErrorMessage("");
+
   if (currentScreen === 1) {
     setCurrentScreen(2);
     return;
   }
 
-  if (currentScreen === 2) {
-    setCurrentScreen(3);
+   // Screen 2: Validate dienstleistung (ensure at least one checkbox is selected)
+   if (currentScreen === 2 && (!formData.dienstleistung || formData.dienstleistung.length === 0)) {
+    setErrorMessage("Bitte eine Auswahl treffen.");
     return;
   }
 
- if (currentScreen === 3) {
-  if (!formData.starten || formData.starten.length === 0) {
-    alert("Bitte wählen Sie mindestens eine Option aus.");
-    return; 
+  // Screen 3: Validate starten (ensure at least one checkbox is selected)
+  if (currentScreen === 3 && (!formData.starten || formData.starten.length === 0)) {
+    setErrorMessage("Bitte eine Auswahl treffen.");
+    return;
   }
-  setCurrentScreen(4); 
-  return;
-}
 
   if (currentScreen === 4) {
     handleSubmit();
     return;
   }
-
   setCurrentScreen((prev) => prev + 1);
 };
   
@@ -431,7 +432,12 @@ const handleSubmit = async (e) => {
                                       </label>  
                                       
                                   </form>
-                                  <div className="flex lg:justify-start justify-center mt-2">
+                                  <div className="flex ">
+                                  {errorMessage && (
+                                      <p className="text-red-500 text-[14px] text-center font-semibold">{errorMessage}</p>
+                                    )}
+                                    </div>
+                                  <div className="flex lg:justify-start justify-center mt-1">
                                       <button
                                         onClick={handleNext}
                                         className="px-4 py-3 bg-[#0009FF] text-white rounded-[30px] md:text-[25px] md:leading-[37px] font-[900] hover:bg-blue-800"
@@ -441,7 +447,7 @@ const handleSubmit = async (e) => {
                                     </div>
                                     <button
                                         onClick={handleBack}
-                                        className="mt-2 ml-2"
+                                        className="mt-1 ml-2"
                                       >
                                         <svg width="79" height="33" viewBox="0 0 79 33" fill="none" xmlns="http://www.w3.org/2000/svg">
                                       <path d="M0.726643 16.4727L2.44922 14.7501L4.1718 16.4727L2.44922 18.1952L0.726643 16.4727Z" fill="#5A585A" stroke="#5A585A"/>
@@ -450,6 +456,7 @@ const handleSubmit = async (e) => {
                                       <path d="M14.2299 24V23.06L23.1099 11.14H14.5299V10H24.7699V10.92L15.8699 22.84H24.9699V24H14.2299ZM27.7743 13.86V20.02C27.7743 20.9933 28.0343 21.76 28.5543 22.32C29.0743 22.8667 29.7743 23.14 30.6543 23.14C31.8543 23.14 33.1543 22.58 34.5543 21.46V13.86H35.7543V24H34.6343L34.5743 22.56C33.1609 23.6667 31.7809 24.22 30.4343 24.22C29.2743 24.22 28.3409 23.8533 27.6343 23.12C26.9276 22.3733 26.5743 21.36 26.5743 20.08V13.86H27.7743ZM38.9013 13.86H39.9613L40.0813 15.4C41.228 14.28 42.428 13.72 43.6813 13.72C43.9746 13.72 44.248 13.7467 44.5013 13.8V14.94C44.1946 14.8733 43.9013 14.84 43.6213 14.84C43.048 14.84 42.4546 14.9867 41.8413 15.28C41.2413 15.5733 40.6613 16.0133 40.1013 16.6V24H38.9013V13.86ZM47.5204 13.86V20.02C47.5204 20.9933 47.7804 21.76 48.3004 22.32C48.8204 22.8667 49.5204 23.14 50.4004 23.14C51.6004 23.14 52.9004 22.58 54.3004 21.46V13.86H55.5004V24H54.3804L54.3204 22.56C52.907 23.6667 51.527 24.22 50.1804 24.22C49.0204 24.22 48.087 23.8533 47.3804 23.12C46.6737 22.3733 46.3204 21.36 46.3204 20.08V13.86H47.5204ZM52.9804 11.74C52.7137 11.74 52.4937 11.66 52.3204 11.5C52.147 11.3267 52.0604 11.1133 52.0604 10.86C52.0604 10.6067 52.147 10.4 52.3204 10.24C52.4937 10.0667 52.7137 9.98 52.9804 9.98C53.2604 9.98 53.487 10.0667 53.6604 10.24C53.8337 10.4 53.9204 10.6067 53.9204 10.86C53.9204 11.1267 53.8337 11.34 53.6604 11.5C53.487 11.66 53.2604 11.74 52.9804 11.74ZM48.8604 11.74C48.5804 11.74 48.3537 11.66 48.1804 11.5C48.007 11.34 47.9204 11.1267 47.9204 10.86C47.9204 10.6067 48.007 10.4 48.1804 10.24C48.3537 10.0667 48.5804 9.98 48.8604 9.98C49.127 9.98 49.347 10.0667 49.5204 10.24C49.6937 10.4 49.7804 10.6067 49.7804 10.86C49.7804 11.1133 49.6937 11.3267 49.5204 11.5C49.347 11.66 49.127 11.74 48.8604 11.74ZM63.5074 24.22C62.4807 24.22 61.5474 24.0133 60.7074 23.6C59.8674 23.1733 59.2007 22.56 58.7074 21.76C58.2274 20.96 57.9874 20.0133 57.9874 18.92C57.9874 17.84 58.2274 16.9 58.7074 16.1C59.1874 15.3 59.8407 14.6933 60.6674 14.28C61.5074 13.8533 62.454 13.64 63.5074 13.64C64.1474 13.64 64.7474 13.7133 65.3074 13.86C65.8674 13.9933 66.4407 14.2133 67.0274 14.52L66.5674 15.58C66.0474 15.2867 65.5407 15.0733 65.0474 14.94C64.554 14.8067 64.034 14.74 63.4874 14.74C62.194 14.74 61.154 15.1133 60.3674 15.86C59.5807 16.6067 59.1874 17.6267 59.1874 18.92C59.1874 19.8 59.3807 20.56 59.7674 21.2C60.154 21.8267 60.674 22.3067 61.3274 22.64C61.994 22.96 62.734 23.12 63.5474 23.12C64.1474 23.12 64.694 23.0467 65.1874 22.9C65.6807 22.7533 66.1807 22.52 66.6874 22.2L67.2274 23.22C66.094 23.8867 64.854 24.22 63.5074 24.22ZM69.37 24V9.6H70.57V18.2H72.77L76.41 13.86H77.87L73.79 18.7L78.25 24H76.75L72.79 19.28H70.57V24H69.37Z" fill="#5A585A"/>
                                       </svg>
                                       </button>
+                                   
                                 </div>
                               </div>
                       </div>
@@ -531,8 +538,14 @@ const handleSubmit = async (e) => {
                                     <span className="lg:text-[18px] text-[14px]">Noch unklar</span>
                                   </label>
                                 </div>
+                                <div className="flex ">
+                                  {errorMessage && (
+                                      <p className="text-red-500 text-[14px] text-center font-semibold">{errorMessage}</p>
+                                    )}
+                                    </div>
                                   {/* Button */}
-                                  <div className="flex md:justify-start justify-center mt-2">
+                                  <div className="flex md:justify-start justify-center mt-1">
+                                  
                                       <button
                                         onClick={handleNext}
                                         className="px-4 py-3 bg-[#0009FF] text-white rounded-[30px] md:text-[25px] md:leading-[37px] font-extrabold hover:bg-blue-800 uppercase"
@@ -615,6 +628,9 @@ const handleSubmit = async (e) => {
                                           type="text"
                                           placeholder="NAME"
                                           name="name"
+                                          required
+                                          onInvalid={(e) => e.target.setCustomValidity("Bitte füllen Sie das Feld aus.")}
+                                          onInput={(e) => e.target.setCustomValidity("")}
                                           value={formData.name}
                                           onChange={handleChange}
                                           className="w-full border p-2 text-center text-[14px] lg:text-[18px] placeholder-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:text-blue-500"
@@ -626,6 +642,9 @@ const handleSubmit = async (e) => {
                                           type="text"
                                           placeholder="UNTERNEHMEN"
                                           name="unternehmen"
+                                          required
+                                          onInvalid={(e) => e.target.setCustomValidity("Bitte füllen Sie das Feld aus.")}
+                                          onInput={(e) => e.target.setCustomValidity("")}
                                           value={formData.unternehmen}
                                           onChange={handleChange}
                                           className="w-full border p-2 text-center text-[14px] lg:text-[18px] placeholder-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:text-blue-500"
@@ -639,6 +658,9 @@ const handleSubmit = async (e) => {
                                           type="email"
                                           placeholder="E-MAIL"
                                           name="email"
+                                          required
+                                          onInvalid={(e) => e.target.setCustomValidity("Bitte füllen Sie das Feld aus.")}
+                                          onInput={(e) => e.target.setCustomValidity("")}
                                           value={formData.email}
                                           onChange={handleChange}
                                           className="w-full border p-2 text-center text-[14px] lg:text-[18px] placeholder-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:text-blue-500"
@@ -650,6 +672,9 @@ const handleSubmit = async (e) => {
                                           type="tel"
                                           placeholder="TELEFON"
                                           name="telefon"
+                                          required
+                                          onInvalid={(e) => e.target.setCustomValidity("Bitte füllen Sie das Feld aus.")}
+                                          onInput={(e) => e.target.setCustomValidity("")}
                                           value={formData.telefon}
                                           onChange={handleChange}
                                           className="w-full border p-2 text-center text-[14px] lg:text-[18px] placeholder-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:text-blue-500"
@@ -662,6 +687,9 @@ const handleSubmit = async (e) => {
                                         placeholder="NACHRICHT („Gibt es noch etwas, das wir wissen sollten?“)"
                                         name="nachricht"
                                         type="text"
+                                        required
+                                        onInvalid={(e) => e.target.setCustomValidity("Bitte füllen Sie das Feld aus.")}
+                                          onInput={(e) => e.target.setCustomValidity("")}
                                         value={formData.nachricht}
                                         onChange={handleChange}
                                         className="w-full border p-2 text-center text-[14px] lg:text-[18px] placeholder-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:text-blue-500"
