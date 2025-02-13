@@ -4,9 +4,9 @@ export default async function handler(req, res) {
   if (req.method === 'POST') {
     const { email } = req.body;
 
-    const apiKey = process.env.MAILCHIMP_API_KEY;
-    const listId = process.env.MAILCHIMP_LIST_ID;
-    const serverPrefix = process.env.MAILCHIMP_SERVER_PREFIX;
+    const apiKey ='34ac0174f3e6dafd5991386720a47dc5-us15';
+    const listId ='7a8896d200';
+    const serverPrefix = 'us15';
 
     if (!apiKey || !listId || !serverPrefix) {
       return res.status(500).json({ message: 'Mailchimp API credentials are missing.' });
