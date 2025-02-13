@@ -176,7 +176,7 @@ const handleSubmit = async (e) => {
 
             <section className='flex lg:flex-row flex-col lg:gap-[32px] mb-[160px] lg:mb-[300px]'>
             <FlipCard5 />
-            <div className="flipcard flex flex-col max-w-[390px] h-[557px] md:w-[740px] md:h-[557px] justify-center items-center bg-[#0009FF] text-white p-8 lg:p-6 rounded-[8px]">
+            <div className="flipcard flex flex-col max-w-[390px] h-[557px] md:max-w-[740px] md:h-[557px] justify-center items-center bg-[#0009FF] text-white p-8 lg:p-6 rounded-[8px]">
       {/* Header */}
       <h2 className="text-white text-[16px] lg:mb-[32px] lg:text-[28px] font-[500] lg:font-[900] uppercase leading-[37px] text-center font-matt mb-6">
         SIE MÖCHTEN EIN PROJEKT STARTEN?
