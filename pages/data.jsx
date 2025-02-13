@@ -45,7 +45,7 @@ export const projects = [
     {
       title: "Book your Ekspert",
       title1:"Ihre Expertise - flexibel und auf Abruf.",
-      description: "Mit unserem Book Your Ekspert-Service bringen erfahrene Fachkräfte Ihre Projekte individuell und flexibel voran. Ob IT, Design, Entwicklung oder Beratung - buchen Sie unsere Eksperten genau dann, wenn Sie sie brauchen. Unsere Spezialistenintegrieren sich nahtlos in Ihr Team und Ihre Prozesse.",
+      description: "Mit unserem Book Your Ekspert-Service bringen erfahrene Fachkräfte Ihre Projekte individuell und flexibel voran. Ob IT, Design, Entwicklung oder Beratung - buchen Sie unsere Eksperten genau dann, wenn Sie sie brauchen. Unsere Spezialisten integrieren sich nahtlos in Ihr Team und Ihre Prozesse.",
       title2: "Warum warten, wenn Sie Unterstützung brauchen?",
       src: "/images/Book your ekspert 1.png",
       link: "https://websitetest-vert.vercel.app/services/bookyourekspert",
