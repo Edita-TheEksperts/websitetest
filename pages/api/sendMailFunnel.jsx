@@ -25,22 +25,49 @@ const getAccessToken = async () => {
     }
 };
 
-// Handler for the incoming POST request
 export default async function handler(req, res) {
+    console.log("🔍 Received request:", req.body); 
+
     if (req.method === 'POST') {
-        // Destructure the form data from the request body
         const { name, unternehmen, email, telefon, nachricht, dienstleistung, customService, starten } = req.body;
 
-        // Validate the incoming data
-        if (!name || !unternehmen || !email || !telefon || !nachricht || dienstleistung.length === 0 ||!customService || !starten ) {
-            return res.status(400).json({ message: 'Missing required fields' });
+        // Check which fields are missing
+        if (!name) console.error("❌ Missing: name");
+        if (!unternehmen) console.error("❌ Missing: unternehmen");
+        if (!email) console.error("❌ Missing: email");
+        if (!telefon) console.error("❌ Missing: telefon");
+        if (!nachricht) console.error("❌ Missing: nachricht");
+        if (!dienstleistung || dienstleistung.length === 0) console.error("❌ Missing: dienstleistung");
+        if (!starten) console.error("❌ Missing: starten");
+
+        // Validate required fields (customService is OPTIONAL)
+        if (!name || !unternehmen || !email || !telefon || !nachricht || dienstleistung.length === 0 || !starten) {
+            return res.status(400).json({ message: '❌ Missing required fields', received: req.body });
         }
 
         try {
+            console.log("✅ All required fields are present");
+
             // Get the access token
             const accessToken = await getAccessToken();
+            console.log("🔑 Retrieved access token");
 
-            // Create the email content
+            // Create the email body with optional `customService`
+            let emailContent = `You have received a new form submission:\n\n`;
+            emailContent += `Name: ${name}\n`;
+            emailContent += `Company: ${unternehmen}\n`;
+            emailContent += `Email: ${email}\n`;
+            emailContent += `Phone: ${telefon}\n`;
+            emailContent += `Message: ${nachricht}\n`;
+            emailContent += `Service: ${dienstleistung}\n`;
+            emailContent += `Start Time: ${starten}\n`;
+
+            // Only add `customService` if it was provided
+            if (customService && customService.trim() !== "") {
+                emailContent += `Custom Service: ${customService}\n`;
+            }
+
+            // Send email
             const emailResponse = await axios.post(
                 'https://graph.microsoft.com/v1.0/users/info@the-eksperts.com/sendMail',
                 {
@@ -48,7 +75,7 @@ export default async function handler(req, res) {
                         subject: `New Form Submission from Funnel Page`,
                         body: {
                             contentType: 'Text',
-                            content: `You have received a new form submission:\n\nName und Unternehmen: ${name}${unternehmen}\nEmail: ${email}\nPhone: ${telefon}\nMessage: ${nachricht}\nDienstleistung: ${dienstleistung}\nCustom Service: ${customService}\nStart Time: ${starten}`,
+                            content: emailContent,
                         },
                         toRecipients: [
                             {
@@ -70,12 +97,12 @@ export default async function handler(req, res) {
 
             console.log('Email sent:', emailResponse.status);
             res.status(200).json({ message: 'Email sent successfully', status: emailResponse.status });
+
         } catch (error) {
             console.error('Error sending email:', error.response?.data || error.message);
-            res.status(500).json({ message: 'Failed to send email', error: error.message });
+            res.status(500).json({ message: 'Failed to send email', error: error.response?.data || error.message });
         }
     } else {
-        // Method not allowed if it's not a POST request
         res.status(405).json({ message: 'Method Not Allowed' });
     }
 }

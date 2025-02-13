@@ -40,7 +40,8 @@ const SVGAnimation = () => {
   };
   
  // Function to go to the next step
- const handleNext = () => {
+ const handleNext = (e) => {
+  if (e) e.preventDefault();
   if (currentScreen === 1) {
     setCurrentScreen(2);
     return;
@@ -51,10 +52,14 @@ const SVGAnimation = () => {
     return;
   }
 
-  if (currentScreen === 3 && formData.starten.length === 0) {
+ if (currentScreen === 3) {
+  if (!formData.starten || formData.starten.length === 0) {
     alert("Bitte wählen Sie mindestens eine Option aus.");
-    return;
+    return; 
   }
+  setCurrentScreen(4); 
+  return;
+}
 
   if (currentScreen === 4) {
     handleSubmit();
@@ -140,8 +145,6 @@ const handleSubmit = async (e) => {
     setLoading(false);
   }
 };
-
-
 
 
   // Intersection Observer to trigger animation when section comes into view
