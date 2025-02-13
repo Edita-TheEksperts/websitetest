@@ -159,7 +159,7 @@ const handleSubmit = async (e) => {
                 Your browser does not support the video tag.
             </video>
             </section> 
-            <section className='flex lg:flex-row flex-col lg:gap-[20px]'>
+            <section className='flex lg:flex-row flex-col lg:gap-[32px]'>
             <FlipCard1 />
             <FlipCard2 />
             </section>
