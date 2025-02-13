@@ -171,7 +171,7 @@ const handleSubmit = async (e) => {
   return (
     <section
       ref={svgRef} // Reference for IntersectionObserver
-      className="extra relative font-matt flex flex-col items-center lg:items-start justify-center py-12 px-6 bg-white lg:w-[1280px] mx-auto max-h-[990px] md:py-2 md:px-8 lg:mt-[200px]"
+      className="extra relative font-matt flex flex-col items-center lg:items-start justify-center lg:py-10 lg:px-6 bg-white lg:w-[1280px] mx-auto max-h-[990px] md:py-2 md:px-8 lg:mt-[200px]"
     >
       {/* SVG Animation - Conditionally Rendered */}
       {!showThankYou && (
