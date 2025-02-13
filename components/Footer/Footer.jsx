@@ -166,10 +166,7 @@ const Footer = () => {
               <Link href="/index" className="hover:underline hover:text-blue-700 font-[700]">Home</Link>
               <li className="group">
                 <div className="flex justify-center md:justify-normal items-center space-x-2">
-                  <Link href="" className="hover:underline hover:text-blue-700 font-[700] ">
-                    Services
-                  </Link>
-                  <span className="text-black text-[20px] font-[700]">›</span>
+                  <span className="hover:underline hover:text-blue-700 text-black  font-[700]">Services ›</span>
                 </div>
                 {/* Submenu */}
                 <ul className="mt-2 ml-4 space-y-4 hidden group-hover:block transition-all duration-300 opacity-0 group-hover:opacity-100">
