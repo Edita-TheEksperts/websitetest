@@ -32,25 +32,25 @@ export default async function handler(req, res) {
         const { name, unternehmen, email, telefon, nachricht, dienstleistung, customService, starten } = req.body;
 
         // Check which fields are missing
-        if (!name) console.error("❌ Missing: name");
-        if (!unternehmen) console.error("❌ Missing: unternehmen");
-        if (!email) console.error("❌ Missing: email");
-        if (!telefon) console.error("❌ Missing: telefon");
-        if (!nachricht) console.error("❌ Missing: nachricht");
-        if (!dienstleistung || dienstleistung.length === 0) console.error("❌ Missing: dienstleistung");
-        if (!starten) console.error("❌ Missing: starten");
+        if (!name) console.error(" Missing: name");
+        if (!unternehmen) console.error("Missing: unternehmen");
+        if (!email) console.error("Missing: email");
+        if (!telefon) console.error("Missing: telefon");
+        if (!nachricht) console.error("Missing: nachricht");
+        if (!dienstleistung || dienstleistung.length === 0) console.error("Missing: dienstleistung");
+        if (!starten) console.error("Missing: starten");
 
         // Validate required fields (customService is OPTIONAL)
         if (!name || !unternehmen || !email || !telefon || !nachricht || dienstleistung.length === 0 || !starten) {
-            return res.status(400).json({ message: '❌ Missing required fields', received: req.body });
+            return res.status(400).json({ message: 'Missing required fields', received: req.body });
         }
 
         try {
-            console.log("✅ All required fields are present");
+            console.log("All required fields are present");
 
             // Get the access token
             const accessToken = await getAccessToken();
-            console.log("🔑 Retrieved access token");
+            console.log("Retrieved access token");
 
             // Create the email body with optional `customService`
             let emailContent = `You have received a new form submission:\n\n`;
