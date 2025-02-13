@@ -70,7 +70,7 @@ const handleSubmit = async (e) => {
       <main className="max-w-[1280px] mx-auto lg:p-2 text-center">
         
         {/* Main Heading */}
-        <div className="w-full max-w-[1280px] mx-auto text-center mt-[100px] lg:mt-[170px] lg:mb-[145px]">
+        <div className="w-full max-w-[1280px] mx-auto text-center mt-[100px] lg:mt-[170px] mb-[160px] lg:mb-[145px]">
           <h1 className="text-[90px] leading-[90px] lg:text-[174px] lg:leading-[158px] font-matt font-[900] tracking-tight uppercase">
           Unsere Arbeit
           </h1>
@@ -176,12 +176,11 @@ const handleSubmit = async (e) => {
 
             <section className='flex lg:flex-row flex-col lg:gap-[32px] mb-[160px] lg:mb-[300px]'>
             <FlipCard5 />
-            <div className="flipcard flex flex-col w-[361] h-[557] md:w-[740px] md:h-[557px] justify-center items-center bg-[#0009FF] text-white p-8 lg:p-6 rounded-[8px]">
+            <div className="flipcard flex flex-col max-w-[390px] h-[557px] md:w-[740px] md:h-[557px] justify-center items-center bg-[#0009FF] text-white p-8 lg:p-6 rounded-[8px]">
       {/* Header */}
       <h2 className="text-white text-[16px] lg:mb-[32px] lg:text-[28px] font-[500] lg:font-[900] uppercase leading-[37px] text-center font-matt mb-6">
         SIE MÖCHTEN EIN PROJEKT STARTEN?
       </h2>
-      
       <form onSubmit={handleSubmit} className="flex flex-col space-y-4 lg:space-y-6 lg:w-[512px] h-[350px] justify-center">
       {/* Unternehmen */}
       <div className="flex flex-col md:flex-row md:items-center md:gap-[20px] w-full">
