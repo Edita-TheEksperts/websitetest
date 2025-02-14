@@ -139,8 +139,8 @@ const Hero = ({ setHeroVisible }) => {
                     <video
                     src="/images/Video Smm.mp4"
                     alt="Video 1"
-                    width={184}
-                    height={184}
+                    width={174}
+                    height={174}
                     className="object-contain rounded-[20px] mr-[-20px] transform rotate-[-8.271deg] flex-shrink-0 shadow-[0px_4px_27.6px_0px_rgba(0,_0,_0,_0.25)]"
                     autoPlay
                     loop
@@ -150,8 +150,8 @@ const Hero = ({ setHeroVisible }) => {
                     <video
                     src="/images/Your Partner and more.mp4"
                     alt="Video 2"
-                    width={184}
-                    height={184}
+                    width={174}
+                    height={174}
                     className="object-contain rounded-[20px]"
                     style={{
                         transform: 'rotate(5.263deg)',
@@ -168,8 +168,8 @@ const Hero = ({ setHeroVisible }) => {
                     <video
                     src="/images/Video Websites.mp4"
                     alt="Video 3"
-                    width={184}
-                    height={184}
+                    width={174}
+                    height={174}
                     className="object-contain rounded-[20px] mr-[-20px] "
                     style={{
                         transform: 'rotate(-5.374deg)',
@@ -185,8 +185,8 @@ const Hero = ({ setHeroVisible }) => {
                     <img
                     src="/images/The-eksperts-short-.png"
                     alt="Video 4"
-                    width={184}
-                    height={184}
+                    width={174}
+                    height={174}
                     className="object-contain rounded-[20px]"
                     style={{
                         transform: 'rotate(3.951deg)',
