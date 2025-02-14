@@ -85,13 +85,13 @@ export default function FlipCard5() {
             </div>
 
             {/* Bottom Left Status */}
-            <div className="absolute  flex-col bottom-6 left-6 z-10 flex space-x-2 text-sm">
-            <h2 className="text-start text-[14px] lg:text-[20px] font-[300] font-matt leading-[33px] ml-[8px]">In Progress</h2>
-            <div className="flex flex-col lg:flex-row space-y-2 md:space-y-2  lg:space-y-0  lg:space-x-2 items-start">
-            <svg xmlns="http://www.w3.org/2000/svg" width="131" height="17" viewBox="0 0 131 17" fill="none">
+            <div className="absolute  flex-col bottom-6 left-6 z-10 flex md:space-x-2 text-sm">
+            <h2 className="text-start text-[14px] lg:text-[20px] font-[300] font-matt leading-[33px] md:ml-[8px]">In Progress</h2>
+            <div className="flex flex-row space-x-2 md:space-y-0  lg:space-y-0  lg:space-x-2 items-start">
+            <svg xmlns="http://www.w3.org/2000/svg" width="131" height="17" viewBox="0 0 131 17" fill="none" className="svg-mobile">
   <path d="M0 17V6.5L8.5 0H131V17H0Z" fill="#0009FF"/>
 </svg> 
-<svg xmlns="http://www.w3.org/2000/svg" width="131" height="17" viewBox="0 0 131 17" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" width="131" height="17" viewBox="0 0 131 17" fill="none" className="svg-mobile">
   <path d="M0 17V6.5L8.5 0H131V17H0Z" fill="#D9D9D9"/>
   <path d="M0 17V6.5L8.5 0H131V17H0Z" fill="url(#paint0_linear_2696_2916)"/>
   <defs>
@@ -102,10 +102,10 @@ export default function FlipCard5() {
     </linearGradient>
   </defs>
 </svg>
-<svg xmlns="http://www.w3.org/2000/svg" width="131" height="17" viewBox="0 0 131 17" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" width="131" height="17" viewBox="0 0 131 17" fill="none" className="svg-mobile">
   <path d="M0 17V6.5L8.5 0H131V17H0Z" fill="#D9D9D9"/>
 </svg>
-<svg xmlns="http://www.w3.org/2000/svg" width="131" height="17" viewBox="0 0 131 17" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" width="131" height="17" viewBox="0 0 131 17" fill="none" className="svg-mobile">
   <path d="M0 17V6.5L8.5 0H131V17H0Z" fill="#D9D9D9"/>
 </svg> 
             </div>
