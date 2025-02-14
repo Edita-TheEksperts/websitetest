@@ -3,90 +3,106 @@ import '../styles/global.css';
 import Head from 'next/head';
 
 export default function Contact() {
-        const [formData, setFormData] = useState({
+  const [faqOpen, setFaqOpen] = useState(null);
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    message: "",
+    topics: [],
+    phone: "",
+    datenschutz: false,
+  });
+
+  const [errors, setErrors] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    message: "",
+    topic: "",
+    datenschutz: "",
+  });
+
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
+  // Handle input changes
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+
+    // Clear error when user types
+    setErrors({ ...errors, [e.target.name]: "" });
+  };
+
+  // Handle checkbox changes (topics)
+  const handleTopicChange = (e) => {
+    const { value, checked } = e.target;
+    setFormData((prev) => ({
+      ...prev,
+      topics: checked
+        ? [...prev.topics, value]
+        : prev.topics.filter((topic) => topic !== value),
+    }));
+
+    if (checked) {
+      setErrors({ ...errors, topic: "" });
+    }
+  };
+
+  // Handle Datenschutzerklärung checkbox
+  const handleDatenschutzChange = (e) => {
+    setFormData({ ...formData, datenschutz: e.target.checked });
+
+    if (e.target.checked) {
+      setErrors({ ...errors, datenschutz: "" });
+    }
+  };
+
+  // Handle form submission
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    // Validate fields
+    const newErrors = {
+      firstName: formData.firstName.trim() === "" ? "Bitte Auswählen." : "",
+      lastName: formData.lastName.trim() === "" ? "Bitte Auswählen." : "",
+      email: formData.email.trim() === "" ? "Bitte Auswählen." : "",
+      message: formData.message.trim() === "" ? "Bitte Auswählen." : "",
+      topic: formData.topics.length === 0 ? "Bitte wählen Sie mindestens ein Thema aus." : "",
+      datenschutz: !formData.datenschutz ? "Bitte stimmen Sie der Verarbeitung Ihrer Daten zu." : "",
+    };
+
+    setErrors(newErrors);
+
+    // Stop submission if there are errors
+    if (Object.values(newErrors).some((error) => error !== "")) return;
+
+    try {
+      const response = await fetch("/api/sendEmail", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        setIsSubmitted(true);
+        setFormData({
           firstName: "",
           lastName: "",
           email: "",
           message: "",
           topics: [],
+          phone: "",
           datenschutz: false,
         });
-        const [errors, setErrors] = useState({
-          topic: "",
-          datenschutz: "",
-        });
-        const [faqOpen, setFaqOpen] = useState(null);
-        const [isSubmitted, setIsSubmitted] = useState(false); // ✅ Track submission
-
-
-        const handleChange = (e) => {
-          setFormData({ ...formData, [e.target.name]: e.target.value });
-        };
-        
-        const handleTopicChange = (e) => {
-          const { value, checked } = e.target;
-          setFormData((prev) => ({
-            ...prev,
-            topics: checked
-              ? [...prev.topics, value] // Add topic if checked
-              : prev.topics.filter((topic) => topic !== value), // Remove topic if unchecked
-          }));
-        };
-
-        // Handle Datenschutzerklärung checkbox changes
-        const handleDatenschutzChange = (e) => {
-          setFormData({ ...formData, datenschutz: e.target.checked });
-        };
-
-        const handleSubmit = async (e) => {
-          e.preventDefault();
-        
-          const newErrors = {
-            topic: formData.topics.length === 0 ? "Bitte wählen Sie mindestens ein Thema aus." : "",
-            datenschutz: !formData.datenschutz ? "Bitte stimmen Sie der Verarbeitung Ihrer Daten zu." : "",
-          };
-        
-          setErrors(newErrors);
-        
-          if (newErrors.topic || newErrors.datenschutz) return;
-        
-          try {
-            const response = await fetch("/api/sendEmail", {
-              method: "POST",
-              headers: {
-                "Content-Type": "application/json",
-              },
-              body: JSON.stringify({
-                firstName: formData.firstName,
-                lastName: formData.lastName,
-                email: formData.email,
-                message: formData.message,
-                topics: formData.topics,
-                phone: formData.phone, // Make sure phone is included as well
-                datenschutz: formData.datenschutz,
-              }),
-              
-            });
-        
-            if (response.ok) {
-              setIsSubmitted(true);
-              setFormData({
-                firstName: "",
-                lastName: "",
-                email: "",
-                message: "",
-                topics: [],
-                phone: "",
-                datenschutz: false,
-              });
-            } else {
-              throw new Error("Es gab ein Problem beim Senden Ihrer Nachricht.");
-            }
-          } catch (error) {
-            console.error("Error:", error);
-            alert("Es gab ein Problem beim Senden Ihrer Nachricht. Bitte versuchen Sie es erneut.");
-          }
-        };
+        setErrors({}); // Clear errors
+      } else {
+        throw new Error("Es gab ein Problem beim Senden Ihrer Nachricht.");
+      }
+    } catch (error) {
+      console.error("Error:", error);
+      alert("Es gab ein Problem beim Senden Ihrer Nachricht. Bitte versuchen Sie es erneut.");
+    }
+  };
         
         const faqs = [
           {
@@ -224,12 +240,12 @@ export default function Contact() {
                 name="firstName"
                 value={formData.firstName}
                 onChange={handleChange}
-                required
-                onInvalid={(e) => e.target.setCustomValidity("Bitte ausfüllen.")}
-                onInput={(e) => e.target.setCustomValidity("")}
-                className="w-full border border-gray-300 rounded-[20px] p-4 focus:border-blue-500 focus:ring-0"
+                className={`w-full border ${
+                  errors.firstName ? "border-red-500" : "border-gray-300"
+                } rounded-[10px] p-3 focus:border-blue-500 focus:ring-0`}
                 placeholder="Ihr Name"
               />
+              {errors.firstName && <p className="text-red-500 text-sm mt-1">{errors.firstName}</p>}
 
             </div>
             <div className="w-full">
@@ -239,12 +255,12 @@ export default function Contact() {
                 name="lastName"
                 value={formData.lastName}
                 onChange={handleChange}
-                required
-                onInvalid={(e) => e.target.setCustomValidity("Bitte ausfüllen.")}
-                onInput={(e) => e.target.setCustomValidity("")}
-                className="w-full border border-gray-300 rounded-[20px] p-4 focus:border-blue-500 focus:ring-0"
+                className={`w-full border ${
+                  errors.lastName ? "border-red-500" : "border-gray-300"
+                } rounded-[10px] p-3 focus:border-blue-500 focus:ring-0`}
                 placeholder="Ihr Unternehmen"
               />
+              {errors.lastName && <p className="text-red-500 text-sm mt-1">{errors.lastName}</p>}
             </div>
           </div>
 
@@ -255,19 +271,18 @@ export default function Contact() {
               type="email"
               name="email"
               value={formData.email}
-              onChange={handleChange}
-              required
-              onInvalid={(e) => e.target.setCustomValidity("Bitte ausfüllen.")}
-              onInput={(e) => e.target.setCustomValidity("")}
-              className="w-full border border-gray-300 rounded-[20px] p-4 focus:border-blue-500 focus:ring-0"
-              placeholder="Ihre E-Mail Adresse"
-            />
+                  onChange={handleChange}
+                  className={`w-full border ${
+                    errors.email ? "border-red-500" : "border-gray-300"
+                  } rounded-[10px] p-3 focus:border-blue-500 focus:ring-0`}
+                  placeholder="Ihre E-Mail Adresse"
+                />
+                {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email}</p>}
           </div>
 
           {/* Betreff oder Thema */}
           <div>
             <h3 className="text-lg font-semibold mb-4">Betreff oder Thema</h3>
-            {errors.topic && <p className="text-red-500 text-sm mb-2">{errors.topic}</p>}
             <div className="space-y-2">
               <label className="flex items-center space-x-3">
                 <input
@@ -310,6 +325,8 @@ export default function Contact() {
                 <span>Allgemeine Anfrage</span>
               </label>
             </div>
+            {errors.topic && <p className="text-red-500 text-sm mt-2">{errors.topic}</p>}
+
           </div>
 
           {/* Nachricht */}
@@ -318,14 +335,14 @@ export default function Contact() {
             <textarea
               name="message"
               value={formData.message}
-              onChange={handleChange}
-              required
-              onInvalid={(e) => e.target.setCustomValidity("Bitte ausfüllen.")}
-              onInput={(e) => e.target.setCustomValidity("")}
-              className="w-full border border-gray-300 rounded-[20px] p-4 focus:border-blue-500 focus:ring-0"
-              placeholder="z.B. Wir brauchen eine digitale Plattform"
-              rows="4"
-            ></textarea>
+                  onChange={handleChange}
+                  className={`w-full border ${
+                    errors.message ? "border-red-500" : "border-gray-300"
+                  } rounded-[10px] p-3 focus:border-blue-500 focus:ring-0`}
+                  placeholder="z.B. Wir brauchen eine digitale Plattform"
+                  rows="4"
+                ></textarea>
+                {errors.message && <p className="text-red-500 text-sm mt-1">{errors.message}</p>}
           </div>
 
           {/* Telefonnummer */}
