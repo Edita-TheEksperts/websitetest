@@ -252,7 +252,7 @@ const handleSubmit = async (e) => {
             >          
             <div
               onClick={(e) => e.stopPropagation()}
-              className="bg-white rounded-[20px] p-8 w-full max-w-[90%] lg:max-w-[1280px] lg:max-h-[580px] relative"
+              className="bg-white rounded-[20px] p-8 w-full max-w-[90%] lg:max-w-[1280px] md:max-h-[600px] lg:max-h-[580px] relative"
             >
                <button
                     onClick={() => setIsModalOpen(false)}
@@ -352,7 +352,7 @@ const handleSubmit = async (e) => {
                         {/* Main Content */}
                         <div className="flex flex-col lg:flex-row items-center justify-between lg:gap-16">
                                 {/* Video Section */}
-                                <div className="md:block hidden w-full lg:w-1/2 flex justify-center">
+                                <div className="lg:block hidden w-full lg:w-1/2 flex justify-center">
                                   <video
                                     className="w-[150px] lg:w-[400px]"
                                     autoPlay
@@ -571,7 +571,7 @@ const handleSubmit = async (e) => {
                             </div>
                         
                             {/* Video Section */}
-                            <div className="md:block hidden lg:w-1/2 flex justify-center">
+                            <div className="lg:block hidden lg:w-1/2 flex justify-center">
                               <video
                                 className="w-full lg:w-[500px]"
                                 autoPlay
@@ -721,7 +721,7 @@ const handleSubmit = async (e) => {
                                 </div>
 
                                 {/* Video Section */}
-                                <div className="md:block hidden lg:w-1/2 flex justify-center">
+                                <div className="lg:block hidden lg:w-1/2 flex justify-center">
                                   <video
                                     className="w-full h-[100px] lg:w-[500px] lg:h-[380px]"
                                     autoPlay
