@@ -145,9 +145,10 @@ const ProjectForm = ({ handleSubmit }) => {
             type="date"
             name="startdatum"
             value={formData.startdatum}
-            min={new Date().toISOString().split("T")[0]} 
+            min={new Date().toISOString().split("T")[0]}
             onChange={(e) => setFormData({ ...formData, startdatum: e.target.value })}
             onKeyDown={(e) => e.preventDefault()}
+            onClick={(e) => e.target.showPicker && e.target.showPicker()} // Ensures showPicker() is supported
             className={`bg-white w-[300px] ml-[20px] md:ml-0 lg:ml-0 md:w-[300px] md:h-[58px] text-gray-500 text-[16px] lg:text-[24px] px-4 py-2 rounded-[8px] font-[500] leading-[20px] border ${errors.startdatum ? 'border-red-500' : 'border-gray-300'}`}
           />
                   {errors.startdatum && <p className="text-red-500 text-sm md:mt-0">{errors.startdatum}</p>}

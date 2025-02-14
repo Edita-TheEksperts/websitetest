@@ -24,7 +24,7 @@ const Agency = () => {
     },
     {
       name: "Pishtar Salihu",
-      title: "Co-Founder & business ekspert",
+      title: "Business ekspert",
       description:"Spezialgebiet: Finanzen, Business Analyse, Projekt Leitung",
       shortDescription:"“Grosse Dinge entstehen, wenn man Schritt für Schritt vorgeht und auf eine Zusammenarbeit baut, die von Vertrauen getragen wird. Nachhaltige Lösungen entstehen, wenn Ansätze wirtschaftlich durchdacht und langfristig tragfähig sind.”",
       background: "/images/Pishtar-theeksperts.png",
