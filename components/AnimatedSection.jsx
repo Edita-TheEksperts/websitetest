@@ -688,7 +688,8 @@ const handleSubmit = async (e) => {
                                         name="nachricht"
                                         type="text"
                                         required
-                                        
+                                        onInvalid={(e) => e.target.setCustomValidity("Bitte füllen Sie das Feld aus.")}
+                                        onInput={(e) => e.target.setCustomValidity("")}
                                         value={formData.nachricht}
                                         onChange={handleChange}
                                         className="w-full border p-2 text-center text-[14px] lg:text-[18px] placeholder-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:text-blue-500"

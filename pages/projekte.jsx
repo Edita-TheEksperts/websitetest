@@ -121,10 +121,6 @@ const handleSubmit = async (e) => {
                     Jeder Meilenstein spiegelt unser Engagement wider, aussergewöhnliche Lösungen zu schaffen <br></br>
                     und die Erwartungen unserer Partner zu übertreffen.
                 </p>
-                <p className="font-matt text-black text-base lg:text-[20px] font-[300] leading-[33px] mt-6">
-                    Lassen Sie sich inspirieren von den Erfolgsgeschichten, die wir gemeinsam mit unseren Kunden <br></br>
-                    <strong className='font-[900]'>verwirklicht haben</strong> oder noch <strong className='font-[900]'>verwirklichen werden.</strong>
-                </p>
             </section>
             
             <section className='lg:block hidden lg:mb-[300px] mb-8'>
@@ -159,6 +155,10 @@ const handleSubmit = async (e) => {
                 Your browser does not support the video tag.
             </video>
             </section> 
+                <p className="font-matt text-black text-base leading-[27px] lg:text-[28px] font-[300] lg:leading-[37px] lg:mb-[32px] mb-[20px]">
+                    Lassen Sie sich inspirieren von <strong className='font-[900]'>einigen</strong> Erfolgsgeschichten, die wir gemeinsam mit unseren Kunden 
+                    <strong className='font-[900]'> verwirklicht</strong> haben oder <strong className='font-[900]'>noch verwirklichen werden.</strong>
+                </p>
             <section className='flex lg:flex-row flex-col lg:gap-[32px]'>
             <FlipCard1 />
             <FlipCard2 />
