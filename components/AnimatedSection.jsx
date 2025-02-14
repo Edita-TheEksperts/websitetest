@@ -6,7 +6,7 @@ const SVGAnimation = () => {
   const [showThankYou, setShowThankYou] = useState(false);
   const svgRef = useRef(null); // Reference to SVG
 
-
+  const [formErrors, setFormErrors] = useState({}); // Stores errors for each field
   
   // Function to handle checkbox changes
   const handleCheckboxChange = (e) => {
@@ -111,6 +111,20 @@ const handleChange = (e) => {
 const handleSubmit = async (e) => {
   e.preventDefault();
   setLoading(true);
+  let newErrors = {};
+
+    // Validate required fields in Screen 4
+    if (!formData.name.trim()) newErrors.name = "Bitte Auswählen";
+    if (!formData.unternehmen.trim()) newErrors.unternehmen = "Bitte Auswählen";
+    if (!formData.email.trim()) newErrors.email = "Bitte Auswählen";
+    if (!formData.telefon.trim()) newErrors.telefon = "Bitte Auswählen";
+    if (!formData.nachricht.trim()) newErrors.nachricht = "Bitte Auswählen";
+
+    setFormErrors(newErrors);
+
+    if (Object.keys(newErrors).length > 0) {
+      return;
+    }
 
   try {
     const response = await fetch("/api/sendMailFunnel", {
@@ -591,13 +605,13 @@ const handleSubmit = async (e) => {
                         {currentScreen === 4 && (
                           <div className="flex flex-col items-center lg:mt-8 font-matt">
                             {/* Progress Bar */}
-                            <div className="w-full flex flex-col items-center md:mb-[10px]">
-                              <div className="flex items-center space-x-2 mb-4">
+                            <div className="w-full flex flex-col items-center md:mb-[1px]">
+                              <div className="flex items-center space-x-2 mb-2">
                                 <span className="text-lg md:text-[28px] font-semibold text-[#0009FF]">04</span>
                                 <span className="md:text-[28px]">/</span>
                                 <span className="text-lg md:text-[28px] font-semibold text-[#0009FF]">04</span>
                               </div>
-                              <div className="lg:w-[550px] w-[350px] mb-[10px] sm:mb-[20px] lg:mb-[30px]">
+                              <div className="lg:w-[550px] w-[350px] mb-[10px] sm:mb-[20px] lg:mb-[10px]">
                               <svg
                                 width="100%" // Makes the SVG scale dynamically with its container
                                 height="17"
@@ -614,89 +628,98 @@ const handleSubmit = async (e) => {
                             </div>
 
                             {/* Main Content */}
-                            <div className="flex flex-col lg:flex-row items-center justify-between gap-4 lg:gap-4 mt-4 mx-auto">
+                            <div className="flex flex-col lg:flex-row items-center justify-between gap-4 lg:gap-4 mt-2 mx-auto">
                                 {/* Form Section */}
                                 <div className="lg:w-1/2 lg:px-4">
-                                <h2 className="text-[16px] font-[900] text-center lg:text-left uppercase md:text-[22px] md:leading-[27px] font-matt mb-4">
+                                <h2 className="text-[16px] font-[900] text-center lg:text-left uppercase md:text-[22px] md:leading-[27px] font-matt mb-2">
                                     Wie können wir Sie erreichen?
                                   </h2>
                                   <form onSubmit={handleSubmit} className="lg:space-y-4 space-y-2 w-full max-w-4xl">
-                                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:gap-4 gap-2 mb-4">
-                                      <div className="flex flex-col border border-blue-400 w-full">
-                                        <label className="hidden">Name</label>
-                                        <input
-                                          type="text"
-                                          placeholder="NAME"
-                                          name="name"
-                                          required
-                                          onInvalid={(e) => e.target.setCustomValidity("Bitte füllen Sie das Feld aus.")}
-                                          onInput={(e) => e.target.setCustomValidity("")}
-                                          value={formData.name}
-                                          onChange={handleChange}
-                                          className="w-full border p-2 text-center text-[14px] lg:text-[18px] placeholder-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:text-blue-500"
-                                        />
-                                      </div>
-                                      <div className="flex flex-col border border-blue-400 w-full">
-                                        <label className="hidden">Unternehmen</label>
-                                        <input
-                                          type="text"
-                                          placeholder="UNTERNEHMEN"
-                                          name="unternehmen"
-                                          required
-                                          onInvalid={(e) => e.target.setCustomValidity("Bitte füllen Sie das Feld aus.")}
-                                          onInput={(e) => e.target.setCustomValidity("")}
-                                          value={formData.unternehmen}
-                                          onChange={handleChange}
-                                          className="w-full border p-2 text-center text-[14px] lg:text-[18px] placeholder-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:text-blue-500"
-                                        />
-                                      </div>
-                                    </div>
-                                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:gap-4 gap-2 mb-8">
-                                      <div className="flex flex-col border border-blue-400 w-full">
-                                        <label className="hidden">E-Mail</label>
-                                        <input
-                                          type="email"
-                                          placeholder="E-MAIL"
-                                          name="email"
-                                          required
-                                          onInvalid={(e) => e.target.setCustomValidity("Bitte füllen Sie das Feld aus.")}
-                                          onInput={(e) => e.target.setCustomValidity("")}
-                                          value={formData.email}
-                                          onChange={handleChange}
-                                          className="w-full border p-2 text-center text-[14px] lg:text-[18px] placeholder-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:text-blue-500"
-                                        />
-                                      </div>
-                                      <div className="flex flex-col border border-blue-400 w-full">
-                                        <label className="hidden">Telefon</label>
-                                        <input
-                                          type="tel"
-                                          placeholder="TELEFON"
-                                          name="telefon"
-                                          required
-                                          onInvalid={(e) => e.target.setCustomValidity("Bitte füllen Sie das Feld aus.")}
-                                          onInput={(e) => e.target.setCustomValidity("")}
-                                          value={formData.telefon}
-                                          onChange={handleChange}
-                                          className="w-full border p-2 text-center text-[14px] lg:text-[18px] placeholder-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:text-blue-500"
-                                        />
-                                      </div>
-                                    </div>
-                                    <div className="flex flex-col border border-blue-400 w-full">
-                                      <label className="hidden">Nachricht</label>
-                                      <textarea
-                                        placeholder="NACHRICHT („Gibt es noch etwas, das wir wissen sollten?“)"
-                                        name="nachricht"
-                                        type="text"
-                                        required
-                                        onInvalid={(e) => e.target.setCustomValidity("Bitte füllen Sie das Feld aus.")}
-                                        onInput={(e) => e.target.setCustomValidity("")}
-                                        value={formData.nachricht}
-                                        onChange={handleChange}
-                                        className="w-full border p-2 text-center text-[14px] lg:text-[18px] placeholder-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:text-blue-500"
-                                      />
-                                    </div>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:gap-4 gap-2 mb-4">
+                    <div>
+                    <div className="flex flex-col border border-blue-400 w-full">
+                      <input
+                        type="text"
+                        placeholder="NAME"
+                        name="name"
+                        value={formData.name}
+                        onChange={handleChange}
+                        className="w-full border p-2 text-center text-[14px] lg:text-[18px]"
+                      />
+                    
+                    </div>
+                    <div>
+                    {formErrors.name && <p className="text-red-500 text-sm">{formErrors.name}</p>}
+                    </div>
+                    </div>
+                    <div>
+                    <div className="flex flex-col border border-blue-400 w-full">
+                      <input
+                        type="text"
+                        placeholder="UNTERNEHMEN"
+                        name="unternehmen"
+                        value={formData.unternehmen}
+                        onChange={handleChange}
+                        className="w-full border p-2 text-center text-[14px] lg:text-[18px]"
+                      />
+                    </div>
+                    <div>
+                    {formErrors.unternehmen && <p className="text-red-500 text-sm ">{formErrors.unternehmen}</p>}
+                    </div>
+                    </div>
+                  </div>
+
+                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:gap-4 gap-2 mb-8">
+                    <div>
+                    <div className="flex flex-col border border-blue-400 w-full">
+                      <input
+                        type="email"
+                        placeholder="E-MAIL"
+                        name="email"
+                        value={formData.email}
+                        onChange={handleChange}
+                        className="w-full border p-2 text-center text-[14px] lg:text-[18px]"
+                      />
+                    
+                      </div>
+                      <div>
+                      {formErrors.email && <p className="text-red-500 text-sm ">{formErrors.email}</p>}
+
+                      </div>
+                    </div>
+                    <div>
+                    <div className="flex flex-col border border-blue-400 w-full">
+                      <input
+                        type="tel"
+                        placeholder="TELEFON"
+                        name="telefon"
+                        value={formData.telefon}
+                        onChange={handleChange}
+                        className="w-full border p-2 text-center text-[14px] lg:text-[18px]"
+                      />
+                    </div>
+                    <div>
+                    {formErrors.telefon && <p className="text-red-500 text-sm">{formErrors.telefon}</p>}
+
+                    </div>
+                    </div>
+                  </div>
+                   <div>
+                  <div className="flex flex-col border border-blue-400 w-full">
+                    <textarea
+                      placeholder="NACHRICHT („Gibt es noch etwas, das wir wissen sollten?“)"
+                      name="nachricht"
+                      value={formData.nachricht}
+                      onChange={handleChange}
+                      className="w-full border p-2 text-center text-[14px] lg:text-[18px]"
+                    />
+                  </div>
+                  <div>
+                  {formErrors.nachricht && <p className="text-red-500 text-sm mt-1">{formErrors.nachricht}</p>}
+                  </div>
+                  </div>
                                     {/* Button */}
-                                    <div className="flex lg:justify-start justify-center mt-2">
+                                    <div className="flex lg:justify-start justify-center mt-1">
                                       <button
                                         type="submit"
                                         className="px-4 py-3 bg-[#0009FF] text-white rounded-[30px] md:text-[25px] md:leading-[37px] font-extrabold hover:bg-blue-800"
@@ -704,7 +727,7 @@ const handleSubmit = async (e) => {
                                         SENDEN
                                       </button>
                                     </div>
-                                    <div className="flex lg:justify-start justify-center mt-2 lg:mt-0 lg:ml-2">
+                                    <div className="flex lg:justify-start justify-center mt-1 lg:mt-0 lg:ml-2">
                                     <button
                                         onClick={handleBack}
                                         
