@@ -241,7 +241,7 @@ const Bookyourekspert = () => {
 
 
             <section className="container mx-auto lg:py-4 lg:px-4 text-center lg:mb-[300px] mb-[160px]">
-                <h2 className="text-[28px] font-[900] lg:text-[28px] lg:leading-[37px] font-matt text-black mb-8 uppercase ">
+                <h2 className="text-[28px] font-[900] lg:text-[28px] lg:leading-[37px] font-matt text-black mb-6 uppercase ">
                 Weitere Services?
                 </h2>
 
