@@ -145,7 +145,9 @@ const Salesforce = () => {
                     </div>
                     <div className="bg-white px-4 ">
                       <h3 className="text-[24px] text-left mb-2 lg:font-[28px] lg:leading-[37px] font-[900] uppercase">Benutzerunterstützung</h3>
-                      <p className="text-[16px] text-left mb-4 lg:text-[20px] lg:leading-[22px] font-matt font-light">Schulungen und Support, um Ihr Team zu<br></br> befähigen, Salesforce optimal zu nutzen.</p>
+                      <p className="lg:block hidden text-[16px] text-left mb-4 lg:text-[20px] lg:leading-[22px] font-matt font-light">Schulungen und Support, um Ihr Team zu<br></br> befähigen, Salesforce optimal zu nutzen.</p>
+                      <p className="lg:hidden block text-[16px] text-left mb-4 lg:text-[20px] lg:leading-[22px] font-matt font-light">Schulungen und Support, um Ihr Team zu befähigen, Salesforce optimal zu nutzen.</p>
+
                     </div>
                   </div>
 
