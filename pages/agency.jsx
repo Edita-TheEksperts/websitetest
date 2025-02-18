@@ -227,9 +227,7 @@ const Agency = () => {
                         WebkitTextFillColor: "transparent",
                       }}
                     >                        
-                    ● Flexibilität
-
-                        :
+                    ● Flexibilität:
                       </h3>
                       <p className="text-[#5A585A] text-xl max-w-[589px] font-[400] md:leading-[30px] md:text-[24px] uppercase">
                       Agil und bereit für jede
