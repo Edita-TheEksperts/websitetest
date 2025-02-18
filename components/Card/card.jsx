@@ -43,7 +43,22 @@ const Card = ({i, title, title1, title2, description, src, link, color, progress
           <div className={styles.description} >
           <p className={`text-black mb-8 font-matt font-[700] text-[16px] w-[340px] lg:w-auto lg:mt-0 lg:text-[20px] leading-[28px] lg:leading-[33px] ${textColorClass}`}>{title1}</p>
           
-            <p className={`text-black mb-8 font-matt text-[14px] w-[340px] lg:w-auto leading-[25px] lg:text-[18px] font-[300] lg:leading-[33px] ${textColorClass}`}>{description}</p>
+          <p className={`text-black lg:mb-8 font-matt text-[14px] w-[340px] lg:w-auto leading-[25px] lg:text-[18px] font-[300] lg:leading-[33px] ${textColorClass}`}>
+          {title === "Website" ? (
+    <div className="text-left">
+        <p>
+            Wir gestalten Websites, die gut aussehen und performen–
+            ob Unternehmensseite, E-Commerce oder Portfolio.
+        </p>
+
+        <p><strong className='font-[700]'>Individuelles Design:</strong> Massgeschneidert für Ihre Marke.</p>
+        <p><strong className='font-[700]'>Benutzerfreundlich:</strong> Intuitive Navigation und responsives Design.</p>
+        <p><strong className='font-[700]'>SEO & Performance:</strong> Optimiert für Suchmaschinen, mit schnellen Ladezeiten und sicherer Technologie.</p>
+    </div>
+) : (
+    <p>{description}</p> // Default for other projects
+)}
+</p>
             <p className={`text-black mb-8 font-matt font-[700] w-[340px] lg:w-auto text-[16px] lg:mt-0 lg:text-[20px] leading-[28px] lg:leading-[33px] ${textColorClass}`}>{title2}</p>
             <span className='w-[350px] lg:w-auto'>
               <a className='font-matt border-2 border-[#00000000] text-white bg-[#000000] px-4 py-1 rounded-[20px] font-[800] md:text-[14px] text-[12px] transition-colors duration-300 text-center uppercase' href={link} target="_blank">Mehr <br></br>erfahren</a>
