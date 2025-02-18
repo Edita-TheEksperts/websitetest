@@ -4,7 +4,7 @@ export default function VisionSection() {
     const features = [
       {
         title: "Corporate Identity",
-        description: "Wir setzen auf modernste Technologien, um beste Performance zu gewährleisten.",
+        description: "Wir gestalten Logos, Farben und Typografien, die Ihre Marke definieren.",
         image: "/images/Rectangle 226 (6).png", // Replace with your image path
       },
       {
