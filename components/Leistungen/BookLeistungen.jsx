@@ -4,7 +4,7 @@ const features = [
   {
     id: 1,
     title: "IT und Software entwicklung",
-    description: "Erfahrene Entwickler, Engineure und Architekten für Web, Mobile, Backend oder Frontend, Data Science und AI",
+    description: "Erfahrene Entwickler, Engineure und Architekten für Web, Mobile, Backend oder Frontend, Data Science und AI.",
     image: "/images/Rectangle 225 (10).png", // Replace with your image path
   },
   {
