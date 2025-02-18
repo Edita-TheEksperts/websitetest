@@ -398,32 +398,22 @@ const handleSubmit = async (e) => {
                                       <label className="flex items-center space-x-3">
                                         <input
                                           type="checkbox"
+                                          value="Online-Shop aufbauen"
+                                          checked={formData.dienstleistung.includes("Online-Shop aufbauen")}
+                                          onChange={handleCheckboxChange}
+                                          className="w-5 h-5 text-[#0009FF] border-gray-300 rounded focus:ring-[#0009FF]"
+                                        />
+                                        <span className="lg:text-[18px] text-[14px] ">Online-Shop aufbauen</span>
+                                      </label>
+                                      <label className="flex items-center space-x-3">
+                                        <input
+                                          type="checkbox"
                                           value="Salesforce-Lösungen implementieren"
                                           checked={formData.dienstleistung.includes("Salesforce-Lösungen implementieren")}
                                           onChange={handleCheckboxChange}
                                           className="w-5 h-5 text-[#0009FF] border-gray-300 rounded focus:ring-[#0009FF]"
                                         />
                                         <span className="lg:text-[18px] text-[14px] " >Salesforce-Lösungen implementieren</span>
-                                      </label>
-                                      <label className="flex items-center space-x-3">
-                                        <input
-                                          type="checkbox"
-                                          value="Individuelle Softwareentwicklung"
-        checked={formData.dienstleistung.includes("Individuelle Softwareentwicklung")}
-        onChange={handleCheckboxChange}
-                                          className="w-5 h-5 text-[#0009FF] border-gray-300 rounded-lg focus:ring-[#0009FF]"
-                                        />
-                                        <span className="lg:text-[18px] text-[14px]  ">Individuelle Softwareentwicklung</span>
-                                      </label>
-                                      <label className="flex items-center space-x-3">
-                                        <input
-                                          type="checkbox"
-                                          value="Online-Shop aufbauen"
-                                          checked={formData.dienstleistung.includes("Online-Shop aufbauen")}
-                                          onChange={handleCheckboxChange}
-                                          className="w-5 h-5 text-[#0009FF] border-gray-300 rounded-lg focus:ring-[#0009FF]"
-                                        />
-                                        <span className="lg:text-[18px] text-[14px] ">Online-Shop aufbauen</span>
                                       </label>
                                       <label className="flex items-center space-x-3">
                                         <input
@@ -435,6 +425,17 @@ const handleSubmit = async (e) => {
                                         />
                                         <span className="lg:text-[18px] text-[14px] ">IT-Architektur oder Netzwerk optimieren</span>
                                       </label>
+                                      <label className="flex items-center space-x-3">
+                                        <input
+                                          type="checkbox"
+                                          value="Individuelle Softwareentwicklung"
+        checked={formData.dienstleistung.includes("Individuelle Softwareentwicklung")}
+        onChange={handleCheckboxChange}
+                                          className="w-5 h-5 text-[#0009FF] border-gray-300 rounded-lg focus:ring-[#0009FF]"
+                                        />
+                                        <span className="lg:text-[18px] text-[14px]  ">Individuelle Softwareentwicklung</span>
+                                      </label>
+                                      
                                       <label className="flex items-center space-x-3">
                                         <input
                                           type="text"
