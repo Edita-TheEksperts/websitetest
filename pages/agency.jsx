@@ -222,9 +222,12 @@ const Agency = () => {
                     <h3
                       className="text-[24px] leading-10 font-[900] uppercase md:leading-[37px] md:text-[28px] mb-2"
                       style={{
-                        background: "linear-gradient(270deg, #0009FF 76.84%, #E24125 83.49%, #03C319 91.34%, #CFFF49 97.99%)",
+                        background: "linear-gradient(270deg, #0009FF 30%, #E24125 50%, #03C319 70%, #CFFF49 100%)",
                         WebkitBackgroundClip: "text",
                         WebkitTextFillColor: "transparent",
+                        backgroundClip: "text", // Fallback for other browsers
+                        color: "transparent", // Ensure text stays transparent
+                        display: "inline-block" // Helps with rendering
                       }}
                     >                        
                     ● Flexibilität:
