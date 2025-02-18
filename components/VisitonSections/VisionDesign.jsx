@@ -47,7 +47,7 @@ export default function VisionSection() {
           </div>
   
           {/* Call-to-Action */}
-          <div className="text-center">
+          <div className="text-center flex justify-center">
           <Link href="/contact" className="block">
 
             <h2 className="text-black font-matt text-[20px] lg:text-[28px] lg:leading-[37px] font-[700] mb-4 uppercase">
@@ -61,7 +61,7 @@ export default function VisionSection() {
             </a>
             <a
               href="#contact"
-              className="lg:hidden block font-matt inline-block text-white lg:text-[#0009FF] bg-[#0009FF] lg:bg-transparent text-[24px] lg:text-[28px] lg:leading-[37px] font-[900] uppercase border-[3px] border-[#0009FF] px-2 lg:px-5 py-1 hover:bg-[#0009FF] hover:text-white transition duration-300"
+              className="lg:hidden block font-matt inline-block text-white lg:text-[#0009FF] bg-[#0009FF] lg:bg-transparent text-[28px] lg:text-[28px] text-center leading-[37px] font-[900] uppercase border-[3px] border-[#0009FF] px-2 lg:px-5 py-1 hover:bg-[#0009FF] hover:text-white transition duration-300"
             >
               Kontaktieren Sie uns<br></br> und lassen Sie uns<br></br> Ihre Marke gemeinsam<br></br> neu definieren!
             </a>
