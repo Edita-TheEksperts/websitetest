@@ -54,9 +54,15 @@ export default function VisionSection() {
             </h2>
             <a
               href="#contact"
-              className="font-matt inline-block text-white lg:text-[#0009FF] lg:bg-transparent bg-[#0009FF] text-[24px] lg:text-[28px] lg:leading-[37px] font-[900] uppercase border-[3px] border-[#0009FF] py-1 px-6 lg:px-5 lg:py-1 hover:bg-[#0009FF] hover:text-white transition duration-300"
+              className="lg:block hidden font-matt lg:inline-block text-white lg:text-[#0009FF] lg:bg-transparent bg-[#0009FF] text-[24px] lg:text-[28px] lg:leading-[37px] font-[900] uppercase border-[3px] border-[#0009FF] py-1 px-6 lg:px-5 lg:py-1 hover:bg-[#0009FF] hover:text-white transition duration-300"
             >
-              Kontaktieren uns
+              kontaktieren Sie uns für ein erstes Gespräch! 
+            </a>
+            <a
+              href="#contact"
+              className="lg:hidden block font-matt lg:inline-block text-white lg:text-[#0009FF] lg:bg-transparent bg-[#0009FF] text-[24px] lg:text-[28px] lg:leading-[37px] font-[900] uppercase border-[3px] border-[#0009FF] py-1 px-2 lg:px-5 lg:py-1 hover:bg-[#0009FF] hover:text-white transition duration-300"
+            >
+              kontaktieren Sie uns<br></br> für ein erstes<br></br> Gespräch! 
             </a>
             </Link>
           </div>
