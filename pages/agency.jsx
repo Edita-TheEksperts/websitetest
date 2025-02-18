@@ -117,14 +117,14 @@ const Agency = () => {
 
             <section className="font-matt lg:max-w-[1280px] mx-auto px-2 lg:px-2 py-2 flex flex-col items-center text-center lg:mt-[300px] mt-6 mb-[160px] lg:mb-0">
                 {/* Title */}
-                <h2 className="font-matt ml-[40px] lg:ml-0 text-center text-black font-[900] text-[24px] lg:text-[28px] leading-[37px] lg:mb-20 mb-8 uppercase">
+                <h2 className="font-matt ml-[20px] lg:ml-0 text-center text-black font-[900] text-[24px] lg:text-[28px] leading-[37px] lg:mb-20 mb-8 uppercase">
                 Unsere Werte
                 </h2>
 
                 {/* Values List */}
                 <div className="flex flex-col items-center space-y-10 lg:px-2 mb-10 lg:mb-0">
                   {/* Love */}
-                  <div className="flex items-start space-x-6 max-w-[800px] mb-2 lg:ml-[65px]">
+                  <div className="flex lg:items-start items-center space-x-6 max-w-[800px] mb-2 lg:ml-[65px] ml-[-30px]">
                     {/* Icon */}
                     <div className="lg:block hidden flex-shrink-0 w-[110px] h-[110px]">
                       <img
@@ -145,7 +145,7 @@ const Agency = () => {
                   </div>
 
                   {/* Integrity */}
-                  <div className="flex items-start space-x-6 max-w-[800px] mb-2 lg:ml-[65px]">
+                  <div className="flex lg:items-start items-center space-x-6 max-w-[800px] mb-2 lg:ml-[65px] ml-[-30px]">
                     {/* Icon */}
                     <div className="lg:block hidden flex-shrink-0 w-[110px] h-[110px]">
                       <img
@@ -166,7 +166,7 @@ const Agency = () => {
                   </div>
 
                   {/* Excellence */}
-                  <div className="flex items-start space-x-6 max-w-[800px] mb-2 lg:ml-[65px]">
+                  <div className="flex lg:items-start items-center space-x-6 max-w-[800px] mb-2 lg:ml-[65px] ml-[-30px]">
                     {/* Icon */}
                     <div className="lg:block hidden flex-shrink-0 w-[110px] h-[110px]">
                       <img
@@ -186,7 +186,7 @@ const Agency = () => {
                   </div>
 
                   {/* Communication */}
-                  <div className="flex items-start space-x-6 max-w-[800px] mb-2 lg:ml-[65px]">
+                  <div className="flex lg:items-start items-center space-x-6 max-w-[800px] mb-2 lg:ml-[65px] ml-[-30px]">
                     {/* Icon */}
                     <div className="lg:block hidden flex-shrink-0 w-[110px] h-[110px]">
                       <img
@@ -208,7 +208,7 @@ const Agency = () => {
                   </div>
 
                   {/* Flexibility */}
-                  <div className="flex items-start space-x-6 max-w-[800px] mb-2 lg:ml-[65px]">
+                  <div className="flex lg:items-start items-center space-x-6 max-w-[800px] mb-2 lg:ml-[65px] ml-[-30px]">
                     {/* Icon */}
                     <div className="lg:block hidden flex-shrink-0 w-[110px] h-[110px]">
                       <img
