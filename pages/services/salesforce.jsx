@@ -43,12 +43,12 @@ const Salesforce = () => {
                   <h2 className="text-[24px] lg:text-[40px] lg:leading-[50px] font-matt font-[700] mb-2">Salesforce Beratung</h2>
                   {/* Paragraph for desktop */}
                   <p className="hidden lg:block text-[16px]  text-center lg:text-left lg:text-[17px] lg:leading-[30px] font-[300] font-matt mb-2">
-                    Erreichen Sie Ihre Geschäftsziele mit unserer professionellen Beratung. 
+                    Erreichen Sie Ihre Geschäftsziele mit unserer professionellen Beratung
                   </p>
 
                   {/* Paragraph for mobile */}
                   <p className="block lg:hidden text-lg  text-center font-[300] font-matt mb-2">
-                  Erreichen Sie Ihre Geschäftsziele mit <br></br> unserer professionellen Beratung. 
+                  Erreichen Sie Ihre Geschäftsziele mit <br></br> unserer professionellen Beratung
                   </p>
                   <Image
                     src="/images/theekspertssaleforce1.png" 
@@ -63,15 +63,15 @@ const Salesforce = () => {
                 <div className="w-full lg:w-1/2">
                   <div className="grid grid-cols-1 lg:grid-cols-1 gap-6">
                     <div className="bg-white px-4 mt-[35px] lg:mt-0 ">
-                      <h3 className="text-[24px] text-left mb-2 lg:font-[28px] lg:leading-[37px] font-[900] ">PROZESSANALYSE:</h3>
+                      <h3 className="text-[24px] text-left mb-2 lg:font-[28px] lg:leading-[37px] font-[900] ">PROZESSANALYSE</h3>
                       <p className="text-[16px] text-left mb-4 lg:text-[20px] lg:leading-[22px] font-matt font-light ">Wir analysieren Ihre Geschäftsprozesse<br></br> und stimmen sie auf Salesforce ab. </p>
                     </div>
                     <div className="bg-white px-4">
-                      <h3 className="text-[24px] text-left mb-2 lg:font-[28px] lg:leading-[37px] font-[900]">STRATEGIEENTWICKLUNG:</h3>
+                      <h3 className="text-[24px] text-left mb-2 lg:font-[28px] lg:leading-[37px] font-[900]">STRATEGIEENTWICKLUNG</h3>
                       <p className="text-[16px] text-left mb-4 lg:text-[20px] lg:leading-[22px] font-matt font-light">Erstellung einer klaren Roadmap<br></br>für Implementierung und Wachstum. </p>
                     </div>
                     <div className="bg-white px-4 ">
-                      <h3 className="text-[24px] text-left mb-2 lg:font-[28px] lg:leading-[37px] font-[900]">CLOUD-EXPERTISE:</h3>
+                      <h3 className="text-[24px] text-left mb-2 lg:font-[28px] lg:leading-[37px] font-[900]">CLOUD-EXPERTISE</h3>
                       <p className="text-[16px] text-left mb-4 lg:text-[20px] lg:leading-[22px] font-matt font-light">Beratung für Sales Cloud, Service Cloud,<br></br>Marketing Cloud und mehr. </p>
                     </div>
                   </div>
