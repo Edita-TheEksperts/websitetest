@@ -21,7 +21,7 @@ const features = [
   },
   {
     id: 4,
-    title: "Automatisieung und Optimierung",
+    title: "Automatisierung und Optimierung",
     description: "Effizientere Prozesse durch massgeschneiderte Lösungen.",
     image: "/images/Rectangle 225 (4).png", // Replace with your image path
   },
