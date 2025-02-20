@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
@@ -119,12 +120,15 @@ const Section = ({ title, text, image, reverse }) => {
         className="flex-1 mt-8 md:mt-0 flex justify-center"
         variants={fadeVariants}
       >
-        <img
-          src={image}
-          alt={title}
-          format="webp" // Converts to WebP automatically
-          className="w-full lg:w-[600px] lg:h-[380px] "
-        />
+       <Image
+  src={image} // Make sure this is a local image or from a Next.js-supported host
+  alt={title}
+  width={600}
+  height={380}
+  quality={80} // Reduce file size while keeping quality
+  className="w-full lg:w-[600px] lg:h-[380px]"
+  priority // Ensures important images load first
+/>
       </motion.div>
     </motion.section>
   );
