@@ -76,7 +76,7 @@ const Hero = ({ setHeroVisible }) => {
             <div className="lg:block hidden flex justify-center mt-8 md:mt-0">
             <div className="flex gap-0">
                 <video
-                src="/images/Video Smm.mp4"
+                src="/images/Video Smm.webm"
                 alt="Video 1"
                 width={223}
                 height={223}
@@ -88,7 +88,7 @@ const Hero = ({ setHeroVisible }) => {
 
                 />
                 <video
-                src="/images/Your Partner and more.mp4"
+                src="/images/Your Partner and more.webm"
                 alt="Video 2"
                 width={223}
                 height={223}
@@ -105,7 +105,7 @@ const Hero = ({ setHeroVisible }) => {
 
                 />
                 <video
-                src="/images/Video Websites.mp4"
+                src="/images/Video Websites.webm"
                 alt="Video 3"
                 width={223}
                 height={223}
@@ -142,7 +142,7 @@ const Hero = ({ setHeroVisible }) => {
             <div className="lg:hidden block flex flex-col items-center mt-2 md:mt-0">
                 <div className="flex gap-0 mb-4">
                     <video
-                    src="/images/Video Smm.mp4"
+                    src="/images/Video Smm.webm"
                     alt="Video 1"
                     width={174}
                     height={174}
@@ -151,10 +151,11 @@ const Hero = ({ setHeroVisible }) => {
                     loop
                     muted
                     playsInline 
+                    controls={false} // Prevents fullscreen when tapped
                     loading="lazy"
                     />
                     <video
-                    src="/images/Your Partner and more.mp4"
+                    src="/images/Your Partner and more.webm"
                     alt="Video 2"
                     width={174}
                     height={174}
@@ -168,15 +169,17 @@ const Hero = ({ setHeroVisible }) => {
                     loop
                     muted
                     playsInline 
+                    controls={false} // Prevents fullscreen when tapped
                     loading="lazy"
                     />
                 </div>
                 <div className="flex gap-0 mt-[-30px]">
                     <video
-                    src="/images/Video Websites.mp4"
+                    src="/images/Video Websites.webm"
                     alt="Video 3"
                     width={174}
                     height={174}
+                    controls={false} // Prevents fullscreen when tapped
                     className="object-contain rounded-[20px] mr-[-20px] "
                     style={{
                         transform: 'rotate(-5.374deg)',
