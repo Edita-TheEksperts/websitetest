@@ -304,8 +304,6 @@ const Footer = () => {
               <Link href="/contact">Kontakt aufnehmen</Link>
             </span>
 
-            {/* Hover Background Effect */}
-            <span className="absolute inset-1 bg-[#0009FF] transition-transform duration-500 ease-in-out scale-x-0 origin-left group-hover:scale-x-100 z-10 rounded-[10px]"></span>
           </button>
           </Link>
           </div>
