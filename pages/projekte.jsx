@@ -87,6 +87,7 @@ const handleSubmit = async (e) => {
                 muted
                 autoPlay
                 playsInline
+                loading="lazy"
                 style={{ objectFit: "cover" }}
                 controlsList="nodownload nofullscreen noremoteplayback" // Prevent download, fullscreen, and remote playback controls
                 onMouseOver={(e) => e.target.controls = false} // Hide controls when hovered
@@ -103,6 +104,7 @@ const handleSubmit = async (e) => {
                 muted
                 autoPlay
                 playsInline
+                loading="lazy"
                 style={{ objectFit: "cover" }}
                 controlsList="nodownload nofullscreen noremoteplayback" // Prevent download, fullscreen, and remote playback controls
                 onMouseOver={(e) => e.target.controls = false} // Hide controls when hovered
@@ -130,6 +132,7 @@ const handleSubmit = async (e) => {
                 muted
                 autoPlay
                 playsInline
+                loading="lazy"
                 style={{ objectFit: "cover" }}
                 controlsList="nodownload nofullscreen noremoteplayback" // Prevent download, fullscreen, and remote playback controls
                 onMouseOver={(e) => e.target.controls = false} // Hide controls when hovered
@@ -143,6 +146,7 @@ const handleSubmit = async (e) => {
             <video
                 className="w-full h-auto rounded-[20px]"
                 loop
+                loading="lazy"
                 muted
                 autoPlay
                 playsInline
