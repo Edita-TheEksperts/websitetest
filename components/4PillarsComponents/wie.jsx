@@ -122,6 +122,7 @@ const Section = ({ title, text, image, reverse }) => {
         <img
           src={image}
           alt={title}
+          format="webp" // Converts to WebP automatically
           className="w-full lg:w-[600px] lg:h-[380px] "
         />
       </motion.div>
