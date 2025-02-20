@@ -167,11 +167,15 @@ const Home = () => {
 
             <div className="extraclass1 flex flex-col lg:flex-row lg:w-[830px] gap-8 lg:gap-16 items-center lg:items-center">
                 {/* Center Section: Image */}
-                <div className="lg:block hidden flex justify-center lg:justify-start">
-                <img
+                <div className="lg:block hidden lg:flex justify-center lg:justify-start">
+                <Image
                     src="/images/fisniksalihutheeksperts.png"
                     alt="Fisnik Salihu"
-                    className="w-[200px] h-[400px] object-cover"
+                    width={200}
+                    height={400}
+                    className="object-cover"
+                    quality={80} // Optimize image size
+                    priority
                 />
                 </div>
                 <div className="lg:hidden block flex justify-center lg:justify-start">
@@ -180,6 +184,7 @@ const Home = () => {
                     alt="Fisnik Salihu"
                     className="object-cover"
                 />
+                
                 </div>
 
                 {/* Right Section: Contact Details */}
