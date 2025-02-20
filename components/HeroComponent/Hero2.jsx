@@ -62,7 +62,7 @@ const Hero = ({ setHeroVisible }) => {
         
         {/* Text Section */}
         <div className="font-matt flex flex-col items-center text-center mb-8 md:mb-0">
-          <h1 className="text-black font-matt text-[30px] leading-[40px] md:text-6xl lg:text-[60px] font-[400] tracking-tight leading-tight lg:leading-[60px] mt-16 mb-4 text-center">
+          <h1 className="text-black font-matt text-[30px] leading-[40px] md:text-6xl lg:text-[60px] font-[400] tracking-tight leading-tight lg:leading-[60px] mt-8 lg:mt-10 mb-4 text-center">
             Führen Sie Ihre <br />
             <span className="font-matt text-[35px] leading-[40px] mt-2 md:text-6xl lg:text-[60px] lg:leading-[60px] font-[900] text-[#0009FF]">{displayedWord}
             </span> <br></br>
