@@ -84,6 +84,8 @@ const Hero = ({ setHeroVisible }) => {
                 autoPlay
                 loop
                 muted
+                loading="lazy"
+
                 />
                 <video
                 src="/images/Your Partner and more.mp4"
@@ -99,6 +101,8 @@ const Hero = ({ setHeroVisible }) => {
                 autoPlay
                 loop
                 muted
+                loading="lazy"
+
                 />
                 <video
                 src="/images/Video Websites.mp4"
@@ -116,6 +120,7 @@ const Hero = ({ setHeroVisible }) => {
                 autoPlay
                 loop
                 muted
+                loading="lazy"
                 />
                 <img
                 src="/images/The-eksperts-short-.png"
@@ -146,6 +151,7 @@ const Hero = ({ setHeroVisible }) => {
                     loop
                     muted
                     playsInline 
+                    loading="lazy"
                     />
                     <video
                     src="/images/Your Partner and more.mp4"
@@ -162,6 +168,7 @@ const Hero = ({ setHeroVisible }) => {
                     loop
                     muted
                     playsInline 
+                    loading="lazy"
                     />
                 </div>
                 <div className="flex gap-0 mt-[-30px]">
@@ -181,6 +188,7 @@ const Hero = ({ setHeroVisible }) => {
                     loop
                     muted
                     playsInline
+                    loading="lazy"
                     />
                     <img
                     src="/images/The-eksperts-short-.png"
