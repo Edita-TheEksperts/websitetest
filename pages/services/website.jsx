@@ -26,7 +26,7 @@ const Website = () => {
           <h1 className="lg:block hidden text-6xl lg:text-[174px] lg:leading-[158px] font-matt font-[900] tracking-tight mb-8">
           WEBSITE
           </h1>
-          <h1 className="lg:hidden block text-[124px] leading-[119px] font-matt font-[900] tracking-tight mb-2 lg:mb-8">
+          <h1 className="lg:hidden block text-[114px] leading-[109px] font-matt font-[900] tracking-tight mb-2 lg:mb-8">
           WEB<br></br>SITE
           </h1>
           <p className="font-matt font-[300] text-[16px] leading-[33px] lg:mt-4 text-gray-900">

@@ -22,7 +22,7 @@ const GraphicDesign = () => {
         
         {/* Main Heading */}
         <div className="w-full max-w-[1280px] mx-auto text-center lg:my-16 mt-[100px] lg:mt-[170px] lg:mb-[300px] mb-[160px]">
-          <h1 className="text-[82px] leading-[70px] lg:text-[174px] lg:leading-[158px] font-matt font-[900] tracking-tight lg:mb-8 uppercase">
+          <h1 className="text-[70px] leading-[70px] lg:text-[174px] lg:leading-[158px] font-matt font-[900] tracking-tight lg:mb-8 uppercase">
           Graphic DESIGN
           </h1>
           <p className="font-matt font-[300] text-[16px] lg:text-[22px] leading-[33px] mt-4 text-gray-900">

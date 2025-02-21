@@ -25,7 +25,7 @@ const CustomDevelopment = () => {
           <h1 className="lg:block hidden lg:text-[134px] lg:leading-[138px] font-matt font-[900] tracking-tight mb-8 uppercase">
           Custom development
           </h1>
-          <h1 className="lg:hidden block text-[81px] leading-[70px] lg:text-[174px] lg:leading-[158px] font-matt font-[900] tracking-tight lg:mb-8 uppercase">
+          <h1 className="lg:hidden block text-[65px] leading-[70px] lg:text-[174px] lg:leading-[158px] font-matt font-[900] tracking-tight lg:mb-8 uppercase">
           Custom<br></br> develop<br></br>ment
           </h1>
           <p className="font-matt font-[300] sm:text-lg lg:text-[22px] lg:leading-[33px] mt-4 text-gray-900">

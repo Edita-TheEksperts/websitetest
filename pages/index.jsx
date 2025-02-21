@@ -50,8 +50,9 @@ const Home = () => {
         <Hero2 setHeroVisible={setHeroVisible} />
         </div>
         <HeaderSection2 />
+        <div className='lg:mb-[120px] mt-[50px] mb-[85px]'>
          <Cards/>
-   
+         </div>
             <Wie/>
 
             <Warum/>

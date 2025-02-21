@@ -41,7 +41,7 @@ const Card = ({i, title, title1, title2, description, src, link, color, progress
         <h2 className={`font-matt  flex items-start text-left text-[34px] leading-[34px] lg:text-[62px] font-[700] lg:leading-[80px] lg:mt-[10px] ${textColorClass}`}>{title}</h2>
         <div className={styles.body}>
           <div className={styles.description} >
-          <p className={`text-black mb-8 font-matt font-[700] text-[16px] w-[340px] lg:w-auto lg:mt-0 lg:text-[20px] leading-[28px] lg:leading-[33px] ${textColorClass}`}>{title1}</p>
+          <p className={`text-black mb-6 font-matt font-[700] text-[14px] w-[340px] lg:w-auto lg:mt-0 lg:text-[20px] leading-[28px] lg:leading-[33px] ${textColorClass}`}>{title1}</p>
           
           <p className={`text-black lg:mb-8 font-matt text-[14px] w-[340px] lg:w-auto leading-[25px] lg:text-[18px] font-[300] lg:leading-[33px] ${textColorClass}`}>
           {title === "Website" ? (
@@ -59,7 +59,7 @@ const Card = ({i, title, title1, title2, description, src, link, color, progress
     <p>{description}</p> // Default for other projects
 )}
 </p>
-            <p className={`text-black mb-8 font-matt font-[700] w-[340px] lg:w-auto text-[16px] lg:mt-0 lg:text-[20px] leading-[28px] lg:leading-[33px] ${textColorClass}`}>{title2}</p>
+            <p className={`text-black mb-4 mt-4 font-matt font-[700] w-[340px] lg:w-auto text-[14px] lg:mt-0 lg:text-[20px] leading-[28px] lg:leading-[33px] ${textColorClass}`}>{title2}</p>
             <span className='w-[350px] lg:w-auto'>
               <a className='font-matt border-2 border-[#00000000] text-white bg-[#000000] px-4 py-1 rounded-[20px] font-[800] md:text-[14px] text-[12px] transition-colors duration-300 text-center uppercase' href={link} target="_blank">Mehr <br></br>erfahren</a>
               <a className='ml-[16px] font-matt border-2 border-white text-[#0009FF] bg-white px-4 py-1 rounded-[20px] font-[800] md:text-[14px] text-[12px] transition-all duration-300 text-center uppercase'  href="https://www.the-eksperts.com/contact"

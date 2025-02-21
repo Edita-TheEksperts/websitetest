@@ -24,7 +24,7 @@ const Bookyourekspert = () => {
           <h1 className="lg:block hidden text-6xl lg:text-[174px] lg:leading-[158px] font-matt font-[900] tracking-tight mb-8 uppercase">
           Book your Ekspert
           </h1>
-          <h1 className="lg:hidden block text-[81px] leading-[70px] lg:text-[174px] lg:leading-[158px] font-matt font-[900] tracking-tight mb-2 uppercase">
+          <h1 className="lg:hidden block text-[70px] leading-[70px] lg:text-[174px] lg:leading-[158px] font-matt font-[900] tracking-tight mb-2 uppercase">
           Book your Ekspert
           </h1>
           <p className="font-matt font-[300] text-[16px] lg:text-[22px] lg:leading-[33px] lg:mt-4 text-gray-900">

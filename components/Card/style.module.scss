@@ -8,9 +8,9 @@
   padding: 10px;
   top: 0px;
   .card {
-    margin-top: 110px;
+    margin-top: 250px;
     position: relative;
-    top: 25%;
+    top: 30%;
     height: 700px;
     width: 1280px;
     border-radius: 20px;
@@ -102,15 +102,15 @@
 /* For mobile phones */
 @media (max-width: 480px) {
   .card {
-    max-width: 400px; 
-    padding: 10px;
+    max-width: 350px; 
+    padding: 15px !important;
 
   }
 
   .body {
     flex-direction: column; 
-    gap: 15px;
-    width: 380px;
+    gap: 10px;
+    width: 320px;
     height: 200px;
   }
 
@@ -121,7 +121,7 @@
   }
 
   .description {
-    width: 100%; 
+    width: 300px; 
     margin-top: 20px; 
   }
 }

@@ -26,7 +26,7 @@ const Salesforce = () => {
           <h1 className="lg:block hidden text-5xl lg:text-[154px] lg:leading-[158px] font-matt font-[900] tracking-tight mb-8">
           SALESFORCE
           </h1>
-          <h1 className="lg:hidden block text-5xl text-[114px] leading-[100px] font-matt font-[900] tracking-tight lg:mb-8 mb-2">
+          <h1 className="lg:hidden block text-5xl text-[94px] leading-[90px] font-matt font-[900] tracking-tight lg:mb-8 mb-2">
           SALES<br></br>FORCE
           </h1>
           <p className="font-matt font-[300] text-[16px] leading-[24px] lg:text-[22px] lg:leading-[33px] lg:mt-4 text-gray-900">
@@ -34,7 +34,7 @@ const Salesforce = () => {
           </p>
         </div>
           
-          <h2 className='text-[40px] lg:text-[80px] leading-[80px] font-matt font-[900] lg:font-[700] lg:mb-[60px]'>
+          <h2 className='text-[35px] lg:text-[80px] leading-[80px] font-matt font-[900] lg:font-[700] lg:mb-[60px]'>
           Unsere Leistungen
           </h2>
           <section className="max-w-[1280px] container mx-auto p-4 flex flex-col lg:flex-row items-center lg:space-x-4 lg:mb-[120px] mb-[80px]">
@@ -63,15 +63,15 @@ const Salesforce = () => {
                 <div className="w-full lg:w-1/2">
                   <div className="grid grid-cols-1 lg:grid-cols-1 gap-6">
                     <div className="bg-white px-4 mt-[35px] lg:mt-0 ">
-                      <h3 className="text-[24px] text-left mb-2 lg:font-[28px] lg:leading-[37px] font-[900] ">PROZESSANALYSE</h3>
+                      <h3 className="text-[20px] text-left mb-2 lg:font-[28px] lg:leading-[37px] font-[900] ">PROZESSANALYSE</h3>
                       <p className="text-[16px] text-left mb-4 lg:text-[20px] lg:leading-[22px] font-matt font-light ">Wir analysieren Ihre Geschäftsprozesse<br></br> und stimmen sie auf Salesforce ab. </p>
                     </div>
                     <div className="bg-white px-4">
-                      <h3 className="text-[24px] text-left mb-2 lg:font-[28px] lg:leading-[37px] font-[900]">STRATEGIEENTWICKLUNG</h3>
+                      <h3 className="text-[20px] text-left mb-2 lg:font-[28px] lg:leading-[37px] font-[900]">STRATEGIEENTWICKLUNG</h3>
                       <p className="text-[16px] text-left mb-4 lg:text-[20px] lg:leading-[22px] font-matt font-light">Erstellung einer klaren Roadmap<br></br>für Implementierung und Wachstum. </p>
                     </div>
                     <div className="bg-white px-4 ">
-                      <h3 className="text-[24px] text-left mb-2 lg:font-[28px] lg:leading-[37px] font-[900]">CLOUD-EXPERTISE</h3>
+                      <h3 className="text-[20px] text-left mb-2 lg:font-[28px] lg:leading-[37px] font-[900]">CLOUD-EXPERTISE</h3>
                       <p className="text-[16px] text-left mb-4 lg:text-[20px] lg:leading-[22px] font-matt font-light">Beratung für Sales Cloud, Service Cloud,<br></br>Marketing Cloud und mehr. </p>
                     </div>
                   </div>
@@ -106,7 +106,7 @@ const Salesforce = () => {
                             strokeWidth="6"
                           />
                         </svg>
-                        <span className="relative text-[#0009FF] group-hover:text-white text-center font-matt mb-8 md:mb-6 lg:mb-0 text-[22px] leading:[37px] lg:text-[28px] font-[900] lg:leading-[37px] uppercase">
+                        <span className="relative text-[#0009FF] group-hover:text-white text-center font-matt mb-8 md:mb-6 lg:mb-0 text-[19px] leading:[22px] lg:text-[28px] font-[900] lg:leading-[37px] uppercase">
                           Jetzt Gespräch Buchen
                         </span>
                       </button>
@@ -136,15 +136,15 @@ const Salesforce = () => {
                 <div className="w-full lg:w-1/2">
                   <div className="grid grid-cols-1 lg:grid-cols-1 gap-6">
                     <div className="bg-white px-4 mt-[40px] lg:mt-0">
-                      <h3 className="text-[24px] text-left mb-2 lg:font-[28px] lg:leading-[37px] font-[900] uppercase ">Systempflege</h3>
+                      <h3 className="text-[20px] text-left mb-2 lg:font-[28px] lg:leading-[37px] font-[900] uppercase ">Systempflege</h3>
                       <p className="text-[16px] text-left mb-4 lg:text-[20px] lg:leading-[22px] font-matt font-light ">Regelmässige Updates und Healthchecks<br></br> Ihrer Salesforce-Umgebung.</p>
                     </div>
                     <div className="bg-white px-4 ">
-                      <h3 className="text-[24px] text-left mb-2 lg:font-[28px] lg:leading-[37px] font-[900] uppercase">Datenmanagement</h3>
+                      <h3 className="text-[20px] text-left mb-2 lg:font-[28px] lg:leading-[37px] font-[900] uppercase">Datenmanagement</h3>
                       <p className="text-[16px] text-left mb-4 lg:text-[20px] lg:leading-[22px] font-matt font-light">Saubere, sichere und optimierte<br></br> Datenverwaltung.</p>
                     </div>
                     <div className="bg-white px-4 ">
-                      <h3 className="text-[24px] text-left mb-2 lg:font-[28px] lg:leading-[37px] font-[900] uppercase">Benutzerunterstützung</h3>
+                      <h3 className="text-[20px] text-left mb-2 lg:font-[28px] lg:leading-[37px] font-[900] uppercase">Benutzerunterstützung</h3>
                       <p className="lg:block hidden text-[16px] text-left mb-4 lg:text-[20px] lg:leading-[22px] font-matt font-light">Schulungen und Support, um Ihr Team zu<br></br> befähigen, Salesforce optimal zu nutzen.</p>
                       <p className="lg:hidden block text-[16px] text-left mb-4 lg:text-[20px] lg:leading-[22px] font-matt font-light">Schulungen und Support, um Ihr Team zu befähigen, Salesforce optimal zu nutzen.</p>
 

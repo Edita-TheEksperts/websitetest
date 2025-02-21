@@ -71,7 +71,7 @@ const handleSubmit = async (e) => {
         
         {/* Main Heading */}
         <div className="w-full max-w-[1280px] mx-auto text-center mt-[100px] lg:mt-[170px] mb-[160px] lg:mb-[145px]">
-          <h1 className="text-[90px] leading-[90px] lg:text-[174px] lg:leading-[158px] font-matt font-[900] tracking-tight uppercase">
+          <h1 className="text-[80px] leading-[90px] lg:text-[174px] lg:leading-[158px] font-matt font-[900] tracking-tight uppercase">
           Unsere Arbeit
           </h1>
           <p className="font-matt font-[300] text-[22px] leading-[33px] mt-1 text-[#00000]">

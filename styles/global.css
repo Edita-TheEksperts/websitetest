@@ -419,8 +419,8 @@ h2.responsive-heading {
 
 @media (max-width: 768px) {
   h2.responsive-heading {
-    font-size: 40px;
-    line-height: 50px;
+    font-size: 35px;
+    line-height: 45px;
     letter-spacing: -1.2px;
   }
 }
