@@ -1,12 +1,14 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import Layout from "../components/Layout";
+import LandingPageHeader from "../components/LandingPagesComponents/LandingPageHeader";
+import LandingPageFooter from "../components/LandingPagesComponents/LandingPageFooter";
 import "../styles/global.css";
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
   const [loading, setLoading] = useState(false);
-
+  
   useEffect(() => {
     const handleStart = () => setLoading(true);
     const handleComplete = () => {
@@ -25,15 +27,29 @@ function MyApp({ Component, pageProps }) {
     };
   }, [router]);
 
+  const isLandingPage = router.pathname === "/web-analysis";
+
   return (
-    <Layout>
-      {loading && (
-        <div className="loading-overlay">
-          <div className="spinner"></div>
-        </div>
+    <>
+      {isLandingPage ? (
+        <>
+          <LandingPageHeader />
+          <main>
+            <Component {...pageProps} />
+          </main>
+          <LandingPageFooter />
+        </>
+      ) : (
+        <Layout>
+          {loading && (
+            <div className="loading-overlay">
+              <div className="spinner"></div>
+            </div>
+          )}
+          <Component {...pageProps} />
+        </Layout>
       )}
-      <Component {...pageProps} />
-    </Layout>
+    </>
   );
 }
 
