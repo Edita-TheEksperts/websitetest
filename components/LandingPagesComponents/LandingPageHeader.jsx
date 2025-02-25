@@ -39,7 +39,7 @@ const LandingPageHeader = () => {
     >
       <div className="max-w-[1280px] mx-auto flex items-center justify-between">
         <div className="flex items-center space-x-2">
-          <Link href="/" className='hidden lg:block'>
+          <Link href="/web-analysis" className='hidden lg:block'>
           <svg  xmlns="http://www.w3.org/2000/svg"
             version="1.1"
             viewBox="0 0 488.1 68.2"
@@ -97,7 +97,7 @@ const LandingPageHeader = () => {
 
         {/* Main Navigation */}
         <nav className="hidden space-x-6 px-8 py-4 rounded-[10px] relative">
-          <Link href="/" className={`text-gray-700 ${isActive('/')}`}>Home</Link>
+          <Link href="/web-analysis" className={`text-gray-700 ${isActive('/')}`}>web-analysis</Link>
           <span className="text-gray-300">|</span>
           
           {/* Services Dropdown */}
