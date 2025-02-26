@@ -268,6 +268,10 @@ const LandingPage = () => {
       </div>
     </section>
 
+    <section>
+      
+    </section>
+
       <section className="lg:mt-[300px] mt-[160px] px-4 lg:px-6 max-w-[1280px] mx-auto">
   {/* Title and Subtitle Row */}
   <div className="flex flex-col lg:flex-row items-center justify-between mb-[32px] lg:mb-[80px]">

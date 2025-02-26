@@ -35,7 +35,7 @@ const partners = [
 export default function PartnersSlider() {
   return (
     <div className="flex justify-center py-4">
-      <div className="w-full max-w-[1280px] px-4">
+      <div className="w-full max-w-[1310px] px-4">
         <Swiper
           modules={[Autoplay]}
           spaceBetween={2}
