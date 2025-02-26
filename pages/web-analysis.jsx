@@ -1,4 +1,5 @@
 import Link from "next/link";
+import PartnersSlider from "../components/SliderLandingPage/SliderLandingPage";
 const reviews = [
     {
       name: "Tobias Krusi",
@@ -32,10 +33,241 @@ const reviews = [
     },
   ];
 
+  const features = [
+    {
+      img: "/images/Frame 143.png", // Replace with actual image path
+      title: "24-Hour Turnaround",
+      description: "Immediate value proposition.",
+    },
+    {
+      img: "/images/Frame 143 (1).png", // Replace with actual image path
+      title: "Ekspert Fixes Included",
+      description: "Not just a report— you also provide solutions.",
+    },
+    {
+      img: "/images/Frame 143 (2).png", // Replace with actual image path
+      title: "Guaranteed 100/100",
+      description: "Performance, SEO, and Accessibility benchmarks.",
+    },
+  ];
+  const features1 = [
+    "Instant Analysis",
+    "Performance Boost",
+    "SEO & Ranking",
+    "Accessibility Compliance",
+    "Device Compatibility",
+    "Performance Tuning",
+    "SEO Boost",
+    "Security Check",
+  ];
 const LandingPage = () => {
   return (
     <div>
       <main className="flex flex-col justify-center items-center">
+      <section className="lg:mt-[20px] mt-[60px] px-4 lg:px-4 max-w-[1310px] mx-auto flex flex-col lg:flex-row items-center">
+  {/* Left Content */}
+  <div className="lg:w-1/2 text-center lg:text-left">
+  <h1 className="text-black font-[400] text-[40px] leading-[48px] lg:text-[64px] lg:leading-[64px]">
+    Turbocharge<br /> Your Website in <span className="text-[#0009FF] font-[900]">24 Hours!</span>
+  </h1>
+  <p className="text-[#6D6D6D] text-[16px] leading-[25px] lg:text-[20px] lg:leading-[28px] mt-[16px] font-[400]">
+    We deliver a full performance, SEO, and accessibility report within a day—and fix everything to reach 100/100.
+  </p>
+
+  {/* Form */}
+  <form className="mt-[16px] flex flex-col gap-4 max-w-[450px]">
+    {/* First Row */}
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <input
+        type="text"
+        placeholder="Your Url*"
+        className="p-3 border border-[#E7E7E7] rounded-[12px] w-full text-[20px] font-[500] text-black capitalize  placeholder-black"
+        style={{ fontFamily: "Matt_Trial" }}
+        required
+      />
+      <input
+        type="text"
+        placeholder="Full Name*"
+        className="p-3 border border-[#E7E7E7] rounded-[12px] w-full text-[20px] font-[500] text-black capitalize  placeholder-black"
+        style={{ fontFamily: "Matt_Trial" }}
+        required
+      />
+    </div>
+
+    {/* Second Row */}
+    <input
+      type="email"
+      placeholder="Email*"
+      className="p-3 border border-[#E7E7E7] rounded-[12px] w-full text-[20px] font-[500] text-black capitalize  placeholder-black"
+      style={{ fontFamily: "Matt_Trial" }}
+      required
+    />
+
+    {/* Third Row - Input & Button Outside */}
+    <div className="relative flex items-center">
+      <input
+        type="text"
+        placeholder="Company*"
+        className="p-3 border border-[#E7E7E7] rounded-[12px] w-full text-[20px] font-[500] text-black capitalize  placeholder-black"
+        style={{ fontFamily: "Matt_Trial" }}
+        required
+      />
+     <button
+        type="submit"
+        className="ml-4"
+      >
+         <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="57"
+    height="57"
+    viewBox="0 0 50 51"
+    fill="none"
+  >
+    <rect x="0.5" y="0.633545" width="49" height="49" rx="11.5" stroke="#0009FF" />
+    <rect x="2" y="2" width="46" height="46" rx="10" fill="#0009FF" />
+    <path d="M28.1267 22.1707L36.3931 22.1707V13.8432H28.1267V22.1707Z" fill="white" />
+    <path d="M13.1324 31.1275L20.852 23.3508H26.6733V27.2482C26.6733 28.5373 26.1627 29.7719 25.2616 30.6857L18.9777 37.016L13.1324 31.1275Z" fill="white" />
+    <path d="M28.1936 37.0402V23.3689H31.6359C34.2973 23.3689 36.46 25.5415 36.46 28.2286V37.0402H28.1936Z" fill="white" />
+    <path d="M13.1135 22.1707V13.8432H22.1369C24.648 13.8432 26.6846 15.8948 26.6846 18.4245V22.1707H13.1135Z" fill="white" />
+  </svg>
+      </button>
+    </div>
+  </form>
+</div>
+
+
+  {/* Right Image */}
+  <div className="flex justify-center mt-8 lg:mt-2">
+    <img src="/images/Rockets1.jpg" alt="Rocket Boost Website" className="w-full max-w-[850px]" />
+  </div>
+</section>
+
+<section className="lg:block hidden mt-[30px] mb-[160px] lg:mb-[200px]">
+  <PartnersSlider/>
+</section>
+<section className="max-w-[1310px] mx-auto mb-[160px] lg:mb-[300px] px-4 md:px-4 lg:px-4">
+  <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-8">
+    {features.map((feature, index) => (
+      <div key={index} className="flex flex-col md:flex-col lg:flex-col items-center lg:items-start text-center md:text-center lg:text-left">
+        {/* Image */}
+        <img
+          src={feature.img}
+          alt={feature.title}
+          className="w-[350px] md:w-[400px] lg:w-[400px] lg:h-[315px] h-auto mb-[24px] md:mb-0 md:mr-6 lg:mb-[24px] lg:mr-0"
+        />
+        
+        {/* Text Section */}
+        <div>
+          <h3 className="ml-2 text-[24px] lg:text-[32px] leading-[32px] lg:leading-[40px] font-[900] text-black">
+            {feature.title}:
+          </h3>
+          <p className="ml-2 text-[18px] lg:text-[24px] leading-[28px] lg:leading-[32px] font-[400] text-black">
+            {feature.description}
+          </p>
+        </div>
+      </div>
+    ))}
+  </div>
+</section>
+
+<section className="max-w-[1280px] mx-auto px-4 lg:mb-[300px] mb-[160px]">
+      {/* Heading */}
+      <h2 className="text-center text-[32px] lg:text-[40px] font-[700] lg:leading-[48px] mb-4">
+        What You Get!
+      </h2>
+      <p className="text-center text-[20px] lg:text-[22px] lg:leading-[33px] max-w-[1100px] font-[300] mx-auto mb-[58px]">
+        Our specialized team tackles every aspect: speed, SEO, mobile responsiveness, desktop performance, and accessibility.
+        We identify all issues and fix them, ensuring your site scores top marks on every front.
+      </p>
+
+<section >
+  <div className="flex flex-wrap justify-center gap-2">
+    <div className="flex items-center gap-4 px-6 py-4 mb-[8px] bg-gray-200 rounded-[24px]">
+      <span className="lg:text-[32px] text-[18px] leading-[48px] font-[700]">Instant Analysis</span>
+      <svg width="56" height="46" viewBox="0 0 56 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="7" y="7.76709" width="37" height="37" rx="9.5" stroke="black"/>
+<path d="M10.9324 13.7203L0.847168 23.8055L10.9324 33.8908L21.0177 23.8056L10.9324 13.7203Z" fill="#0009FF"/>
+<path d="M45.4869 0.983643L55.5711 11.0678L27.3938 39.2451C24.3296 42.3093 19.371 42.3093 16.3068 39.2451L11.7661 34.7044L45.4869 0.983643Z" fill="#0009FF"/>
+</svg>
+    </div>
+
+    <div className="flex items-center gap-4 px-6 py-4 mb-[8px] bg-gray-200 rounded-[24px]">
+      <span className="lg:text-[32px] text-[18px] leading-[48px] font-[700]">Performance Boost</span>
+      <svg width="56" height="46" viewBox="0 0 56 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="7" y="7.76709" width="37" height="37" rx="9.5" stroke="black"/>
+<path d="M10.9324 13.7203L0.847168 23.8055L10.9324 33.8908L21.0177 23.8056L10.9324 13.7203Z" fill="#0009FF"/>
+<path d="M45.4869 0.983643L55.5711 11.0678L27.3938 39.2451C24.3296 42.3093 19.371 42.3093 16.3068 39.2451L11.7661 34.7044L45.4869 0.983643Z" fill="#0009FF"/>
+</svg>
+    </div>
+
+    <div className="flex items-center gap-4 px-6 py-4 mb-[8px] bg-gray-200 rounded-[24px]">
+      <span className="lg:text-[32px] text-[18px] leading-[48px] font-[700]">SEO & Ranking</span>
+      <svg width="56" height="46" viewBox="0 0 56 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="7" y="7.76709" width="37" height="37" rx="9.5" stroke="black"/>
+<path d="M10.9324 13.7203L0.847168 23.8055L10.9324 33.8908L21.0177 23.8056L10.9324 13.7203Z" fill="#0009FF"/>
+<path d="M45.4869 0.983643L55.5711 11.0678L27.3938 39.2451C24.3296 42.3093 19.371 42.3093 16.3068 39.2451L11.7661 34.7044L45.4869 0.983643Z" fill="#0009FF"/>
+</svg>
+    </div>
+  </div>
+
+  <div className="flex flex-wrap justify-center gap-2">
+  <div className="flex items-center gap-4 px-6 py-4 mb-[8px] bg-gray-200 rounded-[24px]">
+  <span className="lg:text-[32px] text-[18px] leading-[48px] font-[700]">Accessibility Compliance</span>
+      <svg width="56" height="46" viewBox="0 0 56 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="7" y="7.76709" width="37" height="37" rx="9.5" stroke="black"/>
+<path d="M10.9324 13.7203L0.847168 23.8055L10.9324 33.8908L21.0177 23.8056L10.9324 13.7203Z" fill="#0009FF"/>
+<path d="M45.4869 0.983643L55.5711 11.0678L27.3938 39.2451C24.3296 42.3093 19.371 42.3093 16.3068 39.2451L11.7661 34.7044L45.4869 0.983643Z" fill="#0009FF"/>
+</svg>
+    </div>
+
+    <div className="flex items-center gap-4 px-6 py-4 mb-[8px] bg-gray-200 rounded-[24px]">
+      <span className="lg:text-[32px] text-[18px] leading-[48px] font-[700]">Device Compatibility</span>
+      <svg width="56" height="46" viewBox="0 0 56 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="7" y="7.76709" width="37" height="37" rx="9.5" stroke="black"/>
+<path d="M10.9324 13.7203L0.847168 23.8055L10.9324 33.8908L21.0177 23.8056L10.9324 13.7203Z" fill="#0009FF"/>
+<path d="M45.4869 0.983643L55.5711 11.0678L27.3938 39.2451C24.3296 42.3093 19.371 42.3093 16.3068 39.2451L11.7661 34.7044L45.4869 0.983643Z" fill="#0009FF"/>
+</svg>
+    </div>
+  </div>
+
+  <div className="flex flex-wrap justify-center gap-2">
+  <div className="flex items-center gap-4 px-6 py-4 mb-[8px] bg-gray-200 rounded-[24px]">
+  <span className="lg:text-[32px] text-[18px] leading-[48px] font-[700]">Performance Tuning</span>
+      <svg width="56" height="46" viewBox="0 0 56 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="7" y="7.76709" width="37" height="37" rx="9.5" stroke="black"/>
+<path d="M10.9324 13.7203L0.847168 23.8055L10.9324 33.8908L21.0177 23.8056L10.9324 13.7203Z" fill="#0009FF"/>
+<path d="M45.4869 0.983643L55.5711 11.0678L27.3938 39.2451C24.3296 42.3093 19.371 42.3093 16.3068 39.2451L11.7661 34.7044L45.4869 0.983643Z" fill="#0009FF"/>
+</svg>
+    </div>
+
+    <div className="flex items-center gap-4 px-6 py-4 mb-[8px] bg-gray-200 rounded-[24px]">
+      <span className="lg:text-[32px] text-[18px] leading-[48px] font-[700]">SEO Boost</span>
+      <svg width="56" height="46" viewBox="0 0 56 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="7" y="7.76709" width="37" height="37" rx="9.5" stroke="black"/>
+<path d="M10.9324 13.7203L0.847168 23.8055L10.9324 33.8908L21.0177 23.8056L10.9324 13.7203Z" fill="#0009FF"/>
+<path d="M45.4869 0.983643L55.5711 11.0678L27.3938 39.2451C24.3296 42.3093 19.371 42.3093 16.3068 39.2451L11.7661 34.7044L45.4869 0.983643Z" fill="#0009FF"/>
+</svg>
+    </div>
+
+    <div className="flex items-center gap-4 px-6 py-4 mb-[8px] bg-gray-200 rounded-[24px]">
+      <span className="lg:text-[32px] text-[18px] leading-[48px] font-[700]">Security Check</span>
+      <svg width="56" height="46" viewBox="0 0 56 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="7" y="7.76709" width="37" height="37" rx="9.5" stroke="black"/>
+<path d="M10.9324 13.7203L0.847168 23.8055L10.9324 33.8908L21.0177 23.8056L10.9324 13.7203Z" fill="#0009FF"/>
+<path d="M45.4869 0.983643L55.5711 11.0678L27.3938 39.2451C24.3296 42.3093 19.371 42.3093 16.3068 39.2451L11.7661 34.7044L45.4869 0.983643Z" fill="#0009FF"/>
+</svg>
+    </div>
+  </div>
+</section>
+
+      {/* Call to Action */}
+      <div className="mt-[58px] text-center">
+        <button className="bg-[#152DFF] text-white font-matt font-[500] text-[20px] leading-[28px] py-[14px] px-6 lg:px-[110px] rounded-[12px] hover:bg-blue-700 transition">
+          Get The Full Free Guide & Checklist
+        </button>
+      </div>
+    </section>
+
       <section className="lg:mt-[300px] mt-[160px] px-4 lg:px-6 max-w-[1280px] mx-auto">
   {/* Title and Subtitle Row */}
   <div className="flex flex-col lg:flex-row items-center justify-between mb-[32px] lg:mb-[80px]">

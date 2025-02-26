@@ -544,3 +544,13 @@ h2.responsive-heading {
     width: 1010px !important;
   }
 }
+.partners-slider-container {
+  text-align: center;
+}
+
+.partner-logo {
+  width: 100%;
+  max-width: 86px;
+  height: 86px;
+  margin: auto;
+}
