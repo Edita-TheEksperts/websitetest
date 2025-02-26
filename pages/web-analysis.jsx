@@ -142,7 +142,7 @@ const LandingPage = () => {
   </div>
 </section>
 
-<section className="lg:block hidden mt-[30px] mb-[160px] lg:mb-[200px]">
+<section className="mt-[30px] mb-[160px] lg:mb-[200px]">
   <PartnersSlider/>
 </section>
 <section className="max-w-[1310px] mx-auto mb-[160px] lg:mb-[300px] px-4 md:px-4 lg:px-4">
@@ -326,7 +326,7 @@ const LandingPage = () => {
       </p>
     </div>
     <div className="flex flex-row">
-    <button className="lg:ml-[180px] group relative font-matt flex items-center justify-center px-1 py-1 bg-transparent border-2 border-[#0009FF] text-[#0009FF] rounded-[10px] font-medium text-[20px] transition duration-100 ease-in-out overflow-hidden">
+    <button className="btnfix lg:ml-[180px] group relative font-matt flex items-center justify-center px-1 py-1 bg-transparent border-2 border-[#0009FF] text-[#0009FF] rounded-[10px] font-medium text-[20px] transition duration-100 ease-in-out overflow-hidden">
             {/* SVG Background */}
             <div className="w-14 h-14 bg-[#0009FF] rounded-[10px] flex items-center justify-center text-white transform scale-x-100 origin-left transition-all duration-500 ease-in-out group-hover:scale-x-100 relative z-20">
             <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -377,7 +377,7 @@ const LandingPage = () => {
           </button>
         
           </div>
-          <p className="w-[300px] lg:ml-[830px] lg:mt-[-85px] text-[#8B8B8B] text-[16px] font-[300] leading-[24px] mt-4 text-center">
+          <p className="pfix w-[300px] lg:ml-[830px] lg:mt-[-85px] text-[#8B8B8B] text-[16px] font-[300] leading-[24px] mt-4 text-center">
           Some issues may require slightly longer than 24 hours to implement if the site is large or complex, but we will deliver the initial report in that time. 
           </p>
         

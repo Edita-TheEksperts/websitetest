@@ -574,3 +574,25 @@ h2.responsive-heading {
           font-size: 18px !important;
           width: 900px;
         }}
+
+
+        @media (width: 1024px) {
+          .sliderfix {
+            max-width: 1000px !important;
+          }}
+
+         
+          @media (width: 1024px) {
+            .btnfix{
+              margin-left: 420px !important;
+              margin-top: -30px;
+             }}
+
+ @media (width: 1024px) {
+.pfix{
+ width: 100px;
+ height: 300px;
+ font-size: 10px;
+ line-height: 15px;
+}}
+  
