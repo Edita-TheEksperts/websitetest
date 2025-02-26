@@ -285,10 +285,10 @@ const LandingPage = () => {
 
   <div className="relative z-10 flex flex-col items-center">
   <div>
-    <h1 className="text-[40px] lg:text-[80px] lg:leading-[80px] font-[700] font-matt lg:ml-4">How it works</h1>
+    <h1 className="header2 text-[40px] lg:text-[80px] lg:leading-[80px] font-[700] font-matt lg:ml-4">How it works</h1>
   </div>
   <div className="flex text-center max-w-[1030px] px-4 lg:px-0 mb-6 lg:mb-0">
-    <p className=" text-[16px] lg:text-[20px] lg:leading-[33px] font-[300]">Don’t let a slow or underperforming website hold you back. Request your 24-hour analysis now, and we’ll handle the rest—boosting your SEO, speed, and user experience so you can focus on growing your business.</p>
+    <p className=" p2 text-[16px] lg:text-[20px] lg:leading-[33px] font-[300]">Don’t let a slow or underperforming website hold you back. Request your 24-hour analysis now, and we’ll handle the rest—boosting your SEO, speed, and user experience so you can focus on growing your business.</p>
   </div>
     {/* Step 1 */}
     <div className="bg-[#F1F1F1] shadow-lg rounded-[16px] px-[24px] py-[14px] w-80 lg:mr-[610px] lg:mt-[70px] mb-6 lg:mb-0">
@@ -312,13 +312,13 @@ const LandingPage = () => {
     </div>
 
     {/* Step 3 */}
-    <div className="bg-[#F1F1F1] shadow-lg rounded-[16px] px-[24px] py-[14px] w-80 lg:ml-[790px] lg:mt-[100px] mb-6 lg:mb-0">
+    <div className="icon1 bg-[#F1F1F1] shadow-lg rounded-[16px] px-[24px] py-[14px] w-80 lg:ml-[790px] lg:mt-[100px] mb-6 lg:mb-0">
       <h3 className="text-[32px] leading-[48px] font-[700] mb-2">Step 3:</h3>
       <p className="text-[24px] leading-[32px] font-[300]">Comprehensive report & recommended fixes.</p>
     </div>
 
     {/* Step 4 */}
-    <div className="bg-[#F1F1F1] shadow-lg rounded-[16px] px-[24px] py-[14px] w-80 lg:mr-[800px] lg:mt-[-100px] mb-6 lg:mb-0">
+    <div className="icon2 bg-[#F1F1F1] shadow-lg rounded-[16px] px-[24px] py-[14px] w-80 lg:mr-[800px] lg:mt-[-100px] mb-6 lg:mb-0">
     <h3 className="text-[32px] leading-[48px] font-[700] mb-2">Step 4:</h3>
     <p className="text-[20px] leading-[28px] font-[300]">
         Our specialized team tackles every aspect: speed, SEO, mobile

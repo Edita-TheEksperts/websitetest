@@ -554,3 +554,23 @@ h2.responsive-heading {
   height: 86px;
   margin: auto;
 }
+@media (width: 1024px) {
+  .icon1 {
+    margin-left: 660px !important;
+  }}
+
+  @media (width: 1024px) {
+    .icon2 {
+      margin-right: 660px !important;
+    }}
+
+    @media (width: 1024px) {
+      .header2 {
+        font-size: 50px !important;
+        margin-left: 80px !important;
+      }}
+      @media (width: 1024px) {
+        .p2 {
+          font-size: 18px !important;
+          width: 900px;
+        }}
