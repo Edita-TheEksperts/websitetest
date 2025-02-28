@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect,useRef,useCallback } from 'react';
 import Image from 'next/image';
 import "../../styles/global.css"
 import Link from 'next/link';
@@ -53,6 +53,36 @@ const Hero = ({ setHeroVisible }) => {
     return () => observer.disconnect();
   }, [setHeroVisible]);
 
+  const videoRefs = useRef(new Map());
+
+  const setVideoRef = useCallback((node) => {
+    if (node) videoRefs.current.set(node, node);
+  }, []);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          const video = videoRefs.current.get(entry.target);
+          if (video) {
+            if (entry.isIntersecting) {
+              video.play();
+            } else {
+              video.pause();
+              video.currentTime = 0; // Reset video when out of view
+            }
+          }
+        });
+      },
+      { threshold: 0.5 } // Play when 50% visible
+    );
+
+    videoRefs.current.forEach((video) => observer.observe(video));
+
+    return () => {
+      videoRefs.current.forEach((video) => observer.unobserve(video));
+    };
+  }, []);
   return (
     <section
       id="hero"
@@ -62,16 +92,15 @@ const Hero = ({ setHeroVisible }) => {
         
         {/* Text Section */}
         <div className="font-matt flex flex-col items-center text-center mb-8 md:mb-0">
-          <h1 className="text-black font-matt text-[30px] leading-[40px] md:text-6xl lg:text-[60px] font-[400] tracking-tight leading-tight lg:leading-[60px] mt-8 lg:mt-10 mb-4 text-center">
-            Führen Sie Ihre <br />
-            <span className="font-matt text-[35px] leading-[40px] mt-2 md:text-6xl lg:text-[60px] lg:leading-[60px] font-[900] text-[#0009FF]">{displayedWord}
-            </span> <br></br>
-            <span 
-              className="font-matt text-[30px] leading-[40px] mt-2 md:text-6xl lg:text-[60px] font-[400] lg:leading-[60px] whitespace-nowrap text-black"
-            >
-              mit uns zu neuen Erfolgen            
-              </span>
-          </h1>
+          <h1
+  className="text-black font-matt text-[30px] md:text-6xl lg:text-[60px] font-[400] tracking-tight leading-tight lg:leading-[60px] mt-8 lg:mt-10 mb-4 text-center"
+  aria-label={`Führen Sie Ihre ${displayedWord} mit uns zu neuen Erfolgen`}
+>
+  Führen Sie Ihre <br />
+  <span className="font-[900] text-[35px] lg:text-[60px] text-[#0009FF]">{displayedWord}</span> <br />
+  mit uns zu neuen Erfolgen
+</h1>
+
             {/* Image Section */}
             <div className="lg:block hidden flex justify-center mt-8 md:mt-0">
             <div className="flex gap-0">
@@ -142,19 +171,20 @@ const Hero = ({ setHeroVisible }) => {
             <div className="lg:hidden block flex flex-col items-center mt-2 md:mt-0">
                 <div className="flex gap-0 mb-4">
                     <video
+          ref={setVideoRef}
+
                     src="/images/Video Smm.webm"
                     alt="Video 1"
                     width={174}
                     height={174}
                     className="object-contain rounded-[20px] mr-[-20px] transform rotate-[-8.271deg] flex-shrink-0 shadow-[0px_4px_27.6px_0px_rgba(0,_0,_0,_0.25)]"
-                    autoPlay
-                    loop
                     muted
-                    playsInline 
-                    controls={false} // Prevents fullscreen when tapped
-                    loading="lazy"
+                    playsInline
+                    controls={false}
                     />
                     <video
+          ref={setVideoRef}
+
                     src="/images/Your Partner and more.webm"
                     alt="Video 2"
                     width={174}
@@ -165,21 +195,19 @@ const Hero = ({ setHeroVisible }) => {
                         flexShrink: 0,
                         boxShadow: '0px 4px 27.6px 0px rgba(0, 0, 0, 0.25)',
                     }}
-                    autoPlay
-                    loop
                     muted
-                    playsInline 
-                    controls={false} // Prevents fullscreen when tapped
-                    loading="lazy"
+                    playsInline
+                    controls={false}
                     />
                 </div>
                 <div className="flex gap-0 mt-[-30px]">
                     <video
+          ref={setVideoRef}
+
                     src="/images/Video Websites.webm"
                     alt="Video 3"
                     width={174}
                     height={174}
-                    controls={false} // Prevents fullscreen when tapped
                     className="object-contain rounded-[20px] mr-[-20px] "
                     style={{
                         transform: 'rotate(-5.374deg)',
@@ -187,11 +215,9 @@ const Hero = ({ setHeroVisible }) => {
                         boxShadow: '0px 4px 27.6px 0px rgba(0, 0, 0, 0.25)',
                         zIndex: 1,
                     }}
-                    autoPlay
-                    loop
                     muted
-                    playsInline
-                    loading="lazy"
+          playsInline
+          controls={false}
                     />
                     <img
                     src="/images/The-eksperts-short-.png"
