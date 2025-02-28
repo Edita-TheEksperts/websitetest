@@ -179,8 +179,10 @@ const Hero = ({ setHeroVisible }) => {
                     height={174}
                     className="object-contain rounded-[20px] mr-[-20px] transform rotate-[-8.271deg] flex-shrink-0 shadow-[0px_4px_27.6px_0px_rgba(0,_0,_0,_0.25)]"
                     muted
-                    playsInline
-                    controls={false}
+          playsInline
+          preload="metadata"
+          loading="lazy"
+          controls={false}
                     />
                     <video
           ref={setVideoRef}
@@ -197,6 +199,8 @@ const Hero = ({ setHeroVisible }) => {
                     }}
                     muted
                     playsInline
+                    preload="metadata"
+                    loading="lazy"
                     controls={false}
                     />
                 </div>
@@ -217,6 +221,8 @@ const Hero = ({ setHeroVisible }) => {
                     }}
                     muted
           playsInline
+          preload="metadata"
+          loading="lazy"
           controls={false}
                     />
                     <img
