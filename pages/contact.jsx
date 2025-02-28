@@ -165,6 +165,9 @@ export default function Contact() {
       <>
       <Head>
         <title>Kontakt - the eksperts</title>
+        <meta name="description" content="The Eksperts provide top-tier strategy, consulting, and expert services." />
+   <meta name="keywords" content="consulting, strategy, experts, business solutions" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
       <div className="bg-white min-h-screen p-4 lg:mt-[50px] text-gray-900 font-matt">
         {/* Contact Form Section */}

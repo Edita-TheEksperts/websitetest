@@ -41,9 +41,13 @@ const Home = () => {
 
   return (
     <>
-      <Head>
-        <title>the eksperts</title>
-      </Head>
+     <Head>
+   <title>the eksperts</title>
+   <meta name="description" content="the eksperts provide top-tier strategy, consulting, and expert services." />
+   <meta name="keywords" content="consulting, strategy, experts, business solutions, website, software" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</Head>
+
       
       <main className="font-matt flex flex-col items-center bg-white px-4">
         <div className="font-matt w-full max-w-[1280px] mx-auto text-center my-2">
@@ -73,6 +77,7 @@ const Home = () => {
                     alt="Description of image"
                     width={1200} 
                     height={675} 
+                    loading="lazy"
                     className="w-full h-auto mb-4 "
                 />
 
@@ -94,6 +99,8 @@ const Home = () => {
                 <Image
                     src="/images/Frame 24 (1).png" // Replace with the actual image path
                     alt="Description of image"
+                    loading="lazy"
+
                     width={1600} // Set the width for the image's aspect ratio
                     height={675} // Set the height for the image's aspect ratio
                     className="w-full h-auto mb-4 "
@@ -117,6 +124,8 @@ const Home = () => {
                     width={1600} // Set the width for the image's aspect ratio
                     height={675} // Set the height for the image's aspect ratio
                     className="w-full h-auto mb-4 "
+                    loading="lazy"
+
                 />
                     </div>
                     <p className="font-matt text-[22px] lg:text-[28px] lg:leading-[37px] font-[400] lg:font-[900] mt-4 uppercase">
@@ -134,6 +143,8 @@ const Home = () => {
                             width={1600} // Set the width for the image's aspect ratio
                             height={675} // Set the height for the image's aspect ratio
                             className="w-full h-auto mb-4 lg:mb-10 "
+                            loading="lazy"
+
                         />
                         </div>
                     </div>
@@ -177,6 +188,8 @@ const Home = () => {
                     className="object-cover"
                     quality={80} // Optimize image size
                     priority
+                    loading="lazy"
+
                 />
                 </div>
                 <div className="lg:hidden block flex justify-center lg:justify-start">
