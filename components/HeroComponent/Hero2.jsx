@@ -9,35 +9,36 @@ const Hero = ({ setHeroVisible }) => {
   const [wordIndex, setWordIndex] = useState(0);
   const [charIndex, setCharIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
-  const words = ['Website', 'Software', 'Salesforce-Instanz','Online-Shops','Applikation','IT-Abteilung' ];
-  const typingSpeed = 130; 
-  const deletingSpeed = 1; 
-  const delayBetweenWords = 1500; 
+  const words = ['Website', 'Software', 'Salesforce-Instanz', 'Online-Shops', 'Applikation', 'IT-Abteilung'];
+  const typingSpeed = 130;
+  const deletingSpeed = 1;
+  const delayBetweenWords = 1500;
+  
+  const typingTimeoutRef = useRef(null);
+
+  const handleTyping = () => {
+    const currentWord = words[wordIndex];
+    if (!isDeleting && charIndex < currentWord.length) {
+      setDisplayedWord((prev) => prev + currentWord[charIndex]);
+      setCharIndex((prev) => prev + 1);
+    } else if (isDeleting && charIndex > 0) {
+      setDisplayedWord((prev) => prev.slice(0, -1));
+      setCharIndex((prev) => prev - 1);
+    } else if (!isDeleting && charIndex === currentWord.length) {
+      setTimeout(() => setIsDeleting(true), delayBetweenWords);
+    } else if (isDeleting && charIndex === 0) {
+      setIsDeleting(false);
+      setWordIndex((prev) => (prev + 1) % words.length);
+    }
+  };
 
   useEffect(() => {
-    const handleTyping = () => {
-      const currentWord = words[wordIndex];
-
-      if (!isDeleting && charIndex < currentWord.length) {
-        setDisplayedWord((prev) => prev + currentWord[charIndex]);
-        setCharIndex((prev) => prev + 1);
-      } else if (isDeleting && charIndex > 0) {
-        setDisplayedWord((prev) => prev.slice(0, -1));
-        setCharIndex((prev) => prev - 1);
-      } else if (!isDeleting && charIndex === currentWord.length) {
-        setTimeout(() => setIsDeleting(true), delayBetweenWords);
-      } else if (isDeleting && charIndex === 0) {
-        setIsDeleting(false);
-        setWordIndex((prev) => (prev + 1) % words.length);
-      }
-    };
-
-    const typingTimeout = setTimeout(
+    typingTimeoutRef.current = setTimeout(
       handleTyping,
       isDeleting ? deletingSpeed : typingSpeed
     );
 
-    return () => clearTimeout(typingTimeout);
+    return () => clearTimeout(typingTimeoutRef.current);
   }, [charIndex, isDeleting, wordIndex, words]);
 
   useEffect(() => {
@@ -69,12 +70,12 @@ const Hero = ({ setHeroVisible }) => {
               video.play();
             } else {
               video.pause();
-              video.currentTime = 0; // Reset video when out of view
+              video.currentTime = 0;
             }
           }
         });
       },
-      { threshold: 0.5 } // Play when 50% visible
+      { threshold: 0.5 }
     );
 
     videoRefs.current.forEach((video) => observer.observe(video));

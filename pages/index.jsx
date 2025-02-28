@@ -187,7 +187,6 @@ const Home = () => {
                     height={400}
                     className="object-cover"
                     quality={80} // Optimize image size
-                    priority
                     loading="lazy"
 
                 />
