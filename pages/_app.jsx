@@ -4,6 +4,7 @@ import Layout from "../components/Layout";
 import LandingPageHeader from "../components/LandingPagesComponents/LandingPageHeader";
 import LandingPageFooter from "../components/LandingPagesComponents/LandingPageFooter";
 import "../styles/global.css";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
@@ -35,6 +36,7 @@ function MyApp({ Component, pageProps }) {
         <>
           <LandingPageHeader />
           <main>
+          <SpeedInsights/>
             <Component {...pageProps} />
           </main>
           <LandingPageFooter />
@@ -46,6 +48,7 @@ function MyApp({ Component, pageProps }) {
               <div className="spinner"></div>
             </div>
           )}
+          <SpeedInsights/>
           <Component {...pageProps} />
         </Layout>
       )}

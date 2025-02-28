@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import { useState } from 'react';
 import { useRouter } from 'next/router';
-import logo from '/images/Logo 1.png'; // Assuming you have the logo image in the images folder
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

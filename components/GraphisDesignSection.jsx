@@ -6,9 +6,7 @@ import logo3 from "/images/graph.png";
 import hoverImage1 from "/images/hover-image1.png";
 import hoverImage2 from "/images/hover-image2.png";
 import hoverImage3 from "/images/hover-image3.png";
-import hoverImage4 from "/images/hover-image4.png";
-import hoverImage5 from "/images/hover-image5.png";
-import hoverImage6 from "/images/hover-image6.png";
+
 
 const GraphicDesignSection = () => {
   const additionalImages = [
