@@ -113,7 +113,8 @@ const Hero = ({ setHeroVisible }) => {
                 autoPlay
                 loop
                 muted
-                loading="lazy"
+                preload="metadata"
+          loading="lazy"
 
                 />
                 <video
@@ -130,7 +131,8 @@ const Hero = ({ setHeroVisible }) => {
                 autoPlay
                 loop
                 muted
-                loading="lazy"
+                preload="metadata"
+          loading="lazy"
 
                 />
                 <video
@@ -149,7 +151,8 @@ const Hero = ({ setHeroVisible }) => {
                 autoPlay
                 loop
                 muted
-                loading="lazy"
+                preload="metadata"
+          loading="lazy"
                 />
                 <img
                 src="/images/The-eksperts-short-.png"
