@@ -110,7 +110,7 @@ const Hero = ({ setHeroVisible }) => {
             <div className="lg:block hidden flex justify-center mt-8 md:mt-0">
             <div className="flex gap-0">
                 <video
-                src="/images/Video Smm.webm"
+                src="/images/Video Smm (1).mp4"
                 alt="Video 1"
                 width={223}
                 height={223}
@@ -123,7 +123,7 @@ const Hero = ({ setHeroVisible }) => {
 
                 />
                 <video
-                src="/images/Your Partner and more.webm"
+                src="/images/Your Partner and more1.webm"
                 alt="Video 2"
                 width={223}
                 height={223}
