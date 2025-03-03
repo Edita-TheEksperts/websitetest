@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Image from 'next/image';
 import { useRouter } from 'next/router'; // Use Next.js router for navigation
 
 const LogoSection = () => {
@@ -55,20 +56,26 @@ const LogoSection = () => {
             onMouseLeave={() => setHoveredIndex(null)}
             onClick={() => handleLogoClick(index)} // Add onClick event for each logo
           >
-            <img
+            
+            <Image
               src={logo.default}
               alt={`Logo ${index + 1}`}
               className={`w-full h-full object-contain transition-opacity duration-300 ${
                 hoveredIndex === index ? 'opacity-0' : 'opacity-100'
               }`}
+              width={500} // Set an appropriate width
+              height={500} // Set an appropriate height
             />
-            <img
+
+            <Image
               src={logo.hover}
               alt={`Hovered Logo ${index + 1}`}
               className={`absolute top-0 left-0 w-full h-full object-contain transition-opacity duration-300 ${
                 hoveredIndex === index ? 'opacity-100' : 'opacity-0'
               }`}
-            />
+              width={500} // Set an appropriate width
+              height={500} // Set an appropriate height
+/>
           </div>
         ))}
       </div>
