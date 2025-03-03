@@ -46,6 +46,10 @@ const Home = () => {
    <meta name="description" content="the eksperts provide top-tier strategy, consulting, and expert services." />
    <meta name="keywords" content="consulting, strategy, experts, business solutions, website, software" />
    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <link rel="preload" href="/fonts/matt.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+   <link rel="stylesheet" href="/global.css" media="print" onload="this.onload=null;this.media='all';">
+   <script src="heavy-script.js" defer></script>
+
 </Head>
 
       
