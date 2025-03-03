@@ -100,7 +100,7 @@ const Hero = ({ setHeroVisible }) => {
 >
   Führen Sie Ihre <br />
   <span className="font-[900] text-[35px] md:text-6xl lg:text-[60px] text-[#0009FF]">
-    {displayedWord}
+    {displayedWord || <span className="text-transparent">Loading...</span>} {/* Fallback content */}
   </span> <br />
   mit uns zu neuen Erfolgen
 </h1>
