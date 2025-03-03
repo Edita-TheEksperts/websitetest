@@ -194,7 +194,7 @@ const Hero = ({ setHeroVisible }) => {
                     <video
           ref={setVideoRef}
 
-                    src="/images/Your Partner and more.webm"
+                    src="/images/Your Partner and more1.webm"
                     alt="Video 2"
                     width={174}
                     height={174}
