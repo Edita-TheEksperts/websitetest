@@ -155,7 +155,7 @@ const Header = () => {
             )}
           </div>
           <span className="text-gray-300">|</span>
-          <Link href="/agency" className={`text-gray-700 ${isActive('/agency')}`}>Agentur</Link>
+          <Link href="/agentur" className={`text-gray-700 ${isActive('/agentur')}`}>Agentur</Link>
           <span className="text-gray-300">|</span>
           <Link href="/projekte" className={`text-gray-700 ${isActive('/projekte')}`}>Projekte</Link>
           <span className="text-gray-300">|</span>
@@ -222,7 +222,7 @@ const Header = () => {
                 </ul>
               </details>
             </li>
-            <li><Link href="/agency" onClick={closeMenu} className={`${isActive('/agency')}`}>Agentur</Link></li>
+            <li><Link href="/agentur" onClick={closeMenu} className={`${isActive('/agentur')}`}>Agentur</Link></li>
             <li><Link href="/projekte" onClick={closeMenu} className={`${isActive('/projekte')}`}>Projekte</Link></li>
             <li><Link href="/contact" onClick={closeMenu} className={`${isActive('/contact')}`}>Kontakt</Link></li>
           </ul>

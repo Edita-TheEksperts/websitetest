@@ -177,7 +177,7 @@ const Footer = () => {
                   <li><Link href="/services/bookyourekspert" className="hover:underline hover:text-blue-700 font-[300]" >Book your Ekspert</Link></li>
                 </ul>
               </li>
-              <li><Link href="/agency" className="hover:underline hover:text-blue-700 font-[700]">Agentur</Link></li>
+              <li><Link href="/agentur" className="hover:underline hover:text-blue-700 font-[700]">Agentur</Link></li>
               <li><Link href="/projekte" className="hover:underline hover:text-blue-700 font-[700]">Projekte</Link></li>
               <li><Link href="/contact" className="hover:underline hover:text-blue-700 font-[700]">Kontakt</Link></li>
             </ul>
