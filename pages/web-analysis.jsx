@@ -358,6 +358,7 @@ const LandingPage = () => {
       </p>
     </div>
     <div className="flex flex-row">
+    <Link href="#">
     <button 
       onClick={() => document.getElementById("contactForm")?.scrollIntoView({ behavior: "smooth" })}
 
@@ -410,7 +411,7 @@ const LandingPage = () => {
             {/* Hover Background Effect */}
             <span className="absolute inset-1 bg-[#0009FF] transition-transform duration-500 ease-in-out scale-x-0 origin-left group-hover:scale-x-100 z-10 rounded-[10px]"></span>
           </button>
-        
+        </Link>
           </div>
           <p className="pfix w-[300px] lg:ml-[830px] lg:mt-[-85px] text-[#8B8B8B] text-[16px] font-[300] leading-[24px] mt-4 text-center">
           Some issues may require slightly longer than 24 hours to implement if the site is large or complex, but we will deliver the initial report in that time. 
