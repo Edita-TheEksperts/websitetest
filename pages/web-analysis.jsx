@@ -66,7 +66,7 @@ const LandingPage = () => {
       <main className="flex flex-col justify-center items-center">
       <section className="lg:mt-[20px] mt-[60px] px-4 lg:px-4 max-w-[1310px] mx-auto flex flex-col lg:flex-row items-center">
   {/* Left Content */}
-  <div className="lg:w-1/2 text-center lg:text-left">
+  <div id="contactForm" className="lg:w-1/2 text-center lg:text-left">
   <h1 className="text-black font-[400] text-[40px] leading-[48px] lg:text-[64px] lg:leading-[64px]">
     Turbocharge<br /> Your Website in <span className="text-[#0009FF] font-[900]">24 Hours!</span>
   </h1>
@@ -295,6 +295,9 @@ const LandingPage = () => {
       <h3 className="text-[32px] leading-[48px] font-[700] mb-2">Step 1:</h3>
       <div className="flex space-x-6">
       <p className="text-[24px] leading-[32px] font-[300]">Client signs up<br></br> / sends site URL.</p>
+      <Link href="#">
+          <button
+           onClick={() => document.getElementById("contactForm")?.scrollIntoView({ behavior: "smooth" })}>
       <svg xmlns="http://www.w3.org/2000/svg" width="62" height="63" viewBox="0 0 62 63" fill="none">
   <rect y="0.26709" width="62" height="62" rx="12" fill="#0009FF"/>
   <path d="M30.4423 28.2063L30.7959 28.5599L31.1494 28.2063L38.3975 20.9583L38.7511 20.6047L38.3975 20.2512L31.0959 12.9496L30.7424 12.596L30.3888 12.9496L23.1407 20.1977L22.7872 20.5512L23.1407 20.9048L30.4423 28.2063Z" fill="white" stroke="white"/>
@@ -302,6 +305,7 @@ const LandingPage = () => {
   <path d="M43.539 41.1854L43.8926 41.5389L44.2461 41.1854L51.4942 33.9373L51.8477 33.5837L51.4942 33.2302L43.7681 25.5041C41.2189 22.955 37.1011 22.9419 34.5702 25.4728L31.5519 28.4911L31.1983 28.8447L31.5519 29.1982L43.539 41.1854Z" fill="white" stroke="white"/>
   <path d="M17.2789 41.3697L17.6325 41.7233L17.986 41.3697L29.8853 29.4705L30.2388 29.1169L29.8853 28.7634L26.6006 25.4787C24.1898 23.0679 20.2886 23.0498 17.8891 25.4493L9.97735 33.361L9.6238 33.7146L9.97735 34.0681L17.2789 41.3697Z" fill="white" stroke="white"/>
 </svg>
+</button> </Link>
 </div>
     </div>
 
@@ -326,7 +330,10 @@ const LandingPage = () => {
       </p>
     </div>
     <div className="flex flex-row">
-    <button className="btnfix lg:ml-[180px] group relative font-matt flex items-center justify-center px-1 py-1 bg-transparent border-2 border-[#0009FF] text-[#0009FF] rounded-[10px] font-medium text-[20px] transition duration-100 ease-in-out overflow-hidden">
+    <button 
+      onClick={() => document.getElementById("contactForm")?.scrollIntoView({ behavior: "smooth" })}
+
+    className="btnfix lg:ml-[180px] group relative font-matt flex items-center justify-center px-1 py-1 bg-transparent border-2 border-[#0009FF] text-[#0009FF] rounded-[10px] font-medium text-[20px] transition duration-100 ease-in-out overflow-hidden">
             {/* SVG Background */}
             <div className="w-14 h-14 bg-[#0009FF] rounded-[10px] flex items-center justify-center text-white transform scale-x-100 origin-left transition-all duration-500 ease-in-out group-hover:scale-x-100 relative z-20">
             <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -495,8 +502,11 @@ const LandingPage = () => {
             Don’t let a slow or underperforming website hold you back. Request your 24-hour analysis now, and we’ll handle the rest—boosting your SEO, speed, and user experience so you can focus on growing your business.            </p>
             {/* Button */}
             <div className="md:mt-[86px] mt-[40px]">
-          <Link href="/contact">
-          <button className="group relative font-matt flex items-center justify-center px-1 py-1 bg-transparent border-2 border-[#0009FF] text-[#0009FF] rounded-[10px] font-medium text-[20px] transition duration-100 ease-in-out overflow-hidden">
+          <Link href="#">
+          <button
+                onClick={() => document.getElementById("contactForm")?.scrollIntoView({ behavior: "smooth" })}
+
+          className="group relative font-matt flex items-center justify-center px-1 py-1 bg-transparent border-2 border-[#0009FF] text-[#0009FF] rounded-[10px] font-medium text-[20px] transition duration-100 ease-in-out overflow-hidden">
             {/* SVG Background */}
             <div className="w-14 h-14 bg-[#0009FF] rounded-[10px] flex items-center justify-center text-white transform scale-x-100 origin-left transition-all duration-500 ease-in-out group-hover:scale-x-100 relative z-20">
             <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
