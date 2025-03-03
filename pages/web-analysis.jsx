@@ -559,10 +559,10 @@ const LandingPage = () => {
             </div>
             </section>
 
-            <section className="max-w-[1280px] lg:mt-[300px] mt-[160px] px-5 lg:px-0 flex justify-center items-center lg:mb-[-35px]  mb-[-55px]">
+            <section className="max-w-[1280px] lg:mt-[300px] mt-[160px] px-5 lg:px-0 flex justify-center items-center lg:mb-[-15px] mb-[-65px]  md:mb-[-45px]">
                 <div className="logotheeksperts flex justify-center items-center w-full lg:w-[1216px] h-[174px]">
                     <img 
-                    src="/images/Logo long 2.png" 
+                    src="/images/Group 13.png" 
                     alt="Logo Long 2" 
                     className="h-auto object-contain"
                     />
