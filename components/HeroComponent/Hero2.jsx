@@ -181,7 +181,7 @@ const Hero = ({ setHeroVisible }) => {
                     <video
           ref={setVideoRef}
 
-                    src="/images/Video Smm.webm"
+                    src="/images/Video Smm (1).mp4"
                     alt="Video 1"
                     width={174}
                     height={174}
@@ -208,6 +208,7 @@ const Hero = ({ setHeroVisible }) => {
                     playsInline
                     loading="lazy"
                     controls={false}
+                    opacity={80}
                     />
                 </div>
                 <div className="flex gap-0 mt-[-30px]">
