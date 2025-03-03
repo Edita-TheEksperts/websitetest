@@ -193,13 +193,16 @@ const Home = () => {
                 />
                 </div>
                 <div className="lg:hidden block flex justify-center lg:justify-start">
-                <img
+               
+                <Image
                     src="/images/Rectangle 229.png"
                     alt="Fisnik Salihu"
+                    width={300} // Adjust based on actual size
+                    height={200}
+                    quality={80}
+                    priority={true} // LCP optimization
                     className="object-cover"
-                    loading="lazy"
-                    quality={80} // Optimize image size
-                />
+                    />
                 
                 </div>
 
