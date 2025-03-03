@@ -137,7 +137,7 @@ const Hero = ({ setHeroVisible }) => {
                 loading="lazy"
               />
               <video
-                src="/images/Video Websites.webm"
+                src="/images/Video Websites.mov"
                 alt="Video 3"
                 width={223}
                 height={223}
@@ -206,7 +206,7 @@ const Hero = ({ setHeroVisible }) => {
             <div className="flex gap-0 mt-[-30px]">
               <video
                 ref={setVideoRef}
-                src="/images/Video Websites (1).mp4"
+                src="/images/Video Websites.mov"
                 alt="Video 3"
                 width={174}
                 height={174}
