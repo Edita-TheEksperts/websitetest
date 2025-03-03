@@ -84,6 +84,7 @@ const Hero = ({ setHeroVisible }) => {
       videoRefs.current.forEach((video) => observer.unobserve(video));
     };
   }, []);
+
   return (
     <section
       id="hero"
@@ -93,14 +94,17 @@ const Hero = ({ setHeroVisible }) => {
         
         {/* Text Section */}
         <div className="font-matt flex flex-col items-center text-center mb-8 md:mb-0">
-          <h1
+        <h1
   className="text-black font-matt text-[30px] md:text-6xl lg:text-[60px] font-[400] tracking-tight leading-tight lg:leading-[60px] mt-8 lg:mt-10 mb-4 text-center"
   aria-label={`Führen Sie Ihre ${displayedWord} mit uns zu neuen Erfolgen`}
 >
   Führen Sie Ihre <br />
-  <span className="font-[900] text-[35px] md:text-6xl lg:text-[60px] text-[#0009FF]">{displayedWord}</span> <br />
+  <span className="font-[900] text-[35px] md:text-6xl lg:text-[60px] text-[#0009FF]">
+    {displayedWord}
+  </span> <br />
   mit uns zu neuen Erfolgen
 </h1>
+
 
             {/* Image Section */}
             <div className="lg:block hidden flex justify-center mt-8 md:mt-0">
