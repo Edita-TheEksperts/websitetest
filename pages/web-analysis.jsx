@@ -60,6 +60,34 @@ const reviews = [
     "SEO Boost",
     "Security Check",
   ];
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+  
+    const formData = {
+      url: e.target[0].value,
+      fullname: e.target[1].value,
+      email: e.target[2].value,
+      company: e.target[3].value,
+    };
+  
+    try {
+      const response = await fetch('/api/sendMailWeb', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      });
+  
+      const data = await response.json();
+      if (response.ok) {
+        alert('Email sent successfully!');
+      } else {
+        alert('Error: ' + data.message);
+      }
+    } catch (error) {
+      console.error('Failed to send email:', error);
+    }
+  };
+  
 const LandingPage = () => {
   return (
     <div>
@@ -75,7 +103,7 @@ const LandingPage = () => {
   </p>
 
   {/* Form */}
-  <form className="mt-[16px] flex flex-col gap-4 max-w-[450px]">
+  <form onSubmit={handleSubmit} className="mt-[16px] flex flex-col gap-4 max-w-[450px]">
     {/* First Row */}
     <div className="font-matt grid grid-cols-1 md:grid-cols-2 gap-4">
       <input
