@@ -6,6 +6,9 @@ import LandingPageHeader from "../components/LandingPagesComponents/LandingPageH
 import LandingPageFooter from "../components/LandingPagesComponents/LandingPageFooter";
 import "../styles/global.css";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import SEO from "../next-seo.config";
+import { DefaultSeo } from "next-seo";
+
 
 const GA_TRACKING_ID = process.env.NEXT_PUBLIC_GA_ID || "";
 
@@ -70,6 +73,7 @@ function MyApp({ Component, pageProps }) {
         <>
           <LandingPageHeader />
           <main>
+          <DefaultSeo {...SEO} />
             <SpeedInsights />
             <Component {...pageProps} />
           </main>
@@ -82,6 +86,7 @@ function MyApp({ Component, pageProps }) {
               <div className="spinner"></div>
             </div>
           )}
+          <DefaultSeo {...SEO} />
           <SpeedInsights />
           <Component {...pageProps} />
         </Layout>
