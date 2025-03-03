@@ -1,8 +1,7 @@
-import { useState, useEffect,useRef,useCallback } from 'react';
+import { useState, useEffect, useRef, useCallback } from 'react';
 import Image from 'next/image';
 import "../../styles/global.css"
 import Link from 'next/link';
-
 
 const Hero = ({ setHeroVisible }) => {
   const [displayedWord, setDisplayedWord] = useState('');
@@ -94,22 +93,21 @@ const Hero = ({ setHeroVisible }) => {
         
         {/* Text Section */}
         <div className="font-matt flex flex-col items-center text-center mb-8 md:mb-0">
-        <h1
-  className="text-black font-matt text-[30px] md:text-6xl lg:text-[60px] font-[400] tracking-tight leading-tight lg:leading-[60px] mt-8 lg:mt-10 mb-4 text-center"
-  aria-label={`Führen Sie Ihre ${displayedWord} mit uns zu neuen Erfolgen`}
->
-  Führen Sie Ihre <br />
-  <span className="font-[900] text-[35px] md:text-6xl lg:text-[60px] text-[#0009FF]">
-    {displayedWord || <span className="text-transparent">Loading...</span>} {/* Fallback content */}
-  </span> <br />
-  mit uns zu neuen Erfolgen
-</h1>
+          <h1
+            className="text-black font-matt text-[30px] md:text-6xl lg:text-[60px] font-[400] tracking-tight leading-tight lg:leading-[60px] mt-8 lg:mt-10 mb-4 text-center"
+            aria-label={`Führen Sie Ihre ${displayedWord} mit uns zu neuen Erfolgen`}
+          >
+            Führen Sie Ihre <br />
+            <span className="font-[900] text-[35px] md:text-6xl lg:text-[60px] text-[#0009FF]">
+              {displayedWord || <span className="text-transparent">Loading...</span>} {/* Fallback content */}
+            </span> <br />
+            mit uns zu neuen Erfolgen
+          </h1>
 
-
-            {/* Image Section */}
-            <div className="lg:block hidden flex justify-center mt-8 md:mt-0">
+          {/* Image Section */}
+          <div className="lg:block hidden flex justify-center mt-8 md:mt-0">
             <div className="flex gap-0">
-                <video
+              <video
                 src="/images/Video Smm (1).mp4"
                 alt="Video 1"
                 width={223}
@@ -119,10 +117,9 @@ const Hero = ({ setHeroVisible }) => {
                 loop
                 muted
                 preload="metadata"
-          loading="lazy"
-
-                />
-                <video
+                loading="lazy"
+              />
+              <video
                 src="/images/Your Partner and more1.mp4"
                 alt="Video 2"
                 width={223}
@@ -137,15 +134,13 @@ const Hero = ({ setHeroVisible }) => {
                 loop
                 muted
                 preload="metadata"
-          loading="lazy"
-
-                />
-                <video
+                loading="lazy"
+              />
+              <video
                 src="/images/Video Websites.webm"
                 alt="Video 3"
                 width={223}
                 height={223}
-                
                 className="object-contain rounded-[20px] mr-[-20px] ml-[-20px]"
                 style={{
                   transform: 'rotate(-5.374deg)',
@@ -157,105 +152,103 @@ const Hero = ({ setHeroVisible }) => {
                 loop
                 muted
                 preload="metadata"
-          loading="lazy"
-                />
-          <Image
-            src="/images/The-eksperts-short-.png"
-            alt="Video 4"
-            width={223}
-            height={223}
-            className="object-contain rounded-[20px]"
-            style={{
-              transform: "rotate(3.951deg)",
-              flexShrink: 0,
-              boxShadow: "0px 4px 27.6px 0px rgba(0, 0, 0, 0.25)",
-            }}
-            priority // Ensures it loads ASAP
-          />
+                loading="lazy"
+              />
+              <Image
+                src="/images/The-eksperts-short-.png"
+                alt="Video 4"
+                width={223}
+                height={223}
+                className="object-contain rounded-[20px]"
+                style={{
+                  transform: "rotate(3.951deg)",
+                  flexShrink: 0,
+                  boxShadow: "0px 4px 27.6px 0px rgba(0, 0, 0, 0.25)",
+                }}
+                priority // Ensures it loads ASAP
+              />
             </div>
+          </div>
+
+          <div className="lg:hidden block flex flex-col items-center mt-2 md:mt-0">
+            <div className="flex gap-0 mb-4">
+              <video
+                ref={setVideoRef}
+                src="/images/Video Smm (1).mp4"
+                alt="Video 1"
+                width={174}
+                height={174}
+                className="object-contain rounded-[20px] mr-[-20px] transform rotate-[-8.271deg] flex-shrink-0 shadow-[0px_4px_27.6px_0px_rgba(0,_0,_0,_0.25)]"
+                muted
+                playsInline
+                loading="lazy"
+                controls={false}
+              />
+              <video
+                ref={setVideoRef}
+                src="/images/Your Partner and more1.mp4"
+                alt="Video 2"
+                width={174}
+                height={174}
+                className="object-contain rounded-[20px]"
+                style={{
+                  transform: 'rotate(5.263deg)',
+                  flexShrink: 0,
+                  boxShadow: '0px 4px 27.6px 0px rgba(0, 0, 0, 0.25)',
+                }}
+                muted
+                playsInline
+                loading="lazy"
+                controls={false}
+                opacity={80}
+              />
             </div>
-            <div className="lg:hidden block flex flex-col items-center mt-2 md:mt-0">
-                <div className="flex gap-0 mb-4">
-                    <video
-          ref={setVideoRef}
+            <div className="flex gap-0 mt-[-30px]">
+              <video
+                ref={setVideoRef}
+                src="/images/Video Websites (1).mp4"
+                alt="Video 3"
+                width={174}
+                height={174}
+                className="object-contain rounded-[20px] mr-[-20px]"
+                style={{
+                  transform: 'rotate(-5.374deg)',
+                  flexShrink: 0,
+                  boxShadow: '0px 4px 27.6px 0px rgba(0, 0, 0, 0.25)',
+                  zIndex: 1,
+                }}
+                muted
+                playsInline
+                loading="lazy"
+                controls={false}
+              />
+              <Image
+                src="/images/The-eksperts-short-.png"
+                alt="Video 4"
+                width={174}
+                height={174}
+                className="object-contain rounded-[20px]"
+                style={{
+                  transform: "rotate(3.951deg)",
+                  flexShrink: 0,
+                  boxShadow: "0px 4px 27.6px 0px rgba(0, 0, 0, 0.25)",
+                }}
+                priority // Ensures it loads ASAP
+              />
+            </div>
+          </div>
 
-                    src="/images/Video Smm (1).mp4"
-                    alt="Video 1"
-                    width={174}
-                    height={174}
-                    className="object-contain rounded-[20px] mr-[-20px] transform rotate-[-8.271deg] flex-shrink-0 shadow-[0px_4px_27.6px_0px_rgba(0,_0,_0,_0.25)]"
-                    muted
-          playsInline
-          loading="lazy"
-          controls={false}
-                    />
-                    <video
-          ref={setVideoRef}
-
-                    src="/images/Your Partner and more1.mp4"
-                    alt="Video 2"
-                    width={174}
-                    height={174}
-                    className="object-contain rounded-[20px]"
-                    style={{
-                        transform: 'rotate(5.263deg)',
-                        flexShrink: 0,
-                        boxShadow: '0px 4px 27.6px 0px rgba(0, 0, 0, 0.25)',
-                    }}
-                    muted
-                    playsInline
-                    loading="lazy"
-                    controls={false}
-                    opacity={80}
-                    />
-                </div>
-                <div className="flex gap-0 mt-[-30px]">
-                    <video
-          ref={setVideoRef}
-
-                    src="/images/Video Websites (1).mp4"
-                    alt="Video 3"
-                    width={174}
-                    height={174}
-                    className="object-contain rounded-[20px] mr-[-20px] "
-                    style={{
-                        transform: 'rotate(-5.374deg)',
-                        flexShrink: 0,
-                        boxShadow: '0px 4px 27.6px 0px rgba(0, 0, 0, 0.25)',
-                        zIndex: 1,
-                    }}
-                    muted
-          playsInline
-          loading="lazy"
-          controls={false}
-                    />
-                                       <Image
-  src="/images/The-eksperts-short-.png"
-  alt="Video 4"
-  width={174}
-  height={174}
-  className="object-contain rounded-[20px]"
-  style={{
-    transform: "rotate(3.951deg)",
-    flexShrink: 0,
-    boxShadow: "0px 4px 27.6px 0px rgba(0, 0, 0, 0.25)",
-  }}
-  priority // Ensures it loads ASAP
-/>
-                </div>
-                </div>
-
-
-          <p className="font-matt mt-6 lg:mt-8 text-[16px] leading-[24px] lg:text-[20px] lg:leading-[24px] font-[300] lg:font-[100]  max-w-2xl mx-auto md:mx-0 uppercase text-black">
-           Gemeinsam digitale Lösungen schaffen <br></br>
-           - Jetzt unverbindlich beraten lassen!
+          <p className="font-matt mt-6 lg:mt-8 text-[16px] leading-[24px] lg:text-[20px] lg:leading-[24px] font-[300] lg:font-[100] max-w-2xl mx-auto md:mx-0 uppercase text-black">
+            Gemeinsam digitale Lösungen schaffen <br></br>
+            - Jetzt unverbindlich beraten lassen!
           </p>
+
           <div className="mt-4">
-          <Link href="/contact">
-          <button className="group relative font-matt flex items-center justify-center px-1 py-1 bg-transparent border-2 border-[#0009FF] text-[#0009FF] rounded-[10px] font-medium text-[20px] transition duration-100 ease-in-out overflow-hidden">
-            {/* SVG Background */}
-            <div className="w-14 h-14 bg-[#0009FF] rounded-[10px] flex items-center justify-center text-white transform scale-x-100 origin-left transition-all duration-500 ease-in-out group-hover:scale-x-100 relative z-20">
-            <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <Link href="/contact">
+              <button className="group relative font-matt flex items-center justify-center px-1 py-1 bg-transparent border-2 border-[#0009FF] text-[#0009FF] rounded-[10px] font-medium text-[20px] transition duration-100 ease-in-out overflow-hidden">
+                {/* SVG Background */}
+                <div className="w-14 h-14 bg-[#0009FF] rounded-[10px] flex items-center justify-center text-white transform scale-x-100 origin-left transition-all duration-500 ease-in-out group-hover:scale-x-100 relative z-20">
+                <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g id="Group 1">
                             <path id="Vector" d="M22.2207 0.708819L22.2207 7.64062L15.2889 7.64062L15.2889 0.708818L22.2207 0.708819Z" fill="white" stroke="#0009FF"/>
                             <g id="Clip path group">
@@ -292,17 +285,31 @@ const Hero = ({ setHeroVisible }) => {
                             <path id="Vector_7" d="M0.884486 7.64062L0.884487 0.708818L9.0426 0.708819C11.176 0.708819 12.9063 2.43909 12.9063 4.57246L12.9063 7.64062L0.884486 7.64062Z" fill="white" stroke="#0009FF"/>
                             </g>
                             </svg>
-            </div>
-            {/* Button Text */}
-            <span className="mx-4 font-matt lg:font-[24px] lg:leading-[33px] font-[300] relative z-20 group-hover:text-white">
-              <Link href="/contact">Kontakt aufnehmen</Link>
-            </span>
+                </div>
+                {/* Button Text */}
+                <span className="mx-4 font-matt lg:font-[24px] lg:leading-[33px] font-[300] relative z-20 group-hover:text-white">
+                  <Link href="/contact">Kontakt aufnehmen</Link>
+                </span>
 
-            {/* Hover Background Effect */}
-            <span className="absolute inset-1 bg-[#0009FF] transition-transform duration-500 ease-in-out scale-x-0 origin-left group-hover:scale-x-100 z-10 rounded-[10px]"></span>
-          </button>
-          </Link>
+                {/* Hover Background Effect */}
+                <span className="absolute inset-1 bg-[#0009FF] transition-transform duration-500 ease-in-out scale-x-0 origin-left group-hover:scale-x-100 z-10 rounded-[10px]"></span>
+              </button>
+            </Link>
           </div>
+        </div>
+
+        {/* Video Background for Small Screens */}
+        <div className="lg:hidden block w-full flex justify-center mt-10 md:mt-0">
+          <video
+            src="/images/Video1.webm"
+            className="object-cover w-full h-[400px] sm:h-[500px] lg:h-[700px]"
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="metadata"
+            loading="lazy"
+          />
         </div>
       </div>
     </section>
