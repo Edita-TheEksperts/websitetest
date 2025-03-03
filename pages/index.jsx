@@ -196,6 +196,8 @@ const Home = () => {
                     src="/images/Rectangle 229.png"
                     alt="Fisnik Salihu"
                     className="object-cover"
+                    loading="lazy"
+                    quality={80} // Optimize image size
                 />
                 
                 </div>
