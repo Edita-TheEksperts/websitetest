@@ -484,36 +484,71 @@ const LandingPage = () => {
 </div>
 
 </div>
-      <div className="lg:mt-[50px] grid md:grid-cols-2 gap-10 mt-8 max-w-[1280px]">
-        {reviews.map((review, index) => (
-         <div
-         key={index}
-         className="bg-white p-6 rounded-[10px] flex flex-col gap-2 border-l-8 shadow-custom"
-  style={{
-    boxShadow: "5px 5px 28.8px 0px rgba(0, 0, 0, 0.10)",
-    borderColor: review.color,
-  }}
-       >
-         <div className="flex items-center gap-3">
-           {/* Color Circle */}
-           <div
-             className="w-12 h-12 rounded-full flex-shrink-0"
-             style={{ backgroundColor: review.color }}
-           ></div>
-       
-           {/* Name & Stars */}
-           <div className="flex flex-col">
-             <h3 className="font-semibold text-lg">{review.name}</h3>
-             <div className="text-yellow-500 text-lg">★★★★★</div>
-           </div>
-         </div>
-       
-         {/* Review Text */}
-         <p className="text-gray-700">{review.text}</p>
-       </div>
-       
-        ))}
+<div className="lg:block hidden lg:mt-[50px] lg:grid md:grid-cols-2 gap-10 mt-8 max-w-[1280px]">
+  {reviews.map((review, index) => (
+    <div
+      key={index}
+      className="lg:block hidden bg-white p-6 rounded-[10px] flex flex-col gap-2 border-l-8 shadow-custom"
+      style={{
+        boxShadow: "5px 5px 28.8px 0px rgba(0, 0, 0, 0.10)",
+        borderColor: review.color,
+        height: index === 1 ? '240px' : index === 3 || index === 5 ? '230px' : 'auto', // Height for 2nd, 4th, and 6th divs
+        marginTop: index === 3 ? '-100px' : index === 5 ? '-50px' : '0', // Adjust marginTop for spacing between 4th and 6th divs
+      }}
+    >  
+      
+      <div className="flex items-center gap-3">
+        {/* Color Circle */}
+        <div
+          className="w-12 h-12 rounded-full flex-shrink-0"
+          style={{ backgroundColor: review.color }}
+        ></div>
+
+        {/* Name & Stars */}
+        <div className="flex flex-col">
+          <h3 className="font-semibold text-lg">{review.name}</h3>
+          <div className="text-yellow-500 text-lg">★★★★★</div>
+        </div>
       </div>
+
+      {/* Review Text */}
+      <p className="text-gray-700">{review.text}</p>
+    </div>
+  ))}
+</div>
+<div className="lg:hidden block lg:mt-[50px] grid md:grid-cols-2 gap-10 mt-8 max-w-[1280px]">
+  {reviews.map((review, index) => (
+    <div
+      key={index}
+      className=" bg-white p-6 rounded-[10px] flex flex-col gap-2 border-l-8 shadow-custom"
+      style={{
+        boxShadow: "5px 5px 28.8px 0px rgba(0, 0, 0, 0.10)",
+        borderColor: review.color,
+       
+      }}
+    >  
+      
+      <div className="flex items-center gap-3">
+        {/* Color Circle */}
+        <div
+          className="w-12 h-12 rounded-full flex-shrink-0"
+          style={{ backgroundColor: review.color }}
+        ></div>
+
+        {/* Name & Stars */}
+        <div className="flex flex-col">
+          <h3 className="font-semibold text-lg">{review.name}</h3>
+          <div className="text-yellow-500 text-lg">★★★★★</div>
+        </div>
+      </div>
+
+      {/* Review Text */}
+      <p className="text-gray-700">{review.text}</p>
+    </div>
+  ))}
+</div>
+
+
     </section>
       <section className="lg:mt-[300px] mt-[160px] px-4 flex flex-col justify-center items-center gap-2 text-center text-black ">
             {/* Header */}
