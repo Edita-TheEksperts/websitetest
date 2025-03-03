@@ -109,15 +109,13 @@ const LandingPage = () => {
       <input
         type="text"
         placeholder="Your Url*"
-        className="p-3 border border-[#E7E7E7] rounded-[12px] w-full text-[20px] font-[500] text-black capitalize font-matt  placeholder-black"
-        style={{ fontFamily: "Matt_Trial" }}
+        className="p-3 border border-[#E7E7E7] rounded-[12px] w-full text-[20px] font-[600] text-black capitalize font-matt  placeholder-black"
         required
       />
       <input
         type="text"
         placeholder="Full Name*"
-        className="p-3 border border-[#E7E7E7] rounded-[12px] w-full text-[20px] font-[500] text-black capitalize  placeholder-black"
-        style={{ fontFamily: "Matt_Trial" }}
+        className="p-3 border border-[#E7E7E7] rounded-[12px] w-full text-[20px] font-[600] text-black capitalize font-matt   placeholder-black"
         required
       />
     </div>
@@ -126,8 +124,7 @@ const LandingPage = () => {
     <input
       type="email"
       placeholder="Email*"
-      className="p-3 border border-[#E7E7E7] rounded-[12px] w-full text-[20px] font-[500] font-matt  text-black capitalize  placeholder-black"
-      style={{ fontFamily: "Matt_Trial" }}
+      className="p-3 border border-[#E7E7E7] rounded-[12px] w-full text-[20px] font-[600] font-matt  text-black capitalize  placeholder-black"
       required
     />
 
@@ -136,8 +133,7 @@ const LandingPage = () => {
       <input
         type="text"
         placeholder="Company*"
-        className="p-3 border border-[#E7E7E7] rounded-[12px] w-full text-[20px] font-[500] text-black capitalize  placeholder-black"
-        style={{ fontFamily: "Matt_Trial" }}
+        className="p-3 border font-matt border-[#E7E7E7] rounded-[12px] w-full text-[20px] font-[600] text-black capitalize  placeholder-black"
         required
       />
      <button
