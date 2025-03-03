@@ -159,7 +159,7 @@ const Header = () => {
           <span className="text-gray-300">|</span>
           <Link href="/projekte" className={`text-gray-700 ${isActive('/projekte')}`}>Projekte</Link>
           <span className="text-gray-300">|</span>
-          <Link href="/contact" className={`text-gray-700 ${isActive('/contact')}`}>Kontakt</Link>
+          <Link href="/kontakt" className={`text-gray-700 ${isActive('/kontakt')}`}>Kontakt</Link>
         </nav>
 
         {/* Call to Action */}
@@ -224,7 +224,7 @@ const Header = () => {
             </li>
             <li><Link href="/agentur" onClick={closeMenu} className={`${isActive('/agentur')}`}>Agentur</Link></li>
             <li><Link href="/projekte" onClick={closeMenu} className={`${isActive('/projekte')}`}>Projekte</Link></li>
-            <li><Link href="/contact" onClick={closeMenu} className={`${isActive('/contact')}`}>Kontakt</Link></li>
+            <li><Link href="/kontakt" onClick={closeMenu} className={`${isActive('/kontakt')}`}>Kontakt</Link></li>
           </ul>
         </nav>
       )}

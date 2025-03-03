@@ -244,7 +244,7 @@ const Hero = ({ setHeroVisible }) => {
           </p>
 
           <div className="mt-4">
-            <Link href="/contact">
+            <Link href="/kontakt">
               <button className="group relative font-matt flex items-center justify-center px-1 py-1 bg-transparent border-2 border-[#0009FF] text-[#0009FF] rounded-[10px] font-medium text-[20px] transition duration-100 ease-in-out overflow-hidden">
                 {/* SVG Background */}
                 <div className="w-14 h-14 bg-[#0009FF] rounded-[10px] flex items-center justify-center text-white transform scale-x-100 origin-left transition-all duration-500 ease-in-out group-hover:scale-x-100 relative z-20">
@@ -288,7 +288,7 @@ const Hero = ({ setHeroVisible }) => {
                 </div>
                 {/* Button Text */}
                 <span className="mx-4 font-matt lg:font-[24px] lg:leading-[33px] font-[300] relative z-20 group-hover:text-white">
-                  <Link href="/contact">Kontakt aufnehmen</Link>
+                  <Link href="/kontakt">Kontakt aufnehmen</Link>
                 </span>
 
                 {/* Hover Background Effect */}

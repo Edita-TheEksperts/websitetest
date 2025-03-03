@@ -45,12 +45,12 @@ const Footer = () => {
 
       <div className="lg:block hidden font-matt max-w-[1280px] mx-auto lg:grid grid-cols-1 md:grid-cols-3 gap-6 text-center md:text-left">
         
-        {/* Contact Section */}
+        {/* kontakt Section */}
         <div>
           <h2 className="font-matt font-extrabold text-[28px] mb-4 " >the eksperts unterstützt Sie
           gerne bei Ihrem Vorhaben.</h2>
           <div className='lg:block hidden'>
-          <Link href="/contact">
+          <Link href="/kontakt">
           <button className="group relative font-matt flex items-center justify-center px-1 py-1 bg-transparent border-2 border-[#0009FF] text-[#0009FF] rounded-[10px] font-medium text-[20px] transition duration-100 ease-in-out overflow-hidden">
             {/* SVG Background */}
             <div className="w-14 h-14 bg-[#0009FF] rounded-[10px] flex items-center justify-center text-white transform scale-x-100 origin-left transition-all duration-500 ease-in-out group-hover:scale-x-100 relative z-20">
@@ -94,7 +94,7 @@ const Footer = () => {
             </div>
             {/* Button Text */}
             <span className="mx-4 font-matt lg:font-[24px] lg:leading-[33px] font-[300] relative z-20 group-hover:text-white">
-              <Link href="/contact">Kontakt aufnehmen</Link>
+              <Link href="/kontakt">Kontakt aufnehmen</Link>
             </span>
 
             {/* Hover Background Effect */}
@@ -104,7 +104,7 @@ const Footer = () => {
           </div>
 
           <div className='lg:hidden flex flex-col items-center mt-[-10px] md:mt-0'>
-          <Link href="/contact">
+          <Link href="/kontakt">
           <button className="group font-matt flex items-center justify-center px-1 py-1 bg-transparent border-2 border-[#0009FF] text-[#0009FF] rounded-[10px] font-medium text-[20px] transition duration-100 ease-in-out overflow-hidden">
             {/* SVG Background */}
             <div className="w-14 h-14 bg-[#0009FF] rounded-[10px] flex items-center justify-center text-white transform scale-x-100 origin-left transition-all duration-500 ease-in-out group-hover:scale-x-100 relative z-20">
@@ -148,7 +148,7 @@ const Footer = () => {
             </div>
             {/* Button Text */}
             <span className="mx-4 font-matt lg:font-[24px] lg:leading-[33px] font-[300] relative z-20 group-hover:text-white">
-              <Link href="/contact">Kontakt aufnehmen</Link>
+              <Link href="/kontakt">Kontakt aufnehmen</Link>
             </span>
 
             {/* Hover Background Effect */}
@@ -179,7 +179,7 @@ const Footer = () => {
               </li>
               <li><Link href="/agentur" className="hover:underline hover:text-blue-700 font-[700]">Agentur</Link></li>
               <li><Link href="/projekte" className="hover:underline hover:text-blue-700 font-[700]">Projekte</Link></li>
-              <li><Link href="/contact" className="hover:underline hover:text-blue-700 font-[700]">Kontakt</Link></li>
+              <li><Link href="/kontakt" className="hover:underline hover:text-blue-700 font-[700]">Kontakt</Link></li>
             </ul>
           </div>
 
@@ -251,13 +251,13 @@ const Footer = () => {
 
       <div className="lg:hidden block font-matt mx-auto grid grid-cols-1 gap-[34px] text-left">
         
-        {/* Contact Section */}
+        {/* kontakt Section */}
         <div>
           <h2 className="font-matt font-[900] text-[24px] leading-[32px] mb-[16px] text-left " >the eksperts unterstützt Sie
           gerne bei Ihrem Vorhaben.</h2>
          
           <div className='lg:hidden flex flex-col items-left '>
-          <Link href="/contact">
+          <Link href="/kontakt">
           <button className=" group font-matt flex items-center justify-center px-1 py-1 border-2 bg-[#0009FF] border-[#0009FF] text-white rounded-[10px] font-medium text-[20px] transition duration-100 ease-in-out overflow-hidden">
             {/* SVG Background */}
             <div className="w-14 h-14 bg-[#0009FF] rounded-[10px] flex items-center justify-center text-white transform scale-x-100 origin-left transition-all duration-500 ease-in-out group-hover:scale-x-100 relative z-20">
@@ -301,7 +301,7 @@ const Footer = () => {
             </div>
             {/* Button Text */}
             <span className="mx-4 font-matt font-[20px] leading-[33px] font-[300] relative z-20 group-hover:text-white">
-              <Link href="/contact">Kontakt aufnehmen</Link>
+              <Link href="/kontakt">Kontakt aufnehmen</Link>
             </span>
 
           </button>

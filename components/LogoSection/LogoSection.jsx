@@ -32,10 +32,10 @@ const LogoSection = () => {
     { default: "/images/yourplace-hover.png", hover: "/images/yourplace.png" }
   ];
 
-  // Function to navigate to the contact page when the specific logo is clicked
+  // Function to navigate to the kontakt page when the specific logo is clicked
   const handleLogoClick = (index) => {
     if (index === logos.length - 1) { // This checks if it's the "yourplace" logo (last one in the list)
-      router.push('/contact'); // Navigate to contact page
+      router.push('/kontakt'); // Navigate to kontakt page
     }
   };
 
