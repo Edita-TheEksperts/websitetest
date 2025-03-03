@@ -159,21 +159,19 @@ const Hero = ({ setHeroVisible }) => {
                 preload="metadata"
           loading="lazy"
                 />
-                <img
-                src="/images/The-eksperts-short-.png"
-                alt="Video 4"
-                width={223}
-                height={223}
-                className="object-contain rounded-[20px]"
-                    style={{
-                        transform: 'rotate(3.951deg)',
-                        flexShrink: 0,
-                        boxShadow: '0px 4px 27.6px 0px rgba(0, 0, 0, 0.25)',
-                    }}
-                autoPlay
-                loop
-                muted
-                />
+          <Image
+            src="/images/The-eksperts-short-.png"
+            alt="Video 4"
+            width={223}
+            height={223}
+            className="object-contain rounded-[20px]"
+            style={{
+              transform: "rotate(3.951deg)",
+              flexShrink: 0,
+              boxShadow: "0px 4px 27.6px 0px rgba(0, 0, 0, 0.25)",
+            }}
+            priority // Ensures it loads ASAP
+          />
             </div>
             </div>
             <div className="lg:hidden block flex flex-col items-center mt-2 md:mt-0">
@@ -231,18 +229,19 @@ const Hero = ({ setHeroVisible }) => {
           loading="lazy"
           controls={false}
                     />
-                    <img
-                    src="/images/The-eksperts-short-.png"
-                    alt="Video 4"
-                    width={174}
-                    height={174}
-                    className="object-contain rounded-[20px]"
-                    style={{
-                        transform: 'rotate(3.951deg)',
-                        flexShrink: 0,
-                        boxShadow: '0px 4px 27.6px 0px rgba(0, 0, 0, 0.25)',
-                    }}
-                    />
+                                       <Image
+  src="/images/The-eksperts-short-.png"
+  alt="Video 4"
+  width={174}
+  height={174}
+  className="object-contain rounded-[20px]"
+  style={{
+    transform: "rotate(3.951deg)",
+    flexShrink: 0,
+    boxShadow: "0px 4px 27.6px 0px rgba(0, 0, 0, 0.25)",
+  }}
+  priority // Ensures it loads ASAP
+/>
                 </div>
                 </div>
 
