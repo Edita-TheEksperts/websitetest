@@ -77,11 +77,11 @@ const LandingPage = () => {
   {/* Form */}
   <form className="mt-[16px] flex flex-col gap-4 max-w-[450px]">
     {/* First Row */}
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+    <div className="font-matt grid grid-cols-1 md:grid-cols-2 gap-4">
       <input
         type="text"
         placeholder="Your Url*"
-        className="p-3 border border-[#E7E7E7] rounded-[12px] w-full text-[20px] font-[500] text-black capitalize  placeholder-black"
+        className="p-3 border border-[#E7E7E7] rounded-[12px] w-full text-[20px] font-[500] text-black capitalize font-matt  placeholder-black"
         style={{ fontFamily: "Matt_Trial" }}
         required
       />
@@ -98,13 +98,13 @@ const LandingPage = () => {
     <input
       type="email"
       placeholder="Email*"
-      className="p-3 border border-[#E7E7E7] rounded-[12px] w-full text-[20px] font-[500] text-black capitalize  placeholder-black"
+      className="p-3 border border-[#E7E7E7] rounded-[12px] w-full text-[20px] font-[500] font-matt  text-black capitalize  placeholder-black"
       style={{ fontFamily: "Matt_Trial" }}
       required
     />
 
     {/* Third Row - Input & Button Outside */}
-    <div className="relative flex items-center">
+    <div className="relative flex items-center font-matt ">
       <input
         type="text"
         placeholder="Company*"
@@ -114,7 +114,7 @@ const LandingPage = () => {
       />
      <button
         type="submit"
-        className="ml-4"
+        className="ml-4 font-matt "
       >
          <svg
     xmlns="http://www.w3.org/2000/svg"
