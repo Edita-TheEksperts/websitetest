@@ -51,7 +51,7 @@ const Salesforce = () => {
                   Erreichen Sie Ihre Geschäftsziele mit <br></br> unserer professionellen Beratung
                   </p>
                   <Image
-                    src="/images/theekspertssaleforce1.png" 
+                    src="/images/the-eksperts-theekspertssaleforce1.png" 
                     alt="Salesforce Beratung"
                     width={800} 
                     height={800} 
@@ -199,7 +199,7 @@ const Salesforce = () => {
                   Für ein nahtloses Erlebnis bieten wir umfassende Services
                   </p>
                   <Image
-                    src="/images/Rectangle 35 (1).png" 
+                    src="/images/the-eksperts-Rectangle 35 (1).png" 
                     alt="Salesforce Beratung"
                     width={800} 
                     height={800} 
