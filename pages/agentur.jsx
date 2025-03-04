@@ -36,9 +36,48 @@ const Agency = () => {
 
   return (
     <>
-    <Head>
-        <title>Agentur - the eksperts</title>
-      </Head>
+   <Head>
+      <title>Unsere Agentur | the eksperts</title>
+
+      {/* Meta Tags */}
+      <meta charSet="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta 
+        name="description" 
+        content="Erfahre mehr über the eksperts – Wir lieben, was wir tun. Lassen Sie sich überzeugen!" 
+      />
+      <meta 
+        name="keywords" 
+        content="Agentur, Digitale Lösungen, Consulting, IT-Beratung, Webentwicklung, Branding, Design, Salesforce, App Entwicklung" 
+      />
+      <meta name="author" content="the eksperts" />
+
+      {/* Open Graph (Facebook & LinkedIn) */}
+      <meta property="og:type" content="website" />
+      <meta 
+        property="og:title" 
+        content="Unsere Agentur | the eksperts" 
+      />
+      <meta 
+        property="og:description" 
+        content="Erfahre mehr über the eksperts – Wir lieben, was wir tun. Lassen Sie sich überzeugen!" 
+      />
+      <meta 
+        property="og:image" 
+        content="https://www.the-eksperts.com/images/logo-blue-vertical.png" 
+      />
+      <meta property="og:url" content="https://www.the-eksperts.com/agentur" />
+      <meta property="og:site_name" content="the eksperts" />
+      <meta property="og:locale" content="de_DE" />
+
+      {/* LinkedIn Metadata */}
+      <meta property="linkedin:site" content="https://www.linkedin.com/company/the-eksperts/" />
+      <meta property="linkedin:handle" content="@theeksperts" />
+      <meta property="linkedin:cardType" content="summary_large_image" />
+
+      {/* Canonical URL */}
+      <link rel="canonical" href="https://www.the-eksperts.com/agentur" />
+    </Head>
 <div className="container mx-auto px-2 lg:px-0 lg:py-0 py-10 w-full lg:max-w-[1280px]">
 {/* Header Section */}
       <div className="lg:max-w-[1280px] flex justify-center mx-auto text-center ">

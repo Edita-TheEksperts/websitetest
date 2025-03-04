@@ -16,9 +16,49 @@ const Salesforce = () => {
 
   return (
     <>
-      <Head>
-        <title>Salesforce - the eksperts</title>
-      </Head>
+        <Head>
+      <title>Salesforce Consulting & Implementation | the eksperts</title>
+
+      {/* Meta Tags */}
+      <meta charSet="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta 
+        name="description" 
+        content="Experten für Salesforce-Beratung, Implementierung, Optimierung & Support. Jetzt Gratis Salesforce Health-Check sichern!" 
+      />
+      <meta 
+        name="keywords" 
+        content="Salesforce Consulting, CRM, Salesforce Implementierung, Salesforce Optimierung, digitale Transformation" 
+      />
+      <meta name="author" content="the eksperts" />
+
+      {/* Open Graph (Facebook & LinkedIn) */}
+      <meta property="og:type" content="website" />
+      <meta 
+        property="og:title" 
+        content="Salesforce Consulting & Implementation | the eksperts" 
+      />
+      <meta 
+        property="og:description" 
+        content="Experten für Salesforce-Beratung, Implementierung, Optimierung & Support. Jetzt Gratis Salesforce Health-Check sichern!" 
+      />
+      <meta 
+        property="og:image" 
+        content="https://www.the-eksperts.com/images/logo-blue-vertical.png" 
+      />
+      <meta property="og:url" content="https://www.the-eksperts.com/services/salesforce" />
+      <meta property="og:site_name" content="the eksperts" />
+      <meta property="og:locale" content="de_DE" />
+
+      {/* LinkedIn Metadata */}
+      <meta property="linkedin:site" content="https://www.linkedin.com/company/the-eksperts/" />
+      <meta property="linkedin:handle" content="@theeksperts" />
+      <meta property="linkedin:cardType" content="summary_large_image" />
+
+      {/* Canonical URL */}
+      <link rel="canonical" href="https://www.the-eksperts.com/services/salesforce" />
+
+    </Head>
       <main className="max-w-[1280px] mx-auto p-4 lg:p-2 text-center">
         
         {/* Main Heading */}

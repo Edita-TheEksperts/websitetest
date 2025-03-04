@@ -163,12 +163,50 @@ export default function Contact() {
 
     return (
       <>
-      <Head>
-        <title>Kontakt - the eksperts</title>
-        <meta name="description" content="The Eksperts provide top-tier strategy, consulting, and expert services." />
-   <meta name="keywords" content="consulting, strategy, experts, business solutions" />
-   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      </Head>
+  <Head>
+      <title>Kontakt | the eksperts</title>
+
+      {/* Meta Tags */}
+      <meta charSet="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta 
+        name="description" 
+        content="Lassen Sie uns gemeinsam über Ihr Projekt sprechen. Hier finden Sie auch die FAQ-Sektion. Wir freuen uns auf Ihre Nachricht!" 
+      />
+      <meta 
+        name="keywords" 
+        content="kontakt, IT-Beratung, digitale Transformation, Experten, Projektanfrage, Kontaktformular, FAQ, Beratung" 
+      />
+      <meta name="author" content="the eksperts" />
+
+      {/* Open Graph (Facebook & LinkedIn) */}
+      <meta property="og:type" content="website" />
+      <meta 
+        property="og:title" 
+        content="Kontakt | the eksperts" 
+      />
+      <meta 
+        property="og:description" 
+        content="Lassen Sie uns gemeinsam über Ihr Projekt sprechen. Hier finden Sie auch die FAQ-Sektion. Wir freuen uns auf Ihre Nachricht!" 
+      />
+      <meta 
+        property="og:image" 
+        content="https://www.the-eksperts.com/images/logo-blue-vertical.png" 
+      />
+      <meta property="og:url" content="https://www.the-eksperts.com/kontakt" />
+      <meta property="og:site_name" content="the eksperts" />
+      <meta property="og:locale" content="de_DE" />
+
+      {/* LinkedIn Metadata */}
+      <meta property="linkedin:site" content="https://www.linkedin.com/company/the-eksperts/" />
+      <meta property="linkedin:handle" content="@theeksperts" />
+      <meta property="linkedin:cardType" content="summary_large_image" />
+
+      {/* Canonical URL */}
+      <link rel="canonical" href="https://www.the-eksperts.com/kontakt" />
+
+
+    </Head>
       <div className="bg-white min-h-screen p-4 lg:mt-[50px] text-gray-900 font-matt">
         {/* Contact Form Section */}
               <div className="font-matt flex flex-col lg:flex-row items-top justify-between max-w-[1280px] mx-auto space-y-10 lg:space-y-0 lg:space-x-16">

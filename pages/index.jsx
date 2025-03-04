@@ -42,13 +42,31 @@ const Home = () => {
   return (
     <>
      <Head>
-   <title>the eksperts</title>
-   <link rel="preload" href="/fonts/matt.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
-   <meta name="description" content="the eksperts provide top-tier strategy, consulting, and expert services." />
-   <meta name="keywords" content="consulting, strategy, experts, business solutions, website, software" />
-   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   <link rel="preload" href="/fonts/Matt-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous"></link>
-</Head>
+         <title>the eksperts | Die Agentur für Digitale Lösungen</title>
+
+        <link rel="preload" href="/fonts/Matt-Regular.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+        <link rel="preload" href="/fonts/matt.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+
+        <meta charSet="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="the eksperts bietet professionelle Lösungen in Salesforce, Webentwicklung, Graphic Design und Individuelle Entwicklung. Expertenberatung für digitale Transformation." />
+        <meta name="keywords" content="consulting, strategy, experts, business solutions, website, software, Salesforce, digitale Lösungen" />
+        <meta name="author" content="the eksperts" />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="the eksperts | Die Agentur für Digitale Lösungen" />
+        <meta property="og:description" content="the eksperts bietet professionelle Lösungen in Salesforce, Webentwicklung, Graphic Design und Individuelle Entwicklung. Expertenberatung für digitale Transformation." />
+        <meta property="og:image" content="https://www.the-eksperts.com/images/the-eksperts-vertical-blue.png" />
+        <meta property="og:url" content="https://www.the-eksperts.com/" />
+        <meta property="og:site_name" content="the eksperts" />
+        <meta property="og:locale" content="de_DE" />
+
+        <meta property="linkedin:site" content="https://www.linkedin.com/company/the-eksperts/" />
+        <meta property="linkedin:handle" content="@theeksperts" />
+        <meta property="linkedin:cardType" content="summary_large_image" />
+
+        <link rel="canonical" href="https://www.the-eksperts.com/" />
+        </Head>
 
       
       <main className="font-matt flex flex-col items-center bg-white px-4">

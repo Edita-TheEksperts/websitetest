@@ -15,8 +15,47 @@ const Bookyourekspert = () => {
     return (
     <>
       <Head>
-        <title>Book your Ekspert - the eksperts</title>
-      </Head>
+      <title>Remote IT Personal - flexibel und zielgerichtet | the eksperts</title>
+
+      {/* Meta Tags */}
+      <meta charSet="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta 
+        name="description" 
+        content="Direkter Zugang zu Experten für IT, Design & Beratung. Expertise auf Abruf – Jetzt buchen & bis zu 50% der Kosten sparen!" 
+      />
+      <meta 
+        name="keywords" 
+        content="Remote IT Personal, IT Beratung, Design Experten, IT Experten, Beratung auf Abruf, Flexibles IT Personal" 
+      />
+      <meta name="author" content="the eksperts" />
+
+      {/* Open Graph (Facebook & LinkedIn) */}
+      <meta property="og:type" content="website" />
+      <meta 
+        property="og:title" 
+        content="Remote IT Personal - flexibel und zielgerichtet | the eksperts" 
+      />
+      <meta 
+        property="og:description" 
+        content="Direkter Zugang zu Experten für IT, Design & Beratung. Expertise auf Abruf – Jetzt buchen & bis zu 50% der Kosten sparen!" 
+      />
+      <meta 
+        property="og:image" 
+        content="https://www.the-eksperts.com/images/logo-blue-vertical.png" 
+      />
+      <meta property="og:url" content="https://www.the-eksperts.com/services/bookyourekspert" />
+      <meta property="og:site_name" content="the eksperts" />
+      <meta property="og:locale" content="de_DE" />
+
+      {/* LinkedIn Metadata */}
+      <meta property="linkedin:site" content="https://www.linkedin.com/company/the-eksperts/" />
+      <meta property="linkedin:handle" content="@theeksperts" />
+      <meta property="linkedin:cardType" content="summary_large_image" />
+
+      {/* Canonical URL */}
+      <link rel="canonical" href="https://www.the-eksperts.com/services/bookyourekspert" />
+    </Head>
       <main className="max-w-[1280px] mx-auto p-4 lg:p-2 text-center">
         
         {/* Main Heading */}

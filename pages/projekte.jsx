@@ -64,9 +64,48 @@ const handleSubmit = async (e) => {
 };
     return (
     <>
-      <Head>
-        <title>Projekte - the eksperts</title>
-      </Head>
+        <Head>
+      <title>Unsere Arbeit - Unsere Projekte | the eksperts</title>
+
+      {/* Meta Tags */}
+      <meta charSet="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta 
+        name="description" 
+        content="Erfolgsgeschichten unserer Kunden – von Webentwicklung über Salesforce bis hin zu individuellen Softwarelösungen. Realisierte & laufende Projekte im Überblick." 
+      />
+      <meta 
+        name="keywords" 
+        content="Projekte, Erfolgsgeschichten, Webentwicklung, Salesforce, Softwarelösungen, individuelle Entwicklung, IT Projekte" 
+      />
+      <meta name="author" content="the eksperts" />
+
+      {/* Open Graph (Facebook & LinkedIn) */}
+      <meta property="og:type" content="website" />
+      <meta 
+        property="og:title" 
+        content="Unsere Arbeit - Unsere Projekte | the eksperts" 
+      />
+      <meta 
+        property="og:description" 
+        content="Erfolgsgeschichten unserer Kunden – von Webentwicklung über Salesforce bis hin zu individuellen Softwarelösungen. Realisierte & laufende Projekte im Überblick." 
+      />
+      <meta 
+        property="og:image" 
+        content="https://www.the-eksperts.com/images/logo-blue-vertical.png" 
+      />
+      <meta property="og:url" content="https://www.the-eksperts.com/projekte" />
+      <meta property="og:site_name" content="the eksperts" />
+      <meta property="og:locale" content="de_DE" />
+
+      {/* LinkedIn Metadata */}
+      <meta property="linkedin:site" content="https://www.linkedin.com/company/the-eksperts/" />
+      <meta property="linkedin:handle" content="@theeksperts" />
+      <meta property="linkedin:cardType" content="summary_large_image" />
+
+      {/* Canonical URL */}
+      <link rel="canonical" href="https://www.the-eksperts.com/projekte" />
+    </Head>
       <main className="max-w-[1280px] mx-auto lg:p-2 text-center">
         
         {/* Main Heading */}

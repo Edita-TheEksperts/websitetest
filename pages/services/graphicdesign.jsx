@@ -16,8 +16,47 @@ const GraphicDesign = () => {
     return (
     <>
       <Head>
-        <title>Graphic Design - the eksperts</title>
-      </Head>
+      <title>Graphic Design | the eksperts</title>
+
+      {/* Meta Tags */}
+      <meta charSet="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta 
+        name="description" 
+        content="Visuelle Kommunikation, die Eindruck macht: Professionelles Branding, Logos, Social Media & Print Design. Der erste Eindruck zählt – wir machen ihn unvergesslich." 
+      />
+      <meta 
+        name="keywords" 
+        content="Graphic Design, Branding, Logos, Social Media Design, Print Design, Visuelle Kommunikation, Designagentur" 
+      />
+      <meta name="author" content="the eksperts" />
+
+      {/* Open Graph (Facebook & LinkedIn) */}
+      <meta property="og:type" content="website" />
+      <meta 
+        property="og:title" 
+        content="Graphic Design | the eksperts" 
+      />
+      <meta 
+        property="og:description" 
+        content="Visuelle Kommunikation, die Eindruck macht: Professionelles Branding, Logos, Social Media & Print Design. Der erste Eindruck zählt – wir machen ihn unvergesslich." 
+      />
+      <meta 
+        property="og:image" 
+        content="https://www.the-eksperts.com/images/logo-blue-vertical.png" 
+      />
+      <meta property="og:url" content="https://www.the-eksperts.com/services/graphicdesign" />
+      <meta property="og:site_name" content="the eksperts" />
+      <meta property="og:locale" content="de_DE" />
+
+      {/* LinkedIn Metadata */}
+      <meta property="linkedin:site" content="https://www.linkedin.com/company/the-eksperts/" />
+      <meta property="linkedin:handle" content="@theeksperts" />
+      <meta property="linkedin:cardType" content="summary_large_image" />
+
+      {/* Canonical URL */}
+      <link rel="canonical" href="https://www.the-eksperts.com/services/graphicdesign" />
+    </Head>
       <main className="max-w-[1280px] mx-auto p-4 lg:p-2 text-center">
         
         {/* Main Heading */}

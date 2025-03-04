@@ -16,8 +16,48 @@ const CustomDevelopment = () => {
     return (
     <>
       <Head>
-        <title>Custom Development - the eksperts</title>
-      </Head>
+      <title>App & Software Entwicklung | the eksperts</title>
+
+      {/* Meta Tags */}
+      <meta charSet="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta 
+        name="description" 
+        content="Maßgeschneiderte digitale Lösungen, App-Entwicklung & individuelle Software. So flexibel und innovativ wie Ihr Unternehmen." 
+      />
+      <meta 
+        name="keywords" 
+        content="App Entwicklung, Software Entwicklung, individuelle Softwarelösungen, Custom Development, digitale Lösungen" 
+      />
+      <meta name="author" content="the eksperts" />
+
+      {/* Open Graph (Facebook & LinkedIn) */}
+      <meta property="og:type" content="website" />
+      <meta 
+        property="og:title" 
+        content="App & Software Entwicklung | the eksperts" 
+      />
+      <meta 
+        property="og:description" 
+        content="Maßgeschneiderte digitale Lösungen, App-Entwicklung & individuelle Software. So flexibel und innovativ wie Ihr Unternehmen." 
+      />
+      <meta 
+        property="og:image" 
+        content="https://www.the-eksperts.com/images/logo-blue-vertical.png" 
+      />
+      <meta property="og:url" content="https://www.the-eksperts.com/services/customdevelopment" />
+      <meta property="og:site_name" content="the eksperts" />
+      <meta property="og:locale" content="de_DE" />
+
+      {/* LinkedIn Metadata */}
+      <meta property="linkedin:site" content="https://www.linkedin.com/company/the-eksperts/" />
+      <meta property="linkedin:handle" content="@theeksperts" />
+      <meta property="linkedin:cardType" content="summary_large_image" />
+
+      {/* Canonical URL */}
+      <link rel="canonical" href="https://www.the-eksperts.com/services/customdevelopment" />
+
+    </Head>
       <main className="max-w-[1280px] mx-auto p-4 lg:p-2 text-center">
         
         {/* Main Heading */}
