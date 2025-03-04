@@ -4,7 +4,7 @@ const SEO = [
     title: "the eksperts | Die Agentur für Digitale Lösungen",
     description:
       "the eksperts bietet professionelle Lösungen in Salesforce, Webentwicklung, Graphic Design und Individuelle Entwicklung. Expertenberatung für digitale Transformation. 🚀",
-    socialMedia: "/images/the-eksperts-vertical-blue.png",
+    socialMedia: "/images/the eksperts vertical blue.png",
     openGraph: {
       type: "website",
       locale: "de_DE",
@@ -15,7 +15,7 @@ const SEO = [
         "Professionelle Lösungen in Salesforce, Webentwicklung, Grafikdesign & individuelle Softwareentwicklung.",
       images: [
         {
-          url: "/images/the-eksperts-vertical-blue.png",
+          url: "/images/the eksperts vertical blue.png",
           width: 1200,
           height: 630,
           alt: "the eksperts Logo",
@@ -27,7 +27,7 @@ const SEO = [
       "@type": "Organization",
       name: "the eksperts",
       url: "https://www.the-eksperts.com/",
-      logo: "/images/the-eksperts-vertical-blue.png",
+      logo: "/images/the eksperts vertical blue.png",
       sameAs: [
         "https://www.linkedin.com/company/the-eksperts/",
       ],
@@ -43,7 +43,7 @@ const SEO = [
     title: "Salesforce Consulting & Implementation | the eksperts",
     description:
       "Experten für Salesforce-Beratung, Implementierung, Optimierung & Support. Jetzt Gratis Salesforce Health-Check sichern!",
-    socialMedia: "/images/the-eksperts-vertical-blue.png",
+    socialMedia: "/images/the eksperts vertical blue.png",
     canonical: "https://www.the-eksperts.com/services/salesforce",
   },
   {
@@ -51,7 +51,7 @@ const SEO = [
     title: "Professionelle Website Design & Entwicklung | the eksperts",
     description:
       "Moderne, skalierbare & SEO-optimierte Websites für Startups und KMUs. Gratis Website-Checkliste sichern!",
-    socialMedia: "/images/the-eksperts-vertical-blue.png",
+    socialMedia: "/images/the eksperts vertical blue.png",
     canonical: "https://www.the-eksperts.com/services/website",
   },
   {
@@ -59,7 +59,7 @@ const SEO = [
     title: "App & Software Entwicklung | the eksperts",
     description:
       "Maßgeschneiderte digitale Lösungen, App-Entwicklung & individuelle Software. So flexibel und innovativ wie Ihr Unternehmen.",
-    socialMedia: "/images/the-eksperts-vertical-blue.png",
+    socialMedia: "/images/the eksperts vertical blue.png",
     canonical: "https://www.the-eksperts.com/services/customdevelopment",
   },
   {
@@ -67,7 +67,7 @@ const SEO = [
     title: "Graphic Design | the eksperts",
     description:
       "Visuelle Kommunikation, die Eindruck macht: Professionelles Branding, Logos, Social Media & Print Design. Der erste Eindruck zählt – wir machen ihn unvergesslich.",
-    socialMedia: "/images/the-eksperts-vertical-blue.png",
+    socialMedia: "/images/the eksperts vertical blue.png",
     canonical: "https://www.the-eksperts.com/services/graphicdesign",
   },
   {
@@ -75,7 +75,7 @@ const SEO = [
     title: "Remote IT Personal - flexibel und zielgerichtet | the eksperts",
     description:
       "Direkter Zugang zu Experten für IT, Design & Beratung. Expertise auf Abruf – Jetzt buchen & bis zu 50% der Kosten sparen!",
-    socialMedia: "/images/the-eksperts-vertical-blue.png",
+    socialMedia: "/images/the eksperts vertical blue.png",
     canonical: "https://www.the-eksperts.com/services/bookyourekspert",
   },
   {
@@ -83,7 +83,7 @@ const SEO = [
     title: "Unsere Agentur | the eksperts",
     description:
       "Erfahre mehr über the eksperts – Wir lieben, was wir tun. Lassen Sie sich überzeugen!",
-    socialMedia: "/images/the-eksperts-vertical-blue.png",
+    socialMedia: "/images/the eksperts vertical blue.png",
     canonical: "https://www.the-eksperts.com/agentur",
   },
   {
@@ -91,7 +91,7 @@ const SEO = [
     title: "Unsere Arbeit - Unsere Projekte | the eksperts",
     description:
       "Erfolgsgeschichten unserer Kunden – von Webentwicklung über Salesforce bis hin zu individuellen Softwarelösungen. Realisierte & laufende Projekte im Überblick.",
-    socialMedia: "/images/the-eksperts-vertical-blue.png",
+    socialMedia: "/images/the eksperts vertical blue.png",
     canonical: "https://www.the-eksperts.com/projekte",
   },
   {
@@ -99,7 +99,7 @@ const SEO = [
     title: "Kontakt | the eksperts",
     description:
       "Lassen Sie uns gemeinsam über Ihr Projekt sprechen. Hier finden Sie auch die FAQ-Sektion. Wir freuen uns auf Ihre Nachricht!",
-    socialMedia: "/images/the-eksperts-vertical-blue.png",
+    socialMedia: "/images/the eksperts vertical blue.png",
     canonical: "https://www.the-eksperts.com/kontakt",
   },
 ];
