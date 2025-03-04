@@ -137,7 +137,7 @@ const Hero = ({ setHeroVisible }) => {
                 loading="lazy"
               />
               <video
-                src="/images/the-eksperts-Video Websites.mp4"
+                src="/images/the-eksperts-Video Websites (1).mp4"
                 alt="Video 3"
                 width={223}
                 height={223}
@@ -211,7 +211,7 @@ const Hero = ({ setHeroVisible }) => {
     {/* Video 3 */}
     <video
       ref={setVideoRef}
-      src="/images/the-eksperts-Video Websites.mp4"
+      src="/images/the-eksperts-Video Websites (1).mp4"
       alt="Video 3"
       width={174}
       height={174}
