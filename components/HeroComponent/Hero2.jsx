@@ -171,72 +171,80 @@ const Hero = ({ setHeroVisible }) => {
           </div>
 
           <div className="lg:hidden block flex flex-col items-center mt-2 md:mt-0">
-            <div className="flex gap-0 mb-4">
-              <video
-                ref={setVideoRef}
-                src="/images/the-eksperts-VideoSMM.mp4"
-                alt="Video 1"
-                width={174}
-                height={174}
-                className="object-contain rounded-[20px] mr-[-20px] transform rotate-[-8.271deg] flex-shrink-0 shadow-[0px_4px_27.6px_0px_rgba(0,_0,_0,_0.25)]"
-                muted
-                playsInline
-                loading="lazy"
-                controls={false}
-              />
-              <video
-                ref={setVideoRef}
-                src="/images/the-eksperts-Your Partner and more.mp4"
-                alt="Video 2"
-                width={174}
-                height={174}
-                className="object-contain rounded-[20px]"
-                style={{
-                  transform: 'rotate(5.263deg)',
-                  flexShrink: 0,
-                  boxShadow: '0px 4px 27.6px 0px rgba(0, 0, 0, 0.25)',
-                }}
-                muted
-                playsInline
-                loading="lazy"
-                controls={false}
-                opacity={80}
-              />
-            </div>
-            <div className="flex gap-0 mt-[-30px]">
-              <video
-                ref={setVideoRef}
-                src="/images/the-eksperts-Video Websites.mp4"
-                alt="Video 3"
-                width={174}
-                height={174}
-                className="object-contain rounded-[20px] mr-[-20px]"
-                style={{
-                  transform: 'rotate(-5.374deg)',
-                  flexShrink: 0,
-                  boxShadow: '0px 4px 27.6px 0px rgba(0, 0, 0, 0.25)',
-                  zIndex: 1,
-                }}
-                muted
-                playsInline
-                loading="lazy"
-                controls={false}
-              />
-              <Image
-                src="/images/the-eksperts-The-eksperts-short-.png"
-                alt="Video 4"
-                width={174}
-                height={174}
-                className="object-contain rounded-[20px]"
-                style={{
-                  transform: "rotate(3.951deg)",
-                  flexShrink: 0,
-                  boxShadow: "0px 4px 27.6px 0px rgba(0, 0, 0, 0.25)",
-                }}
-                priority // Ensures it loads ASAP
-              />
-            </div>
-          </div>
+          <div className="flex gap-0 mb-4">
+    {/* Video 1 */}
+    <video
+      ref={setVideoRef}
+      src="/images/the-eksperts-VideoSMM.mp4"
+      alt="Video 1"
+      width={174}
+      height={174}
+      className="object-contain rounded-[20px] mr-[-20px] transform rotate-[-8.271deg] flex-shrink-0 shadow-[0px_4px_27.6px_0px_rgba(0,_0,_0,_0.25)]"
+      muted
+      playsInline
+      loading="lazy"
+      controls={false}
+      preload="metadata" // Load metadata only initially
+    />
+    {/* Video 2 */}
+    <video
+      ref={setVideoRef}
+      src="/images/the-eksperts-Your Partner and more.mp4"
+      alt="Video 2"
+      width={174}
+      height={174}
+      className="object-contain rounded-[20px]"
+      style={{
+        transform: 'rotate(5.263deg)',
+        flexShrink: 0,
+        boxShadow: '0px 4px 27.6px 0px rgba(0, 0, 0, 0.25)',
+      }}
+      muted
+      playsInline
+      loading="lazy"
+      controls={false}
+      preload="metadata" // Load metadata only initially
+    />
+  </div>
+
+  <div className="flex gap-0 mt-[-30px]">
+    {/* Video 3 */}
+    <video
+      ref={setVideoRef}
+      src="/images/the-eksperts-Video Websites.mp4"
+      alt="Video 3"
+      width={174}
+      height={174}
+      className="object-contain rounded-[20px] mr-[-20px]"
+      style={{
+        transform: 'rotate(-5.374deg)',
+        flexShrink: 0,
+        boxShadow: '0px 4px 27.6px 0px rgba(0, 0, 0, 0.25)',
+        zIndex: 1,
+      }}
+      muted
+      playsInline
+      loading="lazy"
+      controls={false}
+      preload="metadata" // Load metadata only initially
+    />
+    {/* Image (optimize with Next.js Image component) */}
+    <Image
+      src="/images/the-eksperts-The-eksperts-short-.png"
+      alt="Video 4"
+      width={174}
+      height={174}
+      className="object-contain rounded-[20px]"
+      style={{
+        transform: "rotate(3.951deg)",
+        flexShrink: 0,
+        boxShadow: "0px 4px 27.6px 0px rgba(0, 0, 0, 0.25)",
+      }}
+      priority // Ensures it loads ASAP
+      sizes="(max-width: 768px) 50vw, 174px" // Responsive image sizes
+    />
+  </div>
+</div>
 
           <p className="font-matt mt-6 lg:mt-8 text-[16px] leading-[24px] lg:text-[20px] lg:leading-[24px] font-[300] lg:font-[100] max-w-2xl mx-auto md:mx-0 uppercase text-black">
             Gemeinsam digitale Lösungen schaffen <br></br>
