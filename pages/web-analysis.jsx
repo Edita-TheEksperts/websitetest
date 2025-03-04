@@ -35,17 +35,17 @@ const reviews = [
 
   const features = [
     {
-      img: "/images/Frame 143.png", // Replace with actual image path
+      img: "/images/the-eksperts-Frame 143.png", // Replace with actual image path
       title: "24-Hour Turnaround",
       description: "Immediate value proposition.",
     },
     {
-      img: "/images/Frame 143 (1).png", // Replace with actual image path
+      img: "/images/the-eksperts-Frame 143 (1).png", // Replace with actual image path
       title: "Ekspert Fixes Included",
       description: "Not just a report— you also provide solutions.",
     },
     {
-      img: "/images/Frame 143 (2).png", // Replace with actual image path
+      img: "/images/the-eksperts-Frame 143 (2).png", // Replace with actual image path
       title: "Guaranteed 100/100",
       description: "Performance, SEO, and Accessibility benchmarks.",
     },
@@ -162,7 +162,7 @@ const LandingPage = () => {
 
   {/* Right Image */}
   <div className="flex justify-center mt-8 lg:mt-2">
-    <img src="/images/Rockets1.jpg" alt="Rocket Boost Website" className="w-full max-w-[850px]" />
+    <img src="/images/the-eksperts-Rockets1.jpg" alt="Rocket Boost Website" className="w-full max-w-[850px]" />
   </div>
 </section>
 
@@ -459,7 +459,7 @@ const LandingPage = () => {
       <div className="flex lg:flex-row flex-col items-center justify-center gap-[58px] self-stretch">
       <div>
       <img 
-      src="/images/googlerec.png" 
+      src="/images/the-eksperts-googlerec.png" 
       alt="Google Reviews 5 Stars" 
       width={261} 
       height={108} 
@@ -622,7 +622,7 @@ const LandingPage = () => {
             <section className="max-w-[1280px] lg:mt-[300px] mt-[160px] px-5 lg:px-0 flex justify-center items-center lg:mb-[-15px] mb-[-65px]  md:mb-[-45px]">
                 <div className="logotheeksperts flex justify-center items-center w-full lg:w-[1216px] h-[174px]">
                     <img 
-                    src="/images/Group 13.png" 
+                    src="/images/the-eksperts-Group 13.png" 
                     alt="Logo Long 2" 
                     className="h-auto object-contain"
                     />
