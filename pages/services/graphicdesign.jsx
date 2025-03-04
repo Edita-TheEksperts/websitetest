@@ -136,7 +136,7 @@ const GraphicDesign = () => {
                    <div className="p-2">
                   <Link href="/services/salesforce" className="block">
                     <img
-                      src="/images/Salesforceinwebsite.png" // Replace with the actual image URL
+                      src="/images/the-eksperts-Salesforceinwebsite.png" // Replace with the actual image URL
                       alt="Salesforce"
                       className="w-full h-auto mb-6"
                     />
@@ -149,7 +149,7 @@ const GraphicDesign = () => {
                  <div className="p-2">
                   <Link href="/services/customdevelopment" className="block">
                     <img
-                      src="/images/costdevelopment.png" // Replace with the actual image URL
+                      src="/images/the-eksperts-costdevelopment.png" // Replace with the actual image URL
                       alt="Custom Development"
                       className="w-full h-auto mb-6"
                     />
@@ -165,7 +165,7 @@ const GraphicDesign = () => {
                   <Link href="/services/website" className="block">
 
                     <img
-                      src="/images/Rectangle 21.png" // Replace with the actual image URL
+                      src="/images/the-eksperts-Rectangle 21.png" // Replace with the actual image URL
                       alt="Website the eksperts"
                       className="w-full h-auto mb-6"
                     />

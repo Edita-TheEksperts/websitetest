@@ -38,7 +38,7 @@ export default function FlipCard() {
           <div
             className="absolute w-full h-full bg-cover bg-center text-white p-6 rounded-lg overflow-hidden"
             style={{
-              backgroundImage: "url('/images/Mobiliar.png')",
+              backgroundImage: "url('/images/the-eksperts-Mobiliar.png')",
               backfaceVisibility: "hidden",
             }}
           >

@@ -124,7 +124,7 @@ const Salesforce = () => {
                   Wir sorgen dafür, dass Ihre Salesforce-Umgebung reibungslos funktioniert 
                   </p>
                   <Image
-                    src="/images/Rectangle 35.png" 
+                    src="/images/the-eksperts-Rectangle 35.png" 
                     alt="Salesforce Beratung"
                     width={800} 
                     height={800} 
@@ -345,7 +345,7 @@ const Salesforce = () => {
                   <div className="p-2">
                   <Link href="/services/graphicdesign" className="block">
                     <img
-                      src="/images/graphicdesign.png" // Replace with the actual image URL
+                      src="/images/the-eksperts-graphicdesign.png" // Replace with the actual image URL
                       alt="Graphic Design"
                       className="w-full h-auto mb-6"
                     />
@@ -359,7 +359,7 @@ const Salesforce = () => {
                   <div className="p-2">
                    <Link href="/services/website" className="block">
                     <img
-                      src="/images/websitee.png" // Replace with the actual image URL
+                      src="/images/the-eksperts-websitee.png" // Replace with the actual image URL
                       alt="Website"
                       className="w-full h-auto mb-6"
                     />
@@ -374,7 +374,7 @@ const Salesforce = () => {
                   <div className="p-2">
                   <Link href="/services/customdevelopment" className="block">
                     <img
-                      src="/images/costdevelopment.png" // Replace with the actual image URL
+                      src="/images/the-eksperts-costdevelopment.png" // Replace with the actual image URL
                       alt="Custom Development"
                       className="w-full h-auto mb-6"
                     />

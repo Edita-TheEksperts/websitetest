@@ -5,25 +5,25 @@ const features = [
     id: 1,
     title: "IT und Software entwicklung",
     description: "Erfahrene Entwickler, Engineure und Architekten für Web, Mobile, Backend oder Frontend, Data Science und AI.",
-    image: "/images/Rectangle 225 (10).png", // Replace with your image path
+    image: "/images/the-eksperts-Rectangle 225 (10).png", // Replace with your image path
   },
   {
     id: 2,
     title: "Design und Kreativarbeit",
     description: "Grafikdesigner, UX/UI-Spezialisten und mehr.",
-    image: "/images/Rectangle 225 (11).png", // Replace with your image path
+    image: "/images/the-eksperts-Rectangle 225 (11).png", // Replace with your image path
   },
   {
     id: 3,
     title: "Strategie und Beratung",
     description: "Experten für Prozessoptimierung, Projektmanagement und digitale Transformation.",
-    image: "/images/Rectangle 225 (12).png", // Replace with your image path
+    image: "/images/the-eksperts-Rectangle 225 (12).png", // Replace with your image path
   },
   {
     id: 4,
     title: "Support und Betrieb",
     description: "IT-Administratoren und Systemingenieure für reibungslosen Betrieb.",
-    image: "/images/Rectangle 225 (13).png", // Replace with your image path
+    image: "/images/the-eksperts-Rectangle 225 (13).png", // Replace with your image path
   },
 ];
 

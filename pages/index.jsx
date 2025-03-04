@@ -75,7 +75,7 @@ const Home = () => {
             <div className="font-matt flex flex-col items-center px-0">
             <div className="w-full max-w-[390px] lg:max-w-[900px]">
             <Image
-                    src="/images/Frame 24.png" 
+                    src="/images/the-eksperts-Frame 24.png" 
                     alt="Description of image"
                     width={1200} 
                     height={675} 
@@ -183,7 +183,7 @@ const Home = () => {
                 {/* Center Section: Image */}
                 <div className="lg:block hidden lg:flex justify-center lg:justify-start">
                 <Image
-                    src="/images/fisniksalihutheeksperts.png"
+                    src="/images/the-eksperts-fisniksalihutheeksperts.png"
                     alt="Fisnik Salihu"
                     width={200}
                     height={400}
@@ -196,7 +196,7 @@ const Home = () => {
                 <div className="lg:hidden block flex justify-center lg:justify-start">
                
                 <Image
-                    src="/images/Rectangle 229.png"
+                    src="/images/the-eksperts-Rectangle 229.png"
                     alt="Fisnik Salihu"
                     width={300} // Adjust based on actual size
                     height={200}

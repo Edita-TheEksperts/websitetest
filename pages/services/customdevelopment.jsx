@@ -140,9 +140,9 @@ const CustomDevelopment = () => {
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                   {/* Graphic Design */}
                   <div className="p-2">
-                  <Link href="/services/graphicdesign" className="block">
+                  <Link href="/services/the-eksperts-graphicdesign" className="block">
                     <img
-                      src="/images/graphicdesign.png" // Replace with the actual image URL
+                      src="/images/the-eksperts-graphicdesign.png" // Replace with the actual image URL
                       alt="Graphic Design"
                       className="w-full h-auto mb-6"
                     />
@@ -158,7 +158,7 @@ const CustomDevelopment = () => {
                   <Link href="/services/salesforce" className="block">
 
                     <img
-                      src="/images/Salesforceinwebsite.png" // Replace with the actual image URL
+                      src="/images/the-eksperts-Salesforceinwebsite.png" // Replace with the actual image URL
                       alt="Salesforce"
                       className="w-full h-auto mb-6"
                     />
@@ -171,9 +171,9 @@ const CustomDevelopment = () => {
 
                   {/* Website */}
                   <div className="p-2">
-                   <Link href="/services/website" className="block">
+                   <Link href="/services/the-eksperts-website" className="block">
                     <img
-                      src="/images/websitee.png" // Replace with the actual image URL
+                      src="/images/the-eksperts-websitee.png" // Replace with the actual image URL
                       alt="Website"
                       className="w-full h-auto mb-6"
                     />

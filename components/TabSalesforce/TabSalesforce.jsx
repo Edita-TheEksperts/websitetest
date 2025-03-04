@@ -7,17 +7,17 @@ export default function SalesforceSection() {
     {
       id: 1,
       title: "Offizieller Salesforce-Partner",
-      image: "/images/Article.png",
+      image: "/images/the-eksperts-Article.png",
     },
     {
       id: 2,
       title: "Erfahrung und Ekspertise",
-      image: "/images/Article (1).png",
+      image: "/images/the-eksperts-Article (1).png",
     },
     {
       id: 3,
       title: "Umfassendes Know-How",
-      image: "/images/Article21.png",
+      image: "/images/the-eksperts-Article21.png",
     },
   ];
 

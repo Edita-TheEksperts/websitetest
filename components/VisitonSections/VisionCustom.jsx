@@ -5,17 +5,17 @@ export default function VisionSection() {
       {
         title: "Individuelle Entwicklung",
         description: "Jede Lösung wird auf Ihre spezifischen Bedürfnisse abgestimmt.",
-        image: "/images/Rectangle 226 (3).png", // Replace with your image path
+        image: "/images/the-eksperts-Rectangle 226 (3).png", // Replace with your image path
       },
       {
         title: "Modernste Technologien",
         description: "Wir nutzen innovative Tools und Technologien, um leistungsstarke Software zu schaffen.",
-        image: "/images/Rectangle 226 (4).png", // Replace with your image path
+        image: "/images/the-eksperts-Rectangle 226 (4).png", // Replace with your image path
       },
       {
         title: "Nahtlose Integration",
         description: "Unsere Lösungen lassen sich problemlos in bestehende Systeme einfügen, um maximale Effizienz zu gewährleisten.",
-        image: "/images/Rectangle 226 (5).png", // Replace with your image path
+        image: "/images/the-eksperts-Rectangle 226 (5).png", // Replace with your image path
       },
     ];
   

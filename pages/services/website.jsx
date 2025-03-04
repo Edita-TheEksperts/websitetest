@@ -149,7 +149,7 @@ const Website = () => {
                   <div className="p-2">
                   <Link href="/services/graphicdesign" className="block">
                     <img
-                      src="/images/graphicdesign.png" // Replace with the actual image URL
+                      src="/images/the-eksperts-graphicdesign.png" // Replace with the actual image URL
                       alt="Graphic Design"
                       className="w-full h-auto mb-6"
                     />
@@ -163,7 +163,7 @@ const Website = () => {
                   <div className="p-2">
                   <Link href="/services/salesforce" className="block">
                     <img
-                      src="/images/Salesforceinwebsite.png" // Replace with the actual image URL
+                      src="/images/the-eksperts-Salesforceinwebsite.png" // Replace with the actual image URL
                       alt="Salesforce"
                       className="w-full h-auto mb-6"
                     />
@@ -177,7 +177,7 @@ const Website = () => {
                   <div className="p-2">
                   <Link href="/services/bookyourekspert" className="block">
                     <img
-                      src="/images/Book your ekspert.png" // Replace with the actual image URL
+                      src="/images/the-eksperts-costdevelopment.png" // Replace with the actual image URL
                       alt="Book your ekspert"
                       className="w-full h-auto mb-6"
                     />

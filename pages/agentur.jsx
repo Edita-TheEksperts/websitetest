@@ -8,7 +8,7 @@ const Agency = () => {
       title: "Co-Founder & strategy ekspert",
       description:"Spezialgebiet: Strategie, Digitalisierung und Verkauf/Marketing",
       shortDescription:"“Ich glaube daran, dass jede Herausforderung eine Chance für Innovation und Wachstum ist. Gemeinsam mit meinem Team täglich Lösungen zu schaffen, die nicht nur funktionieren, sondern nachhaltig beeindrucken und begeistern, ist für mich ein Privileg.”",
-      background: "/images/Fisnik-theeksperts.png",
+      background: "/images/the-eksperts-Fisnik-theeksperts.png",
       linkedin: "https://www.linkedin.com/in/fisnik-salihu/",
       email:"fisnik.salihu@the-eksperts.com",
     },
@@ -17,7 +17,7 @@ const Agency = () => {
       title: "Co-Founder & delivery ekspert",
       description:"Spezialgebiet: CRM, Digitalisierung, Agiles Projektmanagement.",
       shortDescription:"“Professionelle Arbeit muss nicht kompliziert sein – Effizienz entsteht durch Expertise und klare Kommunikation”",
-      background: "/images/Petrit-theeksperts.png",
+      background: "/images/the-eksperts-Petrit-theeksperts.png",
       linkedin: "https://www.linkedin.com/in/petrit-baralija-29681218a/",
       email:"petrit.baralija@the-eksperts.com",
 
@@ -27,7 +27,7 @@ const Agency = () => {
       title: "Business ekspert",
       description:"Spezialgebiet: Finanzen, Business Analyse, Projekt Leitung",
       shortDescription:"“Grosse Dinge entstehen, wenn man Schritt für Schritt vorgeht und auf eine Zusammenarbeit baut, die von Vertrauen getragen wird. Nachhaltige Lösungen entstehen, wenn Ansätze wirtschaftlich durchdacht und langfristig tragfähig sind.”",
-      background: "/images/Pishtar-theeksperts.png",
+      background: "/images/the-eksperts-Pishtar-theeksperts.png",
       linkedin: "https://www.linkedin.com/in/pishtar-salihu-747b64259/",
       email:"pishtar.salihu@the-eksperts.com",
 
@@ -128,7 +128,7 @@ const Agency = () => {
                     {/* Icon */}
                     <div className="lg:block hidden flex-shrink-0 w-[110px] h-[110px]">
                       <img
-                        src="/images/love-icon.png"
+                        src="/images/the-eksperts-love-icon.png"
                         alt="Love Icon"
                         className="w-full h-full object-contain"
                       />
@@ -149,7 +149,7 @@ const Agency = () => {
                     {/* Icon */}
                     <div className="lg:block hidden flex-shrink-0 w-[110px] h-[110px]">
                       <img
-                        src="/images/integrity-icon.png"
+                        src="/images/the-eksperts-integrity-icon.png"
                         alt="Integrity Icon"
                         className="w-full h-full object-contain"
                       />
@@ -170,7 +170,7 @@ const Agency = () => {
                     {/* Icon */}
                     <div className="lg:block hidden flex-shrink-0 w-[110px] h-[110px]">
                       <img
-                        src="/images/excellence-icon.png"
+                        src="/images/the-eksperts-excellence-icon.png"
                         alt="Excellence Icon"
                         className="w-full h-full object-contain"
                       />
@@ -190,7 +190,7 @@ const Agency = () => {
                     {/* Icon */}
                     <div className="lg:block hidden flex-shrink-0 w-[110px] h-[110px]">
                       <img
-                        src="/images/communication-icon.png"
+                        src="/images/the-eksperts-communication-icon.png"
                         alt="Communication Icon"
                         className="w-full h-full object-contain"
                       />
@@ -212,7 +212,7 @@ const Agency = () => {
                     {/* Icon */}
                     <div className="lg:block hidden flex-shrink-0 w-[110px] h-[110px]">
                       <img
-                        src="/images/flexibility-icon.png"
+                        src="/images/the-eksperts-flexibility-icon.png"
                         alt="Flexibility Icon"
                         className="w-full h-full object-contain"
                       />

@@ -4,17 +4,17 @@ export default function VisionSection() {
       {
         title: "Individuelles Design",
         description: "Wir gestalten eine Website, die Ihre Marke perfekt repräsentiert.",
-        image: "/images/Rectangle 226.png", // Replace with your image path
+        image: "/images/the-eksperts-Rectangle 226.png", // Replace with your image path
       },
       {
         title: "Responsives Layout",
         description: "Ihre Website sieht auf jedem Gerät – ob Desktop, Tablet oder Smartphone – grossartig aus.",
-        image: "/images/Rectangle 226 (1).png", // Replace with your image path
+        image: "/images/the-eksperts-Rectangle 226 (1).png", // Replace with your image path
       },
       {
         title: "SEO-Optimierung",
         description: "Wir sorgen dafür, dass Ihre Seite gefunden wird.",
-        image: "/images/Rectangle 226 (2).png", // Replace with your image path
+        image: "/images/the-eksperts-Rectangle 226 (2).png", // Replace with your image path
       },
     ];
   

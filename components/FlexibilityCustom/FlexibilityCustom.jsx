@@ -51,7 +51,7 @@ export default function FeaturesSection() {
     {/* Left Image Section */}
     <div className="lg:block hidden w-full lg:w-1/2">
       <img
-        src="/images/Frame 175 (1).png"
+        src="/images/the-eksperts-Frame 175 (1).png"
         alt="Idealen Partner"
         className="w-full h-auto lg:h-[560px] object-cover rounded-[20px]"
       />

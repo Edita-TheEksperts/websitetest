@@ -5,17 +5,17 @@ export default function VisionSection() {
       {
         title: "Corporate Identity",
         description: "Wir gestalten Logos, Farben und Typografien, die Ihre Marke definieren.",
-        image: "/images/Rectangle 226 (6).png", // Replace with your image path
+        image: "/images/the-eksperts-Rectangle 226 (6).png", // Replace with your image path
       },
       {
         title: "Print & Digital",
         description: "Egal ob Flyer, Broschüren oder Social-Media-Grafiken – wir liefern Designs für jeden Kanal.",
-        image: "/images/Rectangle 226 (7).png", // Replace with your image path
+        image: "/images/the-eksperts-Rectangle 226 (7).png", // Replace with your image path
       },
       {
         title: "Individuelle Designs",
         description: "Jede Lösung wird speziell auf Ihre Bedürfnisse und Ziele abgestimmt.",
-        image: "/images/Rectangle 226 (8).png", // Replace with your image path
+        image: "/images/the-eksperts-Rectangle 226 (8).png", // Replace with your image path
       },
     ];
   

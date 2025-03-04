@@ -5,25 +5,25 @@ const features = [
     id: 1,
     title: "Design und Entwicklung",
     description: "Von der Idee bis zur Umsetzung – alles aus einer Hand.",
-    image: "/images/Ideatheeksperts.png", // Replace with your image path
+    image: "/images/the-eksperts-Ideatheeksperts.png", // Replace with your image path
   },
   {
     id: 2,
     title: "E-Commerce-Websites",
     description: "Optimiert für Verkäufe und nahtlose Transaktionen.",
-    image: "/images/ecommercetheeksperts.png", // Replace with your image path
+    image: "/images/the-eksperts-ecommercetheeksperts.png", // Replace with your image path
   },
   {
     id: 3,
     title: "Content Management Systeme",
     description: "Einfach zu bedienen, damit Sie Ihre Inhalte selbst pflegen können.",
-    image: "/images/contenttheeksperts.png", // Replace with your image path
+    image: "/images/the-eksperts-contenttheeksperts.png", // Replace with your image path
   },
   {
     id: 4,
     title: "Wartung und Support",
     description: "Auch nach dem Launch sind wir für Sie da.",
-    image: "/images/wartungtheeksperts.png", // Replace with your image path
+    image: "/images/the-eksperts-wartungtheeksperts.png", // Replace with your image path
   },
 ];
 

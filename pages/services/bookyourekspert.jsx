@@ -250,9 +250,9 @@ const Bookyourekspert = () => {
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                   {/* Graphic Design */}
                   <div className="p-2">
-                  <Link href="/services/graphicdesign" className="block">
+                  <Link href="/services/the-eksperts-graphicdesign" className="block">
                     <img
-                      src="/images/graphicdesign.png" // Replace with the actual image URL
+                      src="/images/the-eksperts-graphicdesign.png" // Replace with the actual image URL
                       alt="Graphic Design"
                       className="w-full h-auto mb-6"
                     />
@@ -266,7 +266,7 @@ const Bookyourekspert = () => {
                     <div className="p-2">
                    <Link href="/services/website" className="block">
                     <img
-                      src="/images/websitee.png" // Replace with the actual image URL
+                      src="/images/the-eksperts-websitee.png" // Replace with the actual image URL
                       alt="Website"
                       className="w-full h-auto mb-6"
                     />
@@ -281,7 +281,7 @@ const Bookyourekspert = () => {
                  <div className="p-2">
                   <Link href="/services/customdevelopment" className="block">
                     <img
-                      src="/images/costdevelopment.png" // Replace with the actual image URL
+                      src="/images/the-eksperts-costdevelopment.png" // Replace with the actual image URL
                       alt="Custom Development"
                       className="w-full h-auto mb-6"
                     />

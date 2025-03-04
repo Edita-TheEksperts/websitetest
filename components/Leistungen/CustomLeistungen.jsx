@@ -5,25 +5,25 @@ const features = [
     id: 1,
     title: "Individuelle Software entwicklung",
     description: "Für Ihre spezifischen Geschäftsanforderungen.",
-    image: "/images/Rectangle 225.png", // Replace with your image path
+    image: "/images/the-eksperts-Rectangle 225.png", // Replace with your image path
   },
   {
     id: 2,
     title: "System integration",
     description: "Nahtlose Verbindungen zwischen verschiedenen Plattformen und Systemen.",
-    image: "/images/Rectangle 225 (1).png", // Replace with your image path
+    image: "/images/the-eksperts-Rectangle 225 (1).png", // Replace with your image path
   },
   {
     id: 3,
     title: "Web- und App-Entwicklung",
     description: "Moderne, benutzerfreundliche Anwendungen für Web und Mobile.",
-    image: "/images/Rectangle 225 (3).png", // Replace with your image path
+    image: "/images/the-eksperts-Rectangle 225 (3).png", // Replace with your image path
   },
   {
     id: 4,
     title: "Automatisierung und Optimierung",
     description: "Effizientere Prozesse durch massgeschneiderte Lösungen.",
-    image: "/images/Rectangle 225 (4).png", // Replace with your image path
+    image: "/images/the-eksperts-Rectangle 225 (4).png", // Replace with your image path
   },
 ];
 

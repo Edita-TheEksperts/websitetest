@@ -116,7 +116,7 @@ export default function Contact() {
               Jedes Projekt beginnt mit einem ersten Gespräch. Dieses können Sie ganz einfach über unsere Website starten: <br />
               • Buchen Sie direkt einen Termin über <a href="https://calendly.com/fisnik-salihu-the-eksperts/30min" target="_blank" class="text-blue-500 hover:underline"> Calendly</a><br />
               • Schreiben Sie uns an <a href="mailto:info@the-eksperts.com" class="text-blue-500 hover:underline">info@the-eksperts.com</a><br />
-              • Nutzen Sie unser <a href="/contact" class="text-blue-500 hover:underline">Kontaktformular</a><br />
+              • Nutzen Sie unser <a href="/kontakt" class="text-blue-500 hover:underline">Kontaktformular</a><br />
               Unser Ansatz: Ein Projekt beginnt stets mit dem Verstehen und endet mit dem Erklären. Dazwischen arbeiten wir mit vollem Einsatz daran, die bestmögliche Lösung für Ihr Anliegen zu entwickeln und umzusetzen.
             `,
           },
@@ -184,7 +184,7 @@ export default function Contact() {
             <div className="lg:bg-[#FAFAFA] p-4 rounded-[20px] space-y-4 lg:block hidden">
               <div className="flex items-center space-x-4 ">
                 <img
-                  src="/images/FisnikSalihu-theeksperts.png"
+                  src="/images/the-eksperts-FisnikSalihu-theeksperts.png"
                   alt="Fisnik Salihu"
                   className="rounded-full w-20 h-20 object-cover border-2 border-[#0009FF] "
                 />
@@ -391,7 +391,7 @@ export default function Contact() {
         <div className="lg:bg-[#FAFAFA] p-2 rounded-[20px] space-y-4 lg:hidden block !mt-[160px]">
               <div className="flex items-center space-x-4 ">
                 <img
-                  src="/images/FisnikSalihu-theeksperts.png"
+                  src="/images/the-eksperts-FisnikSalihu-theeksperts.png"
                   alt="Fisnik Salihu"
                   className="rounded-full w-20 h-20 object-cover border-2 border-[#0009FF] "
                 />
@@ -476,7 +476,7 @@ export default function Contact() {
                 <div
                   className="font-matt  w-[290px] h-[250px]"
                   style={{
-                    backgroundImage: `url('/images/Switzerland.png')`,
+                    backgroundImage: `url('/images/the-eksperts-Switzerland.png')`,
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                   }}
@@ -500,7 +500,7 @@ export default function Contact() {
                   <div
                     className="font-matt w-[290px] h-[250px]"
                     style={{
-                      backgroundImage: `url('/images/Kosovo.png')`,
+                      backgroundImage: `url('/images/the-eksperts-Kosovo.png')`,
                       backgroundSize: "cover",
                       backgroundPosition: "center",
                     }}
@@ -526,7 +526,7 @@ export default function Contact() {
                 <div
                   className="font-matt w-[290px] h-[250px]"
                   style={{
-                    backgroundImage: `url('/images/digital.png')`,
+                    backgroundImage: `url('/images/the-eksperts-digital.png')`,
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                   }}

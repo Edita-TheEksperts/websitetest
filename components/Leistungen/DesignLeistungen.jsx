@@ -5,25 +5,25 @@ const features = [
     id: 1,
     title: "Logo - und Marken entwicklung",
     description: "Der erste Eindruck zählt – wir machen ihn unvergesslich.",
-    image: "/images/Rectangle 225 (5).png", // Replace with your image path
+    image: "/images/the-eksperts-Rectangle 225 (5).png", // Replace with your image path
   },
   {
     id: 2,
     title: "Grafikdesign für digitale Medien",
     description: "Perfekt abgestimmt auf Social Media, Websites und digitale Kampagnen.",
-    image: "/images/Rectangle 225 (6).png", // Replace with your image path
+    image: "/images/the-eksperts-Rectangle 225 (6).png", // Replace with your image path
   },
   {
     id: 3,
     title: "Printdesign",
     description: "Hochwertige Gestaltung für Flyer, Broschüren, Plakate und mehr.",
-    image: "/images/Rectangle 225 (7).png", // Replace with your image path
+    image: "/images/the-eksperts-Rectangle 225 (7).png", // Replace with your image path
   },
   {
     id: 4,
     title: "Individuelle Illustrationen",
     description: "Einzigartige Kunstwerke, die Ihre Marke visuell aufwerten.",
-    image: "/images/Rectangle 225 (8).png", // Replace with your image path
+    image: "/images/the-eksperts-Rectangle 225 (8).png", // Replace with your image path
   },
 ];
 
