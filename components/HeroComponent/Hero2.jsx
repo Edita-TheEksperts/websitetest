@@ -223,7 +223,7 @@ const Hero = ({ setHeroVisible }) => {
                 controls={false}
               />
               <Image
-                src="/images/The-eksperts-short-.png"
+                src="/images/the-eksperts-The-eksperts-short-.png"
                 alt="Video 4"
                 width={174}
                 height={174}
