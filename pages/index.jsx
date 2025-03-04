@@ -56,7 +56,7 @@ const Home = () => {
         <meta property="og:type" content="website" />
         <meta property="og:title" content="the eksperts | Die Agentur für Digitale Lösungen" />
         <meta property="og:description" content="the eksperts bietet professionelle Lösungen in Salesforce, Webentwicklung, Graphic Design und Individuelle Entwicklung. Expertenberatung für digitale Transformation." />
-        <meta property="og:image" content="https://www.the-eksperts.com/images/the-eksperts-vertical-blue.png" />
+        <meta property="og:image" content="/images/the-eksperts-vertical-blue.png" />
         <meta property="og:url" content="https://www.the-eksperts.com/" />
         <meta property="og:site_name" content="the eksperts" />
         <meta property="og:locale" content="de_DE" />
