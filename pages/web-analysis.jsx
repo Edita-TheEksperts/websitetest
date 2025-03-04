@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { useState } from 'react';
+import { useState } from "react";
 
 import PartnersSlider from "../components/SliderLandingPage/SliderLandingPage";
 const reviews = [
@@ -63,6 +63,7 @@ const reviews = [
     "Security Check",
   ];
   const LandingPage = () => {
+    const [screen, setScreen] = useState(1);
 
   const [formData, setFormData] = useState({
     url: '',
@@ -243,18 +244,18 @@ const reviews = [
   </div>
 </section>
 
-<section className="max-w-[1280px] mx-auto px-4 lg:mb-[300px] mb-[160px]">
-      {/* Heading */}
-      <h2 className="text-center text-[32px] lg:text-[40px] font-[700] lg:leading-[48px] mb-4">
-        What You Get!
-      </h2>
-      <p className="text-center text-[20px] lg:text-[22px] lg:leading-[33px] max-w-[1100px] font-[300] mx-auto mb-[58px]">
-        Our specialized team tackles every aspect: speed, SEO, mobile responsiveness, desktop performance, and accessibility.
-        We identify all issues and fix them, ensuring your site scores top marks on every front.
-      </p>
-
-<section >
-  <div className="flex flex-wrap justify-center gap-2">
+    
+    <section className="max-w-[1280px] mx-auto px-4 lg:mb-[300px] mb-[160px]">
+      {screen === 1 && (
+        <>
+          {/* Heading */}
+          <h2 className="text-center text-[32px] lg:text-[40px] font-[700] lg:leading-[48px] mb-4">
+            What You Get!
+          </h2>
+          <p className="text-center text-[20px] lg:text-[22px] lg:leading-[33px] max-w-[1100px] font-[300] mx-auto mb-[58px]">
+            Our specialized team tackles every aspect: speed, SEO, mobile responsiveness, desktop performance, and accessibility.
+          </p>
+          <div className="flex flex-wrap justify-center gap-2">
     <div className="flex items-center gap-4 px-6 py-4 mb-[8px] bg-gray-200 rounded-[24px]">
       <span className="lg:text-[32px] text-[18px] leading-[48px] font-[700]">Instant Analysis</span>
       <svg width="56" height="46" viewBox="0 0 56 46" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -331,14 +332,65 @@ const reviews = [
 </svg>
     </div>
   </div>
-</section>
+          {/* Call to Action */}
+          <div className="mt-[58px] text-center">
+            <button
+              className="bg-[#152DFF] text-white font-[500] text-[20px] py-[14px] px-6 lg:px-[110px] rounded-[12px] hover:bg-blue-700 transition"
+              onClick={() => setScreen(2)}
+            >
+              Get The Full Free Guide & Checklist
+            </button>
+          </div>
+        </>
+      )}
 
-      {/* Call to Action */}
-      <div className="mt-[58px] text-center">
-        <button className="bg-[#152DFF] text-white font-matt font-[500] text-[20px] leading-[28px] py-[14px] px-6 lg:px-[110px] rounded-[12px] hover:bg-blue-700 transition">
-          Get The Full Free Guide & Checklist
-        </button>
-      </div>
+      {screen === 2 && (
+        <>
+         <h2 className="text-center text-[32px] lg:text-[40px] font-[700] lg:leading-[48px] mb-4">
+          Download the pdf for free!
+          </h2>
+          <p className="lg:block hidden text-center  text-[18px] lg:text-[22px] font-matt font-[300] mb-[58px]">
+          Our specialized team tackles every aspect: speed, SEO, mobile responsiveness, desktop performance, and<br></br> accessibility. We identify all issues and fix them, ensuring your site scores top marks on every front.<br></br>
+          To view the full list of the services we will send you the pdf via email.
+          </p>
+          <p className="lg:hidden block text-center  text-[18px] lg:text-[22px] font-matt font-[300] mb-[58px]">
+          Our specialized team tackles every aspect: speed, SEO, mobile responsiveness, desktop performance, and accessibility. We identify all issues and fix them, ensuring your site scores top marks on every front.
+          To view the full list of the services we will send you the pdf via email.
+          </p>
+          <form
+            className="flex lg:flex-row flex-col max-w-[600px] justify-center items-center space-x-[14px]  mx-auto "
+            onSubmit={(e) => {
+              e.preventDefault();
+              setScreen(3);
+            }}
+          >
+            <label className="hidden block ">Email:</label>
+            <input
+              type="email"
+              placeholder="Email:"
+              className="lg:w-[552px] w-[320px] text-black placeholder:text-black text-[20px] font-[700]  p-4 mb-4 lg:mb-0 border rounded-[12px]"
+              required
+            />
+            <button
+              type="download"
+              className="bg-[#152DFF] text-white text-[20px] font-[700] py-4 px-[28px] hover:[#152DFF] transition rounded-[12px]"
+            >
+              Download
+            </button>
+          </form>
+        </>
+      )}
+
+      {screen === 3 && (
+        <>
+          <h2 className="text-center text-[32px] lg:text-[40px] font-[700] lg:leading-[48px] mb-4">
+          You will receive the pdf file<br></br> shortly on your email.
+          </h2>
+          <p className="text-center text-[22px] font-[300] max-w-[600px] mx-auto">
+          Thank you for trusting the eksperts, we will not dissapoint.
+          </p>
+        </>
+      )}
     </section>
 
     <section className="relative flex flex-col max-w-[1280px] justify-between items-center lg:h-[850px] w-full overflow-hidden">
