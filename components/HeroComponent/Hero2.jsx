@@ -108,7 +108,7 @@ const Hero = ({ setHeroVisible }) => {
           <div className="lg:block hidden flex justify-center mt-8 md:mt-0">
             <div className="flex gap-0">
               <video
-                src="/images/Videosmmcom.mov"
+                src="/images/the-eksperts-VideoSMM.mp4"
                 alt="Video 1"
                 width={223}
                 height={223}
@@ -120,7 +120,7 @@ const Hero = ({ setHeroVisible }) => {
                 loading="lazy"
               />
               <video
-                src="/images/Your Partner and morecom.mov"
+                src="/images/the-eksperts-Your Partner and more.mp4"
                 alt="Video 2"
                 width={223}
                 height={223}
@@ -137,7 +137,7 @@ const Hero = ({ setHeroVisible }) => {
                 loading="lazy"
               />
               <video
-                src="/images/Video Websites.mov"
+                src="/images/the-eksperts-Video Websites.mp4"
                 alt="Video 3"
                 width={223}
                 height={223}
@@ -174,7 +174,7 @@ const Hero = ({ setHeroVisible }) => {
             <div className="flex gap-0 mb-4">
               <video
                 ref={setVideoRef}
-                src="/images/Videosmmcom.mov"
+                src="/images/the-eksperts-VideoSMM.mp4"
                 alt="Video 1"
                 width={174}
                 height={174}
@@ -186,7 +186,7 @@ const Hero = ({ setHeroVisible }) => {
               />
               <video
                 ref={setVideoRef}
-                src="/images/Your Partner and morecom.mov"
+                src="/images/the-eksperts-Your Partner and more.mp4"
                 alt="Video 2"
                 width={174}
                 height={174}
@@ -206,7 +206,7 @@ const Hero = ({ setHeroVisible }) => {
             <div className="flex gap-0 mt-[-30px]">
               <video
                 ref={setVideoRef}
-                src="/images/Video Websites.mov"
+                src="/images/the-eksperts-Video Websites.mp4"
                 alt="Video 3"
                 width={174}
                 height={174}
