@@ -44,7 +44,7 @@ const Website = () => {
       />
       <meta 
         property="og:image" 
-        content="https://www.the-eksperts.com/images/the-eksperts-vertical-blue.png" 
+        content="https://www.the-eksperts.com/images/the%20eksperts%20vertical%20blue.png" 
       />
       <meta property="og:url" content="https://www.the-eksperts.com/services/website" />
       <meta property="og:site_name" content="the eksperts" />

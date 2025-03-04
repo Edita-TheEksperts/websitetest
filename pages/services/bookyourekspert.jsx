@@ -42,7 +42,7 @@ const Bookyourekspert = () => {
       />
       <meta 
         property="og:image" 
-        content="https://www.the-eksperts.com/images/logo-blue-vertical.png" 
+        content="https://www.the-eksperts.com/images/the%20eksperts%20vertical%20blue.png" 
       />
       <meta property="og:url" content="https://www.the-eksperts.com/services/bookyourekspert" />
       <meta property="og:site_name" content="the eksperts" />
