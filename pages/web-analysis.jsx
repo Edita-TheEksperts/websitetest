@@ -1,4 +1,6 @@
 import Link from "next/link";
+import { useState } from 'react';
+
 import PartnersSlider from "../components/SliderLandingPage/SliderLandingPage";
 const reviews = [
     {
@@ -60,26 +62,46 @@ const reviews = [
     "SEO Boost",
     "Security Check",
   ];
+  const LandingPage = () => {
+
+  const [formData, setFormData] = useState({
+    url: '',
+    fullname: '',
+    email: '',
+    company: '',
+  });
+  const [errors, setErrors] = useState({
+    url: '',
+    fullname: '',
+    email: '',
+    company: '',
+  });
+  const [isSubmitted, setIsSubmitted] = useState(false); // State to track form submission
+
   const handleSubmit = async (e) => {
     e.preventDefault();
-  
-    const formData = {
-      url: e.target[0].value,
-      fullname: e.target[1].value,
-      email: e.target[2].value,
-      company: e.target[3].value,
-    };
-  
+
+    const newErrors = {};
+    if (!formData.url) newErrors.url = 'Bitte Auswählen';
+    if (!formData.fullname) newErrors.fullname = 'Bitte Auswählen';
+    if (!formData.email) newErrors.email = 'Bitte Auswählen';
+    if (!formData.company) newErrors.company = 'Bitte Auswählen';
+
+    if (Object.keys(newErrors).length > 0) {
+      setErrors(newErrors);
+      return;
+    }
+
     try {
       const response = await fetch('/api/sendMailWeb', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
       });
-  
+
       const data = await response.json();
       if (response.ok) {
-        alert('Email sent successfully!');
+        setIsSubmitted(true); // Set the form as submitted
       } else {
         alert('Error: ' + data.message);
       }
@@ -87,77 +109,104 @@ const reviews = [
       console.error('Failed to send email:', error);
     }
   };
-  
-const LandingPage = () => {
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
   return (
     <div>
       <main className="flex flex-col justify-center items-center">
-      <section className="lg:mt-[20px] mt-[60px] px-4 lg:px-4 max-w-[1310px] mx-auto flex flex-col lg:flex-row items-center">
-  {/* Left Content */}
-  <div id="contactForm" className="lg:w-1/2 text-center lg:text-left">
-  <h1 className="text-black font-[400] text-[40px] leading-[48px] lg:text-[64px] lg:leading-[64px]">
-    Turbocharge<br /> Your Website in <span className="text-[#0009FF] font-[900]">24 Hours!</span>
-  </h1>
-  <p className="text-[#6D6D6D] text-[16px] leading-[25px] lg:text-[20px] lg:leading-[28px] mt-[16px] font-[400]">
-    We deliver a full performance, SEO, and accessibility report within a day—and fix everything to reach 100/100.
-  </p>
+        <section className="lg:mt-[20px] mt-[60px] px-4 lg:px-4 max-w-[1310px] mx-auto flex flex-col lg:flex-row items-center">
+          {/* Left Content */}
+          <div id="contactForm" className="lg:w-1/2 text-center lg:text-left">
+            <h1 className="text-black font-[400] text-[40px] leading-[48px] lg:text-[64px] lg:leading-[64px]">
+              Turbocharge<br /> Your Website in <span className="text-[#0009FF] font-[900]">24 Hours!</span>
+            </h1>
+            <p className="text-[#6D6D6D] text-[16px] leading-[25px] lg:text-[20px] lg:leading-[28px] mt-[16px] font-[400]">
+              We deliver a full performance, SEO, and accessibility report within a day—and fix everything to reach 100/100.
+            </p>
 
-  {/* Form */}
-  <form onSubmit={handleSubmit} className="mt-[16px] flex flex-col gap-4 max-w-[450px]">
-    {/* First Row */}
-    <div className="font-matt grid grid-cols-1 md:grid-cols-2 gap-4">
-      <input
-        type="text"
-        placeholder="Your Url*"
-        className="p-3 border border-[#E7E7E7] rounded-[12px] w-full text-[20px] font-[600] text-black capitalize font-matt  placeholder-black"
-        required
-      />
-      <input
-        type="text"
-        placeholder="Full Name*"
-        className="p-3 border border-[#E7E7E7] rounded-[12px] w-full text-[20px] font-[600] text-black capitalize font-matt   placeholder-black"
-        required
-      />
-    </div>
+            {/* Conditionally render the message or the form */}
+            {isSubmitted ? (
+              <div className="lg:text-left text-center mt-8 text-[24px] font-semibold text-[#0009FF]">
+                You will receive the PDF shortly in email!
+              </div>
+            ) : (
+              <form onSubmit={handleSubmit} className="mt-[16px] flex flex-col gap-4 max-w-[450px]">
+                {/* First Row */}
+                <div className="font-matt grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div>
+                    <input
+                      type="text"
+                      name="url"
+                      value={formData.url}
+                      onChange={handleInputChange}
+                      placeholder="Your Url*"
+                      className="p-3 border border-[#E7E7E7] rounded-[12px] w-full text-[20px] font-[600] text-black capitalize font-matt placeholder-black"
+                    />
+                    {errors.url && <p className="text-red-500 text-sm">{errors.url}</p>}
+                  </div>
+                  <div>
+                    <input
+                      type="text"
+                      name="fullname"
+                      value={formData.fullname}
+                      onChange={handleInputChange}
+                      placeholder="Full Name*"
+                      className="p-3 border border-[#E7E7E7] rounded-[12px] w-full text-[20px] font-[600] text-black capitalize font-matt placeholder-black"
+                    />
+                    {errors.fullname && <p className="text-red-500 text-sm">{errors.fullname}</p>}
+                  </div>
+                </div>
 
-    {/* Second Row */}
-    <input
-      type="email"
-      placeholder="Email*"
-      className="p-3 border border-[#E7E7E7] rounded-[12px] w-full text-[20px] font-[600] font-matt  text-black capitalize  placeholder-black"
-      required
-    />
+                {/* Second Row */}
+                <div>
+                  <input
+                    type="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleInputChange}
+                    placeholder="Email*"
+                    className="p-3 border border-[#E7E7E7] rounded-[12px] w-full text-[20px] font-[600] font-matt text-black capitalize placeholder-black"
+                  />
+                  {errors.email && <p className="text-red-500 text-sm">{errors.email}</p>}
+                </div>
 
-    {/* Third Row - Input & Button Outside */}
-    <div className="relative flex items-center font-matt ">
-      <input
-        type="text"
-        placeholder="Company*"
-        className="p-3 border font-matt border-[#E7E7E7] rounded-[12px] w-full text-[20px] font-[600] text-black capitalize  placeholder-black"
-        required
-      />
-     <button
-        type="submit"
-        className="ml-4 font-matt "
-      >
-         <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="57"
-    height="57"
-    viewBox="0 0 50 51"
-    fill="none"
-  >
-    <rect x="0.5" y="0.633545" width="49" height="49" rx="11.5" stroke="#0009FF" />
-    <rect x="2" y="2" width="46" height="46" rx="10" fill="#0009FF" />
-    <path d="M28.1267 22.1707L36.3931 22.1707V13.8432H28.1267V22.1707Z" fill="white" />
-    <path d="M13.1324 31.1275L20.852 23.3508H26.6733V27.2482C26.6733 28.5373 26.1627 29.7719 25.2616 30.6857L18.9777 37.016L13.1324 31.1275Z" fill="white" />
-    <path d="M28.1936 37.0402V23.3689H31.6359C34.2973 23.3689 36.46 25.5415 36.46 28.2286V37.0402H28.1936Z" fill="white" />
-    <path d="M13.1135 22.1707V13.8432H22.1369C24.648 13.8432 26.6846 15.8948 26.6846 18.4245V22.1707H13.1135Z" fill="white" />
-  </svg>
-      </button>
-    </div>
-  </form>
-</div>
+                {/* Third Row - Input & Button Outside */}
+                <div className="relative flex items-center font-matt">
+                  <div>
+                    <input
+                      type="text"
+                      name="company"
+                      value={formData.company}
+                      onChange={handleInputChange}
+                      placeholder="Company*"
+                      className="p-3 border font-matt border-[#E7E7E7] rounded-[12px] w-full text-[20px] font-[600] text-black capitalize placeholder-black"
+                    />
+                    {errors.company && <p className="text-red-500 text-sm">{errors.company}</p>}
+                  </div>
+                  <button
+                    type="submit"
+                    className="ml-4 font-matt"
+                  >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="57" height="57" viewBox="0 0 50 51" fill="none">
+                      <rect x="0.5" y="0.633545" width="49" height="49" rx="11.5" stroke="#0009FF" />
+                      <rect x="2" y="2" width="46" height="46" rx="10" fill="#0009FF" />
+                      <path d="M28.1267 22.1707L36.3931 22.1707V13.8432H28.1267V22.1707Z" fill="white" />
+                      <path d="M13.1324 31.1275L20.852 23.3508H26.6733V27.2482C26.6733 28.5373 26.1627 29.7719 25.2616 30.6857L18.9777 37.016L13.1324 31.1275Z" fill="white" />
+                      <path d="M28.1936 37.0402V23.3689H31.6359C34.2973 23.3689 36.46 25.5415 36.46 28.2286V37.0402H28.1936Z" fill="white" />
+                      <path d="M13.1135 22.1707V13.8432H22.1369C24.648 13.8432 26.6846 15.8948 26.6846 18.4245V22.1707H13.1135Z" fill="white" />
+                    </svg>
+                  </button>
+                </div>
+              </form>
+            )}
+          </div>
 
 
   {/* Right Image */}
