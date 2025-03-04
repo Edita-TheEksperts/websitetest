@@ -155,7 +155,7 @@ const Hero = ({ setHeroVisible }) => {
                 loading="lazy"
               />
               <Image
-                src="/images/The-eksperts-short-.png"
+                src="/images/the-eksperts-The-eksperts-short-.png"
                 alt="Video 4"
                 width={223}
                 height={223}

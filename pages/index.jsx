@@ -99,7 +99,7 @@ const Home = () => {
                 {/* SVG */}
                 <div className="font-matt w-full max-w-[120px] lg:min-w-[230px]">
                 <Image
-                    src="/images/Frame 24 (1).png" // Replace with the actual image path
+                    src="/images/the-eksperts-Frame 24 (1).png" // Replace with the actual image path
                     alt="Description of image"
                     loading="lazy"
 
@@ -121,7 +121,7 @@ const Home = () => {
                 <div className="font-matt flex flex-col items-center text-center space-y-4 mb-10">
                 <div className="w-full max-w-[180px] lg:max-w-[300px] lg:mt-10">
                 <Image
-                    src="/images/fi_785418.png" // Replace with the actual image path
+                    src="/images/the-eksperts-fi_785418.png" // Replace with the actual image path
                     alt="Description of image"
                     width={1600} // Set the width for the image's aspect ratio
                     height={675} // Set the height for the image's aspect ratio
@@ -140,7 +140,7 @@ const Home = () => {
                     <div className="w-full flex lg:justify-center items-center">
                         <div className="section14 w-full max-w-[220px] lg:max-w-[380px] ml-[45px] md:ml-[100px] lg:ml-[190px]">
                         <Image
-                            src="/images/Frame 24 (2).png" // Replace with the actual image path
+                            src="/images/the-eksperts-Frame 24 (2).png" // Replace with the actual image path
                             alt="Description of image"
                             width={1600} // Set the width for the image's aspect ratio
                             height={675} // Set the height for the image's aspect ratio
