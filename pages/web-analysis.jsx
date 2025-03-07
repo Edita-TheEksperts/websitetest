@@ -187,7 +187,7 @@ const reviews = [
                       value={formData.company}
                       onChange={handleInputChange}
                       placeholder="Unternehmen*"
-                      className="lg:w-[380px] p-3 border font-matt border-[#E7E7E7] rounded-[12px] w-full text-[16px] font-[400] text-black capitalize placeholder-black"
+                      className="lg:w-[380px] w-[350px] p-3 border font-matt border-[#E7E7E7] rounded-[12px]  text-[16px] font-[400] text-black capitalize placeholder-black"
                     />
                     {errors.company && <p className="text-red-500 text-sm">{errors.company}</p>}
                   </div>
