@@ -148,7 +148,7 @@ const reviews = [
                       value={formData.url}
                       onChange={handleInputChange}
                       placeholder="Ihre Web-Domain*"
-                      className="p-3 border border-[#E7E7E7] rounded-[12px] w-full text-[20px] font-[600] text-black capitalize font-matt placeholder-black"
+                      className="p-3 border border-[#E7E7E7] rounded-[12px] w-full text-[16px] font-[400] text-black capitalize font-matt placeholder-black"
                     />
                     {errors.url && <p className="text-red-500 text-sm">{errors.url}</p>}
                   </div>
@@ -159,7 +159,7 @@ const reviews = [
                       value={formData.fullname}
                       onChange={handleInputChange}
                       placeholder="Vor- / Nachname*"
-                      className="p-3 border border-[#E7E7E7] rounded-[12px] w-full text-[20px] font-[600] text-black capitalize font-matt placeholder-black"
+                      className="p-3 border border-[#E7E7E7] rounded-[12px] w-full text-[16px] font-[400] text-black capitalize font-matt placeholder-black"
                     />
                     {errors.fullname && <p className="text-red-500 text-sm">{errors.fullname}</p>}
                   </div>
@@ -173,7 +173,7 @@ const reviews = [
                     value={formData.email}
                     onChange={handleInputChange}
                     placeholder="E-Mail*"
-                    className="p-3 border border-[#E7E7E7] rounded-[12px] w-full text-[20px] font-[600] font-matt text-black capitalize placeholder-black"
+                    className="p-3 border border-[#E7E7E7] rounded-[12px] w-full text-[16px] font-[400] font-matt text-black capitalize placeholder-black"
                   />
                   {errors.email && <p className="text-red-500 text-sm">{errors.email}</p>}
                 </div>
@@ -187,7 +187,7 @@ const reviews = [
                       value={formData.company}
                       onChange={handleInputChange}
                       placeholder="Unternehmen*"
-                      className="p-3 border font-matt border-[#E7E7E7] rounded-[12px] w-full text-[20px] font-[600] text-black capitalize placeholder-black"
+                      className="lg:w-[380px] p-3 border font-matt border-[#E7E7E7] rounded-[12px] w-full text-[16px] font-[400] text-black capitalize placeholder-black"
                     />
                     {errors.company && <p className="text-red-500 text-sm">{errors.company}</p>}
                   </div>

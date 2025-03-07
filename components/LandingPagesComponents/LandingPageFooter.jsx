@@ -10,6 +10,15 @@ const LandingPageFooter = () => {
             </div>
             <div className="flex space-x-[24px] mt-10 md:mt-0">
               {/* Right Navigation Section */}
+              <p className="text-[15px] font-matt leading-[24px]">
+                  <a href="mailto:info@the-eksperts.com" class="hover:text-gray-600">info@the-eksperts.com</a>
+              </p>
+              <p className="text-[15px] font-matt leading-[24px]">
+                  <a href="tel:+41799213000" class="hover:text-gray-600">+41 79 921 30 00</a>
+              </p>
+            </div>
+            <div className="flex space-x-[24px] mt-10 md:mt-0">
+              {/* Right Navigation Section */}
               <Link
                 href="/impressum"
                 className="text-[#000] text-[15px] font-[400] leading-[24px] font-matt tracking-[-0.225px]"
