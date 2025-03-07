@@ -335,7 +335,7 @@ const reviews = [
           {/* Call to Action */}
           <div className="mt-[58px] text-center">
             <button
-              className="bg-[#152DFF] text-white font-[500] text-[20px] py-[14px] px-6 lg:px-[24px] rounded-[12px] hover:bg-blue-700 transition"
+              className="bg-[#152DFF] text-white font-[500] text-[20px] py-[14px] px-6 lg:px-[24px] rounded-[12px] hover:bg-[#0F20B2] transition"
               onClick={() => setScreen(2)}
             >
               Erhalten Sie den vollständigen kostenlosen Leitfaden & Checkliste
