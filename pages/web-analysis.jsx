@@ -347,15 +347,15 @@ const reviews = [
       {screen === 2 && (
         <>
          <h2 className="text-center text-[32px] lg:text-[40px] font-[700] lg:leading-[48px] mb-4">
-          Download the pdf for free!
+         Erhalten Sie den vollständigen kostenlosen <br></br>Leitfaden & Checkliste!
           </h2>
           <p className="lg:block hidden text-center  text-[18px] lg:text-[22px] font-matt font-[300] mb-[58px]">
-          Our specialized team tackles every aspect: speed, SEO, mobile responsiveness, desktop performance, and<br></br> accessibility. We identify all issues and fix them, ensuring your site scores top marks on every front.<br></br>
-          To view the full list of the services we will send you the pdf via email.
+          Unser spezialisiertes Team kümmert sich um jeden Aspekt: ​​Geschwindigkeit, SEO, mobile Reaktionsfähigkeit,<br></br> Desktop-Leistung und Zugänglichkeit. Wir identifizieren alle Probleme und beheben sie, um sicherzustellen,<br></br> dass Ihre Website in jeder Hinsicht Bestnoten erzielt.
+Wir senden Ihnen das PDF per E-Mail,<br></br> damit Sie die vollständige Liste der Dienste anzeigen können.
           </p>
           <p className="lg:hidden block text-center  text-[18px] lg:text-[22px] font-matt font-[300] mb-[58px]">
-          Our specialized team tackles every aspect: speed, SEO, mobile responsiveness, desktop performance, and accessibility. We identify all issues and fix them, ensuring your site scores top marks on every front.
-          To view the full list of the services we will send you the pdf via email.
+          Unser spezialisiertes Team kümmert sich um jeden Aspekt: ​​Geschwindigkeit, SEO, mobile Reaktionsfähigkeit, Desktop-Leistung und Zugänglichkeit. Wir identifizieren alle Probleme und beheben sie, um sicherzustellen, dass Ihre Website in jeder Hinsicht Bestnoten erzielt.
+          Wir senden Ihnen das PDF per E-Mail, damit Sie die vollständige Liste der Dienste anzeigen können.
           </p>
           <form
             className="flex lg:flex-row flex-col max-w-[600px] justify-center items-center space-x-[14px]  mx-auto "
@@ -381,16 +381,26 @@ const reviews = [
         </>
       )}
 
-      {screen === 3 && (
-        <>
-          <h2 className="text-center text-[32px] lg:text-[40px] font-[700] lg:leading-[48px] mb-4">
-          You will receive the pdf file<br></br> shortly on your email.
-          </h2>
-          <p className="text-center text-[22px] font-[300] max-w-[600px] mx-auto">
-          Thank you for trusting the eksperts, we will not dissapoint.
-          </p>
-        </>
-      )}
+{screen === 3 && (
+  <>
+    <h2 className="text-center text-[32px] lg:text-[40px] font-[700] lg:leading-[48px] mb-4">
+    Sie erhalten die PDF-Datei<br></br> in Kürze per E-Mail.
+    </h2>
+    <p className="text-center text-[22px] font-[300] max-w-[600px] mx-auto">
+    Vielen Dank für Ihr Vertrauen in the eksperts – wir werden Sie nicht enttäuschen.
+    </p>
+    <p className="text-center text-[22px] font-[300] mt-4">
+    In Kürze leiten wir Sie auf unsere Hauptwebsite weiter…
+    </p>
+
+    <script>
+      {setTimeout(() => {
+        window.location.href = "https://www.the-eksperts.com/";
+      }, 7000)}
+    </script>
+  </>
+)}
+
     </section>
 
     <section className="relative flex flex-col max-w-[1280px] justify-between items-center lg:h-[950px] w-full overflow-hidden">
