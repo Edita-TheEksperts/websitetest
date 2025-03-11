@@ -659,7 +659,7 @@ Wir senden Ihnen das PDF per E-Mail,<br></br> damit Sie die vollständige Liste 
       <section className="lg:mt-[300px] mt-[160px] px-4 flex flex-col justify-center items-center gap-2 text-center text-black ">
             {/* Header */}
             <h1 className="lg:block hidden font-matt lg:text-[80px] text-[45px] leading-[50px] font-bold md:leading-[80px]">
-            Bereit für 100/100 Punkte und schnellere Conversions?
+            Bereit für 100/100 Punkte und <br></br>schnellere Conversions?
             </h1>
             <h1 className="lg:hidden block font-matt lg:text-[80px] text-[45px] leading-[50px] font-bold lg:leading-[80px]">
             Bereit für 100/100 Punkte und schnellere Conversions?
