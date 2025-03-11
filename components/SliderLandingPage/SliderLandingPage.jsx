@@ -17,7 +17,6 @@ const partners = [
   "/images/logoss/the-eksperts-nettoo.png",
   "/images/logoss/the-eksperts-DEF.png",
   "/images/logoss/the-eksperts-divid.png",
-  "/images/logoss/the-eksperts-greenfinity.png",
   "/images/logoss/the-eksperts-Ballenberg.png",
   "/images/logoss/the-eksperts-M.png",
   "/images/logoss/the-eksperts-max.png",
