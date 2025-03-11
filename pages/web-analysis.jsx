@@ -126,7 +126,7 @@ const reviews = [
           {/* Left Content */}
           <div id="contactForm" className="lg:w-1/2 text-center lg:text-left">
             <h1 className="text-black font-[400] text-[40px] leading-[48px] lg:text-[64px] lg:leading-[64px]">
-            Optimieren Sie<br /> Ihre Website in nur<span className="text-[#0009FF] font-[900]">24 Stunden!</span>
+            Optimieren Sie<br /> Ihre Website in nur <span className="text-[#0009FF] font-[900]">24 Stunden!</span>
             </h1>
             <p className="text-[#6D6D6D] text-[16px] leading-[25px] lg:text-[20px] lg:leading-[28px] mt-[16px] font-[400]">
             Wir liefern innerhalb eines Tages einen vollständigen Bericht über Performance, SEO und Barrierefreiheit – und beheben alles, um einen 100/100 Score zu erreichen.
@@ -424,7 +424,7 @@ Wir senden Ihnen das PDF per E-Mail,<br></br> damit Sie die vollständige Liste 
   </div>
  
     {/* Step 1 */}
-    <div className="bg-[#F1F1F1] shadow-lg rounded-[16px] px-[24px] py-[14px] w-[357px] lg:mr-[610px] lg:mt-[70px] mb-6 lg:mb-0">
+    <div className="bg-[#F1F1F1] shadow-lg text-left rounded-[16px] px-[24px] py-[14px] w-[357px] lg:mr-[610px] lg:mt-[70px] mb-6 lg:mb-0">
       <h3 className="text-[32px] leading-[48px] font-[700] mb-2">Schritt 1:</h3>
       <div className="flex space-x-4">
       <p className="text-[24px] leading-[32px]  font-[300]">Anmeldung / URL<br></br>bereitstellen</p>
@@ -443,21 +443,21 @@ Wir senden Ihnen das PDF per E-Mail,<br></br> damit Sie die vollständige Liste 
     </div>
 
     {/* Step 2 */}
-    <div className="bg-[#F1F1F1] shadow-lg rounded-[16px] px-[24px] w-80 py-[14px] lg:ml-[690px] lg:mt-[-170px] mb-6 lg:mb-0">
+    <div className="bg-[#F1F1F1] shadow-lg text-left  rounded-[16px] px-[24px] w-80 py-[14px] lg:ml-[690px] lg:mt-[-170px] mb-6 lg:mb-0">
       <h3 className="text-[32px] leading-[48px] font-[700] mb-2">Schritt 2:</h3>
       <p className="text-[24px] leading-[32px] font-[300]">Automatisierte & manuelle Tests (Geschwindigkeit, SEO und Barrierefreiheit).</p>
     </div>
 
     {/* Step 3 */}
-    <div className="icon1 bg-[#F1F1F1] shadow-lg rounded-[16px] px-[24px] py-[14px] w-80 lg:ml-[600px] lg:mt-[90px] mb-6 lg:mb-0">
+    <div className="icon1 bg-[#F1F1F1] text-left  shadow-lg rounded-[16px] px-[24px] py-[14px] w-80 lg:ml-[600px] lg:mt-[90px] mb-6 lg:mb-0">
       <h3 className="text-[32px] leading-[48px] font-[700] mb-2">Schritt 3:</h3>
       <p className="text-[24px] leading-[32px] font-[300]">Bericht & Empfehlungen</p>
     </div>
 
     {/* Step 4 */}
-    <div className="icon2 bg-[#F1F1F1] shadow-lg rounded-[16px] px-[24px] py-[14px] w-80 lg:mr-[800px] lg:mt-[-100px] mb-6 lg:mb-0">
+    <div className="icon2 bg-[#F1F1F1] text-left shadow-lg rounded-[16px] px-[24px] py-[14px] w-[340px] lg:mr-[800px] lg:mt-[-100px] mb-6 lg:mb-0">
     <h3 className="text-[32px] leading-[48px] font-[700] mb-2">Schritt 4:</h3>
-    <p className="text-[20px] leading-[28px] font-[300]">
+    <p className="text-[24px] leading-[28px] font-[300]">
     Unser Team implementiert die erforderlichen Verbesserungen, um Ihre Website zu optimieren.
       </p>
     </div>
@@ -508,7 +508,7 @@ Wir senden Ihnen das PDF per E-Mail,<br></br> damit Sie die vollständige Liste 
                             </svg>
             </div>
             {/* Button Text */}
-            <span className="mx-4 font-matt lg:font-[24px] lg:leading-[33px] font-[300] lg:text-left relative z-20 group-hover:text-white">
+            <span className="mx-2 text-left font-matt lg:font-[24px] lg:leading-[27px] font-[300] lg:text-left relative z-20 group-hover:text-white">
               <Link href="#">Jetzt meine Website<br></br> optimieren!</Link>
             </span>
 
@@ -517,7 +517,7 @@ Wir senden Ihnen das PDF per E-Mail,<br></br> damit Sie die vollständige Liste 
           </button>
         </Link>
           </div>
-          <p className="pfix w-[300px] lg:ml-[830px] lg:mt-[-85px] text-[#8B8B8B] text-[16px] font-[300] leading-[24px] mt-4 text-center">
+          <p className="lg:text-left pfix w-[300px] lg:ml-[830px] lg:mt-[-85px] text-[#8B8B8B] text-[16px] font-[300] leading-[24px] mt-4 text-center">
           Hinweis: Einige Probleme können bei großen oder komplexen Websites etwas mehr als 24 Stunden in Anspruch nehmen. Den ersten Bericht erhalten Sie jedoch innerhalb dieses Zeitraums.          </p>
         
   </div>
