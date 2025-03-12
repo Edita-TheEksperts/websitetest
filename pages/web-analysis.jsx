@@ -9,25 +9,26 @@ const reviews = [
       color: "#FF0000",
     },
     {
-      name: "Dario",
-      text: "The Eksperts are an outstanding agency—reliable, fast, and highly creative. Their solutions are not only efficient but also innovative, always tailored to our needs. A true partner for success!",
-      color: "#FFBF00",
-    },
-    {
-      name: "Mert HMC",
-      text: "The Eksperts offers excellent service and in-depth expertise in the area of ​​web services. The solutions are reliable, efficient and perfectly tailored to individual needs. Absolutely recommended!",
-      color: "#5D95FF",
-    },
-    {
       name: "Shkelzen Luri",
       text: "My experience with The Eksperts was very positive. Your team is professional, fast and finds tailor-made solutions for complex digital challenges. I was particularly impressed by their customer-oriented approach and their innovative strength. Clear recommendation for anyone looking for a reliable partner in the digital world.",
       color: "#07314C",
+    },
+    {
+      name: "Dario",
+      text: "The Eksperts are an outstanding agency—reliable, fast, and highly creative. Their solutions are not only efficient but also innovative, always tailored to our needs. A true partner for success!",
+      color: "#FFBF00",
     },
     {
       name: "Arlind Shala",
       text: "I would like to express my complete satisfaction with the services of the eksperts. From the start the team was extremely professional and reliable. Communication was always clear and polite, which made the entire process very pleasant.",
       color: "#0009FF",
     },
+    {
+      name: "Mert HMC",
+      text: "The Eksperts offers excellent service and in-depth expertise in the area of ​​web services. The solutions are reliable, efficient and perfectly tailored to individual needs. Absolutely recommended!",
+      color: "#5D95FF",
+    },
+   
     {
       name: "Eco Bautec & Design AG",
       text: "We are absolutely thrilled with the eksperts! The online shop and our website were implemented exactly according to our ideas, and the collaboration was always uncomplicated and very professional - a great team!",
@@ -598,7 +599,7 @@ Wir senden Ihnen das PDF per E-Mail,<br></br> damit Sie die vollständige Liste 
       style={{
         boxShadow: "5px 5px 28.8px 0px rgba(0, 0, 0, 0.10)",
         borderColor: review.color,
-        height: index === 1 ? '240px' : index === 3 || index === 5 ? '230px' : 'auto', // Height for 2nd, 4th, and 6th divs
+        height: index === 1 ? '240px' : index === 3 || index === 5 ? '210px' : 'auto', // Height for 2nd, 4th, and 6th divs
         marginTop: index === 3 ? '-100px' : index === 5 ? '-50px' : '0', // Adjust marginTop for spacing between 4th and 6th divs
       }}
     >  
