@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import '../styles/global.css'; 
 import Head from 'next/head';
+import { useEffect, useState } from 'react';
 
 export default function Contact() {
   const [faqOpen, setFaqOpen] = useState(null);
@@ -24,7 +25,9 @@ export default function Contact() {
   });
 
   const [isSubmitted, setIsSubmitted] = useState(false);
-
+useEffect(() => {
+      window.scrollTo(0, 0);
+  }, []);
   // Handle input changes
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
