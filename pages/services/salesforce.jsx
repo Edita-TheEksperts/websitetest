@@ -118,7 +118,7 @@ const Salesforce = () => {
 
                   {/* Button Section */}
                   <div className="mt-6 lg:ml-4 text-center lg:text-center">
-                    <Link href="/contact" className="block">
+                    <Link href="/kontakt" className="block">
                   <button className="relative group w-full max-w-[515px] h-[76px] flex items-center justify-center overflow-hidden">
                   <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -193,7 +193,7 @@ const Salesforce = () => {
 
                   {/* Button Section */}
                   <div className="mt-6 lg:ml-4 text-center lg:text-center">
-                  <Link href="/contact" className="block">
+                  <Link href="/kontakt" className="block">
 
                   <button className="relative group w-full max-w-[512px] h-[76px] flex items-center justify-center overflow-hidden">
                   <svg
@@ -266,7 +266,7 @@ const Salesforce = () => {
 
                   {/* Button Section */}
                   <div className="mt-6 lg:ml-4 text-center lg:text-center">
-                  <Link href="/contact" className="block">
+                  <Link href="/kontakt" className="block">
 
                   <button className="relative group w-full max-w-[512px] h-[76px] flex items-center justify-center overflow-hidden">
                   <svg
@@ -319,7 +319,7 @@ const Salesforce = () => {
               </br> Kontaktieren Sie uns noch heute und starten Sie Ihre Salesforce-Reise mit <br></br> einem starken Partner an Ihrer Seite. 
               </p>
               <div className="mt-8 items-center justify-center flex lg:mt-[50px]">
-              <Link href="/contact" className="block">
+              <Link href="/kontakt" className="block">
 
               <button className="group relative font-matt flex items-center justify-center px-1 py-1 bg-transparent border-2 border-[#0009FF] text-[#0009FF] rounded-[10px] font-medium text-[20px] transition duration-100 ease-in-out overflow-hidden">
             {/* SVG Background */}
@@ -364,7 +364,7 @@ const Salesforce = () => {
             </div>
             {/* Button Text */}
             <span className="mx-4 font-matt lg:font-[24px] lg:leading-[33px] font-[300] relative z-20 group-hover:text-white">
-              <Link href="/contact">Kontakt aufnehmen</Link>
+              <Link href="/kontakt">Kontakt aufnehmen</Link>
             </span>
 
             {/* Hover Background Effect */}
