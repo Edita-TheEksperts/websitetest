@@ -119,6 +119,7 @@ const CustomDevelopment = () => {
               Egal wie komplex Ihre Anforderungen sind, wir haben die Lösung. Kontaktieren Sie uns noch <br></br> heute und lassen Sie uns gemeinsam Ihre massgeschneiderte Software entwickeln.  
               </p>
               <div className="mt-8 items-center justify-center flex lg:mt-[50px]">
+                  <Link href="/kontakt" className="block">
               <button className="group relative font-matt flex items-center justify-center px-1 py-1 bg-transparent border-2 border-[#0009FF] text-[#0009FF] rounded-[10px] font-medium text-[20px] transition duration-100 ease-in-out overflow-hidden">
             {/* SVG Background */}
             <div className="w-14 h-14 bg-[#0009FF] rounded-[10px] flex items-center justify-center text-white transform scale-x-100 origin-left transition-all duration-500 ease-in-out group-hover:scale-x-100 relative z-20">
@@ -168,6 +169,7 @@ const CustomDevelopment = () => {
             {/* Hover Background Effect */}
             <span className="absolute inset-1 bg-[#0009FF] transition-transform duration-500 ease-in-out scale-x-0 origin-left group-hover:scale-x-100 z-10 rounded-[10px]"></span>
           </button>
+                    </Link>
               </div>
             </section>
 
