@@ -1,7 +1,6 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import '../styles/global.css'; 
 import Head from 'next/head';
-import { useEffect, useState } from 'react';
 
 export default function Contact() {
   const [faqOpen, setFaqOpen] = useState(null);
