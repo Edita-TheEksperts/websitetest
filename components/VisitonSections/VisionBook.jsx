@@ -53,13 +53,13 @@ export default function VisionSection() {
             Sichern Sie sich jetzt die Unterstützung, die Sie brauchen
             </h2>
             <a
-              href="#kontakt"
+              href="/kontakt"
               className="lg:block hidden font-matt lg:inline-block text-white lg:text-[#0009FF] lg:bg-transparent bg-[#0009FF] text-[24px] lg:text-[28px] lg:leading-[37px] font-[900] uppercase border-[3px] border-[#0009FF] py-1 px-6 lg:px-5 lg:py-1 hover:bg-[#0009FF] hover:text-white transition duration-300"
             >
               Kontaktieren Sie uns!
             </a>
             <a
-              href="#kontakt"
+              href="/kontakt"
               className="lg:hidden block font-matt lg:inline-block text-white lg:text-[#0009FF] lg:bg-transparent bg-[#0009FF] text-[28px] lg:text-[28px] leading-[37px] font-[900] uppercase border-[3px] border-[#0009FF] py-1 px-2 lg:px-5 lg:py-1 hover:bg-[#0009FF] hover:text-white transition duration-300"
             >
               Kontaktieren Sie uns!
