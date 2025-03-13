@@ -52,7 +52,7 @@ export default function VisionSection() {
               Lassen Sie uns Ihre Vision Wirklichkeit werden lassen
             </h2>
             <a
-              href="#kontakt"
+              href="/kontakt"
               className="font-matt inline-block lg:text-[#0009FF] text-white text-[20px] lg:text-[28px] lg:leading-[37px] font-[900] uppercase border-[3px] bg-[#0009FF] lg:bg-transparent lg:border-[#0009FF] px-6 lg:px-4 py-2 lg:py-1 hover:bg-[#0009FF] hover:text-white transition duration-300"
             >
               Jetzt Kontakt aufnehmen!
