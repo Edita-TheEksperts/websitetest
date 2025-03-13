@@ -153,7 +153,7 @@ const GraphicDesign = () => {
             </div>
             {/* Button Text */}
             <span className="mx-4 font-matt lg:font-[24px] lg:leading-[33px] font-[300] relative z-20 group-hover:text-white">
-              <Link href="/contact">Kontakt aufnehmen</Link>
+              <Link href="/kontakt">Kontakt aufnehmen</Link>
             </span>
 
             {/* Hover Background Effect */}
