@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useRef} from "react";
 
 import PartnersSlider from "../components/SliderLandingPage/SliderLandingPage";
 const reviews = [
@@ -120,6 +120,12 @@ const reviews = [
     });
   };
 
+  const contactRef = useRef(null);
+
+  const scrollToContactForm = () => {
+    contactRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <div>
       <main className="bg-white flex flex-col justify-center items-center">
@@ -235,7 +241,7 @@ const reviews = [
     <section className="custom-1026 flex flex-col items-center lg:gap-[40px] justify-center  lg:flex-row mb-[160px] lg:mb-[300px] mx-auto max-w-[1280px] lg:px-[20px]">
       {/* Left Side - Video */}
     
-      <div className="w-full lg:w-1/2 mb-[40px] lg:mb-0 flex justify-center lg:max-w-[588px] lg:h-[571px] lg:flex lg:flex-col lg:justify-center lg:items-start flex-shrink-0">
+      <div ref={contactRef} id="contact-section" className="w-full lg:w-1/2 mb-[40px] lg:mb-0 flex justify-center lg:max-w-[588px] lg:h-[571px] lg:flex lg:flex-col lg:justify-center lg:items-start flex-shrink-0">
       <video
   className="w-full custom-1020 max-w-md lg:min-w-[588px] lg:min-h-[618px] rounded-lg shadow-lg object-cover "
   autoPlay
@@ -457,9 +463,8 @@ const reviews = [
    </div>
    </div>
     <div className="flex flex-row">
-    <Link href="#">
     <button 
-      onClick={() => document.getElementById("contactForm")?.scrollIntoView({ behavior: "smooth" })}
+        onClick={scrollToContactForm}
 
     className="btnfix lg:ml-[270px] lg:mt-[110px] custom-1060 group relative font-matt flex items-center justify-center px-1 py-1 bg-transparent border-2 border-[#0009FF] text-[#0009FF] rounded-[10px] font-medium text-[20px] transition duration-100 ease-in-out overflow-hidden">
             {/* SVG Background */}
@@ -510,7 +515,6 @@ const reviews = [
             {/* Hover Background Effect */}
             <span className="absolute inset-1 bg-[#0009FF] transition-transform duration-500 ease-in-out scale-x-0 origin-left group-hover:scale-x-100 z-10 rounded-[10px]"></span>
           </button>
-        </Link>
           </div>
   </div>
 </section>
@@ -664,9 +668,8 @@ const reviews = [
             Lassen Sie sich nicht von einer langsamen, veralteten oder generischen Website ausbremsen. Wir erstellen eine moderne, maßgeschneiderte Website, die Ihr Unternehmen ins Rampenlicht rückt, Kunden gewinnt und problemlos mit Ihrem Wachstum skaliert.             </p>
             {/* Button */}
             <div className="md:mt-[86px] mt-[40px]">
-          <Link href="#">
           <button
-                onClick={() => document.getElementById("contactForm")?.scrollIntoView({ behavior: "smooth" })}
+        onClick={scrollToContactForm}
 
           className="group relative font-matt flex items-center justify-center px-1 py-1  bg-transparent border-2 border-[#0009FF] text-[#0009FF] rounded-[10px] font-medium text-[20px] transition duration-100 ease-in-out overflow-hidden">
             {/* SVG Background */}
@@ -717,7 +720,6 @@ const reviews = [
             {/* Hover Background Effect */}
             <span className="absolute inset-1 bg-[#0009FF] transition-transform duration-500 ease-in-out scale-x-0 origin-left group-hover:scale-x-100 z-10 rounded-[10px]"></span>
           </button>
-          </Link>
             </div>
             </section>
 
