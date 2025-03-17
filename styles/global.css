@@ -641,3 +641,14 @@ margin-left: 300px !important;
     min-width: 300px !important; 
       }
 }
+
+@media (width: 1024px) {
+  .custom-1020 {
+width:300px !important;  }
+}
+
+@media (width: 1024px) {
+  .custom-1060 {
+margin-top: -70px !important; 
+margin-left: 530px !important;}
+}
