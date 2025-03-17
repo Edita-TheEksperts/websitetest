@@ -384,32 +384,32 @@ const reviews = [
             <input
               type="text"
               placeholder="Vorname Nachname"
-              className="w-full md:w-1/2 p-4 border border-[#E7E7E7] rounded-[12px] bg-transparent text-white placeholder-white text-[18px] md:text-[20px] font-[Inter]"
+              className="w-full md:w-1/2 p-4 border border-[#E7E7E7] rounded-[12px] bg-transparent text-white placeholder-white text-[18px] md:text-[20px] "
             />
             <input
               type="email"
               placeholder="Email"
-              className="w-full md:w-1/2 p-4 border border-[#E7E7E7] rounded-[12px] bg-transparent text-white placeholder-white text-[18px] md:text-[20px] font-[Inter]"
+              className="w-full md:w-1/2 p-4 border border-[#E7E7E7] rounded-[12px] bg-transparent text-white placeholder-white text-[18px] md:text-[20px] "
             />
           </div>
 
           <input
             type="text"
             placeholder="Betreff"
-            className="w-full p-4 border border-[#E7E7E7] rounded-[12px] bg-transparent text-white placeholder-white text-[18px] md:text-[20px] font-[Inter]"
+            className="w-full p-4 border border-[#E7E7E7] rounded-[12px] bg-transparent text-white placeholder-white text-[18px] md:text-[20px] "
           />
 
           <input
           type="text"
             placeholder="Ihre Nachricht"
             rows="4"
-            className="w-full p-4 border border-[#E7E7E7] rounded-[12px] bg-transparent text-white placeholder-white text-[18px] md:text-[20px] font-[Inter]"
+            className="w-full p-4 border border-[#E7E7E7] rounded-[12px] bg-transparent text-white placeholder-white text-[18px] md:text-[20px] "
           ></input>
 
           {/* Button */}
           <button
             type="submit"
-            className="w-full flex justify-center items-center px-6 py-4 bg-white text-[#0009FF] font-[Inter] text-[18px] md:text-[20px] font-bold leading-[28px] rounded-lg mt-2"
+            className="w-full flex justify-center items-center px-6 py-4 bg-white text-[#0009FF] text-[18px] md:text-[20px] font-bold leading-[28px] rounded-lg mt-2"
           >
             Say hi to us!
           </button>
