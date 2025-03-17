@@ -243,7 +243,7 @@ const reviews = [
     <section className="custom-1026 flex flex-col items-center lg:gap-[40px] justify-center  lg:flex-row mb-[160px] lg:mb-[300px] mx-auto max-w-[1280px] lg:px-[20px]">
       {/* Left Side - Video */}
     
-      <div ref={contactRef} id="contact-section" className="w-full lg:w-1/2 mb-[40px] lg:mb-0 flex justify-center lg:max-w-[588px] lg:h-[571px] lg:flex lg:flex-col lg:justify-center lg:items-start flex-shrink-0">
+      <div className="w-full lg:w-1/2 mb-[40px] lg:mb-0 flex justify-center lg:max-w-[588px] lg:h-[571px] lg:flex lg:flex-col lg:justify-center lg:items-start flex-shrink-0">
       <video
   className="w-full custom-1020 max-w-md lg:min-w-[588px] lg:min-h-[618px] rounded-[12px] object-cover "
   autoPlay
