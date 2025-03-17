@@ -237,7 +237,7 @@ const reviews = [
       </button>
     </section>
 
-    <h2 className="text-[40px] mb-[40px] leading-[48px] font-[700] text-center">
+    <h2 ref={contactRef} id="contact-section" className="text-[40px] mb-[40px] leading-[48px] font-[700] text-center">
           Laden Sie den kostenlosen Leitfaden für <br></br> perfektes Webdesign herunter
         </h2>
     <section className="custom-1026 flex flex-col items-center lg:gap-[40px] justify-center  lg:flex-row mb-[160px] lg:mb-[300px] mx-auto max-w-[1280px] lg:px-[20px]">
