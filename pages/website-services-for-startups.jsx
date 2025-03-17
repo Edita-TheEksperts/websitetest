@@ -158,7 +158,7 @@ const reviews = [
             <p className="text-[#6D6D6D] text-[16px] leading-[25px] lg:text-[20px] lg:leading-[28px] mt-[16px] font-[400] lg:hidden block">
             Kreatives, nutzerzentriertes Webdesign mit lokalem Know-How – wir verhelfen Ihrem Unternehmen zu neuem Wachstum.
             </p>
-            <button className="mt-[16px] flex px-[40px] py-[14px] justify-center items-center gap-[8px] rounded-[12px] bg-[#152DFF] text-white font-matt text-[20px] font-medium leading-[28px]">
+            <button onClick={scrollToContactForm} className="mt-[16px] flex px-[40px] py-[14px] justify-center items-center gap-[8px] rounded-[12px] bg-[#152DFF] text-white font-matt text-[20px] font-medium leading-[28px]">
         Buchen Sie ein kostenloses Gespräch mit uns ➔
       </button>
         
@@ -230,7 +230,7 @@ const reviews = [
       </div>
 
       {/* CTA Button */}
-      <button className="mt-8 lg:mt-[60px] lg:px-[80px] px-[14px] py-[14px] text-[20px] leading-[28px] font-[500] text-white bg-[#152DFF] rounded-[12px]">
+      <button onClick={scrollToContactForm}  className="mt-8 lg:mt-[60px] lg:px-[80px] px-[14px] py-[14px] text-[20px] leading-[28px] font-[500] text-white bg-[#152DFF] rounded-[12px]">
         Mehr über unseren Prozess erfahren
       </button>
     </section>
