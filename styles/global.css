@@ -588,6 +588,9 @@ h2.responsive-heading {
       .header2 {
         font-size: 50px !important;
         margin-left: 80px !important;
+      }
+      .par2 {
+        margin-left: 80px !important;
       }}
       @media (width: 1024px) {
         .p2 {
