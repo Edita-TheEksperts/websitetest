@@ -41,8 +41,9 @@ function MyApp({ Component, pageProps }) {
     };
   }, [router]);
 
-  const isLandingPage = router.pathname === "/web-analysis";
-
+  const landingPages = ["/web-analysis", "/website-services-for-startups"];
+  const isLandingPage = landingPages.includes(router.pathname);
+  
   return (
     <>
       {/* Google Analytics Scripts */}
