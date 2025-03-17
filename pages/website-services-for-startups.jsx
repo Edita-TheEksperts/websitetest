@@ -265,11 +265,11 @@ const reviews = [
 
         <form className="space-y-[15px]" onSubmit={handleSubmit}>
           {[
-            { label: "Vorname", name: "vorname", placeholder: "Lindon", required: true },
-            { label: "Nachname", name: "nachname", placeholder: "Hajdaraj", required: true }, 
-            { label: "Unternehmen", name: "unternehmen", placeholder: "the eksperts", required: true },
-            { label: "Email", name: "email", placeholder: "lindon.hajdaraj@the-eksperts.com", required: true },
-            { label: "Position", name: "position", placeholder: "Salesforce", required: true }
+            { label: "Vorname", name: "vorname", placeholder: "Ihre Vorname", required: true },
+            { label: "Nachname", name: "nachname", placeholder: "Ihre Name", required: true }, 
+            { label: "Unternehmen", name: "unternehmen", placeholder: "Ihre Unternehmen", required: true },
+            { label: "Email", name: "email", placeholder: "Email", required: true },
+            { label: "Position", name: "position", placeholder: "Position", required: true }
           ].map((field, index) => (
             <div key={index} className="flex flex-col">
               <label className="text-[20px] font-[500] text-black leading-normal">
