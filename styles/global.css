@@ -616,3 +616,28 @@ h2.responsive-heading {
  line-height: 15px;
 }}
   
+@media (max-width: 1024px) {
+  .custom-1024 {
+    max-width: 1000px; /* Adjust width as needed */
+  }
+}
+
+@media (width: 1024px) {
+  .custom-1025 {
+margin-left: 300px !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  .custom-1026 {
+    width: 100%;
+    max-width: 900px; /* Adjust width as needed */
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .custom-1020 {
+    min-width: 300px !important; 
+      }
+}
