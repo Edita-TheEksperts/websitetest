@@ -6,9 +6,6 @@ const nextConfig: NextConfig = {
     formats: ["image/avif", "image/webp"],
   },
 
-  // Enable SWC minification (default in Next.js 12+)
-  swcMinify: true,
-
   // Enable caching headers for static files
   async headers() {
     return [

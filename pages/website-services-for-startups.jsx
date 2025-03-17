@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { useState, useRef, useEffect} from "react";
+import ContactFormStartup from "../components/ContactFormStartup"
 
 import PartnersSlider from "../components/SliderLandingPage/SliderLandingPage";
 const reviews = [
@@ -64,7 +65,6 @@ const reviews = [
     "Security Check",
   ];
   const LandingPage = () => {
-    const [screen, setScreen] = useState(1);
     const [formData, setFormData] = useState({
         vorname: '',
         nachname: '',
@@ -127,9 +127,10 @@ const reviews = [
   const scrollToContactForm = () => {
     contactRef.current?.scrollIntoView({ behavior: "smooth" });
   };
+  
 
   return (
-    <div>
+    <div className="p-4">
       <main className="bg-white flex flex-col justify-center items-center">
         <section className="lg:mt-[20px] mt-[60px] px-4 lg:px-4 max-w-[1310px] mx-auto gap-6 lg:gap-[90px] flex flex-col lg:flex-row items-center">
           {/* Left Content */}
@@ -366,56 +367,7 @@ const reviews = [
         </div>
       </div>
     </section>
-
-    <section
-      className="custom-1024 flex justify-center items-center bg-cover bg-center w-full mb-[160px] lg:mb-[300px] lg:w-[1280px] lg:h-[543.947px] object-cover rounded-[12px] px-4 md:px-8"
-      style={{ backgroundImage: "url('/images/the-eksperts-contact-bg.png')" }}
-    >
-      {/* Form Container */}
-      <div className="custom-1025 w-full max-w-[551px] h-auto flex flex-col items-start gap-2 bg-transparent ml-0 md:ml-[170px] lg:ml-[400px] p-6 md:p-8">
-        {/* Title */}
-        <h2 className="text-white font-matt text-[32px] md:text-[40px] lg:text-[48px] font-extrabold leading-[40px] md:leading-[50px] lg:leading-[60px] text-center md:text-left">
-          Hinterlasse Sie uns eine Nachricht
-        </h2>
-
-        {/* Form */}
-        <form className="w-full flex flex-col gap-3">
-          <div className="flex flex-col md:flex-row gap-3">
-            <input
-              type="text"
-              placeholder="Vorname Nachname"
-              className="w-full md:w-1/2 p-4 border border-[#E7E7E7] rounded-[12px] bg-transparent text-white placeholder-white text-[18px] md:text-[20px] "
-            />
-            <input
-              type="email"
-              placeholder="Email"
-              className="w-full md:w-1/2 p-4 border border-[#E7E7E7] rounded-[12px] bg-transparent text-white placeholder-white text-[18px] md:text-[20px] "
-            />
-          </div>
-
-          <input
-            type="text"
-            placeholder="Betreff"
-            className="w-full p-4 border border-[#E7E7E7] rounded-[12px] bg-transparent text-white placeholder-white text-[18px] md:text-[20px] "
-          />
-
-          <input
-          type="text"
-            placeholder="Ihre Nachricht"
-            rows="4"
-            className="w-full p-4 border border-[#E7E7E7] rounded-[12px] bg-transparent text-white placeholder-white text-[18px] md:text-[20px] "
-          ></input>
-
-          {/* Button */}
-          <button
-            type="submit"
-            className="w-full flex justify-center items-center px-6 py-4 bg-white text-[#0009FF] text-[18px] md:text-[20px] font-bold leading-[28px] rounded-lg mt-2"
-          >
-            Say hi to us!
-          </button>
-        </form>
-      </div>
-    </section>
+      <ContactFormStartup/>
 
     <section className="relative flex flex-col max-w-[1280px] justify-between items-center lg:h-[950px] w-full overflow-hidden">
   {/* Background SVG Line */}
