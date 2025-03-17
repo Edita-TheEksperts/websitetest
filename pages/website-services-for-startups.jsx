@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { useState, useRef} from "react";
+import { useState, useRef, useEffect} from "react";
 
 import PartnersSlider from "../components/SliderLandingPage/SliderLandingPage";
 const reviews = [
@@ -65,60 +65,62 @@ const reviews = [
   ];
   const LandingPage = () => {
     const [screen, setScreen] = useState(1);
-
-  const [formData, setFormData] = useState({
-    url: '',
-    fullname: '',
-    email: '',
-    company: '',
-  });
-  const [errors, setErrors] = useState({
-    url: '',
-    fullname: '',
-    email: '',
-    company: '',
-  });
-  const [isSubmitted, setIsSubmitted] = useState(false); // State to track form submission
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-
-    const newErrors = {};
-    if (!formData.url) newErrors.url = 'Bitte Auswählen';
-    if (!formData.fullname) newErrors.fullname = 'Bitte Auswählen';
-    if (!formData.email) newErrors.email = 'Bitte Auswählen';
-    if (!formData.company) newErrors.company = 'Bitte Auswählen';
-
-    if (Object.keys(newErrors).length > 0) {
-      setErrors(newErrors);
-      return;
-    }
-
-    try {
-      const response = await fetch('/api/sendMailWeb', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData),
+    const [formData, setFormData] = useState({
+        vorname: '',
+        nachname: '',
+        unternehmen: '',
+        email: '',
+        position: '',
       });
-
-      const data = await response.json();
-      if (response.ok) {
-        setIsSubmitted(true); // Set the form as submitted
-      } else {
-        alert('Error: ' + data.message);
-      }
-    } catch (error) {
-      console.error('Failed to send email:', error);
-    }
-  };
-
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value,
-    });
-  };
+      
+      const [errors, setErrors] = useState({});
+      const [isSubmitted, setIsSubmitted] = useState(false);
+      
+      useEffect(() => {
+        setErrors({});
+      }, [formData]);
+      
+      const handleInputChange = (e) => {
+        const { name, value } = e.target;
+        setFormData({
+          ...formData,
+          [name]: value,
+        });
+      };
+      
+      const handleSubmit = async (e) => {
+        e.preventDefault();
+      
+        const newErrors = {};
+        if (!formData.vorname) newErrors.vorname = 'Bitte Auswählen';
+        if (!formData.nachname) newErrors.nachname = 'Bitte Auswählen';
+        if (!formData.unternehmen) newErrors.unternehmen = 'Bitte Auswählen';
+        if (!formData.email) newErrors.email = 'Bitte Auswählen';
+        if (!formData.position) newErrors.position = 'Bitte Auswählen';
+      
+        if (Object.keys(newErrors).length > 0) {
+          setErrors(newErrors);
+          return;
+        }
+      
+        try {
+          const response = await fetch('/api/sendMailStartup', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(formData),
+          });
+      
+          const data = await response.json();
+          if (response.ok) {
+            setIsSubmitted(true);
+            setFormData({ vorname: '', nachname: '', unternehmen: '', email: '', position: '' });
+          } else {
+            alert('Error: ' + data.message);
+          }
+        } catch (error) {
+          console.error('Failed to send email:', error);
+        }
+      };
 
   const contactRef = useRef(null);
 
@@ -260,11 +262,11 @@ const reviews = [
       <div className="w-full lg:w-1/2 lg:min-w-[522px]">
        
 
-        <form className="space-y-[15px]">
+        <form className="space-y-[15px]" onSubmit={handleSubmit}>
           {[
-            { label: "Vorname", name: "firstName", placeholder: "Lindon", required: true },
-            { label: "Nachname", name: "lastName", placeholder: "Hajdaraj", required: true },
-            { label: "Unternehmen", name: "company", placeholder: "the eksperts", required: true },
+            { label: "Vorname", name: "vorname", placeholder: "Lindon", required: true },
+            { label: "Nachname", name: "nachname", placeholder: "Hajdaraj", required: true }, 
+            { label: "Unternehmen", name: "unternehmen", placeholder: "the eksperts", required: true },
             { label: "Email", name: "email", placeholder: "lindon.hajdaraj@the-eksperts.com", required: true },
             { label: "Position", name: "position", placeholder: "Salesforce", required: true }
           ].map((field, index) => (
@@ -273,11 +275,13 @@ const reviews = [
                 {field.label}{field.required && <span className="text-red-500">*</span>}
               </label>
               <input
-                type="text"
-                name={field.name}
-                placeholder={field.placeholder}
+           type="text"
+           name={field.name}
+           value={formData[field.name] || ""}
+           onChange={handleInputChange}
+           placeholder={field.placeholder}
+           required={field.required}
                 className="mt-1 w-full border text-[20px] font-[400] placeholder:text-black text-black rounded-[12px] p-[16px] focus:outline-none focus:ring-2 focus:ring-blue-500"
-                required={field.required}
               />
             </div>
           ))}
@@ -395,11 +399,12 @@ const reviews = [
             className="w-full p-4 border border-[#E7E7E7] rounded-[12px] bg-transparent text-white placeholder-white text-[18px] md:text-[20px] font-[Inter]"
           />
 
-          <textarea
+          <input
+          type="text"
             placeholder="Ihre Nachricht"
             rows="4"
             className="w-full p-4 border border-[#E7E7E7] rounded-[12px] bg-transparent text-white placeholder-white text-[18px] md:text-[20px] font-[Inter]"
-          ></textarea>
+          ></input>
 
           {/* Button */}
           <button
