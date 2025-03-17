@@ -469,10 +469,7 @@ const reviews = [
    </div>
    </div>
     <div className="flex flex-row">
-    <button 
-        onClick={scrollToContactForm}
-
-    className="btnfix lg:ml-[270px] lg:mt-[80px] custom-1060 group relative font-matt flex items-center justify-center px-1 py-1 bg-transparent border-2 border-[#0009FF] text-[#0009FF] rounded-[10px] font-medium text-[20px] transition duration-100 ease-in-out overflow-hidden">
+    <button onClick={scrollToContactForm} className="btnfix lg:ml-[270px] lg:mt-[80px] custom-1060 group relative font-matt flex items-center justify-center px-1 py-1 bg-transparent border-2 border-[#0009FF] text-[#0009FF] rounded-[10px] font-medium text-[20px] transition duration-100 ease-in-out overflow-hidden">
             {/* SVG Background */}
             <div className="w-14 h-14 bg-[#0009FF] rounded-[10px] flex items-center justify-center text-white transform scale-x-100 origin-left transition-all duration-500 ease-in-out group-hover:scale-x-100 relative z-20">
             <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
