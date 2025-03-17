@@ -130,7 +130,7 @@ const reviews = [
   
 
   return (
-    <div className="p-4">
+    <div className="px-4">
       <main className="bg-white flex flex-col justify-center items-center">
         <section className="lg:mt-[20px] mt-[60px] px-4 lg:px-4 max-w-[1310px] mx-auto gap-6 lg:gap-[90px] flex flex-col lg:flex-row items-center">
           {/* Left Content */}
