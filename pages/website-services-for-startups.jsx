@@ -512,7 +512,7 @@ const reviews = [
             </div>
             {/* Button Text */}
             <span className="mx-2  text-left font-matt text-[16px] leading-[17px] font-[300] lg:text-left relative z-20 group-hover:text-white">
-              <Link href="#">Kostenloses 15-Minuten-Erstgespräch</Link>
+              Kostenloses 15-Minuten-Erstgespräch
             </span>
 
             {/* Hover Background Effect */}
@@ -717,7 +717,7 @@ const reviews = [
             </div>
             {/* Button Text */}
             <span className="mx-4 font-matt text-[20px] leading-[20px] font-[300] relative z-20 group-hover:text-white">
-              <Link href="#">Jetzt kostenloses Angebot einholen</Link>
+              Jetzt kostenloses Angebot einholen
             </span>
 
             {/* Hover Background Effect */}
