@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { useState } from "react";
+import ContactFormWebsiteLanding from "../components/ContactFormWebsiteLanding" ;
 
 import PartnersSlider from "../components/SliderLandingPage/SliderLandingPage";
 const reviews = [
@@ -403,6 +404,11 @@ Wir senden Ihnen das PDF per E-Mail,<br></br> damit Sie die vollständige Liste 
 )}
 
     </section>
+    <section className="mb-[160px] lg:mb-[300px] mx-auto max-w-[1280px] lg:px-[20px]">  
+      <h2 className="text-black text-center font-[700] text-[40px] leading-[48px] mb-[20px] lg:mb-[40px] font-matt">
+    Ihr kostenloser Guide für eine fehlerfreie Salesforce-Einrichtung – jetzt herunterladen!
+  </h2> <ContactFormWebsiteLanding/></section>
+   
 
     <section className="relative flex flex-col max-w-[1280px] justify-between items-center lg:h-[950px] w-full overflow-hidden">
   {/* Background SVG Line */}
