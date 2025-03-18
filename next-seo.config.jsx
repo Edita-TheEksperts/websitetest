@@ -37,6 +37,12 @@ const SEO = [
       posts: "https://www.linkedin.com/company/the-eksperts/posts/?feedView=all",
     },
     canonical: "https://www.the-eksperts.com/",
+    additionalMetaTags: [
+      {
+        name: "robots",
+        content: "index, follow",
+      },
+    ],
   },
   {
     url: "https://www.the-eksperts.com/services/salesforce",
@@ -45,6 +51,12 @@ const SEO = [
       "Experten für Salesforce-Beratung, Implementierung, Optimierung & Support. Jetzt Gratis Salesforce Health-Check sichern!",
     socialMedia: "/images/the eksperts vertical blue.png",
     canonical: "https://www.the-eksperts.com/services/salesforce",
+    additionalMetaTags: [
+      {
+        name: "robots",
+        content: "index, follow",
+      },
+    ],
   },
   {
     url: "https://www.the-eksperts.com/services/website",
@@ -53,6 +65,12 @@ const SEO = [
       "Moderne, skalierbare & SEO-optimierte Websites für Startups und KMUs. Gratis Website-Checkliste sichern!",
     socialMedia: "/images/the eksperts vertical blue.png",
     canonical: "https://www.the-eksperts.com/services/website",
+    additionalMetaTags: [
+      {
+        name: "robots",
+        content: "index, follow",
+      },
+    ],
   },
   {
     url: "https://www.the-eksperts.com/services/customdevelopment",
@@ -61,6 +79,12 @@ const SEO = [
       "Maßgeschneiderte digitale Lösungen, App-Entwicklung & individuelle Software. So flexibel und innovativ wie Ihr Unternehmen.",
     socialMedia: "/images/the eksperts vertical blue.png",
     canonical: "https://www.the-eksperts.com/services/customdevelopment",
+    additionalMetaTags: [
+      {
+        name: "robots",
+        content: "index, follow",
+      },
+    ],
   },
   {
     url: "https://www.the-eksperts.com/services/graphicdesign",
@@ -69,6 +93,12 @@ const SEO = [
       "Visuelle Kommunikation, die Eindruck macht: Professionelles Branding, Logos, Social Media & Print Design. Der erste Eindruck zählt – wir machen ihn unvergesslich.",
     socialMedia: "/images/the eksperts vertical blue.png",
     canonical: "https://www.the-eksperts.com/services/graphicdesign",
+    additionalMetaTags: [
+      {
+        name: "robots",
+        content: "index, follow",
+      },
+    ],
   },
   {
     url: "https://www.the-eksperts.com/services/bookyourekspert",
@@ -77,6 +107,12 @@ const SEO = [
       "Direkter Zugang zu Experten für IT, Design & Beratung. Expertise auf Abruf – Jetzt buchen & bis zu 50% der Kosten sparen!",
     socialMedia: "/images/the eksperts vertical blue.png",
     canonical: "https://www.the-eksperts.com/services/bookyourekspert",
+    additionalMetaTags: [
+      {
+        name: "robots",
+        content: "index, follow",
+      },
+    ],
   },
   {
     url: "https://www.the-eksperts.com/agentur",
@@ -85,6 +121,12 @@ const SEO = [
       "Erfahre mehr über the eksperts – Wir lieben, was wir tun. Lassen Sie sich überzeugen!",
     socialMedia: "/images/the eksperts vertical blue.png",
     canonical: "https://www.the-eksperts.com/agentur",
+    additionalMetaTags: [
+      {
+        name: "robots",
+        content: "index, follow",
+      },
+    ],
   },
   {
     url: "https://www.the-eksperts.com/projekte",
@@ -93,6 +135,12 @@ const SEO = [
       "Erfolgsgeschichten unserer Kunden – von Webentwicklung über Salesforce bis hin zu individuellen Softwarelösungen. Realisierte & laufende Projekte im Überblick.",
     socialMedia: "/images/the eksperts vertical blue.png",
     canonical: "https://www.the-eksperts.com/projekte",
+    additionalMetaTags: [
+      {
+        name: "robots",
+        content: "index, follow",
+      },
+    ],
   },
   {
     url: "https://www.the-eksperts.com/kontakt",
@@ -101,6 +149,12 @@ const SEO = [
       "Lassen Sie uns gemeinsam über Ihr Projekt sprechen. Hier finden Sie auch die FAQ-Sektion. Wir freuen uns auf Ihre Nachricht!",
     socialMedia: "/images/the eksperts vertical blue.png",
     canonical: "https://www.the-eksperts.com/kontakt",
+    additionalMetaTags: [
+      {
+        name: "robots",
+        content: "index, follow",
+      },
+    ],
   },
 ];
 

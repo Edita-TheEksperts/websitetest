@@ -48,6 +48,8 @@ const Home = () => {
         <link rel="preload" href="/fonts/matt.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
 
         <meta charSet="UTF-8" />
+        <meta name="robots" content="index, follow" />
+
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="the eksperts bietet professionelle Lösungen in Salesforce, Webentwicklung, Graphic Design und Individuelle Entwicklung. Expertenberatung für digitale Transformation." />
         <meta name="keywords" content="consulting, strategy, experts, business solutions, website, software, Salesforce, digitale Lösungen" />
