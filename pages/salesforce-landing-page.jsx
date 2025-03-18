@@ -164,23 +164,20 @@ const reviews = [
   <PartnersSlider/>
 </section>
 <section className="flex flex-col items-center text-center mb-[160px] lg:mb-[300px] mx-auto max-w-[1280px]">
-      {/* Top Button */}
-      <p className="p-2 text-[16px] font-[300]  text-white bg-[#0009FF] rounded-[12px]">
-        Was erwartet Sie?
-      </p>
 
       {/* Heading */}
       <h2 className="mt-4 text-[40px] leading-[48px] font-[700] text-black">
-        Eine Website für Startups & KMU – erstellt von the eksperts
+      Ihr Leitfaden für eine leistungsstarke, sichere<br></br>
+      und skalierbare Salesforce-ORG
       </h2>
 
       {/* Subheading */}
-      <p className="mt-4 text-black text-[22px] leading-[33px] font-[300]">
-        Ihre Website ist mehr als nur eine digitale Präsenz – sie ist Ihr erster Eindruck, 
-        Ihr Verkaufsmotor und Ihre Plattform für Wachstum. Wir spezialisieren uns auf schnelle, 
-        funktionale und zukunftssichere Websites, damit Sie sich voll und ganz auf Ihr Unternehmen konzentrieren können.
+      <p className="mt-4 text-black text-[22px] leading-[33px] font-[300] lg:block hidden">
+      Viele Salesforce-Umgebungen leiden unter unsauberer Datenverwaltung, ineffizienten Workflows,<br></br> Sicherheitslücken und technischer Altlast. Mit unserer Checkliste & Optimierungsanleitung können Sie Ihr System<br></br> schnell bewerten und gezielt verbessern – für eine schnellere, effizientere und sicherere Salesforce-Nutzung.
       </p>
-
+      <p className="mt-4 text-black text-[22px] leading-[33px] font-[300] lg:hidden block">
+      Viele Salesforce-Umgebungen leiden unter unsauberer Datenverwaltung, ineffizienten Workflows, Sicherheitslücken und technischer Altlast. Mit unserer Checkliste & Optimierungsanleitung können Sie Ihr System schnell bewerten und gezielt verbessern – für eine schnellere, effizientere und sicherere Salesforce-Nutzung.
+      </p>
       {/* Features Grid */}
       <div className="grid grid-cols-1 gap-2 mt-8 lg:mt-[60px] md:grid-cols-2 lg:grid-cols-5">
         {[
