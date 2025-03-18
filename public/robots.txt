@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.the-eksperts.com
+
+# Sitemaps
+Sitemap: https://www.the-eksperts.com/sitemap.xml
