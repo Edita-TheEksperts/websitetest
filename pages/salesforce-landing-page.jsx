@@ -64,7 +64,7 @@ const reviews = [
     "SEO Boost",
     "Security Check",
   ];
-  const LandingPage = () => {
+  const SalesforceLandingPage = () => {
     const [formData, setFormData] = useState({
         vorname: '',
         nachname: '',
@@ -135,34 +135,20 @@ const reviews = [
         <section className="lg:mt-[20px] mt-[60px] lg:px-4 max-w-[1310px] mx-auto gap-6 lg:gap-[90px] flex flex-col lg:flex-row items-center">
           {/* Left Content */}
           <div className="lg:w-1/2 text-center lg:text-left ">
-          <div className="flex flex-row items-center">
-      {["/images/hero1.png", "/images/hero2.png", "/images/hero3.png", "/images/hero4.png"].map((src, index) => (
-        <img
-          key={index}
-          src={src}
-          alt={`Image ${index + 1}`}
-          className=" w-[30px] h-[30px] ml-[-5px] lg:ml-[-10px]"
-          style={{ transform: `rotate(${index % 2 === 0 ? "-8.861deg" : "10.479deg"})` }}
-        />
-      ))}
-      <p className="text-[#BFBFBF] font-matt text-[12px] lg:text-[16px] font-normal lg:leading-[28px] ml-2">
-        Bereits von über 23 Startups & KMU's geschätzt
-      </p>
-    </div>
-            <h1 className="text-black font-[400] text-[40px] leading-[48px] mt-[16px] lg:block hidden ">
-            Websites, die Ihr<br></br> Unternehmen wachsen<br></br> lassen – zum Festpreis inkl.<br></br> Logo-Design!
+            <h1 className="text-black font-[400] text-[40px] lg:text-[69px] lg:leading-[72px]  leading-[48px] [letter-spacing:-1.74px] mt-[16px] lg:block hidden ">
+            Wie viel Potenzial<br></br> bleibt in Ihrer<br></br> Salesforce-Lösung<br></br>ungenutzt?
             </h1>
             <h1 className="text-black font-[400] text-[40px] leading-[48px] mt-[16px] lg:hidden block">
-            Websites, die Ihr<br></br> Unternehmen wachsen lassen – zum Festpreis inkl. Logo-Design!
+            Wie viel Potenzial<br></br> bleibt in Ihrer Salesforce-Lösung ungenutzt?
             </h1>
-            <p className="text-[#6D6D6D] text-[16px] leading-[25px] lg:text-[20px] lg:leading-[28px] mt-[16px] font-[400] lg:block hidden ">
-            Kreatives, nutzerzentriertes Webdesign mit lokalem<br></br> Know-How – wir verhelfen Ihrem Unternehmen zu<br></br> neuem Wachstum.
+            <p className="text-[#171717] text-[16px] leading-[25px] lg:text-[16px] lg:leading-[26px] mt-[16px] font-[300] lg:block hidden ">
+            Entdecken Sie mit unserem Experten-Health-Check &<br></br> Optimierungsleitfaden, wo Ihr Salesforce-Setup verbessert werden kann. Identifizieren Sie Ineffizienzen, Sicherheitslücken und Leistungsprobleme, damit Ihr CRM effizient arbeitet – statt Sie auszubremsen.
             </p>
-            <p className="text-[#6D6D6D] text-[16px] leading-[25px] lg:text-[20px] lg:leading-[28px] mt-[16px] font-[400] lg:hidden block">
-            Kreatives, nutzerzentriertes Webdesign mit lokalem Know-How – wir verhelfen Ihrem Unternehmen zu neuem Wachstum.
+            <p className="text-[#171717] text-[16px] leading-[25px] lg:text-[20px] lg:leading-[28px] mt-[16px] font-[300] lg:hidden block">
+            Entdecken Sie mit unserem Experten-Health-Check & Optimierungsleitfaden, wo Ihr Salesforce-Setup verbessert werden kann. Identifizieren Sie Ineffizienzen, Sicherheitslücken und Leistungsprobleme, damit Ihr CRM effizient arbeitet – statt Sie auszubremsen.
             </p>
-            <button onClick={scrollToContactForm} className="mt-[16px] flex px-[40px] py-[14px] justify-center items-center gap-[8px] rounded-[12px] bg-[#152DFF] text-white font-matt text-[20px] font-medium leading-[28px]">
-        Buchen Sie ein kostenloses Gespräch mit uns ➔
+            <button onClick={scrollToContactForm} className="mt-[16px] flex px-[8px] py-[14px] justify-center items-center gap-[8px] rounded-[12px] bg-[#152DFF] text-white font-matt text-[14px]  lg:text-[20px] font-medium lg:leading-[28px]">
+            Jetzt kostenlose Salesforce Health-Checkliste herunterladen
       </button>
         
           </div>
@@ -170,7 +156,7 @@ const reviews = [
 
   {/* Right Image */}
   <div className="flex justify-center mt-8 lg:mt-2">
-    <img src="/images/the-eksperts-Rockets2.png" alt="Rocket Boost Website" className="w-full max-w-[850px]" />
+    <img src="/images/the-eksperts-salesforce-hero-section.png" alt="Rocket Boost Website" className="w-full max-w-[850px]" />
   </div>
 </section>
 
@@ -694,4 +680,4 @@ const reviews = [
   );
 };
 
-export default LandingPage;
+export default SalesforceLandingPage;
