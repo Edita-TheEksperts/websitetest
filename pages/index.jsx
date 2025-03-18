@@ -46,7 +46,7 @@ const Home = () => {
 
         <link rel="preload" href="/fonts/Matt-Regular.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
         <link rel="preload" href="/fonts/matt.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
-
+        <meta name="google-site-verification" content="yaXJbgm6auq99fKThK6FJ_0mVcXkPSKOV_x__m1K-kY" />
         <meta charSet="UTF-8" />
         <meta name="robots" content="index, follow" />
 
