@@ -1,12 +1,14 @@
 import axios from 'axios';
 import qs from 'querystring';
+import fs from 'fs';
+import path from 'path';
 
-// Replace with your Azure AD credentials
+// Azure AD Credentials
 const tenantId = '5e12d93e-3010-46f9-a55f-17db43b3fcc9';
 const clientId = '6b3c8303-3397-46d6-bee8-49192f0ad4f0';
 const clientSecret = 'kq58Q~2_COSQYEL8ytpD83woX80WmYeLd-JGfcdI';
 
-// Function to fetch access token from Microsoft Identity platform
+// Function to fetch access token
 const getAccessToken = async () => {
     try {
         const tokenResponse = await axios.post(
@@ -25,7 +27,46 @@ const getAccessToken = async () => {
     }
 };
 
-// Handler for the incoming POST request
+// Function to send an email with PDF attachment
+const sendEmailWithPDF = async (recipientEmail, vorname) => {
+    try {
+        const accessToken = await getAccessToken();
+        
+        // Load the PDF file (Ensure the file exists in the public folder or appropriate path)
+        const pdfPath = path.resolve('./public/response.pdf');
+        const pdfContent = fs.readFileSync(pdfPath).toString('base64'); // Convert to base64
+
+        const emailResponse = await axios.post(
+            'https://graph.microsoft.com/v1.0/users/info@the-eksperts.com/sendMail',
+            {
+                message: {
+                    subject: `Thank You, ${vorname}! Here is Your PDF`,
+                    body: {
+                        contentType: 'Text',
+                        content: `Dear ${vorname},\n\nThank you for your submission. Please find the attached PDF.\n\nBest Regards,\nthe eksperts Team`,
+                    },
+                    toRecipients: [{ emailAddress: { address: recipientEmail } }],
+                    attachments: [
+                        {
+                            '@odata.type': '#microsoft.graph.fileAttachment',
+                            name: 'response.pdf',
+                            contentType: 'application/pdf',
+                            contentBytes: pdfContent, // Attach PDF as base64
+                        },
+                    ],
+                },
+                saveToSentItems: 'true',
+            },
+            { headers: { Authorization: `Bearer ${accessToken}`, 'Content-Type': 'application/json' } }
+        );
+
+        console.log('Email with PDF sent successfully');
+    } catch (error) {
+        console.error('Error sending email with PDF:', error.response?.data || error.message);
+    }
+};
+
+// API Route Handler
 export default async function handler(req, res) {
     if (req.method === 'POST') {
         const { vorname, nachname, email, unternehmen, position } = req.body;
@@ -35,8 +76,9 @@ export default async function handler(req, res) {
         }
 
         try {
+            // Step 1: Notify admin via email
             const accessToken = await getAccessToken();
-            const emailResponse = await axios.post(
+            await axios.post(
                 'https://graph.microsoft.com/v1.0/users/info@the-eksperts.com/sendMail',
                 {
                     message: {
@@ -52,10 +94,13 @@ export default async function handler(req, res) {
                 { headers: { Authorization: `Bearer ${accessToken}`, 'Content-Type': 'application/json' } }
             );
 
-            res.status(200).json({ message: 'Email sent successfully' });
+            // Step 2: Send automatic email with PDF attachment
+            await sendEmailWithPDF(email, vorname);
+
+            res.status(200).json({ message: 'Emails sent successfully' });
         } catch (error) {
-            console.error('Error sending email:', error.response?.data || error.message);
-            res.status(500).json({ message: 'Failed to send email' });
+            console.error('Error handling request:', error.response?.data || error.message);
+            res.status(500).json({ message: 'Failed to process request' });
         }
     } else {
         res.status(405).json({ message: 'Method Not Allowed' });
