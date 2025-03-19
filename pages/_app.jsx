@@ -41,7 +41,7 @@ function MyApp({ Component, pageProps }) {
     };
   }, [router]);
 
-  const landingPages = ["/web-analysis", "/website-services-for-startups"];
+  const landingPages = ["/web-analysis", "/website-services-for-startups","/salesforce-landing-page"];
   const isLandingPage = landingPages.includes(router.pathname);
   
   return (

@@ -655,3 +655,16 @@ width:300px !important;  }
 margin-top: -70px !important; 
 margin-left: 530px !important;}
 }
+
+@media (width: 1024px) {
+  .widthclass {
+width: 550px !important; 
+}
+}
+
+@media (width: 1024px) {
+  .widthclass2 {
+width: 400px !important; 
+margin-left: 10px;
+}
+}
