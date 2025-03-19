@@ -123,10 +123,14 @@ const reviews = [
       };
 
   const contactRef = useRef(null);
-
-  const scrollToContactForm = () => {
-    contactRef.current?.scrollIntoView({ behavior: "smooth" });
+  const scrollToContactForm12 = () => {
+    if (contactRef.current) {
+      const yOffset = -65; // Adjust for sticky headers
+      const y = contactRef.current.getBoundingClientRect().top + window.scrollY + yOffset;
+      window.scrollTo({ top: y, behavior: "smooth" });
+    }
   };
+  
   
 
   return (
@@ -147,7 +151,7 @@ const reviews = [
             <p className="text-[#171717] text-[16px] leading-[25px] lg:text-[20px] lg:leading-[28px] mt-[16px] font-[300] lg:hidden block">
             Entdecken Sie mit unserem Experten-Health-Check & Optimierungsleitfaden, wo Ihr Salesforce-Setup verbessert werden kann. Identifizieren Sie Ineffizienzen, Sicherheitslücken und Leistungsprobleme, damit Ihr CRM effizient arbeitet – statt Sie auszubremsen.
             </p>
-            <button onClick={scrollToContactForm} className="mt-[16px] flex px-[8px] py-[14px] justify-center items-center gap-[8px] rounded-[12px] bg-[#152DFF] text-white font-matt text-[14px]  lg:text-[20px] font-medium lg:leading-[28px]">
+            <button onClick={scrollToContactForm12} className="mt-[16px] flex px-[8px] py-[14px] justify-center items-center gap-[8px] rounded-[12px] bg-[#152DFF] text-white font-matt text-[14px]  lg:text-[20px] font-medium lg:leading-[28px]">
             Jetzt kostenlose Salesforce Health-Checkliste herunterladen
       </button>
         
@@ -176,7 +180,7 @@ const reviews = [
 
       {/* Subheading */}
       <p className="mt-4 text-black text-[22px] leading-[33px] font-[300] lg:block hidden">
-      Viele Salesforce-Umgebungen leiden unter unsauberer Datenverwaltung, ineffizienten Workflows,<br></br> Sicherheitslücken und technischer Altlast. Mit unserer Checkliste & Optimierungsanleitung können Sie Ihr System<br></br> schnell bewerten und gezielt verbessern – für eine schnellere, effizientere und sicherere Salesforce-Nutzung.
+      Viele Salesforce-Umgebungen leiden unter unsauberer Datenverwaltung, ineffizienten Workflows,<br></br> Sicherheitslücken und technischer Altlast. Mit unserer Checkliste & Optimierungsanleitung können Sie Ihr System<br></br> schnell bewerten und gezielt verbessern – für eine schnelle, effiziente und sichere Salesforce-Nutzung.
       </p>
       <p className="mt-4 text-black text-[16px] leading-[22px] font-[300] lg:hidden block">
       Viele Salesforce-Umgebungen leiden unter unsauberer Datenverwaltung, ineffizienten Workflows, Sicherheitslücken und technischer Altlast. Mit unserer Checkliste & Optimierungsanleitung können Sie Ihr System schnell bewerten und gezielt verbessern – für eine schnellere, effizientere und sicherere Salesforce-Nutzung.
@@ -219,7 +223,7 @@ const reviews = [
       </div>
 
       {/* CTA Button */}
-      <button onClick={scrollToContactForm}  className="mt-8 lg:mt-[60px] lg:px-[30px] px-[14px] py-[14px] text-[20px] leading-[28px] font-[500] text-white bg-[#152DFF] rounded-[12px]">
+      <button onClick={scrollToContactForm12}  className="mt-8 lg:mt-[60px] lg:px-[30px] px-[14px] py-[14px] text-[20px] leading-[28px] font-[500] text-white bg-[#152DFF] rounded-[12px]">
       Jetzt kostenlose Salesforce Health-Checkliste herunterladen
       </button>
     </section>
@@ -227,7 +231,7 @@ const reviews = [
     <h2 ref={contactRef} id="contact-section" className="text-[40px] mb-[40px] leading-[48px] font-[700] text-center lg:block hidden">
     Ihr kostenloser Guide für eine fehlerfreie Salesforce-<br></br>Einrichtung – jetzt herunterladen!
         </h2>
-        <h2 ref={contactRef} id="contact-section" className="text-[38px] mb-[40px] leading-[48px] font-[700] text-center lg:hidden block">
+        <h2 className="text-[38px] mb-[40px] leading-[48px] font-[700] text-center lg:hidden block">
     Ihr kostenloser Guide für eine fehlerfreie Salesforce-Einrichtung – jetzt herunterladen!
         </h2>
     <section className="custom-1026 flex flex-col items-center lg:gap-[40px] justify-center  lg:flex-row-reverse mb-[160px] lg:mb-[300px] mx-auto max-w-[1280px] lg:px-[20px]">
@@ -255,9 +259,9 @@ const reviews = [
         <form className="space-y-[15px]" onSubmit={handleSubmit}>
           {[
             { label: "Vorname", name: "vorname", placeholder: "Ihre Vorname", required: true },
-            { label: "Nachname", name: "nachname", placeholder: "Ihre Name", required: true }, 
+            { label: "Nachname", name: "nachname", placeholder: "Ihre Nachame", required: true }, 
             { label: "Unternehmen", name: "unternehmen", placeholder: "Ihre Unternehmen", required: true },
-            { label: "Email", name: "email", placeholder: "Email", required: true },
+            { label: "Email", name: "email", placeholder: "Ihre Email", required: true },
             { label: "Position", name: "position", placeholder: "Position", required: true }
           ].map((field, index) => (
             <div key={index} className="flex flex-col">
@@ -300,7 +304,7 @@ const reviews = [
         <img
           src="/images/the-eksperts-landing-page.png" // Replace with your actual image path
           alt="Website Issues"
-          className="w-full lg:w-[695px] lg:h-[508px] rounded-lg"
+          className="w-full lg:w-[695px] lg:h-[490px] rounded-lg"
         />
       </div>
 
@@ -323,7 +327,7 @@ const reviews = [
             {
               icon: "/images/svg14.svg",
               title: "Automatisierungs-Überlastung",
-              description: "Über 50 % der Nutzer surfen mobil – ohne Optimierung verlieren Sie Kunden."
+              description: "Zu viele Flows und Trigger führen zu Ineffizienzen."
             },
             {
               icon: "/images/svg15.svg",
@@ -339,7 +343,7 @@ const reviews = [
             <div key={index} className="flex items-center p-4 lg:px-[20px] lg:py-[18px]  bg-[#F2F2F2] rounded-[12px]">
               <img src={issue.icon} alt={issue.title} className="w-[60px] h-[60px] mr-3 lg:mr-[24px]" />
               <div>
-                <h3 className="text-[24px] leading-[37px] font-[700] font-matt">{issue.title}</h3>
+                <h3 className="text-[24px] leading-[37px] font-[900] font-matt">{issue.title}</h3>
                 <p className="text-black text-[16px] leading-[22px] font-[300]">{issue.description}</p>
               </div>
             </div>
@@ -376,7 +380,7 @@ const reviews = [
     <div className="bg-[#F1F1F1] shadow-lg text-left  rounded-[16px] px-[24px] custom-1020 lg:w-[400px] w-80 py-[14px] lg:ml-[690px] lg:mt-[-170px] mb-6 lg:mb-0">
     <h3 className="text-[32px] leading-[48px] font-[700] mb-2">Schritt 2:</h3>
       <div className="flex flex-col space-y-2">
-      <p className="text-[20px] leading-[28px]  font-[300]">IIdentifikation von Sicherheits - und Perfomance-Engpässen</p>
+      <p className="text-[20px] leading-[28px]  font-[300]">Identifikation von Sicherheits - und Perfomance-Engpässen</p>
    </div>
     </div>
 
@@ -396,7 +400,7 @@ const reviews = [
    </div>
    </div>
     <div className="flex flex-row">
-    <button onClick={scrollToContactForm} className="btnfix lg:ml-[175px] lg:mt-[10px] custom-1060 group relative font-matt flex items-center justify-center px-1 py-1 bg-transparent border-2 border-[#0009FF] text-[#0009FF] rounded-[10px] font-medium text-[20px] transition duration-100 ease-in-out overflow-hidden">
+    <button onClick={scrollToContactForm12} className="btnfix lg:ml-[175px] lg:mt-[10px] custom-1060 group relative font-matt flex items-center justify-center px-1 py-1 bg-transparent border-2 border-[#0009FF] text-[#0009FF] rounded-[10px] font-medium text-[20px] transition duration-100 ease-in-out overflow-hidden">
             {/* SVG Background */}
             <div className="w-14 h-14 bg-[#0009FF] rounded-[10px] flex items-center justify-center text-white transform scale-x-100 origin-left transition-all duration-500 ease-in-out group-hover:scale-x-100 relative z-20">
             <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -477,7 +481,7 @@ Testimonials:
 
     <div className="flex flex-col items-center gap-2">
       <h3 className="text-black font-[700] text-[80px] leading-[80px]">99%</h3>
-      <p className="text-[#000] text-[20px] lg:text-[24px] tracking-tight lg:leading-[32px] font-[300]"> Erhöhung der Benutzer-Akzeptanz</p>
+      <p className="text-[#000] text-[20px] lg:text-[24px] tracking-tight lg:leading-[32px] font-[300]"> Erhöhung der <br></br>Benutzer-Akzeptanz</p>
     </div>
 
     <div className="flex flex-col items-center gap-2">
@@ -596,7 +600,8 @@ Testimonials:
             {/* Button */}
             <div className="md:mt-[86px] mt-[40px]">
           <button
-        onClick={scrollToContactForm}
+               onClick={scrollToContactForm12}
+
 
           className="group relative font-matt flex items-center justify-center px-1 py-1  bg-transparent border-2 border-[#0009FF] text-[#0009FF] rounded-[10px] font-medium text-[20px] transition duration-100 ease-in-out overflow-hidden">
             {/* SVG Background */}
