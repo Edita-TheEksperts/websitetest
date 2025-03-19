@@ -43,8 +43,14 @@ const sendEmailWithPDF = async (recipientEmail, vorname) => {
                     subject: `Thank You, ${vorname}! Here is Your PDF`,
                     body: {
                         contentType: 'Text',
-                        content: `Dear ${vorname},\n\nThank you for your submission. Please find the attached PDF.\n\nBest Regards,\nthe eksperts Team`,
-                    },
+                        content: `Sehr geehrte/r ${vorname},\n\n
+                        Besten Dank für Ihre Anfrage und Ihr Interesse an unseren Dienstleistungen. 
+                        Im Anhang finden Sie die gewünschte Datei.\n\n
+                        Falls Sie weitere Fragen haben oder zusätzliche Informationen benötigen, stehen wir Ihnen jederzeit gerne zur Verfügung.\n\n
+                        Besuchen Sie auch unsere Website für weitere Informationen: www.the-eksperts.com\n\n
+                        Freundliche Grüsse,\n
+                        the eksperts Team`
+                                            },
                     toRecipients: [{ emailAddress: { address: recipientEmail } }],
                     attachments: [
                         {
