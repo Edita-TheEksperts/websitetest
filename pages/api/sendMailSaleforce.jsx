@@ -40,7 +40,7 @@ const sendEmailWithPDF = async (recipientEmail, vorname) => {
             'https://graph.microsoft.com/v1.0/users/info@the-eksperts.com/sendMail',
             {
                 message: {
-                    subject: `Thank You, ${vorname}! Here is Your PDF`,
+                    subject: `Vielen Dank, ${vorname}! Hier ist Ihr PDF`,
                     body: {
                         contentType: 'Text',
                         content: `Sehr geehrte/r ${vorname},\n\n
