@@ -44,9 +44,9 @@ const sendEmailWithPDF = async (recipientEmail, vorname) => {
                     body: {
                         contentType: 'Text',
                         content: 
-                           `Guten Tag, ${vorname},\n\n
-                            Anbei finden Sie unseren Guide.
-                            Bei Fragen können Sie uns jederzeit auf dieser E-Mail kontaktieren.
+                           `Guten Tag, ${vorname},\n
+                            Anbei finden Sie unseren Guide.\n
+                            Bei Fragen können Sie uns jederzeit auf dieser E-Mail kontaktieren.\n
                             Weitere Informationen finden Sie auf unserer Website www.the-eksperts.com.\n
                             Freundliche Grüsse
                             the eksperts Team`
