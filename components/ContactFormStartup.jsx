@@ -55,14 +55,22 @@ const ContactFormStartup = () => {
       style={{ backgroundImage: "url('/images/the-eksperts-contact-bg.png')" }}
     >            
       <div className="custom-1025 w-full max-w-[551px] h-auto flex flex-col items-start gap-2 bg-transparent ml-0 md:ml-[170px] lg:ml-[400px] p-6 md:p-8">
-        <h2 className="text-white font-matt mb-2 text-[32px] md:text-[40px] lg:text-[48px] font-extrabold leading-[40px] md:leading-[50px] lg:leading-[60px] text-center md:text-left">
-          Hinterlasse Sie uns eine Nachricht
-        </h2>       
+      {!isSubmitted && (
+          <h2 className="text-white font-matt mb-2 text-[32px] md:text-[40px] lg:text-[48px] font-extrabold leading-[40px] md:leading-[50px] lg:leading-[60px] text-center md:text-left">
+            Hinterlasse Sie uns eine Nachricht
+          </h2>
+        )}      
 
         {isSubmitted ? (
-          <p className="text-white font-matt text-[32px] md:text-[40px] lg:text-[48px] font-extrabold leading-[40px] md:leading-[50px] lg:leading-[60px] text-center md:text-left">
-            Vielen Dank! Ihre Nachricht wurde gesendet.
-          </p>
+         <div className="text-center lg:text-left">
+         <h1 className="text-white font-[700] text-[48px] font-matt leading-[60px]">
+Vielen Dank.
+</h1>
+<p className="text-white font-[700] text-[48px] font-matt leading-[60px] mt-10 lg:mt-[45px]">
+Wir melden uns so<br></br> schnell wie möglich.
+</p>
+
+        </div>
         ) : (
           <form className=" w-full flex flex-col gap-3" onSubmit={handleSubmit}>
             <div className="flex flex-col md:flex-row gap-3">

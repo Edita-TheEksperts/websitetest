@@ -162,7 +162,7 @@ const reviews = [
             Kreatives, nutzerzentriertes Webdesign mit lokalem Know-How – wir verhelfen Ihrem Unternehmen zu neuem Wachstum.
             </p>
             <button onClick={scrollToContactForm} className="mt-[16px] flex px-[40px] py-[14px] justify-center items-center gap-[8px] rounded-[12px] bg-[#152DFF] text-white font-matt text-[20px] font-medium leading-[28px]">
-        Buchen Sie ein kostenloses Gespräch mit uns ➔
+            Kontaktieren sie Uns ➔
       </button>
         
           </div>
@@ -177,6 +177,8 @@ const reviews = [
 <section className="mt-[20px] mb-[160px] lg:mb-[300px]">
   <PartnersSlider/>
 </section>
+<ContactFormStartup/>
+
 <section className="flex flex-col items-center text-center mb-[160px] lg:mb-[300px] mx-auto max-w-[1280px]">
       {/* Top Button */}
       <p className="p-2 text-[16px] font-[300]  text-white bg-[#0009FF] rounded-[12px]">
@@ -367,7 +369,6 @@ const reviews = [
         </div>
       </div>
     </section>
-      <ContactFormStartup/>
 
     <section className="relative flex flex-col max-w-[1280px] justify-between items-center lg:h-[950px] w-full overflow-hidden">
   {/* Background SVG Line */}
