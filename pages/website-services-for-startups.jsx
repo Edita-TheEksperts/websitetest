@@ -263,15 +263,28 @@ const reviews = [
 
       {/* Right Side - Form */}
       <div className="w-full lg:w-1/2 lg:min-w-[522px]">
-       
+      {isSubmitted ? (
+              <div className="text-center lg:text-left mt-6">
+              <h1 className="text-[#6D6E70] font-[300]  text-[64px] font-matt leading-[72px]">
+     Vielen Dank.
+   </h1>
+   <p className="text-[#6D6E70] font-[300]  text-[32px] font-matt leading-[40px] mt-6 lg:mt-[35px] lg:block hidden">
+   Wir haben den Guide an Ihre Email Adresse gesendet.
+   </p>
+   <p className="text-[#6D6E70] font-[300] text-[32px] font-matt leading-[40px] mt-6 lg:mt-[35px] lg:hidden block">
+   Wir haben den Guide an Ihre Email Adresse gesendet.
+   </p>
+   
+             </div>
+            ) : (
 
         <form className="space-y-[15px]" onSubmit={handleSubmit}>
           {[
-            { label: "Vorname", name: "vorname", placeholder: "Ihre Vorname", required: true },
-            { label: "Nachname", name: "nachname", placeholder: "Ihre Name", required: true }, 
-            { label: "Unternehmen", name: "unternehmen", placeholder: "Ihre Unternehmen", required: true },
-            { label: "Email", name: "email", placeholder: "Email", required: true },
-            { label: "Position", name: "position", placeholder: "Position", required: true }
+            { label: "Vorname", name: "vorname", placeholder: "Ihr Vorname", required: true },
+            { label: "Nachname", name: "nachname", placeholder: "Ihr Name", required: true }, 
+            { label: "Unternehmen", name: "unternehmen", placeholder: "Ihr Unternehmen", required: true },
+            { label: "Email", name: "email", placeholder: "Ihre Email", required: true },
+            { label: "Position", name: "position", placeholder: "Ihr Position", required: true }
           ].map((field, index) => (
             <div key={index} className="flex flex-col">
               <label className="text-[20px] font-[500] text-black leading-normal">
@@ -283,9 +296,12 @@ const reviews = [
            value={formData[field.name] || ""}
            onChange={handleInputChange}
            placeholder={field.placeholder}
-           required={field.required}
                 className="mt-1 w-full border text-[20px] font-[400] placeholder:text-black text-black rounded-[12px] p-[16px] focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
+                  {/* Show error message */}
+                  {errors[field.name] && (
+                  <span className="text-red-500 text-[14px]">{errors[field.name]}</span>
+                )}
             </div>
           ))}
 
@@ -297,6 +313,8 @@ const reviews = [
             Jetzt kostenlos herunterladen
           </button>
         </form>
+                    )}
+
       </div>
     </section>
 
@@ -618,10 +636,10 @@ const reviews = [
             
             {/* Body Text */}
             <p className="lg:block hidden font-matt text-[16px] lg:text-[20px] font-light leading-[28px] lg:leading-[33px]">
-            Lassen Sie sich nicht von einer langsamen, veralteten oder generischen Website ausbremsen. Wir erstellen<br></br> eine moderne, maßgeschneiderte Website, die Ihr Unternehmen ins Rampenlicht rückt, Kunden gewinnt und<br></br> problemlos mit Ihrem Wachstum skaliert.
+            Lassen Sie sich nicht von einer langsamen, veralteten oder generischen Website ausbremsen. Wir erstellen<br></br> eine moderne, massgeschneiderte Website, die Ihr Unternehmen ins Rampenlicht rückt, Kunden gewinnt und<br></br> problemlos mit Ihrem Wachstum skaliert.
                 </p>
             <p className="lg:hidden block font-matt text-[16px] lg:text-[20px] font-light leading-[28px] lg:leading-[33px]">
-            Lassen Sie sich nicht von einer langsamen, veralteten oder generischen Website ausbremsen. Wir erstellen eine moderne, maßgeschneiderte Website, die Ihr Unternehmen ins Rampenlicht rückt, Kunden gewinnt und problemlos mit Ihrem Wachstum skaliert.             </p>
+            Lassen Sie sich nicht von einer langsamen, veralteten oder generischen Website ausbremsen. Wir erstellen eine moderne, massgeschneiderte Website, die Ihr Unternehmen ins Rampenlicht rückt, Kunden gewinnt und problemlos mit Ihrem Wachstum skaliert.             </p>
             {/* Button */}
             <div className="md:mt-[86px] mt-[40px]">
           <button
