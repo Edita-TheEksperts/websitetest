@@ -70,7 +70,6 @@ const reviews = [
         nachname: '',
         unternehmen: '',
         email: '',
-        position: '',
       });
       
       const [errors, setErrors] = useState({});
@@ -96,7 +95,6 @@ const reviews = [
         if (!formData.nachname) newErrors.nachname = 'Bitte Auswählen';
         if (!formData.unternehmen) newErrors.unternehmen = 'Bitte Auswählen';
         if (!formData.email) newErrors.email = 'Bitte Auswählen';
-        if (!formData.position) newErrors.position = 'Bitte Auswählen';
       
         if (Object.keys(newErrors).length > 0) {
           setErrors(newErrors);
@@ -113,7 +111,7 @@ const reviews = [
           const data = await response.json();
           if (response.ok) {
             setIsSubmitted(true);
-            setFormData({ vorname: '', nachname: '', unternehmen: '', email: '', position: '' });
+            setFormData({ vorname: '', nachname: '', unternehmen: '', email: '' });
           } else {
             alert('Error: ' + data.message);
           }
@@ -239,7 +237,7 @@ const reviews = [
     
       <div className="w-full lg:w-1/2 mb-[40px] lg:mb-0 flex justify-center lg:max-w-[588px] lg:h-[571px] lg:flex lg:flex-col lg:justify-center lg:items-start flex-shrink-0">
       <video
-  className="w-full custom-1020 max-w-md lg:min-w-[588px] lg:min-h-[618px] rounded-[12px] object-cover "
+  className="w-full custom-1020 max-w-md lg:min-w-[588px] lg:min-h-[498px] rounded-[12px] object-cover "
   autoPlay
   muted
   loop
@@ -258,11 +256,10 @@ const reviews = [
 
         <form className="space-y-[15px]" onSubmit={handleSubmit}>
           {[
-            { label: "Vorname", name: "vorname", placeholder: "Ihre Vorname", required: true },
-            { label: "Nachname", name: "nachname", placeholder: "Ihre Nachame", required: true }, 
-            { label: "Unternehmen", name: "unternehmen", placeholder: "Ihre Unternehmen", required: true },
+            { label: "Vorname", name: "vorname", placeholder: "Ihr Vorname", required: true },
+            { label: "Nachname", name: "nachname", placeholder: "Ihr Nachame", required: true }, 
+            { label: "Unternehmen", name: "unternehmen", placeholder: "Ihr Unternehmen", required: true },
             { label: "Email", name: "email", placeholder: "Ihre Email", required: true },
-            { label: "Position", name: "position", placeholder: "Position", required: true }
           ].map((field, index) => (
             <div key={index} className="flex flex-col">
               <label className="text-[20px] font-[500] text-black leading-normal">
