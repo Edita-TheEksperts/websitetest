@@ -136,7 +136,7 @@ const reviews = [
 
             {/* Conditionally render the message or the form */}
             {isSubmitted ? (
-              <div className="lg:text-left text-center mt-6 text-[32px] font-[200] text-black">
+              <div className="lg:text-left text-center mt-8 text-[32px] leading-[34px] font-[200] text-black">
                 Vielen Dank. <br></br> <br></br>
                 Wir melden uns so schnell wie <br></br>
                 möglich.
