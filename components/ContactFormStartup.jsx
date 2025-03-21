@@ -20,10 +20,10 @@ const ContactFormStartup = () => {
     e.preventDefault();
 
     let newErrors = {};
-    if (!form2Data.fullName) newErrors.fullName = "Bitte geben Sie Ihren Namen ein.";
-    if (!form2Data.email) newErrors.email = "Bitte geben Sie eine gültige E-Mail-Adresse ein.";
-    if (!form2Data.subject) newErrors.subject = "Bitte geben Sie den Betreff ein.";
-    if (!form2Data.message) newErrors.message = "Bitte geben Sie Ihre Nachricht ein.";
+    if (!form2Data.fullName) newErrors.fullName = "Bitte Auswählen";
+    if (!form2Data.email) newErrors.email = "Bitte Auswählen";
+    if (!form2Data.subject) newErrors.subject = "Bitte Auswählen";
+    if (!form2Data.message) newErrors.message = "Bitte Auswählen";
 
     if (Object.keys(newErrors).length > 0) {
       setErrors(newErrors);
@@ -51,63 +51,81 @@ const ContactFormStartup = () => {
 
   return (
     <section
-      className="custom-1024 flex justify-center items-center bg-cover bg-center w-full mb-[160px] lg:mb-[300px] lg:w-[1280px] lg:h-[543.947px] object-cover rounded-[12px] px-4 md:px-8"
+      className="custom-1024 flex justify-center items-center bg-cover bg-center w-full mb-[160px] lg:mb-[300px] lg:w-[1280px] lg:h-[563.947px] object-cover rounded-[12px] px-4 md:px-8"
       style={{ backgroundImage: "url('/images/the-eksperts-contact-bg.png')" }}
     >            
       <div className="custom-1025 w-full max-w-[551px] h-auto flex flex-col items-start gap-2 bg-transparent ml-0 md:ml-[170px] lg:ml-[400px] p-6 md:p-8">
-      {!isSubmitted && (
+        {!isSubmitted && (
           <h2 className="text-white font-matt mb-2 text-[32px] md:text-[40px] lg:text-[48px] font-extrabold leading-[40px] md:leading-[50px] lg:leading-[60px] text-center md:text-left">
             Hinterlasse Sie uns eine Nachricht
           </h2>
-        )}      
+        )}
 
         {isSubmitted ? (
-         <div className="text-center lg:text-left">
-         <h1 className="text-white font-[700] text-[48px] font-matt leading-[60px]">
-Vielen Dank.
-</h1>
-<p className="text-white font-[700] text-[48px] font-matt leading-[60px] mt-10 lg:mt-[45px]">
-Wir melden uns so<br></br> schnell wie möglich.
-</p>
-
-        </div>
+          <div className="text-center lg:text-left">
+            <h1 className="text-white font-[700] text-[48px] font-matt leading-[60px]">
+              Vielen Dank.
+            </h1>
+            <p className="text-white font-[700] text-[48px] font-matt leading-[60px] mt-10 lg:mt-[45px]">
+              Wir melden uns so<br></br> schnell wie möglich.
+            </p>
+          </div>
         ) : (
-          <form className=" w-full flex flex-col gap-3" onSubmit={handleSubmit}>
+          <form className="w-full flex flex-col gap-3" onSubmit={handleSubmit}>
             <div className="flex flex-col md:flex-row gap-3">
+              <div className="w-full md:w-1/2">
+                <input
+                  type="text"
+                  name="fullName"
+                  placeholder="Vorname Nachname"
+                  value={form2Data.fullName}
+                  onChange={handleInputChange}
+                  className="w-full p-4 border border-[#E7E7E7] rounded-[12px] bg-transparent text-white placeholder-white text-[18px] md:text-[20px]"
+                />
+                {errors.fullName && (
+                  <p className="text-red-500 text-sm">{errors.fullName}</p>
+                )}
+              </div>
+              <div className="w-full md:w-1/2">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Email"
+                  value={form2Data.email}
+                  onChange={handleInputChange}
+                  className="w-full p-4 border border-[#E7E7E7] rounded-[12px] bg-transparent text-white placeholder-white text-[18px] md:text-[20px]"
+                />
+                {errors.email && (
+                  <p className="text-red-500 text-sm">{errors.email}</p>
+                )}
+              </div>
+            </div>
+            <div className="w-full">
               <input
                 type="text"
-                name="fullName"
-                placeholder="Vorname Nachname"
-                value={form2Data.fullName}
+                name="subject"
+                placeholder="Betreff"
+                value={form2Data.subject}
                 onChange={handleInputChange}
-                className="w-full md:w-1/2 p-4 border border-[#E7E7E7] rounded-[12px] bg-transparent text-white placeholder-white text-[18px] md:text-[20px]"
+                className="w-full p-4 border border-[#E7E7E7] rounded-[12px] bg-transparent text-white placeholder-white text-[18px] md:text-[20px]"
               />
-              <input
-                type="email"
-                name="email"
-                placeholder="Email"
-                value={form2Data.email}
-                onChange={handleInputChange}
-                className="w-full md:w-1/2 p-4 border border-[#E7E7E7] rounded-[12px] bg-transparent text-white placeholder-white text-[18px] md:text-[20px]"
-              />
+              {errors.subject && (
+                <p className="text-red-500 text-sm">{errors.subject}</p>
+              )}
             </div>
-            <input
-              type="text"
-              name="subject"
-              placeholder="Betreff"
-              value={form2Data.subject}
-              onChange={handleInputChange}
-              className="w-full p-4 border border-[#E7E7E7] rounded-[12px] bg-transparent text-white placeholder-white text-[18px] md:text-[20px]"
-            />
-            {/* Use a textarea for message */}
-            <textarea
-              name="message"
-              placeholder="Ihre Nachricht"
-              value={form2Data.message}
-              onChange={handleInputChange}
-              rows="4"
-              className="w-full lg:h-[120px] p-4 border border-[#E7E7E7] rounded-[12px] bg-transparent text-white placeholder-white text-[18px] md:text-[20px]"
-            />
+            <div className="w-full">
+              <textarea
+                name="message"
+                placeholder="Ihre Nachricht"
+                value={form2Data.message}
+                onChange={handleInputChange}
+                rows="4"
+                className="w-full lg:h-[120px] p-4 border border-[#E7E7E7] rounded-[12px] bg-transparent text-white placeholder-white text-[18px] md:text-[20px]"
+              />
+              {errors.message && (
+                <p className="text-red-500 text-sm">{errors.message}</p>
+              )}
+            </div>
             <button
               type="submit"
               className="w-full flex justify-center items-center px-6 py-4 bg-white text-[#0009FF] text-[18px] md:text-[20px] font-bold leading-[28px] rounded-lg mt-2"
