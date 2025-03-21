@@ -284,7 +284,7 @@ const reviews = [
             { label: "Nachname", name: "nachname", placeholder: "Ihr Name", required: true }, 
             { label: "Unternehmen", name: "unternehmen", placeholder: "Ihr Unternehmen", required: true },
             { label: "Email", name: "email", placeholder: "Ihre Email", required: true },
-            { label: "Position", name: "position", placeholder: "Ihr Position", required: true }
+            { label: "Position", name: "position", placeholder: "Ihrem Position", required: true }
           ].map((field, index) => (
             <div key={index} className="flex flex-col">
               <label className="text-[20px] font-[500] text-black leading-normal">
@@ -361,7 +361,7 @@ const reviews = [
             {
               icon: "/images/diy.svg",
               title: "DIY-Fehler",
-              description: "Generische Vorlagen spiegeln deine Marke nicht wider."
+              description: "Generische Vorlagen spiegeln Ihre Marke nicht wider."
             }
           ].map((issue, index) => (
             <div key={index} className="flex items-center p-4 lg:px-[24px] lg:py-[18px]  bg-[#F2F2F2] rounded-[12px]">
@@ -380,8 +380,8 @@ const reviews = [
           <div>
             <h3 className="text-[24px] leading-[37px] font-[700] font-matt">Die Lösung</h3>
             <p className="text-black text-[18px] leading-[22px] font-[300]">
-              Wir erstellen moderne, schnelle und skalierbare Websites, damit du dich auf das Wesentliche konzentrieren kannst: 
-              das Wachstum deines Unternehmens.
+            Wir erstellen moderne, schnelle und skalierbare Websites, damit Sie sich auf das wesentliche konzentrieren können: 
+            das Wachstum deines Unternehmens.
             </p>
           </div>
         </div>
