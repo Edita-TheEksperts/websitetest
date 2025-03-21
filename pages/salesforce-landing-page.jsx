@@ -96,10 +96,12 @@ const reviews = [
         if (!formData.unternehmen) newErrors.unternehmen = 'Bitte Auswählen';
         if (!formData.email) newErrors.email = 'Bitte Auswählen';
       
-        if (Object.keys(newErrors).length > 0) {
-          setErrors(newErrors);
-          return;
-        }
+       // If there are errors, set them in the state
+    if (Object.keys(newErrors).length > 0) {
+      setErrors(newErrors);
+      return; // Stop form submission
+    }
+
       
         try {
           const response = await fetch('/api/sendMailSaleforce', {
@@ -237,7 +239,7 @@ const reviews = [
     
       <div className="w-full lg:w-1/2 mb-[40px] lg:mb-0 flex justify-center lg:max-w-[588px] lg:h-[571px] lg:flex lg:flex-col lg:justify-center lg:items-start flex-shrink-0">
       <video
-  className="w-full custom-1020 max-w-md lg:min-w-[588px] lg:min-h-[498px] rounded-[12px] object-cover "
+  className="w-full custom-1020 max-w-md lg:min-w-[588px] lg:min-h-[500px] rounded-[12px] object-cover "
   autoPlay
   muted
   loop
@@ -254,37 +256,47 @@ const reviews = [
       <div className="w-full lg:w-1/2 lg:min-w-[522px]">
        
 
-        <form className="space-y-[15px]" onSubmit={handleSubmit}>
-          {[
-            { label: "Vorname", name: "vorname", placeholder: "Ihr Vorname", required: true },
-            { label: "Nachname", name: "nachname", placeholder: "Ihr Nachame", required: true }, 
-            { label: "Unternehmen", name: "unternehmen", placeholder: "Ihr Unternehmen", required: true },
-            { label: "Email", name: "email", placeholder: "Ihre Email", required: true },
-          ].map((field, index) => (
-            <div key={index} className="flex flex-col">
-              <label className="text-[20px] font-[500] text-black leading-normal">
-                {field.label}{field.required && <span className="text-red-500">*</span>}
-              </label>
-              <input
-           type="text"
-           name={field.name}
-           value={formData[field.name] || ""}
-           onChange={handleInputChange}
-           placeholder={field.placeholder}
-           required={field.required}
-                className="mt-1 w-full border text-[20px] font-[400] placeholder:text-black text-black rounded-[12px] p-[16px] focus:outline-none focus:ring-2 focus:ring-blue-500"
-              />
-            </div>
-          ))}
+       <form className="space-y-[15px]" onSubmit={handleSubmit}>
+            {[
+              { label: "Vorname", name: "vorname", placeholder: "Ihr Vorname", required: true },
+              { label: "Nachname", name: "nachname", placeholder: "Ihr Nachname", required: true },
+              { label: "Unternehmen", name: "unternehmen", placeholder: "Ihr Unternehmen", required: true },
+              { label: "Email", name: "email", placeholder: "Ihre Email", required: true },
+            ].map((field, index) => (
+              <div key={index} className="flex flex-col">
+                <label className="text-[20px] font-[500] text-black leading-normal">
+                  {field.label}{field.required && <span className="text-red-500">*</span>}
+                </label>
+                <input
+                  type="text"
+                  name={field.name}
+                  value={formData[field.name] || ""}
+                  onChange={handleInputChange}
+                  placeholder={field.placeholder}
+                  required={field.required}
+                  className="mt-1 w-full border text-[20px] font-[400] placeholder:text-black text-black rounded-[12px] p-[16px] focus:outline-none focus:ring-2 focus:ring-blue-500"
+                />
+                {/* Show error message */}
+                {errors[field.name] && (
+                  <span className="text-red-500 text-[14px]">{errors[field.name]}</span>
+                )}
+              </div>
+            ))}
 
-          {/* Download Button */}
-          <button
-            type="submit"
-            className="w-full px-6 py-[14px] text-white bg-[#152DFF] rounded-lg font-[700] text-[20px] leading-[28px]"
-          >
-            Download
-          </button>
-        </form>
+            {/* Conditionally render button or success message */}
+            {isSubmitted ? (
+              <p className="text-[20px] font-[600] text-black text-center">
+                Vielen Dank! Ihre Salesforce Guide wird per E-Mail<br></br> von unserem Team, the eksperts, gesendet.
+              </p>
+            ) : (
+              <button
+                type="submit"
+                className="w-full px-6 py-[14px] text-white bg-[#152DFF] rounded-lg font-[700] text-[20px] leading-[28px]"
+              >
+                Download
+              </button>
+            )}
+          </form>
       </div>
     </section>
 
