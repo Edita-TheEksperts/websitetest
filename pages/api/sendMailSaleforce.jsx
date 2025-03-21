@@ -33,29 +33,29 @@ const sendEmailWithPDF = async (recipientEmail, vorname) => {
         const accessToken = await getAccessToken();
         
         // Load the PDF file (Ensure the file exists in the public folder or appropriate path)
-        const pdfPath = path.resolve('./public/response.pdf');
+        const pdfPath = path.resolve('./public/Ihr Salesforce Guide.pdf');
         const pdfContent = fs.readFileSync(pdfPath).toString('base64'); // Convert to base64
 
         const emailResponse = await axios.post(
             'https://graph.microsoft.com/v1.0/users/info@the-eksperts.com/sendMail',
             {
                 message: {
-                    subject: `Vielen Dank, ${vorname}! Hier ist Ihr PDF`,
+                    subject: `Ihr Salesforce Guide von the eksperts!`,
                     body: {
                         contentType: 'Text',
-                        content: `Sehr geehrte/r ${vorname},\n\n
-                        Besten Dank für Ihre Anfrage und Ihr Interesse an unseren Dienstleistungen. 
-                        Im Anhang finden Sie die gewünschte Datei.\n\n
-                        Falls Sie weitere Fragen haben oder zusätzliche Informationen benötigen, stehen wir Ihnen jederzeit gerne zur Verfügung.\n\n
-                        Besuchen Sie auch unsere Website für weitere Informationen: www.the-eksperts.com\n\n
-                        Freundliche Grüsse,\n
-                        the eksperts Team`
+                        content: 
+                           `Guten Tag, ${vorname},\n
+                            Anbei finden Sie unseren Guide.
+                            Bei Fragen können Sie uns jederzeit auf dieser E-Mail kontaktieren.
+                            Weitere Informationen finden Sie auf unserer Website www.the-eksperts.com.\n
+                            Freundliche Grüsse
+                            the eksperts Team`
                                             },
                     toRecipients: [{ emailAddress: { address: recipientEmail } }],
                     attachments: [
                         {
                             '@odata.type': '#microsoft.graph.fileAttachment',
-                            name: 'response.pdf',
+                            name: 'Ihr Salesforce Guide.pdf',
                             contentType: 'application/pdf',
                             contentBytes: pdfContent, // Attach PDF as base64
                         },
