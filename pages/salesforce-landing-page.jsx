@@ -255,7 +255,17 @@ const reviews = [
       {/* Right Side - Form */}
       <div className="w-full lg:w-1/2 lg:min-w-[522px]">
        
+      {isSubmitted ? (
+          <div className="text-center lg:text-left">
+           <h1 className="text-[#6D6E70] font-[300] lg:text-[64px] text-[60px] font-matt lg:leading-[72px]">
+  Vielen Dank.
+</h1>
+<p className="text-[#6D6E70] font-[300] lg:text-[32px] text-[20px] font-matt lg:leading-[40px] mt-10 lg:mt-[45px]">
+  Wir melden uns so schnell wie<br></br> möglich.
+</p>
 
+          </div>
+        ) : (
        <form className="space-y-[15px]" onSubmit={handleSubmit}>
             {[
               { label: "Vorname", name: "vorname", placeholder: "Ihr Vorname", required: true },
@@ -281,21 +291,15 @@ const reviews = [
                 )}
               </div>
             ))}
-
-            {/* Conditionally render button or success message */}
-            {isSubmitted ? (
-              <p className="text-[20px] font-[600] text-black text-center">
-                Vielen Dank! Ihre Salesforce Guide wird per E-Mail<br></br> von unserem Team, the eksperts, gesendet.
-              </p>
-            ) : (
               <button
                 type="submit"
                 className="w-full px-6 py-[14px] text-white bg-[#152DFF] rounded-lg font-[700] text-[20px] leading-[28px]"
               >
                 Download
               </button>
-            )}
-          </form>
+        
+            </form>
+                )}
       </div>
     </section>
 

@@ -28,9 +28,9 @@ const getAccessToken = async () => {
 // Handler for the incoming POST request
 export default async function handler(req, res) {
     if (req.method === 'POST') {
-        const { vorname, nachname, email, unternehmen, position } = req.body;
+        const { vorname, nachname, email, unternehmen } = req.body;
 
-        if (!vorname || !nachname || !email || !unternehmen || !position) {
+        if (!vorname || !nachname || !email || !unternehmen) {
             return res.status(400).json({ message: 'Missing required fields' });
         }
 
@@ -43,7 +43,7 @@ export default async function handler(req, res) {
                         subject: `New Form Submission From Website Services for Startups`,
                         body: {
                             contentType: 'Text',
-                            content: `Vorname: ${vorname}\nNachname: ${nachname}\nUnternehmen: ${unternehmen}\nEmail: ${email}\nPosition: ${position}`,
+                            content: `Vorname: ${vorname}\nNachname: ${nachname}\nUnternehmen: ${unternehmen}\nEmail: ${email}`,
                         },
                         toRecipients: [{ emailAddress: { address: 'info@the-eksperts.com' } }],
                     },

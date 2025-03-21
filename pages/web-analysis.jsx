@@ -136,11 +136,18 @@ const reviews = [
 
             {/* Conditionally render the message or the form */}
             {isSubmitted ? (
-              <div className="lg:text-left text-center mt-8 text-[32px] leading-[34px] font-[200] text-black">
-                Vielen Dank. <br></br> <br></br>
-                Wir melden uns so schnell wie <br></br>
-                möglich.
-              </div>
+              <div className="text-center lg:text-left mt-6">
+              <h1 className="text-[#5A585A] font-[100]  text-[32px] font-matt leading-[36px]">
+     Vielen Dank.
+   </h1>
+   <p className="text-[#5A585A] font-[100]  text-[32px] font-matt leading-[36px] mt-6 lg:mt-[35px] lg:block hidden">
+     Wir melden uns so schnell wie<br></br> möglich.
+   </p>
+   <p className="text-[#5A585A] font-[100] text-[32px] font-matt leading-[36px] mt-6 lg:mt-[35px] lg:hidden block">
+     Wir melden uns so schnell wie möglich.
+   </p>
+   
+             </div>
             ) : (
               <form onSubmit={handleSubmit} className="mt-[16px] flex flex-col gap-4 max-w-[450px]">
                 {/* First Row */}
