@@ -273,7 +273,6 @@ const reviews = [
                   value={formData[field.name] || ""}
                   onChange={handleInputChange}
                   placeholder={field.placeholder}
-                  required={field.required}
                   className="mt-1 w-full border text-[20px] font-[400] placeholder:text-black text-black rounded-[12px] p-[16px] focus:outline-none focus:ring-2 focus:ring-blue-500"
                 />
                 {/* Show error message */}
