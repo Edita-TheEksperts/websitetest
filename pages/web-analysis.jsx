@@ -372,7 +372,7 @@ const reviews = [
             </div>
             {/* Button Text */}
             <span className="mx-2 text-left font-matt lg:font-[24px] lg:leading-[27px] font-[300] lg:text-left relative z-20 group-hover:text-white">
-              <Link href="#">Jetzt meine Website<br></br> optimieren!</Link>
+             Jetzt meine Website<br></br> optimieren!
             </span>
 
             {/* Hover Background Effect */}
@@ -387,8 +387,6 @@ const reviews = [
 </section>
 
 <section className="max-w-[1280px] mx-auto px-4 lg:mt-[300px] mt-[160px]">
-      {screen === 1 && (
-        <>
           {/* Heading */}
           <h2 className="text-center text-[32px] lg:text-[40px] font-[700] lg:leading-[48px] mb-4">
            Was Sie erhalten:
@@ -475,73 +473,18 @@ const reviews = [
   </div>
           {/* Call to Action */}
           <div className="mt-[58px] text-center">
+          <Link href="#">
+
             <button
               className="bg-[#152DFF] text-white font-[500] text-[20px] py-[14px] px-6 lg:px-[24px] rounded-[12px] hover:bg-[#0F20B2] transition"
-              onClick={() => setScreen(2)}
+              onClick={() => document.getElementById("contactForm")?.scrollIntoView({ behavior: "smooth" })}
+
             >
               Erhalten Sie den vollständigen kostenlosen Leitfaden & Checkliste
             </button>
+            </Link>
           </div>
-        </>
-      )}
-
-      {screen === 2 && (
-        <>
-         <h2 className="text-center text-[32px] lg:text-[40px] font-[700] lg:leading-[48px] mb-4">
-         Erhalten Sie den vollständigen kostenlosen <br></br>Leitfaden & Checkliste!
-          </h2>
-          <p className="lg:block hidden text-center  text-[18px] lg:text-[22px] font-matt font-[300] mb-[58px]">
-          Unser spezialisiertes Team kümmert sich um jeden Aspekt: ​​Geschwindigkeit, SEO, mobile Reaktionsfähigkeit,<br></br> Desktop-Leistung und Zugänglichkeit. Wir identifizieren alle Probleme und beheben sie, um sicherzustellen,<br></br> dass Ihre Website in jeder Hinsicht Bestnoten erzielt.
-Wir senden Ihnen das PDF per E-Mail,<br></br> damit Sie die vollständige Liste der Dienste anzeigen können.
-          </p>
-          <p className="lg:hidden block text-center  text-[18px] lg:text-[22px] font-matt font-[300] mb-[58px]">
-          Unser spezialisiertes Team kümmert sich um jeden Aspekt: ​​Geschwindigkeit, SEO, mobile Reaktionsfähigkeit, Desktop-Leistung und Zugänglichkeit. Wir identifizieren alle Probleme und beheben sie, um sicherzustellen, dass Ihre Website in jeder Hinsicht Bestnoten erzielt.
-          Wir senden Ihnen das PDF per E-Mail, damit Sie die vollständige Liste der Dienste anzeigen können.
-          </p>
-          <form
-            className="flex lg:flex-row flex-col max-w-[600px] justify-center items-center space-x-[14px]  mx-auto "
-            onSubmit={(e) => {
-              e.preventDefault();
-              setScreen(3);
-            }}
-          >
-            <label className="hidden block ">Email:</label>
-            <input
-              type="email"
-              placeholder="Email:"
-              className="lg:w-[552px] w-[320px] text-black placeholder:text-black text-[20px] font-[700]  p-4 mb-4 lg:mb-0 border rounded-[12px]"
-              required
-            />
-            <button
-              type="download"
-              className="bg-[#152DFF] text-white text-[20px] font-[700] py-4 px-[28px] hover:[#152DFF] transition rounded-[12px]"
-            >
-              Download
-            </button>
-          </form>
-        </>
-      )}
-
-{screen === 3 && (
-  <>
-    <h2 className="text-center text-[32px] lg:text-[40px] font-[700] lg:leading-[48px] mb-4">
-    Sie erhalten die PDF-Datei<br></br> in Kürze per E-Mail.
-    </h2>
-    <p className="text-center text-[22px] font-[300] max-w-[600px] mx-auto">
-    Vielen Dank für Ihr Vertrauen in the eksperts – wir werden Sie nicht enttäuschen.
-    </p>
-    <p className="text-center text-[22px] font-[300] mt-4">
-    In Kürze leiten wir Sie auf unsere Hauptwebsite weiter…
-    </p>
-
-    <script>
-      {setTimeout(() => {
-        window.location.href = "https://www.the-eksperts.com/";
-      }, 7000)}
-    </script>
-  </>
-)}
-
+  
     </section>
 
 
