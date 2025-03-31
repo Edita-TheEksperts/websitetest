@@ -261,7 +261,8 @@ const reviews = [
   Vielen Dank.
 </h1>
 <p className="text-[#6D6E70] font-[300] lg:text-[32px] text-[20px] font-matt lg:leading-[40px] mt-10 lg:mt-[45px]">
-  Wir melden uns so schnell wie<br></br> möglich.
+Sie erhalten in Kürze den Guide. <br></br>Bitte 
+überprüfen Sie Ihren Posteingang.
 </p>
 
           </div>

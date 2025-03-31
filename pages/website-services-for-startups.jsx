@@ -269,10 +269,12 @@ const reviews = [
      Vielen Dank.
    </h1>
    <p className="text-[#6D6E70] font-[300]  text-[32px] font-matt leading-[40px] mt-6 lg:mt-[35px] lg:block hidden">
-   Wir haben den Guide an Ihre Email Adresse gesendet.
+   Sie erhalten in Kürze den Guide. Bitte 
+   überprüfen Sie Ihren Posteingang.
    </p>
    <p className="text-[#6D6E70] font-[300] text-[32px] font-matt leading-[40px] mt-6 lg:mt-[35px] lg:hidden block">
-   Wir haben den Guide an Ihre Email Adresse gesendet.
+   Sie erhalten in Kürze den Guide. Bitte 
+überprüfen Sie Ihren Posteingang.
    </p>
    
              </div>

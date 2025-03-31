@@ -141,10 +141,12 @@ const reviews = [
      Vielen Dank.
    </h1>
    <p className="text-[#5A585A] font-[100]  text-[32px] font-matt leading-[36px] mt-6 lg:mt-[35px] lg:block hidden">
-     Wir melden uns so schnell wie<br></br> möglich.
+   Wir melden uns so schnell wie<br></br> möglich.
+
    </p>
    <p className="text-[#5A585A] font-[100] text-[32px] font-matt leading-[36px] mt-6 lg:mt-[35px] lg:hidden block">
-     Wir melden uns so schnell wie möglich.
+   Wir melden uns so schnell wie möglich.
+
    </p>
    
              </div>
@@ -159,7 +161,7 @@ const reviews = [
                       value={formData.url}
                       onChange={handleInputChange}
                       placeholder="Ihre Web-Domain*"
-                      className="p-3 border border-[#E7E7E7] rounded-[12px] w-full text-[16px] font-[400] text-black capitalize font-matt placeholder-black"
+                      className="p-3 border border-[#E7E7E7] rounded-[12px] w-full text-[16px] font-[400] text-black font-matt placeholder-black"
                     />
                     {errors.url && <p className="text-red-500 text-sm">{errors.url}</p>}
                   </div>
@@ -170,7 +172,7 @@ const reviews = [
                       value={formData.fullname}
                       onChange={handleInputChange}
                       placeholder="Vor- / Nachname*"
-                      className="p-3 border border-[#E7E7E7] rounded-[12px] w-full text-[16px] font-[400] text-black capitalize font-matt placeholder-black"
+                      className="p-3 border border-[#E7E7E7] rounded-[12px] w-full text-[16px] font-[400] text-black  font-matt placeholder-black"
                     />
                     {errors.fullname && <p className="text-red-500 text-sm">{errors.fullname}</p>}
                   </div>
@@ -184,7 +186,7 @@ const reviews = [
                     value={formData.email}
                     onChange={handleInputChange}
                     placeholder="E-Mail*"
-                    className="p-3 border border-[#E7E7E7] rounded-[12px] w-full text-[16px] font-[400] font-matt text-black capitalize placeholder-black"
+                    className="p-3 border border-[#E7E7E7] rounded-[12px] w-full text-[16px] font-[400] font-matt text-black  placeholder-black"
                   />
                   {errors.email && <p className="text-red-500 text-sm">{errors.email}</p>}
                 </div>
@@ -198,7 +200,7 @@ const reviews = [
                       value={formData.company}
                       onChange={handleInputChange}
                       placeholder="Unternehmen*"
-                      className="lg:w-[380px] w-[350px] md:w-[380px] p-3 border font-matt border-[#E7E7E7] rounded-[12px]  text-[16px] font-[400] text-black capitalize placeholder-black"
+                      className="lg:w-[380px] w-[350px] md:w-[380px] p-3 border font-matt border-[#E7E7E7] rounded-[12px]  text-[16px] font-[400] text-black placeholder-black"
                     />
                     {errors.company && <p className="text-red-500 text-sm">{errors.company}</p>}
                   </div>
