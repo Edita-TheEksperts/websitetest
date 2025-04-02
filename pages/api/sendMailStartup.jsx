@@ -42,15 +42,9 @@ const sendEmailWithPDF = async (recipientEmail, vorname) => {
                 message: {
                     subject: `Ihr KMU Guide von the eksperts`,
                     body: {
-                        contentType: 'Text',
-                        content: 
-                           `Guten Tag, ${vorname},\n
-                            Anbei finden Sie unseren Guide.\n
-                            Bei Fragen können Sie uns jederzeit auf dieser E-Mail kontaktieren.\n
-                            Weitere Informationen finden Sie auf unserer Website www.the-eksperts.com.\n
-                            Freundliche Grüsse
-                            the eksperts Team`
-                    },
+                        contentType: "Text",
+                        content: "Sehr geehrte Damen und Herren,\n\nAnbei finden Sie unseren Guide.\n\nBei Fragen können Sie uns jederzeit auf dieser E-Mail kontaktieren.\n\nWeitere Informationen finden Sie auf unserer Website: www.the-eksperts.com.\n\nFreundliche Grüsse\nthe eksperts Team"
+                      },
                     toRecipients: [{ emailAddress: { address: recipientEmail } }],
                     attachments: [
                         {

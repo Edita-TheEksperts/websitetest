@@ -41,7 +41,7 @@ export default function PartnersSlider() {
           autoplay={{ delay: 1500, disableOnInteraction: false }}
           loop={true}
           breakpoints={{
-            1280: { slidesPerView: 12, spaceBetween: 6 }, // Large screens (12 logos)
+            1280: { slidesPerView: 8, spaceBetween: 8 }, // Large screens (12 logos)
             1024: { slidesPerView: 8, spaceBetween: 6 }, // Medium screens (8 logos)
             768: { slidesPerView: 6, spaceBetween: 6 }, // Tablets (6 logos)
             640: { slidesPerView: 5, spaceBetween: 6 }, // Smaller tablets (5 logos)

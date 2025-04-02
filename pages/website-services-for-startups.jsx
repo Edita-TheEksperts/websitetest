@@ -191,7 +191,12 @@ const reviews = [
       </h2>
 
       {/* Subheading */}
-      <p className="mt-4 text-black text-[22px] leading-[33px] font-[300]">
+      <p className="mt-4 text-black text-[22px] leading-[33px] font-[300] lg:block hidden">
+        Ihre Website ist mehr als nur eine digitale Präsenz – sie ist Ihr erster Eindruck, 
+        Ihr Verkaufsmotor und Ihre<br></br> Plattform für Wachstum. Wir spezialisieren uns auf schnelle, 
+        funktionale und zukunftssichere Websites,<br></br> damit Sie sich voll und ganz auf Ihr Unternehmen konzentrieren können.
+      </p>
+      <p className="mt-4 text-black text-[22px] leading-[33px] font-[300] lg:hidden block">
         Ihre Website ist mehr als nur eine digitale Präsenz – sie ist Ihr erster Eindruck, 
         Ihr Verkaufsmotor und Ihre Plattform für Wachstum. Wir spezialisieren uns auf schnelle, 
         funktionale und zukunftssichere Websites, damit Sie sich voll und ganz auf Ihr Unternehmen konzentrieren können.
@@ -298,7 +303,7 @@ const reviews = [
            value={formData[field.name] || ""}
            onChange={handleInputChange}
            placeholder={field.placeholder}
-                className="mt-1 w-full border text-[20px] font-[400] placeholder:text-black text-black rounded-[12px] p-[16px] focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="mt-1 w-full border text-[20px] font-[400] placeholder:tex-[#626262] text-black rounded-[12px] p-[16px] focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
                   {/* Show error message */}
                   {errors[field.name] && (
@@ -323,7 +328,7 @@ const reviews = [
     <section className="flex flex-col items-center mb-[160px] lg:mb-[300px] lg:flex-row max-w-[1280px] mx-auto">
       {/* Left Side - Image */}
       <div className="w-full lg:w-1/2 flex flex-col justify-center">
-      <h2 className="text-[48px] font-bold text-black font-matt mb-[10px] lg:mb-[35px] lg:mt-4  leading-[56px] text-center lg:text-left">
+      <h2 className="text-[48px] font-bold text-black font-matt mb-[10px] lg:mb-[15px] lg:mt-4  leading-[56px] text-center lg:text-left">
   Häufige Website-Fehler<br></br> bei Startups / KMU, die Wachstum verhindern
 </h2>
 
@@ -338,7 +343,7 @@ const reviews = [
       <div className="w-full lg:w-1/2 mt-6 lg:mt-0 lg:ml-[10px]">
      
 
-        <div className="mt-6 space-y-4">
+        <div className="mt-8 space-y-2">
           {[
             {
               icon: "/images/old-design.svg",
@@ -377,7 +382,7 @@ const reviews = [
         </div>
 
         {/* Solution Box */}
-        <div className="mt-6 p-4 lg:px-[24px] lg:py-[18px] border border-black rounded-[12px] flex items-center">
+        <div className="mt-4 p-4 lg:px-[24px] lg:py-[18px] border border-black rounded-[12px] flex items-center">
           <img src="/images/solution.svg" alt="Solution" className="w-[60px] h-[60px] mr-3 lg:mr-[24px]" />
           <div>
             <h3 className="text-[24px] leading-[37px] font-[700] font-matt">Die Lösung</h3>
