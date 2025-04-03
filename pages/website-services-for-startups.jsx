@@ -291,7 +291,7 @@ const reviews = [
             { label: "Nachname", name: "nachname", placeholder: "Ihr Name", required: true }, 
             { label: "Unternehmen", name: "unternehmen", placeholder: "Ihr Unternehmen", required: true },
             { label: "Email", name: "email", placeholder: "Ihre Email", required: true },
-            { label: "Position", name: "position", placeholder: "Ihrem Position", required: true }
+            { label: "Position", name: "position", placeholder: "Ihre Position", required: true }
           ].map((field, index) => (
             <div key={index} className="flex flex-col">
               <label className="text-[20px] font-[500] text-black leading-normal">
