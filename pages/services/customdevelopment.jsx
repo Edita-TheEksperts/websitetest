@@ -215,7 +215,7 @@ const CustomDevelopment = () => {
 
                   {/* Website */}
                   <div className="p-2">
-                   <Link href="/services/the-eksperts-website" className="block">
+                   <Link href="/services/website" className="block">
                     <img
                       src="/images/the-eksperts-websitee.png" // Replace with the actual image URL
                       alt="Website"
