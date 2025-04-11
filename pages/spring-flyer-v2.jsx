@@ -127,17 +127,17 @@ export default function SpringFlyer() {
 )}
 
   {isSubmitted ? (
-              <div className="text-center  mt-6 lg:w-[1280px] lg:h-[370px] flex flex-col justify-center items-center">
-              <h1 className="text-black font-[100]  text-[80px] font-matt leading-[93px]">
-              Danke für die Teilnahme.
-   </h1>
-   <p className="text-black font-[700]  text-[80px] font-matt leading-[93px]  mt-6 lg:mt-[35px] ">
-   "Viel Glück!"
-
-   </p>
-
-   
-             </div>
+               <div className="text-center w-auto  mt-6 lg:w-[1280px] lg:h-[370px] flex flex-col justify-center items-center">
+               <h1 className="text-black font-[100] text-[40px] leading-[47px] lg:text-[80px] font-matt lg:leading-[93px]">
+               Danke für die Teilnahme.
+    </h1>
+    <p className="text-black font-[700]  text-[40px] leading-[47px] lg:text-[80px] font-matt lg:leading-[93px]  mt-6 lg:mt-[35px] ">
+    "Viel Glück!"
+ 
+    </p>
+ 
+    
+              </div>
             ) : (
   <form onSubmit={handleSubmit} className="flex flex-wrap justify-center gap-6 mt-[40px]">
   {/* Input: Vorname & Nachname */}
