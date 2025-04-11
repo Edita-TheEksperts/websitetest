@@ -1,6 +1,61 @@
 import React from "react";
+import { useState } from "react";
+
 
 export default function SpringFlyer() {
+        const [formData, setFormData] = useState({
+            vornamenachname: '',
+            unternehmen: '',
+            email: '',
+            telephone: '',
+          });
+          const [errors, setErrors] = useState({
+            vornamenachname: '',
+            unternehmen: '',
+            email: '',
+            telephone: '',
+          });
+          const [isSubmitted, setIsSubmitted] = useState(false); // State to track form submission
+        
+          const handleSubmit = async (e) => {
+            e.preventDefault();
+        
+            const newErrors = {};
+            if (!formData.vornamenachname) newErrors.vornamenachname = 'Bitte Auswählen';
+            if (!formData.unternehmen) newErrors.unternehmen = 'Bitte Auswählen';
+            if (!formData.email) newErrors.email = 'Bitte Auswählen';
+            if (!formData.telephone) newErrors.telephone = 'Bitte Auswählen';
+        
+            if (Object.keys(newErrors).length > 0) {
+              setErrors(newErrors);
+              return;
+            }
+        
+            try {
+              const response = await fetch('/api/sendMailFlyer', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(formData),
+              });
+        
+              const data = await response.json();
+              if (response.ok) {
+                setIsSubmitted(true); // Set the form as submitted
+              } else {
+                alert('Error: ' + data.message);
+              }
+            } catch (error) {
+              console.error('Failed to send email:', error);
+            }
+          };
+        
+          const handleInputChange = (e) => {
+            const { name, value } = e.target;
+            setFormData({
+              ...formData,
+              [name]: value,
+            });
+          };
   return (
     <div
       className="min-h-screen bg-cover bg-center text-black flex flex-col items-center px-4"
@@ -58,18 +113,35 @@ export default function SpringFlyer() {
         ))}
       </div>
 
-      {/* Form Section */}
-      <div className="mt-[300px] bg-[#FFF] rounded-[30px] max-w-[1284px] text-center px-4 py-10">
-  <h3 className=" text-[50px] leading-[55px] lg:text-[80px] lg:leading-[80px] font-bold text-black font-matt">
-    Do Mitmachä
-  </h3>
-  <p className="text-[18px] leading-[22px] lg:text-[20px] lg:leading-[33px] font-light text-black mt-2 mb-10 font-matt">
-    Die Teilnahme dauert nur 1 Minute!
-  </p>
+         {/* Form Section */}
+         <div className="mt-[300px] bg-[#FFF] rounded-[30px] max-w-[1284px] text-center px-4 py-10">
+      {!isSubmitted && (
+  <>
+    <h3 className=" text-[50px] leading-[55px] lg:text-[80px] lg:leading-[80px] font-bold text-black font-matt">
+      Do Mitmachä
+    </h3>
+    <p className="text-[18px] leading-[22px] lg:text-[20px] lg:leading-[33px] font-light text-black mt-2 mb-10 font-matt">
+      Die Teilnahme dauert nur 1 Minute!
+    </p>
+  </>
+)}
 
-  <form className="flex flex-wrap justify-center gap-6">
-    {/* Form Fields */}
-    <div className="flex items-center border border-[#E7E7E7] rounded-[12px] px-4 py-4 w-[350px] sm:w-[420px] md:w-[480px] lg:w-[522px] justify-between">
+  {isSubmitted ? (
+              <div className="text-center  mt-6 lg:w-[1280px] lg:h-[370px] flex flex-col justify-center items-center">
+              <h1 className="text-black font-[100]  text-[80px] font-matt leading-[93px]">
+              Danke für die Teilnahme.
+   </h1>
+   <p className="text-black font-[700]  text-[80px] font-matt leading-[93px]  mt-6 lg:mt-[35px] ">
+   "Viel Glück!"
+
+   </p>
+
+   
+             </div>
+            ) : (
+  <form onSubmit={handleSubmit} className="flex flex-wrap justify-center gap-6 mt-[40px]">
+  {/* Input: Vorname & Nachname */}
+  <div className="flex items-center border border-[#E7E7E7] rounded-[12px] px-4 py-4 w-[350px] sm:w-[420px] md:w-[480px] lg:w-[522px] justify-between">
     <div className="flex items-center gap-2 text-black font-[500]">
     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
       <path
@@ -77,42 +149,92 @@ export default function SpringFlyer() {
         fill="#626262"
       />
     </svg>
-    <span>Vorname & Nachname</span>
-  </div>
-  </div>
-    <div className="flex items-center border border-[#E7E7E7] rounded-[12px] px-4 py-4 w-[350px] sm:w-[420px] md:w-[480px] lg:w-[522px] justify-between">
-      <div className="flex items-center gap-2 text-black font-[500]">
-      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
-  <path d="M17.4395 3C18.7805 3 20.0705 3.53 21.0195 4.481C21.9695 5.43 22.5005 6.71 22.5005 8.05V15.95C22.5005 18.74 20.2305 21 17.4395 21H7.56049C4.76949 21 2.50049 18.74 2.50049 15.95V8.05C2.50049 5.26 4.75949 3 7.56049 3H17.4395ZM18.5705 8.2C18.3605 8.189 18.1605 8.26 18.0095 8.4L13.5005 12C12.9205 12.481 12.0895 12.481 11.5005 12L7.00049 8.4C6.68949 8.17 6.25949 8.2 6.00049 8.47C5.73049 8.74 5.70049 9.17 5.92949 9.47L6.06049 9.6L10.6105 13.15C11.1705 13.59 11.8495 13.83 12.5605 13.83C13.2695 13.83 13.9605 13.59 14.5195 13.15L19.0305 9.54L19.1105 9.46C19.3495 9.17 19.3495 8.75 19.0995 8.46C18.9605 8.311 18.7695 8.22 18.5705 8.2Z" fill="#626262"/>
-</svg>
-    <span>Unternehmen</span>
-  </div>
-    </div>
-    <div className="flex items-center border border-[#E7E7E7] rounded-[12px] px-4 py-4  w-[350px] sm:w-[420px] md:w-[480px] lg:w-[522px] justify-between">
-      <div className="flex items-center gap-2 text-black font-[500]">
-      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
-  <path d="M17.4395 3C18.7805 3 20.0705 3.53 21.0195 4.481C21.9695 5.43 22.5005 6.71 22.5005 8.05V15.95C22.5005 18.74 20.2305 21 17.4395 21H7.56049C4.76949 21 2.50049 18.74 2.50049 15.95V8.05C2.50049 5.26 4.75949 3 7.56049 3H17.4395ZM18.5705 8.2C18.3605 8.189 18.1605 8.26 18.0095 8.4L13.5005 12C12.9205 12.481 12.0895 12.481 11.5005 12L7.00049 8.4C6.68949 8.17 6.25949 8.2 6.00049 8.47C5.73049 8.74 5.70049 9.17 5.92949 9.47L6.06049 9.6L10.6105 13.15C11.1705 13.59 11.8495 13.83 12.5605 13.83C13.2695 13.83 13.9605 13.59 14.5195 13.15L19.0305 9.54L19.1105 9.46C19.3495 9.17 19.3495 8.75 19.0995 8.46C18.9605 8.311 18.7695 8.22 18.5705 8.2Z" fill="#626262"/>
-</svg>
-    <span>E-Mail</span>
-  </div>
-    </div>
-    <div className="flex items-center border border-[#E7E7E7] rounded-[12px] px-4 py-4 w-[350px] sm:w-[420px] md:w-[480px] lg:w-[522px] justify-between">
-      <div className="flex items-center gap-2 text-black font-[500]">
-      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
-  <path d="M17.4395 3C18.7805 3 20.0705 3.53 21.0195 4.481C21.9695 5.43 22.5005 6.71 22.5005 8.05V15.95C22.5005 18.74 20.2305 21 17.4395 21H7.56049C4.76949 21 2.50049 18.74 2.50049 15.95V8.05C2.50049 5.26 4.75949 3 7.56049 3H17.4395ZM18.5705 8.2C18.3605 8.189 18.1605 8.26 18.0095 8.4L13.5005 12C12.9205 12.481 12.0895 12.481 11.5005 12L7.00049 8.4C6.68949 8.17 6.25949 8.2 6.00049 8.47C5.73049 8.74 5.70049 9.17 5.92949 9.47L6.06049 9.6L10.6105 13.15C11.1705 13.59 11.8495 13.83 12.5605 13.83C13.2695 13.83 13.9605 13.59 14.5195 13.15L19.0305 9.54L19.1105 9.46C19.3495 9.17 19.3495 8.75 19.0995 8.46C18.9605 8.311 18.7695 8.22 18.5705 8.2Z" fill="#626262"/>
-</svg>
-    <span>Telefon</span>
-  </div>
-    </div>
+    <div>
+      <input
+          type="text"
+          name="vornamenachname"
+          value={formData.vornamenachname}
+          onChange={handleInputChange}
+        placeholder="Vorname & Nachname"
+        className="flex-1 outline-none bg-transparent placeholder:text-black placeholder:font-[500]"
+      />
+                {errors.vornamenachname && <p className="text-red-500 text-sm text-left mt-2">{errors.vornamenachname}</p>}
 
-    {/* Submit Button */}
-    <button
-      type="submit"
-      className="w-[350px] sm:w-[420px] md:w-[480px] lg:w-[522px] bg-[#152DFF] text-white text-[20px] leading-[28px] font-[700] rounded-[12px] py-[14px]  mt-4"
-    >
-      Absenden
-    </button>
-  </form>
+      </div>
+    </div>
+  </div>
+
+  {/* Input: Unternehmen */}
+  <div className="flex items-center border border-[#E7E7E7] rounded-[12px] px-4 py-4 w-[350px] sm:w-[420px] md:w-[480px] lg:w-[522px] justify-between">
+    <div className="flex items-center gap-2 text-black font-[500] w-full">
+    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+  <path d="M17.4395 3C18.7805 3 20.0705 3.53 21.0195 4.481C21.9695 5.43 22.5005 6.71 22.5005 8.05V15.95C22.5005 18.74 20.2305 21 17.4395 21H7.56049C4.76949 21 2.50049 18.74 2.50049 15.95V8.05C2.50049 5.26 4.75949 3 7.56049 3H17.4395ZM18.5705 8.2C18.3605 8.189 18.1605 8.26 18.0095 8.4L13.5005 12C12.9205 12.481 12.0895 12.481 11.5005 12L7.00049 8.4C6.68949 8.17 6.25949 8.2 6.00049 8.47C5.73049 8.74 5.70049 9.17 5.92949 9.47L6.06049 9.6L10.6105 13.15C11.1705 13.59 11.8495 13.83 12.5605 13.83C13.2695 13.83 13.9605 13.59 14.5195 13.15L19.0305 9.54L19.1105 9.46C19.3495 9.17 19.3495 8.75 19.0995 8.46C18.9605 8.311 18.7695 8.22 18.5705 8.2Z" fill="#626262"/>
+</svg>
+<div>
+      <input
+        type="text"
+        name="unternehmen"
+        value={formData.unternehmen}
+        onChange={handleInputChange}
+        placeholder="Unternehmen"
+        className="flex-1 outline-none bg-transparent placeholder:text-black placeholder:font-[500]"
+      />
+          {errors.unternehmen && <p className="text-red-500 text-sm text-left mt-2">{errors.unternehmen}</p>}
+          </div>
+    </div>
+  </div>
+
+  {/* Input: E-Mail */}
+  <div className="flex items-center border border-[#E7E7E7] rounded-[12px] px-4 py-4 w-[350px] sm:w-[420px] md:w-[480px] lg:w-[522px] justify-between">
+    <div className="flex items-center gap-2 text-black font-[500] w-full">
+    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+  <path d="M17.4395 3C18.7805 3 20.0705 3.53 21.0195 4.481C21.9695 5.43 22.5005 6.71 22.5005 8.05V15.95C22.5005 18.74 20.2305 21 17.4395 21H7.56049C4.76949 21 2.50049 18.74 2.50049 15.95V8.05C2.50049 5.26 4.75949 3 7.56049 3H17.4395ZM18.5705 8.2C18.3605 8.189 18.1605 8.26 18.0095 8.4L13.5005 12C12.9205 12.481 12.0895 12.481 11.5005 12L7.00049 8.4C6.68949 8.17 6.25949 8.2 6.00049 8.47C5.73049 8.74 5.70049 9.17 5.92949 9.47L6.06049 9.6L10.6105 13.15C11.1705 13.59 11.8495 13.83 12.5605 13.83C13.2695 13.83 13.9605 13.59 14.5195 13.15L19.0305 9.54L19.1105 9.46C19.3495 9.17 19.3495 8.75 19.0995 8.46C18.9605 8.311 18.7695 8.22 18.5705 8.2Z" fill="#626262"/>
+</svg>
+<div>
+      <input
+        type="email"
+        name="email"
+  value={formData.email}
+  onChange={handleInputChange}
+        placeholder="E-Mail"
+        className="flex-1 outline-none bg-transparent placeholder:text-black placeholder:font-[500]"
+      />
+     {errors.email && <p className="text-red-500 text-sm text-left mt-2">{errors.email}</p>}
+</div>
+    </div>
+  </div>
+
+  {/* Input: Telefon */}
+  <div className="flex items-center border border-[#E7E7E7] rounded-[12px] px-4 py-4 w-[350px] sm:w-[420px] md:w-[480px] lg:w-[522px] justify-between">
+    <div className="flex items-center gap-2 text-black font-[500] w-full">
+    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+  <path d="M17.4395 3C18.7805 3 20.0705 3.53 21.0195 4.481C21.9695 5.43 22.5005 6.71 22.5005 8.05V15.95C22.5005 18.74 20.2305 21 17.4395 21H7.56049C4.76949 21 2.50049 18.74 2.50049 15.95V8.05C2.50049 5.26 4.75949 3 7.56049 3H17.4395ZM18.5705 8.2C18.3605 8.189 18.1605 8.26 18.0095 8.4L13.5005 12C12.9205 12.481 12.0895 12.481 11.5005 12L7.00049 8.4C6.68949 8.17 6.25949 8.2 6.00049 8.47C5.73049 8.74 5.70049 9.17 5.92949 9.47L6.06049 9.6L10.6105 13.15C11.1705 13.59 11.8495 13.83 12.5605 13.83C13.2695 13.83 13.9605 13.59 14.5195 13.15L19.0305 9.54L19.1105 9.46C19.3495 9.17 19.3495 8.75 19.0995 8.46C18.9605 8.311 18.7695 8.22 18.5705 8.2Z" fill="#626262"/>
+</svg>
+<div>
+      <input
+        type="tel"
+        name="telephone"
+        value={formData.telephone}
+        onChange={handleInputChange}
+        placeholder="Telefon"
+        className="flex-1 outline-none bg-transparent placeholder:text-black placeholder:font-[500]"
+      />
+    {errors.telephone && <p className="text-red-500 text-sm text-left mt-2">{errors.telephone}</p>}
+
+    </div>
+    </div>
+  </div>
+
+  {/* Submit Button */}
+  <button
+    type="submit"
+    className="w-[350px] sm:w-[420px] md:w-[480px] lg:w-[522px] bg-[#152DFF] text-white text-[20px] leading-[28px] font-[700] rounded-[12px] py-[14px] mt-4"
+  >
+    Absenden
+  </button>
+</form>
+            )}
+
 </div>
 
 
