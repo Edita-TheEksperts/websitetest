@@ -251,7 +251,7 @@ const handleSubmit = async (e) => {
               loop
               playsInline
             >
-              <source src="/images/Like.mp4" type="video/mp4" />
+              <source src="/images/the-eksperts-Like.mp4" type="video/mp4" />
             </video>
           </div>
           <p>Wir melden uns so schnell <br></br> wie möglich.</p>
@@ -307,7 +307,7 @@ const handleSubmit = async (e) => {
                           muted
                           playsInline
                         >
-                          <source src="/images/Part 1.mp4" type="video/mp4" />
+                          <source src="/images/the-eksperts-Part 1.mp4" type="video/mp4" />
                           Your browser does not support the video tag.
                         </video>
                         {/* Invisible Overlay */}
@@ -374,7 +374,7 @@ const handleSubmit = async (e) => {
                                     loop
                                     playsInline
                                   >
-                                    <source src="/images/Part 2.mp4" type="video/mp4" />
+                                    <source src="/images/the-eksperts-Part 2.mp4" type="video/mp4" />
                                     Your browser does not support the video tag.
                                   </video>
                                 </div>
@@ -594,7 +594,7 @@ const handleSubmit = async (e) => {
                                 loop
                                 playsInline
                               >
-                                <source src="/images/Now.mp4" type="video/mp4" />
+                                <source src="/images/the-eksperts-Now.mp4" type="video/mp4" />
                                 Your browser does not support the video tag.
                               </video>
                             </div>
@@ -753,7 +753,7 @@ const handleSubmit = async (e) => {
                                     loop
                                     playsInline
                                   >
-                                    <source src="/images/Part 3.mp4" type="video/mp4" />
+                                    <source src="/images/the-eksperts-Part 3.mp4" type="video/mp4" />
                                     Your browser does not support the video tag.
                                   </video>
                                 </div>
