@@ -22,10 +22,10 @@ const HeaderSection2 = () => {
   return (
     <div
       ref={ref}
-      className=" top-0 flex flex-col items-center justify-center h-screen bg-white transition-opacity duration-700 z-50"
+      className=" top-0 flex lg:mt-0 mt-[-400px] flex-col items-center justify-center lg:h-screen bg-white transition-opacity duration-700 z-50"
     >
       <motion.h2
-        className="text-black text-6xl lg:mr-[380px] uppercase font-matt lg:leading-[158px] font-[300] lg:text-[134px] tracking-[-2.88px] text-left"
+        className="text-black text-6xl lg:mr-[380px]  uppercase font-matt lg:leading-[158px] font-[300] lg:text-[134px] tracking-[-2.88px] text-left"
         initial="hidden"
         animate={inView ? "visible" : "hidden"}
         variants={{

@@ -14,7 +14,7 @@ const HeaderSection = () => {
   return (
     <motion.div
       ref={ref}
-      className="h-screen flex flex-col items-center justify-center bg-white z-50"
+      className="lg:mt-0 mt-[200px] lg:mb-0 mb-[150px] lg:h-screen flex flex-col items-center justify-center bg-white z-50"
       initial="hidden"
       animate={inView ? "visible" : "hidden"}
       variants={{
