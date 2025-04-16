@@ -58,8 +58,11 @@ export default function SpringFlyer() {
           };
   return (
     <div
-      className="min-h-screen bg-cover bg-center text-black flex flex-col items-center px-4"
-      style={{ backgroundImage: "url('/images/city-background.png')" }}
+      className={`
+        min-h-screen bg-cover bg-center text-black flex flex-col items-center px-4
+        md:bg-[url('/images/city-background.png')]
+        bg-[url('/images/the-eksperts-spring-flyer-bg-mobile-2.png')]
+      `}
     >
       {/* Header Section */}
       <div
@@ -104,7 +107,7 @@ export default function SpringFlyer() {
         ].map((item, idx) => (
           <div
             key={idx}
-            className="w-[330px] md:w-[220px] lg:w-[330px] bg-white  text-center rounded-[20px]"
+            className="w-[320px] md:w-[220px] lg:w-[330px] bg-white  text-center rounded-[20px]"
           >
             <div className="text-[100px] lg:text-[200px] text-center mt-[]">{item.icon}</div>
             <p className="text-[22px] lg:text-[24px] leading-[30px] px-[27px] font-[400]">{item.title}</p>
@@ -141,7 +144,7 @@ export default function SpringFlyer() {
             ) : (
   <form onSubmit={handleSubmit} className="flex flex-wrap justify-center gap-6 mt-[40px]">
   {/* Input: Vorname & Nachname */}
-  <div className="flex items-center border border-[#E7E7E7] rounded-[12px] px-4 py-4 w-[350px] sm:w-[420px] md:w-[480px] lg:w-[522px] justify-between">
+  <div className="flex items-center border border-[#E7E7E7] rounded-[12px] px-4 py-4 w-[320px] sm:w-[420px] md:w-[480px] lg:w-[522px] justify-between">
     <div className="flex items-center gap-2 text-black font-[500]">
     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
       <path
@@ -165,7 +168,7 @@ export default function SpringFlyer() {
   </div>
 
   {/* Input: Unternehmen */}
-  <div className="flex items-center border border-[#E7E7E7] rounded-[12px] px-4 py-4 w-[350px] sm:w-[420px] md:w-[480px] lg:w-[522px] justify-between">
+  <div className="flex items-center border border-[#E7E7E7] rounded-[12px] px-4 py-4 w-[320px] sm:w-[420px] md:w-[480px] lg:w-[522px] justify-between">
     <div className="flex items-center gap-2 text-black font-[500] w-full">
     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
   <path d="M17.4395 3C18.7805 3 20.0705 3.53 21.0195 4.481C21.9695 5.43 22.5005 6.71 22.5005 8.05V15.95C22.5005 18.74 20.2305 21 17.4395 21H7.56049C4.76949 21 2.50049 18.74 2.50049 15.95V8.05C2.50049 5.26 4.75949 3 7.56049 3H17.4395ZM18.5705 8.2C18.3605 8.189 18.1605 8.26 18.0095 8.4L13.5005 12C12.9205 12.481 12.0895 12.481 11.5005 12L7.00049 8.4C6.68949 8.17 6.25949 8.2 6.00049 8.47C5.73049 8.74 5.70049 9.17 5.92949 9.47L6.06049 9.6L10.6105 13.15C11.1705 13.59 11.8495 13.83 12.5605 13.83C13.2695 13.83 13.9605 13.59 14.5195 13.15L19.0305 9.54L19.1105 9.46C19.3495 9.17 19.3495 8.75 19.0995 8.46C18.9605 8.311 18.7695 8.22 18.5705 8.2Z" fill="#626262"/>
@@ -185,7 +188,7 @@ export default function SpringFlyer() {
   </div>
 
   {/* Input: E-Mail */}
-  <div className="flex items-center border border-[#E7E7E7] rounded-[12px] px-4 py-4 w-[350px] sm:w-[420px] md:w-[480px] lg:w-[522px] justify-between">
+  <div className="flex items-center border border-[#E7E7E7] rounded-[12px] px-4 py-4 w-[320px] sm:w-[420px] md:w-[480px] lg:w-[522px] justify-between">
     <div className="flex items-center gap-2 text-black font-[500] w-full">
     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
   <path d="M17.4395 3C18.7805 3 20.0705 3.53 21.0195 4.481C21.9695 5.43 22.5005 6.71 22.5005 8.05V15.95C22.5005 18.74 20.2305 21 17.4395 21H7.56049C4.76949 21 2.50049 18.74 2.50049 15.95V8.05C2.50049 5.26 4.75949 3 7.56049 3H17.4395ZM18.5705 8.2C18.3605 8.189 18.1605 8.26 18.0095 8.4L13.5005 12C12.9205 12.481 12.0895 12.481 11.5005 12L7.00049 8.4C6.68949 8.17 6.25949 8.2 6.00049 8.47C5.73049 8.74 5.70049 9.17 5.92949 9.47L6.06049 9.6L10.6105 13.15C11.1705 13.59 11.8495 13.83 12.5605 13.83C13.2695 13.83 13.9605 13.59 14.5195 13.15L19.0305 9.54L19.1105 9.46C19.3495 9.17 19.3495 8.75 19.0995 8.46C18.9605 8.311 18.7695 8.22 18.5705 8.2Z" fill="#626262"/>
@@ -205,7 +208,7 @@ export default function SpringFlyer() {
   </div>
 
   {/* Input: Telefon */}
-  <div className="flex items-center border border-[#E7E7E7] rounded-[12px] px-4 py-4 w-[350px] sm:w-[420px] md:w-[480px] lg:w-[522px] justify-between">
+  <div className="flex items-center border border-[#E7E7E7] rounded-[12px] px-4 py-4 w-[320px] sm:w-[420px] md:w-[480px] lg:w-[522px] justify-between">
     <div className="flex items-center gap-2 text-black font-[500] w-full">
     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
   <path d="M17.4395 3C18.7805 3 20.0705 3.53 21.0195 4.481C21.9695 5.43 22.5005 6.71 22.5005 8.05V15.95C22.5005 18.74 20.2305 21 17.4395 21H7.56049C4.76949 21 2.50049 18.74 2.50049 15.95V8.05C2.50049 5.26 4.75949 3 7.56049 3H17.4395ZM18.5705 8.2C18.3605 8.189 18.1605 8.26 18.0095 8.4L13.5005 12C12.9205 12.481 12.0895 12.481 11.5005 12L7.00049 8.4C6.68949 8.17 6.25949 8.2 6.00049 8.47C5.73049 8.74 5.70049 9.17 5.92949 9.47L6.06049 9.6L10.6105 13.15C11.1705 13.59 11.8495 13.83 12.5605 13.83C13.2695 13.83 13.9605 13.59 14.5195 13.15L19.0305 9.54L19.1105 9.46C19.3495 9.17 19.3495 8.75 19.0995 8.46C18.9605 8.311 18.7695 8.22 18.5705 8.2Z" fill="#626262"/>
@@ -228,7 +231,7 @@ export default function SpringFlyer() {
   {/* Submit Button */}
   <button
     type="submit"
-    className="w-[350px] sm:w-[420px] md:w-[480px] lg:w-[522px] bg-[#152DFF] text-white text-[20px] leading-[28px] font-[700] rounded-[12px] py-[14px] mt-4"
+    className="w-[320px] sm:w-[420px] md:w-[480px] lg:w-[522px] bg-[#152DFF] text-white text-[20px] leading-[28px] font-[700] rounded-[12px] py-[14px] mt-4"
   >
     Absenden
   </button>
