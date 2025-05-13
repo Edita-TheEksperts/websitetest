@@ -136,7 +136,7 @@ const reviews = [
           {/* Left Content */}
           <div className="lg:w-1/2 text-center lg:text-left ">
           <div className="flex flex-row items-center">
-      {["/images/hero1.png", "/images/hero2.png", "/images/hero3.png", "/images/hero4.png"].map((src, index) => (
+      {["/images/hero11.png", "/images/hero12.png", "/images/hero13.png", "/images/hero14.png"].map((src, index) => (
         <img
           key={index}
           src={src}
@@ -145,7 +145,7 @@ const reviews = [
           style={{ transform: `rotate(${index % 2 === 0 ? "-8.861deg" : "10.479deg"})` }}
         />
       ))}
-      <p className="text-[#BFBFBF] font-matt text-[12px] lg:text-[16px] font-normal lg:leading-[28px] ml-2">
+      <p className="text-[#BFBFBF] font-matt text-[12px] lg:text-[16px] font-normal lg:leading-[28px] ml-1">
         Bereits von über 23 Startups & KMU's geschätzt
       </p>
     </div>
