@@ -11,19 +11,9 @@ const KosovaPost = () => {
         <meta property="og:image" content="https://www.the-eksperts.com/images/the%20eksperts%20vertical%20blue.png" />
       </Head>
 
-      <main className="max-w-[1280px] mx-auto p-4 lg:p-8 mb-[100px]">
+      <main className="max-w-[1330px] mx-auto p-2 lg:p-8 mb-[100px]">
         {/* Header Section */}
-          <header className="text-center mt-[100px] mb-[160px] lg:mt-[150px] lg:mb-[250px]">
-          <h1 className="lg:block hidden text-6xl font-extrabold text-black mb-4 tracking-tight uppercase" style={{fontFamily: 'Matt_Trial', fontSize: '174px', letterSpacing: '-2.88px', lineHeight: '158px'}}>
-            GUT ZU WISSEN
-          </h1>
-          <h1 className="lg:hidden block text-[90px] leading-[109px] font-matt font-[900] text-center tracking-tight mb-2 lg:mb-8">
-            GUT ZU WISSEN
-          </h1>
-          <p className="text-lg font-light text-gray-600">
-            Sie haben die eksperts gefunden. Entdecken Sie unsere neuesten Blogposts!
-          </p>
-        </header>
+        
 
         {/* Post Content Section */}
         <section className="mb-[16px] text-left">
@@ -147,7 +137,7 @@ wir zeigen dir, wie mit Book Your Eksperts dein Business beschleunigt wird.  </p
     </Link>
 
     {/* Post 2 */}
-    <Link href="/blog/agile-projektleitung">
+    <Link href="/blog/briefing-launch">
       <div className="bg-white overflow-hidden flex flex-col rounded-[12px]">
         <img
           src="/images/agile1.png" // Replace with actual image path
