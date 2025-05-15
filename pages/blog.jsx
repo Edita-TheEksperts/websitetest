@@ -8,6 +8,10 @@ const Blog = () => {
         <title>Blog | the eksperts</title>
         <meta name="description" content="Latest blog posts and insights from the eksperts." />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <meta 
+        property="og:image" 
+        content="https://www.the-eksperts.com/images/the%20eksperts%20vertical%20blue.png" 
+      />
       </Head>
 
       <main className="max-w-[1280px] mx-auto p-4 lg:p-2 mb-[100px]">
