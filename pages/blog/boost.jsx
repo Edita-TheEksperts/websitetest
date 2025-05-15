@@ -130,7 +130,7 @@ wir zeigen dir, wie mit Book Your Eksperts dein Business beschleunigt wird.  </p
     <Link href="/blog/boost">
       <div className="bg-white overflow-hidden flex flex-col rounded-[12px]">
         <img
-          src="/images/kosova.png" // Replace with actual image path
+          src="/images/kosovaa.png" // Replace with actual image path
           alt="Der unterschätzte Boost"
           className="w-full lg:h-[350px] object-cover rounded-[12px]"
         />
