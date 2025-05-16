@@ -30,7 +30,7 @@ const Blog = () => {
         <section>
           <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-6">
             {/* Post 1 */}
-            <Link href="/blog/kosova">
+            <Link href="/blog/nearshoring-mit-the-eksperts">
               <div className="bg-white  overflow-hidden flex flex-col lg:h-[479px]" >
                 <img
                   src="/images/kosova.png" // Replace with actual image path
@@ -62,7 +62,7 @@ Lesedauer: ca. 2 Minuten                  </p>
           </div>
 
           {/* Post 3 */}
-          <Link href="/blog/boost">
+          <Link href="/blog/der-unterschatzte-boost">
             <div className="bg-white  overflow-hidden flex flex-col lg:w-[620px] lg:h-[479px] lg:mt-[-500px] mt-[24px] ">
               <img
                 src="/images/boost.png" // Replace with actual image path

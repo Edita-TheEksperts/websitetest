@@ -41,9 +41,9 @@ Lesedauer: ca. 2 Minuten    </p>
   {/* Left Content */}
   <div className="max-w-[800px] flex-1 mb-8 lg:mb-0">
     <h2 className="text-[28px] font-matt font-[900] text-black mb-4">TL;DR</h2>
-    <p className="text-[#5A585A] text-[18px] mb-[80px] font-matt">
+    <p className="text-black font-[300] text-[16px] lg:text-[20px] mb-[80px] font-matt">
 Visuelle Gestaltung ist kein Nice-to-have – sie beeinflusst direkt, ob Nutzer kaufen, klicken oder weiterscrollen. Gutes Graphic Design stärkt Vertrauen, leitet den Blick und sorgt für Wiedererkennung. Bei the eksperts gehört Design zu jeder digitalen Strategie.    </p>
-    <p className="text-[#5A585A] text-[18px] font-matt">
+    <p className="text-black font-[300] text-[16px] lg:text-[20px] font-matt">
 Ob Website, App oder Social Media Ad – Design verkauft. Studien zeigen: Menschen entscheiden in Millisekunden, ob sie einer Marke vertrauen. Und dieses Vertrauen basiert massgeblich auf dem visuellen Eindruck.    </p>
   </div>
 
@@ -61,9 +61,9 @@ Ob Website, App oder Social Media Ad – Design verkauft. Studien zeigen: Mensch
 
           {/* Why Nearshoring with the Eksperts */}
           <div className="mb-12">
-  <h2 className="text-[28px] font-matt font-[900] text-black mb-4 uppercase">WWarum gutes Design entscheidend ist:</h2>
+  <h2 className="text-[28px] font-matt font-[900] text-black mb-4 uppercase">Warum gutes Design entscheidend ist:</h2>
 
-          <ul className="list-disc space-y-2 ml-6 text-[#5A585A] text-[18px] font-matt">
+          <ul className="list-disc space-y-2 ml-6 text-black font-[300] text-[16px] lg:text-[20px] font-matt">
    <li>Klarheit & Struktur: Nutzer finden schneller, was sie suchen.</li>
   <li>Emotionaler Zugang: Farben, Formen und Bildsprache schaffen Bindung.</li>
   <li>Professionalität: Wer visuell überzeugt, wirkt glaubwürdig.</li>
@@ -85,7 +85,7 @@ Ob Website, App oder Social Media Ad – Design verkauft. Studien zeigen: Mensch
      {/* Image Section */}
 
     <h2 className="text-[28px] font-matt font-[900] text-black mb-4 uppercase">Vorteile für Unternehmen:</h2>
-     <ul className="list-disc ml-6 space-y-6 text-black font-[300] text-[20px] leading-[33px] font-matt">
+     <ul className="list-disc ml-6 space-y-6 text-black font-[300] text-[16px] lg:text-[20px] lg:leading-[33px] font-matt">
   <li>Custom Graphic Design für Websites, Apps, Präsentationen & Kampagnen</li>
   <li>Corporate Design & Rebranding für Startups & Unternehmen</li>
   <li>UX/UI Design mit Fokus auf Conversion & Nutzererlebnis</li>
@@ -95,7 +95,7 @@ Ob Website, App oder Social Media Ad – Design verkauft. Studien zeigen: Mensch
  
 </section>
 <section className="mt-[65px]">
-  <p className="text-[#000] text-[20px] font-matt font-[300] leading-[33px]">
+  <p className="text-black font-[300] text-[16px] lg:text-[20px] font-matt  lg:leading-[33px]">
 Design ist keine Dekoration. Es ist Strategie. Und genau das setzen wir bei the eksperts täglich um.  </p>
 </section>
 
@@ -107,7 +107,7 @@ Sprich mit uns 
   </button>
 </Link>
 
-  <p className="text-[#000] text-[20px] font-matt font-[300] leading-[33px]">
+            <p className="text-[#000] text-[16px] lg:text-[20px] font-matt font-[300] lg:leading-[33px]">
 wir zeigen dir, wie mit Book Your Eksperts dein Business beschleunigt wird.  </p>
 </section>
 
@@ -117,7 +117,7 @@ wir zeigen dir, wie mit Book Your Eksperts dein Business beschleunigt wird.  </p
   <section className="mt-[180px]">
   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6">
     {/* Post 1 */}
-    <Link href="/blog/kosova">
+    <Link href="/blog/nearshoring-mit-the-eksperts">
       <div className="bg-white overflow-hidden flex flex-col rounded-[12px]">
         <img
           src="/images/kosovaa.png" // Replace with actual image path

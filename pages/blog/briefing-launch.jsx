@@ -41,9 +41,9 @@ Lesedauer: ca. 4-5 Minuten    </p>
   {/* Left Content */}
   <div className="max-w-[800px] flex-1 mb-8 lg:mb-0">
     <h2 className="text-[28px] font-matt font-[900] text-black mb-4">TL;DR</h2>
-    <p className="text-[#5A585A] text-[18px] mb-[80px] font-matt">
+    <p className="text-black font-[300] text-[16px] lg:text-[20px] mb-[80px] font-matt">
 Agile Prozesse ermöglichen schnelle Ergebnisse, transparente Kommunikation und iterative Verbesserung. Bei the eksperts durchläuft jedes Webprojekt klar strukturierte Phasen – vom ersten Kundenbriefing über Design, Entwicklung bis hin zum erfolgreichen Launch.    </p>
-    <p className="text-[#5A585A] text-[18px] font-matt">
+    <p className="text-black font-[300] text-[16px] lg:text-[20px] font-matt">
 Ein neues digitales Projekt startet selten mit Code – sondern mit einem Gespräch. Bei the eksperts glauben wir, dass starke Ergebnisse nur durch gute Zusammenarbeit entstehen. Darum setzen wir bei jedem Projekt – ob Website Entwicklung, App Projekt, Salesforce Integration oder CRM-Anpassung – auf agile Prozesse.    </p>
   </div>
 
@@ -69,7 +69,7 @@ Ein neues digitales Projekt startet selten mit Code – sondern mit einem Gespr�
         <h2 className="text-[28px] font-matt font-[900] text-black mb-4 uppercase">
           PHASE 1: BRIEFING & ZIELDEFINITION
         </h2>
-        <p className="text-[#5A585A] text-[18px] font-matt">
+        <p className="text-black font-[300] text-[16px] lg:text-[20px] font-matt">
           Gemeinsam mit dem Kunden klären wir: Was ist das Ziel? Wer ist die Zielgruppe? Welche Funktionen sind nötig? Hier legen wir das Fundament für das gesamte Projekt.
         </p>
       </div>
@@ -93,7 +93,7 @@ Ein neues digitales Projekt startet selten mit Code – sondern mit einem Gespr�
         <h2 className="text-[28px] font-matt font-[900] text-black mb-4 uppercase">
           Phase 2: Konzeption & Design
         </h2>
-        <p className="text-[#5A585A] text-[18px] font-matt">
+        <p className="text-black font-[300] text-[16px] lg:text-[20px] font-matt">
 Unsere Experten aus UX/UI Design, Graphic Design und Webdesign erstellen klickbare Prototypen. Feedbackschleifen sorgen dafür, dass alle Ideen visuell greifbar und iterativ verbessert werden.        </p>
       </div>
       
@@ -115,7 +115,7 @@ Unsere Experten aus UX/UI Design, Graphic Design und Webdesign erstellen klickba
       <div className="flex flex-col justify-center lg:w-[60%]">
         <h2 className="text-[28px] font-matt font-[900] text-black mb-4 uppercase">
 Phase 3: Agile Umsetzung        </h2>
-        <p className="text-[#5A585A] text-[18px] font-matt">
+        <p className="text-black font-[300] text-[16px] lg:text-[20px] font-matt">
 Mit kurzen Sprints und regelmäßigen Check-ins liefern wir sichtbare Ergebnisse – zum Beispiel in der Frontend-Entwicklung, Backend-Logik, Salesforce-Anbindung oder AI-Integration.        </p>
       </div>
       
@@ -137,7 +137,7 @@ Mit kurzen Sprints und regelmäßigen Check-ins liefern wir sichtbare Ergebnisse
       <div className="flex flex-col justify-center lg:w-[60%]">
         <h2 className="text-[28px] font-matt font-[900] text-black mb-4 uppercase">
 Phase 4: Testing, Go Live & Support        </h2>
-        <p className="text-[#5A585A] text-[18px] font-matt">
+        <p className="text-black font-[300] text-[16px] lg:text-[20px] font-matt">
 Bevor eine Website oder App live geht, prüfen wir alle Funktionen sorgfältig – und begleiten den Launch. Auch danach stehen wir für Wartung, Erweiterungen und Optimierung bereit.        </p>
       </div>
       
@@ -160,12 +160,11 @@ Bevor eine Website oder App live geht, prüfen wir alle Funktionen sorgfältig �
           <section className="mt-[65px] flex flex-col lg:flex-row justify-left lg:items-center gap-4 lg:gap-8">
   <Link href="/kontakt">
   <button className="flex justify-center items-center gap-2 py-3 px-8 text-white text-lg font-medium rounded-[60px] bg-[#0009FF] hover:bg-blue-700" style={{ width: '299px', padding: '11px 0px' }}>
-Sprich mit uns 
-  </button>
+Kontaktieren Sie Uns  </button>
 </Link>
 
-  <p className="text-[#000] text-[20px] font-matt font-[300] leading-[33px]">
-wir zeigen dir, wie mit Book Your Eksperts dein Business beschleunigt wird.  </p>
+            <p className="text-[#000] text-[16px] lg:text-[20px] font-matt font-[300] lg:leading-[33px]">
+Transparenz, Schnelligkeit, Kundennähe – das ist agile Projektleitung bei the eksperts  </p>
 </section>
 
         </section>
@@ -174,7 +173,7 @@ wir zeigen dir, wie mit Book Your Eksperts dein Business beschleunigt wird.  </p
   <section className="mt-[180px]">
   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6">
     {/* Post 1 */}
-    <Link href="/blog/kosova">
+    <Link href="/blog/nearshoring-mit-the-eksperts">
       <div className="bg-white overflow-hidden flex flex-col rounded-[12px]">
         <img
           src="/images/kosovaa.png" // Replace with actual image path
@@ -189,7 +188,7 @@ wir zeigen dir, wie mit Book Your Eksperts dein Business beschleunigt wird.  </p
     </Link>
 
     {/* Post 2 */}
-    <Link href="/blog/boost">
+    <Link href="/blog/der-unterschatzte-boost">
       <div className="bg-white overflow-hidden flex flex-col rounded-[12px]">
         <img
           src="/images/kaisen4.png" // Replace with actual image path

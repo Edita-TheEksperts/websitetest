@@ -5,7 +5,7 @@ const KosovaPost = () => {
   return (
     <>
       <Head>
-        <title>Kosova - Nearshoring mit the eksperts | the eksperts</title>
+        <title>Nearshoring mit the eksperts | the eksperts</title>
         <meta name="description" content="Learn how nearshoring with the eksperts can benefit your business." />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta property="og:image" content="https://www.the-eksperts.com/images/the%20eksperts%20vertical%20blue.png" />
@@ -43,10 +43,10 @@ const KosovaPost = () => {
   {/* Left Content */}
   <div className="max-w-[800px] flex-1 mb-8 lg:mb-0">
     <h2 className="text-[28px] font-matt font-[900] text-black mb-4">TL;DR</h2>
-    <p className="text-[#5A585A] text-[18px] mb-[80px] font-matt">
+    <p className="text-black font-[300] text-[16px] lg:text-[20px] mb-[80px] font-matt">
       Nearshoring ist der smarte Mittelweg zwischen Inhouse und Offshoring. Mit the eksperts erhalten Unternehmen Zugriff auf erfahrene Entwickler, Designer, Salesforce-Spezialisten und Projektleiter aus dem DACH-Raum und dem Westbalkan – kosteneffizient, flexibel und auf Augenhöhe.
     </p>
-    <p className="text-[#5A585A] text-[18px] font-matt">
+    <p className="text-black font-[300] text-[16px] lg:text-[20px] font-matt">
       Die Digitalisierung verlangt nach schnellen, skalierbaren Lösungen – aber auch nach Vertrauen, Kommunikation und Qualität. Genau hier kommt Nearshoring ins Spiel: Fachkräfte aus der Nähe, mit ähnlicher Zeitzone, kulturellem Verständnis und starken Skills.
     </p>
   </div>
@@ -67,7 +67,7 @@ const KosovaPost = () => {
           <div className="mb-12">
   <h2 className="text-[28px] font-matt font-[900] text-black mb-4 uppercase">Warum Nearshoring mit the eksperts?</h2>
 
-          <ul className="list-disc space-y-2 ml-6 text-[#5A585A] text-[18px] font-matt">
+          <ul className="list-disc space-y-2 ml-6 text-black font-[300] text-[16px] lg:text-[20px] font-matt">
     <li>Standorte in DACH & Balkan: z. B. Schweiz, Deutschland, Kosovo, Albanien</li>
     <li>Multidisziplinäre Teams: Website Entwicklung, App Development, CRM, Salesforce, AI</li>
     <li>Sprachliche Vielfalt: Deutsch, Englisch, Französisch, Italienisch, u.v.m.</li>
@@ -89,7 +89,7 @@ const KosovaPost = () => {
      {/* Image Section */}
 
     <h2 className="text-[28px] font-matt font-[900] text-black mb-4 uppercase">Vorteile für Unternehmen:</h2>
-     <ul className="list-disc ml-6 space-y-6 text-black font-[300] text-[20px] leading-[33px] font-matt">
+     <ul className="list-disc ml-6 space-y-6 text-black font-[300] text-[16px] lg:text-[20px] lg:leading-[33px] font-matt">
       <li>Kostenersparnis ohne Qualitätsverlust</li>
       <li>Kürzere Time-to-Market durch flexible Kapazitäten</li>
       <li>Persönliche Ansprechpartner – keine anonyme Outsourcing-Fabrik. Hauptsitz in St. Gallen, Schweiz</li>
@@ -99,7 +99,7 @@ const KosovaPost = () => {
  
 </section>
 <section className="mt-[65px]">
-  <p className="text-[#000] text-[20px] font-matt font-[300] leading-[33px]">
+  <p className="text-black font-[300] text-[16px] lg:text-[20px] font-matt lg:leading-[33px]">
     the eksperts ist mehr als nur ein Nearshoring-Anbieter. Wir sind dein Partner für skalierbare, digitale Lösungen<br></br> mit echten Menschen und echtem Einsatz.
   </p>
 </section>
@@ -112,7 +112,7 @@ Sprich mit uns 
   </button>
 </Link>
 
-  <p className="text-[#000] text-[20px] font-matt font-[300] leading-[33px]">
+            <p className="text-[#000] text-[18px] lg:text-[20px] font-matt font-[300] lg:leading-[33px]">
 wir zeigen dir, wie mit Book Your Eksperts dein Business beschleunigt wird.  </p>
 </section>
 
@@ -122,7 +122,7 @@ wir zeigen dir, wie mit Book Your Eksperts dein Business beschleunigt wird.  </p
   <section className="mt-[180px]">
   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6">
     {/* Post 1 */}
-    <Link href="/blog/boost">
+    <Link href="/blog/der-unterschatzte-boost">
       <div className="bg-white overflow-hidden flex flex-col rounded-[12px]">
         <img
           src="/images/boost1.png" // Replace with actual image path
