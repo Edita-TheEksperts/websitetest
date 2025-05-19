@@ -23,7 +23,7 @@ const BriefPost = () => {
     </h2>
     <h3 className="lg:text-[40px] text-[25px] font-matt font-[400] lg:leading-[48px]" style={{fontFamily: 'Matt_Trial', color: '#000'}}>
 So läuft ein agiles Webprojekt bei the eksperts ab    </h3>
-    <p className="text-[#0009FF] text-[20px] mt-4" style={{fontFamily: 'Matt_Trial', color: '#0009FF', fontSize: '20px'}}>
+    <p className="text-[#0009FF] text-[20px] mt-4 font-matt font-[900]" style={{color: '#0009FF', fontSize: '28px'}}>
 Lesedauer: ca. 4-5 Minuten    </p>
   </div>
 </section>

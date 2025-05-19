@@ -21,7 +21,7 @@ const AgilePost = () => {
             <h3 className="hidden lg:text-[40px] text-[25px] font-matt font-[400] lg:leading-[48px]">
               So profitieren Unternehmen von digitalen Teams aus dem DACH-Raum und dem Balkan mit Book Your Eksperts
             </h3>
-            <p className="text-[#0009FF] text-[20px] mt-4">
+    <p className="text-[#0009FF] text-[20px] mt-4 font-matt font-[900]" style={{color: '#0009FF', fontSize: '28px'}}>
               Lesedauer: ca. 3 Minuten
             </p>
           </div>
