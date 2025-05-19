@@ -46,7 +46,7 @@ Lesedauer: ca. 5 Minuten                  </p>
             </Link>
 
             {/* Post 2 */}
-            <Link href="/blog/briefing-launch">
+            <Link href="/blog/der-unterschatzte-boost">
               <div className="bg-white  overflow-hidden flex flex-col lg:h-[956px]" >
                 <img
                   src="/images/briefing.png" // Replace with actual image path
@@ -54,15 +54,15 @@ Lesedauer: ca. 5 Minuten                  </p>
                   className="w-full lg:h-[758px] h-[250px] object-cover rounded-[12px]"
                 />
                 <div className="py-4">
-                   <h3 className="text-[24px] font-matt  uppercase font-[900] leading-[37px] text-black">Vom Briefing zum Launch</h3>
- <p className="text-[#5A585A] text-[18px]  font-matt mb-2">Lesedauer: ca. 4-5 Minuten                  </p>
+                   <h3 className="text-[24px] font-matt  uppercase font-[900] leading-[37px] text-black">Der unterschätzte Boost</h3>
+ <p className="text-[#5A585A] text-[18px]  font-matt mb-2">Lesedauer: ca. 2 Minuten                  </p>
                 </div>
               </div>
             </Link>
           </div>
 
           {/* Post 3 */}
-          <Link href="/blog/der-unterschatzte-boost">
+          <Link href="/blog/briefing-launch">
             <div className="bg-white  overflow-hidden flex flex-col lg:w-[620px] lg:h-[479px] lg:mt-[-500px] mt-[24px] ">
               <img
                 src="/images/boost.png" // Replace with actual image path
@@ -70,8 +70,8 @@ Lesedauer: ca. 5 Minuten                  </p>
                 className="w-full lg:h-[300px] h-[250px] object-cover rounded-[12px]"
               />
               <div className="py-4">
-                 <h3 className="text-[24px] font-matt  uppercase font-[900] leading-[37px] text-black">Der unterschätzte Boost</h3>
- <p className="text-[#5A585A] text-[18px]  font-matt mb-2">Lesedauer: ca. 2 Minuten                </p>
+                 <h3 className="text-[24px] font-matt  uppercase font-[900] leading-[37px] text-black">Vom Briefing zum Launch</h3>
+ <p className="text-[#5A585A] text-[18px]  font-matt mb-2">Lesedauer: ca. 4-5 Minuten                </p>
               </div>
             </div>
           </Link>
