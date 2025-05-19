@@ -48,12 +48,24 @@ Ein neues digitales Projekt startet selten mit Code – sondern mit einem Gespr�
   </div>
 
   {/* Right Content (LESEWERT Box) */}
-  <div className="rounded-lg w-full lg:w-[250px] mt-8 lg:mt-0 lg:ml-auto">
+  <div className="rounded-lg w-full lg:w-[280px] mt-8 lg:mt-0 lg:ml-auto">
     <h3 className="text-[28px] font-matt font-[900] text-black mb-4 uppercase">LESENSWERT:</h3>
     <ul className="list-disc ml-6 text-black font-[300] text-[18px] font-matt">
-      <li>Der unterschätzte Boost</li>
-      <li>Vom Briefing zum Launch</li>
-      <li>Agile Projektleitung</li>
+      <li>
+      <a href="/blog/der-unterschatzte-boost" className="text-black hover:underline" target="_blank" rel="noopener noreferrer">
+        Der unterschätzte Boost
+      </a>
+    </li>
+    <li>
+      <a href="/blog/nearshoring-mit-the-eksperts" className="text-black hover:underline" target="_blank" rel="noopener noreferrer">
+        Nearshoring mit the eksperts
+      </a>
+    </li>
+    <li>
+      <a href="/blog/agile-projektleitung" className="text-black hover:underline" target="_blank" rel="noopener noreferrer">
+        Agile Projektleitung
+      </a>
+    </li>
     </ul>
   </div>
 </section>
@@ -182,7 +194,7 @@ Transparenz, Schnelligkeit, Kundennähe – das ist agile Projektleitung bei the
         />
         <div className="py-4">
           <h4 className="text-[28px] font-matt font-[900] text-black mb-2 uppercase">Nearshoring mit the eksperts</h4>
-          <p className="text-[#5A585A] font-[16px]">Lesedauer: ca. 2 Minuten</p>
+          <p className="text-[#5A585A] font-[16px]">Lesedauer: ca. 5 Minuten</p>
         </div>
       </div>
     </Link>
@@ -212,7 +224,7 @@ Transparenz, Schnelligkeit, Kundennähe – das ist agile Projektleitung bei the
         />
         <div className="py-4">
           <h4 className="text-[28px] font-matt font-[900] text-black mb-2 uppercase">Agile Projektleitung</h4>
-          <p className="text-[#5A585A] font-[16px]">Lesedauer: ca. 2 Minuten</p>
+          <p className="text-[#5A585A] font-[16px]">Lesedauer: ca. 3 Minuten</p>
         </div>
       </div>
     </Link>

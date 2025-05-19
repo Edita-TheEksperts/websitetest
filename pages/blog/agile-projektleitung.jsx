@@ -48,12 +48,26 @@ const AgilePost = () => {
             </div>
 
             {/* Right Content (LESEWERT Box) */}
-            <div className="rounded-lg w-full lg:w-[250px] mt-8 lg:mt-0 lg:ml-auto">
+            <div className="rounded-lg w-full lg:w-[280px] mt-8 lg:mt-0 lg:ml-auto">
               <h3 className="text-[28px] font-matt font-[900] text-black mb-4 uppercase">LESENSWERT:</h3>
               <ul className="list-disc ml-6 text-black font-[300] text-[18px] font-matt">
-                <li>Der unterschätzte Boost</li>
-                <li>Vom Briefing zum Launch</li>
-                <li>Agile Projektleitung</li>
+                         <li>
+      <a href="/blog/der-unterschatzte-boost" className="text-black hover:underline" target="_blank" rel="noopener noreferrer">
+        Der unterschätzte Boost
+      </a>
+    </li>
+                    
+    <li>
+      <a href="/blog/briefing-launch" className="text-black hover:underline" target="_blank" rel="noopener noreferrer">
+        Vom Briefing zum Launch
+      </a>
+    </li>
+      <li>
+      <a href="/blog/nearshoring-mit-the-eksperts" className="text-black hover:underline" target="_blank" rel="noopener noreferrer">
+        Nearshoring mit the eksperts
+      </a>
+    </li>
+
               </ul>
             </div>
           </section>
@@ -160,49 +174,50 @@ const AgilePost = () => {
         <section className="mt-[180px]">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6">
             {/* Post 1 */}
-            <Link href="/blog/der-unterschatzte-boost">
-              <div className="bg-white overflow-hidden flex flex-col rounded-[12px]">
-                <img
-                  src="/images/boost1.png" // Replace with actual image path
-                  alt="Der unterschätzte Boost"
-                  className="w-full lg:h-[350px] object-cover rounded-[12px]"
-                />
-                <div className="py-4">
-                  <h4 className="text-[28px] font-matt font-[900] text-black mb-2 uppercase">Der unterschätzte Boost</h4>
-                  <p className="text-[#5A585A] font-[16px]">Lesedauer: ca. 2 Minuten</p>
-                </div>
-              </div>
-            </Link>
+              <Link href="/blog/nearshoring-mit-the-eksperts">
+      <div className="bg-white overflow-hidden flex flex-col rounded-[12px]">
+        <img
+          src="/images/kosovaa.png" // Replace with actual image path
+          alt="Der unterschätzte Boost"
+          className="w-full lg:h-[350px] object-cover rounded-[12px]"
+        />
+        <div className="py-4">
+          <h4 className="text-[28px] font-matt font-[900] text-black mb-2 uppercase">Nearshoring mit the eksperts:</h4>
+          <p className="text-[#5A585A] font-[16px]">Lesedauer: ca. 5 Minuten</p>
+        </div>
+      </div>
+    </Link>
 
             {/* Post 2 */}
-            <Link href="/blog/briefing-launch">
-              <div className="bg-white overflow-hidden flex flex-col rounded-[12px]">
-                <img
-                  src="/images/agile1.png" // Replace with actual image path
-                  alt="Agile Projektleitung"
-                  className="w-full lg:h-[350px] object-cover rounded-[12px]"
-                />
-                <div className="py-4">
-                  <h4 className="text-[28px] font-matt font-[900] text-black mb-2 uppercase">Vom Briefing zum Launch</h4>
-                  <p className="text-[#5A585A] font-[16px]">Lesedauer: ca. 2 Minuten</p>
-                </div>
-              </div>
-            </Link>
+               <Link href="/blog/briefing-launch">
+      <div className="bg-white overflow-hidden flex flex-col rounded-[12px]">
+        <img
+          src="/images/agile1.png" // Replace with actual image path
+          alt="Agile Projektleitung"
+          className="w-full lg:h-[350px] object-cover rounded-[12px]"
+        />
+        <div className="py-4">
+          <h4 className="text-[28px] font-matt font-[900] text-black mb-2 uppercase">Vom Briefing zum Launch</h4>
+          <p className="text-[#5A585A] font-[16px]">Lesedauer: ca. 4-5 Minuten</p>
+        </div>
+      </div>
+    </Link>
+
 
             {/* Post 3 */}
             <Link href="/blog/der-unterschatzte-boost">
-              <div className="bg-white overflow-hidden flex flex-col rounded-[12px]">
-                <img
-                  src="/images/kaisen4.png" // Replace with actual image path
-                  alt="Agile Projektleitung"
-                  className="w-full lg:h-[350px] object-cover rounded-[12px]"
-                />
-                <div className="py-4">
-                  <h4 className="text-[28px] font-matt font-[900] text-black mb-2 uppercase">Der unterschätzte Boost</h4>
-                  <p className="text-[#5A585A] font-[16px]">Lesedauer: ca. 2 Minuten</p>
-                </div>
-              </div>
-            </Link>
+      <div className="bg-white overflow-hidden flex flex-col rounded-[12px]">
+        <img
+          src="/images/boost1.png" // Replace with actual image path
+          alt="Der unterschätzte Boost"
+          className="w-full lg:h-[350px] object-cover rounded-[12px]"
+        />
+        <div className="py-4">
+          <h4 className="text-[28px] font-matt font-[900] text-black mb-2 uppercase">Der unterschätzte Boost</h4>
+          <p className="text-[#5A585A] font-[16px]">Lesedauer: ca. 2 Minuten</p>
+        </div>
+      </div>
+    </Link>
           </div>
         </section>
       </main>

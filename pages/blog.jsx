@@ -40,7 +40,7 @@ const Blog = () => {
                 <div className="py-4">
                   <h3 className="text-[24px] font-matt  uppercase font-[900] leading-[37px] text-black">Kosova - Nearshoring mit the eksperts</h3>
                   <p className="text-[#5A585A] text-[18px]  font-matt mb-2">
-Lesedauer: ca. 2 Minuten                  </p>
+Lesedauer: ca. 5 Minuten                  </p>
                 </div>
               </div>
             </Link>
@@ -55,7 +55,7 @@ Lesedauer: ca. 2 Minuten                  </p>
                 />
                 <div className="py-4">
                    <h3 className="text-[24px] font-matt  uppercase font-[900] leading-[37px] text-black">Vom Briefing zum Launch</h3>
- <p className="text-[#5A585A] text-[18px]  font-matt mb-2">Lesedauer: ca. 2 Minuten                  </p>
+ <p className="text-[#5A585A] text-[18px]  font-matt mb-2">Lesedauer: ca. 4-5 Minuten                  </p>
                 </div>
               </div>
             </Link>
@@ -86,7 +86,7 @@ Lesedauer: ca. 2 Minuten                  </p>
               />
               <div className="py-4">
                  <h3 className="text-[24px] font-matt  uppercase font-[900] leading-[37px] text-black">Agile Projektleitung</h3>
- <p className="text-[#5A585A] text-[18px] font-matt mb-2">Lesedauer: ca. 2 Minuten                </p>
+ <p className="text-[#5A585A] text-[18px] font-matt mb-2">Lesedauer: ca. 3 Minuten                </p>
               </div>
             </div>
           </Link>
