@@ -134,7 +134,7 @@ const reviews = [
   
 
   return (
-    <div className="px-4">
+    <div className="px-2 lg:px-4">
       <main className="bg-white flex flex-col justify-center items-center">
         <section className="lg:mt-[20px] mt-[60px] lg:px-4 max-w-[1310px] mx-auto gap-6 lg:gap-[90px] flex flex-col lg:flex-row items-center">
           {/* Left Content */}
@@ -356,7 +356,7 @@ Sie erhalten in Kürze den Guide. <br></br>Bitte
             <div key={index} className="flex items-center p-4 lg:px-[20px] lg:py-[18px]  bg-[#F2F2F2] rounded-[12px]">
               <img src={issue.icon} alt={issue.title} className="w-[60px] h-[60px] mr-3 lg:mr-[24px]" />
               <div>
-                <h3 className="text-[24px] leading-[37px] font-[900] font-matt">{issue.title}</h3>
+                <h3 className="text-[20px] lg:text-[24px] lg:leading-[37px] font-[900] font-matt">{issue.title}</h3>
                 <p className="text-black text-[16px] leading-[22px] font-[300]">{issue.description}</p>
               </div>
             </div>
@@ -376,40 +376,40 @@ Sie erhalten in Kürze den Guide. <br></br>Bitte
 
   <div className="relative z-10 flex flex-col items-center">
   <div>
-    <h1 className="header2 text-[40px] lg:text-[80px] lg:leading-[80px] font-[700] font-matt lg:ml-2 lg:mt-[-8px] text-center">Wie es funktioniert:</h1>
-    <p className="par2 text-center text-[20px] leading-[33px] font-[300] mb-8 lg:mb-0">Der Salesforce-Optimierungsprozess: Was Sie erwartet</p>
+    <h1 className="header2 text-[30px] lg:text-[80px] lg:leading-[80px] font-[700] font-matt lg:ml-2 lg:mt-[-8px] text-center">Wie es funktioniert:</h1>
+    <p className="par2 text-center text-[18px] lg:text-[20px] lg:leading-[33px] font-[300] mb-8 lg:mb-0">Der Salesforce-Optimierungsprozess: Was Sie erwartet</p>
   </div>
  
     {/* Step 1 */}
     <div className="bg-[#F1F1F1] shadow-lg text-left rounded-[16px] px-[24px] py-[14px] w-[357px] lg:mr-[610px] lg:mt-[70px] mb-6 lg:mb-0">
-      <h3 className="text-[32px] leading-[48px] font-[700] mb-2">Schritt 1:</h3>
+      <h3 className="text-[24px] lg:text-[32px] lg:leading-[48px] font-[700] mb-2">Schritt 1:</h3>
       <div className="flex flex-col space-y-2">
-      <p className="text-[20px] leading-[28px]  font-[300]">Verstehen der CRM Challenges & Ziele</p>
+      <p className="text-[18px] lg:text-[20px] lg:leading-[28px]  font-[300]">Verstehen der CRM Challenges & Ziele</p>
    
 </div>
     </div>
 
     {/* Step 2 */}
     <div className="bg-[#F1F1F1] shadow-lg text-left  rounded-[16px] px-[24px] custom-1020 lg:w-[400px] w-80 py-[14px] lg:ml-[690px] lg:mt-[-170px] mb-6 lg:mb-0">
-    <h3 className="text-[32px] leading-[48px] font-[700] mb-2">Schritt 2:</h3>
+    <h3 className="text-[24px] lg:text-[32px] lg:leading-[48px] font-[700] mb-2">Schritt 2:</h3>
       <div className="flex flex-col space-y-2">
-      <p className="text-[20px] leading-[28px]  font-[300]">Identifikation von Sicherheits - und Perfomance-Engpässen</p>
+      <p className="text-[18px] lg:text-[20px] lg:leading-[28px]  font-[300]">Identifikation von Sicherheits - und Perfomance-Engpässen</p>
    </div>
     </div>
 
     {/* Step 3 */}
     <div className="icon1 bg-[#F1F1F1] text-left  shadow-lg rounded-[16px] custom-1020 lg:w-[400px] px-[24px] py-[14px] w-80 lg:ml-[600px] lg:mt-[120px] mb-6 lg:mb-0">
-    <h3 className="text-[32px] leading-[48px] font-[700] mb-2">Schritt 3:</h3>
+    <h3 className="text-[24px] lg:text-[32px] lg:leading-[48px] font-[700] mb-2">Schritt 3:</h3>
       <div className="flex flex-col space-y-2">
-      <p className="text-[20px] leading-[28px]  font-[300]">Bericht & Empfehlungen.</p>
+      <p className="text-[18px] lg:text-[20px] lg:leading-[28px]  font-[300]">Bericht & Empfehlungen.</p>
    </div>
     </div>
 
     {/* Step 4 */}
     <div className="icon2 bg-[#F1F1F1] text-left shadow-lg rounded-[16px] px-[24px] custom-1020 lg:w-[420px] py-[14px] w-[340px]  lg:mr-[800px] lg:mt-[50px] mb-6 lg:mb-0">
-    <h3 className="text-[32px] leading-[48px] font-[700] mb-2">Schritt 4:</h3>
+    <h3 className="text-[24px] lg:text-[32px] lg:leading-[48px] font-[700] mb-2">Schritt 4:</h3>
       <div className="flex flex-col space-y-2">
-      <p className="text-[20px] leading-[28px]  font-[300]">Unser Team implementiert die erforderlichen Verbesserungen, um Ihre Salesforce-Instanz zu optimieren.</p>
+      <p className="text-[18px] lg:text-[20px] lg:leading-[28px]  font-[300]">Unser Team implementiert die erforderlichen Verbesserungen, um Ihre Salesforce-Instanz zu optimieren.</p>
    </div>
    </div>
     <div className="flex flex-row">
