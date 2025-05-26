@@ -91,6 +91,34 @@ Lesedauer: ca. 5 Minuten                  </p>
             </div>
           </Link>
         </section>
+        <section className='lg:mt-[-55px] flex flex-col lg:flex-row gap-[30px]'>
+     <Link href="/blog/salesforce-consultant">
+            <div className="bg-white  overflow-hidden flex flex-col lg:w-[622px] lg:h-[479px]">
+              <img
+                src="/images/logoss/blog5.png" // Replace with actual image path
+                alt="Agile Projektleitung"
+                className="w-full lg:h-[300px] h-[250px] object-cover rounded-[12px]"
+              />
+              <div className="py-4">
+                 <h3 className="text-[24px] font-matt  uppercase font-[900] leading-[37px] text-black">Was unterscheidet Sie von anderen Salesforce-Beratern?</h3>
+ <p className="text-[#5A585A] text-[18px] font-matt mb-2">Lesedauer: ca. 3 Minuten                </p>
+              </div>
+            </div>
+          </Link>
+               <Link href="/blog/der-start-deiner-salesforce-zertifizierungs-reise">
+            <div className="bg-white  overflow-hidden flex flex-col lg:w-[622px] lg:h-[479px]">
+              <img
+                src="/images/logoss/blog6.png" // Replace with actual image path
+                alt="Agile Projektleitung"
+                className="w-full lg:h-[300px] h-[250px] object-cover rounded-[12px]"
+              />
+              <div className="py-4">
+                 <h3 className="text-[24px] font-matt  uppercase font-[900] leading-[37px] text-black">Der Start deiner Salesforce-(Zertifizierung's)-Reise</h3>
+ <p className="text-[#5A585A] text-[18px] font-matt mb-2">Lesedauer: ca. 4 Minuten                </p>
+              </div>
+            </div>
+          </Link>
+        </section>
       </main>
     </>
   );
