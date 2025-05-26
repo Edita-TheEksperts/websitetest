@@ -16,7 +16,7 @@ const KosovaPost = () => {
         
 
         {/* Post Content Section */}
-        <section className="mb-[16px] text-left">
+        <section className="mb-[16px]  lg:mb-[40px] text-left">
   <div className="text-left ">
     <h2 className="lg:text-[80px] text-[40px] font-matt font-[700] text-black tracking-tight lg:leading-[100%] mb-2 lg:mb-0" style={{fontFamily: 'Matt_Trial', color: '#000'}}>
       Nearshoring mit the eksperts:
