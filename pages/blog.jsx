@@ -92,7 +92,7 @@ Lesedauer: ca. 5 Minuten                  </p>
           </Link>
         </section>
         <section className='lg:mt-[-55px] flex flex-col lg:flex-row gap-[30px]'>
-     <Link href="/blog/salesforce-consultant">
+     <Link href="/blog/salesforce-berater-unterscheidung">
             <div className="bg-white  overflow-hidden flex flex-col lg:w-[622px] lg:h-[479px]">
               <img
                 src="/images/logoss/blog5.png" // Replace with actual image path

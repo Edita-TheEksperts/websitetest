@@ -69,8 +69,8 @@ Wenn du gerade in das Salesforce-Ökosystem einsteigst, steht eine Zertifizierun
       </a>
     </li>
     <li>
-      <a href="/blog/salesforce-consultant" className="text-black hover:underline" target="_blank" rel="noopener noreferrer">
-        Salesforce Consultant
+      <a href="/blog/salesforce-berater-unterscheidung" className="text-black hover:underline" target="_blank" rel="noopener noreferrer">
+        Salesforce Berater Unterscheidung
       </a>
     </li>
     <li>
@@ -169,7 +169,7 @@ Der Weg ist offen. Folge deiner Neugier, baue deine Skills Schritt für Schritt 
     </Link>
 
     {/* Post 3 */}
-    <Link href="/blog/agile-projektleitung">
+    <Link href="/blog/salesforce-berater-unterscheidung">
       <div className="bg-white overflow-hidden flex flex-col rounded-[12px]">
         <img
           src="/images/Salesforce--Consultant.png" // Replace with actual image path
@@ -177,7 +177,7 @@ Der Weg ist offen. Folge deiner Neugier, baue deine Skills Schritt für Schritt 
           className="w-full lg:h-[350px] object-cover rounded-[12px]"
         />
         <div className="py-4">
-          <h4 className="text-[28px] font-matt font-[900] text-black mb-2 uppercase">Salesforce Consultant</h4>
+          <h4 className="text-[28px] font-matt font-[900] text-black mb-2 uppercase">Was unterscheidet Sie von anderen Salesforce-Beratern?</h4>
           <p className="text-[#5A585A] font-[16px]">Lesedauer: ca. 3 Minuten</p>
         </div>
       </div>
