@@ -91,7 +91,7 @@ Lesedauer: ca. 5 Minuten                  </p>
             </div>
           </Link>
         </section>
-        <section className='lg:mt-[-55px] flex flex-col lg:flex-row gap-[30px]'>
+        <section className='lg:mt-[-55px] mt-[25px] flex flex-col lg:flex-row gap-[30px]'>
      <Link href="/blog/salesforce-berater-unterscheidung">
             <div className="bg-white  overflow-hidden flex flex-col lg:w-[622px] lg:h-[479px]">
               <img
@@ -115,6 +115,22 @@ Lesedauer: ca. 5 Minuten                  </p>
               <div className="py-4">
                  <h3 className="text-[24px] font-matt  uppercase font-[900] leading-[37px] text-black">Der Start deiner Salesforce-(Zertifizierung's)-Reise</h3>
  <p className="text-[#5A585A] text-[18px] font-matt mb-2">Lesedauer: ca. 4 Minuten                </p>
+              </div>
+            </div>
+          </Link>
+        </section>
+        <section>
+          {/* Post 4 */}
+          <Link href="/blog/ai-projektmanagement">
+            <div className="bg-white  overflow-hidden flex flex-col lg:h-[479px] lg:mt-[-5px] mt-[25px]">
+              <img
+                src="/images/aiprojekt.png" // Replace with actual image path
+                alt="AI-Projektmanagement: Tools und Frameworks, die du kennen solltest"
+                className="w-full lg:h-[300px] h-[250px] object-cover rounded-[12px]"
+              />
+              <div className="py-4">
+                 <h3 className="text-[24px] font-matt  uppercase font-[900] leading-[37px] text-black">AI-Projektmanagement: Tools und Frameworks, die du kennen solltest</h3>
+ <p className="text-[#5A585A] text-[18px] font-matt mb-2">Lesedauer: ca. 6 Minuten                </p>
               </div>
             </div>
           </Link>
