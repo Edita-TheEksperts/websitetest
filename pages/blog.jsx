@@ -100,7 +100,7 @@ Lesedauer: ca. 5 Minuten                  </p>
                 className="w-full lg:h-[300px] h-[250px] object-cover rounded-[12px]"
               />
               <div className="py-4">
-                 <h3 className="text-[24px] font-matt  uppercase font-[900] leading-[37px] text-black">Was unterscheidet Sie von anderen Salesforce-Beratern?</h3>
+                 <h3 className="text-[24px] font-matt  uppercase font-[900] leading-[37px] text-black">Was unterscheidet dich von anderen Salesforce Consultants??</h3>
  <p className="text-[#5A585A] text-[18px] font-matt mb-2">Lesedauer: ca. 3 Minuten                </p>
               </div>
             </div>
