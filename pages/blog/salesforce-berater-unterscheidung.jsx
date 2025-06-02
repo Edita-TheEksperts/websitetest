@@ -5,7 +5,7 @@ const ConsultantPost = () => {
   return (
     <>
       <Head>
-        <title>Was unterscheidet Sie von anderen Salesforce-Beratern? | the eksperts</title>
+        <title>Was unterscheidet dich von anderen Salesforce Consultants? | the eksperts</title>
         <meta name="description" content="Was unterscheidet Sie von anderen Salesforce-Beratern?" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta property="og:image" content="https://www.the-eksperts.com/images/the%20eksperts%20vertical%20blue.png" />
@@ -19,13 +19,13 @@ const ConsultantPost = () => {
         <section className="mb-[16px]  lg:mb-[40px] text-left">
   <div className="text-left ">
     <h2 className="lg:text-[80px] text-[40px] font-matt font-[700] text-black tracking-tight lg:leading-[100%] mb-2 lg:mb-0" style={{fontFamily: 'Matt_Trial', color: '#000'}}>
-      Was unterscheidet Sie von anderen Salesforce-Beratern?
+      Was unterscheidet dich von anderen Salesforce Consultants?
     </h2>
     <h3 className="lg:block hidden lg:text-[40px] text-[25px] font-matt font-[400] lg:leading-[48px]" style={{fontFamily: 'Matt_Trial', color: '#000'}}>
-      Reicht nur technisches Wissen aus, um besser zu sein?
+      Reicht technisches Wissen allein, um besser zu sein?
     </h3>
     <h3 className="lg:hidden block lg:text-[40px] text-[25px] font-matt font-[400] lg:leading-[48px]" style={{fontFamily: 'Matt_Trial', color: '#000'}}>
-      Reicht nur technisches Wissen aus, um besser zu sein?
+      Reicht technisches Wissen allein, um besser zu sein?
     </h3>
     <div className='mt-[15px] bg-[#0009FF] rounded-[8px] p-[16px] lg:w-[990px]'>
 <h2 className="text-[28px] font-matt text-white mb-4 uppercase">
@@ -33,7 +33,7 @@ const ConsultantPost = () => {
   <span className="font-300">(too long; didn't read)</span>
 </h2>
     <p className="text-white font-[300] text-[16px] lg:text-[20px] font-matt">
-Ein guter Salesforce-Berater zeichnet sich nicht nur durch technische Fähigkeiten aus – es geht auch darum, zuzuhören, die Bedürfnisse der Kunden zu verstehen und effektiv zu kommunizieren. Die besten Lösungen entstehen durch die Kombination von technischem Fachwissen und menschlicher Nähe.      </p>
+Ein grossartiger Salesforce Consultant zu sein, bedeutet mehr als nur technisches Know-how – es geht ums Zuhören, das Verstehen von Kundenbedürfnissen und um effektive Kommunikation. Die besten Lösungen entstehen durch die Kombination aus technischer Expertise und menschlicher Verbindung.   </p>
     </div>
   
   </div>
@@ -55,7 +55,7 @@ Ein guter Salesforce-Berater zeichnet sich nicht nur durch technische Fähigkeit
       Lesedauer: ca. 3 Minuten
     </p>
     <p className="text-black font-[300] text-[16px] lg:text-[20px] font-matt">
-Als Salesforce-Berater sind fundierte technische Kenntnisse und ein tiefes Verständnis des Salesforce-Ökosystems unerlässlich. Sie müssen wissen, wie Sie die Plattform für Ihre Kunden effizient nutzen. Die Bereitstellung der richtigen Lösung erfordert jedoch mehr als nur technisches Fachwissen – es beginnt mit Zuhören.    </p>
+Als Salesforce Consultant ist fundiertes technisches Wissen und ein tiefes Verständnis des Salesforce-Ökosystems unerlässlich. Du musst wissen, wie du die Plattform effizient für deine Kund:innen einsetzt. Doch die richtige Lösung zu liefern, geht über reine Fachkenntnis hinaus – es beginnt mit Zuhören.  </p>
   </div>
 
   {/* Right Content (LESEWERT Box) */}
@@ -87,7 +87,7 @@ Als Salesforce-Berater sind fundierte technische Kenntnisse und ein tiefes Verst
   <h2 className="text-[28px] font-matt font-[900] text-black mb-4 uppercase">Fragen, Zuhören, Lösen: Der Schlüssel zur Salesforce-Beratung</h2>
 
           <p className=" text-black font-[300] text-[16px] lg:text-[20px] font-matt">
-    Um wirklich Mehrwert zu schaffen, müssen Sie die Probleme Ihrer Kunden im Kern verstehen. Es geht nicht nur darum, Berichte und Dashboards zu erstellen oder Prozesse zu automatisieren. Es geht darum, Kontakte zu knüpfen. Deshalb lege ich in meiner täglichen Arbeit ebenso viel Wert darauf, die richtigen Fragen zu stellen, sinnvoll Zeit mit meinen Kunden zu verbringen und sicherzustellen, dass jede Interaktion einen Mehrwert bringt.
+    Um echten Mehrwert zu schaffen, musst du die Schmerzpunkte deiner Kund:innen wirklich verstehen. Es geht nicht nur darum, Berichte zu erstellen, Dashboards aufzubauen oder Prozesse zu automatisieren. Es geht um Verbindung. Deshalb lege ich in meiner täglichen Arbeit genauso viel Wert darauf, die Kunst des richtigen Fragens zu beherrschen, sinnvolle Zeit mit meinen Kund:innen zu verbringen und sicherzustellen, dass jede Interaktion einen echten Nutzen bringt.
   </p>
           </div>
 
@@ -106,8 +106,7 @@ Als Salesforce-Berater sind fundierte technische Kenntnisse und ein tiefes Verst
 
     <h2 className="text-[28px] font-matt font-[900] text-black mb-4 uppercase">Die Beherrschung von Salesforce beginnt mit der Kommunikation</h2>
      <p className=" text-black font-[300] text-[16px] lg:text-[20px] lg:leading-[33px] font-matt">
-Egal, ob Sie gerade erst in die Salesforce-Welt einsteigen oder bereits mit den technischen Herausforderungen vertraut sind, hier ist eine wertvolle Ergänzung für Ihr Toolkit: Kommunikation. Falls Sie bisher noch nicht darin investiert haben, ist jetzt der richtige Zeitpunkt dafür. Denn die wirkungsvollsten Lösungen entstehen nicht nur durch Code und Klicks, sondern durch ein tiefes Verständnis der Menschen, für die Sie entwickeln.
-    </p>
+Egal, ob du neu in der Salesforce-Welt bist oder bereits erfahren im Umgang mit technischen Herausforderungen – hier ist etwas, das in deinem Toolkit nicht fehlen darf: Kommunikation. Wenn du bisher noch nicht bewusst darin investiert hast, dann ist jetzt der richtige Zeitpunkt. Denn die wirkungsvollsten Lösungen entstehen nicht nur durch Code und Klicks – sondern durch ein tiefes Verständnis für die Menschen, für die du baust.    </p>
   </div>
 
  
