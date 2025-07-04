@@ -197,15 +197,18 @@ const handleBlueFormSubmit = async (e) => {
             <h1 className="text-black font-[400] text-[40px] leading-[48px] mt-[16px] lg:block hidden ">
 Ihre neue Website<br></br> ab CHF 24.– für mehr <br></br> Kunden und Vertrauen.         </h1>
             <h1 className="text-black font-[400] text-[40px] leading-[48px] mt-[16px] lg:hidden block">
-            Websites, die <br></br>professionell wirken – und Kunden gewinnen. <br></br>Zum Festpreis inkl. Logo.            </h1>
+            Websites, die professionell wirken – und Kunden gewinnen. <br></br>Zum Festpreis inkl. Logo.            </h1>
 
             <p className="text-[#6D6D6D] text-[16px] leading-[25px] lg:text-[20px] lg:leading-[28px] mt-[16px] font-[400] lg:block hidden ">
 Inkl. Domain, Hosting, Logo & modernem Design – zum Fixpreis.  </p>
             <p className="text-[#6D6D6D] text-[16px] leading-[25px] lg:text-[20px] lg:leading-[28px] mt-[16px] font-[400] lg:hidden block">
 Inkl. Domain, Hosting, Logo & modernem Design – zum Fixpreis.           </p>
-            <button className="mt-[16px] flex px-[40px] py-[14px] justify-center items-center gap-[8px] rounded-[12px] bg-[#152DFF] text-white font-matt text-[20px] font-medium leading-[28px]">
-            Jetzt Paket sichern ➔
-      </button>
+       <div className="flex justify-center lg:justify-start">
+  <button className="mt-[16px] flex px-[40px] py-[14px] justify-center items-center gap-[8px] rounded-[12px] bg-[#152DFF] text-white font-matt text-[20px] font-medium leading-[28px]">
+    Jetzt Paket sichern ➔
+  </button>
+</div>
+
         
           </div>
 
