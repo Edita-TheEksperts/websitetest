@@ -197,7 +197,7 @@ const handleBlueFormSubmit = async (e) => {
             <h1 className="text-black font-[400] text-[40px] leading-[48px] mt-[16px] lg:block hidden ">
 Ihre neue Website<br></br> ab CHF 24.– für mehr <br></br> Kunden und Vertrauen.         </h1>
             <h1 className="text-black font-[400] text-[40px] leading-[48px] mt-[16px] lg:hidden block">
-            Websites, die professionell wirken – und Kunden gewinnen. <br></br>Zum Festpreis inkl. Logo.            </h1>
+          Ihre neue Website ab CHF 24.– für mehr Kunden und Vertrauen.             </h1>
 
             <p className="text-[#6D6D6D] text-[16px] leading-[25px] lg:text-[20px] lg:leading-[28px] mt-[16px] font-[400] lg:block hidden ">
 Inkl. Domain, Hosting, Logo & modernem Design – zum Fixpreis.  </p>
@@ -207,6 +207,7 @@ Inkl. Domain, Hosting, Logo & modernem Design – zum Fixpreis.           </p>
   <button className="mt-[16px] flex px-[40px] py-[14px] justify-center items-center gap-[8px] rounded-[12px] bg-[#152DFF] text-white font-matt text-[20px] font-medium leading-[28px]">
     Jetzt Paket sichern ➔
   </button>
+  
 </div>
 
         
@@ -276,8 +277,8 @@ Inkl. Domain, Hosting, Logo & modernem Design – zum Fixpreis.           </p>
     <option value="" disabled hidden>
       Ich interessiere mich für:
     </option>
-    <option value="Starter Paket">Neugründer-Paket (CHF 24.00)</option>
-    <option value="Business Paket">KMU-Paket (CHF 39.00)</option>
+    <option value="Starter Paket">Starter-Paket (CHF 24.00)</option>
+    <option value="Business Paket">Business-Paket (CHF 39.00)</option>
     <option value="Premium Paket">Premium-Paket (CHF 59.00)</option>
   </select>
   {blueFormErrors.subject && (
@@ -315,6 +316,13 @@ Inkl. Domain, Hosting, Logo & modernem Design – zum Fixpreis.           </p>
 </section>
 
 <section className="mt-[20px] mb-[50px] lg:mb-[50px]">
+<div className="flex flex-wrap justify-left lg:ml-10 gap-2 lg:gap-6 text-[12px] lg:text-[16px] font-semibold text-black font-matt mb-16 lg:mt-[-40px]">
+  <a href="mailto:info@the-eksperts.com" className="hover:underline">info@the-eksperts.com</a>
+  <a href="tel:+41799213000" className="hover:underline">+41 79 921 30 00</a>
+  <a href="https://www.the-eksperts.com" target="_blank" rel="noopener noreferrer" className="hover:underline">www.the-eksperts.com</a>
+
+</div>
+
   <PartnersSlider/>
 </section>
 <section className="mt-[20px] mb-[160px] lg:mb-[300px]">
