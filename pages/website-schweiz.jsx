@@ -6,33 +6,33 @@ import PartnersSlider from "../components/SliderLandingPage/SliderLandingPage";
 const reviews = [
     {
       name: "Tobias Krusi",
-      text: "For me, The Eksperts embodies the perfect team of digital thought leaders. I can only recommend their cooperation. They impress with their outstanding skills, their comprehensive understanding and their tireless pursuit of the best. For me, The Eksperts are the ideal partner when it comes to overcoming digital challenges, optimizing processes and increasing efficiency using software and tools. From the development of a web shop to the transformation of CRM systems to specialized knowledge in Salesforce. I can say with full confidence that The Eksperts bring invaluable value to any company looking for world-class digital solutions.",
+      text: "Für mich verkörpert The Eksperts das perfekte Team aus digitalen Vordenkern. Ich kann ihre Zusammenarbeit nur empfehlen. Sie überzeugen durch ihre herausragenden Fähigkeiten, ihr umfassendes Verständnis und ihr unermüdliches Streben nach dem Besten. The Eksperts sind für mich der ideale Partner, wenn es um die Bewältigung digitaler Herausforderungen, die Optimierung von Prozessen und die Steigerung von Effizienz mittels Software und Tools geht. Von der Entwicklung eines Webshops über die Transformation von CRM-Systemen bis hin zu spezialisiertes Wissen in Salesforce. Ich kann mit voller Überzeugung sagen, dass The Eksperts jedem Unternehmen, das nach erstklassigen digitalen Lösungen sucht, einen unschätzbaren Mehrwert bieten.",
       color: "#FF0000",
     },
     {
       name: "Shkelzen Luri",
-      text: "My experience with The Eksperts was very positive. Your team is professional, fast and finds tailor-made solutions for complex digital challenges. I was particularly impressed by their customer-oriented approach and their innovative strength. Clear recommendation for anyone looking for a reliable partner in the digital world.",
+      text: "Meine Erfahrung mit The Eksperts war sehr positiv. Ihr Team ist professionell, schnell und findet massgeschneiderte Lösungen für komplexe digitale Herausforderungen. Besonders beeindruckt hat mich ihr kundenorientierter Ansatz und ihre Innovationskraft. Klare Empfehlung für alle, die einen zuverlässigen Partner in der digitalen Welt suchen.",
       color: "#07314C",
     },
     {
       name: "Dario",
-      text: "The Eksperts are an outstanding agency—reliable, fast, and highly creative. Their solutions are not only efficient but also innovative, always tailored to our needs. A true partner for success!",
+      text: "the eksperts are an outstanding agency—reliable, fast, and highly creative. Their solutions are not only efficient but also innovative, always tailored to our needs. A true partner for success!",
       color: "#FFBF00",
     },
     {
       name: "Arlind Shala",
-      text: "I would like to express my complete satisfaction with the services of the eksperts. From the start the team was extremely professional and reliable. Communication was always clear and polite, which made the entire process very pleasant.",
+      text: "Ich möchte meine vollständige Zufriedenheit mit den Dienstleistungen des the eksperts zum Ausdruck bringen. Von Anfang an war das Team äußerst professionell und zuverlässig. Die Kommunikation war immer klar und höflich, was den gesamten Prozess sehr angenehm gestaltet hat.",
       color: "#0009FF",
     },
     {
       name: "Mert HMC",
-      text: "The Eksperts offers excellent service and in-depth expertise in the area of ​​web services. The solutions are reliable, efficient and perfectly tailored to individual needs. Absolutely recommended!",
+      text: "the eksperts bietet exzellenten Service und tiefgehendes Fachwissen im Bereich Webservices. Die Lösungen sind zuverlässig, effizient und perfekt auf individuelle Bedürfnisse abgestimmt. Absolut empfehlenswert!",
       color: "#5D95FF",
     },
    
     {
       name: "Eco Bautec & Design AG",
-      text: "We are absolutely thrilled with the eksperts! The online shop and our website were implemented exactly according to our ideas, and the collaboration was always uncomplicated and very professional - a great team!",
+      text: "Wir sind absolut begeistert von the eksperts! Der Online-Shop und unsere Website wurden genau nach unseren Vorstellungen umgesetzt, und die Zusammenarbeit war immer unkompliziert und sehr professionell – ein tolles Team!",
       color: "#007934",
     },
   ];
@@ -177,9 +177,9 @@ const handleBlueFormSubmit = async (e) => {
   return (
     <div className="px-4">
       <main className="bg-white flex flex-col justify-center items-center">
-        <section className="lg:mt-[20px] mt-[60px] lg:px-4 max-w-[1310px] mx-auto gap-6 lg:gap-[90px] flex flex-col lg:flex-row items-center">
+        <section className="lg:mt-[20px] mt-[60px] lg:px-4 max-w-[1310px] mx-auto gap-6 lg:gap-[140px] flex flex-col lg:flex-row items-center">
           {/* Left Content */}
-          <div className="lg:w-1/2 text-center lg:text-left ">
+          <div ref={contactRef} id="contact-section"  className="lg:w-1/2 text-center lg:text-left ">
           <div className="flex flex-row items-center">
       {["/images/hero11.png", "/images/hero12.png", "/images/hero13.png", "/images/hero14.png"].map((src, index) => (
         <img
@@ -195,16 +195,16 @@ const handleBlueFormSubmit = async (e) => {
       </p>
     </div>
             <h1 className="text-black font-[400] text-[40px] leading-[48px] mt-[16px] lg:block hidden ">
-Websites, die professionell wirken – und Kunden gewinnen. <br></br>Zum Festpreis inkl. Logo.            </h1>
+Ihre neue Website<br></br> ab CHF 24.– für mehr <br></br> Kunden und Vertrauen.         </h1>
             <h1 className="text-black font-[400] text-[40px] leading-[48px] mt-[16px] lg:hidden block">
             Websites, die <br></br>professionell wirken – und Kunden gewinnen. <br></br>Zum Festpreis inkl. Logo.            </h1>
 
             <p className="text-[#6D6D6D] text-[16px] leading-[25px] lg:text-[20px] lg:leading-[28px] mt-[16px] font-[400] lg:block hidden ">
-Modernes Webdesign für Startups & KMU – oder für alle,<br></br> die ihre alte Website satt haben.            </p>
+Inkl. Domain, Hosting, Logo & modernem Design – zum Fixpreis.  </p>
             <p className="text-[#6D6D6D] text-[16px] leading-[25px] lg:text-[20px] lg:leading-[28px] mt-[16px] font-[400] lg:hidden block">
-Modernes Webdesign für Startups & KMU – oder für alle, die ihre alte Website satt haben.            </p>
-            <button onClick={scrollToContactForm} className="mt-[16px] flex px-[40px] py-[14px] justify-center items-center gap-[8px] rounded-[12px] bg-[#152DFF] text-white font-matt text-[20px] font-medium leading-[28px]">
-            Kontaktieren sie Uns ➔
+Inkl. Domain, Hosting, Logo & modernem Design – zum Fixpreis.           </p>
+            <button className="mt-[16px] flex px-[40px] py-[14px] justify-center items-center gap-[8px] rounded-[12px] bg-[#152DFF] text-white font-matt text-[20px] font-medium leading-[28px]">
+            Jetzt Paket sichern ➔
       </button>
         
           </div>
@@ -213,25 +213,25 @@ Modernes Webdesign für Startups & KMU – oder für alle, die ihre alte Website
   {/* Right Image */}
 <div className="flex justify-center mt-8 lg:mt-2">
   <div className="w-full max-w-[850px]">
-    {isBlueFormSubmitted ? (
-      <div className="text-center lg:text-left mt-6">
-        <h1 className="text-white font-[300] text-[48px] leading-[56px] font-matt">
-          Vielen Dank.
-        </h1>
-        <p className="text-white font-[300] text-[24px] font-matt leading-[32px] mt-6 lg:mt-[35px] lg:block hidden">
-          Ihre Nachricht wurde erfolgreich gesendet. Wir melden uns bald bei Ihnen.
-        </p>
-        <p className="text-white font-[300] text-[24px] font-matt leading-[32px] mt-6 lg:mt-[35px] lg:hidden block">
-          Ihre Nachricht wurde erfolgreich gesendet.
-        </p>
-      </div>
-    ) : (
+ {isBlueFormSubmitted ? (
+  <div className="w-full lg:w-1/2 lg:min-w-[522px]">
+    <div className="text-center lg:text-left">
+      <h1 className="text-[#6D6E70] font-[300] lg:text-[64px] text-[60px] font-matt lg:leading-[72px]">
+        Vielen Dank.
+      </h1>
+      <p className="text-[#6D6E70] font-[300] lg:text-[32px] text-[20px] font-matt lg:leading-[40px] mt-10 lg:mt-[45px]">
+       Wir haben Ihre Nachricht erhalten<br></br> und melden uns in Kürze bei Ihnen.
+      </p>
+    </div>
+  </div>
+) : (
       <form
         className="bg-[#0000FF] text-white p-6 rounded-lg w-full space-y-4"
         onSubmit={handleBlueFormSubmit}
       >
         <h2 className="text-3xl font-bold">
-          Hinterlasse Sie uns<br />eine Nachricht
+         Ihre neue Website -<br></br> Starten Sie hier
+
         </h2>
 
         <div className="flex flex-col sm:flex-row gap-4">
@@ -239,7 +239,7 @@ Modernes Webdesign für Startups & KMU – oder für alle, die ihre alte Website
             <input
               type="text"
               name="name"
-              placeholder="Vorname Nachname"
+              placeholder="Ihre Name"
               value={blueFormData.name}
               onChange={handleBlueFormChange}
               className="w-full p-3 rounded border border-white bg-transparent text-white placeholder-white"
@@ -263,20 +263,26 @@ Modernes Webdesign für Startups & KMU – oder für alle, die ihre alte Website
             )}
           </div>
         </div>
+<div>
+  <select
+    name="subject"
+    value={blueFormData.subject}
+    onChange={handleBlueFormChange}
+    className="w-full p-3 rounded border border-white bg-[#0000FF] text-white appearance-none"
+  >
+    <option value="" disabled hidden>
+      Ich interessiere mich für:
+    </option>
+    <option value="Starter Paket">Starter Paket</option>
+    <option value="Business Paket">Business Paket</option>
+    <option value="Premium Paket">Premium Paket</option>
+  </select>
+  {blueFormErrors.subject && (
+    <span className="text-red-400 text-sm">{blueFormErrors.subject}</span>
+  )}
+</div>
 
-        <div>
-          <input
-            type="text"
-            name="subject"
-            placeholder="Betreff"
-            value={blueFormData.subject}
-            onChange={handleBlueFormChange}
-            className="w-full p-3 rounded border border-white bg-transparent text-white placeholder-white"
-          />
-          {blueFormErrors.subject && (
-            <span className="text-red-400 text-sm">{blueFormErrors.subject}</span>
-          )}
-        </div>
+
 
         <div>
           <textarea
@@ -296,7 +302,7 @@ Modernes Webdesign für Startups & KMU – oder für alle, die ihre alte Website
           type="submit"
           className="w-full bg-white text-[#0000FF] font-bold py-3 rounded hover:bg-gray-100 transition"
         >
-          Say hi to us!
+          Jetzt Angebot sichern
         </button>
       </form>
     )}
@@ -305,7 +311,7 @@ Modernes Webdesign für Startups & KMU – oder für alle, die ihre alte Website
 
 </section>
 
-<section className="mt-[20px] mb-[160px] lg:mb-[280px]">
+<section className="mt-[20px] mb-[50px] lg:mb-[50px]">
   <PartnersSlider/>
 </section>
 <section className="mt-[20px] mb-[160px] lg:mb-[300px]">
@@ -327,23 +333,34 @@ Modernes Webdesign für Startups & KMU – oder für alle, die ihre alte Website
         <li>Eigene .ch-Domain, Hosting & E-Mail inklusive</li>
         <li>Modernes, responsives Design</li>
         <li>Texte & Bilder inklusive</li>
-      </ul>
-    </div>
+        <li>Technischer Support & Wartung inklusive</li>
 
-    {/* Business-Paket */}
-    <div className="border border-[#6D6E70] rounded-xl p-8 bg-white w-full lg:w-1/3">
-      <h3 className="text-[32px] leading-[40px] font-[600] font-matt text-text-black mb-2">
-        Business-Paket
-      </h3>
-      <p className="text-[30px] font-[300] font-matt text-black"><strong className="font-[600]">CHF 49.00</strong> / Monat*</p>
-      <p className="text-[18px] font-[300] font-matt text-black mb-6">Einmalig Setup CHF 990.00</p>
-      <ul className="text-[18px] font-[300] font-matt text-black space-y-3">
-        <li>Bis zu 4 Seiten</li>
-        <li>Eigene .ch-Domain, Hosting & E-Mail inklusive</li>
-        <li>Modernes, responsives Design</li>
-        <li>Texte & Bilder inklusive</li>
       </ul>
     </div>
+<div className="relative border-4 border-[#152DFF] rounded-xl p-8 bg-white w-full lg:w-1/3 shadow-lg transform scale-[1.03]">
+  {/* Recommendation Tag */}
+
+  <h3 className="text-[32px] leading-[40px] font-[600] font-matt text-black mb-2">
+    Business-Paket
+  </h3>
+
+  <p className="text-[30px] font-[300] font-matt text-black">
+    <strong className="font-[600]">CHF 49.00</strong> / Monat*
+  </p>
+
+  <p className="text-[18px] font-[300] font-matt text-black mb-6">
+    Einmalig Setup CHF 990.00
+  </p>
+
+  <ul className="text-[18px] font-[300] font-matt text-black space-y-3">
+    <li>Bis zu 4 Seiten</li>
+    <li>Eigene .ch-Domain, Hosting & E-Mail inklusive</li>
+    <li>Modernes, responsives Design</li>
+    <li>Texte & Bilder inklusive</li>
+    <li>Technischer Support & Wartung inklusive</li>
+  </ul>
+</div>
+
 
     {/* Premium-Paket */}
     <div className="border border-[#6D6E70] rounded-xl p-8 bg-white w-full lg:w-1/3">
@@ -356,6 +373,7 @@ Modernes Webdesign für Startups & KMU – oder für alle, die ihre alte Website
         <li>Bis zu 8 Seiten</li>
         <li>Eigene .ch-Domain, Hosting & E-Mail inklusive</li>
         <li>Modernes, responsives Design</li>
+        <li>Texte & Bilder inklusive</li>
         <li>Technischer Support & Wartung inklusive</li>
       </ul>
     </div>
@@ -367,11 +385,7 @@ Modernes Webdesign für Startups & KMU – oder für alle, die ihre alte Website
   </p>
 </section>
 
-<ContactFormStartup/>
-
-
-
-    <h2 ref={contactRef} id="contact-section" className="text-[40px] mb-[40px] leading-[48px] font-[700] text-center">
+    <h2 className="text-[40px] mb-[40px] leading-[48px] font-[700] text-center">
           Laden Sie den kostenlosen Leitfaden für <br></br> perfektes Webdesign herunter
         </h2>
     <section className="custom-1026 flex flex-col items-center lg:gap-[40px] justify-center  lg:flex-row mb-[160px] lg:mb-[300px] mx-auto max-w-[1280px] lg:px-[20px]">
@@ -417,7 +431,7 @@ Modernes Webdesign für Startups & KMU – oder für alle, die ihre alte Website
             { label: "Nachname", name: "nachname", placeholder: "Ihr Name", required: true }, 
             { label: "Unternehmen", name: "unternehmen", placeholder: "Ihr Unternehmen", required: true },
             { label: "Email", name: "email", placeholder: "Ihre Email", required: true },
-            { label: "Position", name: "position", placeholder: "Ihre Position", required: true }
+            { label: "Position", name: "position", placeholder: "Ihre Position (Optional)" }
           ].map((field, index) => (
             <div key={index} className="flex flex-col">
               <label className="text-[20px] font-[500] text-black leading-normal">
@@ -549,7 +563,7 @@ Modernes Webdesign für Startups & KMU – oder für alle, die ihre alte Website
     <div className="bg-[#F1F1F1] shadow-lg text-left  rounded-[16px] px-[24px] custom-1020 lg:w-[400px] w-80 py-[14px] lg:ml-[690px] lg:mt-[-170px] mb-6 lg:mb-0">
     <h3 className="text-[32px] leading-[48px] font-[700] mb-2">Schritt 2:</h3>
       <div className="flex flex-col space-y-2">
-        <p className="text-[24px] leading-[32px] font-[400] font-matt">Individuelles Design & Entwicklung –</p>
+        <p className="text-[24px] leading-[32px] font-[400] font-matt">Entwicklung –</p>
    </div>
     </div>
 
@@ -562,7 +576,7 @@ Modernes Webdesign für Startups & KMU – oder für alle, die ihre alte Website
     </div>
 
     {/* Step 4 */}
-    <div className="icon2 bg-[#F1F1F1] text-left shadow-lg rounded-[16px] px-[24px] custom-1020 lg:w-[420px] py-[14px] w-[340px] lg:mr-[800px] lg:mt-[-100px] mb-6 lg:mb-0">
+    <div className="icon2 bg-[#F1F1F1] text-left shadow-lg rounded-[16px] px-[24px] custom-1020 lg:w-[420px] py-[14px] w-[340px] lg:mr-[800px] lg:mt-[-60px] mb-6 lg:mb-0">
     <h3 className="text-[32px] leading-[48px] font-[700] mb-2">Schritt 4:</h3>
       <div className="flex flex-col space-y-2">
         <p className="text-[24px] leading-[32px] font-[400] font-matt">Live-Schaltung & Support  –</p>
@@ -630,7 +644,7 @@ Modernes Webdesign für Startups & KMU – oder für alle, die ihre alte Website
     Kennzahlen
     </h2>
     <p className="text-[#000] font-[300] lg:mr-[300px] text-[24px] lg:text-[32px] lg:leading-[40px] text-center lg:text-left">
-    Wir helfen Startups, leistungsstarke<br></br> Websites zu launchen
+    Wir helfen Unternehmen, leistungsstarke<br></br> Websites zu launchen
     </p>
   </div>
 

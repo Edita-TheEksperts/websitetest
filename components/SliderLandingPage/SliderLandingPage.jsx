@@ -28,6 +28,8 @@ const partners = [
   "/images/logoss/the-eksperts-vonBergen.png",
   "/images/logoss/the-eksperts-X.png",
   "/images/logoss/the-eksperts-alterswohnhilfe.png",
+    "/images/logoss/hypoteq1.png",
+
 ];
 
 export default function PartnersSlider() {
