@@ -69,9 +69,9 @@ const sendEmailWithPDF = async (recipientEmail, vorname) => {
 // API Route Handler
 export default async function handler(req, res) {
     if (req.method === 'POST') {
-        const { vorname, nachname, email, unternehmen, position } = req.body;
+const { vorname, nachname, email, unternehmen, position } = req.body;
 
-        if (!vorname || !nachname || !email || !unternehmen || !position) {
+        if (!vorname || !nachname || !email || !unternehmen ) {
             return res.status(400).json({ message: 'Missing required fields' });
         }
 

@@ -96,7 +96,6 @@ const reviews = [
         if (!formData.nachname) newErrors.nachname = 'Bitte Auswählen';
         if (!formData.unternehmen) newErrors.unternehmen = 'Bitte Auswählen';
         if (!formData.email) newErrors.email = 'Bitte Auswählen';
-        if (!formData.position) newErrors.position = 'Bitte Auswählen';
       
         if (Object.keys(newErrors).length > 0) {
           setErrors(newErrors);
@@ -113,7 +112,7 @@ const reviews = [
           const data = await response.json();
           if (response.ok) {
             setIsSubmitted(true);
-            setFormData({ vorname: '', nachname: '', unternehmen: '', email: '', position: '' });
+            setFormData({ vorname: '', nachname: '', unternehmen: '', email: '' });
           } else {
             alert('Error: ' + data.message);
           }
