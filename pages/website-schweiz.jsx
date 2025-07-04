@@ -327,12 +327,12 @@ Inkl. Domain, Hosting, Logo & modernem Design – zum Fixpreis.           </p>
     {/* Starter-Paket */}
     <div className="border border-[#6D6E70] rounded-xl p-8 bg-white w-full lg:w-1/3">
       <h3 className="text-[32px] leading-[40px] font-[600] font-matt text-black mb-2">
-        Neugründer-Paket
+        Starter-Paket
       </h3>
        <p className="text-[30px] font-[300] font-matt text-black"><strong className="font-[600]">CHF 24.00</strong> / Monat*</p>
-      <p className="text-[18px] font-[300] font-matt text-black mb-6">Einmalig Setup CHF 490.00</p>
+      <p className="text-[18px] font-[300] font-matt text-black mb-6">Einmalig Setup CHF 690</p>
       <ul className="text-[18px] font-[300] font-matt text-black space-y-3">
-        <li>1 Landingpage</li>
+        <li>Bis zu 3 Seiten</li>
         <li>Eigene .ch-Domain, Hosting & E-Mail inklusive</li>
         <li>Modernes, responsives Design</li>
         <li>Texte & Bilder inklusive</li>
@@ -344,7 +344,7 @@ Inkl. Domain, Hosting, Logo & modernem Design – zum Fixpreis.           </p>
   {/* Recommendation Tag */}
 
   <h3 className="text-[32px] leading-[40px] font-[600] font-matt text-black mb-2">
-    KMU-Paket
+    Business-Paket
   </h3>
 
   <p className="text-[30px] font-[300] font-matt text-black">
@@ -352,11 +352,11 @@ Inkl. Domain, Hosting, Logo & modernem Design – zum Fixpreis.           </p>
   </p>
 
   <p className="text-[18px] font-[300] font-matt text-black mb-6">
-    Einmalig Setup CHF 990.00
+    Einmalig Setup CHF 890.00
   </p>
 
   <ul className="text-[18px] font-[300] font-matt text-black space-y-3">
-    <li>Bis zu 4 Seiten</li>
+    <li>Bis zu 5 Seiten</li>
     <li>Eigene .ch-Domain, Hosting & E-Mail inklusive</li>
     <li>Modernes, responsives Design</li>
     <li>Texte & Bilder inklusive</li>
@@ -373,7 +373,7 @@ Inkl. Domain, Hosting, Logo & modernem Design – zum Fixpreis.           </p>
        <p className="text-[30px] font-[300] font-matt text-black"><strong className="font-[600]">CHF 59.00 </strong>/ Monat*</p>
       <p className="text-[18px] font-[300] font-matt text-black mb-6">Einmalig Setup CHF 1’490.00</p>
       <ul className="text-[18px] font-[300] font-matt text-black space-y-3">
-        <li>Bis zu 8 Seiten</li>
+        <li>Bis zu 9 Seiten</li>
         <li>Eigene .ch-Domain, Hosting & E-Mail inklusive</li>
         <li>Modernes, responsives Design</li>
         <li>Texte & Bilder inklusive</li>
