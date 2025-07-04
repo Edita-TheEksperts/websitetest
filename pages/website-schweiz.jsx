@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { useState, useRef, useEffect} from "react";
 import ContactFormStartup from "../components/ContactFormStartup"
-
 import PartnersSlider from "../components/SliderLandingPage/SliderLandingPage";
 const reviews = [
     {
@@ -176,6 +175,11 @@ const handleBlueFormSubmit = async (e) => {
   return (
     <div className="px-4">
       <main className="bg-white flex flex-col justify-center items-center">
+         {/* ✅ Google Ads Title and Subtitle */}
+ <div className="sr-only">
+    <h1>Website Agentur Schweiz Ihre Website ab CHF 24.–</h1>
+    <p>Günstig. Schnell. Schweizer Qualität. Eigene Domain & E-Mail. Jetzt starten!</p>
+  </div>
         <section ref={contactRef} id="contact-section" className="lg:mt-[20px] mt-[60px] lg:px-4 max-w-[1310px] mx-auto gap-6 lg:gap-[140px] flex flex-col lg:flex-row items-center">
           {/* Left Content */}
           <div className="lg:w-1/2 text-center lg:text-left ">
