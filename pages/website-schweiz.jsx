@@ -392,7 +392,7 @@ Inkl. Domain, Hosting, Logo & modernem Design – zum Fixpreis.           </p>
   </div>
 
   <p className="text-left text-[18px] font-[300] font-matt text-black mt-10">
-    *inkl. Hosting, .ch-Domain, E-Mail-Adresse & techn. Support Laufzeit 24 Monate
+    *inkl. Hosting, .ch-Domain, E-Mail-Adresse & techn. Support <br></br>Laufzeit 24 Monate
   </p>
 </section>
 <section className="flex flex-col items-center text-center mb-[160px] lg:mb-[300px] mx-auto max-w-[1280px]">
