@@ -239,7 +239,7 @@ Inkl. Domain, Hosting, Logo & modernem Design – zum Fixpreis.           </p>
             <input
               type="text"
               name="name"
-              placeholder="Ihre Name"
+              placeholder="Ihr Name"
               value={blueFormData.name}
               onChange={handleBlueFormChange}
               className="w-full p-3 rounded border border-white bg-transparent text-white placeholder-white"
@@ -324,7 +324,7 @@ Inkl. Domain, Hosting, Logo & modernem Design – zum Fixpreis.           </p>
     {/* Starter-Paket */}
     <div className="border border-[#6D6E70] rounded-xl p-8 bg-white w-full lg:w-1/3">
       <h3 className="text-[32px] leading-[40px] font-[600] font-matt text-black mb-2">
-        Starter-Paket
+        Neugründer-Paket
       </h3>
        <p className="text-[30px] font-[300] font-matt text-black"><strong className="font-[600]">CHF 24.00</strong> / Monat*</p>
       <p className="text-[18px] font-[300] font-matt text-black mb-6">Einmalig Setup CHF 490.00</p>
@@ -341,11 +341,11 @@ Inkl. Domain, Hosting, Logo & modernem Design – zum Fixpreis.           </p>
   {/* Recommendation Tag */}
 
   <h3 className="text-[32px] leading-[40px] font-[600] font-matt text-black mb-2">
-    Business-Paket
+    KMU-Paket
   </h3>
 
   <p className="text-[30px] font-[300] font-matt text-black">
-    <strong className="font-[600]">CHF 49.00</strong> / Monat*
+    <strong className="font-[600]">CHF 39.00</strong> / Monat*
   </p>
 
   <p className="text-[18px] font-[300] font-matt text-black mb-6">
@@ -384,7 +384,45 @@ Inkl. Domain, Hosting, Logo & modernem Design – zum Fixpreis.           </p>
     * Mindestlaufzeit 24 Monate
   </p>
 </section>
-
+<section className="flex flex-col items-center text-center mb-[160px] lg:mb-[300px] mx-auto max-w-[1280px]">
+      {/* Top Button */}
+      <p className="p-2 text-[16px] font-[300]  text-white bg-[#0009FF] rounded-[12px]">
+        Was erwartet Sie?
+      </p>
+      {/* Features Grid */}
+      <div className="grid grid-cols-1 gap-2 mt-8 lg:mt-[60px] md:grid-cols-2 lg:grid-cols-4">
+        {[
+         
+          {
+            icon: "/images/speed.svg",
+            title: "Blitzschnelle Ladezeiten",
+            description: "Perfekt abgestimmt auf höchste Performance und ein erstklassiges Nutzererlebnis."
+          },
+          {
+            icon: "/images/mobile.svg",
+            title: "Mobile-First Design",
+            description: "Perfekte Darstellung auf allen Geräten – ohne Kompromisse."
+          },
+          {
+            icon: "/images/cms.svg",
+            title: "Einfach zu bedienendes CMS",
+            description: "Aktualisieren Sie Ihre Inhalte mühelos und ohne technische Vorkenntnisse."
+          },
+          {
+            icon: "/images/seo.svg",
+            title: "SEO-Ready",
+            description: "Gebaut, um bei Google gefunden zu werden und neue Kunden zu gewinnen."
+          }
+        ].map((feature, index) => (
+          <div key={index} className="flex flex-col items-left text-left px-6 py-8  rounded-[10px] border-[2px] border-black">
+            <img src={feature.icon} alt={feature.title} className="w-[80px] h-[80px]" />
+            <h3 className="mt-2 text-[20px] font-[900] leading-[28px] text-black">{feature.title}</h3>
+            <p className="mt-2 text-black text-[16px] leading-[24px] font-[300]">{feature.description}</p>
+          </div>
+        ))}
+      </div>
+     
+    </section>
     <h2 className="text-[40px] mb-[40px] leading-[48px] font-[700] text-center">
           Laden Sie den kostenlosen Leitfaden für <br></br> perfektes Webdesign herunter
         </h2>
