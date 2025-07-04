@@ -441,8 +441,8 @@ Inkl. Domain, Hosting, Logo & modernem Design – zum Fixpreis.           </p>
       {/* Left Side - Video */}
     
       <div className="w-full lg:w-1/2 mb-[40px] lg:mb-0 flex justify-center lg:max-w-[588px] lg:h-[571px] lg:flex lg:flex-col lg:justify-center lg:items-start flex-shrink-0">
-      <video
-  className="w-full custom-1020 max-w-md lg:min-w-[588px] lg:min-h-[618px] rounded-[12px] object-cover "
+     <video
+  className="w-full custom-1020 max-w-md lg:min-w-[588px] lg:min-h-[618px] rounded-[12px] object-cover"
   autoPlay
   muted
   loop
