@@ -276,9 +276,9 @@ Inkl. Domain, Hosting, Logo & modernem Design – zum Fixpreis.           </p>
     <option value="" disabled hidden>
       Ich interessiere mich für:
     </option>
-    <option value="Starter Paket">Starter Paket</option>
-    <option value="Business Paket">Business Paket</option>
-    <option value="Premium Paket">Premium Paket</option>
+    <option value="Starter Paket">Neugründer-Paket (CHF 24.00)</option>
+    <option value="Business Paket">KMU-Paket (CHF 39.00)</option>
+    <option value="Premium Paket">Premium-Paket (CHF 59.00)</option>
   </select>
   {blueFormErrors.subject && (
     <span className="text-red-400 text-sm">{blueFormErrors.subject}</span>
