@@ -177,9 +177,9 @@ const handleBlueFormSubmit = async (e) => {
   return (
     <div className="px-4">
       <main className="bg-white flex flex-col justify-center items-center">
-        <section className="lg:mt-[20px] mt-[60px] lg:px-4 max-w-[1310px] mx-auto gap-6 lg:gap-[140px] flex flex-col lg:flex-row items-center">
+        <section ref={contactRef} id="contact-section" className="lg:mt-[20px] mt-[60px] lg:px-4 max-w-[1310px] mx-auto gap-6 lg:gap-[140px] flex flex-col lg:flex-row items-center">
           {/* Left Content */}
-          <div ref={contactRef} id="contact-section"  className="lg:w-1/2 text-center lg:text-left ">
+          <div className="lg:w-1/2 text-center lg:text-left ">
           <div className="flex flex-row items-center">
       {["/images/hero11.png", "/images/hero12.png", "/images/hero13.png", "/images/hero14.png"].map((src, index) => (
         <img
