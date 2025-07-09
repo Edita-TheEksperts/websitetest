@@ -163,6 +163,8 @@ const handleBlueFormSubmit = async (e) => {
     if (response.ok) {
       setIsBlueFormSubmitted(true);
       setBlueFormData({ name: "", email: "", subject: "", message: "" });
+        window.location.href = "/thank-you";
+
     } else {
       alert("Fehler: " + data.message);
     }
