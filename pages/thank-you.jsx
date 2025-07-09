@@ -13,16 +13,16 @@ const ThankYou = () => {
 
         <div className="text-center flex flex-col items-center lg:items-start lg:text-left lg:w-[600px]">
           <h1 className="text-[48px] lg:text-[64px] font-[900] text-black font-matt leading-tight">
-            Vielen Dank für deine Anfrage!
+            Vielen Dank für Ihre Anfrage!
           </h1>
 
           <p className="mt-6 text-black text-[24px] font-light leading-[33px] font-matt">
-            Wir freuen uns, dass du den ersten Schritt <br></br> gemacht hast.
+            Wir freuen uns, dass Sie den ersten Schritt<br></br> gemacht haben.
           </p>
 
           <p className="mt-6 text-black text-[18px] font-light leading-[28px] font-matt max-w-[400px]">
-            Unser Team meldet sich in Kürze bei dir – wir freuen uns auf den Austausch! <br />
-            Bis dahin kannst du gerne weiter durch unsere Website stöbern.
+            Unser Team wird sich in Kürze persönlich bei Ihnen melden.<br></br>
+In der Zwischenzeit laden wir Sie herzlich ein, unsere Website weiter zu entdecken.
           </p>
 
           <Link href="/">
