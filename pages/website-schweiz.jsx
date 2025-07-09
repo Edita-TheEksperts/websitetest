@@ -112,6 +112,8 @@ const reviews = [
           if (response.ok) {
             setIsSubmitted(true);
             setFormData({ vorname: '', nachname: '', unternehmen: '', email: '' });
+                    window.location.href = "/thank-you";
+
           } else {
             alert('Error: ' + data.message);
           }
