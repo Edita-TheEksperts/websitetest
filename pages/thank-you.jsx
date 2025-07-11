@@ -1,9 +1,51 @@
 import React from "react";
 import Link from "next/link";
+import Script from "next/script";
+const GA_TRACKING_ID = process.env.NEXT_PUBLIC_GA_ID; 
+
 
 const ThankYou = () => {
   return (
     <div className="lg:py-[80px] py-8 px-4 max-w-[1280px] flex flex-col lg:px-0 bg-white p-4 mx-auto">
+      {/* Google Analytics and Ads */}
+      {GA_TRACKING_ID && (
+        <>
+          <Script
+            strategy="afterInteractive"
+            src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
+          />
+          <Script
+            id="google-analytics"
+            strategy="afterInteractive"
+            dangerouslySetInnerHTML={{
+              __html: `
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', '${GA_TRACKING_ID}', {
+                  page_path: window.location.pathname,
+                });
+              `,
+            }}
+          />
+          <Script
+            strategy="afterInteractive"
+            src="https://www.googletagmanager.com/gtag/js?id=AW-17300599797"
+          />
+          <Script
+            id="google-ads"
+            strategy="afterInteractive"
+            dangerouslySetInnerHTML={{
+              __html: `
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'AW-17300599797');
+              `,
+            }}
+          />
+        </>
+      )}
       <div className="flex flex-col lg:flex-row items-center lg:gap-8 gap-16">
         <img
           src="/images/thankyoutheeksperts21.png" // You can replace with a proper thank-you image
