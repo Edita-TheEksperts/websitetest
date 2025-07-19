@@ -4,9 +4,10 @@ import fs from 'fs';
 import path from 'path';
 
 // Azure AD Credentials
-const tenantId = '5e12d93e-3010-46f9-a55f-17db43b3fcc9';
-const clientId = '6b3c8303-3397-46d6-bee8-49192f0ad4f0';
-const clientSecret = 'nHX8Q~cUB2YluOnfHTK6~UbmjYDRVntB01L3WbEq';
+const tenantId = process.env.AZURE_TENANT_ID;
+const clientId = process.env.AZURE_CLIENT_ID;
+const clientSecret = process.env.AZURE_CLIENT_SECRET;
+
 
 // Function to fetch access token
 const getAccessToken = async () => {
