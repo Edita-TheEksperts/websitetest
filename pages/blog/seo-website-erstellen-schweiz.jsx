@@ -29,24 +29,19 @@ const SeoOptimierteSchweiz = () => {
         {/* Post Content Section */}
         <section className="mb-[16px] lg:mb-[40px] text-left">
           <div className="text-left ">
-            <h2
-              className="lg:text-[45px] text-[30px] font-matt font-[700] text-black tracking-tight lg:leading-[100%] mb-2 lg:mb-0"
-              style={{ fontFamily: "Matt_Trial", color: "#000" }}
-            >
+            <h1 className="font-matt text-[30px] lg:text-[54px] leading-[1] font-semibold uppercase text-gray-900 tracking-tight">
               SEO-optimierte Website erstellen lassen: Ihr Weg zu mehr
-              Sichtbarkeit in der Schweiz 
+              Sichtbarkeit in der Schweiz
+            </h1>
+
+            <h2 className="font-matt text-[25px] lg:text-[38px] leading-[1] font-normal text-gray-900 tracking-tight">
+              Warum Suchmaschinenoptimierung von Anfang an der Schlüssel zum
+              Online-Erfolg ist
             </h2>
-            <h3
-              className="lg:block hidden lg:text-[35px] text-[20px] font-matt font-[400] lg:leading-[48px]"
-              style={{ fontFamily: "Matt_Trial", color: "#000" }}
-            >
+            <h2 className="hidden lg:text-[40px] text-[25px] font-matt font-[400] lg:leading-[48px]">
               Warum Suchmaschinenoptimierung von Anfang an der Schlüssel zum
               Online-Erfolg ist
-            </h3>
-            <h3 className="hidden lg:text-[40px] text-[25px] font-matt font-[400] lg:leading-[48px]">
-              Warum Suchmaschinenoptimierung von Anfang an der Schlüssel zum
-              Online-Erfolg ist
-            </h3>
+            </h2>
             {/* TL;DR + LESENSWERT colons*/}
             <div className="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-8">
               {/* TL;DR BOX*/}
@@ -152,7 +147,7 @@ const SeoOptimierteSchweiz = () => {
 
             <div className="mb-10">
               <img
-                src="/images/agile-blog-theeksperts1.png"
+                src="/images/blog17-the eksperts.svg"
                 alt="Agile Projektleitung"
                 className="w-full lg:h-[500px] object-cover rounded-[12px]"
               />

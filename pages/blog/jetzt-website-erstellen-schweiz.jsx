@@ -27,21 +27,20 @@ const JetztWebsiteSchweiz = () => {
         {/* Header Section */}
         <section className="mb-[16px] text-left">
           <div className="text-left ">
-            <h2 className="lg:text-[50px] text-[40px] font-matt font-[700] text-black tracking-tight lg:leading-[100%] mb-2 lg:mb-0">
+            <h1 className="font-matt text-[30px] lg:text-[50px] leading-[1] font-semibold uppercase text-gray-900 tracking-tight">
               Jetzt Website erstellen lassen: Warum The Eksperts Ihr idealer
               Partner in der Schweiz ist
+            </h1>
+
+            <h2 className="font-matt text-[25px] lg:text-[35px] leading-[1] font-normal text-gray-900 tracking-tight">
+              Ihre Suche nach einer Webagentur für KMU endet hier – Kompetenz,
+              Vertrauen und massgeschneiderte Lösungen.
             </h2>
-            <h3
-              className="lg:block hidden lg:text-[35px] text-[20px] font-matt font-[400] lg:leading-[48px]"
-              style={{ fontFamily: "Matt_Trial", color: "#000" }}
-            >
+
+            <h2 className="hidden lg:text-[40px] text-[25px] font-matt font-[400] lg:leading-[48px]">
               Ihre Suche nach einer Webagentur für KMU endet hier – Kompetenz,
               Vertrauen und massgeschneiderte Lösungen.
-            </h3>
-            <h3 className="hidden lg:text-[40px] text-[25px] font-matt font-[400] lg:leading-[48px]">
-              Ihre Suche nach einer Webagentur für KMU endet hier – Kompetenz,
-              Vertrauen und massgeschneiderte Lösungen.
-            </h3>
+            </h2>
             {/* TL;DR + LESENSWERT colons*/}
             <div className="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-8">
               {/* TL;DR BOX*/}

@@ -19,15 +19,15 @@ const ConsultantPost = () => {
         {/* Post Content Section */}
         <section className="mb-[16px]  lg:mb-[40px] text-left">
   <div className="text-left ">
-    <h2 className="lg:text-[80px] text-[40px] font-matt font-[700] text-black tracking-tight lg:leading-[100%] mb-2 lg:mb-0" style={{fontFamily: 'Matt_Trial', color: '#000'}}>
+    <h1 className="lg:text-[80px] text-[40px] font-matt font-[700] text-black tracking-tight lg:leading-[100%] mb-2 lg:mb-0" style={{fontFamily: 'Matt_Trial', color: '#000'}}>
       Was unterscheidet dich von anderen Salesforce Consultants?
+    </h1>
+    <h2 className="lg:block hidden lg:text-[40px] text-[25px] font-matt font-[400] lg:leading-[48px]" style={{fontFamily: 'Matt_Trial', color: '#000'}}>
+      Reicht technisches Wissen allein, um besser zu sein?
     </h2>
-    <h3 className="lg:block hidden lg:text-[40px] text-[25px] font-matt font-[400] lg:leading-[48px]" style={{fontFamily: 'Matt_Trial', color: '#000'}}>
+    <h2 className="lg:hidden block lg:text-[40px] text-[25px] font-matt font-[400] lg:leading-[48px]" style={{fontFamily: 'Matt_Trial', color: '#000'}}>
       Reicht technisches Wissen allein, um besser zu sein?
-    </h3>
-    <h3 className="lg:hidden block lg:text-[40px] text-[25px] font-matt font-[400] lg:leading-[48px]" style={{fontFamily: 'Matt_Trial', color: '#000'}}>
-      Reicht technisches Wissen allein, um besser zu sein?
-    </h3>
+    </h2>
     <div className='mt-[15px] bg-[#0009FF] rounded-[8px] p-[16px] lg:w-[990px]'>
 <h2 className="text-[28px] font-matt text-white mb-4 uppercase">
   <span className="font-900"><strong>TL;DR</strong></span>{' '}
@@ -42,7 +42,7 @@ Ein grossartiger Salesforce Consultant zu sein, bedeutet mehr als nur technische
         <section>
           <div className="mb-10">
             <img
-              src="/images/blog6hero2.png" // Replace with actual image path
+              src="/images/agile1.png" 
               alt="Kosova"
               className="w-full lg:h-[500px] object-cover rounded-[12px]"
             />

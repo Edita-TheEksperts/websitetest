@@ -25,24 +25,20 @@ const WebsiteBaukastenPost = () => {
         {/* Post Content Section */}
         <section className="mb-[16px]  lg:mb-[40px] text-left">
           <div className="text-left ">
-            <h2
-              className="lg:text-[50px] text-[40px] font-matt font-[700] text-black tracking-tight lg:leading-[100%] mb-2 lg:mb-0"
-              style={{ fontFamily: "Matt_Trial", color: "#000" }}
-            >
+            <h1 className="font-matt text-[30px] lg:text-[57px] leading-[1] font-semibold uppercase text-gray-900 tracking-tight">
               Wix, Jimdo, Editor X & Co.: Website Baukästen für Einsteiger Was
               geht, was nicht?
+            </h1>
+
+            <h2 className="font-matt text-[25px] lg:text-[38px] leading-[1] font-normal text-gray-900 tracking-tight">
+              Ein ehrlicher Blick auf die Stärken und Schwächen von
+              Baukastensystemen – Webdesign ohne Programmieren
             </h2>
-            <h3
-              className="lg:block hidden lg:text-[35px] text-[20px] font-matt font-[400] lg:leading-[48px]"
-              style={{ fontFamily: "Matt_Trial", color: "#000" }}
-            >
+
+            <h2 className="hidden lg:text-[40px] text-[25px] font-matt font-[400] lg:leading-[48px]">
               Ein ehrlicher Blick auf die Stärken und Schwächen von
               Baukastensystemen – Webdesign ohne Programmieren.{" "}
-            </h3>
-            <h3 className="hidden lg:text-[40px] text-[25px] font-matt font-[400] lg:leading-[48px]">
-              Ein ehrlicher Blick auf die Stärken und Schwächen von
-              Baukastensystemen – Webdesign ohne Programmieren.{" "}
-            </h3>
+            </h2>
 
             {/* TL;DR + LESENSWERT colons*/}
             <div className="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-8">

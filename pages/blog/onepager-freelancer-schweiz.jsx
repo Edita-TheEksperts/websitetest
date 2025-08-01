@@ -27,21 +27,19 @@ const blogOnepagerMinimalistisch = () => {
         {/* Header Section */}
         <section className="mb-[16px] text-left">
           <div className="text-left ">
-            <h2 className="lg:text-[50px] text-[40px] font-matt font-[700] text-black tracking-tight lg:leading-[100%] mb-2 lg:mb-0">
+            <h1 className="font-matt text-[30px] lg:text-[54px] leading-[1] font-semibold uppercase text-gray-900 tracking-tight">
               Onepager für Freelancer und Selbständige: Minimalistisch und doch
               wirkungsvoll
-            </h2>
-            <h3
-              className="lg:block hidden lg:text-[35px] text-[20px] font-matt font-[400] lg:leading-[48px]"
-              style={{ fontFamily: "Matt_Trial", color: "#000" }}
-            >
+            </h1>
+
+            <h2 className="font-matt text-[25px] lg:text-[38px] leading-[1] font-normal text-gray-900 tracking-tight">
               Wann eine schlanke One-Page -Website der perfekte Online-Auftritt
               für Ihre Dienstleistungen ist
-            </h3>
-            <h3 className="hidden lg:text-[40px] text-[25px] font-matt font-[400] lg:leading-[48px]">
+            </h2>
+            <h2 className="hidden lg:text-[40px] text-[25px] font-matt font-[400] lg:leading-[48px]">
               Wann eine schlanke One-Page-Website der perfekte Online-Auftritt
               für Ihre Dienstleistungen ist.
-            </h3>
+            </h2>
             {/* TL;DR + LESENSWERT colons*/}
             <div className="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-8">
               {/* TL;DR BOX*/}

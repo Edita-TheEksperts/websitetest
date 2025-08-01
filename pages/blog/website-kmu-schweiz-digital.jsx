@@ -27,27 +27,24 @@ const KMUWebsitePost = () => {
         {/* Post Content Section */}
         <section className="mb-[16px] lg:mb-[40px] text-left">
           <div className="text-left ">
-            <h2
-              className="lg:text-[60px] text-[40px] font-matt font-[700] text-black tracking-tight lg:leading-[100%] mb-2 lg:mb-0"
-              style={{ fontFamily: "Matt_Trial", color: "#000" }}
-            >
-              Website für KMU Schweiz: So stärken Sie Ihr kleines oder mittleres
-              Unternehmen digital
+
+          <h1 className="font-matt text-[30px] lg:text-[55px] leading-[1] font-semibold uppercase text-gray-900 tracking-tight">
+          Website für KMU Schweiz: So stärken Sie Ihr kleines oder mittleres
+          Unternehmen digital
+            </h1>
+
+            <h2 className="font-matt text-[25px] lg:text-[37px] leading-[1] font-normal text-gray-900 tracking-tight">
+            Wie eine strategisch aufgebaute Website Ihr Schweizer KMU zu mehr
+            Sichtbarkeit, Kunden und Effizienz verhilft.
             </h2>
-            <h3
-              className="lg:block hidden lg:text-[35px] text-[25px] font-matt font-[400] lg:leading-[48px]"
-              style={{ fontFamily: "Matt_Trial", color: "#000" }}
-            >
+
+              <h2 className="hidden lg:text-[40px] text-[25px] font-matt font-[400] lg:leading-[48px]">
               Wie eine strategisch aufgebaute Website Ihr Schweizer KMU zu mehr
               Sichtbarkeit, Kunden und Effizienz verhilft.
-            </h3>
-            <h3 className="hidden lg:text-[40px] text-[25px] font-matt font-[400] lg:leading-[48px]">
-              Wie eine strategisch aufgebaute Website Ihr Schweizer KMU zu mehr
-              Sichtbarkeit, Kunden und Effizienz verhilft.
-            </h3>
+            </h2>
 
             {/* TL;DR + LESENSWERT colons*/}
-            <div className="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-8">
+            <div className="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-10 mt-4">
               {/* TL;DR BOX*/}
               <div className="bg-[#0009FF] rounded-[8px] p-[16px] lg:w-full">
                 <h2 className="text-[28px] font-matt text-white mb-4 uppercase">
@@ -109,7 +106,7 @@ const KMUWebsitePost = () => {
         <section>
           <div className="mb-10">
             <img
-              src="/images/aiprojekt.png" // Replace with actual image path
+              src=  "/images/blog2-the eksperts.svg"
               alt="Kosova"
               className="w-full lg:h-[500px] object-cover rounded-[12px]"
             />
