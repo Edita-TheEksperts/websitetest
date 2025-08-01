@@ -26,22 +26,19 @@ const MobileFirstCH = () => {
         {/* Header Section */}
         <section className="mb-[16px] text-left">
           <div className="text-left ">
-            <h2 className="lg:text-[40px] text-[40px] font-matt font-[700] text-black tracking-tight lg:leading-[100%] mb-2 lg:mb-0">
+            <h1 className="font-matt text-[30px] lg:text-[56px] leading-[1] font-semibold uppercase text-gray-900 tracking-tight">
               Mobile First Website Schweiz: Der Schlüssel zum Erfolg im
               Zeitalter des Smartphones
-            </h2>
+            </h1>
 
-            <h3
-              className="lg:block hidden lg:text-[35px] text-[20px] font-matt font-[400] lg:leading-[48px]"
-              style={{ fontFamily: "Matt_Trial", color: "#000" }}
-            >
+            <h2 className="font-matt text-[25px] lg:text-[38px] leading-[1] font-normal text-gray-900 tracking-tight">
               Warum die mobile Version Ihrer Website heute entscheidend für
               Google, Nutzer und Ihren Geschäftserfolg ist.
-            </h3>
-            <h3 className="hidden lg:text-[40px] text-[25px] font-matt font-[400] lg:leading-[48px]">
+            </h2>
+            <h2 className="hidden lg:text-[40px] text-[25px] font-matt font-[400] lg:leading-[48px]">
               Warum die mobile Version Ihrer Website heute entscheidend für
               Google, Nutzer und Ihren Geschäftserfolg ist.
-            </h3>
+            </h2>
 
             {/* TL;DR + LESENSWERT colons*/}
             <div className="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-8">
@@ -104,6 +101,13 @@ const MobileFirstCH = () => {
 
         {/* Post Content Section */}
         <section>
+          <div className="mb-10">
+            <img
+              src="/images/blog11-the eksperts.svg"
+              alt="Agile Projektleitung"
+              className="w-full lg:h-[500px] object-cover rounded-[12px]"
+            />
+          </div>
           {/* TL;DR */}
           <section className="mb-12 flex flex-col lg:flex-row">
             {/* Left Content */}

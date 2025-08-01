@@ -28,24 +28,20 @@ const CoiffeurPost = () => {
         {/* Post Content Section */}
         <section className="mb-[40px] text-left">
           <div className="text-left mb-[40px]">
-            <h2
-              className="lg:text-[50px] text-[30px] font-matt font-[700] text-black tracking-tight lg:leading-[100%] mb-2"
-              style={{ fontFamily: "Matt_Trial" }}
-            >
+            <h1 className="font-matt text-[30px] lg:text-[57px] leading-[1] font-semibold uppercase text-gray-900 tracking-tight">
               Website für Coiffeur / Friseur: So gewinnen Sie online neue Kunden
               in der Schweiz
+            </h1>
+
+            <h2 className="font-matt text-[25px] lg:text-[41px] leading-[1] font-normal text-gray-900 tracking-tight">
+              Unverzichtbare Elemente für den Online-Erfolg Ihres Salons – von
+              der Terminbuchung bis zur Galerie.
             </h2>
-            <h3
-              className="lg:block hidden lg:text-[35px] text-[20px] font-matt font-[400] lg:leading-[48px]"
-              style={{ fontFamily: "Matt_Trial", color: "#000" }}
-            >
+
+            <h2 className="hidden lg:text-[40px] text-[25px] font-matt font-[400] lg:leading-[48px]">
               Unverzichtbare Elemente für den Online-Erfolg Ihres Salons – von
               der Terminbuchung bis zur Galerie.
-            </h3>
-            <h3 className="hidden lg:text-[40px] text-[25px] font-matt font-[400] lg:leading-[48px]">
-              Unverzichtbare Elemente für den Online-Erfolg Ihres Salons – von
-              der Terminbuchung bis zur Galerie.
-            </h3>
+            </h2>
           </div>
 
           {/* TL;DR + LESENSWERT colons*/}
@@ -110,7 +106,7 @@ const CoiffeurPost = () => {
         <section>
           <div className="mb-10">
             <img
-              src="/images/blog5p.png"
+              src="/images/blog8-the eksperts.svg"
               alt="Kosova"
               className="w-full lg:h-[500px] object-cover rounded-[12px]"
             />

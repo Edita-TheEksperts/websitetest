@@ -23,19 +23,22 @@ const WebsiteKostenKMUPost = () => {
         {/* Post Content Section */}
         <section className="mb-[16px] lg:mb-[40px] text-left">
           <div className="text-left ">
-            <h2
-              className="lg:text-[49px] text-[39px] font-matt font-[700] text-black tracking-tight lg:leading-[100%] mb-2 lg:mb-0"
-              style={{ fontFamily: "Matt_Trial", color: "#000" }}
-            >
-             Was kostet eine Website für ein KMU in der Schweiz? Transparenz und ROI
+            <h1 className="font-matt text-[30px] lg:text-[60px] leading-[1] font-semibold uppercase text-gray-900 tracking-tight">
+              Was kostet eine Website für ein KMU in der Schweiz? Transparenz
+              und ROI
+            </h1>
+
+            <h2 className="font-matt text-[25px] lg:text-[37px] leading-[1] font-normal text-gray-900 tracking-tight">
+              Ein detaillierter Blick auf die Kostenfaktoren einer
+              professionellen Website und wie Sie den Return on Investment
+              maximieren.
             </h2>
-            <h3
-              className="lg:block hidden lg:text-[35px] text-[20px] font-matt font-[400] lg:leading-[48px]"
-              style={{ fontFamily: "Matt_Trial", color: "#000" }}
-            >
-Ein detaillierter Blick auf die Kostenfaktoren einer professionellen Website und wie Sie den Return on Investment maximieren.            </h3>
-            <h3 className="hidden lg:text-[40px] text-[25px] font-matt font-[400] lg:leading-[48px]">
-            Ein detaillierter Blick auf die Kostenfaktoren einer professionellen Website und wie Sie den Return on Investment maximieren.            </h3>
+
+            <h2 className="hidden lg:text-[40px] text-[25px] font-matt font-[400] lg:leading-[48px]">
+              Ein detaillierter Blick auf die Kostenfaktoren einer
+              professionellen Website und wie Sie den Return on Investment
+              maximieren.{" "}
+            </h2>
             {/* TL;DR + LESENSWERT colons*/}
             <div className="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-8">
               {/* TL;DR BOX*/}
@@ -100,7 +103,7 @@ Ein detaillierter Blick auf die Kostenfaktoren einer professionellen Website und
         <section>
           <div className="mb-10">
             <img
-              src="/images/brief.png" // Replace with actual image path
+              src="/images/blog3-the eksperts.svg"
               alt="Kosova"
               className="w-full lg:h-[500px] object-cover rounded-[12px]"
             />
@@ -504,8 +507,6 @@ Ein detaillierter Blick auf die Kostenfaktoren einer professionellen Website und
               <br /> Fordern Sie jetzt Ihren kostenlosen Website-Check an!
             </a>
           </p>
-
-         
         </section>
 
         {/* Related Posts */}
@@ -515,18 +516,21 @@ Ein detaillierter Blick auf die Kostenfaktoren einer professionellen Website und
             <div className="w-[60px] h-[4px] bg-[#0009FF] mx-auto mb-6 rounded-full"></div>
 
             <h2 className="text-[24px] lg:text-[32px] font-matt font-[800] text-black mb-6">
-            Fazit: Investieren Sie in Ihren Online-Erfolg
+              Fazit: Investieren Sie in Ihren Online-Erfolg
             </h2>
 
             <p className="text-[16px] lg:text-[20px] text-black font-matt font-[300] leading-[1.8]">
-            Eine Website ist heute unverzichtbar. Die Kosten variieren, doch die
-            Investition in eine professionelle Website Schweiz zahlt sich in der
-            Regel schnell aus. Konzentrieren Sie sich auf den Wert und den ROI,
-            den Ihre Online-Präsenz generieren kann.
+              Eine Website ist heute unverzichtbar. Die Kosten variieren, doch
+              die Investition in eine professionelle Website Schweiz zahlt sich
+              in der Regel schnell aus. Konzentrieren Sie sich auf den Wert und
+              den ROI, den Ihre Online-Präsenz generieren kann.
             </p>
             <p className="text-black text-[16px] lg:text-[20px] font-[300] font-matt mt-6 text-center">
-              <strong> Mehr Informationen zu den Kosten und Leistungen für Ihre Website
-              in der Schweiz finden Sie auf{" "}</strong>
+              <strong>
+                {" "}
+                Mehr Informationen zu den Kosten und Leistungen für Ihre Website
+                in der Schweiz finden Sie auf{" "}
+              </strong>
               <a
                 href="https://the-eksperts.com/website-schweiz"
                 className="text-blue-600 underline ml-1"

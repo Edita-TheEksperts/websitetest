@@ -26,26 +26,19 @@ const CertificationPost = () => {
         {/* Post Content Section */}
         <section className="mb-[16px]  lg:mb-[40px] text-left">
           <div className="text-left ">
-            <h2
-              className="lg:text-[80px] text-[40px] font-matt font-[700] text-black tracking-tight lg:leading-[100%] mb-2 lg:mb-0"
-              style={{ fontFamily: "Matt_Trial", color: "#000" }}
-            >
+            
+            <h1 className="font-matt text-[30px] lg:text-[68px] leading-[1] font-semibold uppercase text-gray-900 tracking-tight">
               Der Start deiner Salesforce-(Zertifizierung's)-Reise:
+            </h1>
+
+            <h2 className="font-matt text-[25px] lg:text-[40px] leading-[1] font-normal text-gray-900 tracking-tight">
+              Wo du mit Salesforce-Zertifizierungen beginnen solltest – ein
+              praxisnaher Weg!
             </h2>
-            <h3
-              className="lg:block hidden lg:text-[40px] text-[25px] font-matt font-[400] lg:leading-[48px]"
-              style={{ fontFamily: "Matt_Trial", color: "#000" }}
-            >
+            <h2 className="lg:hidden block lg:text-[40px] text-[25px] font-matt font-[400] lg:leading-[48px] tracking-tight">
               Wo du mit Salesforce-Zertifizierungen beginnen solltest – ein
               praxisnaher Weg!
-            </h3>
-            <h3
-              className="lg:hidden block lg:text-[40px] text-[25px] font-matt font-[400] lg:leading-[48px]"
-              style={{ fontFamily: "Matt_Trial", color: "#000" }}
-            >
-              Wo du mit Salesforce-Zertifizierungen beginnen solltest – ein
-              praxisnaher Weg!
-            </h3>
+            </h2>
             <div className="mt-[15px] bg-[#0009FF] rounded-[8px] p-[16px] lg:w-[990px]">
               <h2 className="text-[28px] font-matt text-white mb-4 uppercase">
                 <span className="font-900">
@@ -68,7 +61,7 @@ const CertificationPost = () => {
         <section>
           <div className="mb-10">
             <img
-              src="/images/blog5p.png" // Replace with actual image path
+              src="/images/blogDer unterschätzte Boost-the eksperts.svg"
               alt="Kosova"
               className="w-full lg:h-[500px] object-cover rounded-[12px]"
             />
@@ -192,14 +185,14 @@ const CertificationPost = () => {
 
           {/* Call to Action */}
           <section className="mt-12 flex flex-col lg:flex-row justify-left lg:items-center gap-4 lg:gap-8">
-  <Link href="/kontakt" passHref legacyBehavior>
-    <a
-      className="flex justify-center items-center gap-2 py-3 px-8 text-white text-lg font-medium rounded-[60px] bg-[#0009FF] hover:bg-blue-700"
-      style={{ width: "299px", padding: "11px 0px" }}
-    >
-      Sprich mit uns
-    </a>
-  </Link>
+            <Link href="/kontakt" passHref legacyBehavior>
+              <a
+                className="flex justify-center items-center gap-2 py-3 px-8 text-white text-lg font-medium rounded-[60px] bg-[#0009FF] hover:bg-blue-700"
+                style={{ width: "299px", padding: "11px 0px" }}
+              >
+                Sprich mit uns
+              </a>
+            </Link>
 
             <p className="text-[#000] text-[18px] lg:text-[18px] font-matt font-[300] lg:leading-[30px]">
               Der Weg ist offen. Folge deiner Neugier, baue deine Skills Schritt
@@ -209,7 +202,7 @@ const CertificationPost = () => {
         </section>
 
         {/* Related Posts */}
-      <RelatedPostsCarousel/>
+        <RelatedPostsCarousel />
       </main>
     </>
   );
