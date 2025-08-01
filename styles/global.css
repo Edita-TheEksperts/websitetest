@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  font-family: 'Mattone', sans-serif;
+}
+
+
 @font-face {
   font-family: 'Matt Trial';
   src: url('/fonts/Matt-Regular.woff2') format('woff2'),
@@ -55,6 +60,13 @@
   font-style: italic;
   font-display: swap;
 }
+
+.internal-link {
+  color: #030771;
+}
+.internal-link:hover {
+  color: #3065e2; 
+ }
 
 @font-face {
   font-family: 'Matt Trial';

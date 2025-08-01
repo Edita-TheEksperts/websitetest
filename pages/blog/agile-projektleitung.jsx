@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/link';
+import RelatedPostsCarousel from "../../components/RelatedPostsCarousel";
 
 const AgilePost = () => {
   return (
@@ -57,24 +58,37 @@ const AgilePost = () => {
             <div className="rounded-lg w-full lg:w-[280px] mt-8 lg:mt-[40px] lg:ml-auto">
               <h3 className="text-[28px] font-matt font-[900] text-black mb-4 uppercase">LESENSWERT:</h3>
               <ul className="space-y-[12px] list-disc ml-6 text-black font-[300] text-[18px] font-matt">
-                         <li>
-      <a href="/blog/der-unterschatzte-boost" className="text-black hover:underline" target="_blank" rel="noopener noreferrer">
-        Der unterschätzte Boost
-      </a>
-    </li>
-                    
-    <li>
-      <a href="/blog/briefing-launch" className="text-black hover:underline" target="_blank" rel="noopener noreferrer">
-        Vom Briefing zum Launch
-      </a>
-    </li>
-      <li>
-      <a href="/blog/nearshoring-mit-the-eksperts" className="text-black hover:underline" target="_blank" rel="noopener noreferrer">
-        Nearshoring mit the eksperts
-      </a>
-    </li>
-
-              </ul>
+  <li>
+    <Link
+      href="/blog/der-unterschatzte-boost"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-black hover:underline"
+    >
+      Der unterschätzte Boost
+    </Link>
+  </li>
+  <li>
+    <Link
+      href="/blog/briefing-launch"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-black hover:underline"
+    >
+      Vom Briefing zum Launch
+    </Link>
+  </li>
+  <li>
+    <Link
+      href="/blog/nearshoring-mit-the-eksperts"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-black hover:underline"
+    >
+      Nearshoring mit the eksperts
+    </Link>
+  </li>
+</ul>
             </div>
           </section>
 
@@ -144,6 +158,7 @@ const AgilePost = () => {
   </div>
 </section>
 
+
           {/* Fazit Section */}
           <section className="lg:w-[905px] mb-12 mt-[80px] flex flex-col lg:flex-row-reverse gap-[20px]">
             {/* Text Section */}
@@ -165,11 +180,11 @@ const AgilePost = () => {
 
           {/* Call to Action */}
           <section className="mt-12 flex flex-col lg:flex-row justify-left lg:items-center gap-4 lg:gap-8">
-            <Link href="/kontakt">
-              <button className="flex justify-center items-center gap-2 py-3 px-8 text-white text-lg font-medium rounded-[60px] bg-[#0009FF] hover:bg-blue-700" style={{ width: '299px', padding: '11px 0px' }}>
-                Kontaktiere uns
-              </button>
-            </Link>
+          <Link href="/kontakt" passHref legacyBehavior>
+            <a className="flex justify-center items-center gap-2 py-3 px-8 text-white text-lg font-medium rounded-[60px] bg-[#0009FF] hover:bg-blue-700" style={{ width: '299px', padding: '11px 0px' }}>
+              Kontaktiere uns
+            </a>
+          </Link>
             <p className="text-[#000] text-[16px] lg:text-[20px] font-matt font-[300] lg:leading-[33px]">
               und lass uns gemeinsam dein Projekt agil starten.
             </p>
@@ -177,55 +192,7 @@ const AgilePost = () => {
         </section>
 
         {/* Related Posts */}
-        <section className="mt-[125px]">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6">
-            {/* Post 1 */}
-              <Link href="/blog/nearshoring-mit-the-eksperts">
-      <div className="bg-white overflow-hidden flex flex-col rounded-[12px]">
-        <img
-          src="/images/kosovaa.png" // Replace with actual image path
-          alt="Der unterschätzte Boost"
-          className="w-full lg:h-[350px] object-cover rounded-[12px]"
-        />
-        <div className="py-4">
-          <h4 className="text-[28px] font-matt font-[900] text-black mb-2 uppercase">Nearshoring mit the eksperts:</h4>
-          <p className="text-[#5A585A] font-[16px]">Lesedauer: ca. 5 Minuten</p>
-        </div>
-      </div>
-    </Link>
-
-            {/* Post 2 */}
-               <Link href="/blog/briefing-launch">
-      <div className="bg-white overflow-hidden flex flex-col rounded-[12px]">
-        <img
-          src="/images/agile1.png" // Replace with actual image path
-          alt="Agile Projektleitung"
-          className="w-full lg:h-[350px] object-cover rounded-[12px]"
-        />
-        <div className="py-4">
-          <h4 className="text-[28px] font-matt font-[900] text-black mb-2 uppercase">Vom Briefing zum Launch</h4>
-          <p className="text-[#5A585A] font-[16px]">Lesedauer: ca. 4-5 Minuten</p>
-        </div>
-      </div>
-    </Link>
-
-
-            {/* Post 3 */}
-            <Link href="/blog/der-unterschatzte-boost">
-      <div className="bg-white overflow-hidden flex flex-col rounded-[12px]">
-        <img
-          src="/images/boost1.png" // Replace with actual image path
-          alt="Der unterschätzte Boost"
-          className="w-full lg:h-[350px] object-cover rounded-[12px]"
-        />
-        <div className="py-4">
-          <h4 className="text-[28px] font-matt font-[900] text-black mb-2 uppercase">Der unterschätzte Boost</h4>
-          <p className="text-[#5A585A] font-[16px]">Lesedauer: ca. 2 Minuten</p>
-        </div>
-      </div>
-    </Link>
-          </div>
-        </section>
+       <RelatedPostsCarousel/>
       </main>
     </>
   );
