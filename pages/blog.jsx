@@ -13,7 +13,7 @@ const blogPosts = [
   },
   {
     href: "/blog/salesforce-berater-unterscheidung",
-    image: "/images/agile1.png",
+    image: "/images/Salesforce--Consultant.png",
     alt: "Salesforce Consultants",
     title: "Salesforce Consultants",
     readTime: "Lesedauer: ca. 3–4 Minuten",
@@ -21,7 +21,7 @@ const blogPosts = [
   },
   {
     href: "/blog/der-start-deiner-salesforce-zertifizierungs-reise",
-    image: "/images/blogDer unterschätzte Boost-the eksperts.svg",
+    image: "/images/Salesforce-Journe.png",
     alt: "Der Start deiner Salesforce-(Zertifizierung's)-Reise",
     title: "Der Start deiner Salesforce-(Zertifizierung's)-Reise",
     readTime: "Lesedauer: ca. 4–5 Minuten",
@@ -45,7 +45,7 @@ const blogPosts = [
   },
   {
     href: "/blog/der-unterschatzte-boost",
-    image: "/images/boost1.png",
+    image: "/images/blogDer unterschätzte Boost-the eksperts.svg",
     alt: "Der unterschätzte Boost",
     title: "Der unterschätzte Boost",
     readTime: "Lesedauer: ca. 2 Minuten",
@@ -55,8 +55,9 @@ const blogPosts = [
   {
     href: "/blog/website-erstellen-schweiz-guide",
     image: "/images/Blog1-the eksperts.svg",
-    alt: "Website erstellen Schweiz",
-    title: "Website erstellen Schweiz",
+    alt: "Der ultimative Guide: Website erstellen Schweiz – Ihr Sprungbrett zum Online-Erfolg",
+    title:
+      "Der ultimative Guide: Website erstellen Schweiz – Ihr Sprungbrett zum Online-Erfolg",
     readTime: "Lesedauer: ca. 5 Minuten",
     categories: [
       "Website Erstellung & Planung",
@@ -69,8 +70,9 @@ const blogPosts = [
   {
     href: "/blog/website-kmu-schweiz-digital",
     image: "/images/blog2-the eksperts.svg",
-    alt: "Website für KMU Schweiz",
-    title: "Website für KMU Schweiz",
+    alt: "Website für KMU Schweiz: So stärken Sie Ihr kleines oder mittleres Unternehmen digital",
+    title:
+      "Website für KMU Schweiz: So stärken Sie Ihr kleines oder mittleres Unternehmen digital",
     readTime: "Lesedauer: ca. 4 Minuten",
     categories: [
       "Business Strategie & Digitalisierung",
@@ -82,8 +84,9 @@ const blogPosts = [
   {
     href: "/blog/website-kmu-schweiz-kosten",
     image: "/images/blog3-the eksperts.svg",
-    alt: "Was kostet eine Website für ein KMU in der Schweiz",
-    title: "Was kostet eine Website für ein KMU in der Schweiz",
+    alt: "Was kostet eine Website für ein KMU in der Schweiz? Transparenz und ROI",
+    title:
+      "Was kostet eine Website für ein KMU in der Schweiz? Transparenz und ROI",
     readTime: "Lesedauer: ca. 5 Minuten",
     categories: [
       " Website Erstellung & Planung",
@@ -95,8 +98,9 @@ const blogPosts = [
   {
     href: "/blog/website-selbst-oder-agentur",
     image: "/images/blog4-the eksperts.svg",
-    alt: "Website selbst erstellen oder Agentur beauftragen",
-    title: "Website selbst erstellen oder Agentur beauftragen",
+    alt: "Website selbst erstellen oder Agentur beauftragen? Der grosse Vergleich für Ihr Schweizer Business ",
+    title:
+      "Website selbst erstellen oder Agentur beauftragen? Der grosse Vergleich für Ihr Schweizer Business ",
     readTime: "Lesedauer: ca. 6 Minuten",
     categories: [
       "Website Erstellung & Planung",
@@ -109,16 +113,18 @@ const blogPosts = [
   {
     href: "/blog/wordpress-website-schweiz",
     image: "/images/blog5-the eksperts.svg",
-    alt: "WordPress Vorteile",
-    title: "WordPress Website Schweiz",
+    alt: "WordPress Website Schweiz: Warum die meistgenutzte Plattform auch für Sie die Richtige sein könnte",
+    title:
+      "WordPress Website Schweiz: Warum die meistgenutzte Plattform auch für Sie die Richtige sein könnte",
     readTime: "Lesedauer: ca. 2 Minuten",
     categories: ["CMS & Plattformen", "SEO & Online Marketing"],
   },
   {
     href: "/blog/website-baukaesten-schweiz",
     image: "/images/blog6-the-eksperts.svg",
-    alt: "Wix, Jimdo, Editor X & Co.",
-    title: "Wix, Jimdo, Editor X & Co.",
+    alt: "Wix, Jimdo, Editor X & Co.: Website Baukästen für Einsteiger – Was geht, was nicht?",
+    title:
+      "Wix, Jimdo, Editor X & Co.: Website Baukästen für Einsteiger – Was geht, was nicht?",
     readTime: "Lesedauer: ca. 5 Minuten",
     categories: [
       "Website Erstellung & Planung",
@@ -130,97 +136,108 @@ const blogPosts = [
   {
     href: "/blog/webagentur-digitalagentur-st-gallen-ostschweiz",
     image: "/images/blog7-the-eksperts.svg",
-    alt: "Webagentur Digitalagentur ",
-    title: "Webagentur Digitalagentur",
+    alt: "Webagentur und Digitalagentur St. Gallen: Ihr digitaler Partner im Herzen der Ostschweiz ",
+    title:
+      "Webagentur und Digitalagentur St. Gallen: Ihr digitaler Partner im Herzen der Ostschweiz",
     readTime: "Lesedauer: ca. 4 Minuten",
     categories: ["  Lokale Präsenz & Standorte", ""],
   },
   {
     href: "/blog/website-coiffeur-friseur-schweiz",
     image: "/images/blog8-the eksperts.svg",
-    alt: "Website für Coiffeur / Friseur.",
-    title: "Website für Coiffeur / Friseur.",
+    alt: "Website für Coiffeur / Friseur: So gewinnen Sie online neue Kunden in der Schweiz",
+    title:
+      "Website für Coiffeur / Friseur: So gewinnen Sie online neue Kunden in der Schweiz",
     readTime: "Lesedauer: ca. 4 Minuten",
     categories: ["Zielgruppen & Branchen"],
   },
   {
     href: "/blog/moderne-business-website-design-trends",
     image: "/images/blog9-the eksperts.svg",
-    alt: "Moderne Business-Website",
-    title: "Moderne Business-Website",
+    alt: "Moderne Business-Website: Design-Trends, die Ihr Schweizer Unternehmen 2025 braucht",
+    title:
+      "Moderne Business-Website: Design-Trends, die Ihr Schweizer Unternehmen 2025 braucht",
     readTime: "Lesedauer: ca. 5 Minuten",
     categories: ["Webdesign & User Experience (UX/UI)"],
   },
   {
     href: "/blog/responsive-webdesign-schweiz",
     image: "/images/blog10-the eksperts.svg",
-    alt: "Responsive Webdesign Schweiz.",
-    title: "Responsive Webdesign Schweiz.",
+    alt: "Responsive Webdesign Schweiz: Warum Ihre Website auf jedem Gerät perfekt aussehen muss",
+    title:
+      "Responsive Webdesign Schweiz: Warum Ihre Website auf jedem Gerät perfekt aussehen muss",
     readTime: "Lesedauer: ca. 3 Minuten",
     categories: ["Webdesign & User Experience (UX/UI)"],
   },
   {
     href: "/blog/mobile-first-website-schweiz",
     image: "/images/blog11-the eksperts.svg",
-    alt: "Mobile First Website Schweiz",
-    title: "Mobile First Website Schweiz",
+    alt: "Mobile First Website Schweiz: Der Schlüssel zum Erfolg im Zeitalter des Smartphones",
+    title:
+      "Mobile First Website Schweiz: Der Schlüssel zum Erfolg im Zeitalter des Smartphones",
     readTime: "Lesedauer: ca. 3 Minuten",
     categories: ["Webdesign & User Experience (UX/UI)"],
   },
   {
     href: "/blog/ux-ui-design-website-kundenbindung",
     image: "/images/blog12-the eksperts.svg",
-    alt: "UX/UI Design Website.",
-    title: "UX/UI Design Website.",
+    alt: "UX/UI Design Website: Wie eine gute User Experience Ihre Kunden bindet",
+    title:
+      "UX/UI Design Website: Wie eine gute User Experience Ihre Kunden bindet",
     readTime: "Lesedauer: ca. 4 Minuten",
     categories: ["Webdesign & User Experience (UX/UI)"],
   },
   {
     href: "/blog/landing-page-erstellen-schweiz",
     image: "/images/blog13-the eksperts.svg",
-    alt: "Landing Page erstellen Schweiz",
-    title: "Landing Page erstellen Schweiz",
+    alt: "Landing Page erstellen Schweiz: So generieren Sie mehr Leads und Verkäufe",
+    title:
+      "Landing Page erstellen Schweiz: So generieren Sie mehr Leads und Verkäufe",
     readTime: "Lesedauer: ca. 5 Minuten",
     categories: ["Website Erstellung & Planung"],
   },
   {
     href: "/blog/onepager-freelancer-schweiz",
     image: "/images/blog14-the eksperts.svg",
-    alt: "Onepager für Freelancer und Selbständige.",
-    title: "Onepager für Freelancer und Selbständige",
+    alt: "Onepager für Freelancer und Selbständige: Minimalistisch und doch wirkungsvoll",
+    title:
+      "Onepager für Freelancer und Selbständige: Minimalistisch und doch wirkungsvoll",
     readTime: "Lesedauer: ca. 3 Minuten",
     categories: ["Website Erstellung & Planung", "Zielgruppen & Branchen"],
   },
   {
     href: "/blog/website-anwaelte-zahnaerzte-architekten",
     image: "/images/blog15-the eksperts.svg",
-    alt: "Branchenfokus",
-    title: "Branchenfokus",
+    alt: "Branchenfokus: Ihre Website als digitaler Anker für Anwälte, Zahnärzte & Architekten in der Schweiz",
+    title:
+      "Branchenfokus: Ihre Website als digitaler Anker für Anwälte, Zahnärzte & Architekten in der Schweiz",
     readTime: "Lesedauer: ca. 5 Minuten",
     categories: ["Zielgruppen & Branchen"],
   },
   {
     href: "/blog/digitalagentur-zuerich-wirtschaft ",
     image: "/images/blog16-the-eksperts.svg",
-    alt: "Digitalagentur Zürich: Ihr Wegbereiter im Zentrum der Schweizer Wirtschaft",
+    alt: "Digitalagentur Zürich: Ihr Wegbereiter im Zentrum der Schweizer Wirtschaft & Technologie",
     title:
-      "Digitalagentur Zürich: Ihr Wegbereiter im Zentrum der Schweizer Wirtschaft",
+      "Digitalagentur Zürich: Ihr Wegbereiter im Zentrum der Schweizer Wirtschaft & Technologie",
     readTime: "Lesedauer: ca. 4 Minuten",
     categories: [" Lokale Präsenz & Standorte"],
   },
   {
     href: "/blog/seo-website-erstellen-schweiz",
     image: "/images/blog17-the eksperts.svg",
-    alt: "SEO-optimierte Website erstellen lassen",
-    title: "SEO-optimierte Website erstellen lassen",
+    alt: "SEO-optimierte Website erstellen lassen: Ihr Weg zu mehr Sichtbarkeit in der Schweiz",
+    title:
+      "SEO-optimierte Website erstellen lassen: Ihr Weg zu mehr Sichtbarkeit in der Schweiz",
     readTime: "Lesedauer: ca. 5 Minuten",
     categories: ["SEO & Online Marketing"],
   },
   {
     href: "/blog/website-selbststaendige-schweiz",
     image: "/images/blog18-the eksperts.svg",
-    alt: "Website für Selbständige",
-    title: "Website für Selbständige",
+    alt: " Website für Selbständige: Ihr persönlicher Online-Auftritt, der überzeugt",
+    title:
+      " Website für Selbständige: Ihr persönlicher Online-Auftritt, der überzeugt",
     readTime: "Lesedauer: ca. 4 Minuten",
     categories: [
       "Business Strategie & Digitalisierung",
@@ -230,16 +247,18 @@ const blogPosts = [
   {
     href: "/blog/website-relaunch-agentur-schweiz",
     image: "/images/blog19-the eksperts.svg",
-    alt: "Website-Relaunch Agentur Schweiz",
-    title: "Website-Relaunch Agentur Schweiz",
+    alt: "Website-Relaunch Agentur Schweiz: Frischer Wind für Ihre bestehende Online-Präsenz",
+    title:
+      "Website-Relaunch Agentur Schweiz: Frischer Wind für Ihre bestehende Online-Präsenz",
     readTime: "Lesedauer: ca. 4 Minuten",
     categories: ["Website Erstellung & Planung", "Agentur & Zusammenarbeit "],
   },
   {
     href: "/blog/jetzt-website-erstellen-schweiz",
     image: "/images/blog20-the eksperts.svg",
-    alt: "Jetzt Website erstellen lassen",
-    title: "Jetzt Website erstellen lassen",
+    alt: " Jetzt Website erstellen lassen: Warum The Eksperts Ihr idealer Partner in der Schweiz ist",
+    title:
+      " Jetzt Website erstellen lassen: Warum The Eksperts Ihr idealer Partner in der Schweiz ist",
     readTime: "Lesedauer: ca. 3 Minuten",
     categories: ["Website Erstellung & Planung", "Agentur & Zusammenarbeit "],
   },
@@ -302,7 +321,23 @@ const Blog = () => {
           </p>
         </header>
 
-        <div className="flex flex-wrap justify-center gap-4 mb-[60px]">
+        <div className="lg:hidden max-h-[220px] overflow-y-auto mb-6 space-y-2">
+          {categories.map((category) => (
+            <button
+              key={category}
+              onClick={() => setSelectedCategory(category)}
+              className={`w-full text-left px-4 py-2 rounded-md text-sm font-medium ${
+                selectedCategory === category
+                  ? "bg-blue-700 text-white"
+                  : "bg-gray-100 text-gray-800 hover:bg-gray-200"
+              }`}
+            >
+              {category}
+            </button>
+          ))}
+        </div>
+
+        <div className="hidden lg:flex flex-wrap justify-center gap-4 mb-[60px]">
           {categories.map((category) => (
             <button
               key={category}
@@ -318,6 +353,10 @@ const Blog = () => {
           ))}
         </div>
 
+        <div className="absolute left-0 top-0 h-full w-6 bg-gradient-to-r from-white via-white to-transparent pointer-events-none block lg:hidden"></div>
+        {/* Optional gradient edge on right */}
+        <div className="absolute right-0 top-0 h-full w-6 bg-gradient-to-l from-white via-white to-transparent pointer-events-none block lg:hidden"></div>
+
         <section className="relative z-10">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
             {filteredPosts.map((post, index) => {
@@ -332,19 +371,27 @@ const Blog = () => {
                 >
                   <div>
                     <div className="relative">
-                      <img
-                        src={post.image}
-                        alt={post.alt}
-                        className="w-full h-[220px] object-cover group-hover:scale-105 transition-transform duration-500"
-                      />
-                      <span className="absolute top-3 left-3 bg-blue-600 text-white text-xs px-3 py-1 rounded-full shadow">
-                        {post.readTime}
-                      </span>
+                      <Link href={post.href} legacyBehavior>
+                        <a>
+                          <img
+                            src={post.image}
+                            alt={post.alt}
+                            className="w-full h-[220px] object-cover group-hover:scale-105 transition-transform duration-500"
+                          />
+                          <span className="absolute top-3 left-3 bg-blue-600 text-white text-xs px-3 py-1 rounded-full shadow">
+                            {post.readTime}
+                          </span>
+                        </a>
+                      </Link>
                     </div>
                     <div className="p-5">
-                      <h3 className="text-lg font-bold text-gray-900 mb-3 group-hover:text-blue-700 transition min-h-[56px]">
-                        {post.title}
-                      </h3>
+                      <Link href={post.href} legacyBehavior>
+                        <a>
+                          <h3 className="text-lg font-bold text-gray-900 mb-3 group-hover:text-blue-700 transition min-h-[56px]">
+                            {post.title}
+                          </h3>
+                        </a>
+                      </Link>
                       <div className="flex flex-wrap gap-2 mb-2">
                         {visibleCategories.map((cat, i) => (
                           <span
@@ -416,5 +463,4 @@ const Blog = () => {
     </>
   );
 };
-
 export default Blog;

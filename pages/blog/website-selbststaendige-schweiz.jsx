@@ -26,7 +26,7 @@ const WebsiteSelbstaendige = () => {
         {/* Header Section */}
         <section className="mb-[16px] text-left">
           <div className="text-left ">
-            <h1 className="font-matt text-[30px] lg:text-[52px] leading-[1] font-semibold uppercase text-gray-900 tracking-tight">
+            <h1 className="font-matt text-[30px] sm:text-[40px] lg:text-[53px] leading-tight font-semibold uppercase text-gray-900 tracking-tight mb-6">
               Website für Selbständige: Ihr persönlicher Online-Auftritt, der
               überzeugt
             </h1>
@@ -40,7 +40,7 @@ const WebsiteSelbstaendige = () => {
               Website Kunden gewinnen und ihre Marke stärken. Online-Erfolg ist
             </h2>
             {/* TL;DR + LESENSWERT colons*/}
-            <div className="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-8">
+            <div className="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-8 mt-4 mb-8">
               {/* TL;DR BOX*/}
               <div className="bg-[#0009FF] rounded-[8px] p-[16px] lg:w-full mt-5">
                 <h2 className="text-[28px] font-matt text-white mb-4 uppercase">
@@ -58,7 +58,7 @@ const WebsiteSelbstaendige = () => {
               </div>
 
               {/* LESENSWERT */}
-              <aside className="bg-gradient-to-br from-[#F0F4FF] to-white border border-[#E0E7FF] p-6 rounded-2xl shadow-sm mt-8">
+              <aside className="bg-gradient-to-br from-[#F0F4FF] to-white border border-[#E0E7FF] p-6 rounded-2xl mt-3 shadow-sm">
                 <h3 className="text-[20px] font-matt font-[800] text-[#0009FF] uppercase mb-4">
                   AUCH LESENSWERT
                 </h3>

@@ -20,33 +20,29 @@ const KMUWebsitePost = () => {
           content="https://www.the-eksperts.com/images/the%20eksperts%20vertical%20blue.png"
         />
       </Head>
-
-      <main className="max-w-[1330px] mx-auto p-2 lg:p-8 mb-[100px]">
-        {/* Header Section */}
-
+      <main className="max-w-[1330px] mx-auto px-4 lg:px-8 mb-[100px] overflow-x-hidden">
         {/* Post Content Section */}
-        <section className="mb-[16px] lg:mb-[40px] text-left">
+        <section className="mb-12 px-0 text-left">
           <div className="text-left ">
-
-          <h1 className="font-matt text-[30px] lg:text-[55px] leading-[1] font-semibold uppercase text-gray-900 tracking-tight">
-          Website für KMU Schweiz: So stärken Sie Ihr kleines oder mittleres
-          Unternehmen digital
+            <h1 className="font-matt text-[30px] sm:text-[40px] lg:text-[60px] leading-tight font-semibold uppercase text-gray-900 tracking-tight mb-6">
+              Website für KMU Schweiz: So stärken Sie Ihr kleines oder mittleres
+              Unternehmen digital
             </h1>
 
             <h2 className="font-matt text-[25px] lg:text-[37px] leading-[1] font-normal text-gray-900 tracking-tight">
-            Wie eine strategisch aufgebaute Website Ihr Schweizer KMU zu mehr
-            Sichtbarkeit, Kunden und Effizienz verhilft.
+              Wie eine strategisch aufgebaute Website Ihr Schweizer KMU zu mehr
+              Sichtbarkeit, Kunden und Effizienz verhilft.
             </h2>
 
-              <h2 className="hidden lg:text-[40px] text-[25px] font-matt font-[400] lg:leading-[48px]">
+            <h2 className="hidden lg:text-[40px] text-[25px] font-matt font-[400] lg:leading-[48px]">
               Wie eine strategisch aufgebaute Website Ihr Schweizer KMU zu mehr
               Sichtbarkeit, Kunden und Effizienz verhilft.
             </h2>
 
             {/* TL;DR + LESENSWERT colons*/}
-            <div className="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-10 mt-4">
+            <div className="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-8 mt-8 mb-8">
               {/* TL;DR BOX*/}
-              <div className="bg-[#0009FF] rounded-[8px] p-[16px] lg:w-full">
+              <div className="bg-[#0009FF] rounded-[8px] p-[16px] w-full">
                 <h2 className="text-[28px] font-matt text-white mb-4 uppercase">
                   <strong>TL;DR</strong>{" "}
                   <span className="font-300">(too long; didn't read)</span>
@@ -106,7 +102,7 @@ const KMUWebsitePost = () => {
         <section>
           <div className="mb-10">
             <img
-              src=  "/images/blog2-the eksperts.svg"
+              src="/images/blog2-the eksperts.svg"
               alt="Kosova"
               className="w-full lg:h-[500px] object-cover rounded-[12px]"
             />
@@ -122,10 +118,10 @@ const KMUWebsitePost = () => {
               >
                 Lesedauer: ca. 4 Minuten{" "}
               </p>
-              <h2 className="text-[28px] font-matt font-[900] text-black mb-6 uppercase">
+              <h2 className="text-[28px] font-matt font-[900] text-black mb-4 uppercase">
                 Warum jedes Schweizer KMU eine starke Website braucht{" "}
               </h2>
-              <p className="text-black font-[300] text-[16px] lg:text-[20px] font-matt">
+              <p className="text-black font-[300] text-[16px] lg:text-[20px] font-matt mt-3">
                 Kleine und mittlere Unternehmen (KMU) bilden das Rückgrat der
                 Schweizer Wirtschaft. Doch auch in diesem Sektor ist der
                 Wettbewerb hart, und die Erwartungen der Kunden steigen. Eine
@@ -137,7 +133,6 @@ const KMUWebsitePost = () => {
             </div>
           </section>
 
-          {/* Why Nearshoring with the Eksperts */}
           <section className="lg:w-[990px] space-y-[30px]">
             <h3 className="text-[28px] font-matt font-[900] text-black  uppercase">
               Eine strategisch aufgebaute KMU Website Schweiz ermöglicht es
@@ -168,9 +163,9 @@ const KMUWebsitePost = () => {
                   }}
                 >
                   <img
-                    src="/images/ai1.png" // Replace with actual image path
+                    src="/images/1_ Website für KMU Schweiz_ So stärken Sie Ihr kleines oder mittleres Unternehmen digital.svg"
                     alt="Briefing & Zieldefinition"
-                    className="w-full h-full object-cover rounded-[12px]"
+                    className="w-full h-full object-cover rounded-[12px] shadow-md"
                   />
                 </div>
               </div>
@@ -198,9 +193,9 @@ const KMUWebsitePost = () => {
                   }}
                 >
                   <img
-                    src="/images/ai2.png" // Replace with actual image path
+                    src="/images/2_ Website für KMU Schweiz_ So stärken Sie Ihr kleines oder mittleres Unternehmen digital.svg"
                     alt="Briefing & Zieldefinition"
-                    className="w-full h-full object-cover rounded-[12px]"
+                    className="w-full h-full object-cover rounded-[12px] shadow-md"
                   />
                 </div>
               </div>
@@ -230,9 +225,9 @@ const KMUWebsitePost = () => {
                   }}
                 >
                   <img
-                    src="/images/ai3.png" // Replace with actual image path
+                    src="/images/3_ Website für KMU Schweiz_ So stärken Sie Ihr kleines oder mittleres Unternehmen digital.svg"
                     alt="Briefing & Zieldefinition"
-                    className="w-full h-full object-cover rounded-[12px]"
+                    className="w-full h-full object-cover rounded-[12px] shadow-md"
                   />
                 </div>
               </div>
@@ -262,9 +257,9 @@ const KMUWebsitePost = () => {
                   }}
                 >
                   <img
-                    src="/images/ai4.png" // Replace with actual image path
+                    src="/images/4_ Website für KMU Schweiz_ So stärken Sie Ihr kleines oder mittleres Unternehmen digital.svg"
                     alt="Briefing & Zieldefinition"
-                    className="w-full h-full object-cover rounded-[12px]"
+                    className="w-full h-full object-cover rounded-[12px] shadow-md"
                   />
                 </div>
               </div>
@@ -276,14 +271,14 @@ const KMUWebsitePost = () => {
               Eine Website für KMU erstellen: Was zählt wirklich?{" "}
             </h2>
             <section className="mt-12 flex flex-col lg:flex-row gap-[30px]">
-              {/* Text Section */}
-              <div className="lg:w-[40%]">
+              <div className="lg:w-[50%] min-h-[260px] rounded-[12px] overflow-hidden">
                 <img
-                  src="/images/ai5.png" // Replace with actual image path
-                  alt="Vorteile für Unternehmen"
-                  className="w-full lg:h-[458px] object-cover rounded-lg"
+                  src="/images/5_ Website für KMU Schweiz_ So stärken Sie Ihr kleines oder mittleres Unternehmen digital.svg"
+                  alt="KMU Website Illustration"
+                  className="w-full h-full object-cover"
                 />
               </div>
+
               <div className="lg:w-[50%] mb-8 lg:mb-0">
                 {/* Image Section */}
 
@@ -334,27 +329,31 @@ const KMUWebsitePost = () => {
           <section className="mt-12 flex flex-col lg:flex-row justify-left lg:items-center gap-4 lg:gap-8">
             <Link href="/kontakt" passHref legacyBehavior>
               <a
-                className="flex justify-center items-center gap-2 py-3 px-8 text-white text-lg font-medium rounded-[60px] bg-[#0009FF] hover:bg-blue-700 transition duration-300"
-                style={{ width: "299px", padding: "11px 0px" }}
+                className="
+      w-full   
+      sm:w-auto      
+      max-w-[300px]  
+      flex justify-center items-center gap-2
+      py-3 px-8
+      text-white text-lg font-medium
+      rounded-[60px]
+      bg-[#0009FF]
+      hover:bg-blue-700
+      transition duration-300
+      whitespace-nowrap  
+    "
               >
                 Kontaktieren Sie Uns
               </a>
             </Link>
-
-            <p className="text-[#000] text-[16px] lg:text-[18px] font-matt font-[300] lg:leading-[33px]">
-              [Bildvorschlag: Eine Grafik, die typische Vorteile einer
-              KMU-Website darstellt (z.B. "Mehr Kunden", "24/7 Präsenz",
-              "Professionelles Image").]{" "}
-            </p>
           </section>
         </section>
-
-        <div className="mb-12 lg:w-[905px]">
-          <h2 className="text-[28px] font-matt font-[900] text-black mb-4 uppercase mt-10">
+        <div className="mb-12 max-w-[905px] px-4 lg:px-0">
+          <h2 className="text-[28px] font-matt font-[900] text-black mb-6 uppercase mt-10">
             Die richtige digitale Lösung für KMU Schweiz finden
           </h2>
 
-          <p className="text-black text-[16px] lg:text-[20px] font-[300] font-matt mb-4">
+          <p className="text-black text-[16px] lg:text-[20px] font-[300] font-matt mb-6">
             Es gibt unzählige Anbieter und Plattformen, um eine{" "}
             <strong>digitale Lösung für KMU Schweiz</strong> zu realisieren. Von
             einfachen Baukastensystemen bis hin zu massgeschneiderten
@@ -371,8 +370,8 @@ const KMUWebsitePost = () => {
             wie <strong>the eksperts</strong> versteht die spezifischen
             Anforderungen von KMU und bietet:{" "}
           </p>
-          <br />
-          <ul className="list-disc ml-6 text-black text-[16px] lg:text-[20px] font-[300] font-matt space-y-3">
+
+          <ul className="list-disc ml-6 text-black text-[16px] lg:text-[20px] font-[300] font-matt space-y-4 mb-6">
             <li>
               <strong>Individuelle Beratung:</strong> Wir hören Ihnen zu und
               entwickeln eine Lösung, die exakt zu Ihrem Geschäftsmodell passt.
@@ -391,17 +390,17 @@ const KMUWebsitePost = () => {
               wir für Sie da
             </li>
           </ul>
-          <br />
-          <p className="text-black text-[16px] lg:text-[20px] font-[300] font-matt mb-4">
-            <br /> Eine Investition in eine hochwertige Website ist eine
-            Investition in die Zukunft Ihres Unternehmens. Sie verschafft Ihnen
-            einen entscheidenden Wettbewerbsvorteil und öffnet Türen zu neuen
+
+          <p className="text-black text-[16px] lg:text-[20px] font-[300] font-matt mb-6">
+            Eine Investition in eine hochwertige Website ist eine Investition in
+            die Zukunft Ihres Unternehmens. Sie verschafft Ihnen einen
+            entscheidenden Wettbewerbsvorteil und öffnet Türen zu neuen
             Geschäftsmöglichkeiten.{" "}
           </p>
-          <br />
+
           <Link
             href="/kontakt"
-            className="mt-6 inline-flex items-center gap-2 text-[#0009FF] text-lg font-matt font-[900] hover:underline transition  mt-100 duration-300"
+            className="mt-6 inline-flex items-center gap-2 text-[#0009FF] text-lg font-matt font-[900] hover:underline transition duration-300"
           >
             Jetzt kostenlose Beratung anfragen
             <svg
@@ -420,11 +419,11 @@ const KMUWebsitePost = () => {
             </svg>
           </Link>
 
-          <div className="lg:w-full h-[298px] mt-6">
+          <div className="w-full mt-6">
             <img
-              src="/images/Rectangle 259.png"
+              src="/images/6_ Website für KMU Schweiz_ So stärken Sie Ihr kleines oder mittleres Unternehmen digital.svg"
               alt="Agile for digital projects"
-              className="w-full h-full object-cover rounded-lg"
+              className="w-full h-auto max-h-[300px] lg:max-h-[400px] object-cover rounded-lg"
             />
           </div>
         </div>
@@ -458,17 +457,15 @@ const KMUWebsitePost = () => {
             </li>
           </ul>
           <div className="mt-8 bg-[#0009FF] text-white p-6 rounded-lg text-center space-y-3">
-            <p className="text-xl font-matt font-[700]">
+            <p className="text-xl mb-5 font-matt font-[700]">
               Lassen Sie uns über Ihre KMU Website sprechen!
             </p>
             <p className="text-lg font-matt font-[400]">
               Jetzt kostenlose Beratung anfragen
             </p>
-
-            {/* Butoni me distancë sipër */}
             <div className="mt-8">
               <Link href="/kontakt" passHref legacyBehavior>
-                <a className="bg-white text-[#0009FF] font-matt font-[900] text-lg px-6 py-3 rounded-[50px] hover:bg-gray-100 transition duration-300">
+                <a className="bg-white text-[#0009FF] font-matt font-[900] text-lg px-6 py-3 rounded-[50px] hover:bg-gray-100 transition  mt-5 duration-300">
                   Beratung anfragen
                 </a>
               </Link>

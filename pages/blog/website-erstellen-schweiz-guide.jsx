@@ -24,14 +24,14 @@ const WebsiteErstellenPost = () => {
 
       <main className="max-w-[1330px] mx-auto p-2 lg:p-8 mb-[100px]">
         {/* Header Section */}
-        <section className="mb-[16px] text-left">
+        <section className="mb-[16px]  px-4 lg:px-0 text-left">
           <div className="text-left ">
-            <h1 className="font-matt text-[30px] lg:text-[60px] leading-[1] font-semibold uppercase text-gray-900 tracking-tight">
+            <h1 className="font-matt text-[26px] sm:text-[40px] lg:text-[50px]  leading-tight font-semibold uppercase text-gray-900 tracking-tight mb-6">
               Der ultimative Guide: Website erstellen Schweiz – Ihr Sprungbrett
               zum Online-Erfolg
             </h1>
 
-            <h2 className="font-matt text-[25px] lg:text-[39px] leading-[1] font-normal text-gray-900 tracking-tight">
+            <h2 className="font-matt text-[25px] lg:text-[34px] leading-[1] font-normal text-gray-900 tracking-tight mb-0 lg:mb-4">
               Warum eine professionelle Online-Präsenz für Ihr Schweizer
               Unternehmen entscheidend ist und wie Sie den richtigen Partner
               finden.
@@ -43,7 +43,7 @@ const WebsiteErstellenPost = () => {
             </h2>
 
             {/* TL;DR + LESENSWERT colons*/}
-            <div className="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-8 mt-8">
+            <div className="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-8 mt-8 mb-8">
               {/* TL;DR BOX*/}
               <div className="bg-[#0009FF] rounded-[8px] p-[16px] w-full">
                 <h2 className="text-[28px] font-matt text-white mb-4 uppercase">
@@ -64,7 +64,7 @@ const WebsiteErstellenPost = () => {
               </div>
 
               {/* LESENSWERT */}
-              <aside className="bg-gradient-to-br from-[#F0F4FF] to-white border border-[#E0E7FF] p-6 rounded-2xl shadow-sm h-fit">
+              <aside className="bg-gradient-to-br from-[#F0F4FF] to-white border border-[#E0E7FF] p-6 rounded-2xl shadow-sm">
                 <h3 className="text-[20px] font-matt font-[800] text-[#0009FF] uppercase mb-4">
                   AUCH LESENSWERT
                 </h3>
@@ -91,12 +91,12 @@ const WebsiteErstellenPost = () => {
                   </li>
                   <li>
                     <a
-                      href="/blog/nearshoring-mit-the-eksperts"
+                      href="/blog/agile-projektleitung"
                       className="hover:text-[#0009FF] hover:underline transition"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      Nearshoring mit the eksperts
+                      Agile Projektleitung
                     </a>
                   </li>
                 </ul>
@@ -127,17 +127,16 @@ const WebsiteErstellenPost = () => {
               </p>
             </div>
           </section>
-
-          {/* Benefits for Businesses */}
           <section className="lg:w-[905px]  mb-12 flex flex-col lg:flex-row gap-[20px]">
             {/* Text Section */}
-            <div className="lg:w-[30%]">
+            <div className="w-full lg:w-[30%] h-[200px] sm:h-[280px] md:h-[350px] lg:h-[570px]">
               <img
-                src="/images/recagile.png" // Replace with actual image path
+                src="/images/1_Der ultimative Guide_ Website erstellen Schweiz – Ihr Sprungbrett zum Online-Erfolg.svg"
                 alt="Vorteile für Unternehmen"
-                className="w-full lg:h-[570px] object-cover rounded-lg"
+                className="w-full h-full object-cover rounded-lg"
               />
             </div>
+
             <div className="lg:w-[70%] mb-8 lg:mb-0">
               <h2 className="text-[28px] font-matt font-[900] text-black mb-4 uppercase">
                 Ihre digitale Visitenkarte: Warum eine Website in der Schweiz
@@ -233,16 +232,16 @@ const WebsiteErstellenPost = () => {
               </li>
             </ul>
 
-            <div className="lg:w-full h-[298px] mt-6">
+            <div className="lg:w-full h-[318px] mt-6">
               <img
-                src="/images/Rectangle 259.png"
-                alt="Agile for digital projects"
+                src="/images/2_Der ultimative Guide_ Website erstellen Schweiz – Ihr Sprungbrett zum Online-Erfolg.svg"
+                alt=" 2 Der ultimative Guide_ Website erstellen Schweiz"
                 className="w-full h-full object-cover rounded-lg"
               />
             </div>
           </div>
 
-          <section className="bg-[#0009FF] mt-[80px] lg:w-[915px] p-2 lg:p-[40px] rounded-lg">
+          <section className="bg-[#0009FF] py-16 lg:py-24 px-4 lg:px-8 lg:w-[915px] rounded-lg">
             <div className="max-w-[900px] mx-auto">
               <h2 className="text-[#FFF] text-[20px] lg:text-[28px] font-matt font-[900] text-uppercase mb-6">
                 Eigene Website gestalten oder Agentur beauftragen? Die Schweizer
@@ -311,16 +310,9 @@ const WebsiteErstellenPost = () => {
                   className="w-full lg:w-[840px] h-[350px] object-cover rounded-lg mb-8"
                 />
               </div>
-              <p className="text-[#FFF] text-[16px] lg:text-[20px] font-[300] font-matt italic">
-                <em>
-                  [Bildvorschlag: Eine Grafik, die die Vor- und Nachteile von
-                  "DIY Website" vs. "Agentur Website" vergleicht.]{" "}
-                </em>{" "}
-              </p>
             </div>
           </section>
-
-          <section className="lg:w-[905px] mb-12 mt-[80px] flex flex-col lg:flex-row-reverse gap-[20px] items-center">
+          <section className="lg:w-[905px] py-16 lg:py-24 flex flex-col lg:flex-row-reverse gap-[20px] items-center">
             <div className="lg:w-[40%]">
               <img
                 src="/images/theekspertsagileblog.png"
@@ -395,7 +387,7 @@ const WebsiteErstellenPost = () => {
             </Link>
           </div>
 
-          <h2 className="text-[28px] font-matt font-[900] text-black mb-4 mt-20 uppercase">
+          <h2 className="text-[28px] font-matt font-[900] text-black mb-6 mt-0 uppercase">
             Häufig gestellte Fragen zur Website-Erstellung in der Schweiz
           </h2>
           <ul className="list-disc ml-6 text-black text-[16px] lg:text-[20px] font-[300] font-matt space-y-3">
@@ -461,7 +453,6 @@ const WebsiteErstellenPost = () => {
         </div>
 
         {/* Related Posts */}
-
         <RelatedPostsCarousel />
       </main>
     </>

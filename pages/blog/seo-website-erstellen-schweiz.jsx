@@ -1,6 +1,5 @@
 import Head from "next/head";
 import Link from "next/link";
-
 import RelatedPostsCarousel from "@/components/RelatedPostsCarousel";
 
 const SeoOptimierteSchweiz = () => {
@@ -8,7 +7,6 @@ const SeoOptimierteSchweiz = () => {
     <>
       <Head>
         <title>
-          {" "}
           SEO-optimierte Website erstellen lassen: Ihr Weg zu mehr Sichtbarkeit
           in der Schweiz | the eksperts
         </title>
@@ -25,32 +23,29 @@ const SeoOptimierteSchweiz = () => {
         />
       </Head>
 
-      <main className="max-w-[1330px] mx-auto p-2 lg:p-8 mb-[100px]">
+      <main className="max-w-full mx-auto px-4 sm:px-6 md:px-10 lg:px-16 py-8 mb-[100px]">
         {/* Post Content Section */}
-        <section className="mb-[16px] lg:mb-[40px] text-left">
-          <div className="text-left ">
-            <h1 className="font-matt text-[30px] lg:text-[54px] leading-[1] font-semibold uppercase text-gray-900 tracking-tight">
+        <section className="mb-12 lg:mb-16 text-left max-w-full">
+          <div className="max-w-[1300px] mx-auto">
+            <h1 className="font-matt text-[26px] sm:text-[40px] lg:text-[50px]  leading-tight font-semibold uppercase text-gray-900 tracking-tight mb-6">
               SEO-optimierte Website erstellen lassen: Ihr Weg zu mehr
               Sichtbarkeit in der Schweiz
             </h1>
 
-            <h2 className="font-matt text-[25px] lg:text-[38px] leading-[1] font-normal text-gray-900 tracking-tight">
+            <h2 className="font-matt text-[22px] lg:text-[34px] leading-[1] font-normal text-gray-900 tracking-tight mb-0 lg:mb-4">
               Warum Suchmaschinenoptimierung von Anfang an der Schlüssel zum
               Online-Erfolg ist
             </h2>
-            <h2 className="hidden lg:text-[40px] text-[25px] font-matt font-[400] lg:leading-[48px]">
-              Warum Suchmaschinenoptimierung von Anfang an der Schlüssel zum
-              Online-Erfolg ist
-            </h2>
-            {/* TL;DR + LESENSWERT colons*/}
-            <div className="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-8">
-              {/* TL;DR BOX*/}
-              <div className="bg-[#0009FF] rounded-[8px] p-[16px] lg:w-full mt-5">
-                <h2 className="text-[28px] font-matt text-white mb-4 uppercase">
+
+            {/* TL;DR + LESENSWERT columns */}
+            <div className="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-8 mt-6">
+              {/* TL;DR BOX */}
+              <div className="bg-[#0009FF] rounded-[12px] p-6 sm:p-8 w-full">
+                <h2 className="text-[28px] font-matt text-white mb-5 uppercase">
                   <strong>TL;DR</strong>{" "}
-                  <span className="font-300">(too long; didn't read)</span>
+                  <span className="font-[300]">(too long; didn't read)</span>
                 </h2>
-                <p className="text-white font-[300] text-[16px] lg:text-[20px] font-matt">
+                <p className="text-white font-[300] text-[16px] sm:text-[18px] leading-relaxed font-matt">
                   Eine SEO-optimierte Website erstellen lassen ist fundamental,
                   um in der heutigen digitalen Landschaft gefunden zu werden.
                   Erfahren Sie, warum Suchmaschinenoptimierung keine
@@ -62,8 +57,8 @@ const SeoOptimierteSchweiz = () => {
               </div>
 
               {/* LESENSWERT */}
-              <aside className="bg-gradient-to-br from-[#F0F4FF] to-white border border-[#E0E7FF] p-6 rounded-2xl shadow-sm mt-6">
-                <h3 className="text-[20px] font-matt font-[800] text-[#0009FF] uppercase mb-4">
+              <aside className="bg-gradient-to-br from-[#F0F4FF] to-white border border-[#E0E7FF] p-6 rounded-2xl shadow-sm mt-6 lg:mt-0">
+                <h3 className="text-[20px] font-matt font-[800] text-[#0009FF] uppercase mb-5">
                   AUCH LESENSWERT
                 </h3>
                 <ul className="space-y-3 font-matt text-[16px] text-black font-[300] leading-snug">
@@ -102,22 +97,19 @@ const SeoOptimierteSchweiz = () => {
             </div>
           </div>
         </section>
-        {/* TL;DR */}
-        <section className="mb-12 flex flex-col lg:flex-row">
-          {/* Left Content */}
-          <div className="max-w-[800px] flex-1 mb-8 lg:mb-0">
-            <p
-              className="text-[#0009FF] text-[20px] lg:text-[28px] uppercase font-matt font-[900] mb-[25px]"
-              style={{ color: "#0009FF" }}
-            >
+
+        {/* Lesedauer */}
+        <section className="mb-14 flex flex-col lg:flex-row max-w-[1300px] mx-auto">
+          <div className="flex-1">
+            <p className="text-[#0009FF] text-[20px] lg:text-[28px] uppercase font-matt font-[900] mb-[25px]">
               Lesedauer: ca. 5 Minuten{" "}
             </p>
           </div>
         </section>
 
         {/* Content Section */}
-        <section>
-          <section className="w-full mb-20">
+        <section className="max-w-[1300px] mx-auto">
+          <section className="mb-20">
             <div className="bg-gradient-to-br from-blue-50 via-white to-blue-100 rounded-3xl shadow-xl p-8 lg:p-12 border border-blue-100">
               <h2 className="text-[28px] lg:text-[36px] font-matt font-[900] text-blue-900 text-center mb-8">
                 Unsichtbar sein ist keine Option: Die Macht von SEO
@@ -154,9 +146,10 @@ const SeoOptimierteSchweiz = () => {
             </div>
           </section>
 
-          <section className="w-full mb-20 px-4">
+          <section className="mb-20 px-4 sm:px-0">
             <div className="max-w-[1000px] mx-auto bg-white rounded-2xl shadow-xl p-8 lg:p-12 border border-blue-100 relative overflow-hidden">
               <div className="flex justify-center mb-6">
+                {/* SVG Icon */}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="48"
@@ -218,7 +211,8 @@ const SeoOptimierteSchweiz = () => {
               </div>
             </div>
           </section>
-          <p className="text-black font-[300] text-[17px] lg:text-[17px] font-matt">
+
+          <p className="text-black font-[300] text-[17px] lg:text-[17px] font-matt mb-12 max-w-[1000px] mx-auto">
             <em>
               [Bildvorschlag: Eine schematische Darstellung einer Landing Page
               mit Pfeilen, die den Blick zum CTA leiten.]
@@ -226,7 +220,7 @@ const SeoOptimierteSchweiz = () => {
           </p>
         </section>
 
-        <section className="w-full bg-[#F8FAFC] py-20 px-4">
+        <section className="w-full bg-[#F8FAFC] py-20 px-4 sm:px-8 md:px-12">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-[28px] lg:text-[36px] font-matt font-[900] text-blue-900 text-center mb-6">
               Die Säulen einer SEO-optimierten Website
@@ -239,23 +233,16 @@ const SeoOptimierteSchweiz = () => {
                 <h3 className="text-xl font-bold text-blue-800 mb-4">
                   Technische SEO
                 </h3>
-                <ul className="list-disc list-inside space-y-2 text-black text-[16px] font-[300]">
+                <ul className="list-disc list-inside space-y-2 text-black font-matt font-[300] text-[17px] lg:text-[18px] ">
                   <li>
                     <strong>Mobile-Freundlichkeit:</strong> Optimiert für alle
                     Geräte.{" "}
-                    <a
+                    <Link
                       href="/blog/mobile-optimierung"
                       className="text-blue-600 hover:underline"
                     >
-                      <Link
-                        href="/blog/wordpress-website-schweiz"
-                        className="internal-link"
-                      >
-                        <br /> . WordPress Website Schweiz: Warum die
-                        meistgenutzte Plattform auch für Sie die Richtige sein
-                        könnte
-                      </Link>
-                    </a>
+                      Mobile Optimierung
+                    </Link>
                   </li>
                   <li>
                     <strong>Ladezeiten:</strong> Schnelle Performance für Nutzer
@@ -281,26 +268,20 @@ const SeoOptimierteSchweiz = () => {
                 <h3 className="text-xl font-bold text-green-800 mb-4">
                   On-Page SEO
                 </h3>
-                <ul className="list-disc list-inside space-y-2 text-black text-[16px] font-[300]">
+                <ul className="list-disc list-inside space-y-2 text-black font-matt font-[300] text-[17px] lg:text-[18px] ">
                   <li>
-                    <strong>Keywords:</strong> Natürlich integriert in Inhalte &
-                    Meta.
+                    <strong>Keywords:</strong> Natürlich integriert in Inhalte
+                    &amp; Meta.
                   </li>
                   <li>
-                    <strong>Inhaltsqualität:</strong> Wertvoll & einzigartig.{" "}
-                    <a
+                    <strong>Inhaltsqualität:</strong> Wertvoll &amp;
+                    einzigartig.{" "}
+                    <Link
                       href="/blog/der-unterschatzte-boost"
                       className="text-blue-600 hover:underline"
                     >
-                      <Link
-                        href="/blog/website-erstellen-schweiz-guide"
-                        className="internal-link"
-                      >
-                        <br />
-                        Der ultimative Guide: Website erstellen Schweiz – Ihr
-                        Sprungbrett zum Online-Erfolg
-                      </Link>
-                    </a>
+                      Mehr erfahren
+                    </Link>
                   </li>
                   <li>
                     <strong>Überschriftenstruktur:</strong> Klare H1-H3
@@ -317,26 +298,18 @@ const SeoOptimierteSchweiz = () => {
                 <h3 className="text-xl font-bold text-purple-800 mb-4">
                   Off-Page SEO
                 </h3>
-                <ul className="list-disc list-inside space-y-2 text-black text-[16px] font-[300]">
+                <ul className="list-disc list-inside space-y-2 text-black font-matt font-[300] text-[17px] lg:text-[18px] ">
                   <li>
                     <strong>Backlinks:</strong> Hochwertige externe Verweise.
                   </li>
                   <li>
                     <strong>Lokales SEO:</strong> Relevant für die Schweiz.{" "}
-                    <a
+                    <Link
                       href="/blog/lokales-seo"
                       className="text-blue-600 hover:underline"
                     >
-                      {" "}
-                      <Link
-                        href="/blog/webagentur-digitalagentur-st-gallen-ostschweiz"
-                        className="internal-link"
-                      >
-                        <br />
-                        Webagentur und Digitalagentur St. Gallen: Ihr digitaler
-                        Partner im Herzen der Ostschweiz
-                      </Link>
-                    </a>
+                      Mehr erfahren
+                    </Link>
                   </li>
                   <li>
                     <strong>Google My Business:</strong> Optimiertes Profil für
@@ -348,9 +321,9 @@ const SeoOptimierteSchweiz = () => {
           </div>
         </section>
 
-        <section className="w-full py-20 bg-[#F9FAFB] px-6 md:px-12 lg:px-24">
+        <section className="w-full py-20 px-4 sm:px-8 md:px-12 lg:px-24">
           <div className="max-w-5xl mx-auto bg-white shadow-xl rounded-2xl p-10 md:p-14 border border-gray-200">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#031672] font-matt mb-6 leading-tight">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#031672] font-matt mb-6 leading-tight text-center">
               Ihre SEO-optimierte Website mit{" "}
               <span className="text-blue-600">the eksperts</span>
             </h2>
@@ -371,10 +344,10 @@ const SeoOptimierteSchweiz = () => {
               gefunden wird.
             </p>
 
-            <div className="mt-8">
+            <div className="mt-8 flex justify-center">
               <a
                 href="/kontakt"
-                className="inline-flex items-center gap-3 bg-blue-600 hover:bg-blue-700 text-white text-lg font-semibold px-8 py-4 rounded-full shadow-md transition duration-300"
+                className="inline-flex items-center gap-3 bg-blue-600 hover:bg-blue-700 text-white text-lg font-semibold px-5 py-3 rounded-full shadow-md transition duration-300"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -385,7 +358,7 @@ const SeoOptimierteSchweiz = () => {
                   strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  className="stroke-white"
+                  className="stroke-white flex-shrink-0"
                 >
                   <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
                   <polyline points="7 10 12 15 17 10" />

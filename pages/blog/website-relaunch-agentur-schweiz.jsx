@@ -26,12 +26,12 @@ const WebsiteRelaunch = () => {
         {/* Header Section */}
         <section className="mb-[16px] text-left">
           <div className="text-left ">
-            <h1 className="font-matt text-[30px] lg:text-[52px] leading-[1] font-semibold uppercase text-gray-900 tracking-tight">
+            <h1 className="font-matt text-[30px] sm:text-[40px] lg:text-[53px] leading-tight font-semibold uppercase text-gray-900 tracking-tight mb-6">
               Website-Relaunch Agentur Schweiz: Frischer Wind für Ihre
               bestehende Online-Präsenz
             </h1>
 
-            <h2 className="font-matt text-[25px] lg:text-[39px] leading-[1] font-normal text-gray-900 tracking-tight">
+            <h2 className="font-matt text-[25px] lg:text-[37px] leading-[1] font-normal text-gray-900 tracking-tight">
               Wann es Zeit für einen Neustart ist und wie ein professioneller
               Relaunch Ihr Unternehmen digital stärkt.
             </h2>
@@ -58,7 +58,7 @@ const WebsiteRelaunch = () => {
               </div>
 
               {/* LESENSWERT */}
-              <aside className="bg-gradient-to-br from-[#F0F4FF] to-white border border-[#E0E7FF] p-6 rounded-2xl shadow-sm mt-8">
+              <aside className="bg-gradient-to-br from-[#F0F4FF] to-white border border-[#E0E7FF] p-6 rounded-2xl mt-3 shadow-sm">
                 <h3 className="text-[20px] font-matt font-[800] text-[#0009FF] uppercase mb-4">
                   AUCH LESENSWERT
                 </h3>

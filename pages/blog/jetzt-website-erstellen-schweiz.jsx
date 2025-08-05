@@ -27,12 +27,12 @@ const JetztWebsiteSchweiz = () => {
         {/* Header Section */}
         <section className="mb-[16px] text-left">
           <div className="text-left ">
-            <h1 className="font-matt text-[30px] lg:text-[50px] leading-[1] font-semibold uppercase text-gray-900 tracking-tight">
+            <h1 className="font-matt text-[26px] sm:text-[40px] lg:text-[50px]  leading-tight font-semibold uppercase text-gray-900 tracking-tight mb-6">
               Jetzt Website erstellen lassen: Warum The Eksperts Ihr idealer
               Partner in der Schweiz ist
             </h1>
 
-            <h2 className="font-matt text-[25px] lg:text-[35px] leading-[1] font-normal text-gray-900 tracking-tight">
+            <h2 className="font-matt text-[22px] lg:text-[34px] leading-[1] font-normal text-gray-900 tracking-tight mb-0 lg:mb-4">
               Ihre Suche nach einer Webagentur für KMU endet hier – Kompetenz,
               Vertrauen und massgeschneiderte Lösungen.
             </h2>
@@ -61,7 +61,7 @@ const JetztWebsiteSchweiz = () => {
               </div>
 
               {/* LESENSWERT */}
-              <aside className="bg-gradient-to-br from-[#F0F4FF] to-white border border-[#E0E7FF] p-6 rounded-2xl shadow-sm mt-8">
+              <aside className="bg-gradient-to-br from-[#F0F4FF] to-white border border-[#E0E7FF] p-6 rounded-2xl mt-3 shadow-sm">
                 <h3 className="text-[20px] font-matt font-[800] text-[#0009FF] uppercase mb-4">
                   AUCH LESENSWERT
                 </h3>
@@ -355,8 +355,8 @@ const JetztWebsiteSchweiz = () => {
           <div className="max-w-[900px] w-full text-center">
             <div className="w-[60px] h-[4px] bg-[#0009FF] mx-auto mb-6 rounded-full"></div>
 
-            <h2 className="text-[24px] lg:text-[32px] font-matt font-[800] text-black mb-6">
-              Fazit: Machen Sie den ersten Schritt zum Online-Erfolg
+            <h2 className="text-[24px] lg:text-[32px] font-matt font-[800] text-black mb-6 leading-tight">
+              Fazit: Machen Sie den ersten Schritt zum Online-Erfolg eksperts
             </h2>
 
             <p className="text-[16px] lg:text-[20px] text-black font-matt font-[300] leading-[1.8]">
@@ -366,21 +366,22 @@ const JetztWebsiteSchweiz = () => {
               Sie denken. The Eksperts ist bereit, Sie auf diesem Weg zu
               begleiten.
             </p>
-            <p className="text-black text-[16px] lg:text-[20px] font-[300] font-matt mt-6 text-center">
+            <p className="text-black text-[16px] lg:text-[20px] font-[300] font-matt mt-6 text-center leading-relaxed">
               <strong>Erfahren Sie auf</strong>
               <a
                 href="https://the-eksperts.com/website-schweiz"
-                className="tue-600 underline ml-1ext-bl"
+                className="text-blue-600 underline ml-1"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 the-eksperts.com/website-schweiz
-              </a>{" "}
+              </a>
               wie einfach es ist, Ihre professionelle Website in der Schweiz
-              erstellen zu lassen .
+              erstellen zu lassen
             </p>
           </div>
         </section>
+
         {/* Related Posts */}
 
         <RelatedPostsCarousel />

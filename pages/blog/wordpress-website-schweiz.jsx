@@ -7,7 +7,6 @@ const WordPressWebsitePost = () => {
     <>
       <Head>
         <title>
-          {" "}
           WordPress Website Schweiz: Warum die meistgenutzte Plattform auch für
           Sie die Richtige sein könnte | the eksperts
         </title>
@@ -22,42 +21,33 @@ const WordPressWebsitePost = () => {
         />
       </Head>
 
-      <main className="max-w-[1330px] mx-auto p-2 lg:p-8 mb-[100px]">
+      <main className="max-w-[1330px] mx-auto px-4 sm:px-6 lg:px-8 mb-[100px] overflow-x-hidden box-border">
         {/* Header Section */}
-
-        {/* Post Content Section */}
-        <section className="mb-[16px] lg:mb-[40px] text-left">
-          <div className="text-left ">
-            <h1 className="font-matt text-[30px] lg:text-[50px] leading-[1] font-semibold uppercase text-gray-900 tracking-tight">
+        <section className="mb-10 lg:mb-16 text-left">
+          <div>
+            <h1 className="font-matt text-[30px] sm:text-[40px] lg:text-[50px] leading-tight font-semibold uppercase text-gray-900 tracking-tight mb-6">
               WordPress Website Schweiz: Warum die meistgenutzte Plattform auch
               für Sie die Richtige sein könnte
             </h1>
 
-            <h2 className="font-matt text-[25px] lg:text-[34px] leading-[1] font-normal text-gray-900 tracking-tight">
+            <h2 className="font-matt text-[25px] lg:text-[34px] leading-[1] font-normal text-gray-900 tracking-tight mb-0 lg:mb-4">
               Entdecken Sie die Vorteile von WordPress für Ihr Schweizer
               Business – Flexibilität, Skalierbarkeit und SEO-Freundlichkeit
             </h2>
-            <h2 className="hidden lg:text-[40px] text-[25px] font-matt font-[400] lg:leading-[48px]">
-              Entdecken Sie die Vorteile von WordPress für Ihr Schweizer
-              Business – Flexibilität, Skalierbarkeit und SEO-Freundlichkeit.{" "}
-            </h2>
 
-            {/* TL;DR + LESENSWERT colons*/}
-            <div className="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-8">
-              {/* TL;DR BOX*/}
-              <div className="bg-[#0009FF] rounded-[8px] p-[16px] lg:w-full mt-5">
-                <h2 className="text-[28px] font-matt text-white mb-4 uppercase">
+            {/* TL;DR + LESENSWERT columns */}
+            <div className="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-8 mt-8 mb-8">
+              {/* TL;DR BOX */}
+              <div className="bg-[#0009FF] rounded-[8px] p-6 lg:w-full">
+                <h2 className="text-[28px] font-matt text-white mb-5 uppercase">
                   <strong>TL;DR</strong>{" "}
-                  <span className="font-300" font-matt>
-                    (too long; didn't read)
-                  </span>
+                  <span className="font-300"> (too long; didn't read) </span>
                 </h2>
 
-                <p className="text-white font-[300] text-[16px] lg:text-[20px] font-matt">
+                <p className="text-white font-[300] text-[16px] lg:text-[20px] font-matt leading-relaxed">
                   Eine WordPress Website Schweiz ist die weltweit populärste
                   Wahl für Websites – und das aus gutem Grund. Erfahren Sie,
                   warum WordPress, im Vergleich zu Plattformen wie Webflow oder{" "}
-                  <br />
                   <Link
                     href="/blog/website-baukaesten-schweiz"
                     className="underline text-white hover:text-gray-200 font-bold"
@@ -71,11 +61,11 @@ const WordPressWebsitePost = () => {
               </div>
 
               {/* LESENSWERT */}
-              <aside className="bg-gradient-to-br from-[#F0F4FF] to-white border border-[#E0E7FF] p-6 rounded-2xl shadow-sm mt-4">
-                <h3 className="text-[20px] font-matt font-[800] text-[#0009FF] uppercase mb-4">
+              <aside className="bg-gradient-to-br from-[#F0F4FF] to-white border border-[#E0E7FF] p-6 rounded-2xl shadow-sm mt-6 lg:mt-0">
+                <h3 className="text-[20px] font-matt font-[800] text-[#0009FF] uppercase mb-5">
                   AUCH LESENSWERT
                 </h3>
-                <ul className="space-y-3 font-matt text-[16px] text-black font-[300] leading-snug">
+                <ul className="space-y-4 font-matt text-[16px] text-black font-[300] leading-snug">
                   <li>
                     <a
                       href="/blog/der-unterschatzte-boost"
@@ -111,8 +101,9 @@ const WordPressWebsitePost = () => {
             </div>
           </div>
         </section>
+
         <section>
-          <div className="mb-10">
+          <div className="mb-12">
             <img
               src="/images/blog5-the eksperts.svg"
               alt="Kosova"
@@ -122,7 +113,6 @@ const WordPressWebsitePost = () => {
 
           {/* TL;DR */}
           <section className="mb-12 flex flex-col lg:flex-row">
-            {/* Left Content */}
             <div className="max-w-[800px] flex-1 mb-8 lg:mb-0">
               <p
                 className="text-[#0009FF] text-[20px] lg:text-[28px] uppercase font-matt font-[900] mb-[5px]"
@@ -134,11 +124,11 @@ const WordPressWebsitePost = () => {
           </section>
 
           <section className="mb-[60px] lg:mb-[80px] text-center">
-            <div className="mt-[15px] bg-[#0009FF] rounded-[8px] p-[30px] lg:w-[1300px] mx-auto mb-12 text-center">
+            <div className="mt-[15px] bg-[#0009FF] rounded-[8px] p-8 lg:w-[1300px] mx-auto mb-12 text-center">
               <h2 className="text-[25px] font-matt text-white mb-4 uppercase">
                 <strong>WordPress: Mehr als nur ein Blog-System</strong>
               </h2>
-              <p className="text-white font-[300] text-[16px] lg:text-[20px] font-matt">
+              <p className="text-white font-[300] text-[16px] lg:text-[20px] font-matt leading-relaxed">
                 WordPress hat sich längst von einer Blogging-Plattform zu einem
                 leistungsstarken CMS entwickelt, das rund 40% aller Websites
                 weltweit antreibt – auch viele Unternehmen in der Schweiz setzen
@@ -157,11 +147,11 @@ const WordPressWebsitePost = () => {
                   Flexibilität & Anpassbarkeit
                   <span className="absolute bottom-0 left-0 w-[50px] h-[3px] bg-[#0009FF] transition-all duration-300 group-hover:w-[100px]"></span>
                 </h3>
-                <ul className="list-disc ml-5 space-y-3 text-black font-[300] text-[16px] lg:text-[18px] font-matt">
+                <ul className="list-disc ml-5 space-y-3 text-black font-[300] text-[16px] lg:text-[20px] font-matt">
                   <li>
                     <strong>Unbegrenzte Designmöglichkeiten:</strong> Mit
                     Tausenden von Themes & Plugins lässt sich fast jedes Design
-                    und jede Funktionalität umsetzen.
+                    und jede Funktionalität umsetzen.{" "}
                     <Link
                       href="/blog/moderne-business-website-design-trends"
                       className="internal-link"
@@ -196,7 +186,7 @@ const WordPressWebsitePost = () => {
                   Benutzerfreundlichkeit
                   <span className="absolute bottom-0 left-0 w-[50px] h-[3px] bg-[#0009FF] transition-all duration-300 group-hover:w-[100px]"></span>
                 </h3>
-                <ul className="list-disc ml-5 space-y-3 text-black font-[300] text-[16px] lg:text-[18px] font-matt">
+                <ul className="list-disc ml-5 space-y-3 text-black font-[300] text-[16px] lg:text-[20px] font-matt">
                   <li>
                     <strong>Einfache Verwaltung:</strong> Auch ohne
                     Programmierkenntnisse können Sie Inhalte (Texte, Bilder)
@@ -216,7 +206,7 @@ const WordPressWebsitePost = () => {
                   SEO-Freundlichkeit
                   <span className="absolute bottom-0 left-0 w-[50px] h-[3px] bg-[#0009FF] transition-all duration-300 group-hover:w-[100px]"></span>
                 </h3>
-                <ul className="list-disc ml-5 space-y-3 text-black font-[300] text-[16px] lg:text-[18px] font-matt">
+                <ul className="list-disc ml-5 space-y-3 text-black font-[300] text-[16px] lg:text-[20px] font-matt">
                   <li>
                     <strong>Suchmaschinenoptimierung (SEO):</strong> WordPress
                     ist von Haus aus SEO-freundlich und bietet zahlreiche
@@ -243,11 +233,11 @@ const WordPressWebsitePost = () => {
                   Kosten-Effizienz & Unabhängigkeit
                   <span className="absolute bottom-0 left-0 w-[50px] h-[3px] bg-[#0009FF] transition-all duration-300 group-hover:w-[100px]"></span>
                 </h3>
-                <ul className="list-disc ml-5 space-y-3 text-black font-[300] text-[16px] lg:text-[18px] font-matt">
+                <ul className="list-disc ml-5 space-y-3 text-black font-[300] text-[16px] lg:text-[20px] font-matt">
                   <li>
                     <strong>Open Source:</strong> Die WordPress-Software selbst
                     ist Open Source und kostenlos. Sie zahlen lediglich für
-                    Hosting, Domain und eventuell Premium-Themes/Plugins.
+                    Hosting, Domain und eventuell Premium-Themes/Plugins.{" "}
                     <Link
                       href="/blog/website-kmu-schweiz-kosten"
                       className="internal-link"
@@ -266,18 +256,38 @@ const WordPressWebsitePost = () => {
               </div>
             </div>
 
-            <div className="text-center mt-20">
+            <div className="text-center mt-20 px-4 sm:px-0">
               <Link
                 href="/blog/der-unterschatzte-boost"
                 passHref
                 legacyBehavior
               >
-                <a className="bg-[#0009FF] text-white font-medium rounded-full px-8 py-4 text-[16px] lg:text-[18px] shadow-md hover:bg-blue-700 transition-all duration-300 whitespace-nowrap inline-block">
+                <a
+                  className="
+        bg-[#0009FF] 
+        text-white 
+        font-medium 
+        rounded-full 
+        px-8 
+        py-4 
+        text-[16px] 
+        lg:text-[18px] 
+        shadow-md 
+        hover:bg-blue-700 
+        transition-all 
+        duration-300 
+        block 
+        w-full 
+        sm:w-auto 
+        text-center
+      "
+                >
                   Jetzt mehr über den unterschätzten Boost erfahren
                 </a>
               </Link>
             </div>
           </section>
+
           <div className="mb-12">
             <h2 className="text-[28px] font-matt font-[900] text-black mb-4 uppercase">
               WordPress im Vergleich: Wo steht es?{" "}
@@ -293,7 +303,7 @@ const WordPressWebsitePost = () => {
                 <strong>vs. Baukastensysteme (Wix, Jimdo):</strong> WordPress
                 bietet deutlich mehr Flexibilität, Anpassungsmöglichkeiten und
                 SEO-Potenzial. Baukästen sind einfacher für absolute Laien,
-                stossen aber schnell an Grenzen.
+                stossen aber schnell an Grenzen.{" "}
                 <Link
                   href="/blog/website-baukaesten-schweiz"
                   className="internal-link"
@@ -302,7 +312,6 @@ const WordPressWebsitePost = () => {
                 </Link>{" "}
               </li>
               <li>
-                {" "}
                 <strong>vs. Webflow:</strong> Webflow ist eine leistungsstarke
                 Plattform für Designer, die mehr Kontrolle über den Code
                 wünschen. WordPress ist jedoch einfacher zu verwalten, bietet
@@ -315,14 +324,13 @@ const WordPressWebsitePost = () => {
             {/* Text Section */}
             <div className="lg:w-[60%]">
               <img
-                src="/images/rename.png" // Replace with actual image path
-                alt="Vorteile für Unternehmen"
+                src="/images/1_WordPress Website Schweiz.svg"
+                alt="1_WordPress Website Schweiz"
                 className="w-full lg:h-[436px] object-cover rounded-lg"
               />
             </div>
             <div className="lg:w-[40%] mb-8 lg:mb-0">
               {/* Image Section */}
-
               <h2 className="text-[28px] font-matt font-[900] text-black mb-4 uppercase">
                 Ihre WordPress Website mit the Eksperts in der Schweiz{" "}
               </h2>
