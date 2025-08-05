@@ -22,33 +22,29 @@ const MobileFirstCH = () => {
         />
       </Head>
 
-      <main className="max-w-[1330px] mx-auto p-2 lg:p-8 mb-[100px]">
+      <main className="max-w-[1330px] mx-auto px-4 sm:px-6 lg:px-8 py-8 mb-[100px]">
         {/* Header Section */}
-        <section className="mb-[16px] text-left">
-          <div className="text-left ">
-            <h1 className="font-matt text-[30px] lg:text-[56px] leading-[1] font-semibold uppercase text-gray-900 tracking-tight">
+        <section className="mb-10 lg:mb-16 text-left">
+          <div>
+            <h1 className="font-matt text-[26px] sm:text-[40px] lg:text-[50px]  leading-tight font-semibold uppercase text-gray-900 tracking-tight mb-6">
               Mobile First Website Schweiz: Der Schlüssel zum Erfolg im
               Zeitalter des Smartphones
             </h1>
 
-            <h2 className="font-matt text-[25px] lg:text-[38px] leading-[1] font-normal text-gray-900 tracking-tight">
-              Warum die mobile Version Ihrer Website heute entscheidend für
-              Google, Nutzer und Ihren Geschäftserfolg ist.
-            </h2>
-            <h2 className="hidden lg:text-[40px] text-[25px] font-matt font-[400] lg:leading-[48px]">
+            <h2 className="font-matt text-[22px] lg:text-[34px] leading-[1] font-normal text-gray-900 tracking-tight mb-0 lg:mb-4">
               Warum die mobile Version Ihrer Website heute entscheidend für
               Google, Nutzer und Ihren Geschäftserfolg ist.
             </h2>
 
-            {/* TL;DR + LESENSWERT colons*/}
-            <div className="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-8">
-              {/* TL;DR BOX*/}
-              <div className="bg-[#0009FF] rounded-[8px] p-[16px] lg:w-full mt-5">
+            {/* TL;DR + LESENSWERT columns */}
+            <div className="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-8 mt-6">
+              {/* TL;DR BOX */}
+              <div className="bg-[#0009FF] rounded-lg p-6 lg:w-full">
                 <h2 className="text-[28px] font-matt text-white mb-4 uppercase">
                   <strong>TL;DR</strong>{" "}
-                  <span className="font-300">(too long; didn't read)</span>
+                  <span className="font-light">(too long; didn't read)</span>
                 </h2>
-                <p className="text-white font-[300] text-[16px] lg:text-[20px] font-matt">
+                <p className="text-white font-light text-[16px] sm:text-[18px] lg:text-[20px] font-matt leading-relaxed">
                   Eine Mobile First Website Schweiz ist nicht nur ein Trend,
                   sondern eine Notwendigkeit. Erfahren Sie, warum Google mobile
                   Inhalte priorisiert und wie ein responsive Webdesign Schweiz
@@ -58,11 +54,11 @@ const MobileFirstCH = () => {
               </div>
 
               {/* LESENSWERT */}
-              <aside className="bg-gradient-to-br from-[#F0F4FF] to-white border border-[#E0E7FF] p-6 rounded-2xl shadow-sm mt-8">
-                <h3 className="text-[20px] font-matt font-[800] text-[#0009FF] uppercase mb-4">
+              <aside className="bg-gradient-to-br from-[#F0F4FF] to-white border border-[#E0E7FF] p-6 rounded-2xl mt-6 lg:mt-0 shadow-sm">
+                <h3 className="text-[20px] font-matt font-extrabold text-[#0009FF] uppercase mb-4">
                   AUCH LESENSWERT
                 </h3>
-                <ul className="space-y-3 font-matt text-[16px] text-black font-[300] leading-snug">
+                <ul className="space-y-3 font-matt text-[16px] text-black font-light leading-snug">
                   <li>
                     <a
                       href="/blog/der-unterschatzte-boost"
@@ -105,38 +101,38 @@ const MobileFirstCH = () => {
             <img
               src="/images/blog11-the eksperts.svg"
               alt="Agile Projektleitung"
-              className="w-full lg:h-[500px] object-cover rounded-[12px]"
+              className="w-full lg:h-[500px] object-cover rounded-lg"
             />
           </div>
-          {/* TL;DR */}
+          {/* Lesedauer */}
           <section className="mb-12 flex flex-col lg:flex-row">
-            {/* Left Content */}
             <div className="max-w-[800px] flex-1 lg:mb-0">
               <p
-                className="text-[#0009FF] text-[20px] lg:text-[28px] uppercase font-matt font-[900] mb-[25px]"
+                className="text-[#0009FF] text-[20px] lg:text-[28px] uppercase font-matt font-extrabold mb-[25px]"
                 style={{ color: "#0009FF" }}
               >
                 Lesedauer: ca. 4 Minuten
               </p>
             </div>
           </section>
-          <section className="w-full bg-[#F5F7FF] py-20 px-4">
+
+          <section className="w-full bg-[#F5F7FF] py-20 px-4 sm:px-6">
             <div className="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-2 items-center gap-16">
               <div className="relative z-10">
-                <h2 className="text-[30px] lg:text-[42px] font-matt font-[900] text-black leading-tight mb-6 uppercase">
+                <h2 className="text-[30px] sm:text-[36px] lg:text-[42px] font-matt font-extrabold text-black leading-tight mb-6 uppercase">
                   Das Smartphone zuerst:
                   <br className="hidden lg:block" />
                   Neue Priorität im Webdesign
                 </h2>
                 <div className="w-[60px] h-[4px] bg-[#0009FF] rounded-full mb-6"></div>
 
-                <p className="text-[16px] lg:text-[20px] font-matt font-[300] text-black leading-[1.8] mb-5">
+                <p className="text-[16px] sm:text-[18px] lg:text-[20px] font-matt font-light text-black leading-relaxed mb-5">
                   Das Nutzerverhalten hat sich verändert – Smartphones
                   dominieren den digitalen Alltag. Das Konzept der{" "}
                   <strong>Mobile First Website Schweiz</strong> ist die Antwort
                   auf diese Realität.
                 </p>
-                <p className="text-[16px] lg:text-[20px] font-matt font-[300] text-black leading-[1.8]">
+                <p className="text-[16px] sm:text-[18px] lg:text-[20px] font-matt font-light text-black leading-relaxed">
                   Mobile First bedeutet, dass Ihre Website zuerst für
                   Smartphones konzipiert wird – für maximale Performance und
                   Nutzerfreundlichkeit – und erst danach für grössere
@@ -154,7 +150,6 @@ const MobileFirstCH = () => {
               </div>
             </div>
           </section>
-
           <section className="relative w-full overflow-hidden">
             {/* Blue diagonal background */}
             <div className="absolute inset-0 -z-10">
@@ -163,16 +158,28 @@ const MobileFirstCH = () => {
                 viewBox="0 0 40 100"
                 preserveAspectRatio="none"
               >
-                <polygon fill="#0040FF" points="0,0 100,30 100,60 0,100" />
+                {/* Desktop / tablet polygon */}
+                <polygon
+                  fill="#0040FF"
+                  points="0,0 120,30 100,80 0,100"
+                  className="hidden sm:block"
+                />
+                {/* Mobile polygon narrower */}
+                <polygon
+                  fill="#0040FF"
+                  points="0,0 110,20 50,90, 0,100"
+                  className="block sm:hidden"
+                />
               </svg>
             </div>
 
-            <div className="max-w-[1200px] mx-auto px-4 py-24">
-              <h2 className="text-[32px] lg:text-[44px] font-matt font-[900] text-white mb-10 leading-snug text-center">
+            <div className="max-w-[1200px] mx-auto px-6 sm:px-10 py-24">
+              <h2 className="text-[28px] sm:text-[32px] md:text-[36px] lg:text-[44px] font-matt font-extrabold text-white mb-10 leading-snug text-center">
                 Warum Mobile First für Ihr Schweizer Business entscheidend ist
               </h2>
 
-              <div className="space-y-6 text-white text-[16px] lg:text-[18px] font-[300] font-matt max-w-[900px] mx-auto">
+              <div className="space-y-6 text-white text-[15px] sm:text-[17px] md:text-[18px] lg:text-[20px] font-light font-matt max-w-[900px] mx-auto px-4 sm:px-8 md:px-16">
+                {/* Added horizontal padding here */}
                 <p>
                   <strong>Googles Mobile-First Indexing:</strong> Seit 2018
                   bewertet Google die Ranking-Faktoren einer Website primär
@@ -183,7 +190,7 @@ const MobileFirstCH = () => {
                   direkt relevant für Ihre SEO-Sichtbarkeit.{" "}
                   <Link
                     href="/blog/seo-website-erstellen-schweiz"
-                    className="text-white text-decoration: underline font-bold"
+                    className="text-white underline font-bold"
                   >
                     <br />
                     SEO-optimierte Website erstellen lassen: Ihr Weg zu mehr
@@ -220,12 +227,13 @@ const MobileFirstCH = () => {
               </div>
             </div>
           </section>
-          <section className="w-full max-w-[1100px] mx-auto px-4 mt-[80px] mb-[80px]">
+
+          <section className="w-full max-w-[1100px] mx-auto px-4 sm:px-6 mt-[80px] mb-[80px]">
             <div className="text-center mb-10">
-              <h2 className="text-[28px] lg:text-[36px] font-matt font-[900] text-black">
+              <h2 className="text-[28px] sm:text-[32px] lg:text-[36px] font-matt font-extrabold text-black">
                 Mobile First und Responsive Design: Hand in Hand
               </h2>
-              <p className="text-[16px] lg:text-[20px] font-matt font-[300] text-black mt-4 max-w-[800px] mx-auto">
+              <p className="text-[16px] sm:text-[18px] lg:text-[20px] font-matt font-light text-black mt-4 max-w-[800px] mx-auto">
                 Oft werden die Begriffe "Mobile First" und "responsive Webdesign
                 Schweiz" synonym verwendet, doch es gibt einen feinen
                 Unterschied:
@@ -235,13 +243,13 @@ const MobileFirstCH = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
               {/* Box 1 */}
               <div className="flex items-start gap-4">
-                <div className="text-[#0009FF] text-[30px]"></div>
+                <div className="text-[#0009FF] text-[30px]" />
                 <div>
-                  <h3 className="text-[20px] font-matt font-[700] text-black mb-2">
+                  <h3 className="text-[20px] font-matt font-semibold text-black mb-2">
                     Responsive Design
                   </h3>
 
-                  <p className="text-black font-matt font-[300] text-[16px] lg:text-[18px] leading-[1.7]">
+                  <p className="text-black font-matt font-light text-[16px] lg:text-[18px] leading-[1.7]">
                     Responsive Design ist die Technik, mit der sich eine Website
                     an verschiedene Bildschirmgrössen anpasst.{" "}
                     <Link
@@ -257,12 +265,12 @@ const MobileFirstCH = () => {
 
               {/* Box 2 */}
               <div className="flex items-start gap-4">
-                <div className="text-[#0009FF] text-[30px]"></div>
+                <div className="text-[#0009FF] text-[30px]" />
                 <div>
-                  <h3 className="text-[20px] font-matt font-[700] text-black mb-2">
+                  <h3 className="text-[20px] font-matt font-semibold text-black mb-2">
                     Mobile First
                   </h3>
-                  <p className="text-black font-matt font-[300] text-[16px] lg:text-[18px] leading-[1.7]">
+                  <p className="text-black font-matt font-light text-[16px] lg:text-[18px] leading-[1.7]">
                     ist die Strategie oder Denkweise, die bei der Entwicklung
                     priorisiert wird, nämlich die mobile Erfahrung zuerst zu
                     optimieren.
@@ -271,7 +279,7 @@ const MobileFirstCH = () => {
               </div>
             </div>
 
-            <p className="text-[16px] lg:text-[20px] font-matt font-[300] text-black mt-4 max-w-[800px] mx-auto">
+            <p className="text-[16px] lg:text-[20px] font-matt font-light text-black mt-4 max-w-[800px] mx-auto">
               <br /> <br /> Eine wirklich gute Website kombiniert beide Ansätze:
               Sie wird mit einer Mobile-First-Strategie entwickelt und technisch
               mit Responsive Design umgesetzt.
@@ -280,11 +288,11 @@ const MobileFirstCH = () => {
 
           <section className="w-full py-[60px] px-4 bg-gradient-to-br from-white via-[#F8F9FF] to-[#E6ECFF] flex justify-center">
             <div className="max-w-[1100px] w-full bg-white rounded-[24px] shadow-xl p-8 lg:p-[60px] flex flex-col gap-6 lg:gap-10">
-              <h2 className="text-[24px] lg:text-[36px] font-matt font-[900] text-black leading-tight">
+              <h2 className="text-[24px] lg:text-[36px] font-matt font-extrabold text-black leading-tight">
                 Ihre Mobile First Website mit the eksperts
               </h2>
 
-              <p className="text-[16px] lg:text-[20px] text-black font-matt font-[300] leading-[1.8]">
+              <p className="text-[16px] lg:text-[20px] text-black font-matt font-light leading-[1.8]">
                 Wir bei <strong>the eksperts</strong> legen bei jedem Projekt
                 Wert auf den Mobile-First-Ansatz. Wir wissen, dass der Erfolg
                 Ihrer Online-Präsenz entscheidend davon abhängt, wie gut Ihre
@@ -294,7 +302,7 @@ const MobileFirstCH = () => {
                 optimiert ist.
               </p>
 
-              <p className="text-[16px] lg:text-[20px] text-black font-matt font-[300] leading-[1.8]">
+              <p className="text-[16px] lg:text-[20px] text-black font-matt font-light leading-[1.8]">
                 Wir beraten Sie umfassend und sorgen dafür, dass Ihre
                 Online-Präsenz nicht nur heute modern ist, sondern auch für die
                 Anforderungen von morgen gerüstet ist.
@@ -303,7 +311,7 @@ const MobileFirstCH = () => {
               <div className="mt-4">
                 <a
                   href="#contact"
-                  className="inline-block bg-[#0009FF] text-white text-[16px] lg:text-[18px] font-matt font-[600] px-6 py-3 rounded-full shadow-md hover:bg-[#1a1aff] transition duration-300"
+                  className="inline-block bg-[#0009FF] text-white text-[16px] lg:text-[18px] font-matt font-semibold px-6 py-3 rounded-full shadow-md hover:bg-[#1a1aff] transition duration-300"
                 >
                   Sichern Sie sich Ihren mobilen Vorsprung <br /> – Lassen Sie
                   Ihre Mobile First Website von uns erstellen!
@@ -311,15 +319,16 @@ const MobileFirstCH = () => {
               </div>
             </div>
           </section>
+
           <section className="w-full px-4 py-[60px] flex justify-center">
             <div className="max-w-[900px] w-full text-center">
               <div className="w-[60px] h-[4px] bg-[#0009FF] mx-auto mb-6 rounded-full"></div>
 
-              <h2 className="text-[24px] lg:text-[32px] font-matt font-[800] text-black mb-6">
+              <h2 className="text-[24px] lg:text-[32px] font-matt font-extrabold text-black mb-6">
                 Fazit: Ignorieren Sie Mobile First auf eigene Gefahr{" "}
               </h2>
 
-              <p className="text-[16px] lg:text-[20px] text-black font-matt font-[300] leading-[1.8]">
+              <p className="text-[16px] lg:text-[20px] text-black font-matt font-light leading-[1.8]">
                 Wer heute noch eine Website entwickelt, die primär für den
                 Desktop gedacht ist, riskiert nicht nur eine schlechte
                 Nutzererfahrung, sondern auch deutliche Nachteile im
@@ -327,7 +336,7 @@ const MobileFirstCH = () => {
                 Schweiz, um sicherzustellen, dass Ihr Unternehmen auch in der
                 mobilen Welt erfolgreich ist.
               </p>
-              <p className="text-black text-[16px] lg:text-[20px] font-[300] font-matt mt-6 text-center">
+              <p className="text-black text-[16px] lg:text-[20px] font-light font-matt mt-6 text-center">
                 <strong>
                   Erfahren Sie mehr über unsere Mobile-First-Strategien für Ihre
                   Website auf <br />
@@ -345,6 +354,7 @@ const MobileFirstCH = () => {
             </div>
           </section>
         </section>
+
         {/* Related Posts */}
         <RelatedPostsCarousel />
       </main>

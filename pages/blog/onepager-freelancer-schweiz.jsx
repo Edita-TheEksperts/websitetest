@@ -22,82 +22,75 @@ const blogOnepagerMinimalistisch = () => {
           content="https://www.the-eksperts.com/images/the%20eksperts%20vertical%20blue.png"
         />
       </Head>
-
-      <main className="max-w-[1330px] mx-auto p-2 lg:p-8 mb-[100px]">
+      <main className="max-w-[1330px] mx-auto px-4 sm:px-6 lg:px-8 py-8 mb-[100px]">
         {/* Header Section */}
-        <section className="mb-[16px] text-left">
-          <div className="text-left ">
-            <h1 className="font-matt text-[30px] lg:text-[54px] leading-[1] font-semibold uppercase text-gray-900 tracking-tight">
-              Onepager für Freelancer und Selbständige: Minimalistisch und doch
-              wirkungsvoll
-            </h1>
+        <section className="mb-10 text-center lg:text-left">
+          <h1 className="font-matt text-[26px] sm:text-[40px] lg:text-[50px]  leading-tight font-semibold uppercase text-gray-900 tracking-tight mb-6">
+            Onepager für Freelancer und Selbständige: Minimalistisch und doch
+            wirkungsvoll
+          </h1>
 
-            <h2 className="font-matt text-[25px] lg:text-[38px] leading-[1] font-normal text-gray-900 tracking-tight">
-              Wann eine schlanke One-Page -Website der perfekte Online-Auftritt
-              für Ihre Dienstleistungen ist
-            </h2>
-            <h2 className="hidden lg:text-[40px] text-[25px] font-matt font-[400] lg:leading-[48px]">
-              Wann eine schlanke One-Page-Website der perfekte Online-Auftritt
-              für Ihre Dienstleistungen ist.
-            </h2>
-            {/* TL;DR + LESENSWERT colons*/}
-            <div className="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-8">
-              {/* TL;DR BOX*/}
-              <div className="bg-[#0009FF] rounded-[8px] p-[16px] lg:w-full mt-5">
-                <h2 className="text-[28px] font-matt text-white mb-4 uppercase">
-                  <strong>TL;DR</strong>{" "}
-                  <span className="font-300">(too long; didn't read)</span>
-                </h2>
-                <p className="text-white font-[300] text-[16px] lg:text-[20px] font-matt">
-                  Ein Onepager für Freelancer oder Selbständige ist oft die
-                  ideale Lösung für einen klaren und prägnanten Online-Auftritt
-                  für Freelancer. Erfahren Sie, wann ein Onepager erstellen
-                  Schweiz die richtige Wahl für Ihre Personal Branding Website
-                  ist und wie eine einzige Seite Sie professionell präsentiert
-                  und überzeugt, manchmal auch als effektive Landing Page für
-                  Berater.{" "}
-                </p>
-              </div>
+          <h2 className="font-matt text-[22px] lg:text-[34px] leading-[1] font-normal text-gray-900 tracking-tight mb-0 lg:mb-4">
+            Wann eine schlanke One-Page -Website der perfekte Online-Auftritt
+            für Ihre Dienstleistungen ist
+          </h2>
 
-              {/* LESENSWERT */}
-              <aside className="bg-gradient-to-br from-[#F0F4FF] to-white border border-[#E0E7FF] p-6 rounded-2xl shadow-sm mt-8">
-                <h3 className="text-[20px] font-matt font-[800] text-[#0009FF] uppercase mb-4">
-                  AUCH LESENSWERT
-                </h3>
-                <ul className="space-y-3 font-matt text-[16px] text-black font-[300] leading-snug">
-                  <li>
-                    <a
-                      href="/blog/der-unterschatzte-boost"
-                      className="hover:text-[#0009FF] hover:underline transition"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Der unterschätzte Boost
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="/blog/briefing-launch"
-                      className="hover:text-[#0009FF] hover:underline transition"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Vom Briefing zum Launch
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="/blog/agile-projektleitung"
-                      className="hover:text-[#0009FF] hover:underline transition"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Agile Projektleitung
-                    </a>
-                  </li>
-                </ul>
-              </aside>
+          {/* TL;DR + LESENSWERT columns */}
+          <div className="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-8 mt-6">
+            {/* TL;DR BOX */}
+            <div className="bg-[#0009FF] rounded-[8px] p-6 lg:p-8 w-full">
+              <h2 className="text-[28px] font-matt text-white mb-4 uppercase">
+                <strong>TL;DR</strong>{" "}
+                <span className="font-300">(too long; didn't read)</span>
+              </h2>
+              <p className="text-white font-[300] text-[16px] lg:text-[20px] font-matt leading-relaxed">
+                Ein Onepager für Freelancer oder Selbständige ist oft die ideale
+                Lösung für einen klaren und prägnanten Online-Auftritt für
+                Freelancer. Erfahren Sie, wann ein Onepager erstellen Schweiz
+                die richtige Wahl für Ihre Personal Branding Website ist und wie
+                eine einzige Seite Sie professionell präsentiert und überzeugt,
+                manchmal auch als effektive Landing Page für Berater.{" "}
+              </p>
             </div>
+
+            {/* LESENSWERT */}
+            <aside className="bg-gradient-to-br from-[#F0F4FF] to-white border border-[#E0E7FF] p-6 rounded-2xl shadow-sm mt-3">
+              <h3 className="text-[20px] font-matt font-[800] text-[#0009FF] uppercase mb-4">
+                AUCH LESENSWERT
+              </h3>
+              <ul className="space-y-3 font-matt text-[16px] text-black font-[300] leading-snug">
+                <li>
+                  <a
+                    href="/blog/der-unterschatzte-boost"
+                    className="hover:text-[#0009FF] hover:underline transition"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Der unterschätzte Boost
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/blog/briefing-launch"
+                    className="hover:text-[#0009FF] hover:underline transition"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Vom Briefing zum Launch
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/blog/agile-projektleitung"
+                    className="hover:text-[#0009FF] hover:underline transition"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Agile Projektleitung
+                  </a>
+                </li>
+              </ul>
+            </aside>
           </div>
         </section>
 
@@ -128,9 +121,8 @@ const blogOnepagerMinimalistisch = () => {
             </div>
           </section>
 
-          {/* TL;DR */}
+          {/* Lesedauer */}
           <section className="mb-12 flex flex-col lg:flex-row">
-            {/* Left Content */}
             <div className="max-w-[800px] flex-1 lg:mb-0">
               <p
                 className="text-[#0009FF] text-[20px] lg:text-[28px] uppercase font-matt font-[900] mb-[25px]"
@@ -141,6 +133,7 @@ const blogOnepagerMinimalistisch = () => {
             </div>
           </section>
 
+          {/* Main Grid Section */}
           <section className="flex justify-center mb-24 px-4">
             <div className="max-w-[1300px] w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               {/* Text Content */}
@@ -156,7 +149,7 @@ const blogOnepagerMinimalistisch = () => {
 
                 <div className="w-[60px] h-[4px] bg-gradient-to-r from-blue-500 via-sky-400 to-purple-400 rounded-full mb-6" />
 
-                <p className="text-[16px] lg:text-[20px] text-black font-matt font-[300] leading-[1.8]mb-5">
+                <p className="text-[16px] lg:text-[20px] text-black font-matt font-[300] mb-5 leading-[1.8]">
                   <strong>Ein Onepager erstellen Schweiz</strong> bietet sich
                   besonders an für:
                 </p>
@@ -219,13 +212,15 @@ const blogOnepagerMinimalistisch = () => {
               </div>
             </div>
           </section>
-          <p className="text-black font-[300] text-[17px] lg:text-[17px] font-matt">
+
+          <p className="text-black font-[300] text-[17px] lg:text-[17px] font-matt mb-12 text-center">
             <em>
               [Bildvorschlag: Ein stilisiertes, langes Blatt Papier, das
               vertikal gescrollt wird, mit verschiedenen Inhaltsabschnitten.]{" "}
             </em>{" "}
           </p>
 
+          {/* Vorteile Section */}
           <section className="w-full mb-20 flex flex-col items-center">
             <div className="w-full max-w-[1200px] bg-gradient-to-br from-white via-[#F8F9FF] to-white p-8 lg:p-[80px] rounded-[20px] shadow-xl">
               <h2 className="text-[30px] lg:text-[42px] font-matt font-[900] text-center text-black uppercase mb-12 leading-tight">
@@ -253,20 +248,14 @@ const blogOnepagerMinimalistisch = () => {
                         Die Entwicklung ist oft schneller und kostengünstiger
                         als bei einer umfangreichen Website mit vielen
                         Unterseiten.
-                        <a
-                          href="/blog/kmu-webdesign-kosten"
+                        <Link
+                          href="/blog/website-kmu-schweiz-kosten"
                           className="text-blue-600 hover:underline"
                         >
-                          <Link
-                            href="/blog/website-kmu-schweiz-kosten"
-                            className="internal-link"
-                          >
-                            <br />
-                            Was kostet eine Website für ein KMU in der Schweiz?
-                            Transparenz und ROI
-                          </Link>
-                        </a>
-                        )
+                          <br />
+                          Was kostet eine Website für ein KMU in der Schweiz?
+                          Transparenz und ROI
+                        </Link>
                       </>,
                     ],
                   },
@@ -276,19 +265,14 @@ const blogOnepagerMinimalistisch = () => {
                       <>
                         Onepager eignen sich hervorragend für mobile Geräte, da
                         das Scrollen auf Smartphones sehr intuitiv ist.
-                        <a
-                          href="/blog/mobile-optimierung"
+                        <Link
+                          href="/blog/mobile-first-website-schweiz"
                           className="text-blue-600 hover:underline"
                         >
-                          <Link
-                            href="/blog/mobile-first-website-schweiz"
-                            className="internal-link"
-                          >
-                            <br />
-                            Mobile First Website Schweiz: Der Schlüssel zum
-                            Erfolg im Zeitalter des Smartphones
-                          </Link>
-                        </a>
+                          <br />
+                          Mobile First Website Schweiz: Der Schlüssel zum Erfolg
+                          im Zeitalter des Smartphones
+                        </Link>
                       </>,
                     ],
                   },
@@ -321,6 +305,7 @@ const blogOnepagerMinimalistisch = () => {
             </div>
           </section>
 
+          {/* Unverzichtbare Elemente Section */}
           <section className="bg-gradient-to-br from-[#eaf1fc] via-white to-[#f6f9ff] py-24 px-4 flex justify-center">
             <div className="max-w-[1300px] w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch">
               {/* Left: Onepager Elemente */}
@@ -377,19 +362,14 @@ const blogOnepagerMinimalistisch = () => {
                     Ziele erreicht. Wir sorgen dafür, dass Ihr Onepager nicht
                     nur optisch überzeugt, sondern auch technisch sauber
                     umgesetzt wird und gut gefunden wird.
-                    <a
+                    <Link
                       href="/blog/seo-website-erstellen-schweiz"
                       className="text-blue-600 hover:underline ml-1"
                     >
-                      <Link
-                        href="/blog/seo-website-erstellen-schweiz"
-                        className="internal-link"
-                      >
-                        <br />
-                        SEO-optimierte Website erstellen lassen: Ihr Weg zu mehr
-                        Sichtbarkeit in der Schweiz
-                      </Link>
-                    </a>
+                      <br />
+                      SEO-optimierte Website erstellen lassen: Ihr Weg zu mehr
+                      Sichtbarkeit in der Schweiz
+                    </Link>
                   </p>
                 </div>
 
@@ -404,6 +384,8 @@ const blogOnepagerMinimalistisch = () => {
             </div>
           </section>
         </section>
+
+        {/* Fazit Section */}
         <section className="w-full px-4 py-[60px] flex justify-center">
           <div className="max-w-[900px] w-full text-center">
             <div className="w-[60px] h-[4px] bg-[#0009FF] mx-auto mb-6 rounded-full"></div>
@@ -435,6 +417,7 @@ const blogOnepagerMinimalistisch = () => {
             </p>
           </div>
         </section>
+
         {/* Related Posts */}
         <RelatedPostsCarousel />
       </main>

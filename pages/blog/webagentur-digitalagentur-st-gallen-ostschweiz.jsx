@@ -21,34 +21,29 @@ const WebagenturundDigitalagentur = () => {
         />
       </Head>
 
-      <main className="max-w-[1330px] mx-auto p-2 lg:p-8 mb-[100px]">
-        {/* Header Section */}
-
+      <main className="max-w-[1330px] mx-auto px-4 sm:px-6 lg:px-8 mb-[100px] box-border overflow-x-hidden">
         {/* Post Content Section */}
-        <section className="mb-[16px]  lg:mb-[40px] text-left">
-          <div className="text-left ">
-            <h1 className="font-matt text-[30px] lg:text-[57px] leading-[1] font-semibold uppercase text-gray-900 tracking-tight">
+        <section className="mb-12 lg:mb-[40px] text-left">
+          <div>
+            <h1 className="font-matt text-[30px] sm:text-[40px] lg:text-[50px] leading-tight font-semibold uppercase text-gray-900 tracking-tight mb-6">
               Webagentur und Digitalagentur St. Gallen: Ihr digitaler Partner im
               Herzen der Ostschweiz
             </h1>
 
-            <h2 className="font-matt text-[25px] lg:text-[38px] leading-[1] font-normal text-gray-900 tracking-tight">
+            <h2 className="font-matt text-[25px] lg:text-[34px] leading-[1] font-normal text-gray-900 tracking-tight mb-0 lg:mb-4">
               Lokale Expertise und umfassende digitale Lösungen – direkt aus
               unserem Office am Rotenplatz
             </h2>
-            <h2 className="hidden lg:text-[40px] text-[25px] font-matt font-[400] lg:leading-[48px]">
-              Lokale Expertise und umfassende digitale Lösungen – direkt aus
-              unserem Office am Rotenplatz.
-            </h2>
-            {/* TL;DR + LESENSWERT colons*/}
-            <div className="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-8">
-              {/* TL;DR BOX*/}
-              <div className="bg-[#0009FF] rounded-[8px] p-[16px] lg:w-full mt-5">
-                <h2 className="text-[28px] font-matt text-white mb-4 uppercase">
+
+            {/* TL;DR + LESENSWERT columns */}
+            <div className="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-8 mt-8 mb-8">
+              {/* TL;DR BOX */}
+              <div className="bg-[#0009FF] rounded-[8px] p-6 lg:w-full">
+                <h2 className="text-[28px] font-matt text-white mb-5 uppercase">
                   <strong>TL;DR</strong>{" "}
                   <span className="font-300">(too long; didn't read)</span>
                 </h2>
-                <p className="text-white font-[300] text-[16px] lg:text-[20px] font-matt">
+                <p className="text-white font-[300] text-[16px] lg:text-[20px] font-matt leading-relaxed">
                   Suchen Sie nach "Webdesign St. Gallen" oder einer digitalen
                   Agentur in der Ostschweiz? Bei the eksperts, zentral gelegen
                   am Rotenplatz in St. Gallen, bieten wir massgeschneiderte
@@ -60,11 +55,11 @@ const WebagenturundDigitalagentur = () => {
               </div>
 
               {/* LESENSWERT */}
-              <aside className="bg-gradient-to-br from-[#F0F4FF] to-white border border-[#E0E7FF] p-6 rounded-2xl shadow-sm mt-4">
-                <h3 className="text-[20px] font-matt font-[800] text-[#0009FF] uppercase mb-4">
+              <aside className="bg-gradient-to-br from-[#F0F4FF] to-white border border-[#E0E7FF] p-6 rounded-2xl shadow-sm mt-8 lg:mt-0">
+                <h3 className="text-[20px] font-matt font-[800] text-[#0009FF] uppercase mb-5">
                   AUCH LESENSWERT
                 </h3>
-                <ul className="space-y-3 font-matt text-[16px] text-black font-[300] leading-snug">
+                <ul className="space-y-4 font-matt text-[16px] text-black font-[300] leading-snug">
                   <li>
                     <a
                       href="/blog/der-unterschatzte-boost"
@@ -100,8 +95,9 @@ const WebagenturundDigitalagentur = () => {
             </div>
           </div>
         </section>
+
         <section>
-          <div className="mb-10">
+          <div className="mb-12">
             <img
               src="/images/blog7-the-eksperts.svg"
               alt="Kosova"
@@ -109,9 +105,8 @@ const WebagenturundDigitalagentur = () => {
             />
           </div>
 
-          {/* TL;DR */}
+          {/* Lesedauer */}
           <section className="mb-12 flex flex-col lg:flex-row">
-            {/* Left Content */}
             <div className="max-w-[800px] flex-1 mb-8 lg:mb-0">
               <p
                 className="text-[#0009FF] text-[20px] lg:text-[28px] uppercase font-matt font-[900] mb-[5px]"
@@ -122,12 +117,12 @@ const WebagenturundDigitalagentur = () => {
             </div>
           </section>
 
-          <div className="mb-12 lg:w-[950px]">
-            <h2 className="text-[28px] font-matt font-[900] text-black mb-4 uppercase">
+          <div className="mb-12 lg:max-w-[950px]">
+            <h2 className="text-[28px] font-matt font-[900] text-black mb-6 uppercase">
               St. Gallen: Ein digitaler Hotspot in der Ostschweiz
             </h2>
 
-            <p className=" text-black font-[300] text-[16px] lg:text-[20px] font-matt">
+            <p className="text-black font-[300] text-[16px] lg:text-[20px] font-matt leading-relaxed">
               Der Kanton St. Gallen ist ein lebendiger Wirtschafts- und
               Bildungsstandort in der Ostschweiz, geprägt von einer dynamischen
               Mischung aus Tradition, Innovation und Tourismus. Um in diesem
@@ -135,23 +130,24 @@ const WebagenturundDigitalagentur = () => {
               unerlässlich. Potenzielle Kunden in St. Gallen und der gesamten
               Ostschweiz suchen aktiv nach zuverlässigen Partnern für ihre
               digitale Transformation.
-              <br /> <br />
+              <br />
+              <br />
               Ein durchdachtes Webdesign in <strong> St. Gallen </strong>ist der
               Schlüssel, um Ihre Zielgruppe direkt zu erreichen und Ihre Marke
               professionell zu präsentieren.
             </p>
           </div>
 
-          <section className="bg-[#f8f9fa] py-16 px-6 lg:px-20">
+          <section className="bg-[#f8f9fa] py-16 px-6 lg:px-20 rounded-lg">
             <div className="max-w-5xl mx-auto text-black font-matt text-[16px] lg:text-[18px] space-y-10">
               <div className="text-center">
-                <h2 className="text-[28px] lg:text-[32px] font-[900] uppercase">
+                <h2 className="text-[28px] lg:text-[32px] font-[900] uppercase leading-tight">
                   the eksperts: Ihr Zuhause für digitale Exzellenz in St. Gallen
                 </h2>
               </div>
 
               <div className="bg-white rounded-xl shadow-md p-6 lg:p-10 space-y-6">
-                <p className="text-black font-[300] text-[16px] lg:text-[20px] font-matt">
+                <p className="text-black font-[300] text-[16px] lg:text-[20px] font-matt leading-relaxed">
                   Unser Office befindet sich im Herzen von St. Gallen, am
                   Rotenplatz an der Sonnengartenstrasse 6. In diesem
                   historischen Gebäude, das 1907 erbaut wurde, finden Sie uns im
@@ -160,14 +156,14 @@ const WebagenturundDigitalagentur = () => {
                   perfekt für ein entspanntes Erstgespräch über Ihr Projekt.
                 </p>
 
-                <p className="text-black font-[300] text-[16px] lg:text-[20px] font-matt">
+                <p className="text-black font-[300] text-[16px] lg:text-[20px] font-matt leading-relaxed">
                   Als Ihre digitale Agentur St. Gallen bieten wir Ihnen:
                 </p>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="bg-white rounded-xl shadow-md p-6 space-y-4">
-                  <p className="text-black font-[300] text-[16px] lg:text-[20px] font-matt">
+                  <p className="text-black font-[300] text-[16px] lg:text-[20px] font-matt leading-relaxed">
                     <strong>Regionales Marktverständnis:</strong> Wir
                     analysieren die spezifischen Gegebenheiten des St. Galler
                     Marktes und der gesamten Ostschweiz. So entwickeln wir eine
@@ -183,14 +179,13 @@ const WebagenturundDigitalagentur = () => {
                 </div>
 
                 <div className="bg-white rounded-xl shadow-md p-6 space-y-3">
-                  <p className="text-black font-[300] text-[16px] lg:text-[20px] font-matt">
+                  <p className="text-black font-[300] text-[16px] lg:text-[20px] font-matt leading-relaxed">
                     <strong>Umfassende Digitale Dienstleistungen:</strong> Über
                     klassisches Webdesign St. Gallen hinaus sind wir Ihr Partner
                     für ein breites Spektrum an digitalen Lösungen:
                   </p>
-                  <ul className="list-disc ml-5 space-y-2 text-black font-[300] text-[16px] lg:text-[20px] font-matt">
+                  <ul className="list-disc ml-5 space-y-2 text-black font-[300] text-[16px] lg:text-[20px] font-matt leading-relaxed">
                     <li>
-                      {" "}
                       <strong>
                         Webshop / Online Shop erstellen St. Gallen:
                       </strong>{" "}
@@ -223,7 +218,6 @@ const WebagenturundDigitalagentur = () => {
                       </Link>
                     </li>
                     <li>
-                      {" "}
                       <strong>Digital Marketing St. Gallen:</strong> Von Social
                       Media über Content Marketing bis hin zu Performance
                       Marketing Kampagnen.
@@ -245,7 +239,7 @@ const WebagenturundDigitalagentur = () => {
                 </div>
 
                 <div className="bg-white rounded-xl shadow-md p-6 space-y-3 md:col-span-2">
-                  <p className="text-black font-[300] text-[16px] lg:text-[20px] font-matt">
+                  <p className="text-black font-[300] text-[16px] lg:text-[20px] font-matt leading-relaxed">
                     <strong>Persönliche Betreuung:</strong> Wir legen Wert auf
                     direkten Austausch. Egal, ob Sie uns in unserem Büro am
                     Rotenplatz besuchen oder wir uns digital verbinden – wir
@@ -256,19 +250,20 @@ const WebagenturundDigitalagentur = () => {
             </div>
           </section>
         </section>
-        <p className="text-black font-[300] text-[17px] lg:text-[17px] font-matt mt-9">
+
+        <p className="text-black font-[300] text-[17px] lg:text-[17px] font-matt mt-10 mb-10 leading-relaxed">
           <em>
             [Bildvorschlag: Eine Person, die konzentriert vor einem Bildschirm
-            sitzt und eine Website mit einem Baukastensystem erstellt.]{" "}
-          </em>{" "}
+            sitzt und eine Website mit einem Baukastensystem erstellt.]
+          </em>
         </p>
 
         <section className="bg-gradient-to-br from-[#F0F4FF] to-white rounded-[16px] shadow-md p-8 lg:p-12 mb-12 mt-10">
-          <h2 className="text-[28px] lg:text-[36px] font-matt font-[900] text-black mb-6 uppercase text-center">
+          <h2 className="text-[28px] lg:text-[36px] font-matt font-[900] text-black mb-8 uppercase text-center leading-tight">
             Ihr Weg zu digitalem Erfolg in der Ostschweiz
           </h2>
 
-          <div className="w-full mb-10">
+          <div className="w-full mb-12">
             <img
               src="/images/rotenplatz-building.jpg"
               alt='Bildvorschlag: Ein stilvolles Foto des historischen Gebäudes am Rotenplatz in St. Gallen, möglicherweise mit einem Andeutung des "the eksperts"-Logos am Fenster oder einem digitalen Overlay.'
@@ -276,9 +271,9 @@ const WebagenturundDigitalagentur = () => {
             />
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            <div className="space-y-6">
-              <ul className="list-disc ml-6 space-y-4 text-black font-[300] text-[16px] lg:text-[18px] lg:leading-[30px] font-matt">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-12">
+            <div className="space-y-8">
+              <ul className="list-disc ml-6 space-y-6 text-black font-[300] text-[16px] lg:text-[20px] lg:leading-[30px] font-matt">
                 <li>
                   <strong>Modernes Webdesign:</strong> Ein ansprechendes und
                   professionelles Design, das Ihr Unternehmen optimal
@@ -312,8 +307,8 @@ const WebagenturundDigitalagentur = () => {
               </ul>
             </div>
 
-            <div className="space-y-6">
-              <ul className="list-disc ml-6 space-y-4 text-black font-[300] text-[16px] lg:text-[18px] lg:leading-[30px] font-matt">
+            <div className="space-y-8">
+              <ul className="list-disc ml-6 space-y-6 text-black font-[300] text-[16px] lg:text-[20px] lg:leading-[30px] font-matt">
                 <li>
                   <strong>Performance & Mobiloptimierung:</strong> Eine schnelle
                   und auf allen Geräten perfekt funktionierende Website ist in
@@ -331,12 +326,29 @@ const WebagenturundDigitalagentur = () => {
               </ul>
             </div>
           </div>
-
-          <div className="text-center mt-10">
+          <div className="text-center mt-12 px-4 sm:px-0">
             <Link href="/kontakt" passHref legacyBehavior>
-              <a className="bg-[#0009FF] text-white rounded-full px-8 py-4 text-[16px] lg:text-[18px] font-medium shadow-lg hover:bg-blue-700 transition inline-block">
-                Starten Sie Ihr digitales Projekt in St. Gallen – Jetzt
-                kostenlose Beratung bei einer Tasse Kaffee vereinbaren!
+              <a
+                className="
+        bg-[#0009FF] 
+        text-white 
+        rounded-full 
+        px-8 sm:px-8 
+        py-3 sm:py-4 
+        text-[14px] sm:text-[16px] lg:text-[18px] 
+        font-medium 
+        shadow-lg 
+        hover:bg-blue-700 
+        transition 
+        block 
+        sm:inline-block
+        max-w-full
+        break-words
+      "
+              >
+                Starten Sie Ihr digitales Projekt in St.Gallen
+                <br /> – Jetzt kostenlose Beratung bei einer Tasse Kaffee
+                vereinbaren!
               </a>
             </Link>
           </div>
@@ -346,7 +358,7 @@ const WebagenturundDigitalagentur = () => {
           <div className="max-w-[900px] w-full text-center">
             <div className="w-[60px] h-[4px] bg-[#0009FF] mx-auto mb-6 rounded-full"></div>
 
-            <h2 className="text-[24px] lg:text-[32px] font-matt font-[800] text-black mb-6">
+            <h2 className="text-[24px] lg:text-[32px] font-matt font-[800] text-black mb-6 leading-tight">
               Fazit: Ihre Digitale Zukunft beginnt in St. Gallen mit the
               eksperts
             </h2>
@@ -359,7 +371,7 @@ const WebagenturundDigitalagentur = () => {
               in St. Gallen und darüber hinaus nachhaltig stärkt. Besuchen Sie
               uns am Rotenplatz – wir freuen uns auf Sie!
             </p>
-            <p className="text-black text-[16px] lg:text-[20px] font-[300] font-matt mt-6 text-center">
+            <p className="text-black text-[16px] lg:text-[20px] font-[300] font-matt mt-6 text-center leading-relaxed">
               <strong>
                 Erfahren Sie mehr über unsere umfassenden Dienstleistungen für
                 Webdesign, Webshops und Digital Marketing in St. Gallen auf

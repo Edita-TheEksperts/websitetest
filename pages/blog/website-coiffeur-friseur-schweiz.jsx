@@ -7,7 +7,6 @@ const CoiffeurPost = () => {
     <>
       <Head>
         <title>
-          {" "}
           Website für Coiffeur / Friseur: So gewinnen Sie online neue Kunden in
           der Schweiz| the eksperts
         </title>
@@ -22,37 +21,32 @@ const CoiffeurPost = () => {
         />
       </Head>
 
-      <main className="max-w-[1330px] mx-auto p-2 lg:p-8 mb-[100px]">
+      <main className="max-w-[1330px] mx-auto px-4 sm:px-6 lg:px-8 mb-[100px]">
         {/* Header Section */}
-
-        {/* Post Content Section */}
-        <section className="mb-[40px] text-left">
-          <div className="text-left mb-[40px]">
-            <h1 className="font-matt text-[30px] lg:text-[57px] leading-[1] font-semibold uppercase text-gray-900 tracking-tight">
+        <section className="mb-12 sm:mb-16 lg:mb-20 text-left">
+          <div className="mb-12 sm:mb-16">
+            <h1 className="font-matt text-[30px] sm:text-[40px] lg:text-[50px] leading-tight font-semibold uppercase text-gray-900 tracking-tight mb-6">
               Website für Coiffeur / Friseur: So gewinnen Sie online neue Kunden
               in der Schweiz
             </h1>
 
-            <h2 className="font-matt text-[25px] lg:text-[41px] leading-[1] font-normal text-gray-900 tracking-tight">
-              Unverzichtbare Elemente für den Online-Erfolg Ihres Salons – von
-              der Terminbuchung bis zur Galerie.
-            </h2>
-
-            <h2 className="hidden lg:text-[40px] text-[25px] font-matt font-[400] lg:leading-[48px]">
+            <h2 className="font-matt text-[25px] lg:text-[34px] leading-[1] font-normal text-gray-900 tracking-tight mb-0 lg:mb-4">
               Unverzichtbare Elemente für den Online-Erfolg Ihres Salons – von
               der Terminbuchung bis zur Galerie.
             </h2>
           </div>
 
-          {/* TL;DR + LESENSWERT colons*/}
+          {/* TL;DR + LESENSWERT columns */}
           <div className="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-8">
-            {/* TL;DR BOX*/}
-            <div className="bg-[#0009FF] rounded-[8px] p-[16px] lg:w-full">
-              <h2 className="text-[28px] font-matt text-white mb-4 uppercase">
+            {/* TL;DR BOX */}
+            <div className="bg-[#0009FF] rounded-[8px] p-6 lg:p-8 lg:w-full">
+              <h2 className="text-[24px] sm:text-[28px] font-matt text-white mb-5 uppercase">
                 <strong>TL;DR</strong>{" "}
-                <span className="font-300">(too long; didn't read)</span>
+                <span className="font-300 text-white">
+                  (too long; didn't read)
+                </span>
               </h2>
-              <p className="text-white font-[300] text-[16px] lg:text-[20px] font-matt">
+              <p className="text-white font-[300] text-[15px] sm:text-[16px] lg:text-[20px] font-matt leading-relaxed">
                 Für Coiffeure und Friseure in der Schweiz ist eine
                 professionelle Website für Coiffeur / Friseur ein Game-Changer.
                 Erfahren Sie, welche Funktionen Ihre Website haben muss, um
@@ -64,10 +58,10 @@ const CoiffeurPost = () => {
 
             {/* LESENSWERT */}
             <aside className="bg-gradient-to-br from-[#F0F4FF] to-white border border-[#E0E7FF] p-6 rounded-2xl shadow-sm">
-              <h3 className="text-[20px] font-matt font-[800] text-[#0009FF] uppercase mb-4">
+              <h3 className="text-[18px] sm:text-[20px] font-matt font-[800] text-[#0009FF] uppercase mb-4">
                 AUCH LESENSWERT
               </h3>
-              <ul className="space-y-3 font-matt text-[16px] text-black font-[300] leading-snug">
+              <ul className="space-y-3 font-matt text-[14px] sm:text-[16px] text-black font-[300] leading-snug">
                 <li>
                   <a
                     href="/blog/der-unterschatzte-boost"
@@ -111,20 +105,21 @@ const CoiffeurPost = () => {
               className="w-full lg:h-[500px] object-cover rounded-[12px]"
             />
           </div>
+
           <section className="mb-12 grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-6 items-start">
             {/* Left Side: Lesedauer */}
             <div>
-              <p className="text-[#0009FF] text-[18px] lg:text-[20px] uppercase font-matt font-[900] mb-2">
+              <p className="text-[#0009FF] text-[16px] sm:text-[18px] lg:text-[20px] uppercase font-matt font-[900] mb-2">
                 Lesedauer: ca. 4 Minuten
               </p>
             </div>
           </section>
 
-          <div className="mb-12 lg:w-[950px]">
-            <h2 className="text-[28px] font-matt font-[900] text-black mb-4 uppercase">
+          <div className="mb-12 lg:max-w-[950px] mx-auto">
+            <h2 className="text-[26px] sm:text-[28px] lg:text-[28px] font-matt font-[900] text-black mb-4 uppercase leading-tight">
               Ihr Salon im Netz: Mehr als nur Öffnungszeiten{" "}
             </h2>
-            <p className=" text-black font-[300] text-[16px] lg:text-[20px] font-matt">
+            <p className="text-black font-[300] text-[15px] sm:text-[16px] lg:text-[20px] font-matt leading-relaxed">
               In einer Welt, in der der nächste Termin oft nur einen Klick
               entfernt ist, können sich Coiffeure, Friseure und Kosmetikstudios
               den Luxus einer fehlenden oder veralteten Website nicht mehr
@@ -138,12 +133,13 @@ const CoiffeurPost = () => {
               sie Ihren Salon überhaupt betreten haben.
             </p>
           </div>
+
           <section className="mb-[60px] lg:mb-[80px] text-center">
-            <div className="mt-[15px] bg-[#0009FF] rounded-[8px] p-[30px] lg:w-[1300px] mx-auto mb-12 text-center">
-              <h2 className="text-[25px] font-matt text-white mb-4 uppercase">
+            <div className="mt-[15px] bg-[#0009FF] rounded-[8px] p-8 sm:p-[30px] lg:w-[1300px] mx-auto mb-12 text-center">
+              <h2 className="text-[22px] sm:text-[25px] font-matt text-white mb-4 uppercase">
                 <strong>Unverzichtbare Elemente für Ihre Salon-Website </strong>
               </h2>
-              <p className="text-white font-[300] text-[16px] lg:text-[20px] font-matt">
+              <p className="text-white font-[300] text-[14px] sm:text-[16px] lg:text-[20px] font-matt leading-relaxed">
                 Was muss Ihre <strong>Barber Website Schweiz </strong>oder{" "}
                 <strong>Webseite für Kosmetikstudio</strong> unbedingt bieten,
                 um erfolgreich zu sein?{" "}
@@ -151,7 +147,7 @@ const CoiffeurPost = () => {
             </div>
           </section>
 
-          <section className="mb-12 flex flex-col lg:flex-row gap-[57px]">
+          <section className="mb-12 flex flex-col lg:flex-row gap-12 lg:gap-[57px]">
             <div className="lg:w-[40%]">
               <img
                 src="/images/sentilink111.png"
@@ -160,7 +156,7 @@ const CoiffeurPost = () => {
               />
             </div>
             <div className="lg:w-[70%] mb-8 lg:mb-0">
-              <ul className="list-disc ml-6 space-y-6 text-black font-[300] text-[16px] lg:text-[20px] lg:leading-[33px] font-matt">
+              <ul className="list-disc ml-6 space-y-6 text-black font-[300] text-[15px] sm:text-[16px] lg:text-[20px] lg:leading-[33px] font-matt">
                 <li>
                   <strong>Online-Terminbuchung: </strong>Der absolute
                   Game-Changer! Ermöglichen Sie Ihren Kunden, Termine einfach
@@ -194,9 +190,10 @@ const CoiffeurPost = () => {
               </ul>
             </div>
           </section>
+
           <section className="flex flex-col lg:flex-row items-center gap-8 mb-12">
             <div className="lg:w-[70%]">
-              <ul className="list-disc ml-6 space-y-4 text-black font-[300] text-[16px] lg:text-[20px] lg:leading-[33px] font-matt">
+              <ul className="list-disc ml-6 space-y-4 text-black font-[300] text-[15px] sm:text-[16px] lg:text-[20px] lg:leading-[33px] font-matt">
                 <li>
                   <strong>Team-Vorstellung: </strong>Zeigen Sie die Gesichter
                   hinter Ihrem Salon! Eine kurze Vorstellung Ihres Teams mit
@@ -233,7 +230,7 @@ const CoiffeurPost = () => {
                     <br /> SEO-optimierte Website erstellen lassen: Ihr Weg zu
                     mehr Sichtbarkeit in der Schweiz
                   </Link>
-                  .{" "}
+                  .
                 </li>
               </ul>
             </div>
@@ -242,31 +239,33 @@ const CoiffeurPost = () => {
               <img
                 src="/images/sentilink111.png"
                 alt="Website selbst erstellen"
-                className="w-full lg:h-[460px] object-cover rounded-lg mt-10"
+                className="w-full lg:h-[460px] object-cover rounded-lg mt-10 lg:mt-0"
               />
             </div>
           </section>
-          <p className="text-black font-[300] text-[17px] lg:text-[17px] font-matt">
+
+          <p className="text-black font-[300] text-[16px] sm:text-[17px] font-matt">
             <em>
               [Bildvorschlag: Eine moderne, ansprechende Website-Ansicht eines
               Coiffeursalons mit einem prominenten "Jetzt Termin
-              buchen"-Button.]{" "}
-            </em>{" "}
+              buchen"-Button.]
+            </em>
           </p>
         </section>
+
         <section className="mb-[60px] lg:mb-[80px] text-center">
-          <div className="mt-[15px] bg-[#0009FF] rounded-[8px] p-[30px] lg:w-[1300px] mx-auto mb-12 text-center">
-            <h2 className="text-[25px] font-matt text-white mb-4 uppercase">
+          <div className="mt-[15px] bg-[#0009FF] rounded-[8px] p-8 sm:p-[30px] lg:w-[1300px] mx-auto mb-12 text-center">
+            <h2 className="text-[22px] sm:text-[25px] font-matt text-white mb-4 uppercase">
               <strong>So stechen Sie aus der Masse hervor </strong>
             </h2>
-            <p className="text-white font-[300] text-[16px] lg:text-[20px] font-matt">
+            <p className="text-white font-[300] text-[15px] sm:text-[16px] lg:text-[20px] font-matt leading-relaxed">
               Die Konkurrenz ist gross. Ihre Website sollte Ihre Einzigartigkeit
               hervorheben:
             </p>
           </div>
         </section>
 
-        <section className="mb-12 flex flex-col lg:flex-row gap-[57px]">
+        <section className="mb-12 flex flex-col lg:flex-row gap-12 lg:gap-[57px]">
           <div className="lg:w-[40%]">
             <img
               src="/images/sentilink111.png"
@@ -275,7 +274,7 @@ const CoiffeurPost = () => {
             />
           </div>
           <div className="lg:w-[70%] mb-8 lg:mb-0">
-            <div className="list-disc ml-6 space-y-6 text-black font-[300] text-[16px] lg:text-[20px] lg:leading-[33px] font-matt">
+            <div className="list-disc ml-6 space-y-6 text-black font-[300] text-[15px] sm:text-[16px] lg:text-[20px] lg:leading-[33px] font-matt">
               <li>
                 <strong>Hochwertige Fotos: </strong>Investieren Sie in
                 professionelle Bilder. Sie sind das A und O für Ihren visuellen
@@ -295,11 +294,11 @@ const CoiffeurPost = () => {
           </div>
         </section>
 
-        <section className="mb-12 lg:w-[950px] mx-auto space-y-10 bg-gradient-to-br from-white via-gray-50 to-white shadow-xl rounded-[16px] p-10">
-          <h2 className="text-[32px] font-matt font-[900] text-black uppercase text-center mb-4">
+        <section className="mb-12 lg:max-w-[950px] mx-auto space-y-10 bg-gradient-to-br from-white via-gray-50 to-white shadow-xl rounded-[16px] p-8 sm:p-10 lg:p-12">
+          <h2 className="text-[28px] sm:text-[32px] font-matt font-[900] text-black uppercase text-center mb-4">
             Ihre professionelle Salon-Website mit the eksperts
           </h2>
-          <p className="text-black font-[300] text-[18px] lg:text-[20px] font-matt text-center">
+          <p className="text-black font-[300] text-[16px] sm:text-[18px] lg:text-[20px] font-matt text-center leading-relaxed">
             Egal ob Sie einen Coiffeursalon, einen Barbershop oder ein
             Kosmetikstudio betreiben – wir von the eksperts verstehen die
             spezifischen Anforderungen Ihrer Branche. Wir helfen Ihnen, eine
@@ -309,7 +308,7 @@ const CoiffeurPost = () => {
           </p>
           <div className="text-center mt-8">
             <Link href="/kontakt" passHref legacyBehavior>
-              <a className="bg-[#0009FF] text-white rounded-full px-8 py-4 text-[16px] lg:text-[18px] font-medium shadow-md hover:bg-blue-700 transition-all duration-300 inline-block">
+              <a className="bg-[#0009FF] text-white rounded-full px-6 sm:px-8 py-3 sm:py-4 text-[14px] sm:text-[16px] lg:text-[18px] font-medium shadow-md hover:bg-blue-700 transition-all duration-300 inline-block max-w-full break-words">
                 Machen Sie Ihren Salon online unwiderstehlich – <br /> Jetzt für
                 eine kostenlose Beratung kontaktieren!
               </a>
@@ -320,17 +319,17 @@ const CoiffeurPost = () => {
             <div className="max-w-[900px] w-full text-center">
               <div className="w-[60px] h-[4px] bg-[#0009FF] mx-auto mb-6 rounded-full"></div>
 
-              <h2 className="text-[24px] lg:text-[32px] font-matt font-[800] text-black mb-6">
+              <h2 className="text-[22px] sm:text-[24px] lg:text-[32px] font-matt font-[800] text-black mb-6">
                 Fazit: Ihr Salon online – der direkte Weg zum Kunden
               </h2>
 
-              <p className="text-[16px] lg:text-[20px] text-black font-matt font-[300] leading-[1.8]">
+              <p className="text-[15px] sm:text-[16px] lg:text-[20px] text-black font-matt font-[300] leading-[1.8]">
                 Eine durchdachte und professionelle Website ist der schnellste
                 und effektivste Weg, um neue Kunden zu gewinnen und bestehende
                 Kunden zu binden. Nutzen Sie die digitalen Möglichkeiten, um
                 Ihren Salon zu einem noch grösseren Erfolg zu führen.
               </p>
-              <p className="text-black text-[16px] lg:text-[20px] font-[300] font-matt mt-6 text-center">
+              <p className="text-black text-[15px] sm:text-[16px] lg:text-[20px] font-[300] font-matt mt-6 text-center leading-relaxed">
                 <strong>
                   Entdecken Sie unsere massgeschneiderten Website-Lösungen für
                   Coiffeure und Kosmetikstudios in der Schweiz auf

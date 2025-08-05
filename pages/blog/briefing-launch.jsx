@@ -28,22 +28,64 @@ const BriefPost = () => {
             <h2 className="font-matt text-[25px] lg:text-[40px] leading-[1] font-normal text-gray-900 tracking-tight">
               So läuft ein agiles Webprojekt bei the eksperts ab
             </h2>
+            <div className="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-8 mt-[15px]">
+  {/* TL;DR Box */}
+  <div className="bg-[#0009FF] rounded-[8px] p-[16px] lg:w-full">
+    <h2 className="text-[28px] font-matt text-white mb-4 uppercase">
+      <span className="font-900">
+        <strong>TL;DR</strong>
+      </span>{" "}
+      <span className="font-300">(too long; didn't read)</span>
+    </h2>
+    <p className="text-white font-[300] text-[16px] lg:text-[20px] font-matt">
+      Agile Prozesse ermöglichen schnelle Ergebnisse, transparente
+      Kommunikation und iterative Verbesserung. Bei the eksperts
+      durchläuft jedes Webprojekt klar strukturierte Phasen – vom
+      ersten Kundenbriefing über Design, Entwicklung bis hin zum
+      erfolgreichen Launch.
+    </p>
+  </div>
 
-            <div className="mt-[15px] bg-[#0009FF] rounded-[8px] p-[16px] lg:w-[990px]">
-              <h2 className="text-[28px] font-matt text-white mb-4 uppercase">
-                <span className="font-900">
-                  <strong>TL;DR</strong>
-                </span>{" "}
-                <span className="font-300">(too long; didn't read)</span>
-              </h2>
-              <p className="text-white font-[300] text-[16px] lg:text-[20px] font-matt">
-                Agile Prozesse ermöglichen schnelle Ergebnisse, transparente
-                Kommunikation und iterative Verbesserung. Bei the eksperts
-                durchläuft jedes Webprojekt klar strukturierte Phasen – vom
-                ersten Kundenbriefing über Design, Entwicklung bis hin zum
-                erfolgreichen Launch.
-              </p>
-            </div>
+  {/* LESENSWERT Box */}
+  <aside className="bg-gradient-to-br from-[#F0F4FF] to-white border border-[#E0E7FF] p-6 rounded-2xl shadow-sm">
+    <h3 className="text-[20px] font-matt font-[800] text-[#0009FF] uppercase mb-4">
+      LESENSWERT
+    </h3>
+    <ul className="space-y-3 font-matt text-[16px] text-black font-[300] leading-snug">
+      <li>
+        <Link
+          href="/blog/der-unterschatzte-boost"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-[#0009FF] hover:underline transition"
+        >
+          Der unterschätzte Boost
+        </Link>
+      </li>
+      <li>
+        <Link
+          href="/blog/briefing-launch"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-[#0009FF] hover:underline transition"
+        >
+          Vom Briefing zum Launch
+        </Link>
+      </li>
+      <li>
+        <Link
+          href="/blog/agile-projektleitung"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-[#0009FF] hover:underline transition"
+        >
+          Agile Projektleitung
+        </Link>
+      </li>
+    </ul>
+  </aside>
+</div>
+
           </div>
         </section>
         <section>
@@ -74,47 +116,7 @@ const BriefPost = () => {
               </p>
             </div>
 
-            {/* Right Content (LESEWERT Box) */}
-            <div className="rounded-lg w-full lg:w-[280px] mt-8 lg:mt-[40px] lg:ml-auto">
-              <h3 className="text-[28px] font-matt font-[900] text-black mb-4 uppercase">
-                LESENSWERT:
-              </h3>
-              <ul className="space-y-[12px] list-disc ml-6 text-black font-[300] text-[18px] font-matt">
-                <li>
-                  <Link
-                    href="/blog/der-unterschatzte-boost"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-black hover:underline"
-                  >
-                    Der unterschätzte Boost
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/blog/briefing-launch"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-black hover:underline"
-                  >
-                    Vom Briefing zum Launch
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/blog/agile-projektleitung"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-black hover:underline"
-                  >
-                    Agile Projektleitung
-                  </Link>
-                </li>
-              </ul>
-            </div>
           </section>
-
-          {/* Why Nearshoring with the Eksperts */}
           <section className="lg:w-[990px] space-y-[30px]">
             <div className="grid grid-cols-1 gap-2">
               {/* Phase 1: Briefing & Zieldefinition */}
@@ -141,7 +143,7 @@ const BriefPost = () => {
                   }}
                 >
                   <img
-                    src="/images/phase1.png" // Replace with actual image path
+                    src="/images/1_Vom Briefing zum Launch.svg" 
                     alt="Briefing & Zieldefinition"
                     className="w-full h-full object-cover rounded-[12px]"
                   />
@@ -175,7 +177,7 @@ const BriefPost = () => {
                   }}
                 >
                   <img
-                    src="/images/phase2.png" // Replace with actual image path
+                    src="/images/2_Vom Briefing zum Launch.svg" // Replace with actual image path
                     alt="Briefing & Zieldefinition"
                     className="w-full h-full object-cover rounded-[12px]"
                   />
@@ -209,7 +211,7 @@ const BriefPost = () => {
                   }}
                 >
                   <img
-                    src="/images/phase3.png" // Replace with actual image path
+                    src="/images/3_Vom Briefing zum Launch.svg" 
                     alt="Briefing & Zieldefinition"
                     className="w-full h-full object-cover rounded-[12px]"
                   />
@@ -243,7 +245,7 @@ const BriefPost = () => {
                   }}
                 >
                   <img
-                    src="/images/phase4.png" // Replace with actual image path
+                    src="/images/4_Vom Briefing zum Launch.svg" 
                     alt="Briefing & Zieldefinition"
                     className="w-full h-full object-cover rounded-[12px]"
                   />

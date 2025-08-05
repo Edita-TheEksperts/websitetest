@@ -22,33 +22,70 @@ const AgilePost = () => {
         {/* Header Section */}
         <section className="mb-[16px] text-left">
           <div className="text-left ">
-            <h1 className="font-matt text-[30px] lg:text-[80px] leading-[1] font-semibold uppercase text-gray-900 tracking-tight">
+            <h1 className="font-matt text-[28px] sm:text-[49px] lg:text-[50px]  leading-tight font-semibold uppercase text-gray-900 tracking-tight mb-6">
               Agile Projektleitung
             </h1>
 
-            <h2 className="font-matt text-[25px] lg:text-[40px] leading-[1] font-normal text-gray-900 tracking-tight">
+            <h2 className="font-matt text-[25px] lg:text-[34px] leading-[1] font-normal text-gray-900 tracking-tight mb-0 lg:mb-4">
               So profitieren Unternehmen von digitalen Teams aus dem DACH-Raum
               und dem Balkan mit Book Your Eksperts
             </h2>
 
-            <div className="mt-[15px] bg-[#0009FF] rounded-[8px] p-[16px] lg:w-[1100px]">
-              <h2 className="text-[28px] font-matt text-white mb-4 uppercase">
-                <span className="font-900">
-                  <strong>TL;DR</strong>
-                </span>{" "}
-                <span className="font-300">(too long; didn't read)</span>
-              </h2>
-              <p className="text-white font-[300] text-[16px] lg:text-[20px] font-matt">
-                Agile Projektleitung ermöglicht es Teams, effizienter, flexibler
-                und kundenorientierter zu arbeiten – besonders in Bereichen wie
-                Website Entwicklung, App Entwicklung, CRM-Lösungen oder
-                Salesforce-Implementierungen. Bei the eksperts setzen wir auf
-                agile Methoden, um digitale Projekte wie Webdesign, AI-gestützte
-                Tools, oder Graphic Design iterativ, transparent und mit klarer
-                Priorisierung umzusetzen. Dieser Blog erklärt, wie agiles
-                Projektmanagement funktioniert und warum es der Schlüssel für
-                moderne Agenturen und Kunden ist.
-              </p>
+            <div className="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-8 mt-6">
+              {/* TL;DR Box */}
+              <div className="bg-[#0009FF] rounded-[8px] p-[16px] lg:w-full">
+                <h2 className="text-[28px] font-matt text-white mb-4 uppercase">
+                  <span className="font-900">
+                    <strong>TL;DR</strong>
+                  </span>{" "}
+                  <span className="font-300">(too long; didn't read)</span>
+                </h2>
+                <p className="text-white font-[300] text-[16px] lg:text-[20px] font-matt">
+                  Agile Projektleitung ermöglicht es Teams, effizienter,
+                  flexibler und kundenorientierter zu arbeiten – besonders in
+                  Bereichen wie Website Entwicklung, App Entwicklung,
+                  CRM-Lösungen oder Salesforce-Implementierungen. Bei the
+                  eksperts setzen wir auf agile Methoden, um digitale Projekte
+                  wie Webdesign, AI-gestützte Tools, oder Graphic Design
+                  iterativ, transparent und mit klarer Priorisierung umzusetzen.
+                  Dieser Blog erklärt, wie agiles Projektmanagement funktioniert
+                  und warum es der Schlüssel für moderne Agenturen und Kunden
+                  ist.
+                </p>
+              </div>
+
+              {/* LESENSWERT Box */}
+              <aside className="bg-gradient-to-br from-[#F0F4FF] to-white border border-[#E0E7FF] p-6 mb-6 rounded-2xl shadow-sm">
+                <h3 className="text-[20px] font-matt font-[800] text-[#0009FF] uppercase mb-4">
+                  LESENSWERT
+                </h3>
+                <ul className="space-y-3 font-matt text-[16px] text-black font-[300] leading-snug">
+                  <li>
+                    <Link
+                      href="/blog/der-unterschatzte-boost"
+                      className="hover:text-[#0009FF] hover:underline transition"
+                    >
+                      Der unterschätzte Boost
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/blog/briefing-launch"
+                      className="hover:text-[#0009FF] hover:underline transition"
+                    >
+                      Vom Briefing zum Launch
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/blog/nearshoring-mit-the-eksperts"
+                      className="hover:text-[#0009FF] hover:underline transition"
+                    >
+                      Nearshoring mit the eksperts
+                    </Link>
+                  </li>
+                </ul>
+              </aside>
             </div>
           </div>
         </section>
@@ -57,7 +94,7 @@ const AgilePost = () => {
         <section>
           <div className="mb-10">
             <img
-              src="/images/blogAgile Projektleitung-the eksperts.svg" 
+              src="/images/blogAgile Projektleitung-the eksperts.svg"
               alt="Agile Projektleitung"
               className="w-full lg:h-[500px] object-cover rounded-[12px]"
             />
@@ -74,51 +111,12 @@ const AgilePost = () => {
                 Lesedauer: ca. 3 Minuten
               </p>
             </div>
-
-            {/* Right Content (LESEWERT Box) */}
-            <div className="rounded-lg w-full lg:w-[280px] mt-8 lg:mt-[40px] lg:ml-auto">
-              <h3 className="text-[28px] font-matt font-[900] text-black mb-4 uppercase">
-                LESENSWERT:
-              </h3>
-              <ul className="space-y-[12px] list-disc ml-6 text-black font-[300] text-[18px] font-matt">
-                <li>
-                  <Link
-                    href="/blog/der-unterschatzte-boost"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-black hover:underline"
-                  >
-                    Der unterschätzte Boost
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/blog/briefing-launch"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-black hover:underline"
-                  >
-                    Vom Briefing zum Launch
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/blog/nearshoring-mit-the-eksperts"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-black hover:underline"
-                  >
-                    Nearshoring mit the eksperts
-                  </Link>
-                </li>
-              </ul>
-            </div>
           </section>
 
           {/* Benefits for Businesses */}
-          <section className="lg:w-[905px] lg:mt-[-170px] mb-12 flex flex-col lg:flex-row gap-[20px]">
+          <section className="lg:w-[905px] mt-[60px] mb-12 flex flex-col lg:flex-row gap-[20px]">
             {/* Text Section */}
-            <div className="lg:w-[30%]">
+            <div className="lg:w-[30%] ">
               <img
                 src="/images/recagile.png" // Replace with actual image path
                 alt="Vorteile für Unternehmen"

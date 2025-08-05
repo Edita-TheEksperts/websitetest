@@ -7,7 +7,6 @@ const WebsiteKostenKMUPost = () => {
     <>
       <Head>
         <title>
-          {" "}
           Was kostet eine Website für ein KMU in der Schweiz? Transparenz und
           ROI | the eksperts
         </title>
@@ -19,11 +18,11 @@ const WebsiteKostenKMUPost = () => {
         />
       </Head>
 
-      <main className="max-w-[1330px] mx-auto p-2 lg:p-8 mb-[100px]">
+      <main className="max-w-[1330px] mx-auto px-4 sm:px-6 lg:px-8 mb-[100px]">
         {/* Post Content Section */}
-        <section className="mb-[16px] lg:mb-[40px] text-left">
-          <div className="text-left ">
-            <h1 className="font-matt text-[30px] lg:text-[60px] leading-[1] font-semibold uppercase text-gray-900 tracking-tight">
+        <section className="mb-10 lg:mb-16 text-left">
+          <div>
+            <h1 className="font-matt text-[30px] sm:text-[40px] lg:text-[60px] leading-tight font-semibold uppercase text-gray-900 tracking-tight mb-6">
               Was kostet eine Website für ein KMU in der Schweiz? Transparenz
               und ROI
             </h1>
@@ -34,36 +33,31 @@ const WebsiteKostenKMUPost = () => {
               maximieren.
             </h2>
 
-            <h2 className="hidden lg:text-[40px] text-[25px] font-matt font-[400] lg:leading-[48px]">
-              Ein detaillierter Blick auf die Kostenfaktoren einer
-              professionellen Website und wie Sie den Return on Investment
-              maximieren.{" "}
-            </h2>
-            {/* TL;DR + LESENSWERT colons*/}
-            <div className="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-8">
-              {/* TL;DR BOX*/}
-              <div className="bg-[#0009FF] rounded-[8px] p-[16px] lg:w-full mt-5">
-                <h2 className="text-[28px] font-matt text-white mb-4 uppercase">
+            {/* TL;DR + LESENSWERT columns */}
+            <div className="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-8 mt-8 mb-8">
+              {/* TL;DR BOX */}
+              <div className="bg-[#0009FF] rounded-[8px] p-6 lg:w-full">
+                <h2 className="text-[28px] font-matt text-white mb-5 uppercase">
                   <strong>TL;DR</strong>{" "}
                   <span className="font-300">(too long; didn't read)</span>
                 </h2>
-                <p className="text-white font-[300] text-[16px] lg:text-[20px] font-matt">
+                <p className="text-white font-[300] text-[16px] lg:text-[20px] font-matt leading-relaxed">
                   Die Frage "Was kostet eine Website für ein KMU?" ist eine der
                   häufigsten. Dieser Guide bietet Transparenz über die
                   Kostenfaktoren – von Design über Funktionen bis zu Wartung.
                   Erfahren Sie, warum eine Investition in eine professionelle
                   Website Schweiz sich auszahlt, wie Sie ein passendes
                   Website-Angebot einholen Schweiz, und nutzen Sie unseren
-                  kostenlosen Website-Check für erste Orientierung.{" "}
+                  kostenlosen Website-Check für erste Orientierung.
                 </p>
               </div>
 
               {/* LESENSWERT */}
-              <aside className="bg-gradient-to-br from-[#F0F4FF] to-white border border-[#E0E7FF] p-6 rounded-2xl shadow-sm mt-6">
-                <h3 className="text-[20px] font-matt font-[800] text-[#0009FF] uppercase mb-4">
+              <aside className="bg-gradient-to-br from-[#F0F4FF] to-white border border-[#E0E7FF] p-6 rounded-2xl shadow-sm mt-6 lg:mt-0">
+                <h3 className="text-[20px] font-matt font-[800] text-[#0009FF] uppercase mb-5">
                   AUCH LESENSWERT
                 </h3>
-                <ul className="space-y-3 font-matt text-[16px] text-black font-[300] leading-snug">
+                <ul className="space-y-4 font-matt text-[16px] text-black font-[300] leading-snug">
                   <li>
                     <a
                       href="/blog/der-unterschatzte-boost"
@@ -101,7 +95,7 @@ const WebsiteKostenKMUPost = () => {
         </section>
 
         <section>
-          <div className="mb-10">
+          <div className="mb-12">
             <img
               src="/images/blog3-the eksperts.svg"
               alt="Kosova"
@@ -110,19 +104,19 @@ const WebsiteKostenKMUPost = () => {
           </div>
 
           {/* TL;DR */}
-          <section className="mb-12 flex flex-col lg:flex-row">
+          <section className="mb-14 flex flex-col lg:flex-row gap-10">
             {/* Left Content */}
-            <div className="max-w-[800px] flex-1 mb-8 lg:mb-0">
+            <div className="max-w-[800px] flex-1">
               <p
-                className="text-[#0009FF] text-[20px] lg:text-[28px] uppercase font-matt font-[900] mb-[25px]"
+                className="text-[#0009FF] text-[20px] lg:text-[28px] uppercase font-matt font-[900] mb-6"
                 style={{ color: "#0009FF" }}
               >
-                Lesedauer: ca. 5 Minuten{" "}
+                Lesedauer: ca. 5 Minuten
               </p>
               <h2 className="text-[28px] font-matt font-[900] text-black mb-6 uppercase">
-                Die Kosten einer Website: Mehr als nur der Preis{" "}
+                Die Kosten einer Website: Mehr als nur der Preis
               </h2>
-              <p className="text-black font-[300] text-[16px] lg:text-[20px] font-matt">
+              <p className="text-black font-[300] text-[16px] lg:text-[20px] font-matt leading-relaxed">
                 Die Frage nach dem Preis ist oft die erste, die gestellt wird,
                 wenn es darum geht, eine Website erstellen zu lassen. Doch die
                 Kosten einer Website sind vielfältiger, als man auf den ersten
@@ -134,296 +128,184 @@ const WebsiteKostenKMUPost = () => {
                 Unternehmensportale. Die Wahrheit liegt meist dazwischen und
                 hängt stark von Ihren individuellen Anforderungen ab.
               </p>
-              <br /> <br />
+              <br />
+              <br />
               <h2 className="text-[28px] font-matt font-[900] text-black mb-6 uppercase">
-                Hauptfaktoren, die den Preis einer KMU-Website beeinflussen{" "}
-              </h2>{" "}
-              <p className="text-black font-[300] text-[16px] lg:text-[20px] font-matt">
+                Hauptfaktoren, die den Preis einer KMU-Website beeinflussen
+              </h2>
+              <p className="text-black font-[300] text-[16px] lg:text-[20px] font-matt leading-relaxed">
                 Wenn Sie eine Website für KMU planen, sollten Sie folgende
                 Faktoren berücksichtigen, die den Preis massgeblich
                 beeinflussen:
-              </p>{" "}
+              </p>
             </div>
           </section>
 
-          {/* Why Nearshoring with the Eksperts */}
-          <section className="lg:w-[990px] space-y-[30px]">
-            <div className="grid grid-cols-1 gap-2">
-              {/* Phase 1: Briefing & Zieldefinition */}
-              <div className="bg-white overflow-hidden flex flex-col lg:flex-row-reverse rounded-[12px] gap-4">
-                {/* Left Column: Title and Paragraph */}
-                <div className="flex flex-col justify-center lg:w-[60%]">
-                  <h2 className="text-[28px] font-matt font-[900] text-black mb-4 uppercase">
-                    Konzept & Strategie:
-                  </h2>
-                  <p className="text-black font-[300] text-[16px] lg:text-[20px] font-matt">
-                    Eine fundierte Analyse Ihrer Ziele, Zielgruppe und
-                    Wettbewerber bildet die Basis. Je detaillierter das Konzept,
-                    desto effizienter die Umsetzung.{" "}
-                  </p>
-                </div>
-
-                {/* Right Column: Image with Background */}
-                <div
-                  className="lg:w-[50%] h-[240px] bg-cover bg-center rounded-[12px] flex justify-center items-center"
-                  style={{
-                    background:
-                      "linear-gradient(0deg, #0009FF 0%, #0009FF 100%), url(/images/phase1.png)",
-                    backgroundBlendMode: "color, normal",
-                  }}
-                >
-                  <img
-                    src="/images/phase1.png" // Replace with actual image path
-                    alt="Briefing & Zieldefinition"
-                    className="w-full h-full object-cover rounded-[12px]"
-                  />
-                </div>
-              </div>
-            </div>
-            <div className="grid grid-cols-1 gap-2">
-              {/* Phase 1: Briefing & Zieldefinition */}
-              <div className="bg-white overflow-hidden flex flex-col lg:flex-row rounded-[12px]  gap-4">
-                {/* Left Column: Title and Paragraph */}
-                <div className="flex flex-col justify-center lg:w-[60%]">
-                  <h2 className="text-[28px] font-matt font-[900] text-black mb-4 uppercase">
-                    Design & UX/UI:
-                  </h2>
-                  <ul className="list-disc ml-6 space-y-4 text-black font-[300] text-[16px] lg:text-[20px] font-matt">
-                    <li>
-                      <strong>a. Standard-Template:</strong> Günstiger, aber
-                      weniger individuell.
-                    </li>
-                    <li>
-                      <strong>b. Custom-Design:</strong> Massgeschneidertes,
-                      einzigartiges Design, das Ihre Marke optimal repräsentiert
-                      und die Benutzerfreundlichkeit (UX) maximiert.{" "}
-                      <Link
-                        href="/blog/ux-ui-design-website-kundenbindung"
-                        className="internal-link"
-                      >
-                        <br /> UX/UI Design Website: Wie eine gute User
-                        Experience Ihre Kunden bindet
-                      </Link>
-                    </li>
-                  </ul>
-                </div>
-
-                <div
-                  className="lg:w-[50%] h-[240px] bg-cover bg-center rounded-[12px] flex justify-center items-center"
-                  style={{
-                    background:
-                      "linear-gradient(0deg, #0009FF 0%, #0009FF 100%), url(/images/phase2.png)",
-                    backgroundBlendMode: "color, normal",
-                  }}
-                >
-                  <img
-                    src="/images/phase2.png" // Replace with actual image path
-                    alt="Briefing & Zieldefinition"
-                    className="w-full h-full object-cover rounded-[12px]"
-                  />
-                </div>
-              </div>
-            </div>
-            <div className="grid grid-cols-1 gap-2">
-              {/* Phase 1: Briefing & Zieldefinition */}
-              <div className="bg-white overflow-hidden flex flex-col lg:flex-row-reverse rounded-[12px]  gap-4">
-                {/* Left Column: Title and Paragraph */}
-                <div className="flex flex-col justify-center lg:w-[60%]">
-                  <h2 className="text-[28px] font-matt font-[900] text-black mb-4 uppercase">
-                    Funktionalitäten:{" "}
-                  </h2>
-                  <ul className="list-disc ml-6 space-y-4 text-black font-[300] text-[16px] lg:text-[20px] font-matt">
-                    <li>
-                      <strong>a. Basis-Funktionen: </strong>Kontaktformulare,
-                      Impressum, Datenschutzerklärung.
-                    </li>
-                    <li>
-                      <strong>b. Erweiterte Funktionen:</strong> Online-Shop,
-                      Blog, Mehrsprachigkeit, Terminbuchungssystem,
-                      Mitgliederbereich, Integration externer Tools. Jede
-                      zusätzliche Funktion erhöht den Aufwand.
-                    </li>
-                  </ul>
-                </div>
-
-                {/* Right Column: Image with Background */}
-                <div
-                  className="lg:w-[50%] h-[240px] bg-cover bg-center rounded-[12px] flex justify-center items-center"
-                  style={{
-                    background:
-                      "linear-gradient(0deg, #0009FF 0%, #0009FF 100%), url(/images/phase3.png)",
-                    backgroundBlendMode: "color, normal",
-                  }}
-                >
-                  <img
-                    src="/images/phase3.png" // Replace with actual image path
-                    alt="Briefing & Zieldefinition"
-                    className="w-full h-full object-cover rounded-[12px]"
-                  />
-                </div>
-              </div>
-            </div>
-            <div className="grid grid-cols-1 gap-2">
-              {/* Phase 1: Briefing & Zieldefinition */}
-              <div className="bg-white overflow-hidden flex flex-col lg:flex-row rounded-[12px]  gap-4">
-                {/* Left Column: Title and Paragraph */}
-                <div className="flex flex-col justify-center lg:w-[60%]">
-                  <h2 className="text-[28px] font-matt font-[900] text-black mb-4 uppercase">
-                    Inhalte (Texte, Bilder, Videos):{" "}
-                  </h2>
-                  <p className="text-black font-[300] text-[16px] lg:text-[20px] font-matt">
-                    Wer liefert die Inhalte? Wenn Sie Unterstützung bei der
-                    Texterstellung oder der Bildauswahl benötigen, fallen hier
-                    zusätzliche Kosten an.{" "}
-                  </p>{" "}
-                </div>
-
-                {/* Right Column: Image with Background */}
-                <div
-                  className="lg:w-[50%] h-[240px] bg-cover bg-center rounded-[12px] flex justify-center items-center"
-                  style={{
-                    background:
-                      "linear-gradient(0deg, #0009FF 0%, #0009FF 100%), url(/images/phase4.png)",
-                    backgroundBlendMode: "color, normal",
-                  }}
-                >
-                  <img
-                    src="/images/phase4.png" // Replace with actual image path
-                    alt="Briefing & Zieldefinition"
-                    className="w-full h-full object-cover rounded-[12px]"
-                  />
-                </div>
-              </div>
-            </div>
-            <div className="grid grid-cols-1 gap-2">
-              {/* Phase 1: Briefing & Zieldefinition */}
-              <div className="bg-white overflow-hidden flex flex-col lg:flex-row-reverse rounded-[12px] gap-4">
-                {/* Left Column: Title and Paragraph */}
-                <div className="flex flex-col justify-center lg:w-[60%]">
-                  <h2 className="text-[28px] font-matt font-[900] text-black mb-4 uppercase">
-                    Technische Umsetzung:
-                  </h2>
-                  <ul className="list-disc ml-6 space-y-4 text-black font-[300] text-[16px] lg:text-[20px] font-matt">
-                    <li>
-                      <strong>a. Plattformwahl: </strong>WordPress , Webflow
-                      oder andere CMS, Baukastensysteme
-                      <Link
-                        href="/blog/website-baukasten-schweiz"
-                        className="internal-link"
-                      >
-                        <br /> Wix, Jimdo, Editor X & Co.: Website Baukästen für
+          <section className="lg:w-[990px] space-y-10">
+            {[
+              {
+                title: "Konzept & Strategie:",
+                text: "Eine fundierte Analyse Ihrer Ziele, Zielgruppe und Wettbewerber bildet die Basis. Je detaillierter das Konzept, desto effizienter die Umsetzung.",
+                img: "/images/1_Was kostet eine Website für ein KMU in der Schweiz.svg",
+                imgAlt: "Briefing & Zieldefinition",
+                reverse: true,
+                list: false,
+                imgHeight: "h-[370px]",
+              },
+              {
+                title: "Design & UX/UI:",
+                list: [
+                  "a. Standard-Template: Günstiger, aber weniger individuell.",
+                  <>
+                    b. Custom-Design: Massgeschneidertes, einzigartiges Design,
+                    das Ihre Marke optimal repräsentiert und die
+                    Benutzerfreundlichkeit (UX) maximiert.{" "}
+                    <Link
+                      href="/blog/ux-ui-design-website-kundenbindung"
+                      legacyBehavior
+                    >
+                      <a className="internal-link block mt-1">
+                        UX/UI Design Website: Wie eine gute User Experience Ihre
+                        Kunden bindet
+                      </a>
+                    </Link>
+                  </>,
+                ],
+                img: "/images/2_Was kostet eine Website für ein KMU in der Schweiz.svg",
+                imgAlt: "Briefing & Zieldefinition",
+                reverse: false,
+                imgHeight: "h-[370px]",
+              },
+              {
+                title: "Funktionalitäten:",
+                list: [
+                  "a. Basis-Funktionen: Kontaktformulare, Impressum, Datenschutzerklärung.",
+                  "b. Erweiterte Funktionen: Online-Shop, Blog, Mehrsprachigkeit, Terminbuchungssystem, Mitgliederbereich, Integration externer Tools. Jede zusätzliche Funktion erhöht den Aufwand.",
+                ],
+                img: "/images/3_Was kostet eine Website für ein KMU in der Schweiz.svg",
+                imgAlt: "Briefing & Zieldefinition",
+                reverse: true,
+                imgHeight: "h-[370px]",
+              },
+              {
+                title: "Inhalte (Texte, Bilder, Videos):",
+                text: "Wer liefert die Inhalte? Wenn Sie Unterstützung bei der Texterstellung oder der Bildauswahl benötigen, fallen hier zusätzliche Kosten an.",
+                img: "/images/4_Was kostet eine Website für ein KMU in der Schweiz.svg",
+                imgAlt: "Briefing & Zieldefinition",
+                reverse: false,
+                imgHeight: "h-[370px]",
+              },
+              {
+                title: "Technische Umsetzung:",
+                list: [
+                  <>
+                    a. Plattformwahl: WordPress , Webflow oder andere CMS,
+                    Baukastensysteme{" "}
+                    <Link href="/blog/website-baukasten-schweiz" legacyBehavior>
+                      <a className="internal-link block mt-1">
+                        Wix, Jimdo, Editor X & Co.: Website Baukästen für
                         Einsteiger
-                      </Link>
-                      . Jede Plattform hat ihre Eigenheiten und
-                      Kostenstrukturen.
-                    </li>
-                    <li>
-                      <strong>b. Komplexität der Programmierung:</strong>{" "}
-                      Individuelle Entwicklungen sind teurer als
-                      Standardlösungen.
-                    </li>
-                  </ul>
-                </div>
-                {/* Right Column: Image with Background */}
-                <div
-                  className="lg:w-[50%] h-[270px] bg-cover bg-center rounded-[12px] flex justify-center items-center"
-                  style={{
-                    background:
-                      "linear-gradient(0deg, #0009FF 0%, #0009FF 100%), url(/images/phase1.png)",
-                    backgroundBlendMode: "color, normal",
-                  }}
-                >
-                  <img
-                    src="/images/phase1.png" // Replace with actual image path
-                    alt="Briefing & Zieldefinition"
-                    className="w-full h-full object-cover rounded-[12px]"
-                  />
-                </div>
-              </div>
-            </div>
-            <div className="grid grid-cols-1 gap-2">
-              {/* Phase 1: Briefing & Zieldefinition */}
-              <div className="bg-white overflow-hidden flex flex-col lg:flex-row rounded-[12px] gap-4">
-                {/* Left Column: Title and Paragraph */}
-                <div className="flex flex-col justify-center lg:w-[60%]">
-                  <h2 className="text-[28px] font-matt font-[900] text-black mb-4 uppercase">
-                    SEO-Optimierung:
-                  </h2>
-                  <p className="text-black font-[300] text-[16px] lg:text-[20px] font-matt">
-                    Eine professionelle SEO-optimierte Website erstellen lassen
+                      </a>
+                    </Link>
+                    Jede Plattform hat ihre Eigenheiten und Kostenstrukturen.
+                  </>,
+                  "b. Komplexität der Programmierung: Individuelle Entwicklungen sind teurer als Standardlösungen.",
+                ],
+                img: "/images/5_Was kostet eine Website für ein KMU in der Schweiz.svg",
+                imgAlt: "Briefing & Zieldefinition",
+                reverse: true,
+                imgHeight: "h-[370px]",
+                imgTranslateX: "-20px",
+              },
+              {
+                title: "SEO-Optimierung:",
+                text: (
+                  <>
+                    Eine professionelle SEO-optimierte Website erstellen lassen{" "}
                     <Link
                       href="/blog/seo-website-erstellen-schweiz"
-                      className="internal-link"
+                      legacyBehavior
                     >
-                      <br /> SEO-optimierte Website erstellen lassen: Ihr Weg zu
-                      mehr Sichtbarkeit in der Schweiz
+                      <a className="internal-link block mt-1">
+                        SEO-optimierte Website erstellen lassen: Ihr Weg zu mehr
+                        Sichtbarkeit in der Schweiz
+                      </a>
                     </Link>{" "}
                     ist entscheidend, damit Ihre Website von Suchmaschinen
                     gefunden wird. Dies sollte von Anfang an berücksichtigt
                     werden.
-                  </p>
-                </div>
-
-                {/* Right Column: Image with Background */}
+                  </>
+                ),
+                img: "/images/6_Was kostet eine Website für ein KMU in der Schweiz.svg",
+                imgAlt: "Briefing & Zieldefinition",
+                reverse: false,
+                imgHeight: "h-[370px]",
+              },
+              {
+                title: "Hosting & Wartung:",
+                text: "Laufende Kosten für den Serverplatz, Domainregistrierung, Sicherheitsupdates und technische Pflege. Diese sind essenziell für die Sicherheit und Verfügbarkeit Ihrer Website.",
+                img: "/images/phase3.png",
+                imgAlt: "Briefing & Zieldefinition",
+                imgHeight: "h-[370px]",
+                reverse: true,
+              },
+            ].map(
+              (
+                {
+                  title,
+                  text,
+                  img,
+                  imgAlt,
+                  reverse,
+                  list,
+                  imgHeight = "h-[240px]",
+                },
+                i
+              ) => (
                 <div
-                  className="lg:w-[50%] h-[240px] bg-cover bg-center rounded-[12px] flex justify-center items-center"
-                  style={{
-                    background:
-                      "linear-gradient(0deg, #0009FF 0%, #0009FF 100%), url(/images/phase4.png)",
-                    backgroundBlendMode: "color, normal",
-                  }}
+                  key={i}
+                  className={`bg-white overflow-hidden flex flex-col lg:flex-row ${
+                    reverse ? "lg:flex-row-reverse" : ""
+                  } rounded-[12px] gap-6`}
                 >
-                  <img
-                    src="/images/phase4.png"
-                    alt="Briefing & Zieldefinition"
-                    className="w-full h-full object-cover rounded-[12px]"
-                  />
+                  <div className="flex flex-col justify-center lg:w-[55%] px-4 py-6">
+                    <h2 className="text-[28px] font-matt font-[900] text-black mb-4 uppercase">
+                      {title}
+                    </h2>
+                    {list ? (
+                      <ul className="list-disc ml-6 space-y-4 text-black font-[300] text-[16px] lg:text-[20px] font-matt leading-relaxed">
+                        {list.map((item, idx) => (
+                          <li key={idx}>{item}</li>
+                        ))}
+                      </ul>
+                    ) : (
+                      <p className="text-black font-[300] text-[16px] lg:text-[20px] font-matt leading-relaxed">
+                        {text}
+                      </p>
+                    )}
+                  </div>
+                  <div
+                    className={`lg:w-[45%] ${imgHeight} bg-cover bg-center rounded-[12px] flex justify-center items-center`}
+                    style={{
+                      background: `linear-gradient(0deg, #0009FF 0%, #0009FF 100%), url(${img})`,
+                      backgroundBlendMode: "color, normal",
+                    }}
+                  >
+                    <img
+                      src={img}
+                      alt={imgAlt}
+                      className="w-full h-full object-cover rounded-[12px]"
+                    />
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div className="grid grid-cols-1 gap-2">
-              {/* Phase 1: Briefing & Zieldefinition */}
-              <div className="bg-white overflow-hidden flex flex-col lg:flex-row-reverse rounded-[12px]  gap-4">
-                {/* Left Column: Title and Paragraph */}
-                <div className="flex flex-col justify-center lg:w-[60%]">
-                  <h2 className="text-[28px] font-matt font-[900] text-black mb-4 uppercase">
-                    Hosting & Wartung:{" "}
-                  </h2>
-                  <p className="text-black font-[300] text-[16px] lg:text-[20px] font-matt">
-                    Laufende Kosten für den Serverplatz, Domainregistrierung,
-                    Sicherheitsupdates und technische Pflege. Diese sind
-                    essenziell für die Sicherheit und Verfügbarkeit Ihrer
-                    Website.
-                  </p>
-                </div>
-
-                {/* Right Column: Image with Background */}
-                <div
-                  className="lg:w-[50%] h-[240px] bg-cover bg-center rounded-[12px] flex justify-center items-center"
-                  style={{
-                    background:
-                      "linear-gradient(0deg, #0009FF 0%, #0009FF 100%), url(/images/phase3.png)",
-                    backgroundBlendMode: "color, normal",
-                  }}
-                >
-                  <img
-                    src="/images/phase3.png" // Replace with actual image path
-                    alt="Briefing & Zieldefinition"
-                    className="w-full h-full object-cover rounded-[12px]"
-                  />
-                </div>
-              </div>
-            </div>
-            <br />
-            <p className="text-black font-[300] text-[16px] lg:text-[20px] font-matt">
-              [Bildvorschlag: Eine Infografik, die die verschiedenen
-              Kostenfaktoren als Bausteine einer Website darstellt.]
-            </p>
+              )
+            )}
           </section>
+
           {/* Call to Action */}
-          <section className="bg-[#F5F5F5] rounded-[12px] px-6 py-6 my-12 max-w-[1100px] mx-auto">
-            <div className="flex flex-nowrap justify-between items-center gap-4">
-              <p className="text-[#000] text-[18px] lg:text-[20px] font-matt font-[500] leading-relaxed max-w-[70%] whitespace-nowrap">
+          <section className="bg-[#F5F5F5] rounded-[12px] px-6 py-8 my-12 max-w-[1100px] mx-auto">
+            <div className="flex flex-wrap justify-between items-center gap-4">
+              <p className="text-[#000] text-[18px] lg:text-[20px] font-matt font-[500] leading-relaxed max-w-[70%] whitespace-normal">
                 Transparenz, Schnelligkeit, Kundennähe – das ist agile
                 Projektleitung bei the eksperts
               </p>
@@ -437,12 +319,12 @@ const WebsiteKostenKMUPost = () => {
           </section>
         </section>
 
-        <div className="mb-12 lg:w-[905px]">
-          <h2 className="text-[28px] font-matt font-[900] text-black mb-4 uppercase mt-12">
+        <div className="mb-12 lg:max-w-[905px] mx-auto px-4">
+          <h2 className="text-[28px] font-matt font-[900] text-black mb-6 uppercase mt-12">
             Der Return on Investment (ROI) Ihrer Website
           </h2>
 
-          <p className="text-black text-[16px] lg:text-[20px] font-[300] font-matt mb-4">
+          <p className="text-black text-[16px] lg:text-[20px] font-[300] font-matt mb-6 leading-relaxed">
             Betrachten Sie Ihre Website nicht als Ausgabe, sondern als
             Investition. Eine <strong>professionelle Website Schweiz </strong>
             kann Ihnen einen erheblichen Return on Investment (ROI) bieten
@@ -467,21 +349,23 @@ const WebsiteKostenKMUPost = () => {
               Konkurrenz ab, die vielleicht noch keine oder eine veraltete
               Online-Präsenz hat.
             </li>
-            <a
-              href="/angebot-anfragen"
-              className="text-blue-600 underline hover:text-blue-800"
-            >
-              Jetzt ein transparentes Website-Angebot einholen
-            </a>
+            <li>
+              <a
+                href="/angebot-anfragen"
+                className="text-blue-600 underline hover:text-blue-800"
+              >
+                Jetzt ein transparentes Website-Angebot einholen
+              </a>
+            </li>
           </ul>
         </div>
 
-        <section className="mb-12 lg:w-[905px] space-y-8">
+        <section className="mb-12 lg:max-w-[905px] mx-auto px-4 space-y-8">
           <h2 className="text-[28px] font-matt font-[900] text-black uppercase mt-10">
             So holen Sie ein passendes Website-Angebot ein
           </h2>
 
-          <p className="text-black text-[16px] lg:text-[20px] font-[300] font-matt">
+          <p className="text-black text-[16px] lg:text-[20px] font-[300] font-matt leading-relaxed">
             Um ein realistisches Website-Angebot einholen Schweiz zu können, ist
             es wichtig, dass Sie Ihre Anforderungen klar definieren. Überlegen
             Sie:
@@ -494,7 +378,7 @@ const WebsiteKostenKMUPost = () => {
             <li>Haben Sie bereits Inhalte (Texte, Bilder)?</li>
           </ul>
 
-          <p className="text-black text-[16px] lg:text-[20px] font-[300] font-matt">
+          <p className="text-black text-[16px] lg:text-[20px] font-[300] font-matt leading-relaxed">
             the eksperts bietet Ihnen eine transparente Kostenübersicht und
             erstellt Ihnen ein massgeschneidertes Angebot, das auf Ihre
             Bedürfnisse und Ihr Budget zugeschnitten ist. Gerne führen wir auch
@@ -502,16 +386,13 @@ const WebsiteKostenKMUPost = () => {
             Potenziale aufzuzeigen.
             <a
               href="/angebot-anfragen"
-              className="text-blue-600 underline hover:text-blue-800"
+              className="text-blue-600 underline hover:text-blue-800 block mt-2"
             >
-              <br /> Fordern Sie jetzt Ihren kostenlosen Website-Check an!
+              Fordern Sie jetzt Ihren kostenlosen Website-Check an!
             </a>
           </p>
         </section>
-
-        {/* Related Posts */}
-
-        <section className="w-full px-4 py-[60px] flex justify-center">
+        <section className="w-full px-4 py-16 flex justify-center">
           <div className="max-w-[900px] w-full text-center">
             <div className="w-[60px] h-[4px] bg-[#0009FF] mx-auto mb-6 rounded-full"></div>
 
@@ -519,7 +400,7 @@ const WebsiteKostenKMUPost = () => {
               Fazit: Investieren Sie in Ihren Online-Erfolg
             </h2>
 
-            <p className="text-[16px] lg:text-[20px] text-black font-matt font-[300] leading-[1.8]">
+            <p className="text-[16px] lg:text-[20px] text-black font-matt font-[300] leading-relaxed">
               Eine Website ist heute unverzichtbar. Die Kosten variieren, doch
               die Investition in eine professionelle Website Schweiz zahlt sich
               in der Regel schnell aus. Konzentrieren Sie sich auf den Wert und
@@ -527,9 +408,8 @@ const WebsiteKostenKMUPost = () => {
             </p>
             <p className="text-black text-[16px] lg:text-[20px] font-[300] font-matt mt-6 text-center">
               <strong>
-                {" "}
                 Mehr Informationen zu den Kosten und Leistungen für Ihre Website
-                in der Schweiz finden Sie auf{" "}
+                in der Schweiz finden Sie auf
               </strong>
               <a
                 href="https://the-eksperts.com/website-schweiz"

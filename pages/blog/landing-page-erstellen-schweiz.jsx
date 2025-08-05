@@ -22,16 +22,16 @@ const LandingPageLeadsCH = () => {
         />
       </Head>
 
-      <main className="max-w-[1330px] mx-auto p-2 lg:p-8 mb-[100px]">
+      <main className="max-w-[1330px] mx-auto px-4 sm:px-6 lg:px-8 py-8 mb-[100px]">
         {/* Header Section */}
         <section className="mb-[16px] text-left">
           <div className="text-left ">
-            <h1 className="font-matt text-[30px] lg:text-[56px] leading-[1] font-semibold uppercase text-gray-900 tracking-tight">
+            <h1 className="font-matt text-[26px] sm:text-[40px] lg:text-[50px]  leading-tight font-semibold uppercase text-gray-900 tracking-tight mb-6">
               Landing Page erstellen Schweiz: So generieren Sie mehr Leads und
               Verkäufe
             </h1>
 
-            <h2 className="font-matt text-[25px] lg:text-[38px] leading-[1] font-normal text-gray-900 tracking-tight">
+            <h2 className="font-matt text-[22px] lg:text-[34px] leading-[1] font-normal text-gray-900 tracking-tight mb-0 lg:mb-4">
               Der ultimative Leitfaden für effektive Zielseiten – von der
               Struktur bis zur Conversion-Optimierung.
             </h2>
@@ -59,7 +59,7 @@ const LandingPageLeadsCH = () => {
               </div>
 
               {/* LESENSWERT */}
-              <aside className="bg-gradient-to-br from-[#F0F4FF] to-white border border-[#E0E7FF] p-6 rounded-2xl shadow-sm mt-8">
+              <aside className="bg-gradient-to-br from-[#F0F4FF] to-white border border-[#E0E7FF] p-6 rounded-2xl mt-5 shadow-sm">
                 <h3 className="text-[20px] font-matt font-[800] text-[#0009FF] uppercase mb-4">
                   AUCH LESENSWERT
                 </h3>

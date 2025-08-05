@@ -22,33 +22,30 @@ const ModerneBusinessWebsite = () => {
         />
       </Head>
 
-      <main className="max-w-[1330px] mx-auto p-2 lg:p-8 mb-[100px]">
+      <main className="max-w-[1330px] mx-auto px-4 sm:px-6 lg:px-8 mb-[100px]">
         {/* Header Section */}
-        <section className="mb-[16px] text-left">
-          <div className="text-left ">
-            <h1 className="font-matt text-[30px] lg:text-[55px] leading-[1] font-semibold uppercase text-gray-900 tracking-tight">
+        <section className="mb-12 sm:mb-16 lg:mb-20 text-left">
+          <div>
+            <h1 className="font-matt text-[26px] sm:text-[40px] lg:text-[50px]  leading-tight font-semibold uppercase text-gray-900 tracking-tight mb-6">
               Moderne Business-Website: Design-Trends, die Ihr Schweizer
               Unternehmen 2025 braucht
             </h1>
 
-            <h2 className="font-matt text-[25px] lg:text-[40px] leading-[1] font-normal text-gray-900 tracking-tight">
+            <h2 className="font-matt text-[25px] lg:text-[34px] leading-[1] font-normal text-gray-900 tracking-tight mb-0 lg:mb-4">
               Wie minimalistisches Design, Responsiveness und eine überzeugende
               User Experience Ihre Online-Präsenz stärken.
             </h2>
-            <h2 className="hidden lg:text-[40px] text-[25px] font-matt font-[400] lg:leading-[48px]">
-              Wie minimalistisches Design, Responsiveness und eine überzeugende
-              User Experience Ihre Online-Präsenz stärken.
-            </h2>
-
-            {/* TL;DR + LESENSWERT colons*/}
-            <div className="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-8">
-              {/* TL;DR BOX*/}
-              <div className="bg-[#0009FF] rounded-[8px] p-[16px] lg:w-full mt-5">
-                <h2 className="text-[28px] font-matt text-white mb-4 uppercase">
+            {/* TL;DR + LESENSWERT columns */}
+            <div className="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-8 mt-6 sm:mt-8">
+              {/* TL;DR BOX */}
+              <div className="bg-[#0009FF] rounded-[8px] p-6 lg:p-8 lg:w-full">
+                <h2 className="text-[24px] sm:text-[28px] font-matt text-white mb-5 uppercase">
                   <strong>TL;DR</strong>{" "}
-                  <span className="font-300">(too long; didn't read)</span>
+                  <span className="font-300 text-white">
+                    (too long; didn't read)
+                  </span>
                 </h2>
-                <p className="text-white font-[300] text-[16px] lg:text-[20px] font-matt">
+                <p className="text-white font-[300] text-[15px] sm:text-[16px] lg:text-[20px] font-matt leading-relaxed">
                   Eine moderne Business-Website ist mehr als nur schön
                   anzusehen. Erfahren Sie, welche Design-Trends wie
                   minimalistische Website, responsive Webdesign Schweiz und
@@ -60,11 +57,11 @@ const ModerneBusinessWebsite = () => {
               </div>
 
               {/* LESENSWERT */}
-              <aside className="bg-gradient-to-br from-[#F0F4FF] to-white border border-[#E0E7FF] p-6 rounded-2xl shadow-sm mt-8">
-                <h3 className="text-[20px] font-matt font-[800] text-[#0009FF] uppercase mb-4">
+              <aside className="bg-gradient-to-br from-[#F0F4FF] to-white border border-[#E0E7FF] p-6 rounded-2xl shadow-sm mt-6 lg:mt-0">
+                <h3 className="text-[18px] sm:text-[20px] font-matt font-[800] text-[#0009FF] uppercase mb-4">
                   AUCH LESENSWERT
                 </h3>
-                <ul className="space-y-3 font-matt text-[16px] text-black font-[300] leading-snug">
+                <ul className="space-y-3 font-matt text-[14px] sm:text-[16px] text-black font-[300] leading-snug">
                   <li>
                     <a
                       href="/blog/der-unterschatzte-boost"
@@ -111,9 +108,8 @@ const ModerneBusinessWebsite = () => {
             />
           </div>
 
-          {/* TL;DR */}
+          {/* Lesedauer */}
           <section className="mb-12 flex flex-col lg:flex-row">
-            {/* Left Content */}
             <div className="max-w-[800px] flex-1 lg:mb-0">
               <p
                 className="text-[#0009FF] text-[20px] lg:text-[28px] uppercase font-matt font-[900] mb-[25px]"
@@ -124,10 +120,11 @@ const ModerneBusinessWebsite = () => {
             </div>
           </section>
 
+          {/* Main Content with Image */}
           <section className="flex justify-center mb-20 px-4">
-            <div className="max-w-[1100px] w-full flex flex-col lg:flex-row gap-[40px]">
+            <div className="max-w-[1100px] w-full flex flex-col lg:flex-row gap-10 lg:gap-[40px]">
               {/* Image */}
-              <div className="lg:w-[50%]">
+              <div className="lg:w-1/2">
                 <img
                   src="/images/recagile.png"
                   alt="Vorteile für Unternehmen"
@@ -136,13 +133,13 @@ const ModerneBusinessWebsite = () => {
               </div>
 
               {/* Text Content */}
-              <div className="lg:w-[50%] bg-gradient-to-br from-white via-[#F8F9FF] to-white p-8 rounded-[20px] shadow-md flex flex-col justify-center">
-                <h2 className="text-[30px] font-matt font-[900] text-black mb-4 leading-snug">
+              <div className="lg:w-1/2 bg-gradient-to-br from-white via-[#F8F9FF] to-white p-6 sm:p-8 rounded-[20px] shadow-md flex flex-col justify-center">
+                <h2 className="text-[28px] sm:text-[30px] font-matt font-[900] text-black mb-4 leading-snug">
                   Das Aushängeschild Ihres Erfolgs: Ihre moderne
                   Business-Website
                 </h2>
                 <div className="w-[60px] h-[4px] bg-neutral-300 rounded-full mb-6 transition-all duration-300 group-hover:w-[90px]"></div>
-                <p className="text-black font-[300] text-[16px] lg:text-[20px] leading-[1.8] font-matt">
+                <p className="text-black font-[300] text-[15px] sm:text-[16px] lg:text-[20px] leading-[1.8] font-matt">
                   In einer schnelllebigen digitalen Welt ist Ihre Website oft
                   der erste Eindruck, den potenzielle Kunden von Ihrem
                   Unternehmen bekommen. Ein veralteter oder unübersichtlicher
@@ -150,7 +147,7 @@ const ModerneBusinessWebsite = () => {
                   Business-Website hingegen vermittelt Kompetenz, Innovation und
                   Professionalität.
                 </p>
-                <p className="text-black font-[300] text-[16px] lg:text-[20px] leading-[1.8] font-matt mt-4">
+                <p className="text-black font-[300] text-[15px] sm:text-[16px] lg:text-[20px] leading-[1.8] font-matt mt-4">
                   Doch was macht eine Website "modern"? Es sind nicht nur
                   visuelle Aspekte, sondern vor allem auch Funktionalität,
                   Benutzerfreundlichkeit und technische Exzellenz, die Hand in
@@ -160,14 +157,15 @@ const ModerneBusinessWebsite = () => {
             </div>
           </section>
 
-          <section className="w-full mb-20 flex flex-col items-center">
-            <div className="w-full max-w-[1200px] bg-gradient-to-br from-white via-[#F8F9FF] to-white p-8 lg:p-[80px] rounded-[20px] shadow-xl">
-              <h2 className="text-[30px] lg:text-[42px] font-matt font-[900] text-center text-black uppercase mb-12 leading-tight">
+          {/* Design Trends Section */}
+          <section className="w-full mb-20 flex flex-col items-center px-4 sm:px-6">
+            <div className="w-full max-w-[1200px] bg-gradient-to-br from-white via-[#F8F9FF] to-white p-6 sm:p-8 lg:p-[80px] rounded-[20px] shadow-xl">
+              <h2 className="text-[28px] sm:text-[32px] lg:text-[42px] font-matt font-[900] text-center text-black uppercase mb-12 leading-tight">
                 Die wichtigsten Design-Trends für 2025{" "}
                 <br className="hidden lg:block" /> und darüber hinaus
               </h2>
 
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-[60px] gap-y-[70px] text-black text-[16px] lg:text-[20px] font-[300] font-matt">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-10 gap-y-[70px] text-black text-[18px] sm:text-[20px] lg:text-[22px] font-[300] font-matt">
                 {[
                   {
                     title: "Minimalistische Website",
@@ -253,11 +251,11 @@ const ModerneBusinessWebsite = () => {
                   },
                 ].map((item, i) => (
                   <div key={i} className="group">
-                    <h3 className="text-[22px] font-[800] text-black mb-3 relative">
+                    <h3 className="text-[16px] sm:text-[24px] lg:text-[20px] font-[800] text-black mb-3 relative">
                       {item.title}
                       <span className="absolute bottom-[-8px] left-0 h-[3px] w-[60px] bg-[#0009FF] transition-all duration-300 group-hover:w-[80px]"></span>
                     </h3>
-                    <ul className="list-disc ml-6 space-y-2">
+                    <ul className="list-disc ml-6 space-y-2  text-black font-[300] text-[16px] sm:text-[16px] lg:text-[20px]">
                       {item.points.map((p, idx) => (
                         <li key={idx}>{p}</li>
                       ))}
@@ -267,20 +265,21 @@ const ModerneBusinessWebsite = () => {
               </div>
             </div>
           </section>
-          <p className="text-black font-[300] text-[17px] lg:text-[17px] font-matt">
+
+          <p className="text-black font-[300] text-[16px] sm:text-[17px] font-matt mt-6">
             <em>
               [Bildvorschlag: Eine moderne, ansprechende Website-Ansicht eines
               Coiffeursalons mit einem prominenten "Jetzt Termin
-              buchen"-Button.]{" "}
-            </em>{" "}
+              buchen"-Button.]
+            </em>
           </p>
 
-          <section className="bg-[#0009FF] mt-[80px] w-full max-w-[915px] mx-auto p-2 lg:p-[40px] rounded-lg">
+          <section className="bg-[#0009FF] mt-20 w-full max-w-[915px] mx-auto p-4 sm:p-[40px] rounded-lg">
             <div className="max-w-[900px] mx-auto">
-              <h2 className="text-[#FFF] text-[20px] lg:text-[28px] font-matt font-[900] text-uppercase mb-6 text-center">
+              <h2 className="text-white text-[20px] sm:text-[28px] font-matt font-[900] uppercase mb-6 text-center">
                 Ihr Website Konzept erstellen mit the eksperts{" "}
               </h2>
-              <p className="text-[#FFF] text-[16px] lg:text-[20px] font-[300] font-matt mb-1">
+              <p className="text-white text-[16px] sm:text-[20px] font-[300] font-matt mb-4 leading-relaxed">
                 Die Entwicklung einer modernen Business-Website beginnt mit
                 einem durchdachten Website Konzept erstellen. Bei the eksperts
                 analysieren wir Ihre Ziele, Ihre Zielgruppe und Ihre Branche, um
@@ -292,29 +291,32 @@ const ModerneBusinessWebsite = () => {
               </p>
               <div className="flex justify-center">
                 <img
-                  src="/images/Rectangle 259 (1).png" // Replace with actual image path
+                  src="/images/Rectangle 259 (1).png"
                   alt="Agile Prinzipien"
                   className="w-full lg:w-[840px] h-[350px] object-cover rounded-lg mb-8"
                 />
               </div>
             </div>
           </section>
+
           <div className="flex justify-center mt-8">
             <a
               href="#contact"
-              className="bg-white text-[#0009FF] hover:bg-[#e5e5ff] font-matt font-[700] text-[16px] lg:text-[18px] px-6 py-3 rounded-full transition duration-300"
+              className="bg-white text-[#0009FF] hover:bg-[#e5e5ff] font-matt font-[700] text-[16px] lg:text-[18px] px-6 py-3 rounded-full transition duration-300 max-w-full text-center break-words"
             >
               Lassen Sie uns gemeinsam Ihr modernes Website-Konzept erstellen –
               Jetzt Beratung anfragen!
             </a>
           </div>
         </section>
-        <div className="mb-12 w-full max-w-[905px] mx-auto text-center">
-          <h2 className="text-[28px] font-matt font-[900] text-black mb-4 mt-20 uppercase">
+
+        {/* Conclusion Section */}
+        <div className="mb-16 sm:mb-20 max-w-[905px] mx-auto text-center px-4 sm:px-0">
+          <h2 className="text-[28px] sm:text-[32px] font-matt font-[900] text-black mb-6 mt-20 uppercase leading-tight">
             Fazit: Investition in die Zukunft
           </h2>
 
-          <p className="text-black text-[16px] lg:text-[20px] font-[300] font-matt mb-8">
+          <p className="text-black text-[15px] sm:text-[16px] lg:text-[20px] font-[300] font-matt mb-8 leading-relaxed">
             Eine moderne Website ist eine Investition in die digitale Zukunft
             Ihres Unternehmens. Sie verbessert nicht nur Ihr Image, sondern auch
             Ihre Sichtbarkeit, Ihre Kundenbindung und letztendlich Ihren Umsatz.

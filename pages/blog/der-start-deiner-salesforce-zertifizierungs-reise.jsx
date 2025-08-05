@@ -26,43 +26,81 @@ const CertificationPost = () => {
         {/* Post Content Section */}
         <section className="mb-[16px]  lg:mb-[40px] text-left">
           <div className="text-left ">
-            
-            <h1 className="font-matt text-[30px] lg:text-[68px] leading-[1] font-semibold uppercase text-gray-900 tracking-tight">
+            <h1 className="font-matt text-[26px] sm:text-[40px] lg:text-[50px]  leading-tight font-semibold uppercase text-gray-900 tracking-tight mb-6">
               Der Start deiner Salesforce-(Zertifizierung's)-Reise:
             </h1>
 
-            <h2 className="font-matt text-[25px] lg:text-[40px] leading-[1] font-normal text-gray-900 tracking-tight">
+            <h2 className="font-matt text-[25px] lg:text-[34px] leading-[1] font-normal text-gray-900 tracking-tight mb-0 lg:mb-4">
               Wo du mit Salesforce-Zertifizierungen beginnen solltest – ein
               praxisnaher Weg!
             </h2>
-            <h2 className="lg:hidden block lg:text-[40px] text-[25px] font-matt font-[400] lg:leading-[48px] tracking-tight">
-              Wo du mit Salesforce-Zertifizierungen beginnen solltest – ein
-              praxisnaher Weg!
-            </h2>
-            <div className="mt-[15px] bg-[#0009FF] rounded-[8px] p-[16px] lg:w-[990px]">
-              <h2 className="text-[28px] font-matt text-white mb-4 uppercase">
-                <span className="font-900">
-                  <strong>TL;DR</strong>
-                </span>{" "}
-                <span className="font-300">(too long; didn't read)</span>
-              </h2>
-              <p className="text-white font-[300] text-[16px] lg:text-[20px] font-matt">
-                Starte deine Salesforce-Zertifizierungsreise mit der Salesforce
-                Associate-Prüfung – einsteigerfreundlich und beim ersten Versuch
-                kostenlos. Mach dann weiter mit dem Administrator, um dir eine
-                starke Basis zu schaffen. Wenn dich No-Code-Apps interessieren,
-                kommt Platform App Builder als nächstes. Danach wählst du deinen
-                Fokus: Consultant, Developer oder Analyst. Fang einfach an,
-                folge deinen Interessen und wachse Schritt für Schritt.
-              </p>
+            <div className="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-8 mt-6 mb-6">
+              {/* TL;DR Box */}
+              <div className="bg-[#0009FF] rounded-[8px] p-[16px] lg:w-full">
+                <h2 className="text-[28px] font-matt text-white mb-4 uppercase">
+                  <span className="font-900">
+                    <strong>TL;DR</strong>
+                  </span>{" "}
+                  <span className="font-300">(too long; didn't read)</span>
+                </h2>
+                <p className="text-white font-[300] text-[16px] lg:text-[20px] font-matt">
+                  Starte deine Salesforce-Zertifizierungsreise mit der
+                  Salesforce Associate-Prüfung – einsteigerfreundlich und beim
+                  ersten Versuch kostenlos. Mach dann weiter mit dem
+                  Administrator, um dir eine starke Basis zu schaffen. Wenn dich
+                  No-Code-Apps interessieren, kommt Platform App Builder als
+                  nächstes. Danach wählst du deinen Fokus: Consultant, Developer
+                  oder Analyst. Fang einfach an, folge deinen Interessen und
+                  wachse Schritt für Schritt.
+                </p>
+              </div>
+
+              {/* LESENSWERT Box */}
+              <aside className="bg-gradient-to-br from-[#F0F4FF] to-white border border-[#E0E7FF] p-6 rounded-2xl shadow-sm">
+                <h3 className="text-[20px] font-matt font-[800] text-[#0009FF] uppercase mb-4">
+                  LESENSWERT
+                </h3>
+                <ul className="space-y-3 font-matt text-[16px] text-black font-[300] leading-snug">
+                  <li>
+                    <a
+                      href="/blog/der-unterschatzte-boost"
+                      className="hover:text-[#0009FF] hover:underline transition"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Der unterschätzte Boost
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="/blog/salesforce-berater-unterscheidung"
+                      className="hover:text-[#0009FF] hover:underline transition"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Salesforce Berater Unterscheidung
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="/blog/agile-projektleitung"
+                      className="hover:text-[#0009FF] hover:underline transition"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Agile Projektleitung
+                    </a>
+                  </li>
+                </ul>
+              </aside>
             </div>
           </div>
         </section>
         <section>
           <div className="mb-10">
             <img
-              src="/images/blogDer unterschätzte Boost-the eksperts.svg"
-              alt="Kosova"
+              src="/images/Salesforce-Journe.png" // Replace with actual image path
+              alt="Salesforve-Journe"
               className="w-full lg:h-[500px] object-cover rounded-[12px]"
             />
           </div>
@@ -84,48 +122,7 @@ const CertificationPost = () => {
                 Und wie geht es weiter?{" "}
               </p>
             </div>
-
-            {/* Right Content (LESEWERT Box) */}
-            <div className="rounded-lg w-full lg:w-[280px] mt-8 lg:mt-[40px] lg:ml-auto">
-              <h3 className="text-[28px] font-matt font-[900] text-black mb-4 uppercase">
-                LESENSWERT:
-              </h3>
-              <ul className="space-y-[12px] list-disc ml-6 text-black font-[300] text-[18px] font-matt">
-                <li>
-                  <a
-                    href="/blog/der-unterschatzte-boost"
-                    className="text-black hover:underline"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Der unterschätzte Boost
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/blog/salesforce-berater-unterscheidung"
-                    className="text-black hover:underline"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Salesforce Berater Unterscheidung
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/blog/agile-projektleitung"
-                    className="text-black hover:underline"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Agile Projektleitung
-                  </a>
-                </li>
-              </ul>
-            </div>
           </section>
-
-          {/* Why Nearshoring with the Eksperts */}
           <div className="mb-12 lg:w-[950px]">
             <h2 className="text-[28px] font-matt font-[900] text-black mb-4 uppercase">
               WHier ist, was für mich funktioniert hat:
