@@ -16,8 +16,8 @@ const blogPosts = [
   {
     href: "/blog/salesforce-berater-unterscheidung",
     image: "/images/Salesforce--Consultant.png",
-    alt: "Salesforce Consultants",
-    title: "Salesforce Consultants",
+    alt: "Was unterscheidet dich von anderen Salesforce Consultants?",
+    title: "Was unterscheidet dich von anderen Salesforce Consultants?",
     readTime: "Lesedauer: ca. 3–4 Minuten",
     categories: [" Salesforce & CRM"],
   },

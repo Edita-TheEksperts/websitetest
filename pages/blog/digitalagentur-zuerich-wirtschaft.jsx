@@ -2,6 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 import RelatedPostsCarousel from "@/components/RelatedPostsCarousel";
+import LesenswertBox from "../../components/LesenswertBox";
 
 const DigitalagenturZürich = () => {
   return (
@@ -35,7 +36,7 @@ const DigitalagenturZürich = () => {
               Webdesign bis App-Entwicklung
             </h2>
             {/* TL;DR + AUCH LESENSWERT */}
-            <div className="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-8 mt-6">
+            <div className="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-8 mb-5 mt-6 items-stretch">
               {/* TL;DR BOX */}
               <div className="bg-[#0009FF] rounded-[8px] p-[16px] w-full">
                 <h2 className="text-[28px] font-matt text-white mb-4 uppercase">
@@ -53,49 +54,13 @@ const DigitalagenturZürich = () => {
               </div>
 
               {/* AUCH LESENSWERT */}
-              <aside className="bg-gradient-to-br from-[#F0F4FF] to-white border border-[#E0E7FF] p-6 rounded-2xl shadow-sm">
-                <h3 className="text-[20px] font-matt font-[800] text-[#0009FF] uppercase mb-4">
-                  AUCH LESENSWERT
-                </h3>
-                <ul className="space-y-3 font-matt text-[16px] text-black font-[300] leading-snug">
-                  <li>
-                    <Link
-                      href="/blog/der-unterschatzte-boost"
-                      className="hover:text-[#0009FF] hover:underline transition"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Der unterschätzte Boost
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/blog/briefing-launch"
-                      className="hover:text-[#0009FF] hover:underline transition"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Vom Briefing zum Launch
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/blog/agile-projektleitung"
-                      className="hover:text-[#0009FF] hover:underline transition"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Agile Projektleitung
-                    </Link>
-                  </li>
-                </ul>
-              </aside>
+              <LesenswertBox currentSlug="digitalagentur-zuerich-wirtschaft " />
             </div>
           </div>
         </section>
 
         {/* Zürich Section */}
-        <section className="relative bg-gradient-to-br from-blue-100 via-blue-200 to-blue-100 py-16 lg:py-24 px-4 lg:px-8 flex justify-center overflow-hidden">
+        <section className="relative bg-gradient-to-br from-blue-100 via-blue-200 to-blue-100 py-16 lg:py-24 px-4 lg:px-8 flex justify-center mt-5  overflow-hidden">
           <div className="absolute left-0 top-[50%] -translate-y-1/2 z-0 opacity-30 blur-sm max-w-full overflow-hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"

@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Link from "next/link";
 import RelatedPostsCarousel from "@/components/RelatedPostsCarousel";
+import LesenswertBox from "../../components/LesenswertBox";
 
 const LandingPageLeadsCH = () => {
   return (
@@ -22,9 +23,9 @@ const LandingPageLeadsCH = () => {
         />
       </Head>
 
-      <main className="max-w-[1330px] mx-auto px-4 sm:px-6 lg:px-8 py-8 mb-[100px]">
+      <main className="max-w-[1330px] mx-auto p-2 lg:p-8 mb-[100px]">
         {/* Header Section */}
-        <section className="mb-[16px] text-left">
+        <section className="mb-10 text-center lg:text-left">
           <div className="text-left ">
             <h1 className="font-matt text-[26px] sm:text-[40px] lg:text-[50px]  leading-tight font-semibold uppercase text-gray-900 tracking-tight mb-6">
               Landing Page erstellen Schweiz: So generieren Sie mehr Leads und
@@ -40,9 +41,9 @@ const LandingPageLeadsCH = () => {
               Struktur bis zur Conversion-Optimierung.
             </h2>
             {/* TL;DR + LESENSWERT colons*/}
-            <div className="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-8">
+            <div className="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-8 mt-[18px] items-stretch">
               {/* TL;DR BOX*/}
-              <div className="bg-[#0009FF] rounded-[8px] p-[16px] lg:w-full mt-5">
+              <div className="bg-[#0009FF] rounded-[8px] p-[16px] lg:w-full">
                 <h2 className="text-[28px] font-matt text-white mb-4 uppercase">
                   <strong>TL;DR</strong>{" "}
                   <span className="font-300">(too long; didn't read)</span>
@@ -59,50 +60,14 @@ const LandingPageLeadsCH = () => {
               </div>
 
               {/* LESENSWERT */}
-              <aside className="bg-gradient-to-br from-[#F0F4FF] to-white border border-[#E0E7FF] p-6 rounded-2xl mt-5 shadow-sm">
-                <h3 className="text-[20px] font-matt font-[800] text-[#0009FF] uppercase mb-4">
-                  AUCH LESENSWERT
-                </h3>
-                <ul className="space-y-3 font-matt text-[16px] text-black font-[300] leading-snug">
-                  <li>
-                    <a
-                      href="/blog/der-unterschatzte-boost"
-                      className="hover:text-[#0009FF] hover:underline transition"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Der unterschätzte Boost
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="/blog/briefing-launch"
-                      className="hover:text-[#0009FF] hover:underline transition"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Vom Briefing zum Launch
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="/blog/agile-projektleitung"
-                      className="hover:text-[#0009FF] hover:underline transition"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Agile Projektleitung
-                    </a>
-                  </li>
-                </ul>
-              </aside>
+              <LesenswertBox currentSlug="landing-page-erstellen-schweiz" />
             </div>
           </div>
         </section>
 
         {/* Post Content Section */}
         <section>
-          <div className="mb-10">
+          <div className="mb-10 mt-10">
             <img
               src="/images/blog13-the eksperts.svg"
               alt="Agile Projektleitung"

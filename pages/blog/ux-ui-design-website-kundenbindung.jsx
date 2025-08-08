@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
+import LesenswertBox from "../../components/LesenswertBox";
 
 import RelatedPostsCarousel from "@/components/RelatedPostsCarousel";
 
@@ -35,10 +36,9 @@ const UxUiDesignWebsitePost = () => {
               Der Schlüssel zu überzeugenden Online-Auftritten – von der
               intuitiven Bedienung bis zum ansprechenden Look.
             </h2>
-            {/* TL;DR + LESENSWERT columns */}
-            <div className="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-8 mt-6">
+            <div className="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-8 mt-6 h-full">
               {/* TL;DR BOX */}
-              <div className="bg-[#0009FF] rounded-[8px] p-5 lg:p-6 w-full">
+              <div className="bg-[#0009FF] rounded-[8px] p-6 lg:p-8 w-full h-full">
                 <h2 className="text-[28px] font-matt text-white mb-4 uppercase">
                   <strong>TL;DR</strong>{" "}
                   <span className="font-300">(too long; didn't read)</span>
@@ -49,61 +49,13 @@ const UxUiDesignWebsitePost = () => {
                   Interface (UI) entscheidend für den Erfolg Ihrer Website sind,
                   wie ein fundiertes Website Konzept erstellen dabei hilft, und
                   warum gute Gestaltung Ihre Kunden bindet und zu Conversions
-                  führt.
+                  führt.{" "}
                 </p>
               </div>
 
               {/* LESENSWERT */}
-              <aside className="bg-gradient-to-br from-[#F0F4FF] to-white border border-[#E0E7FF] p-6 rounded-2xl shadow-sm mt-6">
-                <h3 className="text-[20px] font-matt font-[800] text-[#0009FF] uppercase mb-4">
-                  AUCH LESENSWERT
-                </h3>
-                <ul className="space-y-3 font-matt text-[16px] sm:text-[17px] text-black font-[300] leading-snug">
-                  <li>
-                    <a
-                      href="/blog/der-unterschatzte-boost"
-                      className="hover:text-[#0009FF] hover:underline transition"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Der unterschätzte Boost
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="/blog/briefing-launch"
-                      className="hover:text-[#0009FF] hover:underline transition"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Vom Briefing zum Launch
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="/blog/agile-projektleitung"
-                      className="hover:text-[#0009FF] hover:underline transition"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Agile Projektleitung
-                    </a>
-                  </li>
-                </ul>
-              </aside>
+              <LesenswertBox currentSlug="ux-ui-design-website-kundenbindung" />
             </div>
-          </div>
-        </section>
-
-        {/* Lesedauer section */}
-        <section className="mb-12 flex flex-col lg:flex-row">
-          <div className="max-w-[800px] flex-1 mb-8 lg:mb-0">
-            <p
-              className="text-[#0009FF] text-[20px] sm:text-[22px] lg:text-[28px] uppercase font-matt font-[900] mb-[25px]"
-              style={{ color: "#0009FF" }}
-            >
-              Lesedauer: ca. 4 Minuten
-            </p>
           </div>
         </section>
 
@@ -116,6 +68,18 @@ const UxUiDesignWebsitePost = () => {
               className="w-full lg:h-[500px] object-cover rounded-[12px]"
             />
           </div>
+
+          {/* Lesedauer section */}
+          <section className="mb-12 flex flex-col lg:flex-row">
+            <div className="max-w-[800px] flex-1 mb-8 lg:mb-0">
+              <p
+                className="text-[#0009FF] text-[20px] sm:text-[22px] lg:text-[28px] uppercase font-matt font-[900] mb-[25px]"
+                style={{ color: "#0009FF" }}
+              >
+                Lesedauer: ca. 4 Minuten
+              </p>
+            </div>
+          </section>
 
           {/* UX/UI Blue Cards Section */}
           <section className="w-full mb-20">

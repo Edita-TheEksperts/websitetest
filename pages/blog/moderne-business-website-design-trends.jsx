@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Link from "next/link";
 import RelatedPostsCarousel from "@/components/RelatedPostsCarousel";
+import LesenswertBox from "../../components/LesenswertBox";
 
 const ModerneBusinessWebsite = () => {
   return (
@@ -36,7 +37,7 @@ const ModerneBusinessWebsite = () => {
               User Experience Ihre Online-Präsenz stärken.
             </h2>
             {/* TL;DR + LESENSWERT columns */}
-            <div className="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-8 mt-6 sm:mt-8">
+            <div className="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-8 mt-5 mb-5 sm:mt-8 items-stretch">
               {/* TL;DR BOX */}
               <div className="bg-[#0009FF] rounded-[8px] p-6 lg:p-8 lg:w-full">
                 <h2 className="text-[24px] sm:text-[28px] font-matt text-white mb-5 uppercase">
@@ -57,43 +58,7 @@ const ModerneBusinessWebsite = () => {
               </div>
 
               {/* LESENSWERT */}
-              <aside className="bg-gradient-to-br from-[#F0F4FF] to-white border border-[#E0E7FF] p-6 rounded-2xl shadow-sm mt-6 lg:mt-0">
-                <h3 className="text-[18px] sm:text-[20px] font-matt font-[800] text-[#0009FF] uppercase mb-4">
-                  AUCH LESENSWERT
-                </h3>
-                <ul className="space-y-3 font-matt text-[14px] sm:text-[16px] text-black font-[300] leading-snug">
-                  <li>
-                    <a
-                      href="/blog/der-unterschatzte-boost"
-                      className="hover:text-[#0009FF] hover:underline transition"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Der unterschätzte Boost
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="/blog/briefing-launch"
-                      className="hover:text-[#0009FF] hover:underline transition"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Vom Briefing zum Launch
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="/blog/agile-projektleitung"
-                      className="hover:text-[#0009FF] hover:underline transition"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Agile Projektleitung
-                    </a>
-                  </li>
-                </ul>
-              </aside>
+              <LesenswertBox currentSlug="moderne-business-website-design-trends" />
             </div>
           </div>
         </section>
@@ -121,7 +86,7 @@ const ModerneBusinessWebsite = () => {
           </section>
 
           {/* Main Content with Image */}
-          <section className="flex justify-center mb-20 px-4">
+          <section className="flex justify-center mb-20  px-4">
             <div className="max-w-[1100px] w-full flex flex-col lg:flex-row gap-10 lg:gap-[40px]">
               {/* Image */}
               <div className="lg:w-1/2">

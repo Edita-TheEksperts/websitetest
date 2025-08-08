@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Link from "next/link";
 import RelatedPostsCarousel from "@/components/RelatedPostsCarousel";
+import LesenswertBox from "../../components/LesenswertBox";
 
 const JetztWebsiteSchweiz = () => {
   return (
@@ -32,7 +33,7 @@ const JetztWebsiteSchweiz = () => {
               Partner in der Schweiz ist
             </h1>
 
-            <h2 className="font-matt text-[22px] lg:text-[34px] leading-[1] font-normal text-gray-900 tracking-tight mb-0 lg:mb-4">
+            <h2 className="font-matt text-[22px] lg:text-[34px] leading-[1] font-normal text-gray-900 tracking-tight  lg:mb-4">
               Ihre Suche nach einer Webagentur für KMU endet hier – Kompetenz,
               Vertrauen und massgeschneiderte Lösungen.
             </h2>
@@ -42,14 +43,14 @@ const JetztWebsiteSchweiz = () => {
               Vertrauen und massgeschneiderte Lösungen.
             </h2>
             {/* TL;DR + LESENSWERT colons*/}
-            <div className="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-8">
-              {/* TL;DR BOX*/}
-              <div className="bg-[#0009FF] rounded-[8px] p-[16px] lg:w-full mt-5">
+            <div className="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-8 mt-5 items-stretch">
+              {/* TL;DR BOX */}
+              <div className="bg-[#0009FF] rounded-[8px] p-[16px] lg:w-full h-full flex flex-col">
                 <h2 className="text-[28px] font-matt text-white mb-4 uppercase">
                   <strong>TL;DR</strong>{" "}
                   <span className="font-300">(too long; didn't read)</span>
                 </h2>
-                <p className="text-white font-[300] text-[16px] lg:text-[20px] font-matt">
+                <p className="text-white font-[300] text-[16px] lg:text-[20px] font-matt leading-relaxed">
                   Wenn Sie "Jetzt Website erstellen lassen" möchten und eine
                   Webagentur für KMU gesucht wird, sind Sie bei The Eksperts
                   genau richtig. Wir bieten eine umfassende Webdesign Beratung
@@ -61,43 +62,7 @@ const JetztWebsiteSchweiz = () => {
               </div>
 
               {/* LESENSWERT */}
-              <aside className="bg-gradient-to-br from-[#F0F4FF] to-white border border-[#E0E7FF] p-6 rounded-2xl mt-3 shadow-sm">
-                <h3 className="text-[20px] font-matt font-[800] text-[#0009FF] uppercase mb-4">
-                  AUCH LESENSWERT
-                </h3>
-                <ul className="space-y-3 font-matt text-[16px] text-black font-[300] leading-snug">
-                  <li>
-                    <a
-                      href="/blog/der-unterschatzte-boost"
-                      className="hover:text-[#0009FF] hover:underline transition"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Der unterschätzte Boost
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="/blog/briefing-launch"
-                      className="hover:text-[#0009FF] hover:underline transition"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Vom Briefing zum Launch
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="/blog/agile-projektleitung"
-                      className="hover:text-[#0009FF] hover:underline transition"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Agile Projektleitung
-                    </a>
-                  </li>
-                </ul>
-              </aside>
+              <LesenswertBox currentSlug="jetzt-website-erstellen-schweiz" />
             </div>
           </div>
         </section>

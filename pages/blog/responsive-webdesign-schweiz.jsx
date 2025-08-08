@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Link from "next/link";
 import RelatedPostsCarousel from "@/components/RelatedPostsCarousel";
+import LesenswertBox from "../../components/LesenswertBox";
 
 const NutzererfahrungRankingPost = () => {
   return (
@@ -30,12 +31,12 @@ const NutzererfahrungRankingPost = () => {
               perfekt aussehen muss
             </h1>
 
-            <h2 className="font-matt text-[25px] lg:text-[34px] leading-[1] font-normal text-gray-900 tracking-tight mb-0 lg:mb-4">
+            <h2 className="font-matt text-[22px] lg:text-[34px] leading-[1] font-normal text-gray-900 tracking-tight mb-0 lg:mb-4">
               Der Schlüssel zur geräteübergreifenden Nutzererfahrung und
               besserem Google-Ranking in der Schweiz
             </h2>
             {/* TL;DR + LESENSWERT columns */}
-            <div className="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-8 mt-6">
+            <div className="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-8 mt-5 items-stretch">
               {/* TL;DR BOX */}
               <div className="bg-[#0009FF] rounded-lg p-6 lg:w-full">
                 <h2 className="text-[28px] font-matt text-white mb-4 uppercase">
@@ -52,50 +53,14 @@ const NutzererfahrungRankingPost = () => {
               </div>
 
               {/* LESENSWERT */}
-              <aside className="bg-gradient-to-br from-[#F0F4FF] to-white border border-[#E0E7FF] p-6 rounded-2xl shadow-sm mt-6 lg:mt-0">
-                <h3 className="text-[20px] font-matt font-extrabold text-[#0009FF] uppercase mb-4">
-                  AUCH LESENSWERT
-                </h3>
-                <ul className="space-y-3 font-matt text-[16px] text-black font-light leading-snug">
-                  <li>
-                    <a
-                      href="/blog/der-unterschatzte-boost"
-                      className="hover:text-[#0009FF] hover:underline transition"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Der unterschätzte Boost
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="/blog/briefing-launch"
-                      className="hover:text-[#0009FF] hover:underline transition"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Vom Briefing zum Launch
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="/blog/agile-projektleitung"
-                      className="hover:text-[#0009FF] hover:underline transition"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Agile Projektleitung
-                    </a>
-                  </li>
-                </ul>
-              </aside>
+              <LesenswertBox currentSlug="responsive-webdesign-schweiz" />
             </div>
           </div>
         </section>
 
         {/* Post Content Section */}
         <section>
-          <div className="mb-10">
+          <div className="mb-5">
             <img
               src="/images/blog10-the eksperts.svg"
               alt="Agile Projektleitung"

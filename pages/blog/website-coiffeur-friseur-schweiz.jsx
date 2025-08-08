@@ -1,6 +1,8 @@
 import Head from "next/head";
 import Link from "next/link";
 import RelatedPostsCarousel from "@/components/RelatedPostsCarousel";
+import LesenswertBox from "../../components/LesenswertBox";
+
 
 const CoiffeurPost = () => {
   return (
@@ -21,11 +23,11 @@ const CoiffeurPost = () => {
         />
       </Head>
 
-      <main className="max-w-[1330px] mx-auto px-4 sm:px-6 lg:px-8 mb-[100px]">
+      <main className="max-w-[1330px] mx-auto p-2 lg:p-8 mb-[100px]">
         {/* Header Section */}
-        <section className="mb-12 sm:mb-16 lg:mb-20 text-left">
-          <div className="mb-12 sm:mb-16">
-            <h1 className="font-matt text-[30px] sm:text-[40px] lg:text-[50px] leading-tight font-semibold uppercase text-gray-900 tracking-tight mb-6">
+        <section className="mb-[16px]  px-4 lg:px-0 text-left">
+        <div className="text-left ">
+        <h1 className="font-matt text-[30px] sm:text-[40px] lg:text-[50px] leading-tight font-semibold uppercase text-gray-900 tracking-tight mb-6">
               Website für Coiffeur / Friseur: So gewinnen Sie online neue Kunden
               in der Schweiz
             </h1>
@@ -37,7 +39,7 @@ const CoiffeurPost = () => {
           </div>
 
           {/* TL;DR + LESENSWERT columns */}
-          <div className="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-8 mt-5 mb-5 items-stretch">
             {/* TL;DR BOX */}
             <div className="bg-[#0009FF] rounded-[8px] p-6 lg:p-8 lg:w-full">
               <h2 className="text-[24px] sm:text-[28px] font-matt text-white mb-5 uppercase">
@@ -57,48 +59,12 @@ const CoiffeurPost = () => {
             </div>
 
             {/* LESENSWERT */}
-            <aside className="bg-gradient-to-br from-[#F0F4FF] to-white border border-[#E0E7FF] p-6 rounded-2xl shadow-sm">
-              <h3 className="text-[18px] sm:text-[20px] font-matt font-[800] text-[#0009FF] uppercase mb-4">
-                AUCH LESENSWERT
-              </h3>
-              <ul className="space-y-3 font-matt text-[14px] sm:text-[16px] text-black font-[300] leading-snug">
-                <li>
-                  <a
-                    href="/blog/der-unterschatzte-boost"
-                    className="hover:text-[#0009FF] hover:underline transition"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Der unterschätzte Boost
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/blog/salesforce-berater-unterscheidung"
-                    className="hover:text-[#0009FF] hover:underline transition"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Salesforce Berater Unterscheidung
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/blog/agile-projektleitung"
-                    className="hover:text-[#0009FF] hover:underline transition"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Agile Projektleitung
-                  </a>
-                </li>
-              </ul>
-            </aside>
+      <LesenswertBox currentSlug="website-coiffeur-friseur-schweiz" />
           </div>
         </section>
 
         <section>
-          <div className="mb-10">
+          <div className="mb-10 mt-8">
             <img
               src="/images/blog8-the eksperts.svg"
               alt="Kosova"
