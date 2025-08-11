@@ -135,7 +135,7 @@ const LandingPageLeadsCH = () => {
               <div className="w-full relative group">
                 <div className="overflow-hidden rounded-2xl shadow-2xl">
                   <img
-                    src="/images/recagile.png"
+                    src="/images/Landing Page erstellen Schweiz_1.svg"
                     alt="Landing Page Vorteile"
                     className="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-105"
                   />
@@ -232,14 +232,6 @@ const LandingPageLeadsCH = () => {
               </div>
             </div>
           </section>
-
-          <p className="text-black font-[300] text-[17px] lg:text-[17px] font-matt">
-            <em>
-              [Bildvorschlag: Eine schematische Darstellung einer Landing Page
-              mit Pfeilen, die den Blick zum CTA leiten.]
-            </em>{" "}
-          </p>
-
           <section className="bg-[#F7F9FC] py-24 px-4 flex justify-center">
             <div className="max-w-[1200px] w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch">
               {/* Left Side: Onepager Info */}
@@ -354,7 +346,7 @@ const LandingPageLeadsCH = () => {
               <div className="relative lg:w-1/2 w-full">
                 <div className="relative z-10 overflow-hidden rounded-3xl shadow-2xl">
                   <img
-                    src="/images/landingpage-hero.png"
+                    src="/images/Landing Page erstellen Schweiz_2.svg"
                     alt="Landing Page Design von the eksperts"
                     className="w-full h-full object-cover transition duration-500 ease-in-out hover:scale-[1.03]"
                   />

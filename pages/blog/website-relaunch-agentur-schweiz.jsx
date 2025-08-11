@@ -3,7 +3,6 @@ import Link from "next/link";
 import RelatedPostsCarousel from "@/components/RelatedPostsCarousel";
 import LesenswertBox from "../../components/LesenswertBox";
 
-
 const WebsiteRelaunch = () => {
   return (
     <>
@@ -60,7 +59,7 @@ const WebsiteRelaunch = () => {
               </div>
 
               {/* LESENSWERT */}
-         <LesenswertBox currentSlug="website-relaunch-agentur-schweiz" />
+              <LesenswertBox currentSlug="website-relaunch-agentur-schweiz" />
             </div>
           </div>
         </section>
@@ -104,7 +103,7 @@ const WebsiteRelaunch = () => {
             {/* Image */}
             <div data-aos="fade-left" className="w-full flex justify-center">
               <img
-                src="/images/website-relaunch-hero.jpg"
+                src="/images/Website-Relaunch Agentur Schweiz_1.svg"
                 alt="Website Relaunch Illustration"
                 className="w-full max-w-[500px] rounded-2xl shadow-xl"
               />
@@ -235,14 +234,6 @@ const WebsiteRelaunch = () => {
             </div>
           </div>
         </section>
-        <p className="text-black font-[300] text-[17px] lg:text-[17px] font-matt">
-          <em>
-            [Bildvorschlag: Eine Illustration einer selbständigen Person (z.B.
-            ein Freelancer mit Laptop und Ideenblase) vor einer stilisierten
-            Website.]
-          </em>{" "}
-        </p>
-
         <section className="relative bg-gradient-to-tr from-blue-50 via-white to-cyan-50 py-24 px-4">
           <div className="max-w-4xl mx-auto text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-matt font-extrabold text-blue-900 mb-4">

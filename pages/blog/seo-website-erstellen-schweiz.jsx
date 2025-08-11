@@ -178,12 +178,7 @@ const SeoOptimierteSchweiz = () => {
             </div>
           </section>
 
-          <p className="text-black font-[300] text-[17px] lg:text-[17px] font-matt mb-12 max-w-[1000px] mx-auto">
-            <em>
-              [Bildvorschlag: Eine schematische Darstellung einer Landing Page
-              mit Pfeilen, die den Blick zum CTA leiten.]
-            </em>{" "}
-          </p>
+        
         </section>
 
         <section className="w-full bg-[#F8FAFC] py-20 px-4 sm:px-8 md:px-12">

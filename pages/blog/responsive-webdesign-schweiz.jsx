@@ -86,7 +86,7 @@ const NutzererfahrungRankingPost = () => {
               {/* Image */}
               <div className="lg:w-1/2 relative">
                 <img
-                  src="/images/Custom Development.png"
+                  src="/images/Responsive Webdesign Schweiz_1.svg"
                   alt="Responsive Webdesign Schweiz"
                   className="w-full h-full object-cover rounded-br-[80px] rounded-tl-[40px] shadow-2xl"
                 />
@@ -190,13 +190,6 @@ const NutzererfahrungRankingPost = () => {
                 </div>
               </div>
             </div>
-
-            <p className="text-black text-[16px] lg:text-[16px] font-light mt-20 font-matt italic max-w-[900px] mx-auto">
-              <em>
-                [Bildvorschlag: Eine Grafik, die die Vor- und Nachteile von "DIY
-                Website" vs. "Agentur Website" vergleicht.]
-              </em>
-            </p>
           </section>
 
           {/* Warum Responsive Design wichtig ist */}

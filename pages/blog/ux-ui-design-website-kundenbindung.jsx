@@ -167,7 +167,7 @@ const UxUiDesignWebsitePost = () => {
                   }}
                 >
                   <img
-                    src="/images/phase2.png"
+                    src="/images/UX_UI Design Website_1.svg"
                     alt="Briefing & Zieldefinition"
                     className="w-full h-full object-cover rounded-[12px]"
                   />
@@ -197,8 +197,8 @@ const UxUiDesignWebsitePost = () => {
                   }}
                 >
                   <img
-                    src="/images/phase3.png"
-                    alt="Briefing & Zieldefinition"
+                    src="/images/UX_UI Design Website_2.svg"
+                    alt="UX_UI Design Website_2"
                     className="w-full h-full object-cover rounded-[12px]"
                   />
                 </div>
@@ -227,7 +227,7 @@ const UxUiDesignWebsitePost = () => {
                   }}
                 >
                   <img
-                    src="/images/phase4.png"
+                    src="/images/UX_UI Design Website_3.svg"
                     alt="Briefing & Zieldefinition"
                     className="w-full h-full object-cover rounded-[12px]"
                   />
@@ -266,8 +266,8 @@ const UxUiDesignWebsitePost = () => {
                   }}
                 >
                   <img
-                    src="/images/phase1.png"
-                    alt="Briefing & Zieldefinition"
+                    src="/images/UX_UI Design Website_4.svg"
+                    alt="UX_UI Design Website"
                     className="w-full h-full object-cover rounded-[12px]"
                   />
                 </div>
@@ -296,7 +296,7 @@ const UxUiDesignWebsitePost = () => {
                   }}
                 >
                   <img
-                    src="/images/phase4.png"
+                    src="/images/UX_UI Design Website_5.svg"
                     alt="Briefing & Zieldefinition"
                     className="w-full h-full object-cover rounded-[12px]"
                   />
@@ -327,23 +327,14 @@ const UxUiDesignWebsitePost = () => {
                   }}
                 >
                   <img
-                    src="/images/phase3.png"
+                    src="/images/UX_UI Design Website_6.svg"
                     alt="Briefing & Zieldefinition"
                     className="w-full h-full object-cover rounded-[12px]"
                   />
                 </div>
               </div>
             </div>
-
-            <br />
-            <p className="text-black font-[300] text-[16px] sm:text-[18px] lg:text-[20px] font-matt leading-relaxed text-center lg:text-left">
-              <em>
-                [Bildvorschlag: Eine stilisierte Darstellung von zwei
-                Gehirnhälften, eine beschriftet mit "UX" (flüssige Abläufe,
-                Gedankenblasen), die andere mit "UI" (Farben, Symbole, Layout).]
-              </em>{" "}
-            </p>
-          </section>
+                    </section>
         </section>
 
         <div className="mb-16 lg:w-[905px] mx-auto px-4 sm:px-6 lg:px-0">

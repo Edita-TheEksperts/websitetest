@@ -256,17 +256,21 @@ const DigitalagenturZürich = () => {
           </div>
         </section>
 
-        {/* White note */}
-        <section className="py-8 px-4 lg:px-8">
-          <p className="text-black font-[300] text-[16px] lg:text-[20px] font-matt">
-            <em>
-              [Bildvorschlag: Ein stilvolles Foto des Büros an der Löwenstrasse
-              in Zürich, möglicherweise mit Blick auf die Sihl, oder eine
-              stilisierte Darstellung der Zürcher Skyline mit digitalen
-              Netzwerklinien.]
-            </em>
-          </p>
-        </section>
+<section className="py-1 lg:py-24 px-4 lg:px-8 flex justify-center">
+  <div className="max-w-[1200px] w-full bg-white rounded-3xl shadow-2xl overflow-hidden border border-gray-200">
+    <div className="relative w-full h-[250px] sm:h-[350px] lg:h-[450px] group">
+      <Image
+        src="/images/Digitalagentur Zürich_1.jpg" 
+        alt="White note image"
+        fill
+        className="object-cover transition-transform duration-500 group-hover:scale-105"
+        priority
+      />
+      <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/20 to-transparent"></div>
+    </div>
+  </div>
+</section>
+
 
         {/* Future section */}
         <section className="relative bg-gradient-to-br from-blue-950 via-blue-900 to-sky-900 py-16 lg:py-24 px-4 lg:px-8 overflow-hidden">

@@ -3,7 +3,6 @@ import Link from "next/link";
 import RelatedPostsCarousel from "@/components/RelatedPostsCarousel";
 import LesenswertBox from "../../components/LesenswertBox";
 
-
 const CoiffeurPost = () => {
   return (
     <>
@@ -26,8 +25,8 @@ const CoiffeurPost = () => {
       <main className="max-w-[1330px] mx-auto p-2 lg:p-8 mb-[100px]">
         {/* Header Section */}
         <section className="mb-[16px]  px-4 lg:px-0 text-left">
-        <div className="text-left ">
-        <h1 className="font-matt text-[30px] sm:text-[40px] lg:text-[50px] leading-tight font-semibold uppercase text-gray-900 tracking-tight mb-6">
+          <div className="text-left ">
+            <h1 className="font-matt text-[30px] sm:text-[40px] lg:text-[50px] leading-tight font-semibold uppercase text-gray-900 tracking-tight mb-6">
               Website für Coiffeur / Friseur: So gewinnen Sie online neue Kunden
               in der Schweiz
             </h1>
@@ -59,7 +58,7 @@ const CoiffeurPost = () => {
             </div>
 
             {/* LESENSWERT */}
-      <LesenswertBox currentSlug="website-coiffeur-friseur-schweiz" />
+            <LesenswertBox currentSlug="website-coiffeur-friseur-schweiz" />
           </div>
         </section>
 
@@ -116,8 +115,8 @@ const CoiffeurPost = () => {
           <section className="mb-12 flex flex-col lg:flex-row gap-12 lg:gap-[57px]">
             <div className="lg:w-[40%]">
               <img
-                src="/images/sentilink111.png"
-                alt="Vorteile für Unternehmen"
+                src="/images/Website für Coiffeur _ Friseur_1.svg"
+                alt="Website für Coiffeur _ Friseur_1"
                 className="w-full lg:h-[460px] object-cover rounded-lg"
               />
             </div>
@@ -203,20 +202,12 @@ const CoiffeurPost = () => {
 
             <div className="lg:w-[40%]">
               <img
-                src="/images/sentilink111.png"
-                alt="Website selbst erstellen"
+                src="/images/Website für Coiffeur _ Friseur_2.svg"
+                alt="Website für Coiffeur _ Friseur_2"
                 className="w-full lg:h-[460px] object-cover rounded-lg mt-10 lg:mt-0"
               />
             </div>
           </section>
-
-          <p className="text-black font-[300] text-[16px] sm:text-[17px] font-matt">
-            <em>
-              [Bildvorschlag: Eine moderne, ansprechende Website-Ansicht eines
-              Coiffeursalons mit einem prominenten "Jetzt Termin
-              buchen"-Button.]
-            </em>
-          </p>
         </section>
 
         <section className="mb-[60px] lg:mb-[80px] text-center">
@@ -234,8 +225,8 @@ const CoiffeurPost = () => {
         <section className="mb-12 flex flex-col lg:flex-row gap-12 lg:gap-[57px]">
           <div className="lg:w-[40%]">
             <img
-              src="/images/sentilink111.png"
-              alt="Vorteile für Unternehmen"
+              src="/images/Website für Coiffeur _ Friseur_3.svg"
+              alt="Website für Coiffeur _ Friseur_3"
               className="w-full lg:h-[280px] object-cover rounded-lg"
             />
           </div>

@@ -80,41 +80,38 @@ const MobileFirstCH = () => {
               </p>
             </div>
           </section>
-
           <section className="w-full bg-[#F5F7FF] py-20 px-4 sm:px-6">
-            <div className="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-2 items-center gap-16">
-              <div className="relative z-10">
-                <h2 className="text-[30px] sm:text-[36px] lg:text-[42px] font-matt font-extrabold text-black leading-tight mb-6 uppercase">
-                  Das Smartphone zuerst:
-                  <br className="hidden lg:block" />
-                  Neue Priorität im Webdesign
-                </h2>
-                <div className="w-[60px] h-[4px] bg-[#0009FF] rounded-full mb-6"></div>
+  <div className="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-2 items-stretch gap-16">
+    {/* Teksti */}
+    <div className="relative z-10 flex flex-col justify-center">
+      <h2 className="text-[30px] sm:text-[36px] lg:text-[42px] font-matt font-extrabold text-black leading-tight mb-6 uppercase">
+        Das Smartphone zuerst:
+        <br className="hidden lg:block" />
+        Neue Priorität im Webdesign
+      </h2>
+      <div className="w-[60px] h-[4px] bg-[#0009FF] rounded-full mb-6"></div>
 
-                <p className="text-[16px] sm:text-[18px] lg:text-[20px] font-matt font-light text-black leading-relaxed mb-5">
-                  Das Nutzerverhalten hat sich verändert – Smartphones
-                  dominieren den digitalen Alltag. Das Konzept der{" "}
-                  <strong>Mobile First Website Schweiz</strong> ist die Antwort
-                  auf diese Realität.
-                </p>
-                <p className="text-[16px] sm:text-[18px] lg:text-[20px] font-matt font-light text-black leading-relaxed">
-                  Mobile First bedeutet, dass Ihre Website zuerst für
-                  Smartphones konzipiert wird – für maximale Performance und
-                  Nutzerfreundlichkeit – und erst danach für grössere
-                  Bildschirme angepasst wird.
-                </p>
-              </div>
-              <div className="relative w-full h-full flex justify-center items-center">
-                <div className="w-full max-w-[500px] aspect-[4/3] bg-white rounded-[32px] shadow-[0_12px_40px_rgba(0,0,0,0.1)] p-6 flex justify-center items-center">
-                  <img
-                    src="/images/mobile-first-illustration.png"
-                    alt="Mobile First Design"
-                    className="w-full h-full object-contain"
-                  />
-                </div>
-              </div>
-            </div>
-          </section>
+      <p className="text-[16px] sm:text-[18px] lg:text-[20px] font-matt font-light text-black leading-relaxed mb-5">
+        Das Nutzerverhalten hat sich verändert – Smartphones dominieren den digitalen Alltag.
+        Das Konzept der <strong>Mobile First Website Schweiz</strong> ist die Antwort auf diese Realität.
+      </p>
+      <p className="text-[16px] sm:text-[18px] lg:text-[20px] font-matt font-light text-black leading-relaxed">
+        Mobile First bedeutet, dass Ihre Website zuerst für Smartphones konzipiert wird – 
+        für maximale Performance und Nutzerfreundlichkeit – und erst danach für grössere Bildschirme angepasst wird.
+      </p>
+    </div>
+
+    {/* Foto */}
+    <div className="relative w-full h-full flex justify-center items-center">
+      <img
+        src="/images/Mobile First Website Schweiz_1.svg"
+        alt="Mobile First Design"
+        className="w-full h-full object-cover rounded-[32px] shadow-[0_12px_40px_rgba(0,0,0,0.1)]"
+      />
+    </div>
+  </div>
+</section>
+
           <section className="relative w-full overflow-hidden">
             {/* Blue diagonal background */}
             <div className="absolute inset-0 -z-10">

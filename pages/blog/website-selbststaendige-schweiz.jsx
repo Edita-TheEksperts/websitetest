@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
+import Image from "next/image";
 import RelatedPostsCarousel from "@/components/RelatedPostsCarousel";
 import LesenswertBox from "../../components/LesenswertBox";
 
@@ -245,14 +246,21 @@ const WebsiteSelbstaendige = () => {
             </div>
           </section>
 
-          <p className="text-black font-[300] text-[17px] lg:text-[17px] font-matt">
-            <em>
-              [Bildvorschlag: Eine Illustration einer selbständigen Person (z.B.
-              ein Freelancer mit Laptop und Ideenblase) vor einer stilisierten
-              Website.]
-            </em>{" "}
-          </p>
-
+ <section className="py-1 lg:py-20 px-4 lg:px-8 flex justify-center">
+   <div className="max-w-[1200px] w-full bg-white rounded-3xl shadow-2xl overflow-hidden border border-gray-200">
+     <div className="relative w-full h-[250px] sm:h-[350px] lg:h-[450px] group">
+       <Image
+         src="/images/Website für Selbständige_1.svg" 
+         alt="White note image"
+         fill
+         className="object-cover transition-transform duration-500 group-hover:scale-105"
+         priority
+       />
+       <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/20 to-transparent"></div>
+     </div>
+   </div>
+ </section>
+ 
           <section className="w-full bg-[#F8FAFC] py-20 px-4">
             <div className="max-w-6xl mx-auto">
               <h2 className="text-[28px] lg:text-[36px] font-matt font-[900] text-blue-900 text-center mb-6">
@@ -313,6 +321,20 @@ const WebsiteSelbstaendige = () => {
               </div>
             </div>
           </section>
+          <section className="py-1 lg:py-20 px-4 lg:px-8 flex justify-center">
+   <div className="max-w-[1200px] w-full bg-white rounded-3xl shadow-2xl overflow-hidden border border-gray-200">
+     <div className="relative w-full h-[250px] sm:h-[350px] lg:h-[450px] group">
+       <Image
+         src="/images/Website für Selbständige_2.svg" 
+         alt="White note image"
+         fill
+         className="object-cover transition-transform duration-500 group-hover:scale-105"
+         priority
+       />
+       <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/20 to-transparent"></div>
+     </div>
+   </div>
+ </section>
           <section className="relative bg-gradient-to-br from-[#e0f2fe] via-[#f0f9ff] to-[#e0f2fe] py-24 px-6">
             <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-10 items-center">
               {/* Left Side: Text */}

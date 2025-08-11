@@ -177,14 +177,6 @@ const blogOnepagerMinimalistisch = () => {
               </div>
             </div>
           </section>
-
-          <p className="text-black font-[300] text-[17px] lg:text-[17px] font-matt mb-12 text-center">
-            <em>
-              [Bildvorschlag: Ein stilisiertes, langes Blatt Papier, das
-              vertikal gescrollt wird, mit verschiedenen Inhaltsabschnitten.]{" "}
-            </em>{" "}
-          </p>
-
           {/* Vorteile Section */}
           <section className="w-full mb-20 flex flex-col items-center">
             <div className="w-full max-w-[1200px] bg-gradient-to-br from-white via-[#F8F9FF] to-white p-8 lg:p-[80px] rounded-[20px] shadow-xl">

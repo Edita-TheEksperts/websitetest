@@ -215,14 +215,6 @@ const WebagenturundDigitalagentur = () => {
             </div>
           </section>
         </section>
-
-        <p className="text-black font-[300] text-[17px] lg:text-[17px] font-matt mt-10 mb-10 leading-relaxed">
-          <em>
-            [Bildvorschlag: Eine Person, die konzentriert vor einem Bildschirm
-            sitzt und eine Website mit einem Baukastensystem erstellt.]
-          </em>
-        </p>
-
         <section className="bg-gradient-to-br from-[#F0F4FF] to-white rounded-[16px] shadow-md p-8 lg:p-12 mb-12 mt-10">
           <h2 className="text-[28px] lg:text-[36px] font-matt font-[900] text-black mb-8 uppercase text-center leading-tight">
             Ihr Weg zu digitalem Erfolg in der Ostschweiz

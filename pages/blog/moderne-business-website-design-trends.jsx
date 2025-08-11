@@ -91,8 +91,8 @@ const ModerneBusinessWebsite = () => {
               {/* Image */}
               <div className="lg:w-1/2">
                 <img
-                  src="/images/recagile.png"
-                  alt="Vorteile für Unternehmen"
+                  src="/images/Moderne Business-Website_1.svg"
+                  alt="Moderne Business-Website_1"
                   className="w-full h-full object-cover rounded-xl shadow-xl"
                 />
               </div>
@@ -230,15 +230,6 @@ const ModerneBusinessWebsite = () => {
               </div>
             </div>
           </section>
-
-          <p className="text-black font-[300] text-[16px] sm:text-[17px] font-matt mt-6">
-            <em>
-              [Bildvorschlag: Eine moderne, ansprechende Website-Ansicht eines
-              Coiffeursalons mit einem prominenten "Jetzt Termin
-              buchen"-Button.]
-            </em>
-          </p>
-
           <section className="bg-[#0009FF] mt-20 w-full max-w-[915px] mx-auto p-4 sm:p-[40px] rounded-lg">
             <div className="max-w-[900px] mx-auto">
               <h2 className="text-white text-[20px] sm:text-[28px] font-matt font-[900] uppercase mb-6 text-center">

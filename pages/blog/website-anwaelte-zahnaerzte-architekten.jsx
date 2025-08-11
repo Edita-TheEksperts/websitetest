@@ -245,14 +245,6 @@ const BranchenfokusAnwaelteZahnaerzte = () => {
             </div>
           </div>
         </section>
-
-        <p className="text-black font-[300] text-[17px] lg:text-[17px] font-matt mb-12 text-center">
-          <em>
-            [Bildvorschlag: Ein stilisiertes, langes Blatt Papier, das vertikal
-            gescrollt wird, mit verschiedenen Inhaltsabschnitten.]{" "}
-          </em>{" "}
-        </p>
-
         <section className="w-full mb-24 flex flex-col items-center px-4 sm:px-8 md:px-12 max-w-full">
           <div className="w-full max-w-full sm:max-w-[95%] bg-gradient-to-br from-[#f8fbff] via-white to-[#f0f4ff] p-8 sm:p-12 lg:p-[80px] rounded-[30px] shadow-2xl border border-blue-100">
             <h2 className="text-[28px] lg:text-[38px] font-extrabold text-center text-blue-900 mb-10 leading-tight font-matt">

@@ -260,12 +260,6 @@ const JetztWebsiteSchweiz = () => {
             </div>
           </div>
         </section>
-        <p className="text-black font-[300] text-[17px] lg:text-[17px] font-matt">
-          <em>
-            [Bildvorschlag: Eine schematische Darstellung einer Landing Page mit
-            Pfeilen, die den Blick zum CTA leiten.]
-          </em>{" "}
-        </p>
         <section className="bg-[#f5f9ff] py-24 px-4 md:px-10">
           <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Text Content */}
@@ -305,9 +299,9 @@ const JetztWebsiteSchweiz = () => {
             </div>
 
             {/* Image */}
-            <div className="relative w-full h-[320px] md:h-[500px] rounded-2xl overflow-hidden shadow-xl">
+            <div className="relative h-full min-h-[420px] md:min-h-[540px] lg:min-h-full rounded-2xl overflow-hidden shadow-xl">
               <img
-                src="/images/webdesign-offer.webp"
+                src="/images/Jetzt Website erstellen lassen_1.svg"
                 alt="Webdesign Angebot Illustration"
                 className="w-full h-full object-cover object-center"
               />
