@@ -1,4 +1,4 @@
-import blogPosts from "../pages/blog/blogData/blogData";
+import blogPosts from "../data/blogData/blogData";
 
 const LesenswertBox = ({ currentSlug }) => {
   const filteredPosts = blogPosts
