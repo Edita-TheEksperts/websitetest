@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Link from "next/link";
 import RelatedPostsCarousel from "@/components/RelatedPostsCarousel";
+import LesenswertBox from "../../components/LesenswertBox";
 
 const BranchenfokusAnwaelteZahnaerzte = () => {
   return (
@@ -36,9 +37,9 @@ const BranchenfokusAnwaelteZahnaerzte = () => {
           </h2>
 
           {/* TL;DR + LESENSWERT columns */}
-          <div className="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-8 mt-6">
+          <div className="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-8 mt-5 mb-5 items-stretch">
             {/* TL;DR BOX */}
-            <div className="bg-[#0009FF] rounded-[8px] p-6 lg:p-8 w-full">
+            <div className="bg-[#0009FF] rounded-[8px] p-6 lg:p-8 w-full h-full flex flex-col">
               <h2 className="text-[28px] font-matt text-white mb-4 uppercase">
                 <strong>TL;DR</strong>{" "}
                 <span className="font-300">(too long; didn't read)</span>
@@ -54,43 +55,7 @@ const BranchenfokusAnwaelteZahnaerzte = () => {
             </div>
 
             {/* LESENSWERT */}
-            <aside className="bg-gradient-to-br from-[#F0F4FF] to-white border border-[#E0E7FF] p-6 rounded-2xl shadow-sm mt-3">
-              <h3 className="text-[20px] font-matt font-[800] text-[#0009FF] uppercase mb-4">
-                AUCH LESENSWERT
-              </h3>
-              <ul className="space-y-3 font-matt text-[16px] text-black font-[300] leading-snug">
-                <li>
-                  <a
-                    href="/blog/der-unterschatzte-boost"
-                    className="hover:text-[#0009FF] hover:underline transition"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Der unterschätzte Boost
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/blog/briefing-launch"
-                    className="hover:text-[#0009FF] hover:underline transition"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Vom Briefing zum Launch
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/blog/agile-projektleitung"
-                    className="hover:text-[#0009FF] hover:underline transition"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Agile Projektleitung
-                  </a>
-                </li>
-              </ul>
-            </aside>
+            <LesenswertBox currentSlug="website-anwaelte-zahnaerzte-architekten" />
           </div>
         </section>
 
@@ -280,14 +245,6 @@ const BranchenfokusAnwaelteZahnaerzte = () => {
             </div>
           </div>
         </section>
-
-        <p className="text-black font-[300] text-[17px] lg:text-[17px] font-matt mb-12 text-center">
-          <em>
-            [Bildvorschlag: Ein stilisiertes, langes Blatt Papier, das vertikal
-            gescrollt wird, mit verschiedenen Inhaltsabschnitten.]{" "}
-          </em>{" "}
-        </p>
-
         <section className="w-full mb-24 flex flex-col items-center px-4 sm:px-8 md:px-12 max-w-full">
           <div className="w-full max-w-full sm:max-w-[95%] bg-gradient-to-br from-[#f8fbff] via-white to-[#f0f4ff] p-8 sm:p-12 lg:p-[80px] rounded-[30px] shadow-2xl border border-blue-100">
             <h2 className="text-[28px] lg:text-[38px] font-extrabold text-center text-blue-900 mb-10 leading-tight font-matt">

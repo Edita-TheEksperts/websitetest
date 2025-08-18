@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Link from "next/link";
 import RelatedPostsCarousel from "@/components/RelatedPostsCarousel";
+import LesenswertBox from "../../components/LesenswertBox";
 
 const BriefPost = () => {
   return (
@@ -21,71 +22,34 @@ const BriefPost = () => {
         {/* Post Content Section */}
         <section className="mb-[16px] lg:mb-[40px] text-left">
           <div className="text-left ">
-            <h1 className="font-matt text-[30px] lg:text-[80px] leading-[1] font-semibold uppercase text-gray-900 tracking-tight">
+            <h1 className="font-matt text-[26px] sm:text-[40px] lg:text-[50px]  leading-tight font-semibold uppercase text-gray-900 tracking-tight mb-6">
               Vom Briefing zum Launch:
             </h1>
 
-            <h2 className="font-matt text-[25px] lg:text-[40px] leading-[1] font-normal text-gray-900 tracking-tight">
+            <h2 className="font-matt text-[26px] lg:text-[38px] leading-[1] font-normal text-gray-900 tracking-tight  lg:mb-4">
               So läuft ein agiles Webprojekt bei the eksperts ab
             </h2>
-            <div className="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-8 mt-[15px]">
-  {/* TL;DR Box */}
-  <div className="bg-[#0009FF] rounded-[8px] p-[16px] lg:w-full">
-    <h2 className="text-[28px] font-matt text-white mb-4 uppercase">
-      <span className="font-900">
-        <strong>TL;DR</strong>
-      </span>{" "}
-      <span className="font-300">(too long; didn't read)</span>
-    </h2>
-    <p className="text-white font-[300] text-[16px] lg:text-[20px] font-matt">
-      Agile Prozesse ermöglichen schnelle Ergebnisse, transparente
-      Kommunikation und iterative Verbesserung. Bei the eksperts
-      durchläuft jedes Webprojekt klar strukturierte Phasen – vom
-      ersten Kundenbriefing über Design, Entwicklung bis hin zum
-      erfolgreichen Launch.
-    </p>
-  </div>
+            <div className="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-8 mt-[18px] items-stretch">
+              {/* TL;DR Box */}
+              <div className="bg-[#0009FF] rounded-[8px] p-[16px] lg:w-full mt-5">
+                <h2 className="text-[28px] font-matt text-white mb-4 uppercase">
+                  <span className="font-900">
+                    <strong>TL;DR</strong>
+                  </span>{" "}
+                  <span className="font-300">(too long; didn't read)</span>
+                </h2>
+                <p className="text-white font-[300] text-[16px] lg:text-[20px] font-matt">
+                  Agile Prozesse ermöglichen schnelle Ergebnisse, transparente
+                  Kommunikation und iterative Verbesserung. Bei the eksperts
+                  durchläuft jedes Webprojekt klar strukturierte Phasen – vom
+                  ersten Kundenbriefing über Design, Entwicklung bis hin zum
+                  erfolgreichen Launch.
+                </p>
+              </div>
 
-  {/* LESENSWERT Box */}
-  <aside className="bg-gradient-to-br from-[#F0F4FF] to-white border border-[#E0E7FF] p-6 rounded-2xl shadow-sm">
-    <h3 className="text-[20px] font-matt font-[800] text-[#0009FF] uppercase mb-4">
-      LESENSWERT
-    </h3>
-    <ul className="space-y-3 font-matt text-[16px] text-black font-[300] leading-snug">
-      <li>
-        <Link
-          href="/blog/der-unterschatzte-boost"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover:text-[#0009FF] hover:underline transition"
-        >
-          Der unterschätzte Boost
-        </Link>
-      </li>
-      <li>
-        <Link
-          href="/blog/briefing-launch"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover:text-[#0009FF] hover:underline transition"
-        >
-          Vom Briefing zum Launch
-        </Link>
-      </li>
-      <li>
-        <Link
-          href="/blog/agile-projektleitung"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover:text-[#0009FF] hover:underline transition"
-        >
-          Agile Projektleitung
-        </Link>
-      </li>
-    </ul>
-  </aside>
-</div>
-
+              {/* LESENSWERT Box */}
+              <LesenswertBox currentSlug="briefing-launch" />
+            </div>
           </div>
         </section>
         <section>
@@ -115,7 +79,6 @@ const BriefPost = () => {
                 Salesforce Integration oder CRM-Anpassung – auf agile Prozesse.{" "}
               </p>
             </div>
-
           </section>
           <section className="lg:w-[990px] space-y-[30px]">
             <div className="grid grid-cols-1 gap-2">
@@ -143,7 +106,7 @@ const BriefPost = () => {
                   }}
                 >
                   <img
-                    src="/images/1_Vom Briefing zum Launch.svg" 
+                    src="/images/1_Vom Briefing zum Launch.svg"
                     alt="Briefing & Zieldefinition"
                     className="w-full h-full object-cover rounded-[12px]"
                   />
@@ -211,7 +174,7 @@ const BriefPost = () => {
                   }}
                 >
                   <img
-                    src="/images/3_Vom Briefing zum Launch.svg" 
+                    src="/images/3_Vom Briefing zum Launch.svg"
                     alt="Briefing & Zieldefinition"
                     className="w-full h-full object-cover rounded-[12px]"
                   />
@@ -245,7 +208,7 @@ const BriefPost = () => {
                   }}
                 >
                   <img
-                    src="/images/4_Vom Briefing zum Launch.svg" 
+                    src="/images/4_Vom Briefing zum Launch.svg"
                     alt="Briefing & Zieldefinition"
                     className="w-full h-full object-cover rounded-[12px]"
                   />

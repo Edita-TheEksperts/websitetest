@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Link from "next/link";
 import RelatedPostsCarousel from "@/components/RelatedPostsCarousel";
+import LesenswertBox from "../../components/LesenswertBox";
 
 const MobileFirstCH = () => {
   return (
@@ -37,7 +38,7 @@ const MobileFirstCH = () => {
             </h2>
 
             {/* TL;DR + LESENSWERT columns */}
-            <div className="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-8 mt-6">
+            <div className="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-8 mt-5 mb-5 items-stretch">
               {/* TL;DR BOX */}
               <div className="bg-[#0009FF] rounded-lg p-6 lg:w-full">
                 <h2 className="text-[28px] font-matt text-white mb-4 uppercase">
@@ -54,43 +55,7 @@ const MobileFirstCH = () => {
               </div>
 
               {/* LESENSWERT */}
-              <aside className="bg-gradient-to-br from-[#F0F4FF] to-white border border-[#E0E7FF] p-6 rounded-2xl mt-6 lg:mt-0 shadow-sm">
-                <h3 className="text-[20px] font-matt font-extrabold text-[#0009FF] uppercase mb-4">
-                  AUCH LESENSWERT
-                </h3>
-                <ul className="space-y-3 font-matt text-[16px] text-black font-light leading-snug">
-                  <li>
-                    <a
-                      href="/blog/der-unterschatzte-boost"
-                      className="hover:text-[#0009FF] hover:underline transition"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Der unterschätzte Boost
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="/blog/briefing-launch"
-                      className="hover:text-[#0009FF] hover:underline transition"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Vom Briefing zum Launch
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="/blog/agile-projektleitung"
-                      className="hover:text-[#0009FF] hover:underline transition"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Agile Projektleitung
-                    </a>
-                  </li>
-                </ul>
-              </aside>
+              <LesenswertBox currentSlug="mobile-first-website-schweiz" />
             </div>
           </div>
         </section>
@@ -115,41 +80,38 @@ const MobileFirstCH = () => {
               </p>
             </div>
           </section>
-
           <section className="w-full bg-[#F5F7FF] py-20 px-4 sm:px-6">
-            <div className="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-2 items-center gap-16">
-              <div className="relative z-10">
-                <h2 className="text-[30px] sm:text-[36px] lg:text-[42px] font-matt font-extrabold text-black leading-tight mb-6 uppercase">
-                  Das Smartphone zuerst:
-                  <br className="hidden lg:block" />
-                  Neue Priorität im Webdesign
-                </h2>
-                <div className="w-[60px] h-[4px] bg-[#0009FF] rounded-full mb-6"></div>
+  <div className="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-2 items-stretch gap-16">
+    {/* Teksti */}
+    <div className="relative z-10 flex flex-col justify-center">
+      <h2 className="text-[30px] sm:text-[36px] lg:text-[42px] font-matt font-extrabold text-black leading-tight mb-6 uppercase">
+        Das Smartphone zuerst:
+        <br className="hidden lg:block" />
+        Neue Priorität im Webdesign
+      </h2>
+      <div className="w-[60px] h-[4px] bg-[#0009FF] rounded-full mb-6"></div>
 
-                <p className="text-[16px] sm:text-[18px] lg:text-[20px] font-matt font-light text-black leading-relaxed mb-5">
-                  Das Nutzerverhalten hat sich verändert – Smartphones
-                  dominieren den digitalen Alltag. Das Konzept der{" "}
-                  <strong>Mobile First Website Schweiz</strong> ist die Antwort
-                  auf diese Realität.
-                </p>
-                <p className="text-[16px] sm:text-[18px] lg:text-[20px] font-matt font-light text-black leading-relaxed">
-                  Mobile First bedeutet, dass Ihre Website zuerst für
-                  Smartphones konzipiert wird – für maximale Performance und
-                  Nutzerfreundlichkeit – und erst danach für grössere
-                  Bildschirme angepasst wird.
-                </p>
-              </div>
-              <div className="relative w-full h-full flex justify-center items-center">
-                <div className="w-full max-w-[500px] aspect-[4/3] bg-white rounded-[32px] shadow-[0_12px_40px_rgba(0,0,0,0.1)] p-6 flex justify-center items-center">
-                  <img
-                    src="/images/mobile-first-illustration.png"
-                    alt="Mobile First Design"
-                    className="w-full h-full object-contain"
-                  />
-                </div>
-              </div>
-            </div>
-          </section>
+      <p className="text-[16px] sm:text-[18px] lg:text-[20px] font-matt font-light text-black leading-relaxed mb-5">
+        Das Nutzerverhalten hat sich verändert – Smartphones dominieren den digitalen Alltag.
+        Das Konzept der <strong>Mobile First Website Schweiz</strong> ist die Antwort auf diese Realität.
+      </p>
+      <p className="text-[16px] sm:text-[18px] lg:text-[20px] font-matt font-light text-black leading-relaxed">
+        Mobile First bedeutet, dass Ihre Website zuerst für Smartphones konzipiert wird – 
+        für maximale Performance und Nutzerfreundlichkeit – und erst danach für grössere Bildschirme angepasst wird.
+      </p>
+    </div>
+
+    {/* Foto */}
+    <div className="relative w-full h-full flex justify-center items-center">
+      <img
+        src="/images/Mobile First Website Schweiz_1.svg"
+        alt="Mobile First Design"
+        className="w-full h-full object-cover rounded-[32px] shadow-[0_12px_40px_rgba(0,0,0,0.1)]"
+      />
+    </div>
+  </div>
+</section>
+
           <section className="relative w-full overflow-hidden">
             {/* Blue diagonal background */}
             <div className="absolute inset-0 -z-10">

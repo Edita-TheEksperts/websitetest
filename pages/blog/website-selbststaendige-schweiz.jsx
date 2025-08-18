@@ -1,6 +1,9 @@
 import Head from "next/head";
 import Link from "next/link";
+import Image from "next/image";
 import RelatedPostsCarousel from "@/components/RelatedPostsCarousel";
+import LesenswertBox from "../../components/LesenswertBox";
+
 
 const WebsiteSelbstaendige = () => {
   return (
@@ -40,9 +43,9 @@ const WebsiteSelbstaendige = () => {
               Website Kunden gewinnen und ihre Marke stärken. Online-Erfolg ist
             </h2>
             {/* TL;DR + LESENSWERT colons*/}
-            <div className="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-8 mt-4 mb-8">
+            <div className="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-8 mt-5 mb-5 items-stretch">
               {/* TL;DR BOX*/}
-              <div className="bg-[#0009FF] rounded-[8px] p-[16px] lg:w-full mt-5">
+              <div className="bg-[#0009FF] rounded-[8px] p-[16px] lg:w-full h-full flex flex-col">
                 <h2 className="text-[28px] font-matt text-white mb-4 uppercase">
                   <strong>TL;DR</strong>{" "}
                   <span className="font-300">(too long; didn't read)</span>
@@ -54,47 +57,11 @@ const WebsiteSelbstaendige = () => {
                   effektive Personal Branding Website aufgebaut sein sollte, um
                   Ihre Expertise zu präsentieren und neue Aufträge in der
                   Schweiz zu generieren.
-                </p>{" "}
+                </p>
               </div>
 
               {/* LESENSWERT */}
-              <aside className="bg-gradient-to-br from-[#F0F4FF] to-white border border-[#E0E7FF] p-6 rounded-2xl mt-3 shadow-sm">
-                <h3 className="text-[20px] font-matt font-[800] text-[#0009FF] uppercase mb-4">
-                  AUCH LESENSWERT
-                </h3>
-                <ul className="space-y-3 font-matt text-[16px] text-black font-[300] leading-snug">
-                  <li>
-                    <a
-                      href="/blog/der-unterschatzte-boost"
-                      className="hover:text-[#0009FF] hover:underline transition"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Der unterschätzte Boost
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="/blog/briefing-launch"
-                      className="hover:text-[#0009FF] hover:underline transition"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Vom Briefing zum Launch
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="/blog/agile-projektleitung"
-                      className="hover:text-[#0009FF] hover:underline transition"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Agile Projektleitung
-                    </a>
-                  </li>
-                </ul>
-              </aside>
+           <LesenswertBox currentSlug="website-selbststaendige-schweiz" />
             </div>
           </div>
         </section>
@@ -103,7 +70,7 @@ const WebsiteSelbstaendige = () => {
           {/* Left Content */}
           <div className="max-w-[800px] flex-1 lg:mb-0">
             <p
-              className="text-[#0009FF] text-[20px] lg:text-[28px] uppercase font-matt font-[900] mb-[25px]"
+              className="text-[#0009FF] text-[20px] lg:text-[28px] uppercase font-matt font-[900] mb-[5px]"
               style={{ color: "#0009FF" }}
             >
               Lesedauer: ca. 4 Minuten
@@ -279,14 +246,21 @@ const WebsiteSelbstaendige = () => {
             </div>
           </section>
 
-          <p className="text-black font-[300] text-[17px] lg:text-[17px] font-matt">
-            <em>
-              [Bildvorschlag: Eine Illustration einer selbständigen Person (z.B.
-              ein Freelancer mit Laptop und Ideenblase) vor einer stilisierten
-              Website.]
-            </em>{" "}
-          </p>
-
+ <section className="py-1 lg:py-20 px-4 lg:px-8 flex justify-center">
+   <div className="max-w-[1200px] w-full bg-white rounded-3xl shadow-2xl overflow-hidden border border-gray-200">
+     <div className="relative w-full h-[250px] sm:h-[350px] lg:h-[450px] group">
+       <Image
+         src="/images/Website für Selbständige_1.svg" 
+         alt="White note image"
+         fill
+         className="object-cover transition-transform duration-500 group-hover:scale-105"
+         priority
+       />
+       <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/20 to-transparent"></div>
+     </div>
+   </div>
+ </section>
+ 
           <section className="w-full bg-[#F8FAFC] py-20 px-4">
             <div className="max-w-6xl mx-auto">
               <h2 className="text-[28px] lg:text-[36px] font-matt font-[900] text-blue-900 text-center mb-6">
@@ -347,6 +321,20 @@ const WebsiteSelbstaendige = () => {
               </div>
             </div>
           </section>
+          <section className="py-1 lg:py-20 px-4 lg:px-8 flex justify-center">
+   <div className="max-w-[1200px] w-full bg-white rounded-3xl shadow-2xl overflow-hidden border border-gray-200">
+     <div className="relative w-full h-[250px] sm:h-[350px] lg:h-[450px] group">
+       <Image
+         src="/images/Website für Selbständige_2.svg" 
+         alt="White note image"
+         fill
+         className="object-cover transition-transform duration-500 group-hover:scale-105"
+         priority
+       />
+       <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/20 to-transparent"></div>
+     </div>
+   </div>
+ </section>
           <section className="relative bg-gradient-to-br from-[#e0f2fe] via-[#f0f9ff] to-[#e0f2fe] py-24 px-6">
             <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-10 items-center">
               {/* Left Side: Text */}
