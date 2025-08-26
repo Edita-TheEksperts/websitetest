@@ -7,7 +7,6 @@ const LogoSection = () => {
   const router = useRouter(); // Initialize the Next.js router
 
   const logos = [
-    { default: "/images/the-eksperts-mobiliar-logo.png", hover: "/images/the-eksperts-mobiliar-logo-hover.png" },
     { default: "/images/the-eksperts-phc-logo.png", hover: "/images/the-eksperts-phc-logo-hover.png" },
     { default: "/images/the-eksperts-netto-logo.png", hover: "/images/the-eksperts-netto-logo-hover.png" },
     { default: "/images/the-eksperts-mobilezone-official-logo.png", hover: "/images/the-eksperts-mobilezone-logo-hover.png" },

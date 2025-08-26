@@ -203,13 +203,15 @@ const handleSubmit = async (e) => {
                     <strong className='font-[900]'> verwirklicht</strong> haben oder <strong className='font-[900]'>noch verwirklichen werden.</strong>
                 </p>
             <section className='flex lg:flex-row flex-col lg:gap-[32px]'>
-            <FlipCard1 />
             <FlipCard2 />
+                        <FlipCard3 />
+
             </section>
 
             <section className='flex lg:flex-row flex-col lg:gap-[32px]'>
-            <FlipCard3 />
             <FlipCard4 />
+                        <FlipCard5 />
+
             </section>
 
             <section className='hidden flex lg:flex-row flex-col lg:gap-[32px]'>
@@ -218,7 +220,6 @@ const handleSubmit = async (e) => {
             </section>
 
             <section className='flex lg:flex-row flex-col lg:gap-[32px] mb-[160px] lg:mb-[300px]'>
-            <FlipCard5 />
             <FlipCard7/>
            
             </section>
